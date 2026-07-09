@@ -274,16 +274,18 @@ for (const el of bGivesUp) rosterB.splice(rosterB.indexOf(el), 1);
 rosterA.push(...bGivesUp);
 rosterB.push(...aGivesUp);
 
+// Matches the real API's confirmed shape: tradeitem_set pairs are from
+// offered_entry's perspective (they give element_out, receive element_in).
 const rawTrade = {
   id: 1,
   event: TRADE_GW,
-  entry1_entry: tradeManagerA.entryId,
-  entry1_players_out: aGivesUp,
-  entry1_players_in: bGivesUp,
-  entry2_entry: tradeManagerB.entryId,
-  entry2_players_out: bGivesUp,
-  entry2_players_in: aGivesUp,
-  state: "a",
+  offered_entry: tradeManagerA.entryId,
+  received_entry: tradeManagerB.entryId,
+  state: "p",
+  tradeitem_set: [
+    { element_in: bGivesUp[0], element_out: aGivesUp[0] },
+    { element_in: bGivesUp[1], element_out: aGivesUp[1] },
+  ],
 };
 
 // ---------- schedule (circle-method round robin, 11 rounds for 12 teams) ----------
@@ -633,12 +635,15 @@ write("bootstrap-static.json", {
     { id: 3, singular_name_short: "MID" },
     { id: 4, singular_name_short: "FWD" },
   ],
-  events: Array.from({ length: 38 }, (_, i) => ({
-    id: i + 1,
-    finished: i + 1 <= 10,
-    is_current: i + 1 === CURRENT_GW,
-    is_next: i + 1 === CURRENT_GW + 1,
-  })),
+  // Matches the real API's shape: { current, data: [...] } -- real event
+  // objects only ever carry `finished`, not `is_current`/`is_next`.
+  events: {
+    current: CURRENT_GW,
+    data: Array.from({ length: 38 }, (_, i) => ({
+      id: i + 1,
+      finished: i + 1 <= 10,
+    })),
+  },
 });
 
 write("game.json", {

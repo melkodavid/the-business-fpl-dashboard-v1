@@ -1,0 +1,135 @@
+{
+  "_comment": "Hand-recorded history from league table photos, confirmed by the commissioner. championKey/manager keys are personKey-style (first name, lowercased) so they join against manager-profiles.json and the live season the same way. The current season is NOT listed here -- build.js appends it automatically from live data, so this file only needs a new entry once a season is over AND a new league has been created for the next one.",
+  "seasons": [
+    {
+      "year": "17/18",
+      "championKey": "sb",
+      "championDisplay": "SB",
+      "table": null
+    },
+    {
+      "year": "18/19",
+      "championKey": "lu",
+      "table": [
+        { "rank": 1, "team": "Vunter Drip FC", "manager": "Lucas", "managerKey": "lu", "w": 27, "d": 0, "l": 8, "plus": 1672, "pts": 81 },
+        { "rank": 2, "team": "Neen FC", "manager": "Anthony", "managerKey": "anthony", "w": 22, "d": 0, "l": 13, "plus": 1589, "pts": 66 },
+        { "rank": 3, "team": "Sarri not sorry", "manager": "Marshall", "managerKey": "marshall", "w": 21, "d": 1, "l": 13, "plus": 1576, "pts": 64 },
+        { "rank": 4, "team": "Contes cunts", "manager": "Jonpaul", "managerKey": "jonpaul", "w": 20, "d": 1, "l": 14, "plus": 1439, "pts": 61 },
+        { "rank": 5, "team": "Dynamo Cossack FC", "manager": "Ivan", "managerKey": "ivan", "w": 19, "d": 0, "l": 16, "plus": 1543, "pts": 57 },
+        { "rank": 6, "team": "Polonia FC", "manager": "Krystian", "managerKey": "krystian", "w": 15, "d": 1, "l": 19, "plus": 1276, "pts": 46 },
+        { "rank": 7, "team": "Todd Peterson", "manager": "Pasquale", "managerKey": "pasquale", "w": 13, "d": 1, "l": 21, "plus": 1274, "pts": 40 },
+        { "rank": 8, "team": "Reigning Champ", "manager": "Sebastian", "managerKey": "sebastian", "w": 13, "d": 0, "l": 22, "plus": 1352, "pts": 39 },
+        { "rank": 9, "team": "LickMyKante", "manager": "Alfonso", "managerKey": "alfonso", "w": 12, "d": 0, "l": 23, "plus": 1105, "pts": 36 },
+        { "rank": 10, "team": "Slappin Pitches", "manager": "Mark", "managerKey": "mark", "w": 11, "d": 0, "l": 24, "plus": 1233, "pts": 33 }
+      ]
+    },
+    {
+      "year": "19/20",
+      "championKey": "lu",
+      "table": [
+        { "rank": 1, "team": "(C) No Depth FC", "manager": "Lu", "managerKey": "lu", "w": 25, "d": 1, "l": 12, "plus": 1699, "pts": 76 },
+        { "rank": 2, "team": "rip Rashford", "manager": "Nolan", "managerKey": "nolan", "w": 24, "d": 1, "l": 13, "plus": 1640, "pts": 73 },
+        { "rank": 3, "team": "Chernobyl FC", "manager": "Ivan", "managerKey": "ivan", "w": 22, "d": 1, "l": 15, "plus": 1607, "pts": 67 },
+        { "rank": 4, "team": "Pardy's Ova", "manager": "Mitch", "managerKey": "mitch", "w": 18, "d": 0, "l": 20, "plus": 1656, "pts": 54 },
+        { "rank": 5, "team": "Loftus your cheeks", "manager": "Marshall", "managerKey": "marshall", "w": 18, "d": 0, "l": 20, "plus": 1620, "pts": 54 },
+        { "rank": 6, "team": "NEEN FC", "manager": "Anthony", "managerKey": "anthony", "w": 18, "d": 0, "l": 20, "plus": 1583, "pts": 54 },
+        { "rank": 7, "team": "Kanes Hamstring", "manager": "SB", "managerKey": "sb", "w": 16, "d": 2, "l": 20, "plus": 1365, "pts": 50 },
+        { "rank": 8, "team": "Kantes cunts", "manager": "JP", "managerKey": "jp", "w": 16, "d": 0, "l": 22, "plus": 1450, "pts": 48 },
+        { "rank": 9, "team": "Redraft FC", "manager": "KB", "managerKey": "kb", "w": 15, "d": 1, "l": 22, "plus": 1450, "pts": 46 },
+        { "rank": 10, "team": "\"Pusq Doesn't Care\"", "manager": "Pasquale", "managerKey": "pasquale", "w": 15, "d": 0, "l": 23, "plus": 1411, "pts": 45 }
+      ]
+    },
+    {
+      "year": "20/21",
+      "championKey": "lu",
+      "table": [
+        { "rank": 1, "team": "Lu's Rules FC **", "manager": "Lu", "managerKey": "lu", "w": 27, "d": 0, "l": 11, "plus": 1848, "pts": 81 },
+        { "rank": 2, "team": "Mourinho's Ego", "manager": "Patrick", "managerKey": "pat", "w": 23, "d": 3, "l": 12, "plus": 1684, "pts": 72 },
+        { "rank": 3, "team": "Ougots FC", "manager": "Mitch", "managerKey": "mitch", "w": 21, "d": 2, "l": 15, "plus": 1533, "pts": 65 },
+        { "rank": 4, "team": "Omfg Stepbro Fc", "manager": "Ostap", "managerKey": "ostap", "w": 21, "d": 1, "l": 16, "plus": 1496, "pts": 64 },
+        { "rank": 5, "team": "NEEN FC", "manager": "Anthony", "managerKey": "anthony", "w": 21, "d": 0, "l": 17, "plus": 1685, "pts": 63 },
+        { "rank": 6, "team": "Yellow Card FC", "manager": "David", "managerKey": "david", "w": 18, "d": 4, "l": 16, "plus": 1553, "pts": 58 },
+        { "rank": 7, "team": "Game of Stones", "manager": "Mark", "managerKey": "mark", "w": 18, "d": 2, "l": 18, "plus": 1596, "pts": 56 },
+        { "rank": 8, "team": "Norlando FC", "manager": "Pasquale", "managerKey": "pasquale", "w": 15, "d": 3, "l": 20, "plus": 1398, "pts": 48 },
+        { "rank": 9, "team": "Martial gonna snapFC", "manager": "Nolan", "managerKey": "nolan", "w": 15, "d": 1, "l": 22, "plus": 1447, "pts": 46 },
+        { "rank": 10, "team": "FC sPAIN", "manager": "Marshall", "managerKey": "marshall", "w": 15, "d": 0, "l": 23, "plus": 1476, "pts": 45 },
+        { "rank": 11, "team": "Syria FC", "manager": "Ibrahim", "managerKey": "ibrahim", "w": 14, "d": 1, "l": 23, "plus": 1254, "pts": 43 },
+        { "rank": 12, "team": "Sicily fc", "manager": "Jonpaul", "managerKey": "jonpaul", "w": 11, "d": 1, "l": 26, "plus": 1357, "pts": 34 }
+      ]
+    },
+    {
+      "year": "21/22",
+      "championKey": "ibrahim",
+      "table": [
+        { "rank": 1, "team": "Syria Fc", "manager": "Ibrahim", "managerKey": "ibrahim", "w": 24, "d": 0, "l": 14, "plus": 1758, "pts": 72 },
+        { "rank": 2, "team": "Mourinho's Ego", "manager": "Patrick", "managerKey": "pat", "w": 23, "d": 2, "l": 13, "plus": 1695, "pts": 71 },
+        { "rank": 3, "team": "NEEN FC", "manager": "Anthony", "managerKey": "anthony", "w": 21, "d": 0, "l": 17, "plus": 1730, "pts": 63 },
+        { "rank": 4, "team": "Lu's Rules FC", "manager": "Lu", "managerKey": "lu", "w": 21, "d": 0, "l": 17, "plus": 1586, "pts": 63 },
+        { "rank": 5, "team": "Mount deez nutz", "manager": "Marshall", "managerKey": "marshall", "w": 20, "d": 1, "l": 17, "plus": 1662, "pts": 61 },
+        { "rank": 6, "team": "Ougots FC", "manager": "Mitch", "managerKey": "mitch", "w": 20, "d": 0, "l": 18, "plus": 1601, "pts": 60 },
+        { "rank": 7, "team": "Dad went for Milk FC", "manager": "Ostap", "managerKey": "ostap", "w": 19, "d": 1, "l": 18, "plus": 1587, "pts": 58 },
+        { "rank": 8, "team": "Muk's Militia", "manager": "Marcus", "managerKey": "muk", "w": 18, "d": 0, "l": 20, "plus": 1368, "pts": 54 },
+        { "rank": 9, "team": "Slappin Pitches", "manager": "Mark", "managerKey": "mark", "w": 17, "d": 0, "l": 21, "plus": 1521, "pts": 51 },
+        { "rank": 10, "team": "Brexit Means Brexit", "manager": "David", "managerKey": "david", "w": 17, "d": 0, "l": 21, "plus": 1470, "pts": 51 },
+        { "rank": 11, "team": "Norlandinho FC", "manager": "Pasquale", "managerKey": "pasquale", "w": 15, "d": 0, "l": 23, "plus": 1431, "pts": 45 },
+        { "rank": 12, "team": "CHANGE NAME", "manager": "Noah", "managerKey": "noah", "w": 10, "d": 2, "l": 26, "plus": 1352, "pts": 32 }
+      ]
+    },
+    {
+      "year": "22/23",
+      "championKey": "pasquale",
+      "table": [
+        { "rank": 1, "team": "LeaveMyArcelona", "manager": "Pasquale", "managerKey": "pasquale", "w": 23, "d": 1, "l": 13, "plus": 1528, "pts": 70 },
+        { "rank": 2, "team": "NEEN FC", "manager": "Anthony", "managerKey": "anthony", "w": 22, "d": 2, "l": 13, "plus": 1620, "pts": 68 },
+        { "rank": 3, "team": "Mourinho's Ego", "manager": "Pat", "managerKey": "pat", "w": 22, "d": 1, "l": 14, "plus": 1481, "pts": 67 },
+        { "rank": 4, "team": "The Caped Crusaders", "manager": "Ostap", "managerKey": "ostap", "w": 21, "d": 2, "l": 14, "plus": 1622, "pts": 65 },
+        { "rank": 5, "team": "Syria Fc", "manager": "Ibrahim", "managerKey": "ibrahim", "w": 19, "d": 1, "l": 17, "plus": 1469, "pts": 58 },
+        { "rank": 6, "team": "The Team", "manager": "Noah", "managerKey": "noah", "w": 18, "d": 2, "l": 17, "plus": 1459, "pts": 56 },
+        { "rank": 7, "team": "Ougots FC", "manager": "Mitch", "managerKey": "mitch", "w": 17, "d": 2, "l": 18, "plus": 1505, "pts": 53 },
+        { "rank": 8, "team": "Lu's Rules FC", "manager": "Lu", "managerKey": "lu", "w": 15, "d": 2, "l": 20, "plus": 1565, "pts": 47 },
+        { "rank": 9, "team": "Mukiavelli", "manager": "Marcus", "managerKey": "muk", "w": 15, "d": 1, "l": 21, "plus": 1387, "pts": 46 },
+        { "rank": 10, "team": "God Save Raheem", "manager": "Marshall", "managerKey": "marshall", "w": 15, "d": 1, "l": 21, "plus": 1264, "pts": 46 },
+        { "rank": 11, "team": "remontada inbound", "manager": "David", "managerKey": "david", "w": 14, "d": 1, "l": 22, "plus": 1345, "pts": 43 },
+        { "rank": 12, "team": "JUSTICE", "manager": "Mark", "managerKey": "mark", "w": 12, "d": 2, "l": 23, "plus": 1374, "pts": 38 }
+      ]
+    },
+    {
+      "year": "23/24",
+      "championKey": "ibrahim",
+      "table": [
+        { "rank": 1, "team": "Syria FC", "manager": "Ibrahim", "managerKey": "ibrahim", "w": 24, "d": 0, "l": 14, "plus": 1589, "pts": 72 },
+        { "rank": 2, "team": "TitleChargeRd2 FC", "manager": "Pasquale", "managerKey": "pasquale", "w": 23, "d": 2, "l": 13, "plus": 1570, "pts": 71 },
+        { "rank": 3, "team": "Mount sucks FC", "manager": "Marshall", "managerKey": "marshall", "w": 23, "d": 1, "l": 14, "plus": 1648, "pts": 70 },
+        { "rank": 4, "team": "The Generals Law", "manager": "Mitch", "managerKey": "mitch", "w": 22, "d": 2, "l": 14, "plus": 1491, "pts": 68 },
+        { "rank": 5, "team": "Lu's Rules FC", "manager": "Lu", "managerKey": "lu", "w": 22, "d": 1, "l": 15, "plus": 1536, "pts": 67 },
+        { "rank": 6, "team": "NEEN FC", "manager": "Anthony", "managerKey": "anthony", "w": 21, "d": 2, "l": 15, "plus": 1485, "pts": 65 },
+        { "rank": 7, "team": "Rice Rice Baby FC", "manager": "Ostap", "managerKey": "ostap", "w": 20, "d": 1, "l": 17, "plus": 1467, "pts": 61 },
+        { "rank": 8, "team": "Out of Comission", "manager": "David", "managerKey": "david", "w": 19, "d": 1, "l": 18, "plus": 1426, "pts": 58 },
+        { "rank": 9, "team": "Faster than Facisim", "manager": "Mark", "managerKey": "mark", "w": 17, "d": 0, "l": 21, "plus": 1362, "pts": 51 },
+        { "rank": 10, "team": "COMMUNISM FC", "manager": "Chris", "managerKey": "chris", "w": 16, "d": 0, "l": 22, "plus": 1319, "pts": 48 },
+        { "rank": 11, "team": "Mourinho's Ego FC", "manager": "Pat", "managerKey": "pat", "w": 15, "d": 1, "l": 22, "plus": 1520, "pts": 46 },
+        { "rank": 12, "team": "Muks Militia", "manager": "Marcus", "managerKey": "muk", "w": 14, "d": 1, "l": 23, "plus": 1411, "pts": 43 },
+        { "rank": 13, "team": "FCMC", "manager": "Matt", "managerKey": "matt", "w": 13, "d": 1, "l": 24, "plus": 1187, "pts": 40 },
+        { "rank": 14, "team": "Best of the Rest", "manager": "Noah", "managerKey": "noah", "w": 10, "d": 1, "l": 27, "plus": 1227, "pts": 31 }
+      ]
+    },
+    {
+      "year": "24/25",
+      "championKey": "david",
+      "table": [
+        { "rank": 1, "team": "Mark's Ego FC", "manager": "David", "managerKey": "david", "w": 25, "d": 0, "l": 13, "plus": 1724, "pts": 75 },
+        { "rank": 2, "team": "Syria FC **", "manager": "Ibrahim", "managerKey": "ibrahim", "w": 24, "d": 0, "l": 14, "plus": 1405, "pts": 72 },
+        { "rank": 3, "team": "FC Terror ball", "manager": "Marshall", "managerKey": "marshall", "w": 23, "d": 0, "l": 15, "plus": 1688, "pts": 69 },
+        { "rank": 4, "team": "Gooners back againFC", "manager": "Ostap", "managerKey": "ostap", "w": 21, "d": 2, "l": 15, "plus": 1492, "pts": 65 },
+        { "rank": 5, "team": "Lu's Rules FC ***", "manager": "Lu", "managerKey": "lu", "w": 21, "d": 0, "l": 17, "plus": 1493, "pts": 63 },
+        { "rank": 6, "team": "MUK'S MILITIA", "manager": "Muk", "managerKey": "muk", "w": 20, "d": 1, "l": 17, "plus": 1438, "pts": 61 },
+        { "rank": 7, "team": "Pearl Street Pirate", "manager": "Noah", "managerKey": "noah", "w": 17, "d": 1, "l": 20, "plus": 1452, "pts": 52 },
+        { "rank": 8, "team": "The Generals Law", "manager": "Mitch", "managerKey": "mitch", "w": 16, "d": 2, "l": 20, "plus": 1466, "pts": 50 },
+        { "rank": 9, "team": "Ape Luck", "manager": "Mark", "managerKey": "mark", "w": 13, "d": 6, "l": 19, "plus": 1405, "pts": 45 },
+        { "rank": 10, "team": "Heywoodyablome FC", "manager": "Pasquale", "managerKey": "pasquale", "w": 14, "d": 1, "l": 23, "plus": 1372, "pts": 43 },
+        { "rank": 11, "team": "NEEN FC", "manager": "Anthony", "managerKey": "anthony", "w": 13, "d": 2, "l": 23, "plus": 1374, "pts": 41 },
+        { "rank": 12, "team": "Mourinho's Ego", "manager": "Pat", "managerKey": "pat", "w": 13, "d": 1, "l": 24, "plus": 1571, "pts": 40 }
+      ]
+    }
+  ]
+}

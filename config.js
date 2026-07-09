@@ -2,8 +2,7 @@
 // everything else works unmodified. See README.md for the full setup walkthrough.
 export default {
   // The Draft league ID from the league's URL on draft.premierleague.com.
-  // Placeholder until the league is created for the new season.
-  LEAGUE_ID: 0,
+  LEAGUE_ID: 4888,
 
   // The gameweek(s) assigned to each FA Cup round. Round 1 and Round 4 are a
   // single gameweek; Round 2 and Round 3 are two-gameweek aggregates. Pick these

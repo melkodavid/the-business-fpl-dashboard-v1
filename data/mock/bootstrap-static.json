@@ -1921,234 +1921,161 @@
       "singular_name_short": "FWD"
     }
   ],
-  "events": [
-    {
-      "id": 1,
-      "finished": true,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 2,
-      "finished": true,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 3,
-      "finished": true,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 4,
-      "finished": true,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 5,
-      "finished": true,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 6,
-      "finished": true,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 7,
-      "finished": true,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 8,
-      "finished": true,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 9,
-      "finished": true,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 10,
-      "finished": true,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 11,
-      "finished": false,
-      "is_current": true,
-      "is_next": false
-    },
-    {
-      "id": 12,
-      "finished": false,
-      "is_current": false,
-      "is_next": true
-    },
-    {
-      "id": 13,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 14,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 15,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 16,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 17,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 18,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 19,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 20,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 21,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 22,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 23,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 24,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 25,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 26,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 27,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 28,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 29,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 30,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 31,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 32,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 33,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 34,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 35,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 36,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 37,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    },
-    {
-      "id": 38,
-      "finished": false,
-      "is_current": false,
-      "is_next": false
-    }
-  ]
+  "events": {
+    "current": 11,
+    "data": [
+      {
+        "id": 1,
+        "finished": true
+      },
+      {
+        "id": 2,
+        "finished": true
+      },
+      {
+        "id": 3,
+        "finished": true
+      },
+      {
+        "id": 4,
+        "finished": true
+      },
+      {
+        "id": 5,
+        "finished": true
+      },
+      {
+        "id": 6,
+        "finished": true
+      },
+      {
+        "id": 7,
+        "finished": true
+      },
+      {
+        "id": 8,
+        "finished": true
+      },
+      {
+        "id": 9,
+        "finished": true
+      },
+      {
+        "id": 10,
+        "finished": true
+      },
+      {
+        "id": 11,
+        "finished": false
+      },
+      {
+        "id": 12,
+        "finished": false
+      },
+      {
+        "id": 13,
+        "finished": false
+      },
+      {
+        "id": 14,
+        "finished": false
+      },
+      {
+        "id": 15,
+        "finished": false
+      },
+      {
+        "id": 16,
+        "finished": false
+      },
+      {
+        "id": 17,
+        "finished": false
+      },
+      {
+        "id": 18,
+        "finished": false
+      },
+      {
+        "id": 19,
+        "finished": false
+      },
+      {
+        "id": 20,
+        "finished": false
+      },
+      {
+        "id": 21,
+        "finished": false
+      },
+      {
+        "id": 22,
+        "finished": false
+      },
+      {
+        "id": 23,
+        "finished": false
+      },
+      {
+        "id": 24,
+        "finished": false
+      },
+      {
+        "id": 25,
+        "finished": false
+      },
+      {
+        "id": 26,
+        "finished": false
+      },
+      {
+        "id": 27,
+        "finished": false
+      },
+      {
+        "id": 28,
+        "finished": false
+      },
+      {
+        "id": 29,
+        "finished": false
+      },
+      {
+        "id": 30,
+        "finished": false
+      },
+      {
+        "id": 31,
+        "finished": false
+      },
+      {
+        "id": 32,
+        "finished": false
+      },
+      {
+        "id": 33,
+        "finished": false
+      },
+      {
+        "id": 34,
+        "finished": false
+      },
+      {
+        "id": 35,
+        "finished": false
+      },
+      {
+        "id": 36,
+        "finished": false
+      },
+      {
+        "id": 37,
+        "finished": false
+      },
+      {
+        "id": 38,
+        "finished": false
+      }
+    ]
+  }
 }

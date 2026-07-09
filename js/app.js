@@ -11,6 +11,7 @@ import { render as renderDraft } from "./render/draftGrades.js";
 import { render as renderTrades } from "./render/tradeLedger.js";
 import { render as renderWaivers } from "./render/waiverHitRate.js";
 import { render as renderForm } from "./render/formGuide.js";
+import { render as renderHistory } from "./render/history.js";
 import { render as renderCup } from "./render/cup.js";
 
 const ROUTES = {
@@ -26,6 +27,7 @@ const ROUTES = {
   trades: renderTrades,
   waivers: renderWaivers,
   form: renderForm,
+  history: renderHistory,
   cup: renderCup,
 };
 const DEFAULT_ROUTE = "standings";

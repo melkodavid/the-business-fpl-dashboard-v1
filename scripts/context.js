@@ -18,15 +18,27 @@ function firstDefined(obj, keys) {
   return undefined;
 }
 
+// First name, lowercased -- the stable cross-season identity key. Team names
+// change every year; a person's first name doesn't, so this is also how
+// manager-profiles.json and the historical honors data (history-seasons.json)
+// join to whichever team a person happens to be running this season.
+function personKeyFor(playerName) {
+  return (playerName ?? "").trim().split(/\s+/)[0]?.toLowerCase() ?? "";
+}
+
 function buildManagers(leagueEntries) {
-  const list = leagueEntries.map((raw) => ({
-    id: firstDefined(raw, ["id"]),
-    entryId: firstDefined(raw, ["entry_id", "entry"]),
-    name: firstDefined(raw, ["entry_name", "name"]),
-    shortName: firstDefined(raw, ["short_name", "entry_short_name"]),
-    playerName: [raw.player_first_name, raw.player_last_name].filter(Boolean).join(" "),
-    waiverPick: firstDefined(raw, ["waiver_pick"]),
-  }));
+  const list = leagueEntries.map((raw) => {
+    const playerName = [raw.player_first_name, raw.player_last_name].filter(Boolean).join(" ");
+    return {
+      id: firstDefined(raw, ["id"]),
+      entryId: firstDefined(raw, ["entry_id", "entry"]),
+      name: firstDefined(raw, ["entry_name", "name"]),
+      shortName: firstDefined(raw, ["short_name", "entry_short_name"]),
+      playerName,
+      personKey: personKeyFor(playerName),
+      waiverPick: firstDefined(raw, ["waiver_pick"]),
+    };
+  });
 
   return {
     list,
@@ -136,7 +148,7 @@ function buildGwPlayerStats(gw, live) {
   return result;
 }
 
-function buildGwPicks(gw, entriesForGw, entryIdToManagerId) {
+function buildGwPicks(gw, entriesForGw, entryIdToManagerId, matchScoreByGwManager) {
   const result = {};
   for (const [entryId, data] of Object.entries(entriesForGw)) {
     const picks = data.picks ?? [];
@@ -146,10 +158,23 @@ function buildGwPicks(gw, entriesForGw, entryIdToManagerId) {
       bench: picks.filter((p) => p.position >= 12).map((p) => p.element),
       captain: picks.find((p) => p.is_captain)?.element,
       viceCaptain: picks.find((p) => p.is_vice_captain)?.element,
-      totalPoints: data.entry_history?.points,
+      // entry_history.points has been observed empty ({}) for real leagues,
+      // so the authoritative source is each manager's own H2H match score for
+      // that GW (already fetched via league details); entry_history is kept
+      // only as a fallback for any data source where it IS populated.
+      totalPoints: matchScoreByGwManager.get(`${gw}:${managerId}`) ?? data.entry_history?.points,
     };
   }
   return result;
+}
+
+function buildMatchScoreByGwManager(matches) {
+  const map = new Map();
+  for (const m of matches) {
+    map.set(`${m.event}:${m.homeManagerId}`, m.homePoints);
+    map.set(`${m.event}:${m.awayManagerId}`, m.awayPoints);
+  }
+  return map;
 }
 
 export function buildContext(raw) {
@@ -166,14 +191,15 @@ export function buildContext(raw) {
   // *global* entry id instead, so that conversion happens once, here.
   const entryIdToManagerId = new Map(managers.list.map((m) => [m.entryId, m.id]));
 
-  const finishedGws = bootstrap.events.filter((e) => e.finished).map((e) => e.id).sort((a, b) => a - b);
+  const finishedGws = bootstrap.events.data.filter((e) => e.finished).map((e) => e.id).sort((a, b) => a - b);
   const currentGw = game.current_event;
 
+  const matchScoreByGwManager = buildMatchScoreByGwManager(matches);
   const gwPlayerStats = {};
   const gwPicks = {};
   for (const [gw, data] of Object.entries(events)) {
     gwPlayerStats[gw] = buildGwPlayerStats(gw, data.live);
-    gwPicks[gw] = buildGwPicks(gw, data.entries, entryIdToManagerId);
+    gwPicks[gw] = buildGwPicks(gw, data.entries, entryIdToManagerId, matchScoreByGwManager);
   }
 
   const normalizedDraftChoices = draftChoices.choices.map((c) => ({

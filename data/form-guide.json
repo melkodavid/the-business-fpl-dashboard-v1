@@ -1,148 +1,148 @@
 {
   "rows": [
     {
-      "managerId": 6,
-      "managerName": "Draft Dodgers",
+      "managerId": 89722,
+      "managerName": "NEEN FC",
       "gwsIncluded": [
-        6,
-        7,
-        8,
-        9,
-        10
+        34,
+        35,
+        36,
+        37,
+        38
       ],
-      "formPoints": 222
+      "formPoints": 254
     },
     {
-      "managerId": 1,
-      "managerName": "Galactic Ballers",
+      "managerId": 33346,
+      "managerName": "Muk’s Militia",
       "gwsIncluded": [
-        6,
-        7,
-        8,
-        9,
-        10
+        34,
+        35,
+        36,
+        37,
+        38
       ],
-      "formPoints": 221
+      "formPoints": 216
     },
     {
-      "managerId": 8,
-      "managerName": "Point Guardians",
+      "managerId": 18493,
+      "managerName": "Lu’s Rules FC ***",
       "gwsIncluded": [
-        6,
-        7,
-        8,
-        9,
-        10
+        34,
+        35,
+        36,
+        37,
+        38
       ],
-      "formPoints": 210
+      "formPoints": 213
     },
     {
-      "managerId": 10,
-      "managerName": "Set Piece Society",
+      "managerId": 146136,
+      "managerName": "Auto Draft 2025",
       "gwsIncluded": [
-        6,
-        7,
-        8,
-        9,
-        10
+        34,
+        35,
+        36,
+        37,
+        38
       ],
-      "formPoints": 210
+      "formPoints": 208
     },
     {
-      "managerId": 2,
-      "managerName": "Midweek Warriors",
+      "managerId": 18710,
+      "managerName": "Big BUMBO FC",
       "gwsIncluded": [
-        6,
-        7,
-        8,
-        9,
-        10
+        34,
+        35,
+        36,
+        37,
+        38
       ],
-      "formPoints": 204
+      "formPoints": 200
     },
     {
-      "managerId": 11,
-      "managerName": "Autopilot XI",
+      "managerId": 79487,
+      "managerName": "FC General",
       "gwsIncluded": [
-        6,
-        7,
-        8,
-        9,
-        10
+        34,
+        35,
+        36,
+        37,
+        38
       ],
-      "formPoints": 204
+      "formPoints": 193
     },
     {
-      "managerId": 4,
-      "managerName": "Tactically Naive FC",
+      "managerId": 55642,
+      "managerName": "Mou’s Ego Unlimited",
       "gwsIncluded": [
-        6,
-        7,
-        8,
-        9,
-        10
+        34,
+        35,
+        36,
+        37,
+        38
       ],
-      "formPoints": 194
+      "formPoints": 190
     },
     {
-      "managerId": 9,
-      "managerName": "The Kwoncept",
+      "managerId": 139975,
+      "managerName": "Gooners quadruple FC",
       "gwsIncluded": [
-        6,
-        7,
-        8,
-        9,
-        10
+        34,
+        35,
+        36,
+        37,
+        38
       ],
-      "formPoints": 187
+      "formPoints": 185
     },
     {
-      "managerId": 12,
-      "managerName": "Sunday League Legends",
+      "managerId": 130236,
+      "managerName": "Kiss My Pass FC",
       "gwsIncluded": [
-        6,
-        7,
-        8,
-        9,
-        10
+        34,
+        35,
+        36,
+        37,
+        38
       ],
-      "formPoints": 178
+      "formPoints": 179
     },
     {
-      "managerId": 5,
-      "managerName": "Bench Press United",
+      "managerId": 18802,
+      "managerName": "Chud FC*",
       "gwsIncluded": [
-        6,
-        7,
-        8,
-        9,
-        10
+        34,
+        35,
+        36,
+        37,
+        38
       ],
-      "formPoints": 176
+      "formPoints": 166
     },
     {
-      "managerId": 3,
-      "managerName": "The Xavi Files",
+      "managerId": 19191,
+      "managerName": "Pearl Street Pirates",
       "gwsIncluded": [
-        6,
-        7,
-        8,
-        9,
-        10
+        34,
+        35,
+        36,
+        37,
+        38
       ],
-      "formPoints": 172
+      "formPoints": 156
     },
     {
-      "managerId": 7,
-      "managerName": "Zonal Marking Zealots",
+      "managerId": 18616,
+      "managerName": "Syria FC **",
       "gwsIncluded": [
-        6,
-        7,
-        8,
-        9,
-        10
+        34,
+        35,
+        36,
+        37,
+        38
       ],
-      "formPoints": 164
+      "formPoints": 153
     }
   ]
 }

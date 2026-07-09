@@ -1,132 +1,1096 @@
 {
   "log": [
     {
-      "tradeId": 1,
+      "tradeId": 167465,
+      "gw": 3,
+      "sides": [
+        {
+          "managerId": 18802,
+          "received": [
+            {
+              "elementId": 74,
+              "playerName": "Truffert",
+              "points": 159
+            }
+          ],
+          "given": [
+            {
+              "elementId": 682,
+              "playerName": "Diakité",
+              "points": 20
+            }
+          ],
+          "gained": 159,
+          "givenUp": 20,
+          "netValue": 139
+        },
+        {
+          "managerId": 19191,
+          "received": [
+            {
+              "elementId": 682,
+              "playerName": "Diakité",
+              "points": 20
+            }
+          ],
+          "given": [
+            {
+              "elementId": 74,
+              "playerName": "Truffert",
+              "points": 159
+            }
+          ],
+          "gained": 20,
+          "givenUp": 159,
+          "netValue": -139
+        }
+      ]
+    },
+    {
+      "tradeId": 181669,
+      "gw": 3,
+      "sides": [
+        {
+          "managerId": 18710,
+          "received": [
+            {
+              "elementId": 225,
+              "playerName": "James",
+              "points": 107
+            },
+            {
+              "elementId": 200,
+              "playerName": "Anthony",
+              "points": 112
+            }
+          ],
+          "given": [
+            {
+              "elementId": 409,
+              "playerName": "Stones",
+              "points": 2
+            },
+            {
+              "elementId": 390,
+              "playerName": "Gravenberch",
+              "points": 30
+            }
+          ],
+          "gained": 219,
+          "givenUp": 32,
+          "netValue": 187
+        },
+        {
+          "managerId": 18616,
+          "received": [
+            {
+              "elementId": 409,
+              "playerName": "Stones",
+              "points": 2
+            },
+            {
+              "elementId": 390,
+              "playerName": "Gravenberch",
+              "points": 30
+            }
+          ],
+          "given": [
+            {
+              "elementId": 225,
+              "playerName": "James",
+              "points": 107
+            },
+            {
+              "elementId": 200,
+              "playerName": "Anthony",
+              "points": 112
+            }
+          ],
+          "gained": 32,
+          "givenUp": 219,
+          "netValue": -187
+        }
+      ]
+    },
+    {
+      "tradeId": 227614,
+      "gw": 4,
+      "sides": [
+        {
+          "managerId": 18493,
+          "received": [
+            {
+              "elementId": 232,
+              "playerName": "Tosin",
+              "points": 1
+            },
+            {
+              "elementId": 256,
+              "playerName": "Muñoz",
+              "points": 94
+            },
+            {
+              "elementId": 164,
+              "playerName": "O'Riley",
+              "points": 4
+            }
+          ],
+          "given": [
+            {
+              "elementId": 113,
+              "playerName": "Van den Berg",
+              "points": 2
+            },
+            {
+              "elementId": 295,
+              "playerName": "Keane",
+              "points": 118
+            },
+            {
+              "elementId": 427,
+              "playerName": "Reijnders",
+              "points": 71
+            }
+          ],
+          "gained": 99,
+          "givenUp": 191,
+          "netValue": -92
+        },
+        {
+          "managerId": 79487,
+          "received": [
+            {
+              "elementId": 113,
+              "playerName": "Van den Berg",
+              "points": 2
+            },
+            {
+              "elementId": 295,
+              "playerName": "Keane",
+              "points": 118
+            },
+            {
+              "elementId": 427,
+              "playerName": "Reijnders",
+              "points": 71
+            }
+          ],
+          "given": [
+            {
+              "elementId": 232,
+              "playerName": "Tosin",
+              "points": 1
+            },
+            {
+              "elementId": 256,
+              "playerName": "Muñoz",
+              "points": 94
+            },
+            {
+              "elementId": 164,
+              "playerName": "O'Riley",
+              "points": 4
+            }
+          ],
+          "gained": 191,
+          "givenUp": 99,
+          "netValue": 92
+        }
+      ]
+    },
+    {
+      "tradeId": 280486,
+      "gw": 5,
+      "sides": [
+        {
+          "managerId": 18710,
+          "received": [
+            {
+              "elementId": 47,
+              "playerName": "Rogers",
+              "points": 159
+            }
+          ],
+          "given": [
+            {
+              "elementId": 382,
+              "playerName": "Wirtz",
+              "points": 115
+            }
+          ],
+          "gained": 159,
+          "givenUp": 115,
+          "netValue": 44
+        },
+        {
+          "managerId": 18616,
+          "received": [
+            {
+              "elementId": 382,
+              "playerName": "Wirtz",
+              "points": 115
+            }
+          ],
+          "given": [
+            {
+              "elementId": 47,
+              "playerName": "Rogers",
+              "points": 159
+            }
+          ],
+          "gained": 115,
+          "givenUp": 159,
+          "netValue": -44
+        }
+      ]
+    },
+    {
+      "tradeId": 280489,
+      "gw": 5,
+      "sides": [
+        {
+          "managerId": 18710,
+          "received": [
+            {
+              "elementId": 238,
+              "playerName": "Estêvão",
+              "points": 24
+            }
+          ],
+          "given": [
+            {
+              "elementId": 452,
+              "playerName": "Amad",
+              "points": 82
+            }
+          ],
+          "gained": 24,
+          "givenUp": 82,
+          "netValue": -58
+        },
+        {
+          "managerId": 18802,
+          "received": [
+            {
+              "elementId": 452,
+              "playerName": "Amad",
+              "points": 82
+            }
+          ],
+          "given": [
+            {
+              "elementId": 238,
+              "playerName": "Estêvão",
+              "points": 24
+            }
+          ],
+          "gained": 82,
+          "givenUp": 24,
+          "netValue": 58
+        }
+      ]
+    },
+    {
+      "tradeId": 280495,
+      "gw": 5,
+      "sides": [
+        {
+          "managerId": 18802,
+          "received": [
+            {
+              "elementId": 444,
+              "playerName": "Yoro",
+              "points": 44
+            },
+            {
+              "elementId": 382,
+              "playerName": "Wirtz",
+              "points": 115
+            }
+          ],
+          "given": [
+            {
+              "elementId": 374,
+              "playerName": "Konaté",
+              "points": 113
+            },
+            {
+              "elementId": 452,
+              "playerName": "Amad",
+              "points": 82
+            }
+          ],
+          "gained": 159,
+          "givenUp": 195,
+          "netValue": -36
+        },
+        {
+          "managerId": 18616,
+          "received": [
+            {
+              "elementId": 374,
+              "playerName": "Konaté",
+              "points": 113
+            },
+            {
+              "elementId": 452,
+              "playerName": "Amad",
+              "points": 82
+            }
+          ],
+          "given": [
+            {
+              "elementId": 444,
+              "playerName": "Yoro",
+              "points": 44
+            },
+            {
+              "elementId": 382,
+              "playerName": "Wirtz",
+              "points": 115
+            }
+          ],
+          "gained": 195,
+          "givenUp": 159,
+          "netValue": 36
+        }
+      ]
+    },
+    {
+      "tradeId": 291833,
+      "gw": 5,
+      "sides": [
+        {
+          "managerId": 79487,
+          "received": [
+            {
+              "elementId": 291,
+              "playerName": "Tarkowski",
+              "points": 147
+            },
+            {
+              "elementId": 424,
+              "playerName": "Bobb",
+              "points": 31
+            }
+          ],
+          "given": [
+            {
+              "elementId": 228,
+              "playerName": "Gusto",
+              "points": 64
+            },
+            {
+              "elementId": 516,
+              "playerName": "Hudson-Odoi",
+              "points": 2
+            }
+          ],
+          "gained": 178,
+          "givenUp": 66,
+          "netValue": 112
+        },
+        {
+          "managerId": 55642,
+          "received": [
+            {
+              "elementId": 228,
+              "playerName": "Gusto",
+              "points": 64
+            },
+            {
+              "elementId": 516,
+              "playerName": "Hudson-Odoi",
+              "points": 2
+            }
+          ],
+          "given": [
+            {
+              "elementId": 291,
+              "playerName": "Tarkowski",
+              "points": 147
+            },
+            {
+              "elementId": 424,
+              "playerName": "Bobb",
+              "points": 31
+            }
+          ],
+          "gained": 66,
+          "givenUp": 178,
+          "netValue": -112
+        }
+      ]
+    },
+    {
+      "tradeId": 311274,
       "gw": 6,
       "sides": [
         {
-          "managerId": 1,
+          "managerId": 18493,
           "received": [
             {
-              "elementId": 45,
-              "playerName": "H. Halvorsen44",
-              "points": 20
-            },
-            {
-              "elementId": 115,
-              "playerName": "C. Costa114",
-              "points": 13
+              "elementId": 715,
+              "playerName": "Woltemade",
+              "points": 84
             }
           ],
           "given": [
             {
-              "elementId": 41,
-              "playerName": "S. Santos40",
-              "points": 8
-            },
-            {
-              "elementId": 96,
-              "playerName": "N. Novak95",
-              "points": 22
+              "elementId": 525,
+              "playerName": "Wood",
+              "points": 5
             }
           ],
-          "gained": 33,
-          "givenUp": 30,
-          "netValue": 3
+          "gained": 84,
+          "givenUp": 5,
+          "netValue": 79
         },
         {
-          "managerId": 2,
+          "managerId": 18710,
           "received": [
             {
-              "elementId": 41,
-              "playerName": "S. Santos40",
-              "points": 8
-            },
-            {
-              "elementId": 96,
-              "playerName": "N. Novak95",
-              "points": 22
+              "elementId": 525,
+              "playerName": "Wood",
+              "points": 5
             }
           ],
           "given": [
             {
-              "elementId": 45,
-              "playerName": "H. Halvorsen44",
-              "points": 20
-            },
-            {
-              "elementId": 115,
-              "playerName": "C. Costa114",
-              "points": 13
+              "elementId": 715,
+              "playerName": "Woltemade",
+              "points": 84
             }
           ],
-          "gained": 30,
-          "givenUp": 33,
-          "netValue": -3
+          "gained": 5,
+          "givenUp": 84,
+          "netValue": -79
+        }
+      ]
+    },
+    {
+      "tradeId": 321280,
+      "gw": 6,
+      "sides": [
+        {
+          "managerId": 18493,
+          "received": [
+            {
+              "elementId": 541,
+              "playerName": "Reinildo",
+              "points": 60
+            },
+            {
+              "elementId": 449,
+              "playerName": "B.Fernandes",
+              "points": 209
+            },
+            {
+              "elementId": 733,
+              "playerName": "Brobbey",
+              "points": 1
+            }
+          ],
+          "given": [
+            {
+              "elementId": 473,
+              "playerName": "Hall",
+              "points": 0
+            },
+            {
+              "elementId": 421,
+              "playerName": "Rodrigo",
+              "points": 59
+            },
+            {
+              "elementId": 597,
+              "playerName": "Richarlison",
+              "points": 90
+            }
+          ],
+          "gained": 270,
+          "givenUp": 149,
+          "netValue": 121
+        },
+        {
+          "managerId": 146136,
+          "received": [
+            {
+              "elementId": 473,
+              "playerName": "Hall",
+              "points": 0
+            },
+            {
+              "elementId": 421,
+              "playerName": "Rodrigo",
+              "points": 59
+            },
+            {
+              "elementId": 597,
+              "playerName": "Richarlison",
+              "points": 90
+            }
+          ],
+          "given": [
+            {
+              "elementId": 541,
+              "playerName": "Reinildo",
+              "points": 60
+            },
+            {
+              "elementId": 449,
+              "playerName": "B.Fernandes",
+              "points": 209
+            },
+            {
+              "elementId": 733,
+              "playerName": "Brobbey",
+              "points": 1
+            }
+          ],
+          "gained": 149,
+          "givenUp": 270,
+          "netValue": -121
+        }
+      ]
+    },
+    {
+      "tradeId": 370967,
+      "gw": 7,
+      "sides": [
+        {
+          "managerId": 18802,
+          "received": [
+            {
+              "elementId": 120,
+              "playerName": "Schade",
+              "points": 98
+            },
+            {
+              "elementId": 654,
+              "playerName": "Strand Larsen",
+              "points": 68
+            }
+          ],
+          "given": [
+            {
+              "elementId": 386,
+              "playerName": "Mac Allister",
+              "points": 19
+            },
+            {
+              "elementId": 136,
+              "playerName": "Thiago",
+              "points": 2
+            }
+          ],
+          "gained": 166,
+          "givenUp": 21,
+          "netValue": 145
+        },
+        {
+          "managerId": 146136,
+          "received": [
+            {
+              "elementId": 386,
+              "playerName": "Mac Allister",
+              "points": 19
+            },
+            {
+              "elementId": 136,
+              "playerName": "Thiago",
+              "points": 2
+            }
+          ],
+          "given": [
+            {
+              "elementId": 120,
+              "playerName": "Schade",
+              "points": 98
+            },
+            {
+              "elementId": 654,
+              "playerName": "Strand Larsen",
+              "points": 68
+            }
+          ],
+          "gained": 21,
+          "givenUp": 166,
+          "netValue": -145
+        }
+      ]
+    },
+    {
+      "tradeId": 371089,
+      "gw": 7,
+      "sides": [
+        {
+          "managerId": 18802,
+          "received": [
+            {
+              "elementId": 469,
+              "playerName": "Pope",
+              "points": 48
+            },
+            {
+              "elementId": 673,
+              "playerName": "Ramsdale",
+              "points": 11
+            },
+            {
+              "elementId": 299,
+              "playerName": "Ndiaye",
+              "points": 98
+            },
+            {
+              "elementId": 735,
+              "playerName": "Kolo Muani",
+              "points": 19
+            }
+          ],
+          "given": [
+            {
+              "elementId": 728,
+              "playerName": "Donnarumma",
+              "points": 126
+            },
+            {
+              "elementId": 628,
+              "playerName": "José Sá",
+              "points": 63
+            },
+            {
+              "elementId": 517,
+              "playerName": "Anderson",
+              "points": 159
+            },
+            {
+              "elementId": 97,
+              "playerName": "Evanilson",
+              "points": 95
+            }
+          ],
+          "gained": 176,
+          "givenUp": 443,
+          "netValue": -267
+        },
+        {
+          "managerId": 18493,
+          "received": [
+            {
+              "elementId": 728,
+              "playerName": "Donnarumma",
+              "points": 126
+            },
+            {
+              "elementId": 628,
+              "playerName": "José Sá",
+              "points": 63
+            },
+            {
+              "elementId": 517,
+              "playerName": "Anderson",
+              "points": 159
+            },
+            {
+              "elementId": 97,
+              "playerName": "Evanilson",
+              "points": 95
+            }
+          ],
+          "given": [
+            {
+              "elementId": 469,
+              "playerName": "Pope",
+              "points": 48
+            },
+            {
+              "elementId": 673,
+              "playerName": "Ramsdale",
+              "points": 11
+            },
+            {
+              "elementId": 299,
+              "playerName": "Ndiaye",
+              "points": 98
+            },
+            {
+              "elementId": 735,
+              "playerName": "Kolo Muani",
+              "points": 19
+            }
+          ],
+          "gained": 443,
+          "givenUp": 176,
+          "netValue": 267
+        }
+      ]
+    },
+    {
+      "tradeId": 395966,
+      "gw": 8,
+      "sides": [
+        {
+          "managerId": 18616,
+          "received": [
+            {
+              "elementId": 148,
+              "playerName": "F.Kadıoğlu",
+              "points": 109
+            },
+            {
+              "elementId": 54,
+              "playerName": "McGinn",
+              "points": 50
+            },
+            {
+              "elementId": 584,
+              "playerName": "Tel",
+              "points": 8
+            },
+            {
+              "elementId": 661,
+              "playerName": "Gyökeres",
+              "points": 102
+            }
+          ],
+          "given": [
+            {
+              "elementId": 476,
+              "playerName": "Burn",
+              "points": 50
+            },
+            {
+              "elementId": 390,
+              "playerName": "Gravenberch",
+              "points": 88
+            },
+            {
+              "elementId": 489,
+              "playerName": "J.Murphy",
+              "points": 34
+            },
+            {
+              "elementId": 526,
+              "playerName": "Igor Jesus",
+              "points": 108
+            }
+          ],
+          "gained": 269,
+          "givenUp": 280,
+          "netValue": -11
+        },
+        {
+          "managerId": 55642,
+          "received": [
+            {
+              "elementId": 476,
+              "playerName": "Burn",
+              "points": 50
+            },
+            {
+              "elementId": 390,
+              "playerName": "Gravenberch",
+              "points": 88
+            },
+            {
+              "elementId": 489,
+              "playerName": "J.Murphy",
+              "points": 34
+            },
+            {
+              "elementId": 526,
+              "playerName": "Igor Jesus",
+              "points": 108
+            }
+          ],
+          "given": [
+            {
+              "elementId": 148,
+              "playerName": "F.Kadıoğlu",
+              "points": 109
+            },
+            {
+              "elementId": 54,
+              "playerName": "McGinn",
+              "points": 50
+            },
+            {
+              "elementId": 584,
+              "playerName": "Tel",
+              "points": 8
+            },
+            {
+              "elementId": 661,
+              "playerName": "Gyökeres",
+              "points": 102
+            }
+          ],
+          "gained": 280,
+          "givenUp": 269,
+          "netValue": 11
+        }
+      ]
+    },
+    {
+      "tradeId": 397783,
+      "gw": 8,
+      "sides": [
+        {
+          "managerId": 19191,
+          "received": [
+            {
+              "elementId": 473,
+              "playerName": "Hall",
+              "points": 70
+            },
+            {
+              "elementId": 574,
+              "playerName": "Udogie",
+              "points": 0
+            },
+            {
+              "elementId": 136,
+              "playerName": "Thiago",
+              "points": 149
+            }
+          ],
+          "given": [
+            {
+              "elementId": 260,
+              "playerName": "Guéhi",
+              "points": 133
+            },
+            {
+              "elementId": 226,
+              "playerName": "Chalobah",
+              "points": 96
+            },
+            {
+              "elementId": 736,
+              "playerName": "Tolu",
+              "points": 2
+            }
+          ],
+          "gained": 219,
+          "givenUp": 231,
+          "netValue": -12
+        },
+        {
+          "managerId": 146136,
+          "received": [
+            {
+              "elementId": 260,
+              "playerName": "Guéhi",
+              "points": 133
+            },
+            {
+              "elementId": 226,
+              "playerName": "Chalobah",
+              "points": 96
+            },
+            {
+              "elementId": 736,
+              "playerName": "Tolu",
+              "points": 2
+            }
+          ],
+          "given": [
+            {
+              "elementId": 473,
+              "playerName": "Hall",
+              "points": 70
+            },
+            {
+              "elementId": 574,
+              "playerName": "Udogie",
+              "points": 0
+            },
+            {
+              "elementId": 136,
+              "playerName": "Thiago",
+              "points": 149
+            }
+          ],
+          "gained": 231,
+          "givenUp": 219,
+          "netValue": 12
+        }
+      ]
+    },
+    {
+      "tradeId": 397843,
+      "gw": 8,
+      "sides": [
+        {
+          "managerId": 18710,
+          "received": [
+            {
+              "elementId": 119,
+              "playerName": "Mbeumo",
+              "points": 121
+            },
+            {
+              "elementId": 311,
+              "playerName": "Beto",
+              "points": 8
+            }
+          ],
+          "given": [
+            {
+              "elementId": 418,
+              "playerName": "Doku",
+              "points": 2
+            },
+            {
+              "elementId": 283,
+              "playerName": "Mateta",
+              "points": 64
+            }
+          ],
+          "gained": 129,
+          "givenUp": 66,
+          "netValue": 63
+        },
+        {
+          "managerId": 19191,
+          "received": [
+            {
+              "elementId": 418,
+              "playerName": "Doku",
+              "points": 2
+            },
+            {
+              "elementId": 283,
+              "playerName": "Mateta",
+              "points": 64
+            }
+          ],
+          "given": [
+            {
+              "elementId": 119,
+              "playerName": "Mbeumo",
+              "points": 121
+            },
+            {
+              "elementId": 311,
+              "playerName": "Beto",
+              "points": 8
+            }
+          ],
+          "gained": 66,
+          "givenUp": 129,
+          "netValue": -63
+        }
+      ]
+    },
+    {
+      "tradeId": 661319,
+      "gw": 19,
+      "sides": [
+        {
+          "managerId": 18493,
+          "received": [
+            {
+              "elementId": 106,
+              "playerName": "Collins",
+              "points": 34
+            }
+          ],
+          "given": [
+            {
+              "elementId": 261,
+              "playerName": "Richards",
+              "points": 53
+            }
+          ],
+          "gained": 34,
+          "givenUp": 53,
+          "netValue": -19
+        },
+        {
+          "managerId": 19191,
+          "received": [
+            {
+              "elementId": 261,
+              "playerName": "Richards",
+              "points": 53
+            }
+          ],
+          "given": [
+            {
+              "elementId": 106,
+              "playerName": "Collins",
+              "points": 34
+            }
+          ],
+          "gained": 53,
+          "givenUp": 34,
+          "netValue": 19
         }
       ]
     }
   ],
   "leaderboard": [
     {
-      "managerId": 1,
-      "managerName": "Galactic Ballers",
-      "netTradeValue": 3
+      "managerId": 18493,
+      "managerName": "Lu’s Rules FC ***",
+      "netTradeValue": 356
     },
     {
-      "managerId": 3,
-      "managerName": "The Xavi Files",
+      "managerId": 79487,
+      "managerName": "FC General",
+      "netTradeValue": 204
+    },
+    {
+      "managerId": 18710,
+      "managerName": "Big BUMBO FC",
+      "netTradeValue": 157
+    },
+    {
+      "managerId": 18802,
+      "managerName": "Chud FC*",
+      "netTradeValue": 39
+    },
+    {
+      "managerId": 33346,
+      "managerName": "Muk’s Militia",
       "netTradeValue": 0
     },
     {
-      "managerId": 4,
-      "managerName": "Tactically Naive FC",
+      "managerId": 89722,
+      "managerName": "NEEN FC",
       "netTradeValue": 0
     },
     {
-      "managerId": 5,
-      "managerName": "Bench Press United",
+      "managerId": 130236,
+      "managerName": "Kiss My Pass FC",
       "netTradeValue": 0
     },
     {
-      "managerId": 6,
-      "managerName": "Draft Dodgers",
+      "managerId": 139975,
+      "managerName": "Gooners quadruple FC",
       "netTradeValue": 0
     },
     {
-      "managerId": 7,
-      "managerName": "Zonal Marking Zealots",
-      "netTradeValue": 0
+      "managerId": 55642,
+      "managerName": "Mou’s Ego Unlimited",
+      "netTradeValue": -101
     },
     {
-      "managerId": 8,
-      "managerName": "Point Guardians",
-      "netTradeValue": 0
+      "managerId": 19191,
+      "managerName": "Pearl Street Pirates",
+      "netTradeValue": -195
     },
     {
-      "managerId": 9,
-      "managerName": "The Kwoncept",
-      "netTradeValue": 0
+      "managerId": 18616,
+      "managerName": "Syria FC **",
+      "netTradeValue": -206
     },
     {
-      "managerId": 10,
-      "managerName": "Set Piece Society",
-      "netTradeValue": 0
-    },
-    {
-      "managerId": 11,
-      "managerName": "Autopilot XI",
-      "netTradeValue": 0
-    },
-    {
-      "managerId": 12,
-      "managerName": "Sunday League Legends",
-      "netTradeValue": 0
-    },
-    {
-      "managerId": 2,
-      "managerName": "Midweek Warriors",
-      "netTradeValue": -3
+      "managerId": 146136,
+      "managerName": "Auto Draft 2025",
+      "netTradeValue": -254
     }
   ]
 }

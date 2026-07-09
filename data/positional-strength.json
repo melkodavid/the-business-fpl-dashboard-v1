@@ -1,220 +1,220 @@
 {
   "perManager": [
     {
-      "managerId": 1,
-      "managerName": "Galactic Ballers",
+      "managerId": 18493,
+      "managerName": "Lu’s Rules FC ***",
       "for": {
-        "GK": 34,
-        "DEF": 141,
-        "MID": 148,
-        "FWD": 64
+        "GK": 160,
+        "DEF": 650,
+        "MID": 793,
+        "FWD": 243
       },
       "against": {
-        "GK": 24,
-        "DEF": 144,
-        "MID": 104,
-        "FWD": 57
-      },
-      "topForPosition": "MID",
-      "topAgainstPosition": "DEF"
-    },
-    {
-      "managerId": 2,
-      "managerName": "Midweek Warriors",
-      "for": {
-        "GK": 25,
-        "DEF": 178,
-        "MID": 126,
-        "FWD": 62
-      },
-      "against": {
-        "GK": 42,
-        "DEF": 167,
-        "MID": 135,
-        "FWD": 41
-      },
-      "topForPosition": "DEF",
-      "topAgainstPosition": "DEF"
-    },
-    {
-      "managerId": 3,
-      "managerName": "The Xavi Files",
-      "for": {
-        "GK": 27,
-        "DEF": 114,
-        "MID": 108,
-        "FWD": 49
-      },
-      "against": {
-        "GK": 32,
-        "DEF": 166,
-        "MID": 113,
-        "FWD": 56
-      },
-      "topForPosition": "DEF",
-      "topAgainstPosition": "DEF"
-    },
-    {
-      "managerId": 4,
-      "managerName": "Tactically Naive FC",
-      "for": {
-        "GK": 31,
-        "DEF": 125,
-        "MID": 130,
-        "FWD": 60
-      },
-      "against": {
-        "GK": 30,
-        "DEF": 142,
-        "MID": 144,
-        "FWD": 43
+        "GK": 124,
+        "DEF": 536,
+        "MID": 593,
+        "FWD": 301
       },
       "topForPosition": "MID",
       "topAgainstPosition": "MID"
     },
     {
-      "managerId": 5,
-      "managerName": "Bench Press United",
+      "managerId": 18616,
+      "managerName": "Syria FC **",
       "for": {
-        "GK": 31,
-        "DEF": 134,
-        "MID": 129,
-        "FWD": 44
+        "GK": 125,
+        "DEF": 499,
+        "MID": 563,
+        "FWD": 353
       },
       "against": {
-        "GK": 27,
-        "DEF": 145,
-        "MID": 125,
-        "FWD": 50
+        "GK": 112,
+        "DEF": 644,
+        "MID": 631,
+        "FWD": 240
+      },
+      "topForPosition": "MID",
+      "topAgainstPosition": "DEF"
+    },
+    {
+      "managerId": 18710,
+      "managerName": "Big BUMBO FC",
+      "for": {
+        "GK": 128,
+        "DEF": 544,
+        "MID": 630,
+        "FWD": 184
+      },
+      "against": {
+        "GK": 101,
+        "DEF": 517,
+        "MID": 570,
+        "FWD": 262
+      },
+      "topForPosition": "MID",
+      "topAgainstPosition": "MID"
+    },
+    {
+      "managerId": 18802,
+      "managerName": "Chud FC*",
+      "for": {
+        "GK": 93,
+        "DEF": 585,
+        "MID": 556,
+        "FWD": 224
+      },
+      "against": {
+        "GK": 133,
+        "DEF": 626,
+        "MID": 593,
+        "FWD": 266
       },
       "topForPosition": "DEF",
       "topAgainstPosition": "DEF"
     },
     {
-      "managerId": 6,
-      "managerName": "Draft Dodgers",
+      "managerId": 19191,
+      "managerName": "Pearl Street Pirates",
       "for": {
-        "GK": 43,
-        "DEF": 164,
-        "MID": 156,
-        "FWD": 40
+        "GK": 116,
+        "DEF": 427,
+        "MID": 557,
+        "FWD": 416
       },
       "against": {
-        "GK": 27,
-        "DEF": 151,
-        "MID": 138,
-        "FWD": 55
+        "GK": 130,
+        "DEF": 578,
+        "MID": 641,
+        "FWD": 239
       },
-      "topForPosition": "DEF",
-      "topAgainstPosition": "DEF"
+      "topForPosition": "MID",
+      "topAgainstPosition": "MID"
     },
     {
-      "managerId": 7,
-      "managerName": "Zonal Marking Zealots",
+      "managerId": 33346,
+      "managerName": "Muk’s Militia",
       "for": {
-        "GK": 20,
-        "DEF": 160,
-        "MID": 126,
-        "FWD": 40
+        "GK": 123,
+        "DEF": 608,
+        "MID": 715,
+        "FWD": 141
       },
       "against": {
-        "GK": 35,
-        "DEF": 142,
-        "MID": 118,
-        "FWD": 66
+        "GK": 147,
+        "DEF": 548,
+        "MID": 568,
+        "FWD": 275
       },
-      "topForPosition": "DEF",
-      "topAgainstPosition": "DEF"
+      "topForPosition": "MID",
+      "topAgainstPosition": "MID"
     },
     {
-      "managerId": 8,
-      "managerName": "Point Guardians",
+      "managerId": 55642,
+      "managerName": "Mou’s Ego Unlimited",
       "for": {
-        "GK": 38,
-        "DEF": 183,
-        "MID": 109,
-        "FWD": 63
+        "GK": 161,
+        "DEF": 546,
+        "MID": 513,
+        "FWD": 211
       },
       "against": {
-        "GK": 43,
-        "DEF": 156,
-        "MID": 121,
-        "FWD": 51
-      },
-      "topForPosition": "DEF",
-      "topAgainstPosition": "DEF"
-    },
-    {
-      "managerId": 9,
-      "managerName": "The Kwoncept",
-      "for": {
-        "GK": 37,
-        "DEF": 175,
-        "MID": 109,
-        "FWD": 50
-      },
-      "against": {
-        "GK": 34,
-        "DEF": 130,
-        "MID": 131,
-        "FWD": 59
+        "GK": 137,
+        "DEF": 525,
+        "MID": 686,
+        "FWD": 302
       },
       "topForPosition": "DEF",
       "topAgainstPosition": "MID"
     },
     {
-      "managerId": 10,
-      "managerName": "Set Piece Society",
+      "managerId": 79487,
+      "managerName": "FC General",
       "for": {
-        "GK": 38,
-        "DEF": 136,
-        "MID": 130,
-        "FWD": 56
+        "GK": 144,
+        "DEF": 642,
+        "MID": 651,
+        "FWD": 208
       },
       "against": {
-        "GK": 34,
-        "DEF": 143,
-        "MID": 150,
-        "FWD": 42
+        "GK": 151,
+        "DEF": 529,
+        "MID": 587,
+        "FWD": 303
       },
-      "topForPosition": "DEF",
+      "topForPosition": "MID",
       "topAgainstPosition": "MID"
     },
     {
-      "managerId": 11,
-      "managerName": "Autopilot XI",
+      "managerId": 89722,
+      "managerName": "NEEN FC",
       "for": {
-        "GK": 17,
-        "DEF": 166,
-        "MID": 135,
-        "FWD": 52
+        "GK": 168,
+        "DEF": 531,
+        "MID": 623,
+        "FWD": 358
       },
       "against": {
-        "GK": 23,
-        "DEF": 155,
-        "MID": 123,
-        "FWD": 54
+        "GK": 168,
+        "DEF": 571,
+        "MID": 567,
+        "FWD": 229
       },
-      "topForPosition": "DEF",
+      "topForPosition": "MID",
       "topAgainstPosition": "DEF"
     },
     {
-      "managerId": 12,
-      "managerName": "Sunday League Legends",
+      "managerId": 130236,
+      "managerName": "Kiss My Pass FC",
       "for": {
-        "GK": 41,
-        "DEF": 135,
-        "MID": 103,
-        "FWD": 51
+        "GK": 105,
+        "DEF": 532,
+        "MID": 562,
+        "FWD": 268
       },
       "against": {
-        "GK": 31,
-        "DEF": 170,
-        "MID": 107,
-        "FWD": 57
+        "GK": 162,
+        "DEF": 541,
+        "MID": 611,
+        "FWD": 266
+      },
+      "topForPosition": "MID",
+      "topAgainstPosition": "MID"
+    },
+    {
+      "managerId": 139975,
+      "managerName": "Gooners quadruple FC",
+      "for": {
+        "GK": 149,
+        "DEF": 453,
+        "MID": 577,
+        "FWD": 268
+      },
+      "against": {
+        "GK": 126,
+        "DEF": 570,
+        "MID": 616,
+        "FWD": 217
+      },
+      "topForPosition": "MID",
+      "topAgainstPosition": "MID"
+    },
+    {
+      "managerId": 146136,
+      "managerName": "Auto Draft 2025",
+      "for": {
+        "GK": 141,
+        "DEF": 655,
+        "MID": 479,
+        "FWD": 282
+      },
+      "against": {
+        "GK": 122,
+        "DEF": 487,
+        "MID": 556,
+        "FWD": 256
       },
       "topForPosition": "DEF",
-      "topAgainstPosition": "DEF"
+      "topAgainstPosition": "MID"
     }
   ]
 }

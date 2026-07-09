@@ -1,64 +1,124 @@
 {
   "list": [
     {
-      "id": 1,
-      "name": "Galactic Ballers",
-      "shortName": "GB"
+      "id": 18493,
+      "name": "Lu’s Rules FC ***",
+      "shortName": "LP",
+      "playerName": "Lu Palladino",
+      "personKey": "lu",
+      "color": "#2f6fed",
+      "abbreviation": "LUC",
+      "titles": 4
     },
     {
-      "id": 2,
-      "name": "Midweek Warriors",
-      "shortName": "MW"
+      "id": 18616,
+      "name": "Syria FC **",
+      "shortName": "IA",
+      "playerName": "Ibrahim Abdulnour",
+      "personKey": "ibrahim",
+      "color": "#e0393f",
+      "abbreviation": "IBR",
+      "titles": 2
     },
     {
-      "id": 3,
-      "name": "The Xavi Files",
-      "shortName": "TXF"
+      "id": 18710,
+      "name": "Big BUMBO FC",
+      "shortName": "MC",
+      "playerName": "Marshall Curtin-Dudzic",
+      "personKey": "marshall",
+      "color": "#1fa15c",
+      "abbreviation": "MAR",
+      "titles": 0
     },
     {
-      "id": 4,
-      "name": "Tactically Naive FC",
-      "shortName": "TNF"
+      "id": 18802,
+      "name": "Chud FC*",
+      "shortName": "DM",
+      "playerName": "David Melko",
+      "personKey": "david",
+      "color": "#f0a623",
+      "abbreviation": "DAV",
+      "titles": 1
     },
     {
-      "id": 5,
-      "name": "Bench Press United",
-      "shortName": "BPU"
+      "id": 19191,
+      "name": "Pearl Street Pirates",
+      "shortName": "NP",
+      "playerName": "Noah Palladino",
+      "personKey": "noah",
+      "color": "#9b51e0",
+      "abbreviation": "NOA",
+      "titles": 0
     },
     {
-      "id": 6,
-      "name": "Draft Dodgers",
-      "shortName": "DD"
+      "id": 33346,
+      "name": "Muk’s Militia",
+      "shortName": "MP",
+      "playerName": "Muk P",
+      "personKey": "muk",
+      "color": "#17b8c4",
+      "abbreviation": "MUK",
+      "titles": 0
     },
     {
-      "id": 7,
-      "name": "Zonal Marking Zealots",
-      "shortName": "ZMZ"
+      "id": 55642,
+      "name": "Mou’s Ego Unlimited",
+      "shortName": "PT",
+      "playerName": "Pat Takala",
+      "personKey": "pat",
+      "color": "#e0499b",
+      "abbreviation": "PAT",
+      "titles": 0
     },
     {
-      "id": 8,
-      "name": "Point Guardians",
-      "shortName": "PG"
+      "id": 79487,
+      "name": "FC General",
+      "shortName": "MG",
+      "playerName": "Mitch Grice",
+      "personKey": "mitch",
+      "color": "#7cb518",
+      "abbreviation": "MIT",
+      "titles": 0
     },
     {
-      "id": 9,
-      "name": "The Kwoncept",
-      "shortName": "TK"
+      "id": 89722,
+      "name": "NEEN FC",
+      "shortName": "AP",
+      "playerName": "Anthony Palladino",
+      "personKey": "anthony",
+      "color": "#e0662f",
+      "abbreviation": "ANT",
+      "titles": 0
     },
     {
-      "id": 10,
-      "name": "Set Piece Society",
-      "shortName": "SPS"
+      "id": 130236,
+      "name": "Kiss My Pass FC",
+      "shortName": "PF",
+      "playerName": "Pasquale Frappa",
+      "personKey": "pasquale",
+      "color": "#5b5be0",
+      "abbreviation": "PAS",
+      "titles": 1
     },
     {
-      "id": 11,
-      "name": "Autopilot XI",
-      "shortName": "AX"
+      "id": 139975,
+      "name": "Gooners quadruple FC",
+      "shortName": "OT",
+      "playerName": "Ostap Tsymbalista",
+      "personKey": "ostap",
+      "color": "#2fb89a",
+      "abbreviation": "OST",
+      "titles": 0
     },
     {
-      "id": 12,
-      "name": "Sunday League Legends",
-      "shortName": "SLL"
+      "id": 146136,
+      "name": "Auto Draft 2025",
+      "shortName": "ML",
+      "playerName": "Mark Lamascese",
+      "personKey": "mark",
+      "color": "#c9a227",
+      "abbreviation": "MRK",
+      "titles": 0
     }
   ]
 }

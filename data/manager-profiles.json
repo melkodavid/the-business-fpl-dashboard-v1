@@ -1,0 +1,17 @@
+{
+  "_comment": "Edit freely -- these are placeholder colors/abbreviations. Keyed by personKey (each manager's first name, lowercased), which is how this file stays correct even when team names change every season. To add a manager photo, drop an image at assets/managers/{personKey}.jpg (e.g. assets/managers/lu.jpg) -- no JSON edit needed, the site falls back to initials automatically if no photo file exists.",
+  "profiles": [
+    { "personKey": "lu", "displayName": "Lu Palladino", "color": "#2f6fed", "abbreviation": "LUC" },
+    { "personKey": "ibrahim", "displayName": "Ibrahim Abdulnour", "color": "#e0393f", "abbreviation": "IBR" },
+    { "personKey": "marshall", "displayName": "Marshall Curtin-Dudzic", "color": "#1fa15c", "abbreviation": "MAR" },
+    { "personKey": "david", "displayName": "David Melko", "color": "#f0a623", "abbreviation": "DAV" },
+    { "personKey": "noah", "displayName": "Noah Palladino", "color": "#9b51e0", "abbreviation": "NOA" },
+    { "personKey": "muk", "displayName": "Muk P", "color": "#17b8c4", "abbreviation": "MUK" },
+    { "personKey": "pat", "displayName": "Pat Takala", "color": "#e0499b", "abbreviation": "PAT" },
+    { "personKey": "mitch", "displayName": "Mitch Grice", "color": "#7cb518", "abbreviation": "MIT" },
+    { "personKey": "anthony", "displayName": "Anthony Palladino", "color": "#e0662f", "abbreviation": "ANT" },
+    { "personKey": "pasquale", "displayName": "Pasquale Frappa", "color": "#5b5be0", "abbreviation": "PAS" },
+    { "personKey": "ostap", "displayName": "Ostap Tsymbalista", "color": "#2fb89a", "abbreviation": "OST" },
+    { "personKey": "mark", "displayName": "Mark Lamascese", "color": "#c9a227", "abbreviation": "MRK" }
+  ]
+}
