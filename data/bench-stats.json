@@ -1,0 +1,360 @@
+{
+  "perGw": {
+    "1": {
+      "1": 13,
+      "2": 13,
+      "3": 5,
+      "4": 19,
+      "5": 15,
+      "6": 8,
+      "7": 7,
+      "8": 13,
+      "9": 8,
+      "10": 8,
+      "11": 1,
+      "12": 15
+    },
+    "2": {
+      "1": 8,
+      "2": 10,
+      "3": 8,
+      "4": 9,
+      "5": 18,
+      "6": 9,
+      "7": 8,
+      "8": 9,
+      "9": 21,
+      "10": 7,
+      "11": 10,
+      "12": 5
+    },
+    "3": {
+      "1": 14,
+      "2": 12,
+      "3": 5,
+      "4": 13,
+      "5": 8,
+      "6": 7,
+      "7": 17,
+      "8": 14,
+      "9": 8,
+      "10": 9,
+      "11": 6,
+      "12": 7
+    },
+    "4": {
+      "1": 12,
+      "2": 14,
+      "3": 7,
+      "4": 19,
+      "5": 8,
+      "6": 18,
+      "7": 11,
+      "8": 15,
+      "9": 10,
+      "10": 11,
+      "11": 10,
+      "12": 15
+    },
+    "5": {
+      "1": 15,
+      "2": 8,
+      "3": 6,
+      "4": 15,
+      "5": 6,
+      "6": 4,
+      "7": 13,
+      "8": 17,
+      "9": 14,
+      "10": 15,
+      "11": 15,
+      "12": 13
+    },
+    "6": {
+      "1": 8,
+      "2": 12,
+      "3": 13,
+      "4": 14,
+      "5": 7,
+      "6": 8,
+      "7": 9,
+      "8": 17,
+      "9": 15,
+      "10": 19,
+      "11": 8,
+      "12": 9
+    },
+    "7": {
+      "1": 16,
+      "2": 16,
+      "3": 17,
+      "4": 10,
+      "5": 12,
+      "6": 15,
+      "7": 15,
+      "8": 14,
+      "9": 6,
+      "10": 21,
+      "11": 7,
+      "12": 14
+    },
+    "8": {
+      "1": 10,
+      "2": 10,
+      "3": 22,
+      "4": 15,
+      "5": 6,
+      "6": 13,
+      "7": 7,
+      "8": 8,
+      "9": 12,
+      "10": 9,
+      "11": 10,
+      "12": 14
+    },
+    "9": {
+      "1": 16,
+      "2": 5,
+      "3": 9,
+      "4": 9,
+      "5": 11,
+      "6": 15,
+      "7": 15,
+      "8": 13,
+      "9": 11,
+      "10": 13,
+      "11": 13,
+      "12": 22
+    },
+    "10": {
+      "1": 10,
+      "2": 18,
+      "3": 15,
+      "4": 14,
+      "5": 13,
+      "6": 11,
+      "7": 10,
+      "8": 19,
+      "9": 6,
+      "10": 17,
+      "11": 7,
+      "12": 8
+    }
+  },
+  "perManager": [
+    {
+      "managerId": 1,
+      "managerName": "Galactic Ballers",
+      "benchPointsWasted": 122,
+      "couldHaveWonCount": 2,
+      "eligibleLossesOrDraws": 4
+    },
+    {
+      "managerId": 2,
+      "managerName": "Midweek Warriors",
+      "benchPointsWasted": 118,
+      "couldHaveWonCount": 1,
+      "eligibleLossesOrDraws": 7
+    },
+    {
+      "managerId": 3,
+      "managerName": "The Xavi Files",
+      "benchPointsWasted": 107,
+      "couldHaveWonCount": 0,
+      "eligibleLossesOrDraws": 6
+    },
+    {
+      "managerId": 4,
+      "managerName": "Tactically Naive FC",
+      "benchPointsWasted": 137,
+      "couldHaveWonCount": 4,
+      "eligibleLossesOrDraws": 7
+    },
+    {
+      "managerId": 5,
+      "managerName": "Bench Press United",
+      "benchPointsWasted": 104,
+      "couldHaveWonCount": 2,
+      "eligibleLossesOrDraws": 7
+    },
+    {
+      "managerId": 6,
+      "managerName": "Draft Dodgers",
+      "benchPointsWasted": 108,
+      "couldHaveWonCount": 2,
+      "eligibleLossesOrDraws": 4
+    },
+    {
+      "managerId": 7,
+      "managerName": "Zonal Marking Zealots",
+      "benchPointsWasted": 112,
+      "couldHaveWonCount": 1,
+      "eligibleLossesOrDraws": 5
+    },
+    {
+      "managerId": 8,
+      "managerName": "Point Guardians",
+      "benchPointsWasted": 139,
+      "couldHaveWonCount": 1,
+      "eligibleLossesOrDraws": 3
+    },
+    {
+      "managerId": 9,
+      "managerName": "The Kwoncept",
+      "benchPointsWasted": 111,
+      "couldHaveWonCount": 1,
+      "eligibleLossesOrDraws": 3
+    },
+    {
+      "managerId": 10,
+      "managerName": "Set Piece Society",
+      "benchPointsWasted": 129,
+      "couldHaveWonCount": 1,
+      "eligibleLossesOrDraws": 6
+    },
+    {
+      "managerId": 11,
+      "managerName": "Autopilot XI",
+      "benchPointsWasted": 87,
+      "couldHaveWonCount": 0,
+      "eligibleLossesOrDraws": 4
+    },
+    {
+      "managerId": 12,
+      "managerName": "Sunday League Legends",
+      "benchPointsWasted": 122,
+      "couldHaveWonCount": 1,
+      "eligibleLossesOrDraws": 5
+    }
+  ],
+  "couldHaveWonInstances": [
+    {
+      "gw": 1,
+      "managerId": 4,
+      "opponentId": 9,
+      "actualScore": 33,
+      "optimalScore": 45,
+      "opponentScore": 39
+    },
+    {
+      "gw": 1,
+      "managerId": 5,
+      "opponentId": 8,
+      "actualScore": 39,
+      "optimalScore": 41,
+      "opponentScore": 40
+    },
+    {
+      "gw": 2,
+      "managerId": 4,
+      "opponentId": 7,
+      "actualScore": 27,
+      "optimalScore": 30,
+      "opponentScore": 29
+    },
+    {
+      "gw": 2,
+      "managerId": 6,
+      "opponentId": 5,
+      "actualScore": 25,
+      "optimalScore": 31,
+      "opponentScore": 29
+    },
+    {
+      "gw": 3,
+      "managerId": 2,
+      "opponentId": 7,
+      "actualScore": 42,
+      "optimalScore": 49,
+      "opponentScore": 45
+    },
+    {
+      "gw": 4,
+      "managerId": 4,
+      "opponentId": 3,
+      "actualScore": 40,
+      "optimalScore": 49,
+      "opponentScore": 45
+    },
+    {
+      "gw": 5,
+      "managerId": 1,
+      "opponentId": 8,
+      "actualScore": 33,
+      "optimalScore": 39,
+      "opponentScore": 36
+    },
+    {
+      "gw": 5,
+      "managerId": 9,
+      "opponentId": 7,
+      "actualScore": 47,
+      "optimalScore": 52,
+      "opponentScore": 48
+    },
+    {
+      "gw": 7,
+      "managerId": 7,
+      "opponentId": 5,
+      "actualScore": 31,
+      "optimalScore": 43,
+      "opponentScore": 35
+    },
+    {
+      "gw": 8,
+      "managerId": 1,
+      "opponentId": 5,
+      "actualScore": 42,
+      "optimalScore": 45,
+      "opponentScore": 42
+    },
+    {
+      "gw": 9,
+      "managerId": 4,
+      "opponentId": 1,
+      "actualScore": 36,
+      "optimalScore": 39,
+      "opponentScore": 37
+    },
+    {
+      "gw": 9,
+      "managerId": 5,
+      "opponentId": 3,
+      "actualScore": 30,
+      "optimalScore": 36,
+      "opponentScore": 33
+    },
+    {
+      "gw": 9,
+      "managerId": 12,
+      "opponentId": 7,
+      "actualScore": 37,
+      "optimalScore": 44,
+      "opponentScore": 40
+    },
+    {
+      "gw": 9,
+      "managerId": 8,
+      "opponentId": 11,
+      "actualScore": 32,
+      "optimalScore": 39,
+      "opponentScore": 34
+    },
+    {
+      "gw": 9,
+      "managerId": 10,
+      "opponentId": 9,
+      "actualScore": 33,
+      "optimalScore": 39,
+      "opponentScore": 34
+    },
+    {
+      "gw": 10,
+      "managerId": 6,
+      "opponentId": 11,
+      "actualScore": 28,
+      "optimalScore": 41,
+      "opponentScore": 37
+    }
+  ]
+}

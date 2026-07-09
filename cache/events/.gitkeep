@@ -1,0 +1,4 @@
+This directory holds one committed JSON file per completed gameweek (written by
+scripts/cache/store.js), so scheduled runs never re-fetch a finished gameweek's
+live stats and lineups. Files appear here automatically once the Action runs
+against a real league.

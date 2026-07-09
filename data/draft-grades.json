@@ -1,0 +1,1146 @@
+{
+  "leaderboard": [
+    {
+      "managerId": 8,
+      "managerName": "Point Guardians",
+      "draftTeamPoints": 526
+    },
+    {
+      "managerId": 2,
+      "managerName": "Midweek Warriors",
+      "draftTeamPoints": 512
+    },
+    {
+      "managerId": 6,
+      "managerName": "Draft Dodgers",
+      "draftTeamPoints": 511
+    },
+    {
+      "managerId": 1,
+      "managerName": "Galactic Ballers",
+      "draftTeamPoints": 506
+    },
+    {
+      "managerId": 10,
+      "managerName": "Set Piece Society",
+      "draftTeamPoints": 489
+    },
+    {
+      "managerId": 4,
+      "managerName": "Tactically Naive FC",
+      "draftTeamPoints": 483
+    },
+    {
+      "managerId": 9,
+      "managerName": "The Kwoncept",
+      "draftTeamPoints": 482
+    },
+    {
+      "managerId": 7,
+      "managerName": "Zonal Marking Zealots",
+      "draftTeamPoints": 458
+    },
+    {
+      "managerId": 11,
+      "managerName": "Autopilot XI",
+      "draftTeamPoints": 455
+    },
+    {
+      "managerId": 12,
+      "managerName": "Sunday League Legends",
+      "draftTeamPoints": 452
+    },
+    {
+      "managerId": 5,
+      "managerName": "Bench Press United",
+      "draftTeamPoints": 442
+    },
+    {
+      "managerId": 3,
+      "managerName": "The Xavi Files",
+      "draftTeamPoints": 398
+    }
+  ],
+  "scatter": [
+    {
+      "pickNumber": 1,
+      "seasonPoints": 40,
+      "managerId": 1,
+      "playerName": "F. Fernandez36"
+    },
+    {
+      "pickNumber": 2,
+      "seasonPoints": 32,
+      "managerId": 2,
+      "playerName": "O. Osei183"
+    },
+    {
+      "pickNumber": 3,
+      "seasonPoints": 33,
+      "managerId": 3,
+      "playerName": "F. Fernandez38"
+    },
+    {
+      "pickNumber": 4,
+      "seasonPoints": 31,
+      "managerId": 4,
+      "playerName": "N. Nilsson173"
+    },
+    {
+      "pickNumber": 5,
+      "seasonPoints": 40,
+      "managerId": 5,
+      "playerName": "K. Kowalski146"
+    },
+    {
+      "pickNumber": 6,
+      "seasonPoints": 55,
+      "managerId": 6,
+      "playerName": "M. Mensah151"
+    },
+    {
+      "pickNumber": 7,
+      "seasonPoints": 25,
+      "managerId": 7,
+      "playerName": "S. Santos7"
+    },
+    {
+      "pickNumber": 8,
+      "seasonPoints": 71,
+      "managerId": 8,
+      "playerName": "M. Mensah10"
+    },
+    {
+      "pickNumber": 9,
+      "seasonPoints": 21,
+      "managerId": 9,
+      "playerName": "L. Larsen61"
+    },
+    {
+      "pickNumber": 10,
+      "seasonPoints": 44,
+      "managerId": 10,
+      "playerName": "C. Costa156"
+    },
+    {
+      "pickNumber": 11,
+      "seasonPoints": 36,
+      "managerId": 11,
+      "playerName": "F. Fernandez101"
+    },
+    {
+      "pickNumber": 12,
+      "seasonPoints": 28,
+      "managerId": 12,
+      "playerName": "F. Fernandez92"
+    },
+    {
+      "pickNumber": 13,
+      "seasonPoints": 38,
+      "managerId": 12,
+      "playerName": "M. Moreno0"
+    },
+    {
+      "pickNumber": 14,
+      "seasonPoints": 66,
+      "managerId": 11,
+      "playerName": "M. Moreno94"
+    },
+    {
+      "pickNumber": 15,
+      "seasonPoints": 41,
+      "managerId": 10,
+      "playerName": "W. Weber58"
+    },
+    {
+      "pickNumber": 16,
+      "seasonPoints": 35,
+      "managerId": 9,
+      "playerName": "F. Fernandez181"
+    },
+    {
+      "pickNumber": 17,
+      "seasonPoints": 29,
+      "managerId": 8,
+      "playerName": "K. Kalu188"
+    },
+    {
+      "pickNumber": 18,
+      "seasonPoints": 38,
+      "managerId": 7,
+      "playerName": "O. Okafor15"
+    },
+    {
+      "pickNumber": 19,
+      "seasonPoints": 42,
+      "managerId": 6,
+      "playerName": "V. Vidal43"
+    },
+    {
+      "pickNumber": 20,
+      "seasonPoints": 22,
+      "managerId": 5,
+      "playerName": "K. Kalu65"
+    },
+    {
+      "pickNumber": 21,
+      "seasonPoints": 32,
+      "managerId": 4,
+      "playerName": "R. Rossi120"
+    },
+    {
+      "pickNumber": 22,
+      "seasonPoints": 34,
+      "managerId": 3,
+      "playerName": "S. Smith33"
+    },
+    {
+      "pickNumber": 23,
+      "seasonPoints": 32,
+      "managerId": 2,
+      "playerName": "C. Costa99"
+    },
+    {
+      "pickNumber": 24,
+      "seasonPoints": 39,
+      "managerId": 1,
+      "playerName": "N. Novak3"
+    },
+    {
+      "pickNumber": 25,
+      "seasonPoints": 33,
+      "managerId": 1,
+      "playerName": "R. Rossi28"
+    },
+    {
+      "pickNumber": 26,
+      "seasonPoints": 35,
+      "managerId": 2,
+      "playerName": "P. Petrov11"
+    },
+    {
+      "pickNumber": 27,
+      "seasonPoints": 27,
+      "managerId": 3,
+      "playerName": "R. Rossi153"
+    },
+    {
+      "pickNumber": 28,
+      "seasonPoints": 40,
+      "managerId": 4,
+      "playerName": "S. Smith170"
+    },
+    {
+      "pickNumber": 29,
+      "seasonPoints": 47,
+      "managerId": 5,
+      "playerName": "M. Mensah143"
+    },
+    {
+      "pickNumber": 30,
+      "seasonPoints": 50,
+      "managerId": 6,
+      "playerName": "M. Moreno6"
+    },
+    {
+      "pickNumber": 31,
+      "seasonPoints": 28,
+      "managerId": 7,
+      "playerName": "K. Kalu129"
+    },
+    {
+      "pickNumber": 32,
+      "seasonPoints": 34,
+      "managerId": 8,
+      "playerName": "M. Moreno108"
+    },
+    {
+      "pickNumber": 33,
+      "seasonPoints": 29,
+      "managerId": 9,
+      "playerName": "O. Osei67"
+    },
+    {
+      "pickNumber": 34,
+      "seasonPoints": 31,
+      "managerId": 10,
+      "playerName": "M. Mensah85"
+    },
+    {
+      "pickNumber": 35,
+      "seasonPoints": 38,
+      "managerId": 11,
+      "playerName": "H. Haddad80"
+    },
+    {
+      "pickNumber": 36,
+      "seasonPoints": 36,
+      "managerId": 12,
+      "playerName": "P. Petrov198"
+    },
+    {
+      "pickNumber": 37,
+      "seasonPoints": 34,
+      "managerId": 12,
+      "playerName": "L. Larsen39"
+    },
+    {
+      "pickNumber": 38,
+      "seasonPoints": 34,
+      "managerId": 11,
+      "playerName": "O. Okafor66"
+    },
+    {
+      "pickNumber": 39,
+      "seasonPoints": 31,
+      "managerId": 10,
+      "playerName": "K. Kalu37"
+    },
+    {
+      "pickNumber": 40,
+      "seasonPoints": 40,
+      "managerId": 9,
+      "playerName": "O. Osei180"
+    },
+    {
+      "pickNumber": 41,
+      "seasonPoints": 50,
+      "managerId": 8,
+      "playerName": "M. Mensah196"
+    },
+    {
+      "pickNumber": 42,
+      "seasonPoints": 20,
+      "managerId": 7,
+      "playerName": "F. Fernandez71"
+    },
+    {
+      "pickNumber": 43,
+      "seasonPoints": 39,
+      "managerId": 6,
+      "playerName": "P. Petrov102"
+    },
+    {
+      "pickNumber": 44,
+      "seasonPoints": 20,
+      "managerId": 5,
+      "playerName": "D. Dubois127"
+    },
+    {
+      "pickNumber": 45,
+      "seasonPoints": 38,
+      "managerId": 4,
+      "playerName": "J. Johnson175"
+    },
+    {
+      "pickNumber": 46,
+      "seasonPoints": 20,
+      "managerId": 3,
+      "playerName": "J. Johnson2"
+    },
+    {
+      "pickNumber": 47,
+      "seasonPoints": 27,
+      "managerId": 2,
+      "playerName": "H. Haddad75"
+    },
+    {
+      "pickNumber": 48,
+      "seasonPoints": 31,
+      "managerId": 1,
+      "playerName": "N. Nilsson165"
+    },
+    {
+      "pickNumber": 49,
+      "seasonPoints": 36,
+      "managerId": 1,
+      "playerName": "H. Haddad24"
+    },
+    {
+      "pickNumber": 50,
+      "seasonPoints": 31,
+      "managerId": 2,
+      "playerName": "K. Kowalski119"
+    },
+    {
+      "pickNumber": 51,
+      "seasonPoints": 27,
+      "managerId": 3,
+      "playerName": "N. Nilsson113"
+    },
+    {
+      "pickNumber": 52,
+      "seasonPoints": 20,
+      "managerId": 4,
+      "playerName": "K. Kalu18"
+    },
+    {
+      "pickNumber": 53,
+      "seasonPoints": 31,
+      "managerId": 5,
+      "playerName": "F. Fernandez141"
+    },
+    {
+      "pickNumber": 54,
+      "seasonPoints": 25,
+      "managerId": 6,
+      "playerName": "V. Vidal50"
+    },
+    {
+      "pickNumber": 55,
+      "seasonPoints": 33,
+      "managerId": 7,
+      "playerName": "F. Fernandez112"
+    },
+    {
+      "pickNumber": 56,
+      "seasonPoints": 31,
+      "managerId": 8,
+      "playerName": "N. Novak27"
+    },
+    {
+      "pickNumber": 57,
+      "seasonPoints": 42,
+      "managerId": 9,
+      "playerName": "A. Adeyemi167"
+    },
+    {
+      "pickNumber": 58,
+      "seasonPoints": 38,
+      "managerId": 10,
+      "playerName": "H. Haddad84"
+    },
+    {
+      "pickNumber": 59,
+      "seasonPoints": 34,
+      "managerId": 11,
+      "playerName": "S. Silva72"
+    },
+    {
+      "pickNumber": 60,
+      "seasonPoints": 27,
+      "managerId": 12,
+      "playerName": "F. Fernandez172"
+    },
+    {
+      "pickNumber": 61,
+      "seasonPoints": 34,
+      "managerId": 12,
+      "playerName": "V. Vidal159"
+    },
+    {
+      "pickNumber": 62,
+      "seasonPoints": 28,
+      "managerId": 11,
+      "playerName": "P. Petrov100"
+    },
+    {
+      "pickNumber": 63,
+      "seasonPoints": 31,
+      "managerId": 10,
+      "playerName": "N. Novak184"
+    },
+    {
+      "pickNumber": 64,
+      "seasonPoints": 24,
+      "managerId": 9,
+      "playerName": "W. Weber117"
+    },
+    {
+      "pickNumber": 65,
+      "seasonPoints": 27,
+      "managerId": 8,
+      "playerName": "N. Novak125"
+    },
+    {
+      "pickNumber": 66,
+      "seasonPoints": 19,
+      "managerId": 7,
+      "playerName": "H. Haddad60"
+    },
+    {
+      "pickNumber": 67,
+      "seasonPoints": 34,
+      "managerId": 6,
+      "playerName": "N. Novak116"
+    },
+    {
+      "pickNumber": 68,
+      "seasonPoints": 47,
+      "managerId": 5,
+      "playerName": "N. Nilsson32"
+    },
+    {
+      "pickNumber": 69,
+      "seasonPoints": 29,
+      "managerId": 4,
+      "playerName": "K. Kalu104"
+    },
+    {
+      "pickNumber": 70,
+      "seasonPoints": 20,
+      "managerId": 3,
+      "playerName": "W. Weber191"
+    },
+    {
+      "pickNumber": 71,
+      "seasonPoints": 56,
+      "managerId": 2,
+      "playerName": "A. Adeyemi163"
+    },
+    {
+      "pickNumber": 72,
+      "seasonPoints": 34,
+      "managerId": 1,
+      "playerName": "P. Petrov56"
+    },
+    {
+      "pickNumber": 73,
+      "seasonPoints": 41,
+      "managerId": 1,
+      "playerName": "C. Costa82"
+    },
+    {
+      "pickNumber": 74,
+      "seasonPoints": 31,
+      "managerId": 2,
+      "playerName": "M. Moreno5"
+    },
+    {
+      "pickNumber": 75,
+      "seasonPoints": 30,
+      "managerId": 3,
+      "playerName": "O. Osei133"
+    },
+    {
+      "pickNumber": 76,
+      "seasonPoints": 31,
+      "managerId": 4,
+      "playerName": "D. Dubois16"
+    },
+    {
+      "pickNumber": 77,
+      "seasonPoints": 21,
+      "managerId": 5,
+      "playerName": "H. Halvorsen122"
+    },
+    {
+      "pickNumber": 78,
+      "seasonPoints": 38,
+      "managerId": 6,
+      "playerName": "H. Halvorsen195"
+    },
+    {
+      "pickNumber": 79,
+      "seasonPoints": 34,
+      "managerId": 7,
+      "playerName": "M. Moreno29"
+    },
+    {
+      "pickNumber": 80,
+      "seasonPoints": 35,
+      "managerId": 8,
+      "playerName": "O. Osei46"
+    },
+    {
+      "pickNumber": 81,
+      "seasonPoints": 58,
+      "managerId": 9,
+      "playerName": "T. Trigueros69"
+    },
+    {
+      "pickNumber": 82,
+      "seasonPoints": 24,
+      "managerId": 10,
+      "playerName": "S. Silva107"
+    },
+    {
+      "pickNumber": 83,
+      "seasonPoints": 27,
+      "managerId": 11,
+      "playerName": "N. Nilsson138"
+    },
+    {
+      "pickNumber": 84,
+      "seasonPoints": 17,
+      "managerId": 12,
+      "playerName": "O. Osei34"
+    },
+    {
+      "pickNumber": 85,
+      "seasonPoints": 32,
+      "managerId": 12,
+      "playerName": "H. Halvorsen14"
+    },
+    {
+      "pickNumber": 86,
+      "seasonPoints": 29,
+      "managerId": 11,
+      "playerName": "T. Trigueros47"
+    },
+    {
+      "pickNumber": 87,
+      "seasonPoints": 29,
+      "managerId": 10,
+      "playerName": "M. Mensah158"
+    },
+    {
+      "pickNumber": 88,
+      "seasonPoints": 36,
+      "managerId": 9,
+      "playerName": "H. Haddad140"
+    },
+    {
+      "pickNumber": 89,
+      "seasonPoints": 61,
+      "managerId": 8,
+      "playerName": "N. Nilsson23"
+    },
+    {
+      "pickNumber": 90,
+      "seasonPoints": 21,
+      "managerId": 7,
+      "playerName": "B. Berg187"
+    },
+    {
+      "pickNumber": 91,
+      "seasonPoints": 43,
+      "managerId": 6,
+      "playerName": "W. Weber123"
+    },
+    {
+      "pickNumber": 92,
+      "seasonPoints": 21,
+      "managerId": 5,
+      "playerName": "K. Kowalski25"
+    },
+    {
+      "pickNumber": 93,
+      "seasonPoints": 30,
+      "managerId": 4,
+      "playerName": "L. Larsen194"
+    },
+    {
+      "pickNumber": 94,
+      "seasonPoints": 24,
+      "managerId": 3,
+      "playerName": "B. Berg192"
+    },
+    {
+      "pickNumber": 95,
+      "seasonPoints": 25,
+      "managerId": 2,
+      "playerName": "C. Costa74"
+    },
+    {
+      "pickNumber": 96,
+      "seasonPoints": 29,
+      "managerId": 1,
+      "playerName": "J. Johnson17"
+    },
+    {
+      "pickNumber": 97,
+      "seasonPoints": 34,
+      "managerId": 1,
+      "playerName": "N. Novak95"
+    },
+    {
+      "pickNumber": 98,
+      "seasonPoints": 30,
+      "managerId": 2,
+      "playerName": "K. Kalu199"
+    },
+    {
+      "pickNumber": 99,
+      "seasonPoints": 35,
+      "managerId": 3,
+      "playerName": "A. Adeyemi144"
+    },
+    {
+      "pickNumber": 100,
+      "seasonPoints": 38,
+      "managerId": 4,
+      "playerName": "D. Dubois197"
+    },
+    {
+      "pickNumber": 101,
+      "seasonPoints": 26,
+      "managerId": 5,
+      "playerName": "S. Smith79"
+    },
+    {
+      "pickNumber": 102,
+      "seasonPoints": 37,
+      "managerId": 6,
+      "playerName": "S. Silva31"
+    },
+    {
+      "pickNumber": 103,
+      "seasonPoints": 35,
+      "managerId": 7,
+      "playerName": "F. Fernandez12"
+    },
+    {
+      "pickNumber": 104,
+      "seasonPoints": 29,
+      "managerId": 8,
+      "playerName": "R. Rossi78"
+    },
+    {
+      "pickNumber": 105,
+      "seasonPoints": 29,
+      "managerId": 9,
+      "playerName": "N. Nilsson88"
+    },
+    {
+      "pickNumber": 106,
+      "seasonPoints": 35,
+      "managerId": 10,
+      "playerName": "B. Berg142"
+    },
+    {
+      "pickNumber": 107,
+      "seasonPoints": 17,
+      "managerId": 11,
+      "playerName": "K. Kowalski111"
+    },
+    {
+      "pickNumber": 108,
+      "seasonPoints": 24,
+      "managerId": 12,
+      "playerName": "M. Moreno157"
+    },
+    {
+      "pickNumber": 109,
+      "seasonPoints": 25,
+      "managerId": 12,
+      "playerName": "B. Berg70"
+    },
+    {
+      "pickNumber": 110,
+      "seasonPoints": 30,
+      "managerId": 11,
+      "playerName": "W. Weber178"
+    },
+    {
+      "pickNumber": 111,
+      "seasonPoints": 21,
+      "managerId": 10,
+      "playerName": "K. Kowalski124"
+    },
+    {
+      "pickNumber": 112,
+      "seasonPoints": 37,
+      "managerId": 9,
+      "playerName": "M. Moreno147"
+    },
+    {
+      "pickNumber": 113,
+      "seasonPoints": 38,
+      "managerId": 8,
+      "playerName": "B. Berg115"
+    },
+    {
+      "pickNumber": 114,
+      "seasonPoints": 54,
+      "managerId": 7,
+      "playerName": "J. Johnson83"
+    },
+    {
+      "pickNumber": 115,
+      "seasonPoints": 21,
+      "managerId": 6,
+      "playerName": "D. Dubois91"
+    },
+    {
+      "pickNumber": 116,
+      "seasonPoints": 23,
+      "managerId": 5,
+      "playerName": "J. Johnson90"
+    },
+    {
+      "pickNumber": 117,
+      "seasonPoints": 39,
+      "managerId": 4,
+      "playerName": "S. Santos86"
+    },
+    {
+      "pickNumber": 118,
+      "seasonPoints": 26,
+      "managerId": 3,
+      "playerName": "W. Weber96"
+    },
+    {
+      "pickNumber": 119,
+      "seasonPoints": 58,
+      "managerId": 2,
+      "playerName": "N. Nilsson177"
+    },
+    {
+      "pickNumber": 120,
+      "seasonPoints": 23,
+      "managerId": 1,
+      "playerName": "B. Berg98"
+    },
+    {
+      "pickNumber": 121,
+      "seasonPoints": 40,
+      "managerId": 1,
+      "playerName": "D. Dubois190"
+    },
+    {
+      "pickNumber": 122,
+      "seasonPoints": 28,
+      "managerId": 2,
+      "playerName": "C. Costa114"
+    },
+    {
+      "pickNumber": 123,
+      "seasonPoints": 21,
+      "managerId": 3,
+      "playerName": "S. Santos134"
+    },
+    {
+      "pickNumber": 124,
+      "seasonPoints": 26,
+      "managerId": 4,
+      "playerName": "O. Okafor152"
+    },
+    {
+      "pickNumber": 125,
+      "seasonPoints": 19,
+      "managerId": 5,
+      "playerName": "A. Adeyemi155"
+    },
+    {
+      "pickNumber": 126,
+      "seasonPoints": 33,
+      "managerId": 6,
+      "playerName": "K. Kalu89"
+    },
+    {
+      "pickNumber": 127,
+      "seasonPoints": 25,
+      "managerId": 7,
+      "playerName": "O. Osei193"
+    },
+    {
+      "pickNumber": 128,
+      "seasonPoints": 27,
+      "managerId": 8,
+      "playerName": "M. Mensah62"
+    },
+    {
+      "pickNumber": 129,
+      "seasonPoints": 24,
+      "managerId": 9,
+      "playerName": "L. Larsen128"
+    },
+    {
+      "pickNumber": 130,
+      "seasonPoints": 41,
+      "managerId": 10,
+      "playerName": "H. Haddad164"
+    },
+    {
+      "pickNumber": 131,
+      "seasonPoints": 18,
+      "managerId": 11,
+      "playerName": "H. Halvorsen162"
+    },
+    {
+      "pickNumber": 132,
+      "seasonPoints": 26,
+      "managerId": 12,
+      "playerName": "L. Larsen76"
+    },
+    {
+      "pickNumber": 133,
+      "seasonPoints": 27,
+      "managerId": 12,
+      "playerName": "T. Trigueros41"
+    },
+    {
+      "pickNumber": 134,
+      "seasonPoints": 14,
+      "managerId": 11,
+      "playerName": "N. Novak150"
+    },
+    {
+      "pickNumber": 135,
+      "seasonPoints": 31,
+      "managerId": 10,
+      "playerName": "J. Johnson176"
+    },
+    {
+      "pickNumber": 136,
+      "seasonPoints": 27,
+      "managerId": 9,
+      "playerName": "H. Halvorsen168"
+    },
+    {
+      "pickNumber": 137,
+      "seasonPoints": 20,
+      "managerId": 8,
+      "playerName": "V. Vidal8"
+    },
+    {
+      "pickNumber": 138,
+      "seasonPoints": 38,
+      "managerId": 7,
+      "playerName": "O. Osei20"
+    },
+    {
+      "pickNumber": 139,
+      "seasonPoints": 33,
+      "managerId": 6,
+      "playerName": "K. Kalu22"
+    },
+    {
+      "pickNumber": 140,
+      "seasonPoints": 38,
+      "managerId": 5,
+      "playerName": "H. Haddad137"
+    },
+    {
+      "pickNumber": 141,
+      "seasonPoints": 25,
+      "managerId": 4,
+      "playerName": "D. Dubois145"
+    },
+    {
+      "pickNumber": 142,
+      "seasonPoints": 29,
+      "managerId": 3,
+      "playerName": "M. Mensah126"
+    },
+    {
+      "pickNumber": 143,
+      "seasonPoints": 23,
+      "managerId": 2,
+      "playerName": "K. Kowalski132"
+    },
+    {
+      "pickNumber": 144,
+      "seasonPoints": 27,
+      "managerId": 1,
+      "playerName": "W. Weber121"
+    },
+    {
+      "pickNumber": 145,
+      "seasonPoints": 38,
+      "managerId": 1,
+      "playerName": "C. Costa4"
+    },
+    {
+      "pickNumber": 146,
+      "seasonPoints": 27,
+      "managerId": 2,
+      "playerName": "S. Smith109"
+    },
+    {
+      "pickNumber": 147,
+      "seasonPoints": 37,
+      "managerId": 3,
+      "playerName": "S. Santos51"
+    },
+    {
+      "pickNumber": 148,
+      "seasonPoints": 32,
+      "managerId": 4,
+      "playerName": "O. Osei179"
+    },
+    {
+      "pickNumber": 149,
+      "seasonPoints": 25,
+      "managerId": 5,
+      "playerName": "N. Nilsson171"
+    },
+    {
+      "pickNumber": 150,
+      "seasonPoints": 16,
+      "managerId": 6,
+      "playerName": "A. Adeyemi57"
+    },
+    {
+      "pickNumber": 151,
+      "seasonPoints": 23,
+      "managerId": 7,
+      "playerName": "K. Kowalski130"
+    },
+    {
+      "pickNumber": 152,
+      "seasonPoints": 29,
+      "managerId": 8,
+      "playerName": "A. Adeyemi81"
+    },
+    {
+      "pickNumber": 153,
+      "seasonPoints": 20,
+      "managerId": 9,
+      "playerName": "A. Adeyemi185"
+    },
+    {
+      "pickNumber": 154,
+      "seasonPoints": 25,
+      "managerId": 10,
+      "playerName": "A. Adeyemi45"
+    },
+    {
+      "pickNumber": 155,
+      "seasonPoints": 40,
+      "managerId": 11,
+      "playerName": "S. Silva161"
+    },
+    {
+      "pickNumber": 156,
+      "seasonPoints": 41,
+      "managerId": 12,
+      "playerName": "D. Dubois186"
+    },
+    {
+      "pickNumber": 157,
+      "seasonPoints": 30,
+      "managerId": 12,
+      "playerName": "P. Petrov139"
+    },
+    {
+      "pickNumber": 158,
+      "seasonPoints": 22,
+      "managerId": 11,
+      "playerName": "A. Adeyemi110"
+    },
+    {
+      "pickNumber": 159,
+      "seasonPoints": 25,
+      "managerId": 10,
+      "playerName": "W. Weber149"
+    },
+    {
+      "pickNumber": 160,
+      "seasonPoints": 29,
+      "managerId": 9,
+      "playerName": "K. Kalu54"
+    },
+    {
+      "pickNumber": 161,
+      "seasonPoints": 20,
+      "managerId": 8,
+      "playerName": "W. Weber35"
+    },
+    {
+      "pickNumber": 162,
+      "seasonPoints": 35,
+      "managerId": 7,
+      "playerName": "R. Rossi131"
+    },
+    {
+      "pickNumber": 163,
+      "seasonPoints": 24,
+      "managerId": 6,
+      "playerName": "O. Okafor103"
+    },
+    {
+      "pickNumber": 164,
+      "seasonPoints": 42,
+      "managerId": 5,
+      "playerName": "D. Dubois19"
+    },
+    {
+      "pickNumber": 165,
+      "seasonPoints": 22,
+      "managerId": 4,
+      "playerName": "S. Silva105"
+    },
+    {
+      "pickNumber": 166,
+      "seasonPoints": 17,
+      "managerId": 3,
+      "playerName": "N. Nilsson182"
+    },
+    {
+      "pickNumber": 167,
+      "seasonPoints": 37,
+      "managerId": 2,
+      "playerName": "P. Petrov189"
+    },
+    {
+      "pickNumber": 168,
+      "seasonPoints": 32,
+      "managerId": 1,
+      "playerName": "K. Kalu59"
+    },
+    {
+      "pickNumber": 169,
+      "seasonPoints": 29,
+      "managerId": 1,
+      "playerName": "S. Santos40"
+    },
+    {
+      "pickNumber": 170,
+      "seasonPoints": 40,
+      "managerId": 2,
+      "playerName": "H. Halvorsen44"
+    },
+    {
+      "pickNumber": 171,
+      "seasonPoints": 18,
+      "managerId": 3,
+      "playerName": "N. Novak1"
+    },
+    {
+      "pickNumber": 172,
+      "seasonPoints": 50,
+      "managerId": 4,
+      "playerName": "M. Mensah63"
+    },
+    {
+      "pickNumber": 173,
+      "seasonPoints": 20,
+      "managerId": 5,
+      "playerName": "H. Haddad136"
+    },
+    {
+      "pickNumber": 174,
+      "seasonPoints": 21,
+      "managerId": 6,
+      "playerName": "O. Okafor64"
+    },
+    {
+      "pickNumber": 175,
+      "seasonPoints": 30,
+      "managerId": 7,
+      "playerName": "K. Kalu73"
+    },
+    {
+      "pickNumber": 176,
+      "seasonPoints": 25,
+      "managerId": 8,
+      "playerName": "K. Kalu21"
+    },
+    {
+      "pickNumber": 177,
+      "seasonPoints": 31,
+      "managerId": 9,
+      "playerName": "N. Novak42"
+    },
+    {
+      "pickNumber": 178,
+      "seasonPoints": 42,
+      "managerId": 10,
+      "playerName": "O. Osei174"
+    },
+    {
+      "pickNumber": 179,
+      "seasonPoints": 22,
+      "managerId": 11,
+      "playerName": "H. Haddad118"
+    },
+    {
+      "pickNumber": 180,
+      "seasonPoints": 33,
+      "managerId": 12,
+      "playerName": "N. Nilsson169"
+    }
+  ]
+}

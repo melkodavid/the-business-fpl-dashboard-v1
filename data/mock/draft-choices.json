@@ -1,0 +1,3527 @@
+{
+  "choices": [
+    {
+      "id": 1,
+      "index": 1,
+      "round": 1,
+      "pick": 1,
+      "entry": 1001,
+      "element": 37,
+      "entry_name": "Galactic Ballers",
+      "player_first_name": "Ethan",
+      "player_last_name": "Fernandez36",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 40,
+      "was_auto": false
+    },
+    {
+      "id": 2,
+      "index": 2,
+      "round": 1,
+      "pick": 2,
+      "entry": 1002,
+      "element": 184,
+      "entry_name": "Midweek Warriors",
+      "player_first_name": "Callum",
+      "player_last_name": "Osei183",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 80,
+      "was_auto": false
+    },
+    {
+      "id": 3,
+      "index": 3,
+      "round": 1,
+      "pick": 3,
+      "entry": 1003,
+      "element": 39,
+      "entry_name": "The Xavi Files",
+      "player_first_name": "Kwame",
+      "player_last_name": "Fernandez38",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 83,
+      "was_auto": false
+    },
+    {
+      "id": 4,
+      "index": 4,
+      "round": 1,
+      "pick": 4,
+      "entry": 1004,
+      "element": 174,
+      "entry_name": "Tactically Naive FC",
+      "player_first_name": "Kai",
+      "player_last_name": "Nilsson173",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 81,
+      "was_auto": false
+    },
+    {
+      "id": 5,
+      "index": 5,
+      "round": 1,
+      "pick": 5,
+      "entry": 1005,
+      "element": 147,
+      "entry_name": "Bench Press United",
+      "player_first_name": "Mason",
+      "player_last_name": "Kowalski146",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 56,
+      "was_auto": false
+    },
+    {
+      "id": 6,
+      "index": 6,
+      "round": 1,
+      "pick": 6,
+      "entry": 1006,
+      "element": 152,
+      "entry_name": "Draft Dodgers",
+      "player_first_name": "Tomas",
+      "player_last_name": "Mensah151",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 12,
+      "was_auto": false
+    },
+    {
+      "id": 7,
+      "index": 7,
+      "round": 1,
+      "pick": 7,
+      "entry": 1007,
+      "element": 8,
+      "entry_name": "Zonal Marking Zealots",
+      "player_first_name": "James",
+      "player_last_name": "Santos7",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 44,
+      "was_auto": false
+    },
+    {
+      "id": 8,
+      "index": 8,
+      "round": 1,
+      "pick": 8,
+      "entry": 1008,
+      "element": 11,
+      "entry_name": "Point Guardians",
+      "player_first_name": "Tomas",
+      "player_last_name": "Mensah10",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 29,
+      "was_auto": false
+    },
+    {
+      "id": 9,
+      "index": 9,
+      "round": 1,
+      "pick": 9,
+      "entry": 1009,
+      "element": 62,
+      "entry_name": "The Kwoncept",
+      "player_first_name": "Elijah",
+      "player_last_name": "Larsen61",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 82,
+      "was_auto": false
+    },
+    {
+      "id": 10,
+      "index": 10,
+      "round": 1,
+      "pick": 10,
+      "entry": 1010,
+      "element": 157,
+      "entry_name": "Set Piece Society",
+      "player_first_name": "Jacob",
+      "player_last_name": "Costa156",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 19,
+      "was_auto": false
+    },
+    {
+      "id": 11,
+      "index": 11,
+      "round": 1,
+      "pick": 11,
+      "entry": 1011,
+      "element": 102,
+      "entry_name": "Autopilot XI",
+      "player_first_name": "Rafael",
+      "player_last_name": "Fernandez101",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 50,
+      "was_auto": false
+    },
+    {
+      "id": 12,
+      "index": 12,
+      "round": 1,
+      "pick": 12,
+      "entry": 1012,
+      "element": 93,
+      "entry_name": "Sunday League Legends",
+      "player_first_name": "Declan",
+      "player_last_name": "Fernandez92",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 64,
+      "was_auto": false
+    },
+    {
+      "id": 13,
+      "index": 13,
+      "round": 2,
+      "pick": 1,
+      "entry": 1012,
+      "element": 1,
+      "entry_name": "Sunday League Legends",
+      "player_first_name": "Kwame",
+      "player_last_name": "Moreno0",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 55,
+      "was_auto": false
+    },
+    {
+      "id": 14,
+      "index": 14,
+      "round": 2,
+      "pick": 2,
+      "entry": 1011,
+      "element": 95,
+      "entry_name": "Autopilot XI",
+      "player_first_name": "Hugo",
+      "player_last_name": "Moreno94",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 30,
+      "was_auto": false
+    },
+    {
+      "id": 15,
+      "index": 15,
+      "round": 2,
+      "pick": 3,
+      "entry": 1010,
+      "element": 59,
+      "entry_name": "Set Piece Society",
+      "player_first_name": "Rafael",
+      "player_last_name": "Weber58",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 63,
+      "was_auto": false
+    },
+    {
+      "id": 16,
+      "index": 16,
+      "round": 2,
+      "pick": 4,
+      "entry": 1009,
+      "element": 182,
+      "entry_name": "The Kwoncept",
+      "player_first_name": "Andres",
+      "player_last_name": "Fernandez181",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 31,
+      "was_auto": false
+    },
+    {
+      "id": 17,
+      "index": 17,
+      "round": 2,
+      "pick": 5,
+      "entry": 1008,
+      "element": 189,
+      "entry_name": "Point Guardians",
+      "player_first_name": "Bruno",
+      "player_last_name": "Kalu188",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 67,
+      "was_auto": false
+    },
+    {
+      "id": 18,
+      "index": 18,
+      "round": 2,
+      "pick": 6,
+      "entry": 1007,
+      "element": 16,
+      "entry_name": "Zonal Marking Zealots",
+      "player_first_name": "Ethan",
+      "player_last_name": "Okafor15",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 62,
+      "was_auto": false
+    },
+    {
+      "id": 19,
+      "index": 19,
+      "round": 2,
+      "pick": 7,
+      "entry": 1006,
+      "element": 44,
+      "entry_name": "Draft Dodgers",
+      "player_first_name": "Fabio",
+      "player_last_name": "Vidal43",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 18,
+      "was_auto": false
+    },
+    {
+      "id": 20,
+      "index": 20,
+      "round": 2,
+      "pick": 8,
+      "entry": 1005,
+      "element": 66,
+      "entry_name": "Bench Press United",
+      "player_first_name": "Andres",
+      "player_last_name": "Kalu65",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 30,
+      "was_auto": false
+    },
+    {
+      "id": 21,
+      "index": 21,
+      "round": 2,
+      "pick": 9,
+      "entry": 1004,
+      "element": 121,
+      "entry_name": "Tactically Naive FC",
+      "player_first_name": "Andres",
+      "player_last_name": "Rossi120",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 76,
+      "was_auto": false
+    },
+    {
+      "id": 22,
+      "index": 22,
+      "round": 2,
+      "pick": 10,
+      "entry": 1003,
+      "element": 34,
+      "entry_name": "The Xavi Files",
+      "player_first_name": "Youssef",
+      "player_last_name": "Smith33",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 11,
+      "was_auto": false
+    },
+    {
+      "id": 23,
+      "index": 23,
+      "round": 2,
+      "pick": 11,
+      "entry": 1002,
+      "element": 100,
+      "entry_name": "Midweek Warriors",
+      "player_first_name": "Hugo",
+      "player_last_name": "Costa99",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 86,
+      "was_auto": false
+    },
+    {
+      "id": 24,
+      "index": 24,
+      "round": 2,
+      "pick": 12,
+      "entry": 1001,
+      "element": 4,
+      "entry_name": "Galactic Ballers",
+      "player_first_name": "Hugo",
+      "player_last_name": "Novak3",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 55,
+      "was_auto": false
+    },
+    {
+      "id": 25,
+      "index": 25,
+      "round": 3,
+      "pick": 1,
+      "entry": 1001,
+      "element": 29,
+      "entry_name": "Galactic Ballers",
+      "player_first_name": "Gerard",
+      "player_last_name": "Rossi28",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 83,
+      "was_auto": false
+    },
+    {
+      "id": 26,
+      "index": 26,
+      "round": 3,
+      "pick": 2,
+      "entry": 1002,
+      "element": 12,
+      "entry_name": "Midweek Warriors",
+      "player_first_name": "Diego",
+      "player_last_name": "Petrov11",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 66,
+      "was_auto": false
+    },
+    {
+      "id": 27,
+      "index": 27,
+      "round": 3,
+      "pick": 3,
+      "entry": 1003,
+      "element": 154,
+      "entry_name": "The Xavi Files",
+      "player_first_name": "Andres",
+      "player_last_name": "Rossi153",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 69,
+      "was_auto": false
+    },
+    {
+      "id": 28,
+      "index": 28,
+      "round": 3,
+      "pick": 4,
+      "entry": 1004,
+      "element": 171,
+      "entry_name": "Tactically Naive FC",
+      "player_first_name": "Tomas",
+      "player_last_name": "Smith170",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 34,
+      "was_auto": false
+    },
+    {
+      "id": 29,
+      "index": 29,
+      "round": 3,
+      "pick": 5,
+      "entry": 1005,
+      "element": 144,
+      "entry_name": "Bench Press United",
+      "player_first_name": "Ethan",
+      "player_last_name": "Mensah143",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 45,
+      "was_auto": false
+    },
+    {
+      "id": 30,
+      "index": 30,
+      "round": 3,
+      "pick": 6,
+      "entry": 1006,
+      "element": 7,
+      "entry_name": "Draft Dodgers",
+      "player_first_name": "Kwame",
+      "player_last_name": "Moreno6",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 44,
+      "was_auto": false
+    },
+    {
+      "id": 31,
+      "index": 31,
+      "round": 3,
+      "pick": 7,
+      "entry": 1007,
+      "element": 130,
+      "entry_name": "Zonal Marking Zealots",
+      "player_first_name": "Diego",
+      "player_last_name": "Kalu129",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 62,
+      "was_auto": false
+    },
+    {
+      "id": 32,
+      "index": 32,
+      "round": 3,
+      "pick": 8,
+      "entry": 1008,
+      "element": 109,
+      "entry_name": "Point Guardians",
+      "player_first_name": "Ethan",
+      "player_last_name": "Moreno108",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 54,
+      "was_auto": false
+    },
+    {
+      "id": 33,
+      "index": 33,
+      "round": 3,
+      "pick": 9,
+      "entry": 1009,
+      "element": 68,
+      "entry_name": "The Kwoncept",
+      "player_first_name": "Liam",
+      "player_last_name": "Osei67",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 33,
+      "was_auto": false
+    },
+    {
+      "id": 34,
+      "index": 34,
+      "round": 3,
+      "pick": 10,
+      "entry": 1010,
+      "element": 86,
+      "entry_name": "Set Piece Society",
+      "player_first_name": "Lucas",
+      "player_last_name": "Mensah85",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 44,
+      "was_auto": false
+    },
+    {
+      "id": 35,
+      "index": 35,
+      "round": 3,
+      "pick": 11,
+      "entry": 1011,
+      "element": 81,
+      "entry_name": "Autopilot XI",
+      "player_first_name": "Noah",
+      "player_last_name": "Haddad80",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 46,
+      "was_auto": false
+    },
+    {
+      "id": 36,
+      "index": 36,
+      "round": 3,
+      "pick": 12,
+      "entry": 1012,
+      "element": 199,
+      "entry_name": "Sunday League Legends",
+      "player_first_name": "Tomas",
+      "player_last_name": "Petrov198",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 16,
+      "was_auto": false
+    },
+    {
+      "id": 37,
+      "index": 37,
+      "round": 4,
+      "pick": 1,
+      "entry": 1012,
+      "element": 40,
+      "entry_name": "Sunday League Legends",
+      "player_first_name": "Tomas",
+      "player_last_name": "Larsen39",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 66,
+      "was_auto": false
+    },
+    {
+      "id": 38,
+      "index": 38,
+      "round": 4,
+      "pick": 2,
+      "entry": 1011,
+      "element": 67,
+      "entry_name": "Autopilot XI",
+      "player_first_name": "Elijah",
+      "player_last_name": "Okafor66",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 31,
+      "was_auto": false
+    },
+    {
+      "id": 39,
+      "index": 39,
+      "round": 4,
+      "pick": 3,
+      "entry": 1010,
+      "element": 38,
+      "entry_name": "Set Piece Society",
+      "player_first_name": "James",
+      "player_last_name": "Kalu37",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 89,
+      "was_auto": false
+    },
+    {
+      "id": 40,
+      "index": 40,
+      "round": 4,
+      "pick": 4,
+      "entry": 1009,
+      "element": 181,
+      "entry_name": "The Kwoncept",
+      "player_first_name": "Gerard",
+      "player_last_name": "Osei180",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 23,
+      "was_auto": false
+    },
+    {
+      "id": 41,
+      "index": 41,
+      "round": 4,
+      "pick": 5,
+      "entry": 1008,
+      "element": 197,
+      "entry_name": "Point Guardians",
+      "player_first_name": "Fabio",
+      "player_last_name": "Mensah196",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 57,
+      "was_auto": false
+    },
+    {
+      "id": 42,
+      "index": 42,
+      "round": 4,
+      "pick": 6,
+      "entry": 1007,
+      "element": 72,
+      "entry_name": "Zonal Marking Zealots",
+      "player_first_name": "Pierre",
+      "player_last_name": "Fernandez71",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 35,
+      "was_auto": false
+    },
+    {
+      "id": 43,
+      "index": 43,
+      "round": 4,
+      "pick": 7,
+      "entry": 1006,
+      "element": 103,
+      "entry_name": "Draft Dodgers",
+      "player_first_name": "Kwame",
+      "player_last_name": "Petrov102",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 13,
+      "was_auto": false
+    },
+    {
+      "id": 44,
+      "index": 44,
+      "round": 4,
+      "pick": 8,
+      "entry": 1005,
+      "element": 128,
+      "entry_name": "Bench Press United",
+      "player_first_name": "Tomas",
+      "player_last_name": "Dubois127",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 75,
+      "was_auto": false
+    },
+    {
+      "id": 45,
+      "index": 45,
+      "round": 4,
+      "pick": 9,
+      "entry": 1004,
+      "element": 176,
+      "entry_name": "Tactically Naive FC",
+      "player_first_name": "Pierre",
+      "player_last_name": "Johnson175",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 39,
+      "was_auto": false
+    },
+    {
+      "id": 46,
+      "index": 46,
+      "round": 4,
+      "pick": 10,
+      "entry": 1003,
+      "element": 3,
+      "entry_name": "The Xavi Files",
+      "player_first_name": "Ethan",
+      "player_last_name": "Johnson2",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 49,
+      "was_auto": false
+    },
+    {
+      "id": 47,
+      "index": 47,
+      "round": 4,
+      "pick": 11,
+      "entry": 1002,
+      "element": 76,
+      "entry_name": "Midweek Warriors",
+      "player_first_name": "Kai",
+      "player_last_name": "Haddad75",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 44,
+      "was_auto": false
+    },
+    {
+      "id": 48,
+      "index": 48,
+      "round": 4,
+      "pick": 12,
+      "entry": 1001,
+      "element": 166,
+      "entry_name": "Galactic Ballers",
+      "player_first_name": "Rafael",
+      "player_last_name": "Nilsson165",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 38,
+      "was_auto": false
+    },
+    {
+      "id": 49,
+      "index": 49,
+      "round": 5,
+      "pick": 1,
+      "entry": 1001,
+      "element": 25,
+      "entry_name": "Galactic Ballers",
+      "player_first_name": "Mason",
+      "player_last_name": "Haddad24",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 66,
+      "was_auto": false
+    },
+    {
+      "id": 50,
+      "index": 50,
+      "round": 5,
+      "pick": 2,
+      "entry": 1002,
+      "element": 120,
+      "entry_name": "Midweek Warriors",
+      "player_first_name": "Youssef",
+      "player_last_name": "Kowalski119",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 73,
+      "was_auto": false
+    },
+    {
+      "id": 51,
+      "index": 51,
+      "round": 5,
+      "pick": 3,
+      "entry": 1003,
+      "element": 114,
+      "entry_name": "The Xavi Files",
+      "player_first_name": "Hugo",
+      "player_last_name": "Nilsson113",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 11,
+      "was_auto": false
+    },
+    {
+      "id": 52,
+      "index": 52,
+      "round": 5,
+      "pick": 4,
+      "entry": 1004,
+      "element": 19,
+      "entry_name": "Tactically Naive FC",
+      "player_first_name": "Gerard",
+      "player_last_name": "Kalu18",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 56,
+      "was_auto": false
+    },
+    {
+      "id": 53,
+      "index": 53,
+      "round": 5,
+      "pick": 5,
+      "entry": 1005,
+      "element": 142,
+      "entry_name": "Bench Press United",
+      "player_first_name": "Declan",
+      "player_last_name": "Fernandez141",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 51,
+      "was_auto": false
+    },
+    {
+      "id": 54,
+      "index": 54,
+      "round": 5,
+      "pick": 6,
+      "entry": 1006,
+      "element": 51,
+      "entry_name": "Draft Dodgers",
+      "player_first_name": "Rafael",
+      "player_last_name": "Vidal50",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 20,
+      "was_auto": false
+    },
+    {
+      "id": 55,
+      "index": 55,
+      "round": 5,
+      "pick": 7,
+      "entry": 1007,
+      "element": 113,
+      "entry_name": "Zonal Marking Zealots",
+      "player_first_name": "Ethan",
+      "player_last_name": "Fernandez112",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 44,
+      "was_auto": false
+    },
+    {
+      "id": 56,
+      "index": 56,
+      "round": 5,
+      "pick": 8,
+      "entry": 1008,
+      "element": 28,
+      "entry_name": "Point Guardians",
+      "player_first_name": "Hugo",
+      "player_last_name": "Novak27",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 84,
+      "was_auto": false
+    },
+    {
+      "id": 57,
+      "index": 57,
+      "round": 5,
+      "pick": 9,
+      "entry": 1009,
+      "element": 168,
+      "entry_name": "The Kwoncept",
+      "player_first_name": "Bruno",
+      "player_last_name": "Adeyemi167",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 61,
+      "was_auto": false
+    },
+    {
+      "id": 58,
+      "index": 58,
+      "round": 5,
+      "pick": 10,
+      "entry": 1010,
+      "element": 85,
+      "entry_name": "Set Piece Society",
+      "player_first_name": "Declan",
+      "player_last_name": "Haddad84",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 26,
+      "was_auto": false
+    },
+    {
+      "id": 59,
+      "index": 59,
+      "round": 5,
+      "pick": 11,
+      "entry": 1011,
+      "element": 73,
+      "entry_name": "Autopilot XI",
+      "player_first_name": "Rafael",
+      "player_last_name": "Silva72",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 30,
+      "was_auto": false
+    },
+    {
+      "id": 60,
+      "index": 60,
+      "round": 5,
+      "pick": 12,
+      "entry": 1012,
+      "element": 173,
+      "entry_name": "Sunday League Legends",
+      "player_first_name": "Diego",
+      "player_last_name": "Fernandez172",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 63,
+      "was_auto": false
+    },
+    {
+      "id": 61,
+      "index": 61,
+      "round": 6,
+      "pick": 1,
+      "entry": 1012,
+      "element": 160,
+      "entry_name": "Sunday League Legends",
+      "player_first_name": "Declan",
+      "player_last_name": "Vidal159",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 12,
+      "was_auto": false
+    },
+    {
+      "id": 62,
+      "index": 62,
+      "round": 6,
+      "pick": 2,
+      "entry": 1011,
+      "element": 101,
+      "entry_name": "Autopilot XI",
+      "player_first_name": "Andres",
+      "player_last_name": "Petrov100",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 82,
+      "was_auto": false
+    },
+    {
+      "id": 63,
+      "index": 63,
+      "round": 6,
+      "pick": 3,
+      "entry": 1010,
+      "element": 185,
+      "entry_name": "Set Piece Society",
+      "player_first_name": "Oliver",
+      "player_last_name": "Novak184",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 82,
+      "was_auto": false
+    },
+    {
+      "id": 64,
+      "index": 64,
+      "round": 6,
+      "pick": 4,
+      "entry": 1009,
+      "element": 118,
+      "entry_name": "The Kwoncept",
+      "player_first_name": "Callum",
+      "player_last_name": "Weber117",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 48,
+      "was_auto": false
+    },
+    {
+      "id": 65,
+      "index": 65,
+      "round": 6,
+      "pick": 5,
+      "entry": 1008,
+      "element": 126,
+      "entry_name": "Point Guardians",
+      "player_first_name": "Lucas",
+      "player_last_name": "Novak125",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 53,
+      "was_auto": false
+    },
+    {
+      "id": 66,
+      "index": 66,
+      "round": 6,
+      "pick": 6,
+      "entry": 1007,
+      "element": 61,
+      "entry_name": "Zonal Marking Zealots",
+      "player_first_name": "Lucas",
+      "player_last_name": "Haddad60",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 28,
+      "was_auto": false
+    },
+    {
+      "id": 67,
+      "index": 67,
+      "round": 6,
+      "pick": 7,
+      "entry": 1006,
+      "element": 117,
+      "entry_name": "Draft Dodgers",
+      "player_first_name": "Diego",
+      "player_last_name": "Novak116",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 42,
+      "was_auto": false
+    },
+    {
+      "id": 68,
+      "index": 68,
+      "round": 6,
+      "pick": 8,
+      "entry": 1005,
+      "element": 33,
+      "entry_name": "Bench Press United",
+      "player_first_name": "Youssef",
+      "player_last_name": "Nilsson32",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 47,
+      "was_auto": false
+    },
+    {
+      "id": 69,
+      "index": 69,
+      "round": 6,
+      "pick": 9,
+      "entry": 1004,
+      "element": 105,
+      "entry_name": "Tactically Naive FC",
+      "player_first_name": "Noah",
+      "player_last_name": "Kalu104",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 15,
+      "was_auto": false
+    },
+    {
+      "id": 70,
+      "index": 70,
+      "round": 6,
+      "pick": 10,
+      "entry": 1003,
+      "element": 192,
+      "entry_name": "The Xavi Files",
+      "player_first_name": "Bruno",
+      "player_last_name": "Weber191",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 90,
+      "was_auto": false
+    },
+    {
+      "id": 71,
+      "index": 71,
+      "round": 6,
+      "pick": 11,
+      "entry": 1002,
+      "element": 164,
+      "entry_name": "Midweek Warriors",
+      "player_first_name": "Andres",
+      "player_last_name": "Adeyemi163",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 80,
+      "was_auto": false
+    },
+    {
+      "id": 72,
+      "index": 72,
+      "round": 6,
+      "pick": 12,
+      "entry": 1001,
+      "element": 57,
+      "entry_name": "Galactic Ballers",
+      "player_first_name": "Bruno",
+      "player_last_name": "Petrov56",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 20,
+      "was_auto": false
+    },
+    {
+      "id": 73,
+      "index": 73,
+      "round": 7,
+      "pick": 1,
+      "entry": 1001,
+      "element": 83,
+      "entry_name": "Galactic Ballers",
+      "player_first_name": "Lucas",
+      "player_last_name": "Costa82",
+      "choice_time": "2026-08-08T12:00:00Z",
+      "seconds_to_pick": 45,
+      "was_auto": false
+    },
+    {
+      "id": 74,
+      "index": 74,
+      "round": 7,
+      "pick": 2,
+      "entry": 1002,
+      "element": 6,
+      "entry_name": "Midweek Warriors",
+      "player_first_name": "Noah",
+      "player_last_name": "Moreno5",
+      "choice_time": "2026-08-08T12:00:00Z",
+      "seconds_to_pick": 52,
+      "was_auto": false
+    },
+    {
+      "id": 75,
+      "index": 75,
+      "round": 7,
+      "pick": 3,
+      "entry": 1003,
+      "element": 134,
+      "entry_name": "The Xavi Files",
+      "player_first_name": "Aiden",
+      "player_last_name": "Osei133",
+      "choice_time": "2026-08-08T12:00:00Z",
+      "seconds_to_pick": 58,
+      "was_auto": false
+    },
+    {
+      "id": 76,
+      "index": 76,
+      "round": 7,
+      "pick": 4,
+      "entry": 1004,
+      "element": 17,
+      "entry_name": "Tactically Naive FC",
+      "player_first_name": "Tomas",
+      "player_last_name": "Dubois16",
+      "choice_time": "2026-08-08T12:00:00Z",
+      "seconds_to_pick": 59,
+      "was_auto": false
+    },
+    {
+      "id": 77,
+      "index": 77,
+      "round": 7,
+      "pick": 5,
+      "entry": 1005,
+      "element": 123,
+      "entry_name": "Bench Press United",
+      "player_first_name": "Aiden",
+      "player_last_name": "Halvorsen122",
+      "choice_time": "2026-08-08T12:00:00Z",
+      "seconds_to_pick": 80,
+      "was_auto": false
+    },
+    {
+      "id": 78,
+      "index": 78,
+      "round": 7,
+      "pick": 6,
+      "entry": 1006,
+      "element": 196,
+      "entry_name": "Draft Dodgers",
+      "player_first_name": "Ethan",
+      "player_last_name": "Halvorsen195",
+      "choice_time": "2026-08-08T12:00:00Z",
+      "seconds_to_pick": 57,
+      "was_auto": false
+    },
+    {
+      "id": 79,
+      "index": 79,
+      "round": 7,
+      "pick": 7,
+      "entry": 1007,
+      "element": 30,
+      "entry_name": "Zonal Marking Zealots",
+      "player_first_name": "Liam",
+      "player_last_name": "Moreno29",
+      "choice_time": "2026-08-08T12:00:00Z",
+      "seconds_to_pick": 76,
+      "was_auto": false
+    },
+    {
+      "id": 80,
+      "index": 80,
+      "round": 7,
+      "pick": 8,
+      "entry": 1008,
+      "element": 47,
+      "entry_name": "Point Guardians",
+      "player_first_name": "James",
+      "player_last_name": "Osei46",
+      "choice_time": "2026-08-08T12:00:00Z",
+      "seconds_to_pick": 34,
+      "was_auto": false
+    },
+    {
+      "id": 81,
+      "index": 81,
+      "round": 7,
+      "pick": 9,
+      "entry": 1009,
+      "element": 70,
+      "entry_name": "The Kwoncept",
+      "player_first_name": "Bruno",
+      "player_last_name": "Trigueros69",
+      "choice_time": "2026-08-08T12:00:00Z",
+      "seconds_to_pick": 40,
+      "was_auto": false
+    },
+    {
+      "id": 82,
+      "index": 82,
+      "round": 7,
+      "pick": 10,
+      "entry": 1010,
+      "element": 108,
+      "entry_name": "Set Piece Society",
+      "player_first_name": "Elijah",
+      "player_last_name": "Silva107",
+      "choice_time": "2026-08-08T12:00:00Z",
+      "seconds_to_pick": 54,
+      "was_auto": false
+    },
+    {
+      "id": 83,
+      "index": 83,
+      "round": 7,
+      "pick": 11,
+      "entry": 1011,
+      "element": 139,
+      "entry_name": "Autopilot XI",
+      "player_first_name": "Hugo",
+      "player_last_name": "Nilsson138",
+      "choice_time": "2026-08-08T12:00:00Z",
+      "seconds_to_pick": 43,
+      "was_auto": false
+    },
+    {
+      "id": 84,
+      "index": 84,
+      "round": 7,
+      "pick": 12,
+      "entry": 1012,
+      "element": 35,
+      "entry_name": "Sunday League Legends",
+      "player_first_name": "Tomas",
+      "player_last_name": "Osei34",
+      "choice_time": "2026-08-08T12:00:00Z",
+      "seconds_to_pick": 23,
+      "was_auto": false
+    },
+    {
+      "id": 85,
+      "index": 85,
+      "round": 8,
+      "pick": 1,
+      "entry": 1012,
+      "element": 15,
+      "entry_name": "Sunday League Legends",
+      "player_first_name": "Elijah",
+      "player_last_name": "Halvorsen14",
+      "choice_time": "2026-08-09T12:00:00Z",
+      "seconds_to_pick": 12,
+      "was_auto": false
+    },
+    {
+      "id": 86,
+      "index": 86,
+      "round": 8,
+      "pick": 2,
+      "entry": 1011,
+      "element": 48,
+      "entry_name": "Autopilot XI",
+      "player_first_name": "Pierre",
+      "player_last_name": "Trigueros47",
+      "choice_time": "2026-08-09T12:00:00Z",
+      "seconds_to_pick": 25,
+      "was_auto": false
+    },
+    {
+      "id": 87,
+      "index": 87,
+      "round": 8,
+      "pick": 3,
+      "entry": 1010,
+      "element": 159,
+      "entry_name": "Set Piece Society",
+      "player_first_name": "Ethan",
+      "player_last_name": "Mensah158",
+      "choice_time": "2026-08-09T12:00:00Z",
+      "seconds_to_pick": 43,
+      "was_auto": false
+    },
+    {
+      "id": 88,
+      "index": 88,
+      "round": 8,
+      "pick": 4,
+      "entry": 1009,
+      "element": 141,
+      "entry_name": "The Kwoncept",
+      "player_first_name": "Kwame",
+      "player_last_name": "Haddad140",
+      "choice_time": "2026-08-09T12:00:00Z",
+      "seconds_to_pick": 24,
+      "was_auto": false
+    },
+    {
+      "id": 89,
+      "index": 89,
+      "round": 8,
+      "pick": 5,
+      "entry": 1008,
+      "element": 24,
+      "entry_name": "Point Guardians",
+      "player_first_name": "Liam",
+      "player_last_name": "Nilsson23",
+      "choice_time": "2026-08-09T12:00:00Z",
+      "seconds_to_pick": 61,
+      "was_auto": false
+    },
+    {
+      "id": 90,
+      "index": 90,
+      "round": 8,
+      "pick": 6,
+      "entry": 1007,
+      "element": 188,
+      "entry_name": "Zonal Marking Zealots",
+      "player_first_name": "James",
+      "player_last_name": "Berg187",
+      "choice_time": "2026-08-09T12:00:00Z",
+      "seconds_to_pick": 16,
+      "was_auto": false
+    },
+    {
+      "id": 91,
+      "index": 91,
+      "round": 8,
+      "pick": 7,
+      "entry": 1006,
+      "element": 124,
+      "entry_name": "Draft Dodgers",
+      "player_first_name": "Gerard",
+      "player_last_name": "Weber123",
+      "choice_time": "2026-08-09T12:00:00Z",
+      "seconds_to_pick": 22,
+      "was_auto": false
+    },
+    {
+      "id": 92,
+      "index": 92,
+      "round": 8,
+      "pick": 8,
+      "entry": 1005,
+      "element": 26,
+      "entry_name": "Bench Press United",
+      "player_first_name": "Pierre",
+      "player_last_name": "Kowalski25",
+      "choice_time": "2026-08-09T12:00:00Z",
+      "seconds_to_pick": 83,
+      "was_auto": false
+    },
+    {
+      "id": 93,
+      "index": 93,
+      "round": 8,
+      "pick": 9,
+      "entry": 1004,
+      "element": 195,
+      "entry_name": "Tactically Naive FC",
+      "player_first_name": "Mason",
+      "player_last_name": "Larsen194",
+      "choice_time": "2026-08-09T12:00:00Z",
+      "seconds_to_pick": 35,
+      "was_auto": false
+    },
+    {
+      "id": 94,
+      "index": 94,
+      "round": 8,
+      "pick": 10,
+      "entry": 1003,
+      "element": 193,
+      "entry_name": "The Xavi Files",
+      "player_first_name": "Youssef",
+      "player_last_name": "Berg192",
+      "choice_time": "2026-08-09T12:00:00Z",
+      "seconds_to_pick": 82,
+      "was_auto": false
+    },
+    {
+      "id": 95,
+      "index": 95,
+      "round": 8,
+      "pick": 11,
+      "entry": 1002,
+      "element": 75,
+      "entry_name": "Midweek Warriors",
+      "player_first_name": "Lucas",
+      "player_last_name": "Costa74",
+      "choice_time": "2026-08-09T12:00:00Z",
+      "seconds_to_pick": 19,
+      "was_auto": false
+    },
+    {
+      "id": 96,
+      "index": 96,
+      "round": 8,
+      "pick": 12,
+      "entry": 1001,
+      "element": 18,
+      "entry_name": "Galactic Ballers",
+      "player_first_name": "Aiden",
+      "player_last_name": "Johnson17",
+      "choice_time": "2026-08-09T12:00:00Z",
+      "seconds_to_pick": 20,
+      "was_auto": false
+    },
+    {
+      "id": 97,
+      "index": 97,
+      "round": 9,
+      "pick": 1,
+      "entry": 1001,
+      "element": 96,
+      "entry_name": "Galactic Ballers",
+      "player_first_name": "Noah",
+      "player_last_name": "Novak95",
+      "choice_time": "2026-08-01T12:00:00Z",
+      "seconds_to_pick": 47,
+      "was_auto": false
+    },
+    {
+      "id": 98,
+      "index": 98,
+      "round": 9,
+      "pick": 2,
+      "entry": 1002,
+      "element": 200,
+      "entry_name": "Midweek Warriors",
+      "player_first_name": "Tomas",
+      "player_last_name": "Kalu199",
+      "choice_time": "2026-08-01T12:00:00Z",
+      "seconds_to_pick": 87,
+      "was_auto": false
+    },
+    {
+      "id": 99,
+      "index": 99,
+      "round": 9,
+      "pick": 3,
+      "entry": 1003,
+      "element": 145,
+      "entry_name": "The Xavi Files",
+      "player_first_name": "Kai",
+      "player_last_name": "Adeyemi144",
+      "choice_time": "2026-08-01T12:00:00Z",
+      "seconds_to_pick": 25,
+      "was_auto": false
+    },
+    {
+      "id": 100,
+      "index": 100,
+      "round": 9,
+      "pick": 4,
+      "entry": 1004,
+      "element": 198,
+      "entry_name": "Tactically Naive FC",
+      "player_first_name": "Ethan",
+      "player_last_name": "Dubois197",
+      "choice_time": "2026-08-01T12:00:00Z",
+      "seconds_to_pick": 21,
+      "was_auto": false
+    },
+    {
+      "id": 101,
+      "index": 101,
+      "round": 9,
+      "pick": 5,
+      "entry": 1005,
+      "element": 80,
+      "entry_name": "Bench Press United",
+      "player_first_name": "Youssef",
+      "player_last_name": "Smith79",
+      "choice_time": "2026-08-01T12:00:00Z",
+      "seconds_to_pick": 88,
+      "was_auto": false
+    },
+    {
+      "id": 102,
+      "index": 102,
+      "round": 9,
+      "pick": 6,
+      "entry": 1006,
+      "element": 32,
+      "entry_name": "Draft Dodgers",
+      "player_first_name": "Liam",
+      "player_last_name": "Silva31",
+      "choice_time": "2026-08-01T12:00:00Z",
+      "seconds_to_pick": 17,
+      "was_auto": false
+    },
+    {
+      "id": 103,
+      "index": 103,
+      "round": 9,
+      "pick": 7,
+      "entry": 1007,
+      "element": 13,
+      "entry_name": "Zonal Marking Zealots",
+      "player_first_name": "Gerard",
+      "player_last_name": "Fernandez12",
+      "choice_time": "2026-08-01T12:00:00Z",
+      "seconds_to_pick": 72,
+      "was_auto": false
+    },
+    {
+      "id": 104,
+      "index": 104,
+      "round": 9,
+      "pick": 8,
+      "entry": 1008,
+      "element": 79,
+      "entry_name": "Point Guardians",
+      "player_first_name": "Marcus",
+      "player_last_name": "Rossi78",
+      "choice_time": "2026-08-01T12:00:00Z",
+      "seconds_to_pick": 46,
+      "was_auto": false
+    },
+    {
+      "id": 105,
+      "index": 105,
+      "round": 9,
+      "pick": 9,
+      "entry": 1009,
+      "element": 89,
+      "entry_name": "The Kwoncept",
+      "player_first_name": "Declan",
+      "player_last_name": "Nilsson88",
+      "choice_time": "2026-08-01T12:00:00Z",
+      "seconds_to_pick": 73,
+      "was_auto": false
+    },
+    {
+      "id": 106,
+      "index": 106,
+      "round": 9,
+      "pick": 10,
+      "entry": 1010,
+      "element": 143,
+      "entry_name": "Set Piece Society",
+      "player_first_name": "Gerard",
+      "player_last_name": "Berg142",
+      "choice_time": "2026-08-01T12:00:00Z",
+      "seconds_to_pick": 90,
+      "was_auto": false
+    },
+    {
+      "id": 107,
+      "index": 107,
+      "round": 9,
+      "pick": 11,
+      "entry": 1011,
+      "element": 112,
+      "entry_name": "Autopilot XI",
+      "player_first_name": "Declan",
+      "player_last_name": "Kowalski111",
+      "choice_time": "2026-08-01T12:00:00Z",
+      "seconds_to_pick": 79,
+      "was_auto": false
+    },
+    {
+      "id": 108,
+      "index": 108,
+      "round": 9,
+      "pick": 12,
+      "entry": 1012,
+      "element": 158,
+      "entry_name": "Sunday League Legends",
+      "player_first_name": "Ethan",
+      "player_last_name": "Moreno157",
+      "choice_time": "2026-08-01T12:00:00Z",
+      "seconds_to_pick": 43,
+      "was_auto": false
+    },
+    {
+      "id": 109,
+      "index": 109,
+      "round": 10,
+      "pick": 1,
+      "entry": 1012,
+      "element": 71,
+      "entry_name": "Sunday League Legends",
+      "player_first_name": "Ethan",
+      "player_last_name": "Berg70",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 26,
+      "was_auto": false
+    },
+    {
+      "id": 110,
+      "index": 110,
+      "round": 10,
+      "pick": 2,
+      "entry": 1011,
+      "element": 179,
+      "entry_name": "Autopilot XI",
+      "player_first_name": "Fabio",
+      "player_last_name": "Weber178",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 54,
+      "was_auto": false
+    },
+    {
+      "id": 111,
+      "index": 111,
+      "round": 10,
+      "pick": 3,
+      "entry": 1010,
+      "element": 125,
+      "entry_name": "Set Piece Society",
+      "player_first_name": "Lucas",
+      "player_last_name": "Kowalski124",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 10,
+      "was_auto": false
+    },
+    {
+      "id": 112,
+      "index": 112,
+      "round": 10,
+      "pick": 4,
+      "entry": 1009,
+      "element": 148,
+      "entry_name": "The Kwoncept",
+      "player_first_name": "Mason",
+      "player_last_name": "Moreno147",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 26,
+      "was_auto": false
+    },
+    {
+      "id": 113,
+      "index": 113,
+      "round": 10,
+      "pick": 5,
+      "entry": 1008,
+      "element": 116,
+      "entry_name": "Point Guardians",
+      "player_first_name": "Gerard",
+      "player_last_name": "Berg115",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 68,
+      "was_auto": false
+    },
+    {
+      "id": 114,
+      "index": 114,
+      "round": 10,
+      "pick": 6,
+      "entry": 1007,
+      "element": 84,
+      "entry_name": "Zonal Marking Zealots",
+      "player_first_name": "Bruno",
+      "player_last_name": "Johnson83",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 14,
+      "was_auto": false
+    },
+    {
+      "id": 115,
+      "index": 115,
+      "round": 10,
+      "pick": 7,
+      "entry": 1006,
+      "element": 92,
+      "entry_name": "Draft Dodgers",
+      "player_first_name": "Gerard",
+      "player_last_name": "Dubois91",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 80,
+      "was_auto": false
+    },
+    {
+      "id": 116,
+      "index": 116,
+      "round": 10,
+      "pick": 8,
+      "entry": 1005,
+      "element": 91,
+      "entry_name": "Bench Press United",
+      "player_first_name": "Pierre",
+      "player_last_name": "Johnson90",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 48,
+      "was_auto": false
+    },
+    {
+      "id": 117,
+      "index": 117,
+      "round": 10,
+      "pick": 9,
+      "entry": 1004,
+      "element": 87,
+      "entry_name": "Tactically Naive FC",
+      "player_first_name": "Jacob",
+      "player_last_name": "Santos86",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 73,
+      "was_auto": false
+    },
+    {
+      "id": 118,
+      "index": 118,
+      "round": 10,
+      "pick": 10,
+      "entry": 1003,
+      "element": 97,
+      "entry_name": "The Xavi Files",
+      "player_first_name": "Bruno",
+      "player_last_name": "Weber96",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 38,
+      "was_auto": false
+    },
+    {
+      "id": 119,
+      "index": 119,
+      "round": 10,
+      "pick": 11,
+      "entry": 1002,
+      "element": 178,
+      "entry_name": "Midweek Warriors",
+      "player_first_name": "Kai",
+      "player_last_name": "Nilsson177",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 79,
+      "was_auto": false
+    },
+    {
+      "id": 120,
+      "index": 120,
+      "round": 10,
+      "pick": 12,
+      "entry": 1001,
+      "element": 99,
+      "entry_name": "Galactic Ballers",
+      "player_first_name": "Oliver",
+      "player_last_name": "Berg98",
+      "choice_time": "2026-08-02T12:00:00Z",
+      "seconds_to_pick": 44,
+      "was_auto": false
+    },
+    {
+      "id": 121,
+      "index": 121,
+      "round": 11,
+      "pick": 1,
+      "entry": 1001,
+      "element": 191,
+      "entry_name": "Galactic Ballers",
+      "player_first_name": "Bruno",
+      "player_last_name": "Dubois190",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 84,
+      "was_auto": false
+    },
+    {
+      "id": 122,
+      "index": 122,
+      "round": 11,
+      "pick": 2,
+      "entry": 1002,
+      "element": 115,
+      "entry_name": "Midweek Warriors",
+      "player_first_name": "Elijah",
+      "player_last_name": "Costa114",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 77,
+      "was_auto": false
+    },
+    {
+      "id": 123,
+      "index": 123,
+      "round": 11,
+      "pick": 3,
+      "entry": 1003,
+      "element": 135,
+      "entry_name": "The Xavi Files",
+      "player_first_name": "Aiden",
+      "player_last_name": "Santos134",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 82,
+      "was_auto": false
+    },
+    {
+      "id": 124,
+      "index": 124,
+      "round": 11,
+      "pick": 4,
+      "entry": 1004,
+      "element": 153,
+      "entry_name": "Tactically Naive FC",
+      "player_first_name": "Declan",
+      "player_last_name": "Okafor152",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 75,
+      "was_auto": false
+    },
+    {
+      "id": 125,
+      "index": 125,
+      "round": 11,
+      "pick": 5,
+      "entry": 1005,
+      "element": 156,
+      "entry_name": "Bench Press United",
+      "player_first_name": "Fabio",
+      "player_last_name": "Adeyemi155",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 20,
+      "was_auto": false
+    },
+    {
+      "id": 126,
+      "index": 126,
+      "round": 11,
+      "pick": 6,
+      "entry": 1006,
+      "element": 90,
+      "entry_name": "Draft Dodgers",
+      "player_first_name": "James",
+      "player_last_name": "Kalu89",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 69,
+      "was_auto": false
+    },
+    {
+      "id": 127,
+      "index": 127,
+      "round": 11,
+      "pick": 7,
+      "entry": 1007,
+      "element": 194,
+      "entry_name": "Zonal Marking Zealots",
+      "player_first_name": "Diego",
+      "player_last_name": "Osei193",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 49,
+      "was_auto": false
+    },
+    {
+      "id": 128,
+      "index": 128,
+      "round": 11,
+      "pick": 8,
+      "entry": 1008,
+      "element": 63,
+      "entry_name": "Point Guardians",
+      "player_first_name": "Diego",
+      "player_last_name": "Mensah62",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 51,
+      "was_auto": false
+    },
+    {
+      "id": 129,
+      "index": 129,
+      "round": 11,
+      "pick": 9,
+      "entry": 1009,
+      "element": 129,
+      "entry_name": "The Kwoncept",
+      "player_first_name": "Andres",
+      "player_last_name": "Larsen128",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 56,
+      "was_auto": false
+    },
+    {
+      "id": 130,
+      "index": 130,
+      "round": 11,
+      "pick": 10,
+      "entry": 1010,
+      "element": 165,
+      "entry_name": "Set Piece Society",
+      "player_first_name": "Diego",
+      "player_last_name": "Haddad164",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 20,
+      "was_auto": false
+    },
+    {
+      "id": 131,
+      "index": 131,
+      "round": 11,
+      "pick": 11,
+      "entry": 1011,
+      "element": 163,
+      "entry_name": "Autopilot XI",
+      "player_first_name": "Elijah",
+      "player_last_name": "Halvorsen162",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 75,
+      "was_auto": false
+    },
+    {
+      "id": 132,
+      "index": 132,
+      "round": 11,
+      "pick": 12,
+      "entry": 1012,
+      "element": 77,
+      "entry_name": "Sunday League Legends",
+      "player_first_name": "Liam",
+      "player_last_name": "Larsen76",
+      "choice_time": "2026-08-03T12:00:00Z",
+      "seconds_to_pick": 81,
+      "was_auto": false
+    },
+    {
+      "id": 133,
+      "index": 133,
+      "round": 12,
+      "pick": 1,
+      "entry": 1012,
+      "element": 42,
+      "entry_name": "Sunday League Legends",
+      "player_first_name": "Lucas",
+      "player_last_name": "Trigueros41",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 29,
+      "was_auto": false
+    },
+    {
+      "id": 134,
+      "index": 134,
+      "round": 12,
+      "pick": 2,
+      "entry": 1011,
+      "element": 151,
+      "entry_name": "Autopilot XI",
+      "player_first_name": "Liam",
+      "player_last_name": "Novak150",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 59,
+      "was_auto": false
+    },
+    {
+      "id": 135,
+      "index": 135,
+      "round": 12,
+      "pick": 3,
+      "entry": 1010,
+      "element": 177,
+      "entry_name": "Set Piece Society",
+      "player_first_name": "Mason",
+      "player_last_name": "Johnson176",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 84,
+      "was_auto": false
+    },
+    {
+      "id": 136,
+      "index": 136,
+      "round": 12,
+      "pick": 4,
+      "entry": 1009,
+      "element": 169,
+      "entry_name": "The Kwoncept",
+      "player_first_name": "Diego",
+      "player_last_name": "Halvorsen168",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 35,
+      "was_auto": false
+    },
+    {
+      "id": 137,
+      "index": 137,
+      "round": 12,
+      "pick": 5,
+      "entry": 1008,
+      "element": 9,
+      "entry_name": "Point Guardians",
+      "player_first_name": "Declan",
+      "player_last_name": "Vidal8",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 69,
+      "was_auto": false
+    },
+    {
+      "id": 138,
+      "index": 138,
+      "round": 12,
+      "pick": 6,
+      "entry": 1007,
+      "element": 21,
+      "entry_name": "Zonal Marking Zealots",
+      "player_first_name": "Liam",
+      "player_last_name": "Osei20",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 48,
+      "was_auto": false
+    },
+    {
+      "id": 139,
+      "index": 139,
+      "round": 12,
+      "pick": 7,
+      "entry": 1006,
+      "element": 23,
+      "entry_name": "Draft Dodgers",
+      "player_first_name": "Hugo",
+      "player_last_name": "Kalu22",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 18,
+      "was_auto": false
+    },
+    {
+      "id": 140,
+      "index": 140,
+      "round": 12,
+      "pick": 8,
+      "entry": 1005,
+      "element": 138,
+      "entry_name": "Bench Press United",
+      "player_first_name": "Jacob",
+      "player_last_name": "Haddad137",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 31,
+      "was_auto": false
+    },
+    {
+      "id": 141,
+      "index": 141,
+      "round": 12,
+      "pick": 9,
+      "entry": 1004,
+      "element": 146,
+      "entry_name": "Tactically Naive FC",
+      "player_first_name": "Kwame",
+      "player_last_name": "Dubois145",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 54,
+      "was_auto": false
+    },
+    {
+      "id": 142,
+      "index": 142,
+      "round": 12,
+      "pick": 10,
+      "entry": 1003,
+      "element": 127,
+      "entry_name": "The Xavi Files",
+      "player_first_name": "Marcus",
+      "player_last_name": "Mensah126",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 78,
+      "was_auto": false
+    },
+    {
+      "id": 143,
+      "index": 143,
+      "round": 12,
+      "pick": 11,
+      "entry": 1002,
+      "element": 133,
+      "entry_name": "Midweek Warriors",
+      "player_first_name": "Tomas",
+      "player_last_name": "Kowalski132",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 31,
+      "was_auto": false
+    },
+    {
+      "id": 144,
+      "index": 144,
+      "round": 12,
+      "pick": 12,
+      "entry": 1001,
+      "element": 122,
+      "entry_name": "Galactic Ballers",
+      "player_first_name": "Mason",
+      "player_last_name": "Weber121",
+      "choice_time": "2026-08-04T12:00:00Z",
+      "seconds_to_pick": 89,
+      "was_auto": false
+    },
+    {
+      "id": 145,
+      "index": 145,
+      "round": 13,
+      "pick": 1,
+      "entry": 1001,
+      "element": 5,
+      "entry_name": "Galactic Ballers",
+      "player_first_name": "Kai",
+      "player_last_name": "Costa4",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 13,
+      "was_auto": false
+    },
+    {
+      "id": 146,
+      "index": 146,
+      "round": 13,
+      "pick": 2,
+      "entry": 1002,
+      "element": 110,
+      "entry_name": "Midweek Warriors",
+      "player_first_name": "Oliver",
+      "player_last_name": "Smith109",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 14,
+      "was_auto": false
+    },
+    {
+      "id": 147,
+      "index": 147,
+      "round": 13,
+      "pick": 3,
+      "entry": 1003,
+      "element": 52,
+      "entry_name": "The Xavi Files",
+      "player_first_name": "Tomas",
+      "player_last_name": "Santos51",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 64,
+      "was_auto": false
+    },
+    {
+      "id": 148,
+      "index": 148,
+      "round": 13,
+      "pick": 4,
+      "entry": 1004,
+      "element": 180,
+      "entry_name": "Tactically Naive FC",
+      "player_first_name": "Liam",
+      "player_last_name": "Osei179",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 52,
+      "was_auto": false
+    },
+    {
+      "id": 149,
+      "index": 149,
+      "round": 13,
+      "pick": 5,
+      "entry": 1005,
+      "element": 172,
+      "entry_name": "Bench Press United",
+      "player_first_name": "James",
+      "player_last_name": "Nilsson171",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 86,
+      "was_auto": false
+    },
+    {
+      "id": 150,
+      "index": 150,
+      "round": 13,
+      "pick": 6,
+      "entry": 1006,
+      "element": 58,
+      "entry_name": "Draft Dodgers",
+      "player_first_name": "Marcus",
+      "player_last_name": "Adeyemi57",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 12,
+      "was_auto": false
+    },
+    {
+      "id": 151,
+      "index": 151,
+      "round": 13,
+      "pick": 7,
+      "entry": 1007,
+      "element": 131,
+      "entry_name": "Zonal Marking Zealots",
+      "player_first_name": "Gerard",
+      "player_last_name": "Kowalski130",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 61,
+      "was_auto": false
+    },
+    {
+      "id": 152,
+      "index": 152,
+      "round": 13,
+      "pick": 8,
+      "entry": 1008,
+      "element": 82,
+      "entry_name": "Point Guardians",
+      "player_first_name": "Kai",
+      "player_last_name": "Adeyemi81",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 27,
+      "was_auto": false
+    },
+    {
+      "id": 153,
+      "index": 153,
+      "round": 13,
+      "pick": 9,
+      "entry": 1009,
+      "element": 186,
+      "entry_name": "The Kwoncept",
+      "player_first_name": "Jacob",
+      "player_last_name": "Adeyemi185",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 34,
+      "was_auto": false
+    },
+    {
+      "id": 154,
+      "index": 154,
+      "round": 13,
+      "pick": 10,
+      "entry": 1010,
+      "element": 46,
+      "entry_name": "Set Piece Society",
+      "player_first_name": "Gerard",
+      "player_last_name": "Adeyemi45",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 87,
+      "was_auto": false
+    },
+    {
+      "id": 155,
+      "index": 155,
+      "round": 13,
+      "pick": 11,
+      "entry": 1011,
+      "element": 162,
+      "entry_name": "Autopilot XI",
+      "player_first_name": "Gerard",
+      "player_last_name": "Silva161",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 56,
+      "was_auto": false
+    },
+    {
+      "id": 156,
+      "index": 156,
+      "round": 13,
+      "pick": 12,
+      "entry": 1012,
+      "element": 187,
+      "entry_name": "Sunday League Legends",
+      "player_first_name": "Diego",
+      "player_last_name": "Dubois186",
+      "choice_time": "2026-08-05T12:00:00Z",
+      "seconds_to_pick": 88,
+      "was_auto": false
+    },
+    {
+      "id": 157,
+      "index": 157,
+      "round": 14,
+      "pick": 1,
+      "entry": 1012,
+      "element": 140,
+      "entry_name": "Sunday League Legends",
+      "player_first_name": "Ethan",
+      "player_last_name": "Petrov139",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 52,
+      "was_auto": false
+    },
+    {
+      "id": 158,
+      "index": 158,
+      "round": 14,
+      "pick": 2,
+      "entry": 1011,
+      "element": 111,
+      "entry_name": "Autopilot XI",
+      "player_first_name": "Fabio",
+      "player_last_name": "Adeyemi110",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 59,
+      "was_auto": false
+    },
+    {
+      "id": 159,
+      "index": 159,
+      "round": 14,
+      "pick": 3,
+      "entry": 1010,
+      "element": 150,
+      "entry_name": "Set Piece Society",
+      "player_first_name": "Ethan",
+      "player_last_name": "Weber149",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 62,
+      "was_auto": false
+    },
+    {
+      "id": 160,
+      "index": 160,
+      "round": 14,
+      "pick": 4,
+      "entry": 1009,
+      "element": 55,
+      "entry_name": "The Kwoncept",
+      "player_first_name": "Kwame",
+      "player_last_name": "Kalu54",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 17,
+      "was_auto": false
+    },
+    {
+      "id": 161,
+      "index": 161,
+      "round": 14,
+      "pick": 5,
+      "entry": 1008,
+      "element": 36,
+      "entry_name": "Point Guardians",
+      "player_first_name": "Kwame",
+      "player_last_name": "Weber35",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 29,
+      "was_auto": false
+    },
+    {
+      "id": 162,
+      "index": 162,
+      "round": 14,
+      "pick": 6,
+      "entry": 1007,
+      "element": 132,
+      "entry_name": "Zonal Marking Zealots",
+      "player_first_name": "Pierre",
+      "player_last_name": "Rossi131",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 54,
+      "was_auto": false
+    },
+    {
+      "id": 163,
+      "index": 163,
+      "round": 14,
+      "pick": 7,
+      "entry": 1006,
+      "element": 104,
+      "entry_name": "Draft Dodgers",
+      "player_first_name": "Kai",
+      "player_last_name": "Okafor103",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 11,
+      "was_auto": false
+    },
+    {
+      "id": 164,
+      "index": 164,
+      "round": 14,
+      "pick": 8,
+      "entry": 1005,
+      "element": 20,
+      "entry_name": "Bench Press United",
+      "player_first_name": "Rafael",
+      "player_last_name": "Dubois19",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 14,
+      "was_auto": false
+    },
+    {
+      "id": 165,
+      "index": 165,
+      "round": 14,
+      "pick": 9,
+      "entry": 1004,
+      "element": 106,
+      "entry_name": "Tactically Naive FC",
+      "player_first_name": "Andres",
+      "player_last_name": "Silva105",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 83,
+      "was_auto": false
+    },
+    {
+      "id": 166,
+      "index": 166,
+      "round": 14,
+      "pick": 10,
+      "entry": 1003,
+      "element": 183,
+      "entry_name": "The Xavi Files",
+      "player_first_name": "Kwame",
+      "player_last_name": "Nilsson182",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 76,
+      "was_auto": false
+    },
+    {
+      "id": 167,
+      "index": 167,
+      "round": 14,
+      "pick": 11,
+      "entry": 1002,
+      "element": 190,
+      "entry_name": "Midweek Warriors",
+      "player_first_name": "Youssef",
+      "player_last_name": "Petrov189",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 28,
+      "was_auto": false
+    },
+    {
+      "id": 168,
+      "index": 168,
+      "round": 14,
+      "pick": 12,
+      "entry": 1001,
+      "element": 60,
+      "entry_name": "Galactic Ballers",
+      "player_first_name": "Lucas",
+      "player_last_name": "Kalu59",
+      "choice_time": "2026-08-06T12:00:00Z",
+      "seconds_to_pick": 28,
+      "was_auto": false
+    },
+    {
+      "id": 169,
+      "index": 169,
+      "round": 15,
+      "pick": 1,
+      "entry": 1001,
+      "element": 41,
+      "entry_name": "Galactic Ballers",
+      "player_first_name": "Diego",
+      "player_last_name": "Santos40",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 70,
+      "was_auto": false
+    },
+    {
+      "id": 170,
+      "index": 170,
+      "round": 15,
+      "pick": 2,
+      "entry": 1002,
+      "element": 45,
+      "entry_name": "Midweek Warriors",
+      "player_first_name": "Diego",
+      "player_last_name": "Halvorsen44",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 80,
+      "was_auto": false
+    },
+    {
+      "id": 171,
+      "index": 171,
+      "round": 15,
+      "pick": 3,
+      "entry": 1003,
+      "element": 2,
+      "entry_name": "The Xavi Files",
+      "player_first_name": "Bruno",
+      "player_last_name": "Novak1",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 35,
+      "was_auto": false
+    },
+    {
+      "id": 172,
+      "index": 172,
+      "round": 15,
+      "pick": 4,
+      "entry": 1004,
+      "element": 64,
+      "entry_name": "Tactically Naive FC",
+      "player_first_name": "Callum",
+      "player_last_name": "Mensah63",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 36,
+      "was_auto": false
+    },
+    {
+      "id": 173,
+      "index": 173,
+      "round": 15,
+      "pick": 5,
+      "entry": 1005,
+      "element": 137,
+      "entry_name": "Bench Press United",
+      "player_first_name": "Declan",
+      "player_last_name": "Haddad136",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 76,
+      "was_auto": false
+    },
+    {
+      "id": 174,
+      "index": 174,
+      "round": 15,
+      "pick": 6,
+      "entry": 1006,
+      "element": 65,
+      "entry_name": "Draft Dodgers",
+      "player_first_name": "James",
+      "player_last_name": "Okafor64",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 55,
+      "was_auto": false
+    },
+    {
+      "id": 175,
+      "index": 175,
+      "round": 15,
+      "pick": 7,
+      "entry": 1007,
+      "element": 74,
+      "entry_name": "Zonal Marking Zealots",
+      "player_first_name": "Elijah",
+      "player_last_name": "Kalu73",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 86,
+      "was_auto": false
+    },
+    {
+      "id": 176,
+      "index": 176,
+      "round": 15,
+      "pick": 8,
+      "entry": 1008,
+      "element": 22,
+      "entry_name": "Point Guardians",
+      "player_first_name": "Noah",
+      "player_last_name": "Kalu21",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 51,
+      "was_auto": false
+    },
+    {
+      "id": 177,
+      "index": 177,
+      "round": 15,
+      "pick": 9,
+      "entry": 1009,
+      "element": 43,
+      "entry_name": "The Kwoncept",
+      "player_first_name": "Gerard",
+      "player_last_name": "Novak42",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 69,
+      "was_auto": false
+    },
+    {
+      "id": 178,
+      "index": 178,
+      "round": 15,
+      "pick": 10,
+      "entry": 1010,
+      "element": 175,
+      "entry_name": "Set Piece Society",
+      "player_first_name": "Diego",
+      "player_last_name": "Osei174",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 47,
+      "was_auto": false
+    },
+    {
+      "id": 179,
+      "index": 179,
+      "round": 15,
+      "pick": 11,
+      "entry": 1011,
+      "element": 119,
+      "entry_name": "Autopilot XI",
+      "player_first_name": "Liam",
+      "player_last_name": "Haddad118",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 29,
+      "was_auto": false
+    },
+    {
+      "id": 180,
+      "index": 180,
+      "round": 15,
+      "pick": 12,
+      "entry": 1012,
+      "element": 170,
+      "entry_name": "Sunday League Legends",
+      "player_first_name": "Lucas",
+      "player_last_name": "Nilsson169",
+      "choice_time": "2026-08-07T12:00:00Z",
+      "seconds_to_pick": 86,
+      "was_auto": false
+    }
+  ],
+  "idle": [],
+  "element_status": [
+    {
+      "element": 1,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 2,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 3,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 4,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 5,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 6,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 7,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 8,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 9,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 10,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 11,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 12,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 13,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 14,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 15,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 16,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 17,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 18,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 19,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 20,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 21,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 22,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 23,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 24,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 25,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 26,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 27,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 28,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 29,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 30,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 31,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 32,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 33,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 34,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 35,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 36,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 37,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 38,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 39,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 40,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 41,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 42,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 43,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 44,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 45,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 46,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 47,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 48,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 49,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 50,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 51,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 52,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 53,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 54,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 55,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 56,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 57,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 58,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 59,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 60,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 61,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 62,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 63,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 64,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 65,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 66,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 67,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 68,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 69,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 70,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 71,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 72,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 73,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 74,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 75,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 76,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 77,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 78,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 79,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 80,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 81,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 82,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 83,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 84,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 85,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 86,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 87,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 88,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 89,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 90,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 91,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 92,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 93,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 94,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 95,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 96,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 97,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 98,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 99,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 100,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 101,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 102,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 103,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 104,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 105,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 106,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 107,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 108,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 109,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 110,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 111,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 112,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 113,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 114,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 115,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 116,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 117,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 118,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 119,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 120,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 121,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 122,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 123,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 124,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 125,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 126,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 127,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 128,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 129,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 130,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 131,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 132,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 133,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 134,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 135,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 136,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 137,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 138,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 139,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 140,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 141,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 142,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 143,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 144,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 145,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 146,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 147,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 148,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 149,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 150,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 151,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 152,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 153,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 154,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 155,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 156,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 157,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 158,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 159,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 160,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 161,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 162,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 163,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 164,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 165,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 166,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 167,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 168,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 169,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 170,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 171,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 172,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 173,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 174,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 175,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 176,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 177,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 178,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 179,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 180,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 181,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 182,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 183,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 184,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 185,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 186,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 187,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 188,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 189,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 190,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 191,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 192,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 193,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 194,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 195,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 196,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 197,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 198,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 199,
+      "owner": null,
+      "status": "a"
+    },
+    {
+      "element": 200,
+      "owner": null,
+      "status": "a"
+    }
+  ]
+}

@@ -1,0 +1,834 @@
+{
+  "recaps": [
+    {
+      "gw": 1,
+      "topScore": {
+        "managerIds": [
+          6
+        ],
+        "score": 41
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          3
+        ],
+        "score": 21
+      },
+      "blowout": {
+        "title": "Set Piece Society took The Xavi Files behind the bushes",
+        "winnerId": 10,
+        "loserId": 3,
+        "margin": 15
+      },
+      "worstLineup": {
+        "managerIds": [
+          4
+        ],
+        "benchPoints": 19
+      },
+      "fiftyNineClubInstances": [
+        {
+          "gw": 1,
+          "managerId": 1,
+          "elementId": 4,
+          "playerName": "N. Novak3",
+          "fixtureId": 141
+        },
+        {
+          "gw": 1,
+          "managerId": 2,
+          "elementId": 120,
+          "playerName": "K. Kowalski119",
+          "fixtureId": 301
+        },
+        {
+          "gw": 1,
+          "managerId": 7,
+          "elementId": 130,
+          "playerName": "K. Kalu129",
+          "fixtureId": 201
+        },
+        {
+          "gw": 1,
+          "managerId": 9,
+          "elementId": 55,
+          "playerName": "K. Kalu54",
+          "fixtureId": 251
+        },
+        {
+          "gw": 1,
+          "managerId": 9,
+          "elementId": 62,
+          "playerName": "L. Larsen61",
+          "fixtureId": 121
+        }
+      ]
+    },
+    {
+      "gw": 2,
+      "topScore": {
+        "managerIds": [
+          9
+        ],
+        "score": 45
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          6
+        ],
+        "score": 25
+      },
+      "blowout": {
+        "title": "Galactic Ballers took Autopilot XI behind the bushes",
+        "winnerId": 1,
+        "loserId": 11,
+        "margin": 10
+      },
+      "worstLineup": {
+        "managerIds": [
+          9
+        ],
+        "benchPoints": 21
+      },
+      "fiftyNineClubInstances": [
+        {
+          "gw": 2,
+          "managerId": 1,
+          "elementId": 99,
+          "playerName": "B. Berg98",
+          "fixtureId": 391
+        },
+        {
+          "gw": 2,
+          "managerId": 2,
+          "elementId": 120,
+          "playerName": "K. Kowalski119",
+          "fixtureId": 401
+        },
+        {
+          "gw": 2,
+          "managerId": 4,
+          "elementId": 174,
+          "playerName": "N. Nilsson173",
+          "fixtureId": 341
+        },
+        {
+          "gw": 2,
+          "managerId": 8,
+          "elementId": 116,
+          "playerName": "B. Berg115",
+          "fixtureId": 361
+        },
+        {
+          "gw": 2,
+          "managerId": 10,
+          "elementId": 85,
+          "playerName": "H. Haddad84",
+          "fixtureId": 251
+        },
+        {
+          "gw": 2,
+          "managerId": 11,
+          "elementId": 48,
+          "playerName": "T. Trigueros47",
+          "fixtureId": 281
+        }
+      ]
+    },
+    {
+      "gw": 3,
+      "topScore": {
+        "managerIds": [
+          8
+        ],
+        "score": 63
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          10
+        ],
+        "score": 21
+      },
+      "blowout": {
+        "title": "Galactic Ballers took Set Piece Society behind the bushes",
+        "winnerId": 1,
+        "loserId": 10,
+        "margin": 33
+      },
+      "worstLineup": {
+        "managerIds": [
+          7
+        ],
+        "benchPoints": 17
+      },
+      "fiftyNineClubInstances": [
+        {
+          "gw": 3,
+          "managerId": 2,
+          "elementId": 75,
+          "playerName": "C. Costa74",
+          "fixtureId": 451
+        },
+        {
+          "gw": 3,
+          "managerId": 3,
+          "elementId": 97,
+          "playerName": "W. Weber96",
+          "fixtureId": 471
+        },
+        {
+          "gw": 3,
+          "managerId": 3,
+          "elementId": 3,
+          "playerName": "J. Johnson2",
+          "fixtureId": 331
+        },
+        {
+          "gw": 3,
+          "managerId": 5,
+          "elementId": 156,
+          "playerName": "A. Adeyemi155",
+          "fixtureId": 461
+        },
+        {
+          "gw": 3,
+          "managerId": 7,
+          "elementId": 72,
+          "playerName": "F. Fernandez71",
+          "fixtureId": 421
+        },
+        {
+          "gw": 3,
+          "managerId": 10,
+          "elementId": 159,
+          "playerName": "M. Mensah158",
+          "fixtureId": 491
+        },
+        {
+          "gw": 3,
+          "managerId": 11,
+          "elementId": 81,
+          "playerName": "H. Haddad80",
+          "fixtureId": 311
+        },
+        {
+          "gw": 3,
+          "managerId": 11,
+          "elementId": 48,
+          "playerName": "T. Trigueros47",
+          "fixtureId": 381
+        }
+      ]
+    },
+    {
+      "gw": 4,
+      "topScore": {
+        "managerIds": [
+          10
+        ],
+        "score": 58
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          12
+        ],
+        "score": 30
+      },
+      "blowout": {
+        "title": "Draft Dodgers took Sunday League Legends behind the bushes",
+        "winnerId": 6,
+        "loserId": 12,
+        "margin": 20
+      },
+      "worstLineup": {
+        "managerIds": [
+          4
+        ],
+        "benchPoints": 19
+      },
+      "fiftyNineClubInstances": [
+        {
+          "gw": 4,
+          "managerId": 1,
+          "elementId": 57,
+          "playerName": "P. Petrov56",
+          "fixtureId": 571
+        },
+        {
+          "gw": 4,
+          "managerId": 1,
+          "elementId": 37,
+          "playerName": "F. Fernandez36",
+          "fixtureId": 571
+        },
+        {
+          "gw": 4,
+          "managerId": 2,
+          "elementId": 110,
+          "playerName": "S. Smith109",
+          "fixtureId": 501
+        },
+        {
+          "gw": 4,
+          "managerId": 5,
+          "elementId": 144,
+          "playerName": "M. Mensah143",
+          "fixtureId": 441
+        },
+        {
+          "gw": 4,
+          "managerId": 6,
+          "elementId": 103,
+          "playerName": "P. Petrov102",
+          "fixtureId": 431
+        },
+        {
+          "gw": 4,
+          "managerId": 6,
+          "elementId": 44,
+          "playerName": "V. Vidal43",
+          "fixtureId": 441
+        },
+        {
+          "gw": 4,
+          "managerId": 8,
+          "elementId": 126,
+          "playerName": "N. Novak125",
+          "fixtureId": 461
+        },
+        {
+          "gw": 4,
+          "managerId": 9,
+          "elementId": 168,
+          "playerName": "A. Adeyemi167",
+          "fixtureId": 481
+        },
+        {
+          "gw": 4,
+          "managerId": 12,
+          "elementId": 93,
+          "playerName": "F. Fernandez92",
+          "fixtureId": 531
+        },
+        {
+          "gw": 4,
+          "managerId": 12,
+          "elementId": 35,
+          "playerName": "O. Osei34",
+          "fixtureId": 551
+        }
+      ]
+    },
+    {
+      "gw": 5,
+      "topScore": {
+        "managerIds": [
+          6
+        ],
+        "score": 55
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          3
+        ],
+        "score": 27
+      },
+      "blowout": {
+        "title": "Midweek Warriors took The Xavi Files behind the bushes",
+        "winnerId": 2,
+        "loserId": 3,
+        "margin": 26
+      },
+      "worstLineup": {
+        "managerIds": [
+          8
+        ],
+        "benchPoints": 17
+      },
+      "fiftyNineClubInstances": [
+        {
+          "gw": 5,
+          "managerId": 2,
+          "elementId": 75,
+          "playerName": "C. Costa74",
+          "fixtureId": 651
+        },
+        {
+          "gw": 5,
+          "managerId": 2,
+          "elementId": 120,
+          "playerName": "K. Kowalski119",
+          "fixtureId": 701
+        },
+        {
+          "gw": 5,
+          "managerId": 3,
+          "elementId": 193,
+          "playerName": "B. Berg192",
+          "fixtureId": 631
+        },
+        {
+          "gw": 5,
+          "managerId": 6,
+          "elementId": 196,
+          "playerName": "H. Halvorsen195",
+          "fixtureId": 661
+        }
+      ]
+    },
+    {
+      "gw": 6,
+      "topScore": {
+        "managerIds": [
+          6
+        ],
+        "score": 63
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          3
+        ],
+        "score": 30
+      },
+      "blowout": {
+        "title": "Draft Dodgers took Point Guardians behind the bushes",
+        "winnerId": 6,
+        "loserId": 8,
+        "margin": 25
+      },
+      "worstLineup": {
+        "managerIds": [
+          10
+        ],
+        "benchPoints": 19
+      },
+      "fiftyNineClubInstances": [
+        {
+          "gw": 6,
+          "managerId": 2,
+          "elementId": 178,
+          "playerName": "N. Nilsson177",
+          "fixtureId": 781
+        },
+        {
+          "gw": 6,
+          "managerId": 3,
+          "elementId": 3,
+          "playerName": "J. Johnson2",
+          "fixtureId": 631
+        },
+        {
+          "gw": 6,
+          "managerId": 4,
+          "elementId": 105,
+          "playerName": "K. Kalu104",
+          "fixtureId": 651
+        },
+        {
+          "gw": 6,
+          "managerId": 5,
+          "elementId": 156,
+          "playerName": "A. Adeyemi155",
+          "fixtureId": 761
+        },
+        {
+          "gw": 6,
+          "managerId": 9,
+          "elementId": 181,
+          "playerName": "O. Osei180",
+          "fixtureId": 611
+        }
+      ]
+    },
+    {
+      "gw": 7,
+      "topScore": {
+        "managerIds": [
+          1
+        ],
+        "score": 64
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          7
+        ],
+        "score": 31
+      },
+      "blowout": {
+        "title": "Galactic Ballers took Draft Dodgers behind the bushes",
+        "winnerId": 1,
+        "loserId": 6,
+        "margin": 19
+      },
+      "worstLineup": {
+        "managerIds": [
+          10
+        ],
+        "benchPoints": 21
+      },
+      "fiftyNineClubInstances": [
+        {
+          "gw": 7,
+          "managerId": 1,
+          "elementId": 25,
+          "playerName": "H. Haddad24",
+          "fixtureId": 751
+        },
+        {
+          "gw": 7,
+          "managerId": 5,
+          "elementId": 147,
+          "playerName": "K. Kowalski146",
+          "fixtureId": 771
+        },
+        {
+          "gw": 7,
+          "managerId": 6,
+          "elementId": 196,
+          "playerName": "H. Halvorsen195",
+          "fixtureId": 861
+        },
+        {
+          "gw": 7,
+          "managerId": 8,
+          "elementId": 189,
+          "playerName": "K. Kalu188",
+          "fixtureId": 791
+        },
+        {
+          "gw": 7,
+          "managerId": 9,
+          "elementId": 62,
+          "playerName": "L. Larsen61",
+          "fixtureId": 721
+        },
+        {
+          "gw": 7,
+          "managerId": 11,
+          "elementId": 112,
+          "playerName": "K. Kowalski111",
+          "fixtureId": 821
+        }
+      ]
+    },
+    {
+      "gw": 8,
+      "topScore": {
+        "managerIds": [
+          8
+        ],
+        "score": 59
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          12
+        ],
+        "score": 29
+      },
+      "blowout": {
+        "title": "Point Guardians took Midweek Warriors behind the bushes",
+        "winnerId": 8,
+        "loserId": 2,
+        "margin": 13
+      },
+      "worstLineup": {
+        "managerIds": [
+          3
+        ],
+        "benchPoints": 22
+      },
+      "fiftyNineClubInstances": [
+        {
+          "gw": 8,
+          "managerId": 2,
+          "elementId": 190,
+          "playerName": "P. Petrov189",
+          "fixtureId": 901
+        },
+        {
+          "gw": 8,
+          "managerId": 3,
+          "elementId": 135,
+          "playerName": "S. Santos134",
+          "fixtureId": 951
+        },
+        {
+          "gw": 8,
+          "managerId": 3,
+          "elementId": 127,
+          "playerName": "M. Mensah126",
+          "fixtureId": 871
+        },
+        {
+          "gw": 8,
+          "managerId": 6,
+          "elementId": 152,
+          "playerName": "M. Mensah151",
+          "fixtureId": 921
+        },
+        {
+          "gw": 8,
+          "managerId": 10,
+          "elementId": 157,
+          "playerName": "C. Costa156",
+          "fixtureId": 971
+        }
+      ]
+    },
+    {
+      "gw": 9,
+      "topScore": {
+        "managerIds": [
+          6
+        ],
+        "score": 50
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          5
+        ],
+        "score": 30
+      },
+      "blowout": {
+        "title": "Draft Dodgers took Midweek Warriors behind the bushes",
+        "winnerId": 6,
+        "loserId": 2,
+        "margin": 5
+      },
+      "worstLineup": {
+        "managerIds": [
+          12
+        ],
+        "benchPoints": 22
+      },
+      "fiftyNineClubInstances": [
+        {
+          "gw": 9,
+          "managerId": 2,
+          "elementId": 75,
+          "playerName": "C. Costa74",
+          "fixtureId": 1051
+        },
+        {
+          "gw": 9,
+          "managerId": 4,
+          "elementId": 198,
+          "playerName": "D. Dubois197",
+          "fixtureId": 1081
+        },
+        {
+          "gw": 9,
+          "managerId": 5,
+          "elementId": 147,
+          "playerName": "K. Kowalski146",
+          "fixtureId": 971
+        },
+        {
+          "gw": 9,
+          "managerId": 7,
+          "elementId": 61,
+          "playerName": "H. Haddad60",
+          "fixtureId": 911
+        },
+        {
+          "gw": 9,
+          "managerId": 11,
+          "elementId": 162,
+          "playerName": "S. Silva161",
+          "fixtureId": 921
+        }
+      ]
+    },
+    {
+      "gw": 10,
+      "topScore": {
+        "managerIds": [
+          10
+        ],
+        "score": 48
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          9
+        ],
+        "score": 23
+      },
+      "blowout": {
+        "title": "Set Piece Society took Zonal Marking Zealots behind the bushes",
+        "winnerId": 10,
+        "loserId": 7,
+        "margin": 24
+      },
+      "worstLineup": {
+        "managerIds": [
+          8
+        ],
+        "benchPoints": 19
+      },
+      "fiftyNineClubInstances": [
+        {
+          "gw": 10,
+          "managerId": 6,
+          "elementId": 103,
+          "playerName": "P. Petrov102",
+          "fixtureId": 1031
+        },
+        {
+          "gw": 10,
+          "managerId": 7,
+          "elementId": 188,
+          "playerName": "B. Berg187",
+          "fixtureId": 1081
+        },
+        {
+          "gw": 10,
+          "managerId": 8,
+          "elementId": 109,
+          "playerName": "M. Moreno108",
+          "fixtureId": 1091
+        },
+        {
+          "gw": 10,
+          "managerId": 9,
+          "elementId": 70,
+          "playerName": "T. Trigueros69",
+          "fixtureId": 1101
+        },
+        {
+          "gw": 10,
+          "managerId": 9,
+          "elementId": 169,
+          "playerName": "H. Halvorsen168",
+          "fixtureId": 1091
+        },
+        {
+          "gw": 10,
+          "managerId": 9,
+          "elementId": 62,
+          "playerName": "L. Larsen61",
+          "fixtureId": 1021
+        },
+        {
+          "gw": 10,
+          "managerId": 10,
+          "elementId": 159,
+          "playerName": "M. Mensah158",
+          "fixtureId": 1191
+        },
+        {
+          "gw": 10,
+          "managerId": 12,
+          "elementId": 1,
+          "playerName": "M. Moreno0",
+          "fixtureId": 1011
+        }
+      ]
+    }
+  ],
+  "hallOfFame": {
+    "topScore": [
+      {
+        "managerId": 6,
+        "count": 4
+      },
+      {
+        "managerId": 8,
+        "count": 2
+      },
+      {
+        "managerId": 10,
+        "count": 2
+      },
+      {
+        "managerId": 9,
+        "count": 1
+      },
+      {
+        "managerId": 1,
+        "count": 1
+      }
+    ],
+    "markOfTheWeek": [
+      {
+        "managerId": 3,
+        "count": 3
+      },
+      {
+        "managerId": 12,
+        "count": 2
+      },
+      {
+        "managerId": 6,
+        "count": 1
+      },
+      {
+        "managerId": 10,
+        "count": 1
+      },
+      {
+        "managerId": 7,
+        "count": 1
+      },
+      {
+        "managerId": 5,
+        "count": 1
+      },
+      {
+        "managerId": 9,
+        "count": 1
+      }
+    ],
+    "blowout": [
+      {
+        "managerId": 1,
+        "count": 3
+      },
+      {
+        "managerId": 6,
+        "count": 3
+      },
+      {
+        "managerId": 10,
+        "count": 2
+      },
+      {
+        "managerId": 2,
+        "count": 1
+      },
+      {
+        "managerId": 8,
+        "count": 1
+      }
+    ],
+    "worstLineup": [
+      {
+        "managerId": 4,
+        "count": 2
+      },
+      {
+        "managerId": 8,
+        "count": 2
+      },
+      {
+        "managerId": 10,
+        "count": 2
+      },
+      {
+        "managerId": 9,
+        "count": 1
+      },
+      {
+        "managerId": 7,
+        "count": 1
+      },
+      {
+        "managerId": 3,
+        "count": 1
+      },
+      {
+        "managerId": 12,
+        "count": 1
+      }
+    ]
+  }
+}

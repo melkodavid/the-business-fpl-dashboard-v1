@@ -1,0 +1,166 @@
+{
+  "status": "in_progress",
+  "seeds": [
+    {
+      "managerId": 8,
+      "seed": 1
+    },
+    {
+      "managerId": 9,
+      "seed": 2
+    },
+    {
+      "managerId": 1,
+      "seed": 3
+    },
+    {
+      "managerId": 6,
+      "seed": 4
+    },
+    {
+      "managerId": 12,
+      "seed": 5
+    },
+    {
+      "managerId": 11,
+      "seed": 6
+    },
+    {
+      "managerId": 7,
+      "seed": 7
+    },
+    {
+      "managerId": 10,
+      "seed": 8
+    },
+    {
+      "managerId": 4,
+      "seed": 9
+    },
+    {
+      "managerId": 5,
+      "seed": 10
+    },
+    {
+      "managerId": 2,
+      "seed": 11
+    },
+    {
+      "managerId": 3,
+      "seed": 12
+    }
+  ],
+  "seedingSnapshotGw": 8,
+  "rounds": {
+    "round1": {
+      "gws": [
+        9
+      ],
+      "draw": [
+        {
+          "matchId": "r1-1",
+          "managerAId": 5,
+          "managerBId": 11
+        },
+        {
+          "matchId": "r1-2",
+          "managerAId": 3,
+          "managerBId": 12
+        },
+        {
+          "matchId": "r1-3",
+          "managerAId": 4,
+          "managerBId": 7
+        },
+        {
+          "matchId": "r1-4",
+          "managerAId": 10,
+          "managerBId": 2
+        }
+      ],
+      "results": [
+        {
+          "matchId": "r1-1",
+          "managerAId": 5,
+          "managerBId": 11,
+          "scoreA": 30,
+          "scoreB": 34,
+          "winnerId": 11,
+          "tiebreaker": null
+        },
+        {
+          "matchId": "r1-2",
+          "managerAId": 3,
+          "managerBId": 12,
+          "scoreA": 33,
+          "scoreB": 37,
+          "winnerId": 12,
+          "tiebreaker": null
+        },
+        {
+          "matchId": "r1-3",
+          "managerAId": 4,
+          "managerBId": 7,
+          "scoreA": 36,
+          "scoreB": 40,
+          "winnerId": 7,
+          "tiebreaker": null
+        },
+        {
+          "matchId": "r1-4",
+          "managerAId": 10,
+          "managerBId": 2,
+          "scoreA": 33,
+          "scoreB": 45,
+          "winnerId": 2,
+          "tiebreaker": null
+        }
+      ]
+    },
+    "round2": {
+      "gws": [
+        18,
+        19
+      ],
+      "draw": [
+        {
+          "matchId": "r2-1",
+          "managerAId": 1,
+          "managerBId": 12
+        },
+        {
+          "matchId": "r2-2",
+          "managerAId": 9,
+          "managerBId": 7
+        },
+        {
+          "matchId": "r2-3",
+          "managerAId": 6,
+          "managerBId": 2
+        },
+        {
+          "matchId": "r2-4",
+          "managerAId": 11,
+          "managerBId": 8
+        }
+      ],
+      "results": null
+    },
+    "round3": {
+      "gws": [
+        27,
+        28
+      ],
+      "draw": null,
+      "results": null
+    },
+    "round4": {
+      "gws": [
+        36
+      ],
+      "draw": null,
+      "results": null
+    }
+  },
+  "champion": null
+}

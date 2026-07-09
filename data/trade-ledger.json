@@ -1,0 +1,132 @@
+{
+  "log": [
+    {
+      "tradeId": 1,
+      "gw": 6,
+      "sides": [
+        {
+          "managerId": 1,
+          "received": [
+            {
+              "elementId": 45,
+              "playerName": "H. Halvorsen44",
+              "points": 20
+            },
+            {
+              "elementId": 115,
+              "playerName": "C. Costa114",
+              "points": 13
+            }
+          ],
+          "given": [
+            {
+              "elementId": 41,
+              "playerName": "S. Santos40",
+              "points": 8
+            },
+            {
+              "elementId": 96,
+              "playerName": "N. Novak95",
+              "points": 22
+            }
+          ],
+          "gained": 33,
+          "givenUp": 30,
+          "netValue": 3
+        },
+        {
+          "managerId": 2,
+          "received": [
+            {
+              "elementId": 41,
+              "playerName": "S. Santos40",
+              "points": 8
+            },
+            {
+              "elementId": 96,
+              "playerName": "N. Novak95",
+              "points": 22
+            }
+          ],
+          "given": [
+            {
+              "elementId": 45,
+              "playerName": "H. Halvorsen44",
+              "points": 20
+            },
+            {
+              "elementId": 115,
+              "playerName": "C. Costa114",
+              "points": 13
+            }
+          ],
+          "gained": 30,
+          "givenUp": 33,
+          "netValue": -3
+        }
+      ]
+    }
+  ],
+  "leaderboard": [
+    {
+      "managerId": 1,
+      "managerName": "Galactic Ballers",
+      "netTradeValue": 3
+    },
+    {
+      "managerId": 3,
+      "managerName": "The Xavi Files",
+      "netTradeValue": 0
+    },
+    {
+      "managerId": 4,
+      "managerName": "Tactically Naive FC",
+      "netTradeValue": 0
+    },
+    {
+      "managerId": 5,
+      "managerName": "Bench Press United",
+      "netTradeValue": 0
+    },
+    {
+      "managerId": 6,
+      "managerName": "Draft Dodgers",
+      "netTradeValue": 0
+    },
+    {
+      "managerId": 7,
+      "managerName": "Zonal Marking Zealots",
+      "netTradeValue": 0
+    },
+    {
+      "managerId": 8,
+      "managerName": "Point Guardians",
+      "netTradeValue": 0
+    },
+    {
+      "managerId": 9,
+      "managerName": "The Kwoncept",
+      "netTradeValue": 0
+    },
+    {
+      "managerId": 10,
+      "managerName": "Set Piece Society",
+      "netTradeValue": 0
+    },
+    {
+      "managerId": 11,
+      "managerName": "Autopilot XI",
+      "netTradeValue": 0
+    },
+    {
+      "managerId": 12,
+      "managerName": "Sunday League Legends",
+      "netTradeValue": 0
+    },
+    {
+      "managerId": 2,
+      "managerName": "Midweek Warriors",
+      "netTradeValue": -3
+    }
+  ]
+}

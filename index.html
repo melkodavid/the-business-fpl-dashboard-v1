@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FPL Draft League Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-bar">
+      <h1 class="site-title">FPL Draft League</h1>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+    <nav id="site-nav" class="site-nav">
+      <a href="#standings" data-route="standings">Standings</a>
+      <a href="#all-play" data-route="all-play">All-Play</a>
+      <a href="#h2h" data-route="h2h">H2H Grid</a>
+      <a href="#awards" data-route="awards">Weekly Awards</a>
+      <a href="#positions" data-route="positions">Positional Strength</a>
+      <a href="#scoring" data-route="scoring">Scoring Type</a>
+      <a href="#fifty-nine" data-route="fifty-nine">59 Club</a>
+      <a href="#bench" data-route="bench">Bench Stats</a>
+      <a href="#draft" data-route="draft">Draft Grades</a>
+      <a href="#trades" data-route="trades">Trade Ledger</a>
+      <a href="#waivers" data-route="waivers">Waiver Hit Rate</a>
+      <a href="#form" data-route="form">Form Guide</a>
+      <a href="#cup" data-route="cup">FA Cup</a>
+    </nav>
+  </header>
+
+  <main id="app">
+    <p class="loading">Loading league data…</p>
+  </main>
+
+  <footer class="site-footer">
+    <p id="last-updated"></p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

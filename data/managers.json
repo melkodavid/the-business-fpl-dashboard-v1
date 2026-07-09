@@ -1,0 +1,64 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "Galactic Ballers",
+      "shortName": "GB"
+    },
+    {
+      "id": 2,
+      "name": "Midweek Warriors",
+      "shortName": "MW"
+    },
+    {
+      "id": 3,
+      "name": "The Xavi Files",
+      "shortName": "TXF"
+    },
+    {
+      "id": 4,
+      "name": "Tactically Naive FC",
+      "shortName": "TNF"
+    },
+    {
+      "id": 5,
+      "name": "Bench Press United",
+      "shortName": "BPU"
+    },
+    {
+      "id": 6,
+      "name": "Draft Dodgers",
+      "shortName": "DD"
+    },
+    {
+      "id": 7,
+      "name": "Zonal Marking Zealots",
+      "shortName": "ZMZ"
+    },
+    {
+      "id": 8,
+      "name": "Point Guardians",
+      "shortName": "PG"
+    },
+    {
+      "id": 9,
+      "name": "The Kwoncept",
+      "shortName": "TK"
+    },
+    {
+      "id": 10,
+      "name": "Set Piece Society",
+      "shortName": "SPS"
+    },
+    {
+      "id": 11,
+      "name": "Autopilot XI",
+      "shortName": "AX"
+    },
+    {
+      "id": 12,
+      "name": "Sunday League Legends",
+      "shortName": "SLL"
+    }
+  ]
+}

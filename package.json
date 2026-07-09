@@ -1,0 +1,16 @@
+{
+  "name": "fpl-draft-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static dashboard for a 12-team FPL Draft league, backed by a scheduled GitHub Action.",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:mock": "node scripts/build.js --mock",
+    "test": "node --test",
+    "serve": "node scripts/serve.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "perManager": [
+    {
+      "managerId": 1,
+      "managerName": "Galactic Ballers",
+      "for": {
+        "GK": 34,
+        "DEF": 141,
+        "MID": 148,
+        "FWD": 64
+      },
+      "against": {
+        "GK": 24,
+        "DEF": 144,
+        "MID": 104,
+        "FWD": 57
+      },
+      "topForPosition": "MID",
+      "topAgainstPosition": "DEF"
+    },
+    {
+      "managerId": 2,
+      "managerName": "Midweek Warriors",
+      "for": {
+        "GK": 25,
+        "DEF": 178,
+        "MID": 126,
+        "FWD": 62
+      },
+      "against": {
+        "GK": 42,
+        "DEF": 167,
+        "MID": 135,
+        "FWD": 41
+      },
+      "topForPosition": "DEF",
+      "topAgainstPosition": "DEF"
+    },
+    {
+      "managerId": 3,
+      "managerName": "The Xavi Files",
+      "for": {
+        "GK": 27,
+        "DEF": 114,
+        "MID": 108,
+        "FWD": 49
+      },
+      "against": {
+        "GK": 32,
+        "DEF": 166,
+        "MID": 113,
+        "FWD": 56
+      },
+      "topForPosition": "DEF",
+      "topAgainstPosition": "DEF"
+    },
+    {
+      "managerId": 4,
+      "managerName": "Tactically Naive FC",
+      "for": {
+        "GK": 31,
+        "DEF": 125,
+        "MID": 130,
+        "FWD": 60
+      },
+      "against": {
+        "GK": 30,
+        "DEF": 142,
+        "MID": 144,
+        "FWD": 43
+      },
+      "topForPosition": "MID",
+      "topAgainstPosition": "MID"
+    },
+    {
+      "managerId": 5,
+      "managerName": "Bench Press United",
+      "for": {
+        "GK": 31,
+        "DEF": 134,
+        "MID": 129,
+        "FWD": 44
+      },
+      "against": {
+        "GK": 27,
+        "DEF": 145,
+        "MID": 125,
+        "FWD": 50
+      },
+      "topForPosition": "DEF",
+      "topAgainstPosition": "DEF"
+    },
+    {
+      "managerId": 6,
+      "managerName": "Draft Dodgers",
+      "for": {
+        "GK": 43,
+        "DEF": 164,
+        "MID": 156,
+        "FWD": 40
+      },
+      "against": {
+        "GK": 27,
+        "DEF": 151,
+        "MID": 138,
+        "FWD": 55
+      },
+      "topForPosition": "DEF",
+      "topAgainstPosition": "DEF"
+    },
+    {
+      "managerId": 7,
+      "managerName": "Zonal Marking Zealots",
+      "for": {
+        "GK": 20,
+        "DEF": 160,
+        "MID": 126,
+        "FWD": 40
+      },
+      "against": {
+        "GK": 35,
+        "DEF": 142,
+        "MID": 118,
+        "FWD": 66
+      },
+      "topForPosition": "DEF",
+      "topAgainstPosition": "DEF"
+    },
+    {
+      "managerId": 8,
+      "managerName": "Point Guardians",
+      "for": {
+        "GK": 38,
+        "DEF": 183,
+        "MID": 109,
+        "FWD": 63
+      },
+      "against": {
+        "GK": 43,
+        "DEF": 156,
+        "MID": 121,
+        "FWD": 51
+      },
+      "topForPosition": "DEF",
+      "topAgainstPosition": "DEF"
+    },
+    {
+      "managerId": 9,
+      "managerName": "The Kwoncept",
+      "for": {
+        "GK": 37,
+        "DEF": 175,
+        "MID": 109,
+        "FWD": 50
+      },
+      "against": {
+        "GK": 34,
+        "DEF": 130,
+        "MID": 131,
+        "FWD": 59
+      },
+      "topForPosition": "DEF",
+      "topAgainstPosition": "MID"
+    },
+    {
+      "managerId": 10,
+      "managerName": "Set Piece Society",
+      "for": {
+        "GK": 38,
+        "DEF": 136,
+        "MID": 130,
+        "FWD": 56
+      },
+      "against": {
+        "GK": 34,
+        "DEF": 143,
+        "MID": 150,
+        "FWD": 42
+      },
+      "topForPosition": "DEF",
+      "topAgainstPosition": "MID"
+    },
+    {
+      "managerId": 11,
+      "managerName": "Autopilot XI",
+      "for": {
+        "GK": 17,
+        "DEF": 166,
+        "MID": 135,
+        "FWD": 52
+      },
+      "against": {
+        "GK": 23,
+        "DEF": 155,
+        "MID": 123,
+        "FWD": 54
+      },
+      "topForPosition": "DEF",
+      "topAgainstPosition": "DEF"
+    },
+    {
+      "managerId": 12,
+      "managerName": "Sunday League Legends",
+      "for": {
+        "GK": 41,
+        "DEF": 135,
+        "MID": 103,
+        "FWD": 51
+      },
+      "against": {
+        "GK": 31,
+        "DEF": 170,
+        "MID": 107,
+        "FWD": 57
+      },
+      "topForPosition": "DEF",
+      "topAgainstPosition": "DEF"
+    }
+  ]
+}

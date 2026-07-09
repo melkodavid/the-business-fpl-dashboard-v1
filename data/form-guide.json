@@ -1,0 +1,148 @@
+{
+  "rows": [
+    {
+      "managerId": 6,
+      "managerName": "Draft Dodgers",
+      "gwsIncluded": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "formPoints": 222
+    },
+    {
+      "managerId": 1,
+      "managerName": "Galactic Ballers",
+      "gwsIncluded": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "formPoints": 221
+    },
+    {
+      "managerId": 8,
+      "managerName": "Point Guardians",
+      "gwsIncluded": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "formPoints": 210
+    },
+    {
+      "managerId": 10,
+      "managerName": "Set Piece Society",
+      "gwsIncluded": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "formPoints": 210
+    },
+    {
+      "managerId": 2,
+      "managerName": "Midweek Warriors",
+      "gwsIncluded": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "formPoints": 204
+    },
+    {
+      "managerId": 11,
+      "managerName": "Autopilot XI",
+      "gwsIncluded": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "formPoints": 204
+    },
+    {
+      "managerId": 4,
+      "managerName": "Tactically Naive FC",
+      "gwsIncluded": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "formPoints": 194
+    },
+    {
+      "managerId": 9,
+      "managerName": "The Kwoncept",
+      "gwsIncluded": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "formPoints": 187
+    },
+    {
+      "managerId": 12,
+      "managerName": "Sunday League Legends",
+      "gwsIncluded": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "formPoints": 178
+    },
+    {
+      "managerId": 5,
+      "managerName": "Bench Press United",
+      "gwsIncluded": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "formPoints": 176
+    },
+    {
+      "managerId": 3,
+      "managerName": "The Xavi Files",
+      "gwsIncluded": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "formPoints": 172
+    },
+    {
+      "managerId": 7,
+      "managerName": "Zonal Marking Zealots",
+      "gwsIncluded": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "formPoints": 164
+    }
+  ]
+}

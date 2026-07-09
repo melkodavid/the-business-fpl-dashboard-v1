@@ -1,0 +1,710 @@
+{
+  "perGw": {
+    "1": [
+      {
+        "managerId": 1,
+        "score": 23,
+        "allPlayWinPct": 0.09090909090909091
+      },
+      {
+        "managerId": 2,
+        "score": 28,
+        "allPlayWinPct": 0.18181818181818182
+      },
+      {
+        "managerId": 3,
+        "score": 21,
+        "allPlayWinPct": 0
+      },
+      {
+        "managerId": 4,
+        "score": 33,
+        "allPlayWinPct": 0.45454545454545453
+      },
+      {
+        "managerId": 5,
+        "score": 39,
+        "allPlayWinPct": 0.7727272727272727
+      },
+      {
+        "managerId": 6,
+        "score": 41,
+        "allPlayWinPct": 1
+      },
+      {
+        "managerId": 7,
+        "score": 31,
+        "allPlayWinPct": 0.3181818181818182
+      },
+      {
+        "managerId": 8,
+        "score": 40,
+        "allPlayWinPct": 0.9090909090909091
+      },
+      {
+        "managerId": 9,
+        "score": 39,
+        "allPlayWinPct": 0.7727272727272727
+      },
+      {
+        "managerId": 10,
+        "score": 36,
+        "allPlayWinPct": 0.5454545454545454
+      },
+      {
+        "managerId": 11,
+        "score": 37,
+        "allPlayWinPct": 0.6363636363636364
+      },
+      {
+        "managerId": 12,
+        "score": 31,
+        "allPlayWinPct": 0.3181818181818182
+      }
+    ],
+    "2": [
+      {
+        "managerId": 1,
+        "score": 39,
+        "allPlayWinPct": 0.8181818181818182
+      },
+      {
+        "managerId": 2,
+        "score": 40,
+        "allPlayWinPct": 0.9090909090909091
+      },
+      {
+        "managerId": 3,
+        "score": 27,
+        "allPlayWinPct": 0.13636363636363635
+      },
+      {
+        "managerId": 4,
+        "score": 27,
+        "allPlayWinPct": 0.13636363636363635
+      },
+      {
+        "managerId": 5,
+        "score": 29,
+        "allPlayWinPct": 0.4090909090909091
+      },
+      {
+        "managerId": 6,
+        "score": 25,
+        "allPlayWinPct": 0
+      },
+      {
+        "managerId": 7,
+        "score": 29,
+        "allPlayWinPct": 0.4090909090909091
+      },
+      {
+        "managerId": 8,
+        "score": 31,
+        "allPlayWinPct": 0.6363636363636364
+      },
+      {
+        "managerId": 9,
+        "score": 45,
+        "allPlayWinPct": 1
+      },
+      {
+        "managerId": 10,
+        "score": 29,
+        "allPlayWinPct": 0.4090909090909091
+      },
+      {
+        "managerId": 11,
+        "score": 29,
+        "allPlayWinPct": 0.4090909090909091
+      },
+      {
+        "managerId": 12,
+        "score": 35,
+        "allPlayWinPct": 0.7272727272727273
+      }
+    ],
+    "3": [
+      {
+        "managerId": 1,
+        "score": 54,
+        "allPlayWinPct": 0.9090909090909091
+      },
+      {
+        "managerId": 2,
+        "score": 42,
+        "allPlayWinPct": 0.3181818181818182
+      },
+      {
+        "managerId": 3,
+        "score": 33,
+        "allPlayWinPct": 0.09090909090909091
+      },
+      {
+        "managerId": 4,
+        "score": 45,
+        "allPlayWinPct": 0.5
+      },
+      {
+        "managerId": 5,
+        "score": 42,
+        "allPlayWinPct": 0.3181818181818182
+      },
+      {
+        "managerId": 6,
+        "score": 53,
+        "allPlayWinPct": 0.8181818181818182
+      },
+      {
+        "managerId": 7,
+        "score": 45,
+        "allPlayWinPct": 0.5
+      },
+      {
+        "managerId": 8,
+        "score": 63,
+        "allPlayWinPct": 1
+      },
+      {
+        "managerId": 9,
+        "score": 49,
+        "allPlayWinPct": 0.6363636363636364
+      },
+      {
+        "managerId": 10,
+        "score": 21,
+        "allPlayWinPct": 0
+      },
+      {
+        "managerId": 11,
+        "score": 40,
+        "allPlayWinPct": 0.18181818181818182
+      },
+      {
+        "managerId": 12,
+        "score": 51,
+        "allPlayWinPct": 0.7272727272727273
+      }
+    ],
+    "4": [
+      {
+        "managerId": 1,
+        "score": 51,
+        "allPlayWinPct": 0.8636363636363636
+      },
+      {
+        "managerId": 2,
+        "score": 49,
+        "allPlayWinPct": 0.5909090909090909
+      },
+      {
+        "managerId": 3,
+        "score": 45,
+        "allPlayWinPct": 0.36363636363636365
+      },
+      {
+        "managerId": 4,
+        "score": 40,
+        "allPlayWinPct": 0.18181818181818182
+      },
+      {
+        "managerId": 5,
+        "score": 47,
+        "allPlayWinPct": 0.45454545454545453
+      },
+      {
+        "managerId": 6,
+        "score": 50,
+        "allPlayWinPct": 0.7272727272727273
+      },
+      {
+        "managerId": 7,
+        "score": 49,
+        "allPlayWinPct": 0.5909090909090909
+      },
+      {
+        "managerId": 8,
+        "score": 51,
+        "allPlayWinPct": 0.8636363636363636
+      },
+      {
+        "managerId": 9,
+        "score": 41,
+        "allPlayWinPct": 0.2727272727272727
+      },
+      {
+        "managerId": 10,
+        "score": 58,
+        "allPlayWinPct": 1
+      },
+      {
+        "managerId": 11,
+        "score": 37,
+        "allPlayWinPct": 0.09090909090909091
+      },
+      {
+        "managerId": 12,
+        "score": 30,
+        "allPlayWinPct": 0
+      }
+    ],
+    "5": [
+      {
+        "managerId": 1,
+        "score": 33,
+        "allPlayWinPct": 0.09090909090909091
+      },
+      {
+        "managerId": 2,
+        "score": 53,
+        "allPlayWinPct": 0.9090909090909091
+      },
+      {
+        "managerId": 3,
+        "score": 27,
+        "allPlayWinPct": 0
+      },
+      {
+        "managerId": 4,
+        "score": 38,
+        "allPlayWinPct": 0.36363636363636365
+      },
+      {
+        "managerId": 5,
+        "score": 36,
+        "allPlayWinPct": 0.22727272727272727
+      },
+      {
+        "managerId": 6,
+        "score": 55,
+        "allPlayWinPct": 1
+      },
+      {
+        "managerId": 7,
+        "score": 48,
+        "allPlayWinPct": 0.8181818181818182
+      },
+      {
+        "managerId": 8,
+        "score": 36,
+        "allPlayWinPct": 0.22727272727272727
+      },
+      {
+        "managerId": 9,
+        "score": 47,
+        "allPlayWinPct": 0.7272727272727273
+      },
+      {
+        "managerId": 10,
+        "score": 44,
+        "allPlayWinPct": 0.5454545454545454
+      },
+      {
+        "managerId": 11,
+        "score": 40,
+        "allPlayWinPct": 0.45454545454545453
+      },
+      {
+        "managerId": 12,
+        "score": 46,
+        "allPlayWinPct": 0.6363636363636364
+      }
+    ],
+    "6": [
+      {
+        "managerId": 1,
+        "score": 46,
+        "allPlayWinPct": 0.7727272727272727
+      },
+      {
+        "managerId": 2,
+        "score": 38,
+        "allPlayWinPct": 0.3181818181818182
+      },
+      {
+        "managerId": 3,
+        "score": 30,
+        "allPlayWinPct": 0
+      },
+      {
+        "managerId": 4,
+        "score": 46,
+        "allPlayWinPct": 0.7727272727272727
+      },
+      {
+        "managerId": 5,
+        "score": 38,
+        "allPlayWinPct": 0.3181818181818182
+      },
+      {
+        "managerId": 6,
+        "score": 63,
+        "allPlayWinPct": 1
+      },
+      {
+        "managerId": 7,
+        "score": 35,
+        "allPlayWinPct": 0.09090909090909091
+      },
+      {
+        "managerId": 8,
+        "score": 38,
+        "allPlayWinPct": 0.3181818181818182
+      },
+      {
+        "managerId": 9,
+        "score": 45,
+        "allPlayWinPct": 0.6363636363636364
+      },
+      {
+        "managerId": 10,
+        "score": 38,
+        "allPlayWinPct": 0.3181818181818182
+      },
+      {
+        "managerId": 11,
+        "score": 47,
+        "allPlayWinPct": 0.9090909090909091
+      },
+      {
+        "managerId": 12,
+        "score": 42,
+        "allPlayWinPct": 0.5454545454545454
+      }
+    ],
+    "7": [
+      {
+        "managerId": 1,
+        "score": 64,
+        "allPlayWinPct": 1
+      },
+      {
+        "managerId": 2,
+        "score": 39,
+        "allPlayWinPct": 0.2727272727272727
+      },
+      {
+        "managerId": 3,
+        "score": 36,
+        "allPlayWinPct": 0.18181818181818182
+      },
+      {
+        "managerId": 4,
+        "score": 40,
+        "allPlayWinPct": 0.36363636363636365
+      },
+      {
+        "managerId": 5,
+        "score": 35,
+        "allPlayWinPct": 0.09090909090909091
+      },
+      {
+        "managerId": 6,
+        "score": 45,
+        "allPlayWinPct": 0.7272727272727273
+      },
+      {
+        "managerId": 7,
+        "score": 31,
+        "allPlayWinPct": 0
+      },
+      {
+        "managerId": 8,
+        "score": 41,
+        "allPlayWinPct": 0.45454545454545453
+      },
+      {
+        "managerId": 9,
+        "score": 43,
+        "allPlayWinPct": 0.6363636363636364
+      },
+      {
+        "managerId": 10,
+        "score": 50,
+        "allPlayWinPct": 0.9090909090909091
+      },
+      {
+        "managerId": 11,
+        "score": 42,
+        "allPlayWinPct": 0.5454545454545454
+      },
+      {
+        "managerId": 12,
+        "score": 46,
+        "allPlayWinPct": 0.8181818181818182
+      }
+    ],
+    "8": [
+      {
+        "managerId": 1,
+        "score": 42,
+        "allPlayWinPct": 0.5454545454545454
+      },
+      {
+        "managerId": 2,
+        "score": 46,
+        "allPlayWinPct": 0.8181818181818182
+      },
+      {
+        "managerId": 3,
+        "score": 36,
+        "allPlayWinPct": 0.22727272727272727
+      },
+      {
+        "managerId": 4,
+        "score": 47,
+        "allPlayWinPct": 0.9090909090909091
+      },
+      {
+        "managerId": 5,
+        "score": 42,
+        "allPlayWinPct": 0.5454545454545454
+      },
+      {
+        "managerId": 6,
+        "score": 36,
+        "allPlayWinPct": 0.22727272727272727
+      },
+      {
+        "managerId": 7,
+        "score": 34,
+        "allPlayWinPct": 0.09090909090909091
+      },
+      {
+        "managerId": 8,
+        "score": 59,
+        "allPlayWinPct": 1
+      },
+      {
+        "managerId": 9,
+        "score": 42,
+        "allPlayWinPct": 0.5454545454545454
+      },
+      {
+        "managerId": 10,
+        "score": 41,
+        "allPlayWinPct": 0.36363636363636365
+      },
+      {
+        "managerId": 11,
+        "score": 44,
+        "allPlayWinPct": 0.7272727272727273
+      },
+      {
+        "managerId": 12,
+        "score": 29,
+        "allPlayWinPct": 0
+      }
+    ],
+    "9": [
+      {
+        "managerId": 1,
+        "score": 37,
+        "allPlayWinPct": 0.6818181818181818
+      },
+      {
+        "managerId": 2,
+        "score": 45,
+        "allPlayWinPct": 0.9090909090909091
+      },
+      {
+        "managerId": 3,
+        "score": 33,
+        "allPlayWinPct": 0.22727272727272727
+      },
+      {
+        "managerId": 4,
+        "score": 36,
+        "allPlayWinPct": 0.5454545454545454
+      },
+      {
+        "managerId": 5,
+        "score": 30,
+        "allPlayWinPct": 0
+      },
+      {
+        "managerId": 6,
+        "score": 50,
+        "allPlayWinPct": 1
+      },
+      {
+        "managerId": 7,
+        "score": 40,
+        "allPlayWinPct": 0.8181818181818182
+      },
+      {
+        "managerId": 8,
+        "score": 32,
+        "allPlayWinPct": 0.09090909090909091
+      },
+      {
+        "managerId": 9,
+        "score": 34,
+        "allPlayWinPct": 0.4090909090909091
+      },
+      {
+        "managerId": 10,
+        "score": 33,
+        "allPlayWinPct": 0.22727272727272727
+      },
+      {
+        "managerId": 11,
+        "score": 34,
+        "allPlayWinPct": 0.4090909090909091
+      },
+      {
+        "managerId": 12,
+        "score": 37,
+        "allPlayWinPct": 0.6818181818181818
+      }
+    ],
+    "10": [
+      {
+        "managerId": 1,
+        "score": 32,
+        "allPlayWinPct": 0.5454545454545454
+      },
+      {
+        "managerId": 2,
+        "score": 36,
+        "allPlayWinPct": 0.6363636363636364
+      },
+      {
+        "managerId": 3,
+        "score": 37,
+        "allPlayWinPct": 0.7727272727272727
+      },
+      {
+        "managerId": 4,
+        "score": 25,
+        "allPlayWinPct": 0.2727272727272727
+      },
+      {
+        "managerId": 5,
+        "score": 31,
+        "allPlayWinPct": 0.45454545454545453
+      },
+      {
+        "managerId": 6,
+        "score": 28,
+        "allPlayWinPct": 0.36363636363636365
+      },
+      {
+        "managerId": 7,
+        "score": 24,
+        "allPlayWinPct": 0.13636363636363635
+      },
+      {
+        "managerId": 8,
+        "score": 40,
+        "allPlayWinPct": 0.9090909090909091
+      },
+      {
+        "managerId": 9,
+        "score": 23,
+        "allPlayWinPct": 0
+      },
+      {
+        "managerId": 10,
+        "score": 48,
+        "allPlayWinPct": 1
+      },
+      {
+        "managerId": 11,
+        "score": 37,
+        "allPlayWinPct": 0.7727272727272727
+      },
+      {
+        "managerId": 12,
+        "score": 24,
+        "allPlayWinPct": 0.13636363636363635
+      }
+    ]
+  },
+  "standings": [
+    {
+      "managerId": 6,
+      "managerName": "Draft Dodgers",
+      "expectedWins": 6.863636363636364,
+      "actualWins": 6,
+      "luckScore": -0.8636363636363642
+    },
+    {
+      "managerId": 8,
+      "managerName": "Point Guardians",
+      "expectedWins": 6.409090909090909,
+      "actualWins": 7,
+      "luckScore": 0.5909090909090908
+    },
+    {
+      "managerId": 1,
+      "managerName": "Galactic Ballers",
+      "expectedWins": 6.318181818181818,
+      "actualWins": 6,
+      "luckScore": -0.31818181818181834
+    },
+    {
+      "managerId": 2,
+      "managerName": "Midweek Warriors",
+      "expectedWins": 5.863636363636364,
+      "actualWins": 3,
+      "luckScore": -2.863636363636364
+    },
+    {
+      "managerId": 9,
+      "managerName": "The Kwoncept",
+      "expectedWins": 5.636363636363638,
+      "actualWins": 7,
+      "luckScore": 1.3636363636363624
+    },
+    {
+      "managerId": 10,
+      "managerName": "Set Piece Society",
+      "expectedWins": 5.318181818181818,
+      "actualWins": 4,
+      "luckScore": -1.3181818181818183
+    },
+    {
+      "managerId": 11,
+      "managerName": "Autopilot XI",
+      "expectedWins": 5.136363636363636,
+      "actualWins": 6,
+      "luckScore": 0.8636363636363642
+    },
+    {
+      "managerId": 12,
+      "managerName": "Sunday League Legends",
+      "expectedWins": 4.590909090909092,
+      "actualWins": 5,
+      "luckScore": 0.4090909090909083
+    },
+    {
+      "managerId": 4,
+      "managerName": "Tactically Naive FC",
+      "expectedWins": 4.5,
+      "actualWins": 3,
+      "luckScore": -1.5
+    },
+    {
+      "managerId": 7,
+      "managerName": "Zonal Marking Zealots",
+      "expectedWins": 3.772727272727273,
+      "actualWins": 5,
+      "luckScore": 1.227272727272727
+    },
+    {
+      "managerId": 5,
+      "managerName": "Bench Press United",
+      "expectedWins": 3.590909090909091,
+      "actualWins": 3,
+      "luckScore": -0.5909090909090908
+    },
+    {
+      "managerId": 3,
+      "managerName": "The Xavi Files",
+      "expectedWins": 2,
+      "actualWins": 4,
+      "luckScore": 2
+    }
+  ]
+}

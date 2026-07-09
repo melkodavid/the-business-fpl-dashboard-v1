@@ -1,0 +1,27 @@
+{
+  "trades": [
+    {
+      "id": 1,
+      "event": 6,
+      "entry1_entry": 1001,
+      "entry1_players_out": [
+        41,
+        96
+      ],
+      "entry1_players_in": [
+        45,
+        115
+      ],
+      "entry2_entry": 1002,
+      "entry2_players_out": [
+        45,
+        115
+      ],
+      "entry2_players_in": [
+        41,
+        96
+      ],
+      "state": "a"
+    }
+  ]
+}

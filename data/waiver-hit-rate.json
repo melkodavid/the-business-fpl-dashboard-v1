@@ -1,0 +1,239 @@
+{
+  "pickups": [
+    {
+      "managerId": 3,
+      "managerName": "The Xavi Files",
+      "elementId": 53,
+      "playerName": "H. Haddad52",
+      "kind": "w",
+      "acquiredGw": 3,
+      "gwsRostered": 8,
+      "pointsWhileRostered": 18,
+      "pointsPerGw": 2.25,
+      "isHit": false
+    },
+    {
+      "managerId": 8,
+      "managerName": "Point Guardians",
+      "elementId": 167,
+      "playerName": "K. Kowalski166",
+      "kind": "f",
+      "acquiredGw": 5,
+      "gwsRostered": 6,
+      "pointsWhileRostered": 19,
+      "pointsPerGw": 3.1666666666666665,
+      "isHit": false
+    },
+    {
+      "managerId": 3,
+      "managerName": "The Xavi Files",
+      "elementId": 56,
+      "playerName": "K. Kalu55",
+      "kind": "f",
+      "acquiredGw": 8,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 22,
+      "pointsPerGw": 7.333333333333333,
+      "isHit": true
+    },
+    {
+      "managerId": 11,
+      "managerName": "Autopilot XI",
+      "elementId": 69,
+      "playerName": "S. Smith68",
+      "kind": "w",
+      "acquiredGw": 8,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 7,
+      "pointsPerGw": 2.3333333333333335,
+      "isHit": false
+    }
+  ],
+  "hitRateLeaderboard": [
+    {
+      "managerId": 3,
+      "managerName": "The Xavi Files",
+      "totalPickups": 2,
+      "hits": 1,
+      "hitRate": 0.5
+    },
+    {
+      "managerId": 1,
+      "managerName": "Galactic Ballers",
+      "totalPickups": 0,
+      "hits": 0,
+      "hitRate": 0
+    },
+    {
+      "managerId": 2,
+      "managerName": "Midweek Warriors",
+      "totalPickups": 0,
+      "hits": 0,
+      "hitRate": 0
+    },
+    {
+      "managerId": 4,
+      "managerName": "Tactically Naive FC",
+      "totalPickups": 0,
+      "hits": 0,
+      "hitRate": 0
+    },
+    {
+      "managerId": 5,
+      "managerName": "Bench Press United",
+      "totalPickups": 0,
+      "hits": 0,
+      "hitRate": 0
+    },
+    {
+      "managerId": 6,
+      "managerName": "Draft Dodgers",
+      "totalPickups": 0,
+      "hits": 0,
+      "hitRate": 0
+    },
+    {
+      "managerId": 7,
+      "managerName": "Zonal Marking Zealots",
+      "totalPickups": 0,
+      "hits": 0,
+      "hitRate": 0
+    },
+    {
+      "managerId": 8,
+      "managerName": "Point Guardians",
+      "totalPickups": 1,
+      "hits": 0,
+      "hitRate": 0
+    },
+    {
+      "managerId": 9,
+      "managerName": "The Kwoncept",
+      "totalPickups": 0,
+      "hits": 0,
+      "hitRate": 0
+    },
+    {
+      "managerId": 10,
+      "managerName": "Set Piece Society",
+      "totalPickups": 0,
+      "hits": 0,
+      "hitRate": 0
+    },
+    {
+      "managerId": 11,
+      "managerName": "Autopilot XI",
+      "totalPickups": 1,
+      "hits": 0,
+      "hitRate": 0
+    },
+    {
+      "managerId": 12,
+      "managerName": "Sunday League Legends",
+      "totalPickups": 0,
+      "hits": 0,
+      "hitRate": 0
+    }
+  ],
+  "bestPickups": [
+    {
+      "managerId": 3,
+      "managerName": "The Xavi Files",
+      "elementId": 56,
+      "playerName": "K. Kalu55",
+      "kind": "f",
+      "acquiredGw": 8,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 22,
+      "pointsPerGw": 7.333333333333333,
+      "isHit": true
+    },
+    {
+      "managerId": 8,
+      "managerName": "Point Guardians",
+      "elementId": 167,
+      "playerName": "K. Kowalski166",
+      "kind": "f",
+      "acquiredGw": 5,
+      "gwsRostered": 6,
+      "pointsWhileRostered": 19,
+      "pointsPerGw": 3.1666666666666665,
+      "isHit": false
+    },
+    {
+      "managerId": 3,
+      "managerName": "The Xavi Files",
+      "elementId": 53,
+      "playerName": "H. Haddad52",
+      "kind": "w",
+      "acquiredGw": 3,
+      "gwsRostered": 8,
+      "pointsWhileRostered": 18,
+      "pointsPerGw": 2.25,
+      "isHit": false
+    },
+    {
+      "managerId": 11,
+      "managerName": "Autopilot XI",
+      "elementId": 69,
+      "playerName": "S. Smith68",
+      "kind": "w",
+      "acquiredGw": 8,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 7,
+      "pointsPerGw": 2.3333333333333335,
+      "isHit": false
+    }
+  ],
+  "mostEfficient": [
+    {
+      "managerId": 3,
+      "managerName": "The Xavi Files",
+      "elementId": 56,
+      "playerName": "K. Kalu55",
+      "kind": "f",
+      "acquiredGw": 8,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 22,
+      "pointsPerGw": 7.333333333333333,
+      "isHit": true
+    },
+    {
+      "managerId": 8,
+      "managerName": "Point Guardians",
+      "elementId": 167,
+      "playerName": "K. Kowalski166",
+      "kind": "f",
+      "acquiredGw": 5,
+      "gwsRostered": 6,
+      "pointsWhileRostered": 19,
+      "pointsPerGw": 3.1666666666666665,
+      "isHit": false
+    },
+    {
+      "managerId": 11,
+      "managerName": "Autopilot XI",
+      "elementId": 69,
+      "playerName": "S. Smith68",
+      "kind": "w",
+      "acquiredGw": 8,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 7,
+      "pointsPerGw": 2.3333333333333335,
+      "isHit": false
+    },
+    {
+      "managerId": 3,
+      "managerName": "The Xavi Files",
+      "elementId": 53,
+      "playerName": "H. Haddad52",
+      "kind": "w",
+      "acquiredGw": 3,
+      "gwsRostered": 8,
+      "pointsWhileRostered": 18,
+      "pointsPerGw": 2.25,
+      "isHit": false
+    }
+  ],
+  "bestOneWeekPunts": []
+}

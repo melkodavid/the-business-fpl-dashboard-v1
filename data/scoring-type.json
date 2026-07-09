@@ -1,0 +1,124 @@
+{
+  "perManager": [
+    {
+      "managerId": 1,
+      "managerName": "Galactic Ballers",
+      "goals": 26,
+      "assists": 18,
+      "cleanSheets": 66,
+      "defensiveContribution": 24,
+      "bonus": 66,
+      "cardsLost": -11
+    },
+    {
+      "managerId": 2,
+      "managerName": "Midweek Warriors",
+      "goals": 49,
+      "assists": 18,
+      "cleanSheets": 74,
+      "defensiveContribution": 24,
+      "bonus": 49,
+      "cardsLost": -11
+    },
+    {
+      "managerId": 3,
+      "managerName": "The Xavi Files",
+      "goals": 28,
+      "assists": 3,
+      "cleanSheets": 15,
+      "defensiveContribution": 24,
+      "bonus": 57,
+      "cardsLost": -12
+    },
+    {
+      "managerId": 4,
+      "managerName": "Tactically Naive FC",
+      "goals": 24,
+      "assists": 15,
+      "cleanSheets": 41,
+      "defensiveContribution": 22,
+      "bonus": 68,
+      "cardsLost": -18
+    },
+    {
+      "managerId": 5,
+      "managerName": "Bench Press United",
+      "goals": 34,
+      "assists": 12,
+      "cleanSheets": 48,
+      "defensiveContribution": 30,
+      "bonus": 45,
+      "cardsLost": -21
+    },
+    {
+      "managerId": 6,
+      "managerName": "Draft Dodgers",
+      "goals": 24,
+      "assists": 9,
+      "cleanSheets": 76,
+      "defensiveContribution": 30,
+      "bonus": 85,
+      "cardsLost": -19
+    },
+    {
+      "managerId": 7,
+      "managerName": "Zonal Marking Zealots",
+      "goals": 18,
+      "assists": 15,
+      "cleanSheets": 49,
+      "defensiveContribution": 26,
+      "bonus": 59,
+      "cardsLost": -12
+    },
+    {
+      "managerId": 8,
+      "managerName": "Point Guardians",
+      "goals": 42,
+      "assists": 18,
+      "cleanSheets": 62,
+      "defensiveContribution": 46,
+      "bonus": 56,
+      "cardsLost": -16
+    },
+    {
+      "managerId": 9,
+      "managerName": "The Kwoncept",
+      "goals": 12,
+      "assists": 12,
+      "cleanSheets": 58,
+      "defensiveContribution": 36,
+      "bonus": 81,
+      "cardsLost": -23
+    },
+    {
+      "managerId": 10,
+      "managerName": "Set Piece Society",
+      "goals": 21,
+      "assists": 18,
+      "cleanSheets": 35,
+      "defensiveContribution": 28,
+      "bonus": 75,
+      "cardsLost": -8
+    },
+    {
+      "managerId": 11,
+      "managerName": "Autopilot XI",
+      "goals": 50,
+      "assists": 12,
+      "cleanSheets": 38,
+      "defensiveContribution": 30,
+      "bonus": 60,
+      "cardsLost": -12
+    },
+    {
+      "managerId": 12,
+      "managerName": "Sunday League Legends",
+      "goals": 10,
+      "assists": 12,
+      "cleanSheets": 47,
+      "defensiveContribution": 24,
+      "bonus": 61,
+      "cardsLost": -15
+    }
+  ]
+}

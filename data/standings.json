@@ -1,0 +1,208 @@
+{
+  "rows": [
+    {
+      "managerId": 8,
+      "managerName": "Point Guardians",
+      "shortName": "PG",
+      "rank": 1,
+      "played": 10,
+      "won": 7,
+      "drawn": 0,
+      "lost": 3,
+      "pointsFor": 431,
+      "pointsAgainst": 414,
+      "total": 21,
+      "streak": {
+        "type": "W",
+        "count": 1
+      }
+    },
+    {
+      "managerId": 9,
+      "managerName": "The Kwoncept",
+      "shortName": "TK",
+      "rank": 2,
+      "played": 10,
+      "won": 7,
+      "drawn": 0,
+      "lost": 3,
+      "pointsFor": 408,
+      "pointsAgainst": 388,
+      "total": 21,
+      "streak": {
+        "type": "L",
+        "count": 1
+      }
+    },
+    {
+      "managerId": 1,
+      "managerName": "Galactic Ballers",
+      "shortName": "GB",
+      "rank": 3,
+      "played": 10,
+      "won": 6,
+      "drawn": 1,
+      "lost": 3,
+      "pointsFor": 421,
+      "pointsAgainst": 353,
+      "total": 19,
+      "streak": {
+        "type": "L",
+        "count": 1
+      }
+    },
+    {
+      "managerId": 6,
+      "managerName": "Draft Dodgers",
+      "shortName": "DD",
+      "rank": 4,
+      "played": 10,
+      "won": 6,
+      "drawn": 0,
+      "lost": 4,
+      "pointsFor": 446,
+      "pointsAgainst": 398,
+      "total": 18,
+      "streak": {
+        "type": "L",
+        "count": 1
+      }
+    },
+    {
+      "managerId": 11,
+      "managerName": "Autopilot XI",
+      "shortName": "AX",
+      "rank": 5,
+      "played": 10,
+      "won": 6,
+      "drawn": 0,
+      "lost": 4,
+      "pointsFor": 387,
+      "pointsAgainst": 378,
+      "total": 18,
+      "streak": {
+        "type": "W",
+        "count": 3
+      }
+    },
+    {
+      "managerId": 12,
+      "managerName": "Sunday League Legends",
+      "shortName": "SLL",
+      "rank": 6,
+      "played": 10,
+      "won": 5,
+      "drawn": 0,
+      "lost": 5,
+      "pointsFor": 371,
+      "pointsAgainst": 396,
+      "total": 15,
+      "streak": {
+        "type": "L",
+        "count": 3
+      }
+    },
+    {
+      "managerId": 7,
+      "managerName": "Zonal Marking Zealots",
+      "shortName": "ZMZ",
+      "rank": 7,
+      "played": 10,
+      "won": 5,
+      "drawn": 0,
+      "lost": 5,
+      "pointsFor": 366,
+      "pointsAgainst": 396,
+      "total": 15,
+      "streak": {
+        "type": "L",
+        "count": 1
+      }
+    },
+    {
+      "managerId": 10,
+      "managerName": "Set Piece Society",
+      "shortName": "SPS",
+      "rank": 8,
+      "played": 10,
+      "won": 4,
+      "drawn": 0,
+      "lost": 6,
+      "pointsFor": 398,
+      "pointsAgainst": 403,
+      "total": 12,
+      "streak": {
+        "type": "W",
+        "count": 1
+      }
+    },
+    {
+      "managerId": 3,
+      "managerName": "The Xavi Files",
+      "shortName": "TXF",
+      "rank": 9,
+      "played": 10,
+      "won": 4,
+      "drawn": 0,
+      "lost": 6,
+      "pointsFor": 325,
+      "pointsAgainst": 399,
+      "total": 12,
+      "streak": {
+        "type": "W",
+        "count": 3
+      }
+    },
+    {
+      "managerId": 5,
+      "managerName": "Bench Press United",
+      "shortName": "BPU",
+      "rank": 10,
+      "played": 10,
+      "won": 3,
+      "drawn": 1,
+      "lost": 6,
+      "pointsFor": 369,
+      "pointsAgainst": 374,
+      "total": 10,
+      "streak": {
+        "type": "W",
+        "count": 1
+      }
+    },
+    {
+      "managerId": 2,
+      "managerName": "Midweek Warriors",
+      "shortName": "MW",
+      "rank": 11,
+      "played": 10,
+      "won": 3,
+      "drawn": 0,
+      "lost": 7,
+      "pointsFor": 416,
+      "pointsAgainst": 427,
+      "total": 9,
+      "streak": {
+        "type": "W",
+        "count": 1
+      }
+    },
+    {
+      "managerId": 4,
+      "managerName": "Tactically Naive FC",
+      "shortName": "TNF",
+      "rank": 12,
+      "played": 10,
+      "won": 3,
+      "drawn": 0,
+      "lost": 7,
+      "pointsFor": 377,
+      "pointsAgainst": 389,
+      "total": 9,
+      "streak": {
+        "type": "L",
+        "count": 2
+      }
+    }
+  ]
+}
