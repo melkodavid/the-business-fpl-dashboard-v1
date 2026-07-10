@@ -1,10 +1,10 @@
-export function render(container, data) {
+export function render(container, data, managers) {
   const sorted = [...data.benchStats.perManager].sort((a, b) => b.benchPointsWasted - a.benchPointsWasted);
   const rowsHtml = sorted
     .map(
       (m) => `
         <tr>
-          <td class="text-left">${m.managerName}</td>
+          <td class="text-left">${managers.nameHtml(m.managerId)}</td>
           <td>${m.benchPointsWasted}</td>
           <td>${m.couldHaveWonCount}</td>
           <td>${m.eligibleLossesOrDraws}</td>

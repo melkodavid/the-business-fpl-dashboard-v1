@@ -59,60 +59,60 @@
       "draw": [
         {
           "matchId": "r1-1",
-          "managerAId": 18710,
-          "managerBId": 55642
+          "managerAId": 130236,
+          "managerBId": 89722
         },
         {
           "matchId": "r1-2",
-          "managerAId": 89722,
-          "managerBId": 146136
+          "managerAId": 79487,
+          "managerBId": 19191
         },
         {
           "matchId": "r1-3",
-          "managerAId": 130236,
-          "managerBId": 18802
+          "managerAId": 55642,
+          "managerBId": 18710
         },
         {
           "matchId": "r1-4",
-          "managerAId": 79487,
-          "managerBId": 19191
+          "managerAId": 18802,
+          "managerBId": 146136
         }
       ],
       "results": [
         {
           "matchId": "r1-1",
-          "managerAId": 18710,
-          "managerBId": 55642,
+          "managerAId": 130236,
+          "managerBId": 89722,
           "scoreA": 41,
-          "scoreB": 54,
-          "winnerId": 55642,
-          "tiebreaker": null
-        },
-        {
-          "matchId": "r1-2",
-          "managerAId": 89722,
-          "managerBId": 146136,
-          "scoreA": 50,
-          "scoreB": 33,
+          "scoreB": 50,
           "winnerId": 89722,
           "tiebreaker": null
         },
         {
-          "matchId": "r1-3",
-          "managerAId": 130236,
-          "managerBId": 18802,
-          "scoreA": 41,
-          "scoreB": 44,
-          "winnerId": 18802,
-          "tiebreaker": null
-        },
-        {
-          "matchId": "r1-4",
+          "matchId": "r1-2",
           "managerAId": 79487,
           "managerBId": 19191,
           "scoreA": 25,
           "scoreB": 42,
           "winnerId": 19191,
+          "tiebreaker": null
+        },
+        {
+          "matchId": "r1-3",
+          "managerAId": 55642,
+          "managerBId": 18710,
+          "scoreA": 54,
+          "scoreB": 41,
+          "winnerId": 55642,
+          "tiebreaker": null
+        },
+        {
+          "matchId": "r1-4",
+          "managerAId": 18802,
+          "managerBId": 146136,
+          "scoreA": 44,
+          "scoreB": 33,
+          "winnerId": 18802,
           "tiebreaker": null
         }
       ]
@@ -125,60 +125,60 @@
       "draw": [
         {
           "matchId": "r2-1",
-          "managerAId": 18802,
-          "managerBId": 55642
+          "managerAId": 19191,
+          "managerBId": 18802
         },
         {
           "matchId": "r2-2",
-          "managerAId": 89722,
-          "managerBId": 19191
+          "managerAId": 55642,
+          "managerBId": 18616
         },
         {
           "matchId": "r2-3",
-          "managerAId": 33346,
-          "managerBId": 18493
+          "managerAId": 139975,
+          "managerBId": 33346
         },
         {
           "matchId": "r2-4",
-          "managerAId": 139975,
-          "managerBId": 18616
+          "managerAId": 18493,
+          "managerBId": 89722
         }
       ],
       "results": [
         {
           "matchId": "r2-1",
-          "managerAId": 18802,
-          "managerBId": 55642,
-          "scoreA": 75,
-          "scoreB": 72,
-          "winnerId": 18802,
+          "managerAId": 19191,
+          "managerBId": 18802,
+          "scoreA": 81,
+          "scoreB": 75,
+          "winnerId": 19191,
           "tiebreaker": null
         },
         {
           "matchId": "r2-2",
-          "managerAId": 89722,
-          "managerBId": 19191,
-          "scoreA": 104,
-          "scoreB": 81,
-          "winnerId": 89722,
+          "managerAId": 55642,
+          "managerBId": 18616,
+          "scoreA": 72,
+          "scoreB": 73,
+          "winnerId": 18616,
           "tiebreaker": null
         },
         {
           "matchId": "r2-3",
-          "managerAId": 33346,
-          "managerBId": 18493,
-          "scoreA": 74,
-          "scoreB": 101,
-          "winnerId": 18493,
+          "managerAId": 139975,
+          "managerBId": 33346,
+          "scoreA": 60,
+          "scoreB": 74,
+          "winnerId": 33346,
           "tiebreaker": null
         },
         {
           "matchId": "r2-4",
-          "managerAId": 139975,
-          "managerBId": 18616,
-          "scoreA": 60,
-          "scoreB": 73,
-          "winnerId": 18616,
+          "managerAId": 18493,
+          "managerBId": 89722,
+          "scoreA": 101,
+          "scoreB": 104,
+          "winnerId": 89722,
           "tiebreaker": null
         }
       ]
@@ -191,32 +191,32 @@
       "draw": [
         {
           "matchId": "r3-1",
-          "managerAId": 18493,
+          "managerAId": 19191,
           "managerBId": 18616
         },
         {
           "matchId": "r3-2",
-          "managerAId": 89722,
-          "managerBId": 18802
+          "managerAId": 33346,
+          "managerBId": 89722
         }
       ],
       "results": [
         {
           "matchId": "r3-1",
-          "managerAId": 18493,
+          "managerAId": 19191,
           "managerBId": 18616,
-          "scoreA": 71,
+          "scoreA": 78,
           "scoreB": 95,
           "winnerId": 18616,
           "tiebreaker": null
         },
         {
           "matchId": "r3-2",
-          "managerAId": 89722,
-          "managerBId": 18802,
-          "scoreA": 75,
-          "scoreB": 74,
-          "winnerId": 89722,
+          "managerAId": 33346,
+          "managerBId": 89722,
+          "scoreA": 88,
+          "scoreB": 75,
+          "winnerId": 33346,
           "tiebreaker": null
         }
       ]
@@ -229,22 +229,22 @@
         {
           "matchId": "final",
           "managerAId": 18616,
-          "managerBId": 89722
+          "managerBId": 33346
         }
       ],
       "results": [
         {
           "matchId": "final",
           "managerAId": 18616,
-          "managerBId": 89722,
+          "managerBId": 33346,
           "scoreA": 37,
-          "scoreB": 41,
-          "winnerId": 89722,
+          "scoreB": 55,
+          "winnerId": 33346,
           "tiebreaker": null
         }
       ]
     }
   },
-  "champion": 89722,
+  "champion": 33346,
   "_mock": false
 }

@@ -1,12 +1,12 @@
 import { signed, signedClass, round1 } from "../format.js";
 
-export function render(container, data) {
+export function render(container, data, managers) {
   const rowsHtml = data.allPlay.standings
     .map(
       (s, i) => `
         <tr>
           <td>${i + 1}</td>
-          <td class="text-left">${s.managerName}</td>
+          <td class="text-left">${managers.nameHtml(s.managerId)}</td>
           <td>${s.actualWins}</td>
           <td>${round1(s.expectedWins)}</td>
           <td class="${signedClass(s.luckScore)}">${signed(s.luckScore)}</td>

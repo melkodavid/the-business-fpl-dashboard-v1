@@ -2,13 +2,13 @@ export function render(container, data, managers) {
   const totalsHtml = data.fiftyNineClub.seasonTotals
     .filter((s) => s.count > 0)
     .sort((a, b) => b.count - a.count)
-    .map((s) => `<tr><td class="text-left">${managers.name(s.managerId)}</td><td>${s.count}</td></tr>`)
+    .map((s) => `<tr><td class="text-left">${managers.nameHtml(s.managerId)}</td><td>${s.count}</td></tr>`)
     .join("");
 
   const instancesHtml = [...data.fiftyNineClub.instances]
     .reverse()
     .map(
-      (i) => `<tr><td>${i.gw}</td><td class="text-left">${managers.name(i.managerId)}</td><td class="text-left">${i.playerName}</td></tr>`
+      (i) => `<tr><td>${i.gw}</td><td class="text-left">${managers.nameHtml(i.managerId)}</td><td class="text-left">${i.playerName}</td></tr>`
     )
     .join("");
 

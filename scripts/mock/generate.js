@@ -586,10 +586,26 @@ for (let round = 0; round < FINISHED_GWS.length; round++) {
   }
 }
 
+// ---------- GW11 (CURRENT_GW) fixtures, not yet played ----------
+// Exercises "This Week's Schedule" against a real unplayed round: round-robin
+// round index 10 is otherwise unused since FINISHED_GWS stops at GW10.
+for (const [homeMgr, awayMgr] of schedule[10]) {
+  matches.push({
+    event: CURRENT_GW,
+    league_entry_1: homeMgr.leagueEntryId,
+    league_entry_1_points: 0,
+    league_entry_2: awayMgr.leagueEntryId,
+    league_entry_2_points: 0,
+    started: false,
+    finished: false,
+  });
+}
+
 const standingsMap = new Map(
   managers.map((m) => [m.leagueEntryId, { played: 0, won: 0, drawn: 0, lost: 0, pointsFor: 0, pointsAgainst: 0 }])
 );
 for (const m of matches) {
+  if (!m.finished) continue;
   const home = standingsMap.get(m.league_entry_1);
   const away = standingsMap.get(m.league_entry_2);
   home.played++; away.played++;

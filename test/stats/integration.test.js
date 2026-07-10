@@ -17,6 +17,7 @@ import { computeDraftGrades } from "../../scripts/stats/draftGrades.js";
 import { computeTradeLedger } from "../../scripts/stats/tradeLedger.js";
 import { computeWaiverHitRate } from "../../scripts/stats/waiverHitRate.js";
 import { computeFormGuide } from "../../scripts/stats/formGuide.js";
+import { computeSchedule } from "../../scripts/stats/schedule.js";
 
 // One shared context, built once from the real mock fixtures, the same way
 // build.js does -- exercises the full fetch-shape -> context -> stats pipeline
@@ -104,6 +105,20 @@ test("form guide: rolling window never exceeds 5 gameweeks", () => {
   const { rows } = computeFormGuide(context);
   assert.equal(rows.length, 12);
   for (const row of rows) assert.ok(row.gwsIncluded.length <= 5);
+});
+
+test("schedule: unplayed GW11 surfaces, ranked by importance, title/bottom clashes first", () => {
+  const { gw, seasonComplete, fixtures } = computeSchedule(context);
+  assert.equal(gw, 11);
+  assert.equal(seasonComplete, false);
+  assert.equal(fixtures.length, 6);
+  for (let i = 1; i < fixtures.length; i++) {
+    assert.ok(fixtures[i - 1].importance >= fixtures[i].importance, "fixtures must be sorted by descending importance");
+  }
+  assert.ok(
+    fixtures.some((f) => f.tag === "Title Six-Pointer" || f.tag === "Wooden Spoon Battle"),
+    "at least one fixture should be flagged as high-stakes given the mock's spread of ranks"
+  );
 });
 
 test("cup: round 1 resolved, round 2 drawn but not yet played (matches mock GW range)", () => {

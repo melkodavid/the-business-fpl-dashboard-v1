@@ -1,7 +1,7 @@
-export function render(container, data) {
+export function render(container, data, managers) {
   const window = data.formGuide.rows[0]?.gwsIncluded ?? [];
   const rowsHtml = data.formGuide.rows
-    .map((r, i) => `<tr><td>${i + 1}</td><td class="text-left">${r.managerName}</td><td>${r.formPoints}</td></tr>`)
+    .map((r, i) => `<tr><td>${i + 1}</td><td class="text-left">${managers.nameHtml(r.managerId)}</td><td>${r.formPoints}</td></tr>`)
     .join("");
 
   container.innerHTML = `

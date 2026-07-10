@@ -14,6 +14,7 @@ const FILES = {
   formGuide: "form-guide.json",
   cup: "cup.json",
   history: "history.json",
+  schedule: "schedule.json",
   meta: "meta.json",
 };
 
@@ -36,15 +37,32 @@ function starBadges(count) {
   return ` <span class="title-stars" title="${count} title${count === 1 ? "" : "s"}">${"★".repeat(count)}</span>`;
 }
 
+function initialsOf(name) {
+  return (name ?? "?").trim().split(/\s+/).map((w) => w[0]).join("").slice(0, 2).toUpperCase();
+}
+
+// Manager photo convention: assets/managers/{personKey}.jpg, dropped in with no
+// JSON edit required. Falls back to an initials badge tinted with the
+// manager's chosen color if no photo file exists (or one hasn't been added yet).
+function avatarHtml(m) {
+  const color = m?.color ?? "#5a6472";
+  const label = initialsOf(m?.playerName ?? m?.name);
+  const photoSrc = m?.personKey ? `assets/managers/${m.personKey}.jpg` : null;
+  const photoTag = photoSrc ? `<img class="mgr-avatar-photo" src="${photoSrc}" alt="" onerror="this.remove()">` : "";
+  return `<span class="mgr-avatar" style="background:${color}"><span class="mgr-avatar-initials">${label}</span>${photoTag}</span>`;
+}
+
 export function managerLookup(data) {
   const byId = new Map(data.managers.list.map((m) => [m.id, m]));
   return {
     name: (id) => byId.get(id)?.name ?? `Manager ${id}`,
     shortName: (id) => byId.get(id)?.shortName ?? `M${id}`,
     nameHtml: (id) => `${byId.get(id)?.name ?? `Manager ${id}`}${starBadges(byId.get(id)?.titles)}`,
+    starsHtml: (id) => starBadges(byId.get(id)?.titles),
     color: (id) => byId.get(id)?.color ?? null,
     abbreviation: (id) => byId.get(id)?.abbreviation ?? byId.get(id)?.shortName ?? "???",
     titles: (id) => byId.get(id)?.titles ?? 0,
+    avatarHtml: (id) => avatarHtml(byId.get(id)),
     all: data.managers.list,
   };
 }

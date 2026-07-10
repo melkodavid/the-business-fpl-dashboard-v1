@@ -1,6 +1,6 @@
 import { signed, signedClass, streakBadge } from "../format.js";
 
-export function render(container, data) {
+export function render(container, data, managers) {
   const luckByManager = new Map(data.allPlay.standings.map((s) => [s.managerId, s.luckScore]));
 
   const rowsHtml = data.standings.rows
@@ -9,7 +9,7 @@ export function render(container, data) {
       return `
         <tr>
           <td>${r.rank}</td>
-          <td class="text-left">${r.managerName}</td>
+          <td class="text-left">${managers.nameHtml(r.managerId)}</td>
           <td>${r.played}</td>
           <td>${r.won}</td>
           <td>${r.drawn}</td>

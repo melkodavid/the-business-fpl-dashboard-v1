@@ -1,9 +1,9 @@
-export function render(container, data) {
+export function render(container, data, managers) {
   const rowsHtml = data.positionalStrength.perManager
     .map(
       (m) => `
         <tr>
-          <td class="text-left">${m.managerName}</td>
+          <td class="text-left">${managers.nameHtml(m.managerId)}</td>
           <td>${m.for.GK}</td><td>${m.for.DEF}</td><td>${m.for.MID}</td><td>${m.for.FWD}</td>
           <td><strong>${m.topForPosition}</strong></td>
           <td>${m.against.GK}</td><td>${m.against.DEF}</td><td>${m.against.MID}</td><td>${m.against.FWD}</td>

@@ -1,4 +1,5 @@
 import { loadAllData, managerLookup } from "./data.js";
+import { render as renderSchedule } from "./render/schedule.js";
 import { render as renderStandings } from "./render/standings.js";
 import { render as renderAllPlay } from "./render/allPlay.js";
 import { render as renderH2H } from "./render/h2hGrid.js";
@@ -15,6 +16,7 @@ import { render as renderHistory } from "./render/history.js";
 import { render as renderCup } from "./render/cup.js";
 
 const ROUTES = {
+  schedule: renderSchedule,
   standings: renderStandings,
   "all-play": renderAllPlay,
   h2h: renderH2H,
@@ -45,11 +47,56 @@ function setActiveNav(route) {
   nav.querySelectorAll("a").forEach((a) => a.classList.toggle("active", a.dataset.route === route));
 }
 
+// Fades/rises each card into place as it scrolls into view; observed elements
+// are released after their first reveal so re-scrolling never re-triggers it.
+const revealObserver = "IntersectionObserver" in window
+  ? new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          entry.target.classList.add("in-view");
+          revealObserver.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.1 }
+    )
+  : null;
+
+function initScrollReveal() {
+  if (!revealObserver) return;
+  // Only cards starting below the fold get the reveal treatment -- anything
+  // already in the initial viewport renders immediately, so there's no risk
+  // of content getting stuck invisible if IntersectionObserver never fires.
+  const belowFold = [...app.querySelectorAll(".card, .fixture-card")].filter(
+    (el) => el.getBoundingClientRect().top >= window.innerHeight
+  );
+  // "reveal-init" disables the transition for one frame so hiding these cards
+  // is instant, not a visible fade-out flash (measuring layout just above,
+  // then mutating classes, would otherwise make the browser animate the change).
+  belowFold.forEach((el) => {
+    el.classList.add("reveal", "reveal-init");
+    revealObserver.observe(el);
+  });
+  void app.offsetWidth;
+  belowFold.forEach((el) => el.classList.remove("reveal-init"));
+}
+
 function main(data, managers) {
   function draw() {
     const route = currentRoute();
     setActiveNav(route);
     ROUTES[route](app, data, managers);
+    // The Cup page is its own untouched theme -- no site-wide motion pass there.
+    if (route !== "cup") {
+      initScrollReveal();
+      // Restart the CSS fade-in animation on every route change by removing
+      // and re-adding the class after a reflow, rather than just on first load.
+      app.classList.remove("route-enter");
+      void app.offsetWidth;
+      app.classList.add("route-enter");
+    } else {
+      app.classList.remove("route-enter");
+    }
     nav.classList.remove("open");
     navToggle.setAttribute("aria-expanded", "false");
   }

@@ -28,6 +28,7 @@ import { computeTradeLedger } from "./stats/tradeLedger.js";
 import { computeWaiverHitRate } from "./stats/waiverHitRate.js";
 import { computeFormGuide } from "./stats/formGuide.js";
 import { computeHistory } from "./stats/history.js";
+import { computeSchedule } from "./stats/schedule.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -144,6 +145,7 @@ async function main() {
   writeData("trade-ledger.json", computeTradeLedger(context));
   writeData("waiver-hit-rate.json", computeWaiverHitRate(context));
   writeData("form-guide.json", computeFormGuide(context));
+  writeData("schedule.json", computeSchedule(context));
   writeData("cup.json", cup);
 
   writeData("meta.json", {

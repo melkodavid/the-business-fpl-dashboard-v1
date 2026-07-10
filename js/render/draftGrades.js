@@ -23,8 +23,9 @@ function buildScatter(scatter, managers) {
   const points = scatter
     .map((d) => {
       const color = colorByManager.get(d.managerId) ?? "#888";
+      const stars = "★".repeat(managers.titles(d.managerId));
       return `<circle cx="${x(d.pickNumber).toFixed(1)}" cy="${y(d.seasonPoints).toFixed(1)}" r="4" fill="${color}" fill-opacity="0.8">
-        <title>${escapeHtml(d.playerName)} — Pick #${d.pickNumber}, ${d.seasonPoints} pts (${escapeHtml(managers.name(d.managerId))})</title>
+        <title>${escapeHtml(d.playerName)} — Pick #${d.pickNumber}, ${d.seasonPoints} pts (${escapeHtml(managers.name(d.managerId))}${stars ? " " + stars : ""})</title>
       </circle>`;
     })
     .join("");
@@ -42,7 +43,7 @@ function buildScatter(scatter, managers) {
       (m, i) =>
         `<span style="display:inline-flex;align-items:center;gap:0.3rem;margin-right:0.75rem;font-size:0.75rem;">
           <span style="width:10px;height:10px;border-radius:50%;background:${PALETTE[i % PALETTE.length]};display:inline-block;"></span>
-          ${escapeHtml(m.name)}
+          ${managers.nameHtml(m.id)}
         </span>`
     )
     .join("");
@@ -64,7 +65,7 @@ function buildScatter(scatter, managers) {
 export function render(container, data, managers) {
   const leaderboardHtml = data.draftGrades.leaderboard
     .map(
-      (m, i) => `<tr><td>${i + 1}</td><td class="text-left">${m.managerName}</td><td>${m.draftTeamPoints}</td></tr>`
+      (m, i) => `<tr><td>${i + 1}</td><td class="text-left">${managers.nameHtml(m.managerId)}</td><td>${m.draftTeamPoints}</td></tr>`
     )
     .join("");
 

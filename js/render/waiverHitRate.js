@@ -1,11 +1,11 @@
-function pickupTable(rows, extraCol) {
+function pickupTable(rows, extraCol, managers) {
   if (rows.length === 0) return '<p class="empty-state">None yet.</p>';
   const rowsHtml = rows
     .map(
       (p) => `
         <tr>
           <td class="text-left">${p.playerName}</td>
-          <td class="text-left">${p.managerName}</td>
+          <td class="text-left">${managers.nameHtml(p.managerId)}</td>
           <td>GW${p.acquiredGw}</td>
           <td>${p.gwsRostered}</td>
           <td>${p.pointsWhileRostered}</td>
@@ -26,12 +26,12 @@ function pickupTable(rows, extraCol) {
     </table>`;
 }
 
-export function render(container, data) {
+export function render(container, data, managers) {
   const hitRateHtml = data.waiverHitRate.hitRateLeaderboard
     .map(
       (m) => `
         <tr>
-          <td class="text-left">${m.managerName}</td>
+          <td class="text-left">${managers.nameHtml(m.managerId)}</td>
           <td>${m.hits}/${m.totalPickups}</td>
           <td>${(m.hitRate * 100).toFixed(0)}%</td>
         </tr>`
@@ -50,15 +50,15 @@ export function render(container, data) {
     </div>
     <div class="card">
       <h3>Best Pickups</h3>
-      ${pickupTable(data.waiverHitRate.bestPickups.slice(0, 10), true)}
+      ${pickupTable(data.waiverHitRate.bestPickups.slice(0, 10), true, managers)}
     </div>
     <div class="card">
       <h3>Most Efficient Waivers <span style="font-weight:400;font-size:0.8rem;color:var(--text-muted);">(3+ GWs rostered)</span></h3>
-      ${pickupTable(data.waiverHitRate.mostEfficient.slice(0, 10), true)}
+      ${pickupTable(data.waiverHitRate.mostEfficient.slice(0, 10), true, managers)}
     </div>
     <div class="card">
       <h3>Best One-Week Punts <span style="font-weight:400;font-size:0.8rem;color:var(--text-muted);">(&lt;3 GWs rostered)</span></h3>
-      ${pickupTable(data.waiverHitRate.bestOneWeekPunts.slice(0, 10), true)}
+      ${pickupTable(data.waiverHitRate.bestOneWeekPunts.slice(0, 10), true, managers)}
     </div>
   `;
 }

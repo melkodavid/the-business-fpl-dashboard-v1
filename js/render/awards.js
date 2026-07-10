@@ -1,10 +1,10 @@
 export function render(container, data, managers) {
-  const names = (ids) => ids.map((id) => managers.name(id)).join(", ");
+  const names = (ids) => ids.map((id) => managers.nameHtml(id)).join(", ");
 
   function hallOfFameTable(title, rows) {
     if (rows.length === 0) return `<div class="card"><h3>${title}</h3><p class="empty-state">No data yet.</p></div>`;
     const rowsHtml = rows
-      .map((r) => `<tr><td class="text-left">${managers.name(r.managerId)}</td><td>${r.count}</td></tr>`)
+      .map((r) => `<tr><td class="text-left">${managers.nameHtml(r.managerId)}</td><td>${r.count}</td></tr>`)
       .join("");
     return `
       <div class="card">
@@ -30,7 +30,7 @@ export function render(container, data, managers) {
     .map((r) => {
       const fiftyNine = r.fiftyNineClubInstances.length
         ? `<p class="award-line">🎯 59 Club: ${r.fiftyNineClubInstances
-            .map((i) => `${i.playerName} (${managers.name(i.managerId)})`)
+            .map((i) => `${i.playerName} (${managers.nameHtml(i.managerId)})`)
             .join(", ")}</p>`
         : "";
       return `

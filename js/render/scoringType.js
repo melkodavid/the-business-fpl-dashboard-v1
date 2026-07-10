@@ -1,6 +1,6 @@
 import { makeSortable } from "../format.js";
 
-export function render(container, data) {
+export function render(container, data, managers) {
   container.innerHTML = `
     <h2 class="section-title">Points by Scoring Type</h2>
     <p class="section-subtitle">Starting-XI points broken down by source. Click a column header to sort.</p>
@@ -29,7 +29,7 @@ export function render(container, data) {
       .map(
         (m) => `
           <tr>
-            <td class="text-left">${m.managerName}</td>
+            <td class="text-left">${managers.nameHtml(m.managerId)}</td>
             <td>${m.goals}</td><td>${m.assists}</td><td>${m.cleanSheets}</td>
             <td>${m.defensiveContribution}</td><td>${m.bonus}</td>
             <td class="${m.cardsLost < 0 ? "neg" : ""}">${m.cardsLost}</td>

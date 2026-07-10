@@ -657,6 +657,60 @@
       "league_entry_2_points": 23,
       "started": true,
       "finished": true
+    },
+    {
+      "event": 11,
+      "league_entry_1": 1,
+      "league_entry_1_points": 0,
+      "league_entry_2": 2,
+      "league_entry_2_points": 0,
+      "started": false,
+      "finished": false
+    },
+    {
+      "event": 11,
+      "league_entry_1": 3,
+      "league_entry_1_points": 0,
+      "league_entry_2": 12,
+      "league_entry_2_points": 0,
+      "started": false,
+      "finished": false
+    },
+    {
+      "event": 11,
+      "league_entry_1": 4,
+      "league_entry_1_points": 0,
+      "league_entry_2": 11,
+      "league_entry_2_points": 0,
+      "started": false,
+      "finished": false
+    },
+    {
+      "event": 11,
+      "league_entry_1": 5,
+      "league_entry_1_points": 0,
+      "league_entry_2": 10,
+      "league_entry_2_points": 0,
+      "started": false,
+      "finished": false
+    },
+    {
+      "event": 11,
+      "league_entry_1": 6,
+      "league_entry_1_points": 0,
+      "league_entry_2": 9,
+      "league_entry_2_points": 0,
+      "started": false,
+      "finished": false
+    },
+    {
+      "event": 11,
+      "league_entry_1": 7,
+      "league_entry_1_points": 0,
+      "league_entry_2": 8,
+      "league_entry_2_points": 0,
+      "started": false,
+      "finished": false
     }
   ],
   "standings": [

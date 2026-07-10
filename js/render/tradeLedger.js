@@ -12,7 +12,7 @@ export function render(container, data, managers) {
         .map(
           (s) => `
           <div style="margin-bottom:0.4rem;">
-            <strong>${managers.name(s.managerId)}</strong> receives [${playerList(s.received)}]
+            <strong>${managers.nameHtml(s.managerId)}</strong> receives [${playerList(s.received)}]
             for [${playerList(s.given)}] — Net: <span class="${signedClass(s.netValue)}">${signed(s.netValue)}</span>
           </div>`
         )
@@ -25,7 +25,7 @@ export function render(container, data, managers) {
     .map(
       (m) => `
         <tr>
-          <td class="text-left">${m.managerName}</td>
+          <td class="text-left">${managers.nameHtml(m.managerId)}</td>
           <td class="${signedClass(m.netTradeValue)}">${signed(m.netTradeValue)}</td>
         </tr>`
     )
