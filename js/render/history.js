@@ -41,21 +41,6 @@ export function render(container, data, managers) {
     })
     .join("");
 
-  const leaderboardHtml = history.leaderboard
-    .map(
-      (row, i) => `
-        <tr>
-          <td>${i + 1}</td>
-          <td class="text-left">${personDisplay(row.managerKey, row.displayName, managers, titleCounts)}</td>
-          <td title="Top-4 finishes">${row.top4}</td>
-          <td title="Bottom-3 finishes">${row.bottom3}</td>
-          <td>${row.seasons}</td>
-          <td>${row.bestRank}</td>
-          <td>${row.avgRank}</td>
-        </tr>`
-    )
-    .join("");
-
   const lastPlaceHtml = history.mostLastPlace.length
     ? history.mostLastPlace
         .map(
@@ -87,9 +72,19 @@ export function render(container, data, managers) {
       </div>
       <div class="card">
         <h3>All-Time Leaderboard</h3>
-        <table>
-          <thead><tr><th>#</th><th class="text-left">Manager</th><th>Top 4</th><th>Bot 3</th><th>Seasons</th><th>Best</th><th>Avg Rank</th></tr></thead>
-          <tbody>${leaderboardHtml}</tbody>
+        <p class="section-subtitle">Click a column to sort.</p>
+        <table id="history-leaderboard-table">
+          <thead>
+            <tr>
+              <th class="text-left" data-sort-key="managerDisplay">Manager</th>
+              <th data-sort-key="top4" title="Top-4 finishes">Top 4</th>
+              <th data-sort-key="bottom3" title="Bottom-3 finishes">Bot 3</th>
+              <th data-sort-key="seasons">Seasons</th>
+              <th data-sort-key="bestRank">Best</th>
+              <th data-sort-key="avgRank">Avg Rank</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
         </table>
       </div>
     </div>
@@ -159,6 +154,35 @@ export function render(container, data, managers) {
 
   select.addEventListener("change", () => renderYear(select.value));
   renderYear(seasons[seasons.length - 1].year);
+
+  // All-time leaderboard, one row per person, sortable.
+  const leaderboardRows = history.leaderboard.map((r) => ({
+    ...r,
+    managerDisplay: (managers.all.find((m) => m.personKey === r.managerKey)?.playerName || r.displayName || r.managerKey || ""),
+  }));
+  const leaderboardTable = container.querySelector("#history-leaderboard-table");
+  const leaderboardBody = leaderboardTable.querySelector("tbody");
+  makeSortable(
+    leaderboardTable,
+    leaderboardRows,
+    (rows) => {
+      leaderboardBody.innerHTML = rows
+        .map(
+          (r) => `
+          <tr>
+            <td class="text-left">${personDisplay(r.managerKey, r.displayName, managers, titleCounts)}</td>
+            <td title="Top-4 finishes">${r.top4}</td>
+            <td title="Bottom-3 finishes">${r.bottom3}</td>
+            <td>${r.seasons}</td>
+            <td>${r.bestRank}</td>
+            <td>${r.avgRank}</td>
+          </tr>`
+        )
+        .join("");
+    },
+    "titles",
+    true
+  );
 
   // Combined career table, one row per person, sortable.
   const allTimeRows = history.allTimeTable.map((r) => ({
