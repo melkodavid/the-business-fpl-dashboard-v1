@@ -1,4 +1,4 @@
-import { makeSortable } from "../format.js";
+import { makeSortable, signed, signedClass } from "../format.js";
 
 function starsHtml(count) {
   if (!count) return "";
@@ -76,10 +76,10 @@ export function render(container, data, managers) {
         <table id="history-leaderboard-table">
           <thead>
             <tr>
+              <th data-sort-key="seasons">Seasons</th>
               <th class="text-left" data-sort-key="managerDisplay">Manager</th>
               <th data-sort-key="top4" title="Top-4 finishes">Top 4</th>
               <th data-sort-key="bottom3" title="Bottom-3 finishes">Bot 3</th>
-              <th data-sort-key="seasons">Seasons</th>
               <th data-sort-key="bestRank">Best</th>
               <th data-sort-key="avgRank">Avg Rank</th>
             </tr>
@@ -116,6 +116,8 @@ export function render(container, data, managers) {
             <th data-sort-key="w">W</th>
             <th data-sort-key="d">D</th>
             <th data-sort-key="l">L</th>
+            <th data-sort-key="wlDiff" title="Wins minus losses">+/-</th>
+            <th data-sort-key="winPct" title="Win percentage">Win%</th>
             <th data-sort-key="pointsFor">+</th>
             <th data-sort-key="points">Pts</th>
           </tr>
@@ -170,10 +172,10 @@ export function render(container, data, managers) {
         .map(
           (r) => `
           <tr>
+            <td>${r.seasons}</td>
             <td class="text-left">${personDisplay(r.managerKey, r.displayName, managers, titleCounts)}</td>
             <td title="Top-4 finishes">${r.top4}</td>
             <td title="Bottom-3 finishes">${r.bottom3}</td>
-            <td>${r.seasons}</td>
             <td>${r.bestRank}</td>
             <td>${r.avgRank}</td>
           </tr>`
@@ -201,7 +203,10 @@ export function render(container, data, managers) {
           <tr>
             <td class="text-left">${personDisplay(r.managerKey, r.displayName, managers, titleCounts)}</td>
             <td>${r.seasons}</td>
-            <td>${r.w}</td><td>${r.d}</td><td>${r.l}</td><td>${r.pointsFor}</td><td><strong>${r.points}</strong></td>
+            <td>${r.w}</td><td>${r.d}</td><td>${r.l}</td>
+            <td class="${signedClass(r.wlDiff)}">${signed(r.wlDiff)}</td>
+            <td>${r.winPct}%</td>
+            <td>${r.pointsFor}</td><td><strong>${r.points}</strong></td>
           </tr>`
         )
         .join("");

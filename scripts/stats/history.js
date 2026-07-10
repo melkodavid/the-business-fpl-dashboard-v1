@@ -99,17 +99,22 @@ export function computeHistory(context, historySeasonsData, currentSeasonLabel) 
   // for, and total league points across every season they've played, however
   // many that is (a single-season player still gets a row, just with seasons: 1).
   const allTimeTable = [...agg.values()]
-    .map((a) => ({
-      managerKey: a.managerKey,
-      displayName: a.displayName,
-      seasons: a.seasons,
-      titles: a.titles,
-      w: a.wSum,
-      d: a.dSum,
-      l: a.lSum,
-      pointsFor: a.pointsForSum,
-      points: a.pointsSum,
-    }))
+    .map((a) => {
+      const played = a.wSum + a.dSum + a.lSum;
+      return {
+        managerKey: a.managerKey,
+        displayName: a.displayName,
+        seasons: a.seasons,
+        titles: a.titles,
+        w: a.wSum,
+        d: a.dSum,
+        l: a.lSum,
+        wlDiff: a.wSum - a.lSum,
+        winPct: played ? Math.round((a.wSum / played) * 1000) / 10 : 0,
+        pointsFor: a.pointsForSum,
+        points: a.pointsSum,
+      };
+    })
     .sort((a, b) => b.points - a.points);
 
   return {

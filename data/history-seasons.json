@@ -3,7 +3,7 @@
   "seasons": [
     {
       "year": "17/18",
-      "championKey": "sb",
+      "championKey": "sebastian",
       "championDisplay": "SB",
       "table": null
     },
@@ -14,11 +14,11 @@
         { "rank": 1, "team": "Vunter Drip FC", "manager": "Lucas", "managerKey": "lu", "w": 27, "d": 0, "l": 8, "plus": 1672, "pts": 81 },
         { "rank": 2, "team": "Neen FC", "manager": "Anthony", "managerKey": "anthony", "w": 22, "d": 0, "l": 13, "plus": 1589, "pts": 66 },
         { "rank": 3, "team": "Sarri not sorry", "manager": "Marshall", "managerKey": "marshall", "w": 21, "d": 1, "l": 13, "plus": 1576, "pts": 64 },
-        { "rank": 4, "team": "Contes cunts", "manager": "Jonpaul", "managerKey": "jonpaul", "w": 20, "d": 1, "l": 14, "plus": 1439, "pts": 61 },
+        { "rank": 4, "team": "Contes cunts", "manager": "JP", "managerKey": "jonpaul", "w": 20, "d": 1, "l": 14, "plus": 1439, "pts": 61 },
         { "rank": 5, "team": "Dynamo Cossack FC", "manager": "Ivan", "managerKey": "ivan", "w": 19, "d": 0, "l": 16, "plus": 1543, "pts": 57 },
-        { "rank": 6, "team": "Polonia FC", "manager": "Krystian", "managerKey": "krystian", "w": 15, "d": 1, "l": 19, "plus": 1276, "pts": 46 },
+        { "rank": 6, "team": "Polonia FC", "manager": "KB", "managerKey": "krystian", "w": 15, "d": 1, "l": 19, "plus": 1276, "pts": 46 },
         { "rank": 7, "team": "Todd Peterson", "manager": "Pasquale", "managerKey": "pasquale", "w": 13, "d": 1, "l": 21, "plus": 1274, "pts": 40 },
-        { "rank": 8, "team": "Reigning Champ", "manager": "Sebastian", "managerKey": "sebastian", "w": 13, "d": 0, "l": 22, "plus": 1352, "pts": 39 },
+        { "rank": 8, "team": "Reigning Champ", "manager": "SB", "managerKey": "sebastian", "w": 13, "d": 0, "l": 22, "plus": 1352, "pts": 39 },
         { "rank": 9, "team": "LickMyKante", "manager": "Alfonso", "managerKey": "alfonso", "w": 12, "d": 0, "l": 23, "plus": 1105, "pts": 36 },
         { "rank": 10, "team": "Slappin Pitches", "manager": "Mark", "managerKey": "mark", "w": 11, "d": 0, "l": 24, "plus": 1233, "pts": 33 }
       ]
@@ -33,9 +33,9 @@
         { "rank": 4, "team": "Pardy's Ova", "manager": "Mitch", "managerKey": "mitch", "w": 18, "d": 0, "l": 20, "plus": 1656, "pts": 54 },
         { "rank": 5, "team": "Loftus your cheeks", "manager": "Marshall", "managerKey": "marshall", "w": 18, "d": 0, "l": 20, "plus": 1620, "pts": 54 },
         { "rank": 6, "team": "NEEN FC", "manager": "Anthony", "managerKey": "anthony", "w": 18, "d": 0, "l": 20, "plus": 1583, "pts": 54 },
-        { "rank": 7, "team": "Kanes Hamstring", "manager": "SB", "managerKey": "sb", "w": 16, "d": 2, "l": 20, "plus": 1365, "pts": 50 },
-        { "rank": 8, "team": "Kantes cunts", "manager": "JP", "managerKey": "jp", "w": 16, "d": 0, "l": 22, "plus": 1450, "pts": 48 },
-        { "rank": 9, "team": "Redraft FC", "manager": "KB", "managerKey": "kb", "w": 15, "d": 1, "l": 22, "plus": 1450, "pts": 46 },
+        { "rank": 7, "team": "Kanes Hamstring", "manager": "SB", "managerKey": "sebastian", "w": 16, "d": 2, "l": 20, "plus": 1365, "pts": 50 },
+        { "rank": 8, "team": "Kantes cunts", "manager": "JP", "managerKey": "jonpaul", "w": 16, "d": 0, "l": 22, "plus": 1450, "pts": 48 },
+        { "rank": 9, "team": "Redraft FC", "manager": "KB", "managerKey": "krystian", "w": 15, "d": 1, "l": 22, "plus": 1450, "pts": 46 },
         { "rank": 10, "team": "\"Pusq Doesn't Care\"", "manager": "Pasquale", "managerKey": "pasquale", "w": 15, "d": 0, "l": 23, "plus": 1411, "pts": 45 }
       ]
     },
@@ -54,7 +54,7 @@
         { "rank": 9, "team": "Martial gonna snapFC", "manager": "Nolan", "managerKey": "nolan", "w": 15, "d": 1, "l": 22, "plus": 1447, "pts": 46 },
         { "rank": 10, "team": "FC sPAIN", "manager": "Marshall", "managerKey": "marshall", "w": 15, "d": 0, "l": 23, "plus": 1476, "pts": 45 },
         { "rank": 11, "team": "Syria FC", "manager": "Ibrahim", "managerKey": "ibrahim", "w": 14, "d": 1, "l": 23, "plus": 1254, "pts": 43 },
-        { "rank": 12, "team": "Sicily fc", "manager": "Jonpaul", "managerKey": "jonpaul", "w": 11, "d": 1, "l": 26, "plus": 1357, "pts": 34 }
+        { "rank": 12, "team": "Sicily fc", "manager": "JP", "managerKey": "jonpaul", "w": 11, "d": 1, "l": 26, "plus": 1357, "pts": 34 }
       ]
     },
     {

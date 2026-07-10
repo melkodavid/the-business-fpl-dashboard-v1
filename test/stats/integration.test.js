@@ -101,10 +101,17 @@ test("waiver hit rate: pickup count matches approved free-agent/waiver transacti
   assert.ok(pickups.some((p) => p.isHit), "mock fixtures should include at least one hit");
 });
 
-test("form guide: rolling window never exceeds 5 gameweeks", () => {
-  const { rows } = computeFormGuide(context);
+test("form guide: rolling window never exceeds 5 gameweeks, W/D/L and averages check out", () => {
+  const { rows, leagueAvgPoints } = computeFormGuide(context);
   assert.equal(rows.length, 12);
-  for (const row of rows) assert.ok(row.gwsIncluded.length <= 5);
+  for (const row of rows) {
+    assert.ok(row.gwsIncluded.length <= 5);
+    assert.equal(row.results.length, row.gwsIncluded.length);
+    for (const r of row.results) assert.ok(["W", "L", "D"].includes(r.result));
+    const expectedAvg = Math.round((row.results.reduce((s, r) => s + r.points, 0) / row.results.length) * 10) / 10;
+    assert.equal(row.avgPoints, expectedAvg);
+    assert.equal(row.diffFromLeagueAvg, Math.round((row.avgPoints - leagueAvgPoints) * 10) / 10);
+  }
 });
 
 test("schedule: unplayed GW11 surfaces, ranked by importance, title/bottom clashes first", () => {

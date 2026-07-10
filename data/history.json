@@ -2,7 +2,7 @@
   "seasons": [
     {
       "year": "17/18",
-      "championKey": "sb",
+      "championKey": "sebastian",
       "championDisplay": "SB",
       "table": null,
       "championTitleNumber": 1
@@ -47,7 +47,7 @@
         {
           "rank": 4,
           "team": "Contes cunts",
-          "manager": "Jonpaul",
+          "manager": "JP",
           "managerKey": "jonpaul",
           "w": 20,
           "d": 1,
@@ -69,7 +69,7 @@
         {
           "rank": 6,
           "team": "Polonia FC",
-          "manager": "Krystian",
+          "manager": "KB",
           "managerKey": "krystian",
           "w": 15,
           "d": 1,
@@ -91,7 +91,7 @@
         {
           "rank": 8,
           "team": "Reigning Champ",
-          "manager": "Sebastian",
+          "manager": "SB",
           "managerKey": "sebastian",
           "w": 13,
           "d": 0,
@@ -198,7 +198,7 @@
           "rank": 7,
           "team": "Kanes Hamstring",
           "manager": "SB",
-          "managerKey": "sb",
+          "managerKey": "sebastian",
           "w": 16,
           "d": 2,
           "l": 20,
@@ -209,7 +209,7 @@
           "rank": 8,
           "team": "Kantes cunts",
           "manager": "JP",
-          "managerKey": "jp",
+          "managerKey": "jonpaul",
           "w": 16,
           "d": 0,
           "l": 22,
@@ -220,7 +220,7 @@
           "rank": 9,
           "team": "Redraft FC",
           "manager": "KB",
-          "managerKey": "kb",
+          "managerKey": "krystian",
           "w": 15,
           "d": 1,
           "l": 22,
@@ -369,7 +369,7 @@
         {
           "rank": 12,
           "team": "Sicily fc",
-          "manager": "Jonpaul",
+          "manager": "JP",
           "managerKey": "jonpaul",
           "w": 11,
           "d": 1,
@@ -1100,7 +1100,7 @@
     }
   ],
   "titleCounts": {
-    "sb": 1,
+    "sebastian": 1,
     "lu": 4,
     "ibrahim": 2,
     "pasquale": 1,
@@ -1142,23 +1142,6 @@
       "avgRank": 4.5
     },
     {
-      "managerKey": "sb",
-      "displayName": "SB",
-      "seasons": 1,
-      "titles": 1,
-      "top4": 0,
-      "bottom3": 0,
-      "lastPlace": 0,
-      "rankSum": 7,
-      "bestRank": 7,
-      "pointsForSum": 1365,
-      "pointsSum": 50,
-      "wSum": 16,
-      "dSum": 2,
-      "lSum": 20,
-      "avgRank": 7
-    },
-    {
       "managerKey": "pasquale",
       "displayName": "Pasquale",
       "seasons": 8,
@@ -1173,6 +1156,23 @@
       "wSum": 133,
       "dSum": 9,
       "lSum": 158,
+      "avgRank": 7.5
+    },
+    {
+      "managerKey": "sebastian",
+      "displayName": "SB",
+      "seasons": 2,
+      "titles": 1,
+      "top4": 0,
+      "bottom3": 1,
+      "lastPlace": 0,
+      "rankSum": 15,
+      "bestRank": 7,
+      "pointsForSum": 2717,
+      "pointsSum": 89,
+      "wSum": 29,
+      "dSum": 2,
+      "lSum": 42,
       "avgRank": 7.5
     },
     {
@@ -1278,23 +1278,6 @@
       "avgRank": 5.5
     },
     {
-      "managerKey": "krystian",
-      "displayName": "Krystian",
-      "seasons": 1,
-      "titles": 0,
-      "top4": 0,
-      "bottom3": 0,
-      "lastPlace": 0,
-      "rankSum": 6,
-      "bestRank": 6,
-      "pointsForSum": 1276,
-      "pointsSum": 46,
-      "wSum": 15,
-      "dSum": 1,
-      "lSum": 19,
-      "avgRank": 6
-    },
-    {
       "managerKey": "ostap",
       "displayName": "Ostap",
       "seasons": 6,
@@ -1346,54 +1329,37 @@
       "avgRank": 7.4
     },
     {
-      "managerKey": "jonpaul",
-      "displayName": "Jonpaul",
+      "managerKey": "krystian",
+      "displayName": "KB",
       "seasons": 2,
       "titles": 0,
-      "top4": 1,
+      "top4": 0,
       "bottom3": 1,
-      "lastPlace": 1,
-      "rankSum": 16,
-      "bestRank": 4,
-      "pointsForSum": 2796,
-      "pointsSum": 95,
-      "wSum": 31,
+      "lastPlace": 0,
+      "rankSum": 15,
+      "bestRank": 6,
+      "pointsForSum": 2726,
+      "pointsSum": 92,
+      "wSum": 30,
       "dSum": 2,
-      "lSum": 40,
-      "avgRank": 8
+      "lSum": 41,
+      "avgRank": 7.5
     },
     {
-      "managerKey": "sebastian",
-      "displayName": "Sebastian",
-      "seasons": 1,
-      "titles": 0,
-      "top4": 0,
-      "bottom3": 1,
-      "lastPlace": 0,
-      "rankSum": 8,
-      "bestRank": 8,
-      "pointsForSum": 1352,
-      "pointsSum": 39,
-      "wSum": 13,
-      "dSum": 0,
-      "lSum": 22,
-      "avgRank": 8
-    },
-    {
-      "managerKey": "jp",
+      "managerKey": "jonpaul",
       "displayName": "JP",
-      "seasons": 1,
+      "seasons": 3,
       "titles": 0,
-      "top4": 0,
-      "bottom3": 1,
-      "lastPlace": 0,
-      "rankSum": 8,
-      "bestRank": 8,
-      "pointsForSum": 1450,
-      "pointsSum": 48,
-      "wSum": 16,
-      "dSum": 0,
-      "lSum": 22,
+      "top4": 1,
+      "bottom3": 2,
+      "lastPlace": 1,
+      "rankSum": 24,
+      "bestRank": 4,
+      "pointsForSum": 4246,
+      "pointsSum": 143,
+      "wSum": 47,
+      "dSum": 2,
+      "lSum": 62,
       "avgRank": 8
     },
     {
@@ -1428,23 +1394,6 @@
       "wSum": 12,
       "dSum": 0,
       "lSum": 23,
-      "avgRank": 9
-    },
-    {
-      "managerKey": "kb",
-      "displayName": "KB",
-      "seasons": 1,
-      "titles": 0,
-      "top4": 0,
-      "bottom3": 1,
-      "lastPlace": 0,
-      "rankSum": 9,
-      "bestRank": 9,
-      "pointsForSum": 1450,
-      "pointsSum": 46,
-      "wSum": 15,
-      "dSum": 1,
-      "lSum": 22,
       "avgRank": 9
     },
     {
@@ -1550,19 +1499,19 @@
     },
     {
       "managerKey": "jonpaul",
-      "displayName": "Jonpaul",
-      "seasons": 2,
+      "displayName": "JP",
+      "seasons": 3,
       "titles": 0,
       "top4": 1,
-      "bottom3": 1,
+      "bottom3": 2,
       "lastPlace": 1,
-      "rankSum": 16,
+      "rankSum": 24,
       "bestRank": 4,
-      "pointsForSum": 2796,
-      "pointsSum": 95,
-      "wSum": 31,
+      "pointsForSum": 4246,
+      "pointsSum": 143,
+      "wSum": 47,
       "dSum": 2,
-      "lSum": 40
+      "lSum": 62
     },
     {
       "managerKey": "pasquale",
@@ -1590,6 +1539,8 @@
       "w": 184,
       "d": 5,
       "l": 111,
+      "wlDiff": 73,
+      "winPct": 61.3,
       "pointsFor": 13245,
       "points": 557
     },
@@ -1601,6 +1552,8 @@
       "w": 158,
       "d": 7,
       "l": 135,
+      "wlDiff": 23,
+      "winPct": 52.7,
       "pointsFor": 12746,
       "points": 481
     },
@@ -1612,6 +1565,8 @@
       "w": 154,
       "d": 5,
       "l": 141,
+      "wlDiff": 13,
+      "winPct": 51.3,
       "pointsFor": 12420,
       "points": 467
     },
@@ -1623,6 +1578,8 @@
       "w": 133,
       "d": 9,
       "l": 158,
+      "wlDiff": -25,
+      "winPct": 44.3,
       "pointsFor": 11451,
       "points": 408
     },
@@ -1634,6 +1591,8 @@
       "w": 133,
       "d": 8,
       "l": 124,
+      "wlDiff": 9,
+      "winPct": 50.2,
       "pointsFor": 10897,
       "points": 407
     },
@@ -1645,6 +1604,8 @@
       "w": 123,
       "d": 3,
       "l": 101,
+      "wlDiff": 22,
+      "winPct": 54.2,
       "pointsFor": 9015,
       "points": 372
     },
@@ -1656,6 +1617,8 @@
       "w": 118,
       "d": 9,
       "l": 100,
+      "wlDiff": 18,
+      "winPct": 52,
       "pointsFor": 9111,
       "points": 363
     },
@@ -1667,6 +1630,8 @@
       "w": 110,
       "d": 11,
       "l": 141,
+      "wlDiff": -31,
+      "winPct": 42,
       "pointsFor": 10048,
       "points": 341
     },
@@ -1678,6 +1643,8 @@
       "w": 110,
       "d": 6,
       "l": 111,
+      "wlDiff": -1,
+      "winPct": 48.5,
       "pointsFor": 8976,
       "points": 336
     },
@@ -1689,6 +1656,8 @@
       "w": 108,
       "d": 9,
       "l": 110,
+      "wlDiff": -2,
+      "winPct": 47.6,
       "pointsFor": 9382,
       "points": 333
     },
@@ -1700,6 +1669,8 @@
       "w": 89,
       "d": 4,
       "l": 96,
+      "wlDiff": -7,
+      "winPct": 47.1,
       "pointsFor": 7191,
       "points": 271
     },
@@ -1711,8 +1682,23 @@
       "w": 72,
       "d": 6,
       "l": 111,
+      "wlDiff": -39,
+      "winPct": 38.1,
       "pointsFor": 7006,
       "points": 222
+    },
+    {
+      "managerKey": "jonpaul",
+      "displayName": "JP",
+      "seasons": 3,
+      "titles": 0,
+      "w": 47,
+      "d": 2,
+      "l": 62,
+      "wlDiff": -15,
+      "winPct": 42.3,
+      "pointsFor": 4246,
+      "points": 143
     },
     {
       "managerKey": "ivan",
@@ -1722,6 +1708,8 @@
       "w": 41,
       "d": 1,
       "l": 31,
+      "wlDiff": 10,
+      "winPct": 56.2,
       "pointsFor": 3150,
       "points": 124
     },
@@ -1733,41 +1721,36 @@
       "w": 39,
       "d": 2,
       "l": 35,
+      "wlDiff": 4,
+      "winPct": 51.3,
       "pointsFor": 3087,
       "points": 119
     },
     {
-      "managerKey": "jonpaul",
-      "displayName": "Jonpaul",
+      "managerKey": "krystian",
+      "displayName": "KB",
       "seasons": 2,
       "titles": 0,
-      "w": 31,
+      "w": 30,
       "d": 2,
-      "l": 40,
-      "pointsFor": 2796,
-      "points": 95
+      "l": 41,
+      "wlDiff": -11,
+      "winPct": 41.1,
+      "pointsFor": 2726,
+      "points": 92
     },
     {
-      "managerKey": "sb",
+      "managerKey": "sebastian",
       "displayName": "SB",
-      "seasons": 1,
+      "seasons": 2,
       "titles": 1,
-      "w": 16,
+      "w": 29,
       "d": 2,
-      "l": 20,
-      "pointsFor": 1365,
-      "points": 50
-    },
-    {
-      "managerKey": "jp",
-      "displayName": "JP",
-      "seasons": 1,
-      "titles": 0,
-      "w": 16,
-      "d": 0,
-      "l": 22,
-      "pointsFor": 1450,
-      "points": 48
+      "l": 42,
+      "wlDiff": -13,
+      "winPct": 39.7,
+      "pointsFor": 2717,
+      "points": 89
     },
     {
       "managerKey": "chris",
@@ -1777,30 +1760,10 @@
       "w": 16,
       "d": 0,
       "l": 22,
+      "wlDiff": -6,
+      "winPct": 42.1,
       "pointsFor": 1319,
       "points": 48
-    },
-    {
-      "managerKey": "krystian",
-      "displayName": "Krystian",
-      "seasons": 1,
-      "titles": 0,
-      "w": 15,
-      "d": 1,
-      "l": 19,
-      "pointsFor": 1276,
-      "points": 46
-    },
-    {
-      "managerKey": "kb",
-      "displayName": "KB",
-      "seasons": 1,
-      "titles": 0,
-      "w": 15,
-      "d": 1,
-      "l": 22,
-      "pointsFor": 1450,
-      "points": 46
     },
     {
       "managerKey": "matt",
@@ -1810,19 +1773,10 @@
       "w": 13,
       "d": 1,
       "l": 24,
+      "wlDiff": -11,
+      "winPct": 34.2,
       "pointsFor": 1187,
       "points": 40
-    },
-    {
-      "managerKey": "sebastian",
-      "displayName": "Sebastian",
-      "seasons": 1,
-      "titles": 0,
-      "w": 13,
-      "d": 0,
-      "l": 22,
-      "pointsFor": 1352,
-      "points": 39
     },
     {
       "managerKey": "alfonso",
@@ -1832,6 +1786,8 @@
       "w": 12,
       "d": 0,
       "l": 23,
+      "wlDiff": -11,
+      "winPct": 34.3,
       "pointsFor": 1105,
       "points": 36
     }

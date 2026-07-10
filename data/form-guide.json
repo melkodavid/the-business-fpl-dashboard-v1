@@ -10,7 +10,35 @@
         37,
         38
       ],
-      "formPoints": 254
+      "results": [
+        {
+          "gw": 34,
+          "result": "W",
+          "points": 60
+        },
+        {
+          "gw": 35,
+          "result": "L",
+          "points": 47
+        },
+        {
+          "gw": 36,
+          "result": "L",
+          "points": 41
+        },
+        {
+          "gw": 37,
+          "result": "W",
+          "points": 54
+        },
+        {
+          "gw": 38,
+          "result": "W",
+          "points": 52
+        }
+      ],
+      "avgPoints": 50.8,
+      "diffFromLeagueAvg": 12.3
     },
     {
       "managerId": 33346,
@@ -22,7 +50,35 @@
         37,
         38
       ],
-      "formPoints": 216
+      "results": [
+        {
+          "gw": 34,
+          "result": "W",
+          "points": 33
+        },
+        {
+          "gw": 35,
+          "result": "W",
+          "points": 56
+        },
+        {
+          "gw": 36,
+          "result": "L",
+          "points": 55
+        },
+        {
+          "gw": 37,
+          "result": "L",
+          "points": 42
+        },
+        {
+          "gw": 38,
+          "result": "L",
+          "points": 30
+        }
+      ],
+      "avgPoints": 43.2,
+      "diffFromLeagueAvg": 4.7
     },
     {
       "managerId": 18493,
@@ -34,7 +90,35 @@
         37,
         38
       ],
-      "formPoints": 213
+      "results": [
+        {
+          "gw": 34,
+          "result": "W",
+          "points": 34
+        },
+        {
+          "gw": 35,
+          "result": "L",
+          "points": 23
+        },
+        {
+          "gw": 36,
+          "result": "W",
+          "points": 68
+        },
+        {
+          "gw": 37,
+          "result": "L",
+          "points": 46
+        },
+        {
+          "gw": 38,
+          "result": "W",
+          "points": 42
+        }
+      ],
+      "avgPoints": 42.6,
+      "diffFromLeagueAvg": 4.1
     },
     {
       "managerId": 146136,
@@ -46,7 +130,35 @@
         37,
         38
       ],
-      "formPoints": 208
+      "results": [
+        {
+          "gw": 34,
+          "result": "W",
+          "points": 32
+        },
+        {
+          "gw": 35,
+          "result": "W",
+          "points": 53
+        },
+        {
+          "gw": 36,
+          "result": "W",
+          "points": 66
+        },
+        {
+          "gw": 37,
+          "result": "L",
+          "points": 38
+        },
+        {
+          "gw": 38,
+          "result": "L",
+          "points": 19
+        }
+      ],
+      "avgPoints": 41.6,
+      "diffFromLeagueAvg": 3.1
     },
     {
       "managerId": 18710,
@@ -58,7 +170,35 @@
         37,
         38
       ],
-      "formPoints": 200
+      "results": [
+        {
+          "gw": 34,
+          "result": "W",
+          "points": 32
+        },
+        {
+          "gw": 35,
+          "result": "L",
+          "points": 31
+        },
+        {
+          "gw": 36,
+          "result": "L",
+          "points": 31
+        },
+        {
+          "gw": 37,
+          "result": "W",
+          "points": 64
+        },
+        {
+          "gw": 38,
+          "result": "W",
+          "points": 42
+        }
+      ],
+      "avgPoints": 40,
+      "diffFromLeagueAvg": 1.5
     },
     {
       "managerId": 79487,
@@ -70,7 +210,35 @@
         37,
         38
       ],
-      "formPoints": 193
+      "results": [
+        {
+          "gw": 34,
+          "result": "L",
+          "points": 20
+        },
+        {
+          "gw": 35,
+          "result": "L",
+          "points": 41
+        },
+        {
+          "gw": 36,
+          "result": "W",
+          "points": 47
+        },
+        {
+          "gw": 37,
+          "result": "L",
+          "points": 36
+        },
+        {
+          "gw": 38,
+          "result": "W",
+          "points": 49
+        }
+      ],
+      "avgPoints": 38.6,
+      "diffFromLeagueAvg": 0.1
     },
     {
       "managerId": 55642,
@@ -82,7 +250,35 @@
         37,
         38
       ],
-      "formPoints": 190
+      "results": [
+        {
+          "gw": 34,
+          "result": "L",
+          "points": 51
+        },
+        {
+          "gw": 35,
+          "result": "W",
+          "points": 50
+        },
+        {
+          "gw": 36,
+          "result": "L",
+          "points": 40
+        },
+        {
+          "gw": 37,
+          "result": "L",
+          "points": 33
+        },
+        {
+          "gw": 38,
+          "result": "L",
+          "points": 16
+        }
+      ],
+      "avgPoints": 38,
+      "diffFromLeagueAvg": -0.5
     },
     {
       "managerId": 139975,
@@ -94,7 +290,35 @@
         37,
         38
       ],
-      "formPoints": 185
+      "results": [
+        {
+          "gw": 34,
+          "result": "W",
+          "points": 30
+        },
+        {
+          "gw": 35,
+          "result": "W",
+          "points": 50
+        },
+        {
+          "gw": 36,
+          "result": "W",
+          "points": 43
+        },
+        {
+          "gw": 37,
+          "result": "W",
+          "points": 43
+        },
+        {
+          "gw": 38,
+          "result": "L",
+          "points": 19
+        }
+      ],
+      "avgPoints": 37,
+      "diffFromLeagueAvg": -1.5
     },
     {
       "managerId": 130236,
@@ -106,7 +330,35 @@
         37,
         38
       ],
-      "formPoints": 179
+      "results": [
+        {
+          "gw": 34,
+          "result": "L",
+          "points": 28
+        },
+        {
+          "gw": 35,
+          "result": "L",
+          "points": 27
+        },
+        {
+          "gw": 36,
+          "result": "L",
+          "points": 39
+        },
+        {
+          "gw": 37,
+          "result": "W",
+          "points": 45
+        },
+        {
+          "gw": 38,
+          "result": "L",
+          "points": 40
+        }
+      ],
+      "avgPoints": 35.8,
+      "diffFromLeagueAvg": -2.7
     },
     {
       "managerId": 18802,
@@ -118,7 +370,35 @@
         37,
         38
       ],
-      "formPoints": 166
+      "results": [
+        {
+          "gw": 34,
+          "result": "L",
+          "points": 27
+        },
+        {
+          "gw": 35,
+          "result": "L",
+          "points": 39
+        },
+        {
+          "gw": 36,
+          "result": "W",
+          "points": 36
+        },
+        {
+          "gw": 37,
+          "result": "L",
+          "points": 23
+        },
+        {
+          "gw": 38,
+          "result": "W",
+          "points": 41
+        }
+      ],
+      "avgPoints": 33.2,
+      "diffFromLeagueAvg": -5.3
     },
     {
       "managerId": 19191,
@@ -130,7 +410,35 @@
         37,
         38
       ],
-      "formPoints": 156
+      "results": [
+        {
+          "gw": 34,
+          "result": "L",
+          "points": 19
+        },
+        {
+          "gw": 35,
+          "result": "W",
+          "points": 34
+        },
+        {
+          "gw": 36,
+          "result": "L",
+          "points": 34
+        },
+        {
+          "gw": 37,
+          "result": "W",
+          "points": 40
+        },
+        {
+          "gw": 38,
+          "result": "L",
+          "points": 29
+        }
+      ],
+      "avgPoints": 31.2,
+      "diffFromLeagueAvg": -7.3
     },
     {
       "managerId": 18616,
@@ -142,7 +450,36 @@
         37,
         38
       ],
-      "formPoints": 153
+      "results": [
+        {
+          "gw": 34,
+          "result": "L",
+          "points": 20
+        },
+        {
+          "gw": 35,
+          "result": "W",
+          "points": 39
+        },
+        {
+          "gw": 36,
+          "result": "W",
+          "points": 37
+        },
+        {
+          "gw": 37,
+          "result": "W",
+          "points": 25
+        },
+        {
+          "gw": 38,
+          "result": "W",
+          "points": 32
+        }
+      ],
+      "avgPoints": 30.6,
+      "diffFromLeagueAvg": -7.9
     }
-  ]
+  ],
+  "leagueAvgPoints": 38.6
 }

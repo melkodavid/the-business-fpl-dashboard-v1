@@ -124,7 +124,9 @@ async function main() {
         id: m.id,
         name: m.name,
         shortName: m.shortName,
-        playerName: m.playerName,
+        // Real FPL account name, unless manager-profiles.json specifies a
+        // preferred display name/nickname (e.g. "Mitchell P. \"General\" Grice").
+        playerName: profile?.displayName ?? m.playerName,
         personKey: m.personKey,
         color: profile?.color ?? null,
         abbreviation: profile?.abbreviation ?? m.shortName,
