@@ -1,0 +1,82 @@
+{
+  "gw": 12,
+  "headline": {
+    "type": "table-new-leader",
+    "personKeys": [
+      "lu",
+      "muk"
+    ],
+    "text": "New league leader: Lu takes over from Muk P.",
+    "facts": {
+      "newLeaderId": 18493,
+      "previousLeaderId": 33346
+    },
+    "gw": 12
+  },
+  "secondaries": [
+    {
+      "type": "record-low-gw",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "20 points for Pat Takala. Rough week.",
+      "facts": {
+        "managerId": 55642,
+        "score": 20
+      },
+      "gw": 12
+    },
+    {
+      "type": "luck-snakebit",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "Mitch Grice posts a top-3 score and still loses. Brutal.",
+      "facts": {
+        "managerId": 79487,
+        "opponentId": 18493
+      },
+      "gw": 12
+    },
+    {
+      "type": "table-enter-top4",
+      "personKeys": [
+        "mark"
+      ],
+      "text": "Top 4 watch: Mark Lamascese is in.",
+      "facts": {
+        "managerId": 146136,
+        "rank": 4
+      },
+      "gw": 12
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "david"
+      ],
+      "text": "David Melko has lost 5 straight.",
+      "facts": {
+        "managerId": 18802,
+        "streakType": "L",
+        "length": 5
+      },
+      "gw": 12
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "anthony"
+      ],
+      "text": "Anthony Palladino's waiver pickup Yeremy (8 pts) outscored every round-1 draft pick this week.",
+      "facts": {
+        "managerId": 89722,
+        "elementId": 712,
+        "playerName": "Yeremy",
+        "points": 8,
+        "bestRound1": 4
+      },
+      "gw": 12
+    }
+  ]
+}

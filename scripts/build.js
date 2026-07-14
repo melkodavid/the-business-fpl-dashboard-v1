@@ -29,6 +29,8 @@ import { computeWaiverHitRate } from "./stats/waiverHitRate.js";
 import { computeFormGuide } from "./stats/formGuide.js";
 import { computeHistory } from "./stats/history.js";
 import { computeSchedule } from "./stats/schedule.js";
+import { buildNarrativeLayer } from "./narrative/index.js";
+import { writeRecapArchive } from "./narrative/archive.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -134,21 +136,39 @@ async function main() {
       };
     }),
   });
+  const allPlay = computeAllPlay(context);
+  const benchStats = computeBenchStats(context);
+  const fiftyNineClub = computeFiftyNineClub(context);
+  const tradeLedger = computeTradeLedger(context);
+  const waiverHitRate = computeWaiverHitRate(context);
+
   writeData("history.json", history);
   writeData("standings.json", computeStandings(context));
-  writeData("all-play.json", computeAllPlay(context));
+  writeData("all-play.json", allPlay);
   writeData("h2h-grid.json", computeH2HGrid(context));
   writeData("awards.json", computeWeeklyAwards(context));
   writeData("positional-strength.json", computePositionalStrength(context));
   writeData("scoring-type.json", computeScoringType(context));
-  writeData("fifty-nine-club.json", computeFiftyNineClub(context));
-  writeData("bench-stats.json", computeBenchStats(context));
+  writeData("fifty-nine-club.json", fiftyNineClub);
+  writeData("bench-stats.json", benchStats);
   writeData("draft-grades.json", computeDraftGrades(context));
-  writeData("trade-ledger.json", computeTradeLedger(context));
-  writeData("waiver-hit-rate.json", computeWaiverHitRate(context));
+  writeData("trade-ledger.json", tradeLedger);
+  writeData("waiver-hit-rate.json", waiverHitRate);
   writeData("form-guide.json", computeFormGuide(context));
   writeData("schedule.json", computeSchedule(context));
   writeData("cup.json", cup);
+
+  const loreRaw = readJson(join(ROOT, "data", "league-lore.json"));
+  const templates = readJson(join(__dirname, "narrative", "templates.json"));
+  const { recapsByGw, seasonArcs } = buildNarrativeLayer(context, history, loreRaw, templates, {
+    allPlay,
+    benchStats,
+    fiftyNineClub,
+    tradeLedger,
+    waiverHitRate,
+  });
+  writeRecapArchive(recapsByGw, join(DATA_DIR, "recaps"));
+  writeData("season-arcs.json", seasonArcs);
 
   writeData("meta.json", {
     lastUpdated: new Date().toISOString(),

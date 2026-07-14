@@ -1,0 +1,87 @@
+{
+  "gw": 16,
+  "headline": {
+    "type": "trade-waiver-outscores-r1",
+    "personKeys": [
+      "mitch"
+    ],
+    "text": "Wilson was a free pickup for Mitch Grice. This week, worth more than any round-1 pick.",
+    "facts": {
+      "managerId": 79487,
+      "elementId": 329,
+      "playerName": "Wilson",
+      "points": 16,
+      "bestRound1": 13
+    },
+    "gw": 16
+  },
+  "secondaries": [
+    {
+      "type": "streak",
+      "personKeys": [
+        "david"
+      ],
+      "text": "3-game winning streak for David Melko.",
+      "facts": {
+        "managerId": 18802,
+        "streakType": "W",
+        "length": 3
+      },
+      "gw": 16
+    },
+    {
+      "type": "lineup-59-club",
+      "personKeys": [
+        "david"
+      ],
+      "text": "The 59 Club has a new member: Lewis-Skelly, for David Melko.",
+      "facts": {
+        "gw": 16,
+        "managerId": 18802,
+        "elementId": 10,
+        "playerName": "Lewis-Skelly",
+        "fixtureId": 151
+      },
+      "gw": 16
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "ibrahim",
+        "david"
+      ],
+      "text": "01s vs. everyone else this week: 01s wins all 2.",
+      "facts": {
+        "generation": "01s",
+        "count": 2
+      },
+      "gw": 16
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "Clean sweep for the ancient across 1 cross-generation matchups.",
+      "facts": {
+        "generation": "ancient",
+        "count": 1
+      },
+      "gw": 16
+    },
+    {
+      "type": "gauntlet-progress",
+      "personKeys": [
+        "marshall"
+      ],
+      "text": "Marshall Curtin-Dudzic's gauntlet record so far: 1 wins in 2 tries.",
+      "facts": {
+        "managerId": 18710,
+        "wins": 1,
+        "played": 2,
+        "length": 3
+      },
+      "gw": 16
+    }
+  ]
+}

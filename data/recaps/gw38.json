@@ -1,0 +1,89 @@
+{
+  "gw": 38,
+  "headline": {
+    "type": "lineup-could-have-won",
+    "personKeys": [
+      "pasquale"
+    ],
+    "text": "Pasquale Frappa could have won this one -- the optimal lineup scores 45.",
+    "facts": {
+      "gw": 38,
+      "managerId": 130236,
+      "opponentId": 18493,
+      "actualScore": 40,
+      "optimalScore": 45,
+      "opponentScore": 42
+    },
+    "gw": 38
+  },
+  "secondaries": [
+    {
+      "type": "belt-changed-hands",
+      "personKeys": [
+        "david",
+        "lu"
+      ],
+      "text": "Lu takes the Belt from David Melko. The reign is over.",
+      "facts": {
+        "beltHolderKey": "david",
+        "newChampionKey": "lu"
+      },
+      "gw": 38
+    },
+    {
+      "type": "belt-in-danger",
+      "personKeys": [
+        "david",
+        "lu"
+      ],
+      "text": "The Belt is in danger. Lu has passed David Melko at the top.",
+      "facts": {
+        "beltHolderKey": "david",
+        "currentLeaderKey": "lu",
+        "gw": 38
+      },
+      "gw": 38
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "ibrahim",
+        "david"
+      ],
+      "text": "01s vs. everyone else this week: 01s wins all 2.",
+      "facts": {
+        "generation": "01s",
+        "count": 2
+      },
+      "gw": 38
+    },
+    {
+      "type": "trade-ex-factor",
+      "personKeys": [
+        "noah",
+        "david"
+      ],
+      "text": "Tavernier scores 10 right back at Noah Palladino. The Ex Factor strikes again.",
+      "facts": {
+        "oldManagerId": 19191,
+        "opponentId": 18802,
+        "elementId": 84,
+        "playerName": "Tavernier",
+        "points": 10
+      },
+      "gw": 38
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "Clean sweep for the ancient across 1 cross-generation matchups.",
+      "facts": {
+        "generation": "ancient",
+        "count": 1
+      },
+      "gw": 38
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "gw": 26,
+  "headline": {
+    "type": "record-low-win",
+    "personKeys": [
+      "pat"
+    ],
+    "text": "Pat Takala won this week with just 24 points.",
+    "facts": {
+      "managerId": 55642,
+      "score": 24
+    },
+    "gw": 26
+  },
+  "secondaries": [
+    {
+      "type": "luck-robbery",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Pat Takala shouldn't have won this one. But here we are.",
+      "facts": {
+        "managerId": 55642,
+        "opponentId": 130236
+      },
+      "gw": 26
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "Noah Palladino's waiver pickup Hincapie (15 pts) outscored every round-1 draft pick this week.",
+      "facts": {
+        "managerId": 19191,
+        "elementId": 720,
+        "playerName": "Hincapie",
+        "points": 15,
+        "bestRound1": 13
+      },
+      "gw": 26
+    },
+    {
+      "type": "gauntlet-progress",
+      "personKeys": [
+        "marshall"
+      ],
+      "text": "Marshall Curtin-Dudzic's gauntlet record so far: 1 wins in 1 tries.",
+      "facts": {
+        "managerId": 18710,
+        "wins": 1,
+        "played": 1,
+        "length": 3
+      },
+      "gw": 26
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "marshall",
+        "muk"
+      ],
+      "text": "01s vs. everyone else this week: 01s wins all 2.",
+      "facts": {
+        "generation": "01s",
+        "count": 2
+      },
+      "gw": 26
+    },
+    {
+      "type": "streak-break",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "The 7-game slide is over for Mitch Grice.",
+      "facts": {
+        "managerId": 79487,
+        "brokenLength": 7
+      },
+      "gw": 26
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "gw": 33,
+  "headline": {
+    "type": "lineup-could-have-won",
+    "personKeys": [
+      "mitch"
+    ],
+    "text": "With the right lineup, Mitch Grice wins this week. Instead: a loss.",
+    "facts": {
+      "gw": 33,
+      "managerId": 79487,
+      "opponentId": 33346,
+      "actualScore": 46,
+      "optimalScore": 59,
+      "opponentScore": 47
+    },
+    "gw": 33
+  },
+  "secondaries": [
+    {
+      "type": "bridesmaid-costly-loss",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Pat Takala just lost an important one. Bridesmaid history says this is exactly when it happens.",
+      "facts": {
+        "managerId": 55642,
+        "gw": 33,
+        "importance": 3.27
+      },
+      "gw": 33
+    },
+    {
+      "type": "record-high-loss",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Pat Takala scored 58 and still lost.",
+      "facts": {
+        "managerId": 55642,
+        "score": 58
+      },
+      "gw": 33
+    },
+    {
+      "type": "table-exit-top4",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "Mitch Grice drops out of the top 4.",
+      "facts": {
+        "managerId": 79487,
+        "rank": 5
+      },
+      "gw": 33
+    },
+    {
+      "type": "lineup-could-have-won",
+      "personKeys": [
+        "ibrahim"
+      ],
+      "text": "Ibrahim Abdulnour's bench had the answer. The lineup didn't use it.",
+      "facts": {
+        "gw": 33,
+        "managerId": 18616,
+        "opponentId": 146136,
+        "actualScore": 45,
+        "optimalScore": 48,
+        "opponentScore": 45
+      },
+      "gw": 33
+    },
+    {
+      "type": "lineup-could-have-won",
+      "personKeys": [
+        "mark"
+      ],
+      "text": "With the right lineup, Mark Lamascese wins this week. Instead: a loss.",
+      "facts": {
+        "gw": 33,
+        "managerId": 146136,
+        "opponentId": 18616,
+        "actualScore": 45,
+        "optimalScore": 50,
+        "opponentScore": 45
+      },
+      "gw": 33
+    }
+  ]
+}

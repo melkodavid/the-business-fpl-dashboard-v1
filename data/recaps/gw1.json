@@ -1,0 +1,83 @@
+{
+  "gw": 1,
+  "headline": {
+    "type": "record-closest",
+    "personKeys": [
+      "muk",
+      "pasquale"
+    ],
+    "text": "Closest match of the season: Muk over Pasquale Frappa by 6.",
+    "facts": {
+      "winnerId": 33346,
+      "loserId": 130236,
+      "margin": 6
+    },
+    "gw": 1
+  },
+  "secondaries": [
+    {
+      "type": "record-high-gw",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "60 points. Lu Palladino. Season high.",
+      "facts": {
+        "managerId": 18493,
+        "score": 60
+      },
+      "gw": 1
+    },
+    {
+      "type": "record-blowout",
+      "personKeys": [
+        "lu",
+        "mitch"
+      ],
+      "text": "22-point beatdown: Lu over Mitch Grice. No mercy.",
+      "facts": {
+        "winnerId": 18493,
+        "loserId": 79487,
+        "margin": 22
+      },
+      "gw": 1
+    },
+    {
+      "type": "record-high-gw",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "38 points. Mitch Grice. Season high.",
+      "facts": {
+        "managerId": 79487,
+        "score": 38
+      },
+      "gw": 1
+    },
+    {
+      "type": "record-closest",
+      "personKeys": [
+        "pat",
+        "anthony"
+      ],
+      "text": "Closest match of the season: Pat Takala over Anthony Palladino by 7.",
+      "facts": {
+        "winnerId": 55642,
+        "loserId": 89722,
+        "margin": 7
+      },
+      "gw": 1
+    },
+    {
+      "type": "record-low-win",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "60 points was somehow enough for Lu Palladino to win.",
+      "facts": {
+        "managerId": 18493,
+        "score": 60
+      },
+      "gw": 1
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "gw": 29,
+  "headline": {
+    "type": "trade-ex-factor",
+    "personKeys": [
+      "mitch",
+      "marshall"
+    ],
+    "text": "Garner scores 10 right back at Mitch Grice. The Ex Factor strikes again.",
+    "facts": {
+      "oldManagerId": 79487,
+      "opponentId": 18710,
+      "elementId": 303,
+      "playerName": "Garner",
+      "points": 10
+    },
+    "gw": 29
+  },
+  "secondaries": [
+    {
+      "type": "lineup-could-have-won",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "Noah Palladino could have won this one -- the optimal lineup scores 63.",
+      "facts": {
+        "gw": 29,
+        "managerId": 19191,
+        "opponentId": 33346,
+        "actualScore": 49,
+        "optimalScore": 63,
+        "opponentScore": 62
+      },
+      "gw": 29
+    },
+    {
+      "type": "family-cousin-clash",
+      "personKeys": [
+        "noah",
+        "muk"
+      ],
+      "text": "Ernesto vs. Tongar: The Sperm Derby. Noah Palladino vs. Muk P this week.",
+      "facts": {
+        "homeManagerId": 19191,
+        "awayManagerId": 33346,
+        "homePoints": 49,
+        "awayPoints": 62,
+        "relation": "cousin"
+      },
+      "gw": 29
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "A waiver-wire pickup just out-produced the entire first round: Ellborg, 10 points, Lu Palladino.",
+      "facts": {
+        "managerId": 18493,
+        "elementId": 813,
+        "playerName": "Ellborg",
+        "points": 10,
+        "bestRound1": 9
+      },
+      "gw": 29
+    },
+    {
+      "type": "lineup-59-club",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "Raúl subbed off at exactly 59 minutes. Lu Palladino is not thrilled.",
+      "facts": {
+        "gw": 29,
+        "managerId": 18493,
+        "elementId": 337,
+        "playerName": "Raúl",
+        "fixtureId": 285
+      },
+      "gw": 29
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "muk"
+      ],
+      "text": "Muk P's waiver pickup Senesi (11 pts) outscored every round-1 draft pick this week.",
+      "facts": {
+        "managerId": 33346,
+        "elementId": 72,
+        "playerName": "Senesi",
+        "points": 11,
+        "bestRound1": 9
+      },
+      "gw": 29
+    }
+  ]
+}

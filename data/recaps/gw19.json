@@ -1,0 +1,91 @@
+{
+  "gw": 19,
+  "headline": {
+    "type": "family-cousin-clash",
+    "personKeys": [
+      "lu",
+      "noah"
+    ],
+    "text": "Ernesto vs. Tongar: The Sperm Derby. Lu Palladino vs. Noah Palladino -- which seed will prevail?",
+    "facts": {
+      "homeManagerId": 18493,
+      "awayManagerId": 19191,
+      "homePoints": 53,
+      "awayPoints": 39,
+      "relation": "cousin"
+    },
+    "gw": 19
+  },
+  "secondaries": [
+    {
+      "type": "trade-value-flip",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "After a run one way, Lu's trades just went the other direction.",
+      "facts": {
+        "managerId": 18493,
+        "tradeId": 661319,
+        "netValue": -19
+      },
+      "gw": 19
+    },
+    {
+      "type": "trade-value-flip",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "After a run one way, Noah Palladino's trades just went the other direction.",
+      "facts": {
+        "managerId": 19191,
+        "tradeId": 661319,
+        "netValue": 19
+      },
+      "gw": 19
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "Lu Palladino has won 5 straight.",
+      "facts": {
+        "managerId": 18493,
+        "streakType": "W",
+        "length": 5
+      },
+      "gw": 19
+    },
+    {
+      "type": "noah-trade-desk-entered",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "The Noah Trade Desk is open for business again.",
+      "facts": {
+        "tradeId": 661319,
+        "netValue": 19
+      },
+      "gw": 19
+    },
+    {
+      "type": "gauntlet-watch",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Coming up for Pat Takala: 4 consecutive fixtures against the family. All of it.",
+      "facts": {
+        "managerId": 55642,
+        "startGw": 20,
+        "length": 4,
+        "opponentIds": [
+          33346,
+          19191,
+          18493,
+          89722
+        ]
+      },
+      "gw": 19
+    }
+  ]
+}

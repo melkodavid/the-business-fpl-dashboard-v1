@@ -1,0 +1,92 @@
+{
+  "gw": 5,
+  "headline": {
+    "type": "lineup-could-have-won",
+    "personKeys": [
+      "noah"
+    ],
+    "text": "Noah Palladino's bench had the answer. The lineup didn't use it.",
+    "facts": {
+      "gw": 5,
+      "managerId": 19191,
+      "opponentId": 18802,
+      "actualScore": 33,
+      "optimalScore": 37,
+      "opponentScore": 34
+    },
+    "gw": 5
+  },
+  "secondaries": [
+    {
+      "type": "lineup-could-have-won",
+      "personKeys": [
+        "muk"
+      ],
+      "text": "Muk P's bench had the answer. The lineup didn't use it.",
+      "facts": {
+        "gw": 5,
+        "managerId": 33346,
+        "opponentId": 18710,
+        "actualScore": 39,
+        "optimalScore": 43,
+        "opponentScore": 42
+      },
+      "gw": 5
+    },
+    {
+      "type": "lineup-could-have-won",
+      "personKeys": [
+        "pasquale"
+      ],
+      "text": "Pasquale Frappa's bench had the answer. The lineup didn't use it.",
+      "facts": {
+        "gw": 5,
+        "managerId": 130236,
+        "opponentId": 18493,
+        "actualScore": 43,
+        "optimalScore": 46,
+        "opponentScore": 44
+      },
+      "gw": 5
+    },
+    {
+      "type": "luck-robbery",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "Daylight robbery: Mitch Grice wins despite one of the worst scores of the week.",
+      "facts": {
+        "managerId": 79487,
+        "opponentId": 146136
+      },
+      "gw": 5
+    },
+    {
+      "type": "luck-snakebit",
+      "personKeys": [
+        "pasquale"
+      ],
+      "text": "Pasquale Frappa did everything right and still lost. Snakebit.",
+      "facts": {
+        "managerId": 130236,
+        "opponentId": 18493
+      },
+      "gw": 5
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "anthony"
+      ],
+      "text": "A waiver-wire pickup just out-produced the entire first round: Calvert-Lewin, 11 points, Anthony Palladino.",
+      "facts": {
+        "managerId": 89722,
+        "elementId": 691,
+        "playerName": "Calvert-Lewin",
+        "points": 11,
+        "bestRound1": 10
+      },
+      "gw": 5
+    }
+  ]
+}

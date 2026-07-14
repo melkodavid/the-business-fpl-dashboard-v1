@@ -1,0 +1,87 @@
+{
+  "gw": 32,
+  "headline": {
+    "type": "record-high-gw",
+    "personKeys": [
+      "mitch"
+    ],
+    "text": "97 points. Mitch Grice. Season high.",
+    "facts": {
+      "managerId": 79487,
+      "score": 97
+    },
+    "gw": 32
+  },
+  "secondaries": [
+    {
+      "type": "family-brother-derby",
+      "personKeys": [
+        "lu",
+        "muk"
+      ],
+      "text": "Brother Derby: Lu Palladino vs. Muk P, let's find out who's the chud.",
+      "facts": {
+        "homeManagerId": 18493,
+        "awayManagerId": 33346,
+        "homePoints": 47,
+        "awayPoints": 23,
+        "relation": "brother"
+      },
+      "gw": 32
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "A waiver-wire pickup just out-produced the entire first round: Wieffer, 18 points, Mitch Grice.",
+      "facts": {
+        "managerId": 79487,
+        "elementId": 173,
+        "playerName": "Wieffer",
+        "points": 18,
+        "bestRound1": 14
+      },
+      "gw": 32
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "A waiver-wire pickup just out-produced the entire first round: Mavropanos, 21 points, Mitch Grice.",
+      "facts": {
+        "managerId": 79487,
+        "elementId": 606,
+        "playerName": "Mavropanos",
+        "points": 21,
+        "bestRound1": 14
+      },
+      "gw": 32
+    },
+    {
+      "type": "table-enter-top4",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "Mitch Grice climbs into the top 4.",
+      "facts": {
+        "managerId": 79487,
+        "rank": 4
+      },
+      "gw": 32
+    },
+    {
+      "type": "streak-break",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "4 losses later, Noah Palladino finally wins one.",
+      "facts": {
+        "managerId": 19191,
+        "brokenLength": 4
+      },
+      "gw": 32
+    }
+  ]
+}

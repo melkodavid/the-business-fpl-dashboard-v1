@@ -1,0 +1,84 @@
+{
+  "gw": 13,
+  "headline": {
+    "type": "table-exit-top4",
+    "personKeys": [
+      "anthony"
+    ],
+    "text": "Top 4 watch: Neen is out.",
+    "facts": {
+      "managerId": 89722,
+      "rank": 6
+    },
+    "gw": 13
+  },
+  "secondaries": [
+    {
+      "type": "family-cousin-clash",
+      "personKeys": [
+        "muk",
+        "anthony"
+      ],
+      "text": "Ernesto vs. Tongar: The Sperm Derby. Muk vs. Anthony Palladino this week.",
+      "facts": {
+        "homeManagerId": 33346,
+        "awayManagerId": 89722,
+        "homePoints": 37,
+        "awayPoints": 32,
+        "relation": "cousin"
+      },
+      "gw": 13
+    },
+    {
+      "type": "luck-robbery",
+      "personKeys": [
+        "ostap"
+      ],
+      "text": "Ostap Tsymbalista shouldn't have won this one. But here we are.",
+      "facts": {
+        "managerId": 139975,
+        "opponentId": 18802
+      },
+      "gw": 13
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "ancient vs. everyone else this week: ancient wins all 1.",
+      "facts": {
+        "generation": "ancient",
+        "count": 1
+      },
+      "gw": 13
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "mark"
+      ],
+      "text": "The The Ditch swept every cross-generation matchup this week, 1-0.",
+      "facts": {
+        "generation": "The Ditch",
+        "count": 1
+      },
+      "gw": 13
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "A waiver-wire pickup just out-produced the entire first round: De Cuyper, 15 points, Noah Palladino.",
+      "facts": {
+        "managerId": 19191,
+        "elementId": 145,
+        "playerName": "De Cuyper",
+        "points": 15,
+        "bestRound1": 11
+      },
+      "gw": 13
+    }
+  ]
+}

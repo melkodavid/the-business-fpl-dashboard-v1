@@ -1,0 +1,84 @@
+{
+  "gw": 22,
+  "headline": {
+    "type": "lineup-could-have-won",
+    "personKeys": [
+      "pasquale"
+    ],
+    "text": "Pasquale Frappa could have won this one -- the optimal lineup scores 52.",
+    "facts": {
+      "gw": 22,
+      "managerId": 130236,
+      "opponentId": 18802,
+      "actualScore": 42,
+      "optimalScore": 52,
+      "opponentScore": 43
+    },
+    "gw": 22
+  },
+  "secondaries": [
+    {
+      "type": "record-low-gw",
+      "personKeys": [
+        "ostap"
+      ],
+      "text": "14 points for Ostap Tsymbalista. Rough week.",
+      "facts": {
+        "managerId": 139975,
+        "score": 14
+      },
+      "gw": 22
+    },
+    {
+      "type": "luck-snakebit",
+      "personKeys": [
+        "pasquale"
+      ],
+      "text": "Pasquale Frappa did everything right and still lost. Snakebit.",
+      "facts": {
+        "managerId": 130236,
+        "opponentId": 18802
+      },
+      "gw": 22
+    },
+    {
+      "type": "bridesmaid-costly-loss",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "A costly loss for Pat Takala -- right on schedule.",
+      "facts": {
+        "managerId": 55642,
+        "gw": 22,
+        "importance": 3.31
+      },
+      "gw": 22
+    },
+    {
+      "type": "streak-break",
+      "personKeys": [
+        "marshall"
+      ],
+      "text": "4 losses later, Marshall Curtin-Dudzic finally wins one.",
+      "facts": {
+        "managerId": 18710,
+        "brokenLength": 4
+      },
+      "gw": 22
+    },
+    {
+      "type": "gauntlet-progress",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Pat Takala's gauntlet record so far: 0 wins in 3 tries.",
+      "facts": {
+        "managerId": 55642,
+        "wins": 0,
+        "played": 3,
+        "length": 4
+      },
+      "gw": 22
+    }
+  ]
+}

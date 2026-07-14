@@ -1,0 +1,85 @@
+{
+  "gw": 37,
+  "headline": {
+    "type": "streak",
+    "personKeys": [
+      "ostap"
+    ],
+    "text": "Ostap Tsymbalista is at 4 straight now.",
+    "facts": {
+      "managerId": 139975,
+      "streakType": "W",
+      "length": 4
+    },
+    "gw": 37
+  },
+  "secondaries": [
+    {
+      "type": "streak-break",
+      "personKeys": [
+        "pasquale"
+      ],
+      "text": "Pasquale Frappa finally breaks a 4-game losing streak.",
+      "facts": {
+        "managerId": 130236,
+        "brokenLength": 4
+      },
+      "gw": 37
+    },
+    {
+      "type": "luck-robbery",
+      "personKeys": [
+        "ibrahim"
+      ],
+      "text": "Daylight robbery: Abe wins despite one of the worst scores of the week.",
+      "facts": {
+        "managerId": 18616,
+        "opponentId": 18802
+      },
+      "gw": 37
+    },
+    {
+      "type": "belt-in-danger",
+      "personKeys": [
+        "david",
+        "lu"
+      ],
+      "text": "David Melko's hold on the Belt looks shaky -- Lu Palladino is out front.",
+      "facts": {
+        "beltHolderKey": "david",
+        "currentLeaderKey": "lu",
+        "gw": 37
+      },
+      "gw": 37
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "ostap",
+        "anthony"
+      ],
+      "text": "The 2000s swept every cross-generation matchup this week, 2-0.",
+      "facts": {
+        "generation": "2000s",
+        "count": 2
+      },
+      "gw": 37
+    },
+    {
+      "type": "trade-ex-factor",
+      "personKeys": [
+        "lu",
+        "marshall"
+      ],
+      "text": "Osula scores 13 right back at Lu Palladino. The Ex Factor strikes again.",
+      "facts": {
+        "oldManagerId": 18493,
+        "opponentId": 18710,
+        "elementId": 500,
+        "playerName": "Osula",
+        "points": 13
+      },
+      "gw": 37
+    }
+  ]
+}

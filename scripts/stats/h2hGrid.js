@@ -14,8 +14,8 @@ export function computeH2HGrid(context) {
 
       const headToHead = finishedMatches
         .map((m) => {
-          if (m.homeManagerId === a && m.awayManagerId === b) return { mine: m.homePoints, theirs: m.awayPoints };
-          if (m.awayManagerId === a && m.homeManagerId === b) return { mine: m.awayPoints, theirs: m.homePoints };
+          if (m.homeManagerId === a && m.awayManagerId === b) return { event: m.event, mine: m.homePoints, theirs: m.awayPoints };
+          if (m.awayManagerId === a && m.homeManagerId === b) return { event: m.event, mine: m.awayPoints, theirs: m.homePoints };
           return null;
         })
         .filter(Boolean);
@@ -32,6 +32,8 @@ export function computeH2HGrid(context) {
         else { draws++; results.push("D"); }
       }
 
+      const last = headToHead[headToHead.length - 1];
+
       cells.push({
         managerId: a,
         opponentId: b,
@@ -41,6 +43,9 @@ export function computeH2HGrid(context) {
         pointsFor,
         pointsAgainst,
         streak: currentStreak(results),
+        // Tale of the Tape's "last meeting" card -- from this manager's POV,
+        // same mine/theirs convention as the aggregate totals above.
+        lastMeeting: { gw: last.event, pointsFor: last.mine, pointsAgainst: last.theirs },
       });
     }
   }

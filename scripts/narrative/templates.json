@@ -1,0 +1,205 @@
+{
+  "_comment": "Per storyline type, 3-4 text variants with {placeholders}. Editable by the league without touching code. render.js fills {name1}/{name2}/etc from facts + league-lore.json (rotating in a nickname ~30% of the time), and picks which variant to use -- both choices seeded by (gw, dedupeKey) so a rerun never changes past recaps. League vocabulary: the title is always \"the Belt\"; winning it is \"winning the Belt\".",
+
+  "streak": [
+    "{name1} has {streakWord} {length} straight.",
+    "{length}-game {streakNoun} streak for {name1}.",
+    "{name1} is at {length} straight now."
+  ],
+  "streak-break": [
+    "{name1} finally breaks a {brokenLength}-game losing streak.",
+    "{brokenLength} losses later, {name1} finally wins one.",
+    "The {brokenLength}-game slide is over for {name1}."
+  ],
+
+  "record-high-gw": [
+    "New season high: {name1} drops {score}.",
+    "{name1} just posted the best score of the season: {score}.",
+    "{score} points. {name1}. Season high."
+  ],
+  "record-low-gw": [
+    "New season low: {name1} manages just {score}.",
+    "{name1} hits a new bottom: {score} points.",
+    "{score} points for {name1}. Rough week."
+  ],
+  "record-blowout": [
+    "{name1} took {name2} behind the bushes this week, {margin} points and counting.",
+    "{margin}-point beatdown: {name1} over {name2}. No mercy.",
+    "{name1} didn't just beat {name2} -- they took them behind the bushes.",
+    "The margin: {margin}. The victim: {name2}."
+  ],
+  "record-closest": [
+    "Closest match of the season: {name1} over {name2} by {margin}.",
+    "{margin} points. That's how close {name1} vs. {name2} was.",
+    "Nail-biter: {name1} edges {name2} by {margin}."
+  ],
+  "record-low-win": [
+    "Lowest winning score of the season: {name1} with {score}.",
+    "{name1} won this week with just {score} points.",
+    "{score} points was somehow enough for {name1} to win."
+  ],
+  "record-high-loss": [
+    "Highest losing score of the season: {name1} with {score}.",
+    "{name1} scored {score} and still lost.",
+    "{score} points wasn't enough for {name1} this week."
+  ],
+
+  "luck-robbery": [
+    "Daylight robbery: {name1} wins despite one of the worst scores of the week.",
+    "{name1} shouldn't have won this one. But here we are.",
+    "{name1} snuck out a win with a bottom-3 score. Daylight robbery."
+  ],
+  "luck-snakebit": [
+    "{name1} posts a top-3 score and still loses. Brutal.",
+    "Snakebit: {name1} had one of the best scores this week and lost anyway.",
+    "{name1} did everything right and still lost. Snakebit."
+  ],
+
+  "lineup-bench-outscored": [
+    "{name1}'s bench outscored the starting XI this week -- {benchPts} to {starterPts}.",
+    "{name1} left {benchPts} points on the bench, more than the actual lineup scored.",
+    "The bench beat the starters for {name1} this week."
+  ],
+  "lineup-could-have-won": [
+    "{name1} could have won this one -- the optimal lineup scores {optimalScore}.",
+    "With the right lineup, {name1} wins this week. Instead: a loss.",
+    "{name1}'s bench had the answer. The lineup didn't use it."
+  ],
+  "lineup-59-club": [
+    "The 59 Club has a new member: {playerName}, for {name1}.",
+    "{playerName} subbed off at exactly 59 minutes. {name1} is not thrilled.",
+    "59th minute. {playerName}. {name1}'s squad. The 59 Club welcomes a new member."
+  ],
+
+  "table-new-leader": [
+    "New league leader: {name1} takes over from {name2}.",
+    "{name1} moves top of the table, past {name2}.",
+    "The table has a new #1: {name1}."
+  ],
+  "table-enter-top4": [
+    "{name1} climbs into the top 4.",
+    "{name1} is back in the top 4, sitting {rank}.",
+    "Top 4 watch: {name1} is in."
+  ],
+  "table-exit-top4": [
+    "{name1} drops out of the top 4.",
+    "{name1} falls to {rank}, out of the top 4.",
+    "Top 4 watch: {name1} is out."
+  ],
+  "table-eliminated": [
+    "{name1} is mathematically out of the Belt race.",
+    "Even a perfect run can't save {name1} now -- eliminated from the Belt race.",
+    "{name1}'s Belt hopes are officially over."
+  ],
+
+  "trade-value-flip": [
+    "{name1}'s trade luck just flipped -- this one's a net {netValue}.",
+    "After a run one way, {name1}'s trades just went the other direction.",
+    "{name1}'s trade record just changed direction."
+  ],
+  "trade-ex-factor": [
+    "The Ex Factor: {playerName} drops {points} against {name1}, the manager who let them go.",
+    "{name1} cut {playerName} loose. {playerName} just scored {points} against them.",
+    "{playerName} scores {points} right back at {name1}. The Ex Factor strikes again."
+  ],
+  "trade-waiver-outscores-r1": [
+    "{name1}'s waiver pickup {playerName} ({points} pts) outscored every round-1 draft pick this week.",
+    "A waiver-wire pickup just out-produced the entire first round: {playerName}, {points} points, {name1}.",
+    "{playerName} was a free pickup for {name1}. This week, worth more than any round-1 pick."
+  ],
+
+  "family-brother-derby": [
+    "{name1} vs. {name2} -- brothers, for now.",
+    "Brother Derby: {name1} vs. {name2}, let's find out who's the chud."
+  ],
+  "family-cousin-clash": [
+    "Ernesto vs. Tongar: The Sperm Derby. {name1} vs. {name2} -- which seed will prevail?",
+    "Ernesto vs. Tongar: The Sperm Derby. {name1} vs. {name2} this week."
+  ],
+
+  "gauntlet-watch": [
+    "GAUNTLET WATCH: {name1} faces {length} straight Palladinos starting GW{startGw}.",
+    "Coming up for {name1}: {length} consecutive fixtures against the family. All of it.",
+    "{name1} is about to walk into the Palladino gauntlet -- {length} in a row."
+  ],
+  "gauntlet-progress": [
+    "Gauntlet update: {name1} is {wins}-for-{played} through the Palladino run.",
+    "{name1}'s gauntlet record so far: {wins} wins in {played} tries.",
+    "Through {played} of {length}, {name1} has {wins} wins against the family."
+  ],
+  "gauntlet-swept": [
+    "{name1} went 0-for-{length} through the Palladino gauntlet.",
+    "The gauntlet wins: {name1} swept, {length}-0.",
+    "{length} games. {length} losses. {name1}'s gauntlet ends in a sweep."
+  ],
+
+  "generation-sweep": [
+    "The {generation} swept every cross-generation matchup this week, {count}-0.",
+    "{generation} vs. everyone else this week: {generation} wins all {count}.",
+    "Clean sweep for the {generation} across {count} cross-generation matchups."
+  ],
+
+  "bridesmaid-leading": [
+    "{name1} is on top of the table. Don't get comfortable.",
+    "{name1} leads the league. We've seen this movie before.",
+    "Top of the table: {name1}. Ask them how that usually ends."
+  ],
+  "bridesmaid-costly-loss": [
+    "{name1} just lost an important one. Bridesmaid history says this is exactly when it happens.",
+    "A costly loss for {name1} -- right on schedule.",
+    "{name1} drops a big one. We've seen this story before."
+  ],
+
+  "noah-trade-desk-entered": [
+    "Noah has entered the market. Historically, this goes poorly.",
+    "Noah made a trade this week. We'll see.",
+    "The Noah Trade Desk is open for business again."
+  ],
+  "noah-trade-desk-negative": [
+    "Noah's trade goes negative: {netValue}. As predicted.",
+    "Another one for the pile: Noah's latest trade nets {netValue}.",
+    "Noah's trade desk strikes again. Net value: {netValue}."
+  ],
+  "noah-trade-desk-running-total": [
+    "Noah's season trade total is now negative: {runningTotal}.",
+    "The running tally on Noah's trades: {runningTotal}. Not great.",
+    "Noah's net trade value for the season: {runningTotal}."
+  ],
+
+  "belt-in-danger": [
+    "{name1}'s hold on the Belt looks shaky -- {name2} is out front.",
+    "The Belt is in danger. {name2} has passed {name1} at the top.",
+    "{name1} is on track to lose the Belt to {name2}."
+  ],
+  "belt-retained": [
+    "{name1} retains the Belt.",
+    "The Belt stays where it belongs: {name1}.",
+    "{name1} defends the Belt successfully."
+  ],
+  "belt-changed-hands": [
+    "{name2} takes the Belt from {name1}. The reign is over.",
+    "After a season carrying it, {name1} hands the Belt to {name2}.",
+    "New Belt holder: {name2}. {name1}'s defense ends here."
+  ],
+
+  "lu-post-mark-tracker": [
+    "Life After Mark: {name1} sits {rank} in the table.",
+    "The Life After Mark tracker: {name1}, rank {rank}.",
+    "{name1}, defending without Mark, currently sits {rank}."
+  ],
+  "lu-post-mark-trade-scrutiny": [
+    "{name1} makes a trade. Old habits -- but Mark's not there to make it work this time.",
+    "A trade from {name1}, under new scrutiny now that Mark's gone.",
+    "{name1}'s trade game, unsupervised. Net value: {netValue}."
+  ],
+  "lu-post-mark-resolution-won": [
+    "Life After Mark: {name1} retains the Belt. Turns out he didn't need him.",
+    "{name1} wins it again, without Mark. Case closed.",
+    "The Belt stays with {name1} -- Mark or no Mark."
+  ],
+  "lu-post-mark-resolution-eliminated": [
+    "Life After Mark: {name1} is out. The Belt slips away without Mark by his side.",
+    "The Life After Mark experiment ends without the Belt for {name1}.",
+    "{name1}'s title defense ends here."
+  ]
+}

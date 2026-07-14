@@ -16,6 +16,9 @@ const FILES = {
   history: "history.json",
   schedule: "schedule.json",
   meta: "meta.json",
+  lore: "league-lore.json",
+  seasonArcs: "season-arcs.json",
+  recapsIndex: "recaps/index.json",
 };
 
 export async function loadAllData() {
@@ -26,7 +29,18 @@ export async function loadAllData() {
       return [key, await res.json()];
     })
   );
-  return Object.fromEntries(entries);
+  const data = Object.fromEntries(entries);
+
+  // Recaps are one file per GW (data/recaps/gw{N}.json), not a single static
+  // file, so the latest one can only be fetched once the index reveals which
+  // GW that is.
+  const recaps = data.recapsIndex?.recaps ?? [];
+  const latestGw = recaps[recaps.length - 1]?.gw;
+  data.latestRecap = latestGw
+    ? await fetch(`data/recaps/gw${latestGw}.json`).then((r) => r.json())
+    : null;
+
+  return data;
 }
 
 // A manager who's won N titles gets N gold stars next to their name,

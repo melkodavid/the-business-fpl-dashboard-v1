@@ -1,0 +1,93 @@
+{
+  "gw": 20,
+  "headline": {
+    "type": "trade-waiver-outscores-r1",
+    "personKeys": [
+      "mark"
+    ],
+    "text": "Mark Lamascese's waiver pickup Thiaw (17 pts) outscored every round-1 draft pick this week.",
+    "facts": {
+      "managerId": 146136,
+      "elementId": 683,
+      "playerName": "Thiaw",
+      "points": 17,
+      "bestRound1": 10
+    },
+    "gw": 20
+  },
+  "secondaries": [
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "david"
+      ],
+      "text": "A waiver-wire pickup just out-produced the entire first round: Mané, 12 points, David Melko.",
+      "facts": {
+        "managerId": 18802,
+        "elementId": 752,
+        "playerName": "Mané",
+        "points": 12,
+        "bestRound1": 10
+      },
+      "gw": 20
+    },
+    {
+      "type": "gauntlet-progress",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Through 1 of 4, Pat Takala has 0 wins against the family.",
+      "facts": {
+        "managerId": 55642,
+        "wins": 0,
+        "played": 1,
+        "length": 4
+      },
+      "gw": 20
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "mark"
+      ],
+      "text": "Clean sweep for the The Ditch across 1 cross-generation matchups.",
+      "facts": {
+        "generation": "The Ditch",
+        "count": 1
+      },
+      "gw": 20
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "pasquale"
+      ],
+      "text": "Pasquale Frappa is at 3 straight now.",
+      "facts": {
+        "managerId": 130236,
+        "streakType": "W",
+        "length": 3
+      },
+      "gw": 20
+    },
+    {
+      "type": "gauntlet-watch",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Pat Takala is about to walk into the Palladino gauntlet -- 4 in a row.",
+      "facts": {
+        "managerId": 55642,
+        "startGw": 31,
+        "length": 4,
+        "opponentIds": [
+          33346,
+          19191,
+          18493,
+          89722
+        ]
+      },
+      "gw": 20
+    }
+  ]
+}

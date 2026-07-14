@@ -1,0 +1,87 @@
+{
+  "gw": 31,
+  "headline": {
+    "type": "streak",
+    "personKeys": [
+      "mitch"
+    ],
+    "text": "Mitch Grice is at 6 straight now.",
+    "facts": {
+      "managerId": 79487,
+      "streakType": "W",
+      "length": 6
+    },
+    "gw": 31
+  },
+  "secondaries": [
+    {
+      "type": "gauntlet-progress",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Pat Takala's gauntlet record so far: 1 wins in 1 tries.",
+      "facts": {
+        "managerId": 55642,
+        "wins": 1,
+        "played": 1,
+        "length": 4
+      },
+      "gw": 31
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "3-game winning streak for Lu.",
+      "facts": {
+        "managerId": 18493,
+        "streakType": "W",
+        "length": 3
+      },
+      "gw": 31
+    },
+    {
+      "type": "trade-ex-factor",
+      "personKeys": [
+        "mark",
+        "lu"
+      ],
+      "text": "Mark Lamascese cut B.Fernandes loose. B.Fernandes just scored 13 against them.",
+      "facts": {
+        "oldManagerId": 146136,
+        "opponentId": 18493,
+        "elementId": 449,
+        "playerName": "B.Fernandes",
+        "points": 13
+      },
+      "gw": 31
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "ostap",
+        "anthony"
+      ],
+      "text": "2000s vs. everyone else this week: 2000s wins all 2.",
+      "facts": {
+        "generation": "2000s",
+        "count": 2
+      },
+      "gw": 31
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "ibrahim"
+      ],
+      "text": "Abe is at 4 straight now.",
+      "facts": {
+        "managerId": 18616,
+        "streakType": "L",
+        "length": 4
+      },
+      "gw": 31
+    }
+  ]
+}

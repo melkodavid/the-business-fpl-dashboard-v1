@@ -1,0 +1,83 @@
+{
+  "gw": 27,
+  "headline": {
+    "type": "streak",
+    "personKeys": [
+      "marshall"
+    ],
+    "text": "3-game winning streak for Marshall Curtin-Dudzic.",
+    "facts": {
+      "managerId": 18710,
+      "streakType": "W",
+      "length": 3
+    },
+    "gw": 27
+  },
+  "secondaries": [
+    {
+      "type": "table-exit-top4",
+      "personKeys": [
+        "anthony"
+      ],
+      "text": "Anthony Palladino falls to 6, out of the top 4.",
+      "facts": {
+        "managerId": 89722,
+        "rank": 6
+      },
+      "gw": 27
+    },
+    {
+      "type": "table-enter-top4",
+      "personKeys": [
+        "ibrahim"
+      ],
+      "text": "Top 4 watch: Abe is in.",
+      "facts": {
+        "managerId": 18616,
+        "rank": 4
+      },
+      "gw": 27
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "anthony"
+      ],
+      "text": "4-game losing streak for Anthony Palladino.",
+      "facts": {
+        "managerId": 89722,
+        "streakType": "L",
+        "length": 4
+      },
+      "gw": 27
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "A waiver-wire pickup just out-produced the entire first round: O'Reilly, 17 points, Mitch Grice.",
+      "facts": {
+        "managerId": 79487,
+        "elementId": 411,
+        "playerName": "O'Reilly",
+        "points": 17,
+        "bestRound1": 13
+      },
+      "gw": 27
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "mark"
+      ],
+      "text": "Mark Lamascese has lost 3 straight.",
+      "facts": {
+        "managerId": 146136,
+        "streakType": "L",
+        "length": 3
+      },
+      "gw": 27
+    }
+  ]
+}

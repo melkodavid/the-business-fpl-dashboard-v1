@@ -7,6 +7,35 @@ results to `data/*.json`. The frontend (`index.html` + `js/` + `css/`) is a
 dependency-free static site that just reads those JSON files — there's no backend
 and no build step, so GitHub Pages can serve the repo directly.
 
+## Season rollover checklist
+
+Run through this at the start of each new season, before the first real Action run:
+
+1. **Verify returning managers' `personKey`s are unchanged.** `personKey` is derived
+   automatically from each manager's FPL account first name (lowercased — see
+   `personKeyFor()` in `scripts/context.js`), and it's the join key for
+   `data/manager-profiles.json`, `data/league-lore.json`, and `data/history-seasons.json`.
+   Every lookup against those files is tolerant by design (an unrecognized key just
+   falls back to defaults instead of throwing), so a mismatch **fails silently** —
+   a manager would simply lose their color/abbreviation, honors, and lore instead
+   of erroring. **Muk is the manager to double-check specifically**: if his FPL
+   account's first name ever gets re-registered or re-synced as "Marcus" instead of
+   "Muk", the fetcher will mint a fresh `marcus` personKey and orphan all of his
+   existing history under `muk`. Confirm each returning manager's derived key
+   still matches what's already in those three files before trusting the first
+   build's output.
+2. **Add lore entries for any new managers** — this season that's carm and zach —
+   to `data/league-lore.json` (nicknames, generation, family, bridesmaid status;
+   see the existing entries for the shape). An entry is optional — a manager with
+   no lore entry just gets plain rendering — but the family/generation-war/gauntlet
+   detectors can only ever reference managers who have one.
+3. **Set `LEAGUE_ID`** (see below).
+4. **Set `CUP_ROUND_GWS`** (see below).
+5. **Set the `lu-post-mark-era` lore flag** once it's actually relevant (Lu's
+   detector-driven "Life After Mark" storylines are gated entirely behind
+   `lu.flags` containing `"lu-post-mark-era"` in `data/league-lore.json` — leave it
+   unset for any season where that arc isn't live).
+
 ## Setting `LEAGUE_ID` when the season starts
 
 Open [`config.js`](config.js) and set:
@@ -106,14 +135,28 @@ scripts/
   stats/                 one module per spec section (standings, all-play, ...)
   cup/bracket.js          FA Cup seeding, random draws, results, tiebreakers
   mock/                  mock-data generator + loader
+  narrative/              weekly recap engine (see fpl-draft-dashboard-spec-v1.md
+                           and narrative-layer-brief.md): detectors/ (one
+                           storyline detector per rule), select.js (scoring +
+                           per-GW headline/secondary picks), render.js +
+                           templates.json (fills each storyline's template),
+                           seasonArcs.js (front-page arc widgets), archive.js
+                           (immutable data/recaps/gw{N}.json writer)
 data/
   mock/                   fixture data for a fake 12-team league
+  league-lore.json         hand-edited nicknames/family/generation/bridesmaid/
+                           rivalry data, keyed by personKey (see the season
+                           rollover checklist above)
+  recaps/                  one immutable gw{N}.json per finished GW plus
+                           index.json, written by scripts/narrative/archive.js
   *.json                  generated output the frontend reads (git-ignored from
                            this list only in the sense that they're written by
                            build.js — they're committed so Pages can serve them)
 cache/events/             committed per-finished-GW raw API cache
-test/                     node:test suite
-index.html, css/, js/     frontend
+test/                     node:test suite (test/narrative/ covers the recap engine)
+index.html, css/, js/     frontend (js/render/schedule.js, taleOfTheTape.js,
+                           recapSection.js, recaps.js, seasonArcWidgets.js are
+                           the narrative layer's frontend half)
 ```
 
 ## Testing

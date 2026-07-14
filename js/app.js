@@ -1,5 +1,6 @@
 import { loadAllData, managerLookup } from "./data.js";
 import { render as renderSchedule } from "./render/schedule.js";
+import { render as renderRecaps } from "./render/recaps.js";
 import { render as renderStandings } from "./render/standings.js";
 import { render as renderAllPlay } from "./render/allPlay.js";
 import { render as renderH2H } from "./render/h2hGrid.js";
@@ -17,6 +18,7 @@ import { render as renderCup } from "./render/cup.js";
 
 const ROUTES = {
   schedule: renderSchedule,
+  recaps: renderRecaps,
   standings: renderStandings,
   "all-play": renderAllPlay,
   h2h: renderH2H,
@@ -32,7 +34,7 @@ const ROUTES = {
   history: renderHistory,
   cup: renderCup,
 };
-const DEFAULT_ROUTE = "standings";
+const DEFAULT_ROUTE = "schedule";
 
 const app = document.getElementById("app");
 const nav = document.getElementById("site-nav");

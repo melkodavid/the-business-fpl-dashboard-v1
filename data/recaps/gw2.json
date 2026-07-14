@@ -1,0 +1,86 @@
+{
+  "gw": 2,
+  "headline": {
+    "type": "record-blowout",
+    "personKeys": [
+      "pat",
+      "mitch"
+    ],
+    "text": "Pat Takala didn't just beat Mitch Grice -- they took them behind the bushes.",
+    "facts": {
+      "winnerId": 55642,
+      "loserId": 79487,
+      "margin": 55
+    },
+    "gw": 2
+  },
+  "secondaries": [
+    {
+      "type": "record-high-gw",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "New season high: Pat Takala drops 90.",
+      "facts": {
+        "managerId": 55642,
+        "score": 90
+      },
+      "gw": 2
+    },
+    {
+      "type": "table-new-leader",
+      "personKeys": [
+        "pat",
+        "lu"
+      ],
+      "text": "The table has a new #1: Pat Takala.",
+      "facts": {
+        "newLeaderId": 55642,
+        "previousLeaderId": 18493
+      },
+      "gw": 2
+    },
+    {
+      "type": "lineup-could-have-won",
+      "personKeys": [
+        "marshall"
+      ],
+      "text": "Marshall Curtin-Dudzic's bench had the answer. The lineup didn't use it.",
+      "facts": {
+        "gw": 2,
+        "managerId": 18710,
+        "opponentId": 146136,
+        "actualScore": 21,
+        "optimalScore": 33,
+        "opponentScore": 30
+      },
+      "gw": 2
+    },
+    {
+      "type": "record-high-gw",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "63 points. Noah Palladino. Season high.",
+      "facts": {
+        "managerId": 19191,
+        "score": 63
+      },
+      "gw": 2
+    },
+    {
+      "type": "record-blowout",
+      "personKeys": [
+        "noah",
+        "pasquale"
+      ],
+      "text": "30-point beatdown: Noah Palladino over Pasquale Frappa. No mercy.",
+      "facts": {
+        "winnerId": 19191,
+        "loserId": 130236,
+        "margin": 30
+      },
+      "gw": 2
+    }
+  ]
+}

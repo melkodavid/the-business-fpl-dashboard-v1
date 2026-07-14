@@ -1,0 +1,89 @@
+{
+  "gw": 18,
+  "headline": {
+    "type": "trade-ex-factor",
+    "personKeys": [
+      "lu",
+      "ostap"
+    ],
+    "text": "Lu Palladino cut Keane loose. Keane just scored 10 against them.",
+    "facts": {
+      "oldManagerId": 18493,
+      "opponentId": 139975,
+      "elementId": 295,
+      "playerName": "Keane",
+      "points": 10
+    },
+    "gw": 18
+  },
+  "secondaries": [
+    {
+      "type": "streak",
+      "personKeys": [
+        "anthony"
+      ],
+      "text": "4-game winning streak for Anthony Palladino.",
+      "facts": {
+        "managerId": 89722,
+        "streakType": "W",
+        "length": 4
+      },
+      "gw": 18
+    },
+    {
+      "type": "family-cousin-clash",
+      "personKeys": [
+        "noah",
+        "muk"
+      ],
+      "text": "Ernesto vs. Tongar: The Sperm Derby. Noah Palladino vs. Muk -- which seed will prevail?",
+      "facts": {
+        "homeManagerId": 19191,
+        "awayManagerId": 33346,
+        "homePoints": 42,
+        "awayPoints": 36,
+        "relation": "cousin"
+      },
+      "gw": 18
+    },
+    {
+      "type": "streak-break",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "4 losses later, Noah Palladino finally wins one.",
+      "facts": {
+        "managerId": 19191,
+        "brokenLength": 4
+      },
+      "gw": 18
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "ancient vs. everyone else this week: ancient wins all 1.",
+      "facts": {
+        "generation": "ancient",
+        "count": 1
+      },
+      "gw": 18
+    },
+    {
+      "type": "lineup-59-club",
+      "personKeys": [
+        "ostap"
+      ],
+      "text": "59th minute. Šeško. Ostap Tsymbalista's squad. The 59 Club welcomes a new member.",
+      "facts": {
+        "gw": 18,
+        "managerId": 139975,
+        "elementId": 679,
+        "playerName": "Šeško",
+        "fixtureId": 177
+      },
+      "gw": 18
+    }
+  ]
+}

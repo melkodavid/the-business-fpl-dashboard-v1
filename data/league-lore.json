@@ -1,0 +1,48 @@
+{
+  "_comment": "Editable by hand, keyed by personKey (same convention as manager-profiles.json). Tolerates personKeys not present in the current season's managers.json, and managers with no lore entry at all. Add rivalries/nicknames/flags any time -- the narrative engine reads this fresh on every build. CONTENT RULE: noah's nicknames[] must stay to whatever the league itself adds here -- never introduce an offensive or historical-dictator comparison; render as plain \"Noah\" unless this file adds a real nickname.",
+  "people": [
+    { "personKey": "lu", "nicknames": ["Lu"], "generation": "97s",
+      "family": { "group": "palladino", "pair": "lu-muk", "relation": "brother" },
+      "bridesmaid": false, "flags": [] },
+
+    { "personKey": "muk", "nicknames": ["Muk", "Marcus"], "generation": "01s",
+      "family": { "group": "palladino", "pair": "lu-muk", "relation": "brother" },
+      "bridesmaid": false, "flags": [] },
+
+    { "personKey": "anthony", "nicknames": ["Neen"], "generation": "2000s",
+      "family": { "group": "palladino", "pair": "anthony-noah", "relation": "brother" },
+      "bridesmaid": true, "flags": ["anth-belt-photos"] },
+
+    { "personKey": "noah", "nicknames": [], "generation": "97s",
+      "family": { "group": "palladino", "pair": "anthony-noah", "relation": "brother" },
+      "bridesmaid": false, "flags": ["noah-bad-trades"] },
+
+    { "personKey": "ibrahim", "nicknames": ["Abe"], "generation": "01s",
+      "family": null, "bridesmaid": false, "flags": [] },
+
+    { "personKey": "marshall", "nicknames": [], "generation": "01s",
+      "family": null, "bridesmaid": true, "flags": [] },
+
+    { "personKey": "david", "nicknames": [], "generation": "01s",
+      "family": null, "bridesmaid": false, "flags": [] },
+
+    { "personKey": "pat", "nicknames": [], "generation": "97s",
+      "family": null, "bridesmaid": { "situational": true }, "flags": [] },
+
+    { "personKey": "mitch", "nicknames": [], "birthYear": 1847, "generation": "ancient",
+      "family": null, "bridesmaid": false, "flags": [] },
+
+    { "personKey": "pasquale", "nicknames": [], "generation": "97s",
+      "family": null, "bridesmaid": false, "flags": [] },
+
+    { "personKey": "ostap", "nicknames": [], "generation": "2000s",
+      "family": null, "bridesmaid": false, "flags": [] },
+
+    { "personKey": "mark", "nicknames": [], "generation": "The Ditch",
+      "family": null, "bridesmaid": false, "flags": [] }
+  ],
+  "rivalries": [
+    { "pair": ["pat", "noah"], "name": "The Noah Who? Derby",
+      "blurb": "Pat printed the shirt. Noah has never forgiven him." }
+  ]
+}

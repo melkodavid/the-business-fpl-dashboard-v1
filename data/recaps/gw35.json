@@ -1,0 +1,97 @@
+{
+  "gw": 35,
+  "headline": {
+    "type": "trade-ex-factor",
+    "personKeys": [
+      "muk",
+      "anthony"
+    ],
+    "text": "Damsgaard scores 11 right back at Muk P. The Ex Factor strikes again.",
+    "facts": {
+      "oldManagerId": 33346,
+      "opponentId": 89722,
+      "elementId": 121,
+      "playerName": "Damsgaard",
+      "points": 11
+    },
+    "gw": 35
+  },
+  "secondaries": [
+    {
+      "type": "trade-ex-factor",
+      "personKeys": [
+        "marshall",
+        "mark"
+      ],
+      "text": "Marshall Curtin-Dudzic cut Doku loose. Doku just scored 15 against them.",
+      "facts": {
+        "oldManagerId": 18710,
+        "opponentId": 146136,
+        "elementId": 418,
+        "playerName": "Doku",
+        "points": 15
+      },
+      "gw": 35
+    },
+    {
+      "type": "trade-ex-factor",
+      "personKeys": [
+        "mitch",
+        "pat"
+      ],
+      "text": "Okafor scores 10 right back at Mitch Grice. The Ex Factor strikes again.",
+      "facts": {
+        "oldManagerId": 79487,
+        "opponentId": 55642,
+        "elementId": 698,
+        "playerName": "Okafor",
+        "points": 10
+      },
+      "gw": 35
+    },
+    {
+      "type": "family-cousin-clash",
+      "personKeys": [
+        "muk",
+        "anthony"
+      ],
+      "text": "Ernesto vs. Tongar: The Sperm Derby. Muk P vs. Anthony Palladino this week.",
+      "facts": {
+        "homeManagerId": 33346,
+        "awayManagerId": 89722,
+        "homePoints": 56,
+        "awayPoints": 47,
+        "relation": "cousin"
+      },
+      "gw": 35
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "muk"
+      ],
+      "text": "3-game winning streak for Muk P.",
+      "facts": {
+        "managerId": 33346,
+        "streakType": "W",
+        "length": 3
+      },
+      "gw": 35
+    },
+    {
+      "type": "lineup-59-club",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "The 59 Club has a new member: Abraham, for Pat Takala.",
+      "facts": {
+        "gw": 35,
+        "managerId": 55642,
+        "elementId": 806,
+        "playerName": "Abraham",
+        "fixtureId": 342
+      },
+      "gw": 35
+    }
+  ]
+}

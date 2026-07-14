@@ -1,0 +1,96 @@
+{
+  "gw": 25,
+  "headline": {
+    "type": "trade-ex-factor",
+    "personKeys": [
+      "lu",
+      "anthony"
+    ],
+    "text": "Dalot scores 12 right back at Lu Palladino. The Ex Factor strikes again.",
+    "facts": {
+      "oldManagerId": 18493,
+      "opponentId": 89722,
+      "elementId": 440,
+      "playerName": "Dalot",
+      "points": 12
+    },
+    "gw": 25
+  },
+  "secondaries": [
+    {
+      "type": "trade-ex-factor",
+      "personKeys": [
+        "pat",
+        "ostap"
+      ],
+      "text": "Pat Takala cut O.Dango loose. O.Dango just scored 12 against them.",
+      "facts": {
+        "oldManagerId": 55642,
+        "opponentId": 139975,
+        "elementId": 83,
+        "playerName": "O.Dango",
+        "points": 12
+      },
+      "gw": 25
+    },
+    {
+      "type": "luck-snakebit",
+      "personKeys": [
+        "anthony"
+      ],
+      "text": "Snakebit: Anthony Palladino had one of the best scores this week and lost anyway.",
+      "facts": {
+        "managerId": 89722,
+        "opponentId": 18493
+      },
+      "gw": 25
+    },
+    {
+      "type": "lineup-59-club",
+      "personKeys": [
+        "anthony"
+      ],
+      "text": "G.Jesus subbed off at exactly 59 minutes. Neen is not thrilled.",
+      "facts": {
+        "gw": 25,
+        "managerId": 89722,
+        "elementId": 31,
+        "playerName": "G.Jesus",
+        "fixtureId": 241
+      },
+      "gw": 25
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "Mitch Grice is at 7 straight now.",
+      "facts": {
+        "managerId": 79487,
+        "streakType": "L",
+        "length": 7
+      },
+      "gw": 25
+    },
+    {
+      "type": "gauntlet-watch",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "GAUNTLET WATCH: Pat Takala faces 4 straight Palladinos starting GW31.",
+      "facts": {
+        "managerId": 55642,
+        "startGw": 31,
+        "length": 4,
+        "opponentIds": [
+          33346,
+          19191,
+          18493,
+          89722
+        ]
+      },
+      "gw": 25
+    }
+  ]
+}

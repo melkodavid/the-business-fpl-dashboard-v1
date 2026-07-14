@@ -1,0 +1,86 @@
+{
+  "gw": 34,
+  "headline": {
+    "type": "luck-snakebit",
+    "personKeys": [
+      "pat"
+    ],
+    "text": "Pat Takala posts a top-3 score and still loses. Brutal.",
+    "facts": {
+      "managerId": 55642,
+      "opponentId": 89722
+    },
+    "gw": 34
+  },
+  "secondaries": [
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Pat Takala's waiver pickup Casemiro (12 pts) outscored every round-1 draft pick this week.",
+      "facts": {
+        "managerId": 55642,
+        "elementId": 457,
+        "playerName": "Casemiro",
+        "points": 12,
+        "bestRound1": 10
+      },
+      "gw": 34
+    },
+    {
+      "type": "belt-in-danger",
+      "personKeys": [
+        "david",
+        "lu"
+      ],
+      "text": "David Melko is on track to lose the Belt to Lu.",
+      "facts": {
+        "beltHolderKey": "david",
+        "currentLeaderKey": "lu",
+        "gw": 34
+      },
+      "gw": 34
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "anthony",
+        "ostap"
+      ],
+      "text": "Clean sweep for the 2000s across 2 cross-generation matchups.",
+      "facts": {
+        "generation": "2000s",
+        "count": 2
+      },
+      "gw": 34
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "marshall"
+      ],
+      "text": "Andersen was a free pickup for Marshall Curtin-Dudzic. This week, worth more than any round-1 pick.",
+      "facts": {
+        "managerId": 18710,
+        "elementId": 317,
+        "playerName": "Andersen",
+        "points": 11,
+        "bestRound1": 10
+      },
+      "gw": 34
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "mark"
+      ],
+      "text": "The Ditch vs. everyone else this week: The Ditch wins all 1.",
+      "facts": {
+        "generation": "The Ditch",
+        "count": 1
+      },
+      "gw": 34
+    }
+  ]
+}

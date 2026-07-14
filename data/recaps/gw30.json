@@ -1,0 +1,92 @@
+{
+  "gw": 30,
+  "headline": {
+    "type": "belt-in-danger",
+    "personKeys": [
+      "david",
+      "lu"
+    ],
+    "text": "David Melko's hold on the Belt looks shaky -- Lu Palladino is out front.",
+    "facts": {
+      "beltHolderKey": "david",
+      "currentLeaderKey": "lu",
+      "gw": 30
+    },
+    "gw": 30
+  },
+  "secondaries": [
+    {
+      "type": "lineup-could-have-won",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "With the right lineup, Noah Palladino wins this week. Instead: a loss.",
+      "facts": {
+        "gw": 30,
+        "managerId": 19191,
+        "opponentId": 18493,
+        "actualScore": 41,
+        "optimalScore": 49,
+        "opponentScore": 47
+      },
+      "gw": 30
+    },
+    {
+      "type": "luck-snakebit",
+      "personKeys": [
+        "pasquale"
+      ],
+      "text": "Pasquale Frappa did everything right and still lost. Snakebit.",
+      "facts": {
+        "managerId": 130236,
+        "opponentId": 139975
+      },
+      "gw": 30
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "Mavropanos was a free pickup for Noah Palladino. This week, worth more than any round-1 pick.",
+      "facts": {
+        "managerId": 19191,
+        "elementId": 606,
+        "playerName": "Mavropanos",
+        "points": 12,
+        "bestRound1": 10
+      },
+      "gw": 30
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "Dunk was a free pickup for Lu Palladino. This week, worth more than any round-1 pick.",
+      "facts": {
+        "managerId": 18493,
+        "elementId": 146,
+        "playerName": "Dunk",
+        "points": 11,
+        "bestRound1": 10
+      },
+      "gw": 30
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "A waiver-wire pickup just out-produced the entire first round: Canvot, 11 points, Lu.",
+      "facts": {
+        "managerId": 18493,
+        "elementId": 723,
+        "playerName": "Canvot",
+        "points": 11,
+        "bestRound1": 10
+      },
+      "gw": 30
+    }
+  ]
+}

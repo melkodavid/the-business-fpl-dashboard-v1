@@ -1,0 +1,91 @@
+{
+  "gw": 36,
+  "headline": {
+    "type": "trade-waiver-outscores-r1",
+    "personKeys": [
+      "mark"
+    ],
+    "text": "Doku was a free pickup for Mark Lamascese. This week, worth more than any round-1 pick.",
+    "facts": {
+      "managerId": 146136,
+      "elementId": 418,
+      "playerName": "Doku",
+      "points": 12,
+      "bestRound1": 11
+    },
+    "gw": 36
+  },
+  "secondaries": [
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "Dunk was a free pickup for Lu Palladino. This week, worth more than any round-1 pick.",
+      "facts": {
+        "managerId": 18493,
+        "elementId": 146,
+        "playerName": "Dunk",
+        "points": 14,
+        "bestRound1": 11
+      },
+      "gw": 36
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "Doku was a free pickup for Lu Palladino. This week, worth more than any round-1 pick.",
+      "facts": {
+        "managerId": 18493,
+        "elementId": 418,
+        "playerName": "Doku",
+        "points": 12,
+        "bestRound1": 11
+      },
+      "gw": 36
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "A waiver-wire pickup just out-produced the entire first round: Foden, 13 points, Pat Takala.",
+      "facts": {
+        "managerId": 55642,
+        "elementId": 414,
+        "playerName": "Foden",
+        "points": 13,
+        "bestRound1": 11
+      },
+      "gw": 36
+    },
+    {
+      "type": "table-eliminated",
+      "personKeys": [
+        "mark"
+      ],
+      "text": "Mark Lamascese is mathematically out of the Belt race.",
+      "facts": {
+        "managerId": 146136,
+        "maxPossible": 73,
+        "leaderTotal": 76
+      },
+      "gw": 36
+    },
+    {
+      "type": "table-eliminated",
+      "personKeys": [
+        "muk"
+      ],
+      "text": "Muk P's Belt hopes are officially over.",
+      "facts": {
+        "managerId": 33346,
+        "maxPossible": 73,
+        "leaderTotal": 76
+      },
+      "gw": 36
+    }
+  ]
+}

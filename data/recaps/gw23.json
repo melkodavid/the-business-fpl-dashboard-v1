@@ -1,0 +1,81 @@
+{
+  "gw": 23,
+  "headline": {
+    "type": "gauntlet-swept",
+    "personKeys": [
+      "pat"
+    ],
+    "text": "4 games. 4 losses. Pat Takala's gauntlet ends in a sweep.",
+    "facts": {
+      "managerId": 55642,
+      "length": 4
+    },
+    "gw": 23
+  },
+  "secondaries": [
+    {
+      "type": "record-low-win",
+      "personKeys": [
+        "mark"
+      ],
+      "text": "Lowest winning score of the season: Mark Lamascese with 29.",
+      "facts": {
+        "managerId": 146136,
+        "score": 29
+      },
+      "gw": 23
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "Noah Palladino is at 4 straight now.",
+      "facts": {
+        "managerId": 19191,
+        "streakType": "W",
+        "length": 4
+      },
+      "gw": 23
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Pat Takala has lost 4 straight.",
+      "facts": {
+        "managerId": 55642,
+        "streakType": "L",
+        "length": 4
+      },
+      "gw": 23
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "5-game losing streak for Mitch Grice.",
+      "facts": {
+        "managerId": 79487,
+        "streakType": "L",
+        "length": 5
+      },
+      "gw": 23
+    },
+    {
+      "type": "bridesmaid-costly-loss",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "A costly loss for Pat Takala -- right on schedule.",
+      "facts": {
+        "managerId": 55642,
+        "gw": 23,
+        "importance": 3.4
+      },
+      "gw": 23
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "gw": 4,
+  "headline": {
+    "type": "table-new-leader",
+    "personKeys": [
+      "ibrahim",
+      "pat"
+    ],
+    "text": "The table has a new #1: Ibrahim Abdulnour.",
+    "facts": {
+      "newLeaderId": 18616,
+      "previousLeaderId": 55642
+    },
+    "gw": 4
+  },
+  "secondaries": [
+    {
+      "type": "table-exit-top4",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Top 4 watch: Pat Takala is out.",
+      "facts": {
+        "managerId": 55642,
+        "rank": 5
+      },
+      "gw": 4
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "Noah Palladino is at 3 straight now.",
+      "facts": {
+        "managerId": 19191,
+        "streakType": "W",
+        "length": 3
+      },
+      "gw": 4
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "anthony"
+      ],
+      "text": "Anthony Palladino is at 3 straight now.",
+      "facts": {
+        "managerId": 89722,
+        "streakType": "W",
+        "length": 3
+      },
+      "gw": 4
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "lu",
+        "noah"
+      ],
+      "text": "The 97s swept every cross-generation matchup this week, 2-0.",
+      "facts": {
+        "generation": "97s",
+        "count": 2
+      },
+      "gw": 4
+    },
+    {
+      "type": "table-enter-top4",
+      "personKeys": [
+        "anthony"
+      ],
+      "text": "Anthony Palladino is back in the top 4, sitting 4.",
+      "facts": {
+        "managerId": 89722,
+        "rank": 4
+      },
+      "gw": 4
+    }
+  ]
+}

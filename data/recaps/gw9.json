@@ -1,0 +1,88 @@
+{
+  "gw": 9,
+  "headline": {
+    "type": "lineup-could-have-won",
+    "personKeys": [
+      "pasquale"
+    ],
+    "text": "Pasquale Frappa's bench had the answer. The lineup didn't use it.",
+    "facts": {
+      "gw": 9,
+      "managerId": 130236,
+      "opponentId": 18710,
+      "actualScore": 41,
+      "optimalScore": 42,
+      "opponentScore": 41
+    },
+    "gw": 9
+  },
+  "secondaries": [
+    {
+      "type": "lineup-could-have-won",
+      "personKeys": [
+        "marshall"
+      ],
+      "text": "With the right lineup, Marshall Curtin-Dudzic wins this week. Instead: a loss.",
+      "facts": {
+        "gw": 9,
+        "managerId": 18710,
+        "opponentId": 130236,
+        "actualScore": 41,
+        "optimalScore": 42,
+        "opponentScore": 41
+      },
+      "gw": 9
+    },
+    {
+      "type": "streak-break",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "6 losses later, Pat Takala finally wins one.",
+      "facts": {
+        "managerId": 55642,
+        "brokenLength": 6
+      },
+      "gw": 9
+    },
+    {
+      "type": "streak-break",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "4 losses later, Noah Palladino finally wins one.",
+      "facts": {
+        "managerId": 19191,
+        "brokenLength": 4
+      },
+      "gw": 9
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "ostap",
+        "anthony"
+      ],
+      "text": "The 2000s swept every cross-generation matchup this week, 2-0.",
+      "facts": {
+        "generation": "2000s",
+        "count": 2
+      },
+      "gw": 9
+    },
+    {
+      "type": "gauntlet-progress",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Gauntlet update: Pat Takala is 1-for-1 through the Palladino run.",
+      "facts": {
+        "managerId": 55642,
+        "wins": 1,
+        "played": 1,
+        "length": 4
+      },
+      "gw": 9
+    }
+  ]
+}

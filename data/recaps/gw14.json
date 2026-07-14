@@ -1,0 +1,94 @@
+{
+  "gw": 14,
+  "headline": {
+    "type": "trade-ex-factor",
+    "personKeys": [
+      "lu",
+      "anthony"
+    ],
+    "text": "The Ex Factor: Dalot drops 15 against Lu Palladino, the manager who let them go.",
+    "facts": {
+      "oldManagerId": 18493,
+      "opponentId": 89722,
+      "elementId": 440,
+      "playerName": "Dalot",
+      "points": 15
+    },
+    "gw": 14
+  },
+  "secondaries": [
+    {
+      "type": "lineup-could-have-won",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "Lu could have won this one -- the optimal lineup scores 62.",
+      "facts": {
+        "gw": 14,
+        "managerId": 18493,
+        "opponentId": 89722,
+        "actualScore": 60,
+        "optimalScore": 62,
+        "opponentScore": 60
+      },
+      "gw": 14
+    },
+    {
+      "type": "lineup-could-have-won",
+      "personKeys": [
+        "marshall"
+      ],
+      "text": "With the right lineup, Marshall Curtin-Dudzic wins this week. Instead: a loss.",
+      "facts": {
+        "gw": 14,
+        "managerId": 18710,
+        "opponentId": 18802,
+        "actualScore": 29,
+        "optimalScore": 32,
+        "opponentScore": 30
+      },
+      "gw": 14
+    },
+    {
+      "type": "streak-break",
+      "personKeys": [
+        "david"
+      ],
+      "text": "6 losses later, David Melko finally wins one.",
+      "facts": {
+        "managerId": 18802,
+        "brokenLength": 6
+      },
+      "gw": 14
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "mark"
+      ],
+      "text": "Mark Lamascese is at 3 straight now.",
+      "facts": {
+        "managerId": 146136,
+        "streakType": "W",
+        "length": 3
+      },
+      "gw": 14
+    },
+    {
+      "type": "family-cousin-clash",
+      "personKeys": [
+        "anthony",
+        "lu"
+      ],
+      "text": "Ernesto vs. Tongar: The Sperm Derby. Neen vs. Lu Palladino this week.",
+      "facts": {
+        "homeManagerId": 89722,
+        "awayManagerId": 18493,
+        "homePoints": 60,
+        "awayPoints": 60,
+        "relation": "cousin"
+      },
+      "gw": 14
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "gw": 11,
+  "headline": {
+    "type": "bridesmaid-costly-loss",
+    "personKeys": [
+      "pat"
+    ],
+    "text": "Pat Takala drops a big one. We've seen this story before.",
+    "facts": {
+      "managerId": 55642,
+      "gw": 11,
+      "importance": 3.57
+    },
+    "gw": 11
+  },
+  "secondaries": [
+    {
+      "type": "table-exit-top4",
+      "personKeys": [
+        "ostap"
+      ],
+      "text": "Top 4 watch: Ostap Tsymbalista is out.",
+      "facts": {
+        "managerId": 139975,
+        "rank": 7
+      },
+      "gw": 11
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "noah",
+        "pasquale"
+      ],
+      "text": "The 97s swept every cross-generation matchup this week, 2-0.",
+      "facts": {
+        "generation": "97s",
+        "count": 2
+      },
+      "gw": 11
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "A waiver-wire pickup just out-produced the entire first round: Matheus N., 13 points, Lu.",
+      "facts": {
+        "managerId": 18493,
+        "elementId": 407,
+        "playerName": "Matheus N.",
+        "points": 13,
+        "bestRound1": 12
+      },
+      "gw": 11
+    },
+    {
+      "type": "gauntlet-progress",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Pat Takala's gauntlet record so far: 2 wins in 3 tries.",
+      "facts": {
+        "managerId": 55642,
+        "wins": 2,
+        "played": 3,
+        "length": 4
+      },
+      "gw": 11
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "Clean sweep for the ancient across 1 cross-generation matchups.",
+      "facts": {
+        "generation": "ancient",
+        "count": 1
+      },
+      "gw": 11
+    }
+  ]
+}

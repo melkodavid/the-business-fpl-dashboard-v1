@@ -1,0 +1,86 @@
+{
+  "gw": 8,
+  "headline": {
+    "type": "table-enter-top4",
+    "personKeys": [
+      "ostap"
+    ],
+    "text": "Top 4 watch: Ostap Tsymbalista is in.",
+    "facts": {
+      "managerId": 139975,
+      "rank": 3
+    },
+    "gw": 8
+  },
+  "secondaries": [
+    {
+      "type": "streak",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "Lu Palladino has won 5 straight.",
+      "facts": {
+        "managerId": 18493,
+        "streakType": "W",
+        "length": 5
+      },
+      "gw": 8
+    },
+    {
+      "type": "trade-ex-factor",
+      "personKeys": [
+        "david",
+        "muk"
+      ],
+      "text": "David Melko cut Mukiele loose. Mukiele just scored 17 against them.",
+      "facts": {
+        "oldManagerId": 18802,
+        "opponentId": 33346,
+        "elementId": 694,
+        "playerName": "Mukiele",
+        "points": 17
+      },
+      "gw": 8
+    },
+    {
+      "type": "table-exit-top4",
+      "personKeys": [
+        "anthony"
+      ],
+      "text": "Top 4 watch: Neen is out.",
+      "facts": {
+        "managerId": 89722,
+        "rank": 5
+      },
+      "gw": 8
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "muk"
+      ],
+      "text": "Muk P has won 3 straight.",
+      "facts": {
+        "managerId": 33346,
+        "streakType": "W",
+        "length": 3
+      },
+      "gw": 8
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "david"
+      ],
+      "text": "A waiver-wire pickup just out-produced the entire first round: Mukiele, 17 points, David Melko.",
+      "facts": {
+        "managerId": 18802,
+        "elementId": 694,
+        "playerName": "Mukiele",
+        "points": 17,
+        "bestRound1": 13
+      },
+      "gw": 8
+    }
+  ]
+}

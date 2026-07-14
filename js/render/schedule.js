@@ -1,3 +1,7 @@
+import { buildTaleOfTheTapeCard, loadLore } from "./taleOfTheTape.js";
+import { buildRecapCard } from "./recapSection.js";
+import { buildSeasonArcWidgets } from "./seasonArcWidgets.js";
+
 function statusInfo(fixture) {
   if (fixture.finished) return { label: "FT", cls: "status-ft" };
   if (fixture.started) return { label: "LIVE", cls: "status-live" };
@@ -187,7 +191,17 @@ export function render(container, data, managers) {
     ? `The season's played out — here's how the final gameweek (GW${gw}) landed. Check back once next season's fixtures are live.`
     : `Gameweek ${gw}'s fixtures, ranked by matchup importance — title six-pointers and bottom-of-the-table battles float to the top.`;
 
-  const cardsHtml = fixtures.map((f) => fixtureCard(f, managers)).join("");
+  // Tale of the Tape enrichment (rivalry history, form, luck, positional edge,
+  // lore hooks) only makes sense for a genuinely upcoming gameweek -- once the
+  // season's over there's no "stakes" left to preview, so the final day just
+  // gets the plain result cards.
+  const lore = loadLore(data.lore);
+  const cardsHtml = seasonComplete
+    ? fixtures.map((f) => fixtureCard(f, managers)).join("")
+    : fixtures.map((f) => buildTaleOfTheTapeCard(f, data, managers, lore)).join("");
+
+  const recapHtml = buildRecapCard(data.latestRecap, { large: true });
+  const arcWidgetsHtml = buildSeasonArcWidgets(data.seasonArcs, managers);
 
   container.innerHTML = `
     <div class="schedule-luxury">
@@ -201,6 +215,10 @@ export function render(container, data, managers) {
           <p class="hero-sub">${heroSub}</p>
         </div>
       </div>
+
+      ${recapHtml ? `<div class="recap-section">${recapHtml}<a class="recap-archive-link" href="#recaps">Full Season Story archive &rarr;</a></div>` : ""}
+
+      ${arcWidgetsHtml}
 
       <div class="pitch-hero" id="pitchHero">
         <div class="pitch-lines">${PITCH_LINES_SVG}</div>

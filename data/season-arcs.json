@@ -1,0 +1,113 @@
+{
+  "gauntletWatch": null,
+  "lifeAfterMark": null,
+  "generationWar": {
+    "matrix": {
+      "ancient|97s": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 11
+      },
+      "97s|ancient": {
+        "wins": 11,
+        "draws": 0,
+        "losses": 4
+      },
+      "2000s|97s": {
+        "wins": 14,
+        "draws": 2,
+        "losses": 12
+      },
+      "97s|2000s": {
+        "wins": 12,
+        "draws": 2,
+        "losses": 14
+      },
+      "97s|01s": {
+        "wins": 19,
+        "draws": 1,
+        "losses": 34
+      },
+      "01s|97s": {
+        "wins": 34,
+        "draws": 1,
+        "losses": 19
+      },
+      "The Ditch|01s": {
+        "wins": 11,
+        "draws": 1,
+        "losses": 3
+      },
+      "01s|The Ditch": {
+        "wins": 3,
+        "draws": 1,
+        "losses": 11
+      },
+      "01s|2000s": {
+        "wins": 13,
+        "draws": 1,
+        "losses": 13
+      },
+      "2000s|01s": {
+        "wins": 13,
+        "draws": 1,
+        "losses": 13
+      },
+      "97s|The Ditch": {
+        "wins": 7,
+        "draws": 0,
+        "losses": 6
+      },
+      "The Ditch|97s": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 7
+      },
+      "ancient|2000s": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 4
+      },
+      "2000s|ancient": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 3
+      },
+      "The Ditch|ancient": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 4
+      },
+      "ancient|The Ditch": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 0
+      },
+      "01s|ancient": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 8
+      },
+      "ancient|01s": {
+        "wins": 8,
+        "draws": 0,
+        "losses": 4
+      },
+      "2000s|The Ditch": {
+        "wins": 1,
+        "draws": 0,
+        "losses": 5
+      },
+      "The Ditch|2000s": {
+        "wins": 5,
+        "draws": 0,
+        "losses": 1
+      }
+    },
+    "oneOhOnesVsRest": {
+      "wins": 54,
+      "draws": 3,
+      "losses": 51
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "gw": 15,
+  "headline": {
+    "type": "lineup-could-have-won",
+    "personKeys": [
+      "pasquale"
+    ],
+    "text": "Pasquale Frappa could have won this one -- the optimal lineup scores 63.",
+    "facts": {
+      "gw": 15,
+      "managerId": 130236,
+      "opponentId": 55642,
+      "actualScore": 43,
+      "optimalScore": 63,
+      "opponentScore": 44
+    },
+    "gw": 15
+  },
+  "secondaries": [
+    {
+      "type": "table-enter-top4",
+      "personKeys": [
+        "anthony"
+      ],
+      "text": "Top 4 watch: Anthony Palladino is in.",
+      "facts": {
+        "managerId": 89722,
+        "rank": 4
+      },
+      "gw": 15
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "mark"
+      ],
+      "text": "Mark Lamascese is at 4 straight now.",
+      "facts": {
+        "managerId": 146136,
+        "streakType": "W",
+        "length": 4
+      },
+      "gw": 15
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "mark"
+      ],
+      "text": "The Ditch vs. everyone else this week: The Ditch wins all 1.",
+      "facts": {
+        "generation": "The Ditch",
+        "count": 1
+      },
+      "gw": 15
+    },
+    {
+      "type": "gauntlet-watch",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Coming up for Pat Takala: 4 consecutive fixtures against the family. All of it.",
+      "facts": {
+        "managerId": 55642,
+        "startGw": 20,
+        "length": 4,
+        "opponentIds": [
+          33346,
+          19191,
+          18493,
+          89722
+        ]
+      },
+      "gw": 15
+    },
+    {
+      "type": "gauntlet-watch",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Pat Takala is about to walk into the Palladino gauntlet -- 4 in a row.",
+      "facts": {
+        "managerId": 55642,
+        "startGw": 31,
+        "length": 4,
+        "opponentIds": [
+          33346,
+          19191,
+          18493,
+          89722
+        ]
+      },
+      "gw": 15
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "gw": 24,
+  "headline": {
+    "type": "family-cousin-clash",
+    "personKeys": [
+      "muk",
+      "anthony"
+    ],
+    "text": "Ernesto vs. Tongar: The Sperm Derby. Muk P vs. Anthony Palladino this week.",
+    "facts": {
+      "homeManagerId": 33346,
+      "awayManagerId": 89722,
+      "homePoints": 44,
+      "awayPoints": 40,
+      "relation": "cousin"
+    },
+    "gw": 24
+  },
+  "secondaries": [
+    {
+      "type": "streak-break",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Pat Takala finally breaks a 4-game losing streak.",
+      "facts": {
+        "managerId": 55642,
+        "brokenLength": 4
+      },
+      "gw": 24
+    },
+    {
+      "type": "luck-robbery",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Pat Takala shouldn't have won this one. But here we are.",
+      "facts": {
+        "managerId": 55642,
+        "opponentId": 79487
+      },
+      "gw": 24
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Pat Takala's waiver pickup Casemiro (13 pts) outscored every round-1 draft pick this week.",
+      "facts": {
+        "managerId": 55642,
+        "elementId": 457,
+        "playerName": "Casemiro",
+        "points": 13,
+        "bestRound1": 12
+      },
+      "gw": 24
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "Noah Palladino has won 5 straight.",
+      "facts": {
+        "managerId": 19191,
+        "streakType": "W",
+        "length": 5
+      },
+      "gw": 24
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "mark"
+      ],
+      "text": "The The Ditch swept every cross-generation matchup this week, 1-0.",
+      "facts": {
+        "generation": "The Ditch",
+        "count": 1
+      },
+      "gw": 24
+    }
+  ]
+}

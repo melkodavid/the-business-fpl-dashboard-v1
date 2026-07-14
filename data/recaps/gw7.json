@@ -1,0 +1,93 @@
+{
+  "gw": 7,
+  "headline": {
+    "type": "luck-robbery",
+    "personKeys": [
+      "pasquale"
+    ],
+    "text": "Pasquale Frappa snuck out a win with a bottom-3 score. Daylight robbery.",
+    "facts": {
+      "managerId": 130236,
+      "opponentId": 146136
+    },
+    "gw": 7
+  },
+  "secondaries": [
+    {
+      "type": "bridesmaid-costly-loss",
+      "personKeys": [
+        "marshall"
+      ],
+      "text": "A costly loss for Marshall Curtin-Dudzic -- right on schedule.",
+      "facts": {
+        "managerId": 18710,
+        "gw": 7,
+        "importance": 2.83
+      },
+      "gw": 7
+    },
+    {
+      "type": "gauntlet-watch",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Pat Takala is about to walk into the Palladino gauntlet -- 4 in a row.",
+      "facts": {
+        "managerId": 55642,
+        "startGw": 9,
+        "length": 4,
+        "opponentIds": [
+          33346,
+          19191,
+          18493,
+          89722
+        ]
+      },
+      "gw": 7
+    },
+    {
+      "type": "family-cousin-clash",
+      "personKeys": [
+        "noah",
+        "muk"
+      ],
+      "text": "Ernesto vs. Tongar: The Sperm Derby. Noah Palladino vs. Muk P this week.",
+      "facts": {
+        "homeManagerId": 19191,
+        "awayManagerId": 33346,
+        "homePoints": 40,
+        "awayPoints": 59,
+        "relation": "cousin"
+      },
+      "gw": 7
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "4-game winning streak for Lu Palladino.",
+      "facts": {
+        "managerId": 18493,
+        "streakType": "W",
+        "length": 4
+      },
+      "gw": 7
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "anthony"
+      ],
+      "text": "A waiver-wire pickup just out-produced the entire first round: Van Hecke, 11 points, Anthony Palladino.",
+      "facts": {
+        "managerId": 89722,
+        "elementId": 151,
+        "playerName": "Van Hecke",
+        "points": 11,
+        "bestRound1": 8
+      },
+      "gw": 7
+    }
+  ]
+}

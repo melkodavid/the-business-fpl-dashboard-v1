@@ -1,0 +1,94 @@
+{
+  "gw": 17,
+  "headline": {
+    "type": "bridesmaid-costly-loss",
+    "personKeys": [
+      "pat"
+    ],
+    "text": "Pat Takala just lost an important one. Bridesmaid history says this is exactly when it happens.",
+    "facts": {
+      "managerId": 55642,
+      "gw": 17,
+      "importance": 3.46
+    },
+    "gw": 17
+  },
+  "secondaries": [
+    {
+      "type": "record-low-gw",
+      "personKeys": [
+        "pasquale"
+      ],
+      "text": "18 points for Pasquale Frappa. Rough week.",
+      "facts": {
+        "managerId": 130236,
+        "score": 18
+      },
+      "gw": 17
+    },
+    {
+      "type": "gauntlet-watch",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Coming up for Pat Takala: 4 consecutive fixtures against the family. All of it.",
+      "facts": {
+        "managerId": 55642,
+        "startGw": 20,
+        "length": 4,
+        "opponentIds": [
+          33346,
+          19191,
+          18493,
+          89722
+        ]
+      },
+      "gw": 17
+    },
+    {
+      "type": "gauntlet-watch",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Pat Takala is about to walk into the Palladino gauntlet -- 4 in a row.",
+      "facts": {
+        "managerId": 55642,
+        "startGw": 31,
+        "length": 4,
+        "opponentIds": [
+          33346,
+          19191,
+          18493,
+          89722
+        ]
+      },
+      "gw": 17
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "anthony"
+      ],
+      "text": "Neen is at 3 straight now.",
+      "facts": {
+        "managerId": 89722,
+        "streakType": "W",
+        "length": 3
+      },
+      "gw": 17
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "pasquale"
+      ],
+      "text": "Pasquale Frappa is at 3 straight now.",
+      "facts": {
+        "managerId": 130236,
+        "streakType": "L",
+        "length": 3
+      },
+      "gw": 17
+    }
+  ]
+}

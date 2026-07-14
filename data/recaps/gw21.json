@@ -1,0 +1,85 @@
+{
+  "gw": 21,
+  "headline": {
+    "type": "family-brother-derby",
+    "personKeys": [
+      "lu",
+      "muk"
+    ],
+    "text": "Brother Derby: Lu vs. Muk P, let's find out who's the chud.",
+    "facts": {
+      "homeManagerId": 18493,
+      "awayManagerId": 33346,
+      "homePoints": 51,
+      "awayPoints": 37,
+      "relation": "brother"
+    },
+    "gw": 21
+  },
+  "secondaries": [
+    {
+      "type": "bridesmaid-costly-loss",
+      "personKeys": [
+        "marshall"
+      ],
+      "text": "A costly loss for Marshall Curtin-Dudzic -- right on schedule.",
+      "facts": {
+        "managerId": 18710,
+        "gw": 21,
+        "importance": 3.51
+      },
+      "gw": 21
+    },
+    {
+      "type": "streak-break",
+      "personKeys": [
+        "ostap"
+      ],
+      "text": "The 5-game slide is over for Ostap Tsymbalista.",
+      "facts": {
+        "managerId": 139975,
+        "brokenLength": 5
+      },
+      "gw": 21
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "ibrahim"
+      ],
+      "text": "3-game winning streak for Ibrahim Abdulnour.",
+      "facts": {
+        "managerId": 18616,
+        "streakType": "W",
+        "length": 3
+      },
+      "gw": 21
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "marshall"
+      ],
+      "text": "4-game losing streak for Marshall Curtin-Dudzic.",
+      "facts": {
+        "managerId": 18710,
+        "streakType": "L",
+        "length": 4
+      },
+      "gw": 21
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "anthony",
+        "ostap"
+      ],
+      "text": "The 2000s swept every cross-generation matchup this week, 2-0.",
+      "facts": {
+        "generation": "2000s",
+        "count": 2
+      },
+      "gw": 21
+    }
+  ]
+}

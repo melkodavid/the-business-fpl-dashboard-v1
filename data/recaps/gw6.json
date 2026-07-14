@@ -1,0 +1,86 @@
+{
+  "gw": 6,
+  "headline": {
+    "type": "trade-ex-factor",
+    "personKeys": [
+      "mitch",
+      "ostap"
+    ],
+    "text": "The Ex Factor: Keane drops 11 against Mitch Grice, the manager who let them go.",
+    "facts": {
+      "oldManagerId": 79487,
+      "opponentId": 139975,
+      "elementId": 295,
+      "playerName": "Keane",
+      "points": 11
+    },
+    "gw": 6
+  },
+  "secondaries": [
+    {
+      "type": "streak",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "Lu is at 3 straight now.",
+      "facts": {
+        "managerId": 18493,
+        "streakType": "W",
+        "length": 3
+      },
+      "gw": 6
+    },
+    {
+      "type": "table-enter-top4",
+      "personKeys": [
+        "ostap"
+      ],
+      "text": "Ostap Tsymbalista climbs into the top 4.",
+      "facts": {
+        "managerId": 139975,
+        "rank": 4
+      },
+      "gw": 6
+    },
+    {
+      "type": "table-exit-top4",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "Noah Palladino falls to 5, out of the top 4.",
+      "facts": {
+        "managerId": 19191,
+        "rank": 5
+      },
+      "gw": 6
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "A waiver-wire pickup just out-produced the entire first round: Alderete, 17 points, Lu Palladino.",
+      "facts": {
+        "managerId": 18493,
+        "elementId": 684,
+        "playerName": "Alderete",
+        "points": 17,
+        "bestRound1": 16
+      },
+      "gw": 6
+    },
+    {
+      "type": "trade-value-flip",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "Lu Palladino's trade record just changed direction.",
+      "facts": {
+        "managerId": 18493,
+        "tradeId": 311274,
+        "netValue": 79
+      },
+      "gw": 6
+    }
+  ]
+}

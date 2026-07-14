@@ -1,3 +1,5 @@
+import { matchImportance } from "../lib/matchImportance.js";
+
 // "This Week's Schedule" — the next unplayed (or in-progress) gameweek's H2H
 // fixtures, ranked by matchup importance rather than kick-off order, the way a
 // broadcaster's "big match of the week" segment would. Importance is a proxy
@@ -23,22 +25,7 @@ export function computeSchedule(context) {
       const homeTotal = totalByManagerId.get(m.homeManagerId) ?? 0;
       const awayTotal = totalByManagerId.get(m.awayManagerId) ?? 0;
 
-      const bestRank = Math.min(homeRank, awayRank);
-      const worstRank = Math.max(homeRank, awayRank);
-      const rankGap = worstRank - bestRank;
-      const pointsGap = Math.abs(homeTotal - awayTotal);
-
-      const inTitleRace = bestRank <= 3;
-      const inBottomBattle = worstRank >= teamCount - 2;
-
-      const proximity = 1 / (1 + rankGap) + 1 / (1 + pointsGap / 8);
-      const stakes = (inTitleRace ? 1.5 : 0) + (inBottomBattle ? 1.5 : 0);
-      const importance = Math.round((proximity + stakes) * 100) / 100;
-
-      let tag = "Midtable Clash";
-      if (inTitleRace) tag = "Title Six-Pointer";
-      else if (inBottomBattle) tag = "Wooden Spoon Battle";
-      else if (rankGap <= 1) tag = "Six-Pointer";
+      const { importance, tag } = matchImportance({ homeRank, awayRank, homeTotal, awayTotal, teamCount });
 
       return {
         event: m.event,
