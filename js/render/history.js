@@ -1,4 +1,5 @@
 import { makeSortable, signed, signedClass } from "../format.js";
+import { getIdentity } from "../identity.js";
 
 function starsHtml(count) {
   if (!count) return "";
@@ -24,6 +25,7 @@ export function render(container, data, managers) {
   const history = data.history;
   const seasons = history.seasons;
   const titleCounts = history.titleCounts;
+  const me = getIdentity();
 
   const honorsHtml = [...seasons]
     .reverse()
@@ -37,7 +39,7 @@ export function render(container, data, managers) {
             s.championTitleNumber
           )
         : '<span class="empty-state">Unknown</span>';
-      return `<tr><td>${s.year}${s.isCurrent ? ' <span class="badge badge-w">Current</span>' : ""}</td><td class="text-left">${champDisplay}</td></tr>`;
+      return `<tr class="${s.championKey === me ? "is-me" : ""}"><td>${s.year}${s.isCurrent ? ' <span class="badge badge-w">Current</span>' : ""}</td><td class="text-left">${champDisplay}</td></tr>`;
     })
     .join("");
 
@@ -45,7 +47,7 @@ export function render(container, data, managers) {
     ? history.mostLastPlace
         .map(
           (row) => `
-          <tr>
+          <tr class="${row.managerKey === me ? "is-me" : ""}">
             <td class="text-left">${personDisplay(row.managerKey, row.displayName, managers, titleCounts)}</td>
             <td>${row.lastPlace}</td>
           </tr>`
@@ -139,7 +141,7 @@ export function render(container, data, managers) {
     const rowsHtml = season.table
       .map(
         (r) => `
-          <tr>
+          <tr class="${r.managerKey === me ? "is-me" : ""}">
             <td>${r.rank}</td>
             <td class="text-left">${r.team ?? ""}</td>
             <td class="text-left">${personDisplay(r.managerKey, r.manager, managers, titleCounts)}</td>
@@ -171,7 +173,7 @@ export function render(container, data, managers) {
       leaderboardBody.innerHTML = rows
         .map(
           (r) => `
-          <tr>
+          <tr class="${r.managerKey === me ? "is-me" : ""}">
             <td>${r.seasons}</td>
             <td class="text-left">${personDisplay(r.managerKey, r.displayName, managers, titleCounts)}</td>
             <td title="Top-4 finishes">${r.top4}</td>
@@ -200,7 +202,7 @@ export function render(container, data, managers) {
       allTimeBody.innerHTML = rows
         .map(
           (r) => `
-          <tr>
+          <tr class="${r.managerKey === me ? "is-me" : ""}">
             <td class="text-left">${personDisplay(r.managerKey, r.displayName, managers, titleCounts)}</td>
             <td>${r.seasons}</td>
             <td>${r.w}</td><td>${r.d}</td><td>${r.l}</td>

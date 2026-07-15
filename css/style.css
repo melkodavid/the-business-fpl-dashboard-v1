@@ -84,6 +84,46 @@ a { color: var(--accent); }
   display: inline-block;
 }
 
+.identity-btn {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius);
+  max-width: 40vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.identity-btn:hover { background: rgba(255,255,255,0.16); }
+
+.identity-panel {
+  background: var(--surface);
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 12px 24px -12px rgba(0,0,0,0.35);
+}
+.identity-panel-inner { padding: 1rem; max-width: 640px; margin: 0 auto; }
+.identity-panel-title {
+  margin: 0 0 0.75rem; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--text-muted);
+}
+.identity-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.5rem;
+}
+.identity-option {
+  display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.6rem;
+  background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
+  color: var(--text); font-size: 0.85rem; text-align: left;
+}
+.identity-option:hover { border-color: var(--accent); }
+.identity-clear {
+  margin-top: 0.85rem; background: none; border: none; color: var(--text-muted);
+  font-size: 0.8rem; text-decoration: underline; padding: 0;
+}
+
 .site-nav {
   display: none;
   flex-direction: column;
@@ -222,6 +262,16 @@ th {
 }
 
 tbody tr:hover { background: color-mix(in srgb, var(--accent) 6%, transparent); }
+
+/* "Who's watching?" row highlight -- applied to whichever row/column belongs
+   to the currently-selected identity, across Standings/All-Play/H2H
+   Grid/History. Deliberately separate from the Cup page's own
+   .path-highlight (that one is scoped/!important-heavy and Cup-specific). */
+tr.is-me, th.is-me {
+  background: color-mix(in srgb, var(--accent) 14%, transparent) !important;
+  box-shadow: inset 3px 0 0 var(--lime);
+}
+tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) !important; }
 
 .badge {
   display: inline-block;
@@ -735,7 +785,10 @@ tbody tr:hover { background: color-mix(in srgb, var(--accent) 6%, transparent); 
 .schedule-luxury .floodlight.fl-2 { width: 40%; height: 40%; top: -10%; right: 6%; background: radial-gradient(circle, rgba(155,92,224,0.14), transparent 70%); animation-delay: 3s; }
 .schedule-luxury .floodlight.fl-3 { width: 36%; height: 36%; bottom: -16%; left: 40%; background: radial-gradient(circle, rgba(0,255,133,0.10), transparent 70%); animation-delay: 6s; }
 @keyframes sl-floodlight-breathe { 0%, 100% { opacity: 0.7; transform: scale(1); } 50% { opacity: 1; transform: scale(1.08); } }
-.schedule-luxury .pitch-hero canvas { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; }
+/* Portable pass-network canvas positioning -- applied directly to the canvas
+   element (not scoped to a specific parent like .pitch-hero) so both the
+   Schedule page and the landing page's hero can nest it wherever they need. */
+.sl-pass-canvas { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; }
 @media (prefers-reduced-motion: reduce) { .schedule-luxury .floodlight { animation: none; opacity: 0.85; } }
 
 .schedule-luxury .fixtures-title { text-align: center; margin-bottom: 1.6rem; }
@@ -888,3 +941,236 @@ tbody tr:hover { background: color-mix(in srgb, var(--accent) 6%, transparent); 
 .recap-archive .recap-gw { display: block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent, #37003c); margin-bottom: 0.4rem; }
 .recap-archive .recap-headline { margin: 0; font-size: 1.05rem; font-weight: 600; }
 .recap-archive .recap-secondaries { margin: 0.7rem 0 0; padding-left: 1.1rem; color: var(--text-muted, #666); font-size: 0.88rem; display: flex; flex-direction: column; gap: 0.3rem; }
+
+/* =========================================================================
+   Trading Cards -- scoped, self-contained, dark-only "collectible" theme
+   (same isolation pattern as .schedule-luxury/.cup-theme: its own custom
+   properties, never reacting to the site's light/dark toggle since foil/holo
+   card aesthetics are a fixed look, approved by the user via mockup).
+   ========================================================================= */
+.cards-theme {
+  --card-ink: #14101c;
+  --card-surface: #1e1826;
+  --card-surface-2: #251d30;
+  --card-text: #f2eef7;
+  --card-text-muted: #a99fb8;
+  --card-hairline: rgba(255,255,255,0.09);
+
+  --gold-1: #f7e2a4; --gold-2: #d9a53c; --gold-3: #8a5c14;
+  --chrome-1: #d6f0f4; --chrome-2: #4fb6c9; --chrome-3: #1c5866;
+  --pewter-1: #e6e8ec; --pewter-2: #9aa3b0; --pewter-3: #565d68;
+  --rust-1: #cf9a5c; --rust-2: #8a5a30; --rust-3: #3c2415;
+
+  background: var(--card-ink);
+  color: var(--card-text);
+  padding: 1.5rem 1rem 3rem;
+  border-radius: 12px;
+}
+
+.cards-theme .page-head { max-width: 900px; margin: 0 auto 2rem; text-align: center; }
+.cards-theme .eyebrow {
+  font-family: "Archivo", sans-serif; font-weight: 700; font-size: 0.7rem;
+  letter-spacing: 0.32em; text-transform: uppercase; color: var(--gold-2);
+}
+.cards-theme .page-title {
+  font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; font-weight: 500;
+  font-size: clamp(1.8rem, 5vw, 2.4rem); margin: 0.5rem 0 0.6rem; text-wrap: balance; color: #fff;
+}
+.cards-theme .page-sub { color: var(--card-text-muted); font-size: 0.92rem; max-width: 32rem; margin: 0 auto; font-style: italic; }
+
+.cards-theme .filter-row { max-width: 900px; margin: 0 auto 1.6rem; display: flex; gap: 0.6rem; justify-content: center; align-items: center; flex-wrap: wrap; }
+.cards-theme .filter-pill {
+  font-family: "Archivo", sans-serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; padding: 0.5rem 1.1rem; border-radius: 999px; border: 1px solid var(--card-hairline);
+  background: var(--card-surface); color: var(--card-text-muted);
+}
+.cards-theme .filter-pill.active { background: var(--card-text); color: var(--card-ink); border-color: var(--card-text); }
+.cards-theme #cards-season-select {
+  font-family: "Archivo", sans-serif; font-size: 0.8rem; padding: 0.45rem 0.7rem; border-radius: 8px;
+  background: var(--card-surface); color: var(--card-text); border: 1px solid var(--card-hairline);
+}
+
+.cards-theme .cards-cta { max-width: 900px; margin: 0 auto 1.6rem; text-align: center; }
+.cards-theme .cards-cta button {
+  font-family: "Archivo", sans-serif; font-size: 0.8rem; font-weight: 700; padding: 0.6rem 1.2rem;
+  border-radius: 999px; border: 1px solid var(--gold-2); background: transparent; color: var(--gold-1);
+}
+.cards-theme .cards-cta button:hover { background: color-mix(in srgb, var(--gold-2) 15%, transparent); }
+
+.cards-theme .grid {
+  max-width: 1100px; margin: 0 auto; display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 2rem;
+  perspective: 1400px;
+}
+
+/* Border-gradient technique: .card's own background IS the foil frame; a
+   thin padding reveals it as a ring, .card-inner sits inset and opaque. */
+.cards-theme .card {
+  position: relative; aspect-ratio: 5 / 7; border-radius: 16px; padding: 3px;
+  background: var(--frame, linear-gradient(155deg, var(--pewter-1), var(--pewter-3)));
+  box-shadow: 0 26px 54px -20px rgba(0,0,0,0.6), 0 2px 0 rgba(255,255,255,0.08) inset;
+  transition: transform 0.4s cubic-bezier(.2,.8,.2,1);
+}
+.cards-theme .card:hover { transform: translateY(-5px) rotateX(2deg) rotateY(-2deg); }
+
+.cards-theme .card-inner {
+  position: relative; width: 100%; height: 100%; border-radius: 13px; overflow: hidden;
+  background: var(--card-surface); display: flex; flex-direction: column;
+}
+
+/* Hover-triggered shimmer sweep -- cheap (only animates on :hover), the
+   Career Card gets a subtler always-on version further down. */
+.cards-theme .sheen {
+  position: absolute; inset: 0; z-index: 3; pointer-events: none; mix-blend-mode: overlay;
+  background: linear-gradient(115deg, transparent 30%, rgba(255,255,255,0.5) 47%, rgba(255,255,255,0.18) 50%, transparent 65%);
+  opacity: 0; transition: opacity 0.5s ease;
+}
+.cards-theme .card:hover .sheen { opacity: 0.6; }
+
+.cards-theme .card-photo {
+  position: relative; height: 44%; display: flex; align-items: center; justify-content: center;
+  background: var(--card-surface-2);
+}
+.cards-theme .avatar {
+  width: 76px; height: 76px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-family: "Archivo", sans-serif; font-weight: 700; font-size: 1.5rem; color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35), 0 0 0 4px var(--card-surface);
+}
+.cards-theme .rank-badge {
+  position: absolute; top: 10px; left: 10px; width: 38px; height: 38px; border-radius: 9px;
+  background: var(--frame); display: flex; align-items: center; justify-content: center;
+  font-family: "Bebas Neue", sans-serif; font-size: 1.2rem; color: var(--card-ink);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+.cards-theme .tier-tag {
+  position: absolute; top: 10px; right: 10px; font-family: "Archivo", sans-serif; font-weight: 700;
+  font-size: 0.55rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.28rem 0.55rem;
+  border-radius: 999px; background: rgba(0,0,0,0.35); color: var(--tier-color, #fff); backdrop-filter: blur(3px);
+}
+.cards-theme .title-star { position: absolute; bottom: 8px; right: 10px; font-size: 1.05rem; color: var(--gold-2); text-shadow: 0 0 8px rgba(217,165,60,0.6); }
+
+.cards-theme .card-body, .cards-theme .career-body { flex: 1; padding: 0.8rem 1rem 1rem; display: flex; flex-direction: column; }
+.cards-theme .card-name { font-family: "Archivo", sans-serif; font-weight: 700; font-size: 1rem; line-height: 1.15; }
+.cards-theme .card-team { font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; color: var(--card-text-muted); font-size: 0.78rem; margin-top: 0.15rem; }
+.cards-theme .card-season {
+  font-family: "Archivo", sans-serif; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--tier-color, var(--card-text-muted)); margin-top: 0.5rem;
+}
+
+.cards-theme .stat-line {
+  margin-top: auto; padding-top: 0.65rem; border-top: 1px solid var(--card-hairline);
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.3rem; text-align: center;
+}
+.cards-theme .stat-line div { display: flex; flex-direction: column; gap: 0.15rem; }
+.cards-theme .stat-num { font-family: "Bebas Neue", sans-serif; font-size: 1.1rem; font-variant-numeric: tabular-nums; }
+.cards-theme .stat-label { font-family: "Archivo", sans-serif; font-size: 0.52rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--card-text-muted); }
+
+.cards-theme .tier-legendary { --frame: linear-gradient(155deg, var(--gold-1), var(--gold-2) 55%, var(--gold-3)); --tier-color: var(--gold-1); }
+.cards-theme .tier-rare { --frame: linear-gradient(155deg, var(--chrome-1), var(--chrome-2) 55%, var(--chrome-3)); --tier-color: var(--chrome-1); }
+.cards-theme .tier-common { --frame: linear-gradient(155deg, var(--pewter-1), var(--pewter-2) 55%, var(--pewter-3)); --tier-color: var(--pewter-1); }
+.cards-theme .tier-spoon { --frame: linear-gradient(155deg, var(--rust-1), var(--rust-2) 55%, var(--rust-3)); --tier-color: var(--rust-1); }
+.cards-theme .tier-spoon .card-inner { filter: saturate(0.85); }
+
+/* CAREER / ALL-TIME tier -- one rung above Legendary: a shifting prismatic
+   foil, since this card represents a whole body of work, not one season. */
+.cards-theme .tier-career {
+  --frame: linear-gradient(120deg, #f2a4d9, #f7e2a4, #a4f0c8, #a4d6f7, #d1a4f7, #f2a4d9);
+  background-size: 300% 300%; --tier-color: #fff;
+  animation: cards-holo-shift 6s ease infinite;
+}
+@keyframes cards-holo-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cards-theme .tier-career { animation: none; background-position: 30% 50%; }
+}
+.cards-theme .tier-career .sheen { opacity: 0.3; mix-blend-mode: soft-light; }
+.cards-theme .tier-career:hover .sheen { opacity: 0.55; }
+
+.cards-theme .career-titles { margin-top: 0.5rem; font-size: 0.92rem; letter-spacing: 0.04em; color: var(--gold-2); text-shadow: 0 0 8px rgba(217,165,60,0.5); }
+.cards-theme .career-stat-grid {
+  margin-top: 0.6rem; padding-top: 0.65rem; border-top: 1px solid var(--card-hairline);
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem 0.3rem; text-align: center;
+}
+
+.cards-theme .career-grid { align-items: start; }
+.cards-theme .career-card-slot { display: flex; flex-direction: column; }
+.cards-theme .binder-toggle {
+  margin-top: 0.9rem; font-family: "Archivo", sans-serif; font-weight: 700; font-size: 0.68rem;
+  letter-spacing: 0.1em; text-transform: uppercase; padding: 0.55rem 1rem; border-radius: 999px;
+  border: 1px solid var(--card-hairline); background: var(--card-surface); color: var(--card-text);
+}
+.cards-theme .binder-toggle:hover { background: var(--card-surface-2); }
+.cards-theme .binder-strip {
+  display: none; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 0.7rem; margin-top: 0.9rem;
+}
+.cards-theme .binder-strip.open { display: grid; }
+
+.cards-theme .card-mini { aspect-ratio: 5 / 7; border-radius: 10px; padding: 2px; background: var(--frame); }
+.cards-theme .card-mini .card-inner { border-radius: 8px; }
+.cards-theme .card-mini .card-photo { height: 50%; }
+.cards-theme .card-mini .avatar { width: 36px; height: 36px; font-size: 0.75rem; }
+.cards-theme .card-mini .rank-badge { width: 20px; height: 20px; font-size: 0.7rem; top: 5px; left: 5px; border-radius: 5px; }
+.cards-theme .card-mini .card-body { padding: 0.4rem 0.5rem 0.55rem; }
+.cards-theme .card-mini .card-season { margin-top: 0; font-size: 0.54rem; }
+.cards-theme .card-mini .stat-line { grid-template-columns: 1fr; padding-top: 0.35rem; }
+.cards-theme .card-mini .stat-num { font-size: 0.82rem; }
+
+@media (max-width: 560px) {
+  .cards-theme .grid { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1.2rem; }
+}
+
+/* =========================================================================
+   Landing page -- the "who's watching?" card picker. Reuses .schedule-luxury
+   (hero + pass-network) and .cards-theme (card fronts) verbatim; only the
+   picker-specific interaction layer below is new.
+   ========================================================================= */
+.landing-hero .hero-block { min-height: 340px; padding-bottom: 2rem; }
+
+.picker-grid { margin-top: 0.5rem; }
+.picker-slot { display: flex; }
+
+/* Reset default <button> chrome so a real, keyboard-focusable button can
+   wrap the card front without looking like a form control. */
+.picker-card-btn {
+  all: unset;
+  display: flex; flex-direction: column; width: 100%; cursor: pointer;
+  border-radius: 16px;
+}
+.picker-card-btn:focus-visible {
+  outline: 2px solid var(--lime, #00ff85); outline-offset: 3px;
+}
+.picker-card-btn .card { transition: transform 0.4s cubic-bezier(.2,.8,.2,1), box-shadow 0.4s ease, opacity 0.35s ease; }
+.picker-card-btn:hover .card, .picker-card-btn:focus-visible .card { transform: translateY(-6px) scale(1.015); }
+
+.picker-card-cta {
+  margin-top: 0.6rem; text-align: center; font-family: "Archivo", sans-serif; font-size: 0.7rem;
+  font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--card-text-muted, #a99fb8);
+  transition: color 0.2s ease;
+}
+.picker-card-btn:hover .picker-card-cta, .picker-card-btn:focus-visible .picker-card-cta { color: var(--gold-2, #d9a53c); }
+.picker-card-btn.is-you .picker-card-cta { color: var(--lime, #00ff85); }
+
+/* Selection moment: the chosen card lifts and glows while its siblings fade
+   back, for the brief window before navigation actually happens. Skipped
+   entirely under prefers-reduced-motion (landing.js navigates immediately
+   instead of adding these classes). */
+.picker-card-btn.selecting .card { transform: translateY(-10px) scale(1.04); box-shadow: 0 0 40px 6px rgba(0,255,133,0.35); }
+.picker-card-btn.dimmed { opacity: 0.35; transform: scale(0.98); transition: opacity 0.4s ease, transform 0.4s ease; }
+
+/* Returning-visitor mark -- same tier-color token every card already sets,
+   so it themes correctly no matter which foil tier they're on. */
+.picker-card-btn.is-you .card { box-shadow: 0 0 0 2px var(--tier-color, var(--lime, #00ff85)), 0 26px 54px -20px rgba(0,0,0,0.6); }
+
+/* General View tile -- same card shape and .tier-common pewter frame as a
+   season card, but a plain icon + label instead of a stat grid. */
+.general-view-card .card-photo.general-view-icon {
+  font-size: 2.4rem; background: var(--card-surface-2);
+}
+.general-view-card .career-body { text-align: center; align-items: center; justify-content: center; }
+.general-view-card .card-name { font-size: 1.05rem; }
+
+@media (max-width: 560px) {
+  .landing-hero .hero-block { min-height: 260px; }
+}

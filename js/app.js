@@ -1,6 +1,11 @@
 import { loadAllData, managerLookup } from "./data.js";
+import { onIdentityChange } from "./identity.js";
+import { mountIdentitySwitcher } from "./identitySwitcher.js";
+import { render as renderLanding } from "./render/landing.js";
 import { render as renderSchedule } from "./render/schedule.js";
 import { render as renderRecaps } from "./render/recaps.js";
+import { render as renderMySeason } from "./render/mySeason.js";
+import { render as renderCards } from "./render/cards.js";
 import { render as renderStandings } from "./render/standings.js";
 import { render as renderAllPlay } from "./render/allPlay.js";
 import { render as renderH2H } from "./render/h2hGrid.js";
@@ -17,8 +22,11 @@ import { render as renderHistory } from "./render/history.js";
 import { render as renderCup } from "./render/cup.js";
 
 const ROUTES = {
+  landing: renderLanding,
   schedule: renderSchedule,
   recaps: renderRecaps,
+  "my-season": renderMySeason,
+  cards: renderCards,
   standings: renderStandings,
   "all-play": renderAllPlay,
   h2h: renderH2H,
@@ -34,7 +42,7 @@ const ROUTES = {
   history: renderHistory,
   cup: renderCup,
 };
-const DEFAULT_ROUTE = "schedule";
+const DEFAULT_ROUTE = "landing";
 
 const app = document.getElementById("app");
 const nav = document.getElementById("site-nav");
@@ -104,6 +112,7 @@ function main(data, managers) {
   }
 
   window.addEventListener("hashchange", draw);
+  onIdentityChange(draw);
   navToggle.addEventListener("click", () => {
     const open = nav.classList.toggle("open");
     navToggle.setAttribute("aria-expanded", String(open));
@@ -116,6 +125,7 @@ async function init() {
   try {
     const data = await loadAllData();
     const managers = managerLookup(data);
+    mountIdentitySwitcher(managers);
 
     if (data.meta?.lastUpdated) {
       const date = new Date(data.meta.lastUpdated);

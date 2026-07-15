@@ -1,13 +1,15 @@
 import { signed, signedClass, streakBadge } from "../format.js";
+import { getIdentity } from "../identity.js";
 
 export function render(container, data, managers) {
   const luckByManager = new Map(data.allPlay.standings.map((s) => [s.managerId, s.luckScore]));
+  const myId = managers.idForPersonKey(getIdentity());
 
   const rowsHtml = data.standings.rows
     .map((r) => {
       const luck = luckByManager.get(r.managerId) ?? 0;
       return `
-        <tr>
+        <tr class="${r.managerId === myId ? "is-me" : ""}">
           <td>${r.rank}</td>
           <td class="text-left">${managers.nameHtml(r.managerId)}</td>
           <td>${r.played}</td>

@@ -68,6 +68,7 @@ function avatarHtml(m) {
 
 export function managerLookup(data) {
   const byId = new Map(data.managers.list.map((m) => [m.id, m]));
+  const byPersonKey = new Map(data.managers.list.map((m) => [m.personKey, m]));
   return {
     name: (id) => byId.get(id)?.name ?? `Manager ${id}`,
     shortName: (id) => byId.get(id)?.shortName ?? `M${id}`,
@@ -77,6 +78,12 @@ export function managerLookup(data) {
     abbreviation: (id) => byId.get(id)?.abbreviation ?? byId.get(id)?.shortName ?? "???",
     titles: (id) => byId.get(id)?.titles ?? 0,
     avatarHtml: (id) => avatarHtml(byId.get(id)),
+    // Standings/All-Play/H2H Grid are keyed by numeric managerId, while
+    // Cards/History/the identity switcher deal in personKey (the stable,
+    // cross-season person identity) -- these two resolve between the spaces
+    // so a page in either id space can check "is this the selected identity".
+    idForPersonKey: (key) => byPersonKey.get(key)?.id ?? null,
+    personKeyForId: (id) => byId.get(id)?.personKey ?? null,
     all: data.managers.list,
   };
 }

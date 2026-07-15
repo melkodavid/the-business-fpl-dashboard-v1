@@ -1,10 +1,12 @@
 import { signed, signedClass, round1 } from "../format.js";
+import { getIdentity } from "../identity.js";
 
 export function render(container, data, managers) {
+  const myId = managers.idForPersonKey(getIdentity());
   const rowsHtml = data.allPlay.standings
     .map(
       (s, i) => `
-        <tr>
+        <tr class="${s.managerId === myId ? "is-me" : ""}">
           <td>${i + 1}</td>
           <td class="text-left">${managers.nameHtml(s.managerId)}</td>
           <td>${s.actualWins}</td>

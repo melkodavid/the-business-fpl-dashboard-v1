@@ -1,3 +1,5 @@
+import { getIdentity } from "../identity.js";
+
 function streakText(streak) {
   return streak ? `${streak.type}${streak.count}` : "—";
 }
@@ -5,8 +7,9 @@ function streakText(streak) {
 export function render(container, data, managers) {
   const cellByPair = new Map(data.h2hGrid.cells.map((c) => [`${c.managerId}:${c.opponentId}`, c]));
   const ids = managers.all.map((m) => m.id);
+  const myId = managers.idForPersonKey(getIdentity());
 
-  const headerHtml = ids.map((id) => `<th>${managers.shortName(id)}${managers.starsHtml(id)}</th>`).join("");
+  const headerHtml = ids.map((id) => `<th class="${id === myId ? "is-me" : ""}">${managers.shortName(id)}${managers.starsHtml(id)}</th>`).join("");
   const rowsHtml = ids
     .map((rowId) => {
       const cells = ids
@@ -18,7 +21,7 @@ export function render(container, data, managers) {
           return `<td title="${title}">${cell.wins}-${cell.losses}-${cell.draws}</td>`;
         })
         .join("");
-      return `<tr><th class="text-left">${managers.shortName(rowId)}${managers.starsHtml(rowId)}</th>${cells}</tr>`;
+      return `<tr class="${rowId === myId ? "is-me" : ""}"><th class="text-left ${rowId === myId ? "is-me" : ""}">${managers.shortName(rowId)}${managers.starsHtml(rowId)}</th>${cells}</tr>`;
     })
     .join("");
 
