@@ -19,6 +19,7 @@ const FILES = {
   lore: "league-lore.json",
   seasonArcs: "season-arcs.json",
   recapsIndex: "recaps/index.json",
+  upcomingManagers: "upcoming-managers.json",
 };
 
 export async function loadAllData() {

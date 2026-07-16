@@ -1,0 +1,7 @@
+{
+  "_comment": "People joining the league next season who don't have a real Draft API entry yet (so they're not in managers.json). Listed here purely so they have a card to pick on the landing page ahead of their first season -- shown as a distinct 'Rookie' card, no stats, no real managerId. Once someone here actually joins the league and appears in managers.json for real, remove their entry here and add their colors/abbreviation to data/manager-profiles.json instead (this file is just a stand-in for that).",
+  "upcoming": [
+    { "personKey": "carm", "displayName": "Carm", "color": "#26a69a", "abbreviation": "CAR" },
+    { "personKey": "zac", "displayName": "Zac", "color": "#ec407a", "abbreviation": "ZC" }
+  ]
+}

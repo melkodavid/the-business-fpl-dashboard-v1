@@ -51,6 +51,23 @@ function promptHtml() {
   `;
 }
 
+// A personKey that isn't in managers.json at all (someone who picked their
+// "Rookie" card from the landing page ahead of actually joining the league --
+// see data/upcoming-managers.json) has no standings/form/luck/fixture to
+// show yet -- there's nothing to look up by managerId, so skip straight to a
+// welcome message instead of a page full of "no data yet" empty states.
+function rookieWelcomeHtml(personKey, data) {
+  const person = (data.upcomingManagers?.upcoming ?? []).find((p) => p.personKey === personKey);
+  const name = person?.displayName ?? personKey;
+  return `
+    <h2 class="section-title">My Season</h2>
+    <div class="card">
+      <p>Welcome to The Business, ${name}!</p>
+      <p class="section-subtitle">Your first season hasn't started yet -- check back once it kicks off to see your stats here.</p>
+    </div>
+  `;
+}
+
 export async function render(container, data, managers) {
   const me = getIdentity();
 
@@ -64,6 +81,11 @@ export async function render(container, data, managers) {
   }
 
   const myId = managers.idForPersonKey(me);
+  if (myId == null) {
+    container.innerHTML = rookieWelcomeHtml(me, data);
+    return;
+  }
+
   const standingsRow = data.standings.rows.find((r) => r.managerId === myId);
   const luck = data.allPlay.standings.find((s) => s.managerId === myId);
   const formRow = data.formGuide.rows.find((r) => r.managerId === myId);

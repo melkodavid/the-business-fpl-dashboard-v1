@@ -3,11 +3,20 @@ import { getIdentity, setIdentity, clearIdentity, onIdentityChange } from "./ide
 let panelEl = null;
 let btnEl = null;
 
-function labelFor(managers) {
+function labelFor(managers, upcoming) {
   const key = getIdentity();
   if (!key) return "Who's watching?";
   const m = managers.all.find((mgr) => mgr.personKey === key);
-  return `Viewing as: ${m?.playerName ?? m?.name ?? key}`;
+  if (m) return `Viewing as: ${m.playerName ?? m.name}`;
+  const rookie = upcoming.find((p) => p.personKey === key);
+  return `Viewing as: ${rookie?.displayName ?? key}`;
+}
+
+// upcoming managers (see data/upcoming-managers.json) have no managerId, so
+// managers.avatarHtml(id) doesn't apply -- same .mgr-avatar markup, built
+// directly from their color/abbreviation instead.
+function rookieAvatarHtml(person) {
+  return `<span class="mgr-avatar" style="background:${person.color}"><span class="mgr-avatar-initials">${person.abbreviation}</span></span>`;
 }
 
 function closePanel() {
@@ -24,7 +33,7 @@ export function openIdentityPanel() {
   if (panelEl) openPanel();
 }
 
-export function mountIdentitySwitcher(managers) {
+export function mountIdentitySwitcher(managers, upcoming = []) {
   btnEl = document.getElementById("identity-btn");
   panelEl = document.getElementById("identity-panel");
   if (!btnEl || !panelEl) return;
@@ -41,6 +50,15 @@ export function mountIdentitySwitcher(managers) {
           <button type="button" class="identity-option" data-person-key="${m.personKey}">
             ${managers.avatarHtml(m.id)}
             <span>${m.playerName ?? m.name}</span>
+          </button>`
+          )
+          .join("")}
+        ${upcoming
+          .map(
+            (p) => `
+          <button type="button" class="identity-option" data-person-key="${p.personKey}">
+            ${rookieAvatarHtml(p)}
+            <span>${p.displayName} (Rookie)</span>
           </button>`
           )
           .join("")}
@@ -73,8 +91,8 @@ export function mountIdentitySwitcher(managers) {
     closePanel();
   });
 
-  btnEl.textContent = labelFor(managers);
+  btnEl.textContent = labelFor(managers, upcoming);
   onIdentityChange(() => {
-    btnEl.textContent = labelFor(managers);
+    btnEl.textContent = labelFor(managers, upcoming);
   });
 }

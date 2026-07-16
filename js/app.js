@@ -125,7 +125,7 @@ async function init() {
   try {
     const data = await loadAllData();
     const managers = managerLookup(data);
-    mountIdentitySwitcher(managers);
+    mountIdentitySwitcher(managers, data.upcomingManagers?.upcoming ?? []);
 
     if (data.meta?.lastUpdated) {
       const date = new Date(data.meta.lastUpdated);

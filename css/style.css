@@ -960,6 +960,7 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
   --chrome-1: #d6f0f4; --chrome-2: #4fb6c9; --chrome-3: #1c5866;
   --pewter-1: #e6e8ec; --pewter-2: #9aa3b0; --pewter-3: #565d68;
   --rust-1: #cf9a5c; --rust-2: #8a5a30; --rust-3: #3c2415;
+  --rookie-1: #d7f5df; --rookie-2: #6bc98a; --rookie-3: #276b45;
 
   background: var(--card-ink);
   color: var(--card-text);
@@ -1070,6 +1071,11 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
 .cards-theme .tier-common { --frame: linear-gradient(155deg, var(--pewter-1), var(--pewter-2) 55%, var(--pewter-3)); --tier-color: var(--pewter-1); }
 .cards-theme .tier-spoon { --frame: linear-gradient(155deg, var(--rust-1), var(--rust-2) 55%, var(--rust-3)); --tier-color: var(--rust-1); }
 .cards-theme .tier-spoon .card-inner { filter: saturate(0.85); }
+
+/* ROOKIE -- someone who hasn't joined the league yet (data/upcoming-managers.json),
+   fresh mint/paper foil distinct from the four earned tiers, no stat-grid. */
+.cards-theme .tier-rookie { --frame: linear-gradient(155deg, var(--rookie-1), var(--rookie-2) 55%, var(--rookie-3)); --tier-color: var(--rookie-1); }
+.cards-theme .tier-rookie .card-photo { font-size: 1.6rem; }
 
 /* CAREER / ALL-TIME tier -- one rung above Legendary: a shifting prismatic
    foil, since this card represents a whole body of work, not one season. */

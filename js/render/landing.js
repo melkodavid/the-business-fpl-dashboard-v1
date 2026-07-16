@@ -5,6 +5,28 @@ import { getIdentity, setIdentity } from "../identity.js";
 
 const SELECT_ANIMATION_MS = 420;
 
+// A manager who hasn't joined the real league yet (see
+// data/upcoming-managers.json) -- no stats to show, just a distinct "not
+// started yet" card so they still have something to click ahead of their
+// first season. Uses the same data-manager-key attribute as a real career
+// card, so the existing click handler needs no special-casing for it.
+function rookieCardHtml(person) {
+  return `
+    <div class="card tier-rookie">
+      <div class="card-inner">
+        <div class="sheen"></div>
+        <div class="card-photo">
+          <span class="tier-tag">Rookie</span>
+          <span class="avatar" style="background:${person.color}">${person.abbreviation}</span>
+        </div>
+        <div class="career-body">
+          <div class="card-name">${person.displayName}</div>
+          <div class="card-team">First season coming up</div>
+        </div>
+      </div>
+    </div>`;
+}
+
 function generalViewTileHtml() {
   return `
     <div class="card tier-common general-view-card">
@@ -46,6 +68,19 @@ export function render(container, data, managers) {
     })
     .join("");
 
+  const rookiesHtml = (data.upcomingManagers?.upcoming ?? [])
+    .map((person) => {
+      const isYou = person.personKey === me;
+      return `
+        <div class="career-card-slot picker-slot">
+          <button type="button" class="picker-card-btn ${isYou ? "is-you" : ""}" data-manager-key="${person.personKey}">
+            ${rookieCardHtml(person)}
+            <span class="picker-card-cta">${isYou ? "Continue as You →" : "Play as this manager →"}</span>
+          </button>
+        </div>`;
+    })
+    .join("");
+
   container.innerHTML = `
     <div class="schedule-luxury landing-hero">
       <div class="hero-block">
@@ -64,6 +99,7 @@ export function render(container, data, managers) {
     <div class="cards-theme">
       <div class="grid career-grid picker-grid" id="landing-picker-grid">
         ${cardsHtml}
+        ${rookiesHtml}
         <div class="career-card-slot picker-slot">
           <button type="button" class="picker-card-btn" data-general-view>
             ${generalViewTileHtml()}
