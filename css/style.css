@@ -1,51 +1,39 @@
 /* ============================================================
-   Site-wide theme — Premier League identity (deep purple + lime),
-   applied to every page except the FA Cup, which keeps its own
-   fixed emerald/gold world (see .cup-theme below).
+   Site-wide theme — the "luxury" dark identity (gold/purple/lime on
+   near-black) originally built for the Schedule/Landing/Cards pages,
+   now the ONE theme for every page except the FA Cup, which keeps its
+   own fixed emerald/gold world (see .cup-theme below). Deliberately
+   fixed-dark, no light-mode variant -- the moody dark look is core to
+   this identity, not an inverted palette.
    ============================================================ */
 :root {
-  color-scheme: light dark;
-  --bg: #f5f3f8;
-  --surface: #ffffff;
-  --text: #1a1024;
-  --text-muted: #665f74;
-  --border: #e3dcec;
-  --accent: #3d1a5b;
+  color-scheme: dark;
+  --bg: #0a0b12;
+  --surface: #12141d;
+  --text: #eef1f4;
+  --text-muted: #8b95a3;
+  --border: rgba(255,255,255,0.08);
+  --edge-bright: rgba(255,255,255,0.18);
+  --accent: #6a2fa8;
+  --accent-bright: #9b5ce0;
   --accent-contrast: #ffffff;
+  --gold: #c9a660;
+  --gold-bright: #ecd9a3;
   --lime: #00ff85;
   --lime-contrast: #05231a;
-  --win: #0ca664;
-  --loss: #d64545;
-  --draw: #8a8f98;
-  --header-bg: #37003c;
-  --header-text: #f5f3f8;
+  --win: #3ecb77;
+  --loss: #ef6161;
+  --draw: #b6a7c4;
+  --header-bg: #0a0b12;
+  --header-text: #eef1f4;
   --radius: 10px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #150019;
-    --surface: #200a29;
-    --text: #f1eaf5;
-    --text-muted: #b6a7c4;
-    --border: #3a1f47;
-    --accent: #b98af0;
-    --accent-contrast: #1a0022;
-    --lime: #00ff85;
-    --lime-contrast: #05231a;
-    --win: #3ecb77;
-    --loss: #ef6161;
-    --draw: #b6a7c4;
-    --header-bg: #1c0022;
-    --header-text: #f1eaf5;
-  }
 }
 
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Archivo", "Bahnschrift", "Segoe UI", sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.4;
@@ -149,17 +137,87 @@ a { color: var(--accent); }
   box-shadow: inset 0 -3px 0 var(--lime);
 }
 
+/* Nav groups -- <details>/<summary> disclosure blocks. On mobile this is a
+   native stacked accordion (only the open group's links add height, which is
+   what actually fixes a 19-link nav from overflowing the viewport); on
+   desktop each becomes a hover/focus dropdown off a single-row bar. No JS
+   changes needed anywhere -- app.js's nav.querySelectorAll("a") already
+   walks the full tree regardless of <details> nesting. */
+.nav-group summary {
+  color: var(--header-text);
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.95rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.nav-group summary::-webkit-details-marker { display: none; }
+.nav-group summary::after {
+  content: "▾";
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  transition: transform 0.15s ease;
+}
+.nav-group[open] summary::after { transform: rotate(180deg); }
+.nav-group summary:hover { background: rgba(255,255,255,0.08); }
+/* Base (mobile) layout: without this, .nav-group-links' <a> children are
+   inline by default and wrap side-by-side like text instead of stacking
+   one per line. */
+.nav-group-links { display: flex; flex-direction: column; }
+.nav-group-links a { padding-left: 2rem; font-size: 0.9rem; }
+
 @media (min-width: 860px) {
   .nav-toggle { display: none; }
   .site-nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
     border-top: none;
   }
   .site-nav a {
     border-bottom: none;
     padding: 0.9rem 0.85rem;
+  }
+
+  .nav-group { position: relative; }
+  .nav-group summary {
+    border-bottom: none;
+    padding: 0.9rem 0.85rem;
+  }
+  /* The dropdown panel itself is the one absolutely-positioned element;
+     its links flow normally (column) inside it. Giving each <a> its own
+     "position: absolute; top: 100%" independently (an earlier version of
+     this rule) pins every link to the same spot, so they overlap instead
+     of stacking -- the panel wrapper is what fixes that. Author-origin
+     display rules always beat the UA stylesheet's default "hide non-summary
+     children unless [open]" behavior, so this works regardless of whether
+     the group was actually toggled open. */
+  .nav-group-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    min-width: 12rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    z-index: 20;
+  }
+  .nav-group-links a {
+    padding: 0.75rem 1rem;
+    white-space: nowrap;
+  }
+  .nav-group:hover .nav-group-links,
+  .nav-group:focus-within .nav-group-links,
+  .nav-group[open] .nav-group-links {
+    display: flex;
   }
 }
 
@@ -207,7 +265,7 @@ p.section-subtitle {
   transition: box-shadow 0.2s ease, transform 0.2s ease, opacity 0.4s ease;
 }
 .card:hover {
-  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.12);
 }
 
 /* Scroll-reveal: cards/fixture-cards fade+rise into view as the page scrolls;
@@ -280,9 +338,13 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
   font-size: 0.75rem;
   font-weight: 600;
 }
-.badge-w { background: color-mix(in srgb, var(--lime) 30%, transparent); color: var(--lime-contrast); }
-.badge-l { background: color-mix(in srgb, var(--loss) 20%, transparent); color: var(--loss); }
-.badge-d { background: color-mix(in srgb, var(--draw) 25%, transparent); color: var(--draw); }
+/* Mixed toward --surface rather than transparent -- against a near-black
+   page, mixing toward transparent reads as a barely-visible dark smear.
+   badge-w's text also switches to a bright lime glow instead of
+   --lime-contrast (a near-black tuned for a *light* lime-tinted chip). */
+.badge-w { background: color-mix(in srgb, var(--lime) 30%, var(--surface)); color: var(--lime); }
+.badge-l { background: color-mix(in srgb, var(--loss) 20%, var(--surface)); color: var(--loss); }
+.badge-d { background: color-mix(in srgb, var(--draw) 25%, var(--surface)); color: var(--draw); }
 
 .pos { color: var(--win); }
 .neg { color: var(--loss); }
@@ -355,7 +417,11 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
   object-fit: cover;
 }
 
-/* ---- This Week's Schedule / matchday scoreboard ---- */
+/* ---- Shared fixture-card base -- .schedule-luxury layers its own skin on
+   top of this (background/border/hero styling), but this base rule still
+   supplies overflow/hover-transition/padding/text-truncation/tabular-nums
+   and the entire .status-live pulse animation that the scoped rule never
+   redeclares. Do not delete this thinking it's superseded. ---- */
 .fixture-list {
   display: flex;
   flex-direction: column;
@@ -370,7 +436,7 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
   transition: box-shadow 0.2s ease, transform 0.2s ease, opacity 0.4s ease;
 }
 .fixture-card:hover {
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.12);
   transform: translateY(-2px);
 }
 
@@ -703,31 +769,33 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
 }
 
 /* ============================================================
-   THIS WEEK'S SCHEDULE — "Pass Network" luxury treatment.
-   Scoped to .schedule-luxury (same isolation pattern as .cup-theme)
-   so this doesn't affect any other page while we try it out here first.
-   Fonts: Cormorant Garamond (elegant italic serif) + Archivo (geometric
-   grotesk), loaded via Google Fonts in index.html -- openly licensed
-   stand-ins chosen to match the Constantia/Bahnschrift design comps.
+   THIS WEEK'S SCHEDULE — the "Pass Network" hero treatment, now feeding
+   the site-wide luxury theme's --sl-* tokens (kept as their own custom
+   properties here since this scope's bespoke hero/pitch/fixture rules
+   below reference them throughout -- see the token-forwarding block).
+   No more "floating island" bleed/border-radius: now that the whole site
+   shares this ink color, there's no lighter page to stand out against, so
+   this sits flush like every other page instead of framed separately.
    ============================================================ */
 .schedule-luxury {
-  --sl-ink: #0a0b12;
-  --sl-surface: #12141d;
-  --sl-edge: rgba(255,255,255,0.08);
-  --sl-edge-bright: rgba(255,255,255,0.18);
-  --sl-gold: #c9a660;
-  --sl-gold-bright: #ecd9a3;
-  --sl-purple: #6a2fa8;
-  --sl-purple-bright: #9b5ce0;
-  --sl-lime: #00ff85;
-  --sl-text: #eef1f4;
-  --sl-text-muted: #8b95a3;
+  /* Forwards to the site-wide root tokens (see :root) rather than owning an
+     independent palette -- kept as its own custom properties since the
+     bespoke hero/pitch/fixture rules below reference var(--sl-*) throughout. */
+  --sl-ink: var(--bg);
+  --sl-surface: var(--surface);
+  --sl-edge: var(--border);
+  --sl-edge-bright: var(--edge-bright);
+  --sl-gold: var(--gold);
+  --sl-gold-bright: var(--gold-bright);
+  --sl-purple: var(--accent);
+  --sl-purple-bright: var(--accent-bright);
+  --sl-lime: var(--lime);
+  --sl-text: var(--text);
+  --sl-text-muted: var(--text-muted);
 
   background: var(--sl-ink);
   color: var(--sl-text);
-  border-radius: 20px;
   padding: 2.5rem 1.25rem 3rem;
-  margin: -1rem -1rem 1.25rem;
   font-family: "Archivo", "Bahnschrift", "Segoe UI", sans-serif;
   font-weight: 400;
   position: relative;
@@ -735,7 +803,7 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
 }
 .schedule-luxury::before {
   content: "";
-  position: absolute; inset: 0; border-radius: 20px; z-index: -1; pointer-events: none;
+  position: absolute; inset: 0; z-index: -1; pointer-events: none;
   opacity: 0.035; mix-blend-mode: overlay;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
 }
@@ -949,12 +1017,15 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
    card aesthetics are a fixed look, approved by the user via mockup).
    ========================================================================= */
 .cards-theme {
-  --card-ink: #14101c;
-  --card-surface: #1e1826;
+  /* Forwards to the site-wide root tokens (see :root) rather than owning an
+     independent palette -- --card-surface-2 has no root equivalent (a
+     cards-only elevation step) and stays a literal. */
+  --card-ink: var(--bg);
+  --card-surface: var(--surface);
   --card-surface-2: #251d30;
-  --card-text: #f2eef7;
-  --card-text-muted: #a99fb8;
-  --card-hairline: rgba(255,255,255,0.09);
+  --card-text: var(--text);
+  --card-text-muted: var(--text-muted);
+  --card-hairline: var(--border);
 
   --gold-1: #f7e2a4; --gold-2: #d9a53c; --gold-3: #8a5c14;
   --chrome-1: #d6f0f4; --chrome-2: #4fb6c9; --chrome-3: #1c5866;
