@@ -3,62 +3,62 @@
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 1458
+      "draftTeamPoints": 1702
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 1445
-    },
-    {
-      "managerId": 1530,
-      "managerName": "Muks Militia",
-      "draftTeamPoints": 1386
+      "draftTeamPoints": 1649
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 1364
+      "draftTeamPoints": 1638
     },
     {
-      "managerId": 26227,
-      "managerName": "Mourinho’s Ego FT",
-      "draftTeamPoints": 1346
-    },
-    {
-      "managerId": 10210,
-      "managerName": "Syria FC**",
-      "draftTeamPoints": 1304
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "draftTeamPoints": 1576
     },
     {
       "managerId": 1501,
       "managerName": "C",
-      "draftTeamPoints": 1295
+      "draftTeamPoints": 1545
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "draftTeamPoints": 1508
     },
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 1277
+      "draftTeamPoints": 1409
     },
     {
-      "managerId": 1857,
-      "managerName": "CHANGE NAME",
-      "draftTeamPoints": 1171
-    },
-    {
-      "managerId": 1471,
-      "managerName": "Big BUMBO",
-      "draftTeamPoints": 1098
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "draftTeamPoints": 1406
     },
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "draftTeamPoints": 1068
+      "draftTeamPoints": 1338
+    },
+    {
+      "managerId": 1857,
+      "managerName": "CHANGE NAME",
+      "draftTeamPoints": 1334
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "draftTeamPoints": 1033
+      "draftTeamPoints": 1315
+    },
+    {
+      "managerId": 1471,
+      "managerName": "Big BUMBO",
+      "draftTeamPoints": 1300
     }
   ],
   "scatter": [
@@ -934,178 +934,213 @@
     },
     {
       "pickNumber": 146,
-      "seasonPoints": 0,
-      "managerId": 29975
+      "seasonPoints": 79,
+      "managerId": 29975,
+      "playerName": "Hall"
     },
     {
       "pickNumber": 147,
-      "seasonPoints": 0,
-      "managerId": 10375
+      "seasonPoints": 120,
+      "managerId": 10375,
+      "playerName": "Martinez"
     },
     {
       "pickNumber": 148,
-      "seasonPoints": 0,
-      "managerId": 1530
+      "seasonPoints": 116,
+      "managerId": 1530,
+      "playerName": "Ballard"
     },
     {
       "pickNumber": 149,
-      "seasonPoints": 0,
-      "managerId": 26227
+      "seasonPoints": 32,
+      "managerId": 26227,
+      "playerName": "Branthwaite"
     },
     {
       "pickNumber": 150,
       "seasonPoints": 0,
-      "managerId": 1425
+      "managerId": 1425,
+      "playerName": "Jacquet"
     },
     {
       "pickNumber": 151,
-      "seasonPoints": 0,
-      "managerId": 1947
+      "seasonPoints": 90,
+      "managerId": 1947,
+      "playerName": "Maguire"
     },
     {
       "pickNumber": 152,
-      "seasonPoints": 0,
-      "managerId": 1501
+      "seasonPoints": 126,
+      "managerId": 1501,
+      "playerName": "Welbeck"
     },
     {
       "pickNumber": 153,
       "seasonPoints": 0,
-      "managerId": 10210
+      "managerId": 10210,
+      "playerName": "Wright"
     },
     {
       "pickNumber": 154,
-      "seasonPoints": 0,
-      "managerId": 1471
+      "seasonPoints": 43,
+      "managerId": 1471,
+      "playerName": "Awoniyi"
     },
     {
       "pickNumber": 155,
-      "seasonPoints": 0,
-      "managerId": 99786
+      "seasonPoints": 113,
+      "managerId": 99786,
+      "playerName": "Kayode"
     },
     {
       "pickNumber": 156,
-      "seasonPoints": 0,
-      "managerId": 1377
+      "seasonPoints": 41,
+      "managerId": 1377,
+      "playerName": "Wood"
     },
     {
       "pickNumber": 157,
-      "seasonPoints": 0,
-      "managerId": 1377
+      "seasonPoints": 122,
+      "managerId": 1377,
+      "playerName": "Leno"
     },
     {
       "pickNumber": 158,
-      "seasonPoints": 0,
-      "managerId": 99786
+      "seasonPoints": 118,
+      "managerId": 99786,
+      "playerName": "F.Kadıoğlu"
     },
     {
       "pickNumber": 159,
-      "seasonPoints": 0,
-      "managerId": 1471
+      "seasonPoints": 159,
+      "managerId": 1471,
+      "playerName": "Garner"
     },
     {
       "pickNumber": 160,
-      "seasonPoints": 0,
-      "managerId": 10210
+      "seasonPoints": 100,
+      "managerId": 10210,
+      "playerName": "Dunk"
     },
     {
       "pickNumber": 161,
-      "seasonPoints": 0,
-      "managerId": 1501
+      "seasonPoints": 124,
+      "managerId": 1501,
+      "playerName": "Petrović"
     },
     {
       "pickNumber": 162,
-      "seasonPoints": 0,
-      "managerId": 1947
+      "seasonPoints": 67,
+      "managerId": 1947,
+      "playerName": "Aina"
     },
     {
       "pickNumber": 163,
-      "seasonPoints": 0,
-      "managerId": 1425
+      "seasonPoints": 96,
+      "managerId": 1425,
+      "playerName": "Bogle"
     },
     {
       "pickNumber": 164,
-      "seasonPoints": 0,
-      "managerId": 26227
+      "seasonPoints": 96,
+      "managerId": 26227,
+      "playerName": "Pope"
     },
     {
       "pickNumber": 165,
-      "seasonPoints": 0,
-      "managerId": 1530
+      "seasonPoints": 74,
+      "managerId": 1530,
+      "playerName": "Isidor"
     },
     {
       "pickNumber": 166,
-      "seasonPoints": 0,
-      "managerId": 10375
+      "seasonPoints": 55,
+      "managerId": 10375,
+      "playerName": "Robertson"
     },
     {
       "pickNumber": 167,
-      "seasonPoints": 0,
-      "managerId": 29975
+      "seasonPoints": 113,
+      "managerId": 29975,
+      "playerName": "Damsgaard"
     },
     {
       "pickNumber": 168,
-      "seasonPoints": 0,
-      "managerId": 1857
+      "seasonPoints": 50,
+      "managerId": 1857,
+      "playerName": "Ndoye"
     },
     {
       "pickNumber": 169,
-      "seasonPoints": 0,
-      "managerId": 1857
+      "seasonPoints": 113,
+      "managerId": 1857,
+      "playerName": "Shaw"
     },
     {
       "pickNumber": 170,
-      "seasonPoints": 0,
-      "managerId": 29975
+      "seasonPoints": 90,
+      "managerId": 29975,
+      "playerName": "Vicario"
     },
     {
       "pickNumber": 171,
-      "seasonPoints": 0,
-      "managerId": 10375
+      "seasonPoints": 95,
+      "managerId": 10375,
+      "playerName": "Mykolenko"
     },
     {
       "pickNumber": 172,
       "seasonPoints": 0,
-      "managerId": 1530
+      "managerId": 1530,
+      "playerName": "Penders"
     },
     {
       "pickNumber": 173,
-      "seasonPoints": 0,
-      "managerId": 26227
+      "seasonPoints": 34,
+      "managerId": 26227,
+      "playerName": "Mamardashvili"
     },
     {
       "pickNumber": 174,
-      "seasonPoints": 0,
-      "managerId": 1425
+      "seasonPoints": 36,
+      "managerId": 1425,
+      "playerName": "Muniz"
     },
     {
       "pickNumber": 175,
-      "seasonPoints": 0,
-      "managerId": 1947
+      "seasonPoints": 47,
+      "managerId": 1947,
+      "playerName": "Andrey Santos"
     },
     {
       "pickNumber": 176,
       "seasonPoints": 0,
-      "managerId": 1501
+      "managerId": 1501,
+      "playerName": "Simms"
     },
     {
       "pickNumber": 177,
-      "seasonPoints": 0,
-      "managerId": 10210
+      "seasonPoints": 2,
+      "managerId": 10210,
+      "playerName": "Arrizabalaga"
     },
     {
       "pickNumber": 178,
       "seasonPoints": 0,
-      "managerId": 1471
+      "managerId": 1471,
+      "playerName": "Rulli"
     },
     {
       "pickNumber": 179,
-      "seasonPoints": 0,
-      "managerId": 99786
+      "seasonPoints": 43,
+      "managerId": 99786,
+      "playerName": "Perri"
     },
     {
       "pickNumber": 180,
-      "seasonPoints": 0,
-      "managerId": 1377
+      "seasonPoints": 81,
+      "managerId": 1377,
+      "playerName": "Tonali"
     }
   ]
 }

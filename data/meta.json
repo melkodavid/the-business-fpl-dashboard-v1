@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-16T17:17:09.346Z",
+  "lastUpdated": "2026-08-16T18:25:00.332Z",
   "currentGw": null,
   "finishedThroughGw": null,
   "leagueName": "The Business FPL",
   "draftDt": "2026-08-16T16:00:00Z",
-  "draftStarted": false,
-  "draftCompleted": false,
+  "draftStarted": true,
+  "draftCompleted": true,
   "mock": false
 }
