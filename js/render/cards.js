@@ -3,11 +3,11 @@ import { seasonCardHtml, miniCardHtml, careerCardFrontHtml } from "../lib/cardRe
 import { getIdentity } from "../identity.js";
 import { openIdentityPanel } from "../identitySwitcher.js";
 
-function careerCardHtml(card, managers, seasonsByManager) {
+function careerCardHtml(card, managers, seasonsByManager, tierOpts) {
   const binderCards = seasonsByManager.get(card.managerKey) ?? [];
   return `
     <div class="career-card-slot">
-      ${careerCardFrontHtml(card, managers)}
+      ${careerCardFrontHtml(card, managers, tierOpts)}
       <button type="button" class="binder-toggle" data-binder-toggle="${card.managerKey}">
         ▾ Open Full Collection (${binderCards.length} season${binderCards.length === 1 ? "" : "s"})
       </button>
@@ -23,6 +23,13 @@ export function render(container, data, managers) {
   const careerCards = buildCareerCards(history);
   const seasonsByManager = cardsByManager(seasonCards);
   const seasonYears = [...history.seasons].filter((s) => s.table).reverse();
+
+  // Titles-based rarity (see titleTier in cardRender.js) considers the whole
+  // all-time leaderboard, not just the current 12 -- "most titles of anyone"
+  // shouldn't reset just because a past champion has since left the league.
+  const maxTitles = careerCards.reduce((max, c) => Math.max(max, c.titles), 0);
+  const reigningChampionKey = history.reigningChampionKey ?? null;
+  const tierOpts = (card) => ({ maxTitles, isReigningChampion: card.managerKey === reigningChampionKey });
 
   const yearOptions = seasonYears.map((s) => `<option value="${s.year}">${s.year}${s.isCurrent ? " (current)" : ""}</option>`).join("");
 
@@ -45,7 +52,7 @@ export function render(container, data, managers) {
       </div>
 
       <div id="cards-grid" class="grid career-grid">
-        ${careerCards.map((c) => careerCardHtml(c, managers, seasonsByManager)).join("")}
+        ${careerCards.map((c) => careerCardHtml(c, managers, seasonsByManager, tierOpts(c))).join("")}
       </div>
 
       <div id="cards-season-grid" class="grid" hidden></div>

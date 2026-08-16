@@ -79,7 +79,7 @@ function initScrollReveal() {
   // Only cards starting below the fold get the reveal treatment -- anything
   // already in the initial viewport renders immediately, so there's no risk
   // of content getting stuck invisible if IntersectionObserver never fires.
-  const belowFold = [...app.querySelectorAll(".card, .fixture-card")].filter(
+  const belowFold = [...app.querySelectorAll(".card, .fixture-card, .member-tile")].filter(
     (el) => el.getBoundingClientRect().top >= window.innerHeight
   );
   // "reveal-init" disables the transition for one frame so hiding these cards

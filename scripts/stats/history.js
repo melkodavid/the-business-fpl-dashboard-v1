@@ -87,9 +87,15 @@ export function computeHistory(context, historySeasonsData, currentSeasonLabel) 
     if (agg.has(key)) agg.get(key).titles = count;
   }
 
+  // Third tiebreaker only (career win%, not stored as its own field here --
+  // the combined career table below computes and exposes it properly).
+  const winPct = (a) => {
+    const played = a.wSum + a.dSum + a.lSum;
+    return played ? a.wSum / played : 0;
+  };
   const leaderboard = [...agg.values()]
     .map((a) => ({ ...a, avgRank: Math.round((a.rankSum / a.seasons) * 10) / 10 }))
-    .sort((a, b) => b.titles - a.titles || a.avgRank - b.avgRank);
+    .sort((a, b) => b.titles - a.titles || a.avgRank - b.avgRank || winPct(b) - winPct(a));
 
   const mostLastPlace = [...agg.values()]
     .filter((a) => a.lastPlace > 0)
@@ -117,11 +123,17 @@ export function computeHistory(context, historySeasonsData, currentSeasonLabel) 
     })
     .sort((a, b) => b.points - a.points);
 
+  // Most recent season with a decided champion -- skips the live in-progress
+  // season while it has no table yet, so this correctly points at last
+  // season's winner until the current one actually has a rank 1.
+  const reigningChampionKey = [...seasons].reverse().find((s) => s.championKey)?.championKey ?? null;
+
   return {
     seasons,
     titleCounts: Object.fromEntries(titleCounts),
     leaderboard,
     mostLastPlace,
     allTimeTable,
+    reigningChampionKey,
   };
 }

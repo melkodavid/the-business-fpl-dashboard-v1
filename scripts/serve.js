@@ -26,7 +26,11 @@ createServer(async (req, res) => {
     const filePath = join(ROOT, path);
     const contentType = MIME_TYPES[extname(filePath)] ?? "application/octet-stream";
     const body = await readFile(filePath);
-    res.writeHead(200, { "Content-Type": contentType });
+    // Local dev only -- without this, the browser's own heuristic caching
+    // has repeatedly served stale JS/CSS across edits during testing here,
+    // making "it works" checks unreliable. Production hosting never uses
+    // this server, so it's safe to always bypass cache.
+    res.writeHead(200, { "Content-Type": contentType, "Cache-Control": "no-store" });
     res.end(body);
   } catch {
     res.writeHead(404, { "Content-Type": "text/plain" });

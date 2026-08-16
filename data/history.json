@@ -1146,6 +1146,23 @@
       "avgRank": 4.5
     },
     {
+      "managerKey": "david",
+      "displayName": "David",
+      "seasons": 6,
+      "titles": 1,
+      "top4": 1,
+      "bottom3": 2,
+      "lastPlace": 0,
+      "rankSum": 45,
+      "bestRank": 1,
+      "pointsForSum": 8976,
+      "pointsSum": 336,
+      "wSum": 110,
+      "dSum": 6,
+      "lSum": 111,
+      "avgRank": 7.5
+    },
+    {
       "managerKey": "pasquale",
       "displayName": "Pasquale",
       "seasons": 8,
@@ -1177,23 +1194,6 @@
       "wSum": 29,
       "dSum": 2,
       "lSum": 42,
-      "avgRank": 7.5
-    },
-    {
-      "managerKey": "david",
-      "displayName": "David",
-      "seasons": 6,
-      "titles": 1,
-      "top4": 1,
-      "bottom3": 2,
-      "lastPlace": 0,
-      "rankSum": 45,
-      "bestRank": 1,
-      "pointsForSum": 8976,
-      "pointsSum": 336,
-      "wSum": 110,
-      "dSum": 6,
-      "lSum": 111,
       "avgRank": 7.5
     },
     {
@@ -1795,5 +1795,6 @@
       "pointsFor": 1105,
       "points": 36
     }
-  ]
+  ],
+  "reigningChampionKey": "lu"
 }

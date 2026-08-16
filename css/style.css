@@ -268,13 +268,13 @@ p.section-subtitle {
   box-shadow: 0 4px 18px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.12);
 }
 
-/* Scroll-reveal: cards/fixture-cards fade+rise into view as the page scrolls;
-   .in-view is toggled by an IntersectionObserver in app.js. */
-.card.reveal, .fixture-card.reveal {
+/* Scroll-reveal: cards/fixture-cards/member-tiles fade+rise into view as the
+   page scrolls; .in-view is toggled by an IntersectionObserver in app.js. */
+.card.reveal, .fixture-card.reveal, .member-tile.reveal {
   opacity: 0;
   transform: translateY(14px);
 }
-.card.reveal.in-view, .fixture-card.reveal.in-view {
+.card.reveal.in-view, .fixture-card.reveal.in-view, .member-tile.reveal.in-view {
   opacity: 1;
   transform: translateY(0);
 }
@@ -781,11 +781,11 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
    .cup-trophy-rig etc. above) -- scroll-reveal shows content immediately and
    the live-score pulse/route fade stop animating. */
 @media (prefers-reduced-motion: reduce) {
-  main#app.route-enter, .card, .fixture-card {
+  main#app.route-enter, .card, .fixture-card, .member-tile {
     animation: none !important;
     transition: none !important;
   }
-  .card.reveal, .fixture-card.reveal {
+  .card.reveal, .fixture-card.reveal, .member-tile.reveal {
     opacity: 1 !important;
     transform: none !important;
   }
@@ -1166,6 +1166,11 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
   background: var(--frame, linear-gradient(155deg, var(--pewter-1), var(--pewter-3)));
   box-shadow: 0 26px 54px -20px rgba(0,0,0,0.6), 0 2px 0 rgba(255,255,255,0.08) inset;
   transition: transform 0.4s cubic-bezier(.2,.8,.2,1);
+  /* Overrides the site-wide .card's overflow-x: auto (meant for cards that
+     scroll a wide table) -- trading cards never scroll internally, and that
+     inherited rule was clipping anything meant to poke past the card's own
+     box, like the crown badge and Noah's flag mast. */
+  overflow: visible;
 }
 .cards-theme .card:hover { transform: translateY(-5px) rotateX(2deg) rotateY(-2deg); }
 
@@ -1277,12 +1282,45 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
 .cards-theme .tier-career .sheen { opacity: 0.3; mix-blend-mode: soft-light; }
 .cards-theme .tier-career:hover .sheen { opacity: 0.55; }
 
+/* Titles-won rarity layered on top of the holo-shift shimmer above (see
+   titleTier() in cardRender.js): untitled dials it back to almost nothing
+   -- never having won is deliberately the least special-looking -- while
+   elder/legendary escalate with a stronger frame and a glow, and legendary
+   (whoever holds the most titles of anyone right now) gets a crown too. */
+.cards-theme .tier-career.title-untitled {
+  --frame: linear-gradient(155deg, var(--pewter-1), var(--pewter-2) 55%, var(--pewter-3));
+  animation: none; background-position: 30% 50%;
+}
+.cards-theme .tier-career.title-untitled .sheen { opacity: 0.12; }
+.cards-theme .tier-career.title-elder .card-inner { box-shadow: 0 0 20px -4px rgba(217,165,60,0.4); }
+.cards-theme .tier-career.title-legendary .card-inner { animation: member-legend-glow 3s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .cards-theme .tier-career.title-legendary .card-inner { animation: none; box-shadow: 0 0 14px 2px rgba(217,165,60,0.35); }
+}
+.crown-badge {
+  position: absolute; top: -15px; left: 50%; transform: translateX(-50%); z-index: 3;
+  font-size: 1.4rem; filter: drop-shadow(0 3px 4px rgba(0,0,0,0.5));
+}
+.member-tile .crown-badge { left: 22px; transform: none; }
+
+.cards-theme .card-name-row { display: flex; align-items: center; gap: 0.4rem; }
+
 .cards-theme .career-titles { margin-top: 0.5rem; font-size: 0.92rem; letter-spacing: 0.04em; color: var(--gold-2); text-shadow: 0 0 8px rgba(217,165,60,0.5); }
+/* 2 columns (not 3) so each cell has enough room for a 3-digit-heavy
+   W-D-L record without wrapping; stat-num shrinks a touch from the site
+   default plus a hard nowrap, since 6 stats need more headroom than the
+   4-stat season-card stat-line this font size was originally tuned for. */
 .cards-theme .career-stat-grid {
   margin-top: 0.6rem; padding-top: 0.65rem; border-top: 1px solid var(--card-hairline);
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem 0.3rem; text-align: center;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem 0.6rem; text-align: center;
 }
-
+/* Number stacked above its label with a little breathing room between them
+   -- same pattern as .stat-line elsewhere. Without this, the two sit
+   inline on one row with no gap at all (e.g. "184-5-111W-D-L"), since
+   nowrap above stops the line break that used to separate them by accident. */
+.cards-theme .career-stat-grid > div { display: flex; flex-direction: column; gap: 0.2rem; }
+.cards-theme .career-stat-grid .stat-num { font-size: 0.92rem; white-space: nowrap; }
+.cards-theme .career-stat-grid .stat-label { white-space: nowrap; }
 .cards-theme .career-grid { align-items: start; }
 .cards-theme .career-card-slot { display: flex; flex-direction: column; }
 .cards-theme .binder-toggle {
@@ -1334,8 +1372,9 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
 .picker-card-btn:focus-visible {
   outline: 2px solid var(--lime, #00ff85); outline-offset: 3px;
 }
-.picker-card-btn .card { transition: transform 0.4s cubic-bezier(.2,.8,.2,1), box-shadow 0.4s ease, opacity 0.35s ease; }
+.picker-card-btn .card, .picker-card-btn .member-tile { transition: transform 0.4s cubic-bezier(.2,.8,.2,1), box-shadow 0.4s ease, opacity 0.35s ease; }
 .picker-card-btn:hover .card, .picker-card-btn:focus-visible .card { transform: translateY(-6px) scale(1.015); }
+.picker-card-btn:hover .member-tile, .picker-card-btn:focus-visible .member-tile { transform: translateY(-3px); }
 
 .picker-card-cta {
   margin-top: 0.6rem; text-align: center; font-family: "Archivo", sans-serif; font-size: 0.7rem;
@@ -1350,20 +1389,93 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
    entirely under prefers-reduced-motion (landing.js navigates immediately
    instead of adding these classes). */
 .picker-card-btn.selecting .card { transform: translateY(-10px) scale(1.04); box-shadow: 0 0 40px 6px rgba(0,255,133,0.35); }
+.picker-card-btn.selecting .member-tile { transform: translateY(-4px) scale(1.02); box-shadow: 0 0 30px 4px rgba(0,255,133,0.3); }
 .picker-card-btn.dimmed { opacity: 0.35; transform: scale(0.98); transition: opacity 0.4s ease, transform 0.4s ease; }
 
 /* Returning-visitor mark -- same tier-color token every card already sets,
    so it themes correctly no matter which foil tier they're on. */
 .picker-card-btn.is-you .card { box-shadow: 0 0 0 2px var(--tier-color, var(--lime, #00ff85)), 0 26px 54px -20px rgba(0,0,0,0.6); }
+.picker-card-btn.is-you .member-tile .member-tile-inner { box-shadow: 0 0 0 2px var(--lime, #00ff85); }
 
-/* General View tile -- same card shape and .tier-common pewter frame as a
-   season card, but a plain icon + label instead of a stat grid. */
-.general-view-card .card-photo.general-view-icon {
-  font-size: 2.4rem; background: var(--card-surface-2);
+/* =========================================================================
+   Member tile -- the roster picker's own compact component (landing page
+   only), replacing the tall trading-card shell there. No fixed aspect
+   ratio: sized to its content (photo + name + 2 lines), not a card shape
+   built for a full stat breakdown. Rarity/glow is titles won (see
+   titleTier in cardRender.js), escalating from plain (untitled) to a
+   pulsing gold glow + crown (legendary, i.e. the current title leader).
+   ========================================================================= */
+#landing-picker-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
+
+.member-tile { position: relative; border-radius: 14px; padding: 1px; background: var(--card-hairline); }
+.member-tile-inner {
+  position: relative; overflow: hidden; border-radius: 13px; height: 100%;
+  background: var(--card-surface); display: flex; align-items: center; gap: 0.9rem;
+  padding: 0.85rem 1rem;
 }
-.general-view-card .career-body { text-align: center; align-items: center; justify-content: center; }
-.general-view-card .card-name { font-size: 1.05rem; }
+.member-tile .sheen { position: absolute; inset: 0; pointer-events: none; }
+.member-photo { position: relative; flex-shrink: 0; }
+.member-photo .avatar { width: 64px; height: 64px; font-size: 1.2rem; }
+.member-info { min-width: 0; flex: 1; }
+.member-name-row { display: flex; align-items: center; gap: 0.5rem; }
+.member-name {
+  font-family: "Archivo", sans-serif; font-weight: 700; font-size: 1rem; color: var(--card-text);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.member-meta {
+  margin-top: 0.2rem; font-family: "Cormorant Garamond", Georgia, serif; font-style: italic;
+  font-size: 0.8rem; color: var(--card-text-muted);
+}
+.member-record { margin-top: 0.35rem; font-size: 0.82rem; color: var(--card-text); }
+.member-record .stat-num { font-family: "Bebas Neue", sans-serif; font-size: 0.98rem; font-variant-numeric: tabular-nums; }
+.belt-icon { flex-shrink: 0; }
+
+/* untitled -- 0 titles, deliberately the plainest tier. */
+.member-tile.tier-untitled { background: var(--card-hairline); }
+
+/* titled -- exactly 1 title, a soft gold edge. */
+.member-tile.tier-titled { background: linear-gradient(135deg, var(--gold-2), var(--card-hairline) 70%); }
+.member-tile.tier-titled .member-tile-inner { box-shadow: inset 0 0 0 1px rgba(217,165,60,0.25); }
+
+/* elder -- 2+ titles but not the current record holder: stronger frame + glow. */
+.member-tile.tier-elder { background: linear-gradient(135deg, var(--gold-1), var(--gold-3)); }
+.member-tile.tier-elder .member-tile-inner { box-shadow: 0 0 18px -2px rgba(217,165,60,0.35), inset 0 0 0 1px rgba(247,226,164,0.4); }
+
+/* legendary -- whoever holds the most titles of anyone right now: full
+   regal treatment, pulsing glow, crown above the tile. */
+.member-tile.tier-legendary { background: linear-gradient(135deg, var(--gold-1), var(--gold-2) 45%, var(--gold-3)); }
+.member-tile.tier-legendary .member-tile-inner { animation: member-legend-glow 3s ease-in-out infinite; }
+@keyframes member-legend-glow {
+  0%, 100% { box-shadow: 0 0 14px 2px rgba(217,165,60,0.35), inset 0 0 0 1px rgba(247,226,164,0.6); }
+  50% { box-shadow: 0 0 26px 6px rgba(247,226,164,0.55), inset 0 0 0 1px rgba(247,226,164,0.8); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .member-tile.tier-legendary .member-tile-inner { animation: none; box-shadow: 0 0 14px 2px rgba(217,165,60,0.35), inset 0 0 0 1px rgba(247,226,164,0.6); }
+}
+
+/* Champion spotlight -- Home page banner for whoever won the most recent
+   decided season (data/history.json's reigningChampionKey), sitting between
+   the hero and the picker grid. */
+.champion-spotlight {
+  max-width: 900px; margin: 0 auto 1.75rem; padding: 1rem 1.3rem;
+  display: flex; align-items: center; gap: 1rem;
+  border-radius: 16px; background: linear-gradient(135deg, rgba(217,165,60,0.16), rgba(217,165,60,0.03));
+  border: 1px solid rgba(217,165,60,0.35);
+  box-shadow: 0 18px 40px -20px rgba(0,0,0,0.6);
+}
+.champion-photo .avatar { width: 56px; height: 56px; font-size: 1.05rem; flex-shrink: 0; }
+.champion-info { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+.champion-eyebrow {
+  font-family: "Archivo", sans-serif; font-weight: 700; font-size: 0.62rem;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-2);
+}
+.champion-name {
+  font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; font-weight: 600;
+  font-size: 1.3rem; color: #fff; margin-top: 0.1rem;
+}
+.champion-titles { margin-top: 0.15rem; font-size: 0.8rem; color: var(--gold-1); }
 
 @media (max-width: 560px) {
   .landing-hero .hero-block { min-height: 160px; }
+  .champion-spotlight { flex-wrap: wrap; text-align: center; justify-content: center; }
 }

@@ -1,5 +1,5 @@
 import { initPassNetwork } from "../lib/passNetwork.js";
-import { careerCardFrontHtml } from "../lib/cardRender.js";
+import { memberTileHtml, beltIconHtml, avatarHtml, personFor } from "../lib/cardRender.js";
 import { buildCareerCards } from "../lib/cardTiers.js";
 import { getIdentity, setIdentity } from "../identity.js";
 
@@ -7,39 +7,43 @@ const SELECT_ANIMATION_MS = 420;
 
 // A manager who hasn't joined the real league yet (see
 // data/upcoming-managers.json) -- no stats to show, just a distinct "not
-// started yet" card so they still have something to click ahead of their
-// first season. Uses the same data-manager-key attribute as a real career
-// card, so the existing click handler needs no special-casing for it.
-function rookieCardHtml(person) {
+// started yet" tile so they still have something to click ahead of their
+// first season. Same member-tile shell as everyone else so the grid doesn't
+// mix two different card shapes; uses the same data-manager-key attribute
+// as a real member tile, so the existing click handler needs no
+// special-casing for it.
+function rookieTileHtml(person) {
   const photoSrc = person.personKey ? `assets/managers/${person.personKey}.jpg` : null;
   const photoTag = photoSrc ? `<img class="avatar-photo" src="${photoSrc}" alt="" onerror="this.remove()">` : "";
   return `
-    <div class="card tier-rookie">
-      <div class="card-inner">
+    <div class="member-tile tier-untitled" data-manager-key="${person.personKey}">
+      <div class="member-tile-inner">
         <div class="sheen"></div>
-        <div class="card-photo">
-          <span class="tier-tag">Rookie</span>
+        <div class="member-photo">
           <span class="avatar" style="background:${person.color}">${person.abbreviation}${photoTag}</span>
         </div>
-        <div class="career-body">
-          <div class="card-name">${person.displayName}</div>
-          <div class="card-team">First season coming up</div>
+        <div class="member-info">
+          <div class="member-name-row"><span class="member-name">${person.displayName}</span></div>
+          <div class="member-meta">Rookie &middot; First season coming up</div>
         </div>
       </div>
     </div>`;
 }
 
-function generalViewTileHtml() {
+// Home page spotlight for whoever won the most recent decided season (see
+// history.reigningChampionKey) -- separate from the crown/tier system,
+// which is about total titles held, not who's currently on top.
+function championSpotlightHtml(card, managers) {
+  const person = personFor(card.managerKey, card.displayName, managers);
   return `
-    <div class="card tier-common general-view-card">
-      <div class="card-inner">
-        <div class="sheen"></div>
-        <div class="card-photo general-view-icon">⚽</div>
-        <div class="career-body">
-          <div class="card-name">General View</div>
-          <div class="card-team">See everything, for everyone</div>
-        </div>
+    <div class="champion-spotlight">
+      <div class="champion-photo">${avatarHtml(person)}</div>
+      <div class="champion-info">
+        <span class="champion-eyebrow">Reigning Champion</span>
+        <span class="champion-name">${person.name}</span>
+        <span class="champion-titles">${"★".repeat(card.titles)} ${card.titles} Title${card.titles === 1 ? "" : "s"}</span>
       </div>
+      ${beltIconHtml(60)}
     </div>`;
 }
 
@@ -50,20 +54,21 @@ export function render(container, data, managers) {
   // Only the 12 current managers belong as "who's viewing" choices --
   // buildCareerCards() also returns departed/historical managers from the
   // all-time leaderboard, which don't make sense as login-style options.
+  // Already sorted titles desc, then avg rank asc, then win% desc (see
+  // scripts/stats/history.js's leaderboard) -- no extra sort needed here.
   const careerCards = buildCareerCards(data.history).filter((c) => managers.all.some((m) => m.personKey === c.managerKey));
-  careerCards.sort((a, b) => {
-    const nameA = managers.all.find((m) => m.personKey === a.managerKey)?.playerName ?? a.displayName ?? "";
-    const nameB = managers.all.find((m) => m.personKey === b.managerKey)?.playerName ?? b.displayName ?? "";
-    return nameA.localeCompare(nameB);
-  });
+  const maxTitles = careerCards.reduce((max, c) => Math.max(max, c.titles), 0);
+  const reigningChampionKey = data.history?.reigningChampionKey ?? null;
+  const reigningChampionCard = careerCards.find((c) => c.managerKey === reigningChampionKey) ?? null;
 
   const cardsHtml = careerCards
     .map((card) => {
       const isYou = card.managerKey === me;
+      const isReigningChampion = card.managerKey === reigningChampionKey;
       return `
         <div class="career-card-slot picker-slot">
           <button type="button" class="picker-card-btn ${isYou ? "is-you" : ""}" data-manager-key="${card.managerKey}">
-            ${careerCardFrontHtml(card, managers)}
+            ${memberTileHtml(card, managers, { maxTitles, isReigningChampion })}
             <span class="picker-card-cta">${isYou ? "Continue as You →" : "Play as this manager →"}</span>
           </button>
         </div>`;
@@ -90,7 +95,7 @@ export function render(container, data, managers) {
       return `
         <div class="career-card-slot picker-slot">
           <button type="button" class="picker-card-btn ${isYou ? "is-you" : ""}" data-manager-key="${person.personKey}">
-            ${rookieCardHtml(person)}
+            ${rookieTileHtml(person)}
             <span class="picker-card-cta">${isYou ? "Continue as You →" : "Play as this manager →"}</span>
           </button>
         </div>`;
@@ -112,14 +117,10 @@ export function render(container, data, managers) {
     </div>
 
     <div class="cards-theme">
+      ${reigningChampionCard ? championSpotlightHtml(reigningChampionCard, managers) : ""}
       <div class="grid career-grid picker-grid" id="landing-picker-grid">
         ${cardsHtml}
         ${rookiesHtml}
-        <div class="career-card-slot picker-slot">
-          <button type="button" class="picker-card-btn" data-general-view>
-            ${generalViewTileHtml()}
-          </button>
-        </div>
       </div>
     </div>
   `;
@@ -132,11 +133,6 @@ export function render(container, data, managers) {
   grid.addEventListener("click", (e) => {
     const btn = e.target.closest(".picker-card-btn");
     if (!btn) return;
-
-    if (btn.dataset.generalView !== undefined) {
-      location.hash = "#schedule";
-      return;
-    }
 
     const key = btn.dataset.managerKey;
 
