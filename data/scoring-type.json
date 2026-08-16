@@ -1,124 +1,124 @@
 {
   "perManager": [
     {
-      "managerId": 18493,
-      "managerName": "Lu’s Rules FC ***",
-      "goals": 291,
-      "assists": 228,
-      "cleanSheets": 329,
-      "defensiveContribution": 138,
-      "bonus": 175,
-      "cardsLost": -65
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "defensiveContribution": 0,
+      "bonus": 0,
+      "cardsLost": 0
     },
     {
-      "managerId": 18616,
-      "managerName": "Syria FC **",
-      "goals": 305,
-      "assists": 123,
-      "cleanSheets": 219,
-      "defensiveContribution": 122,
-      "bonus": 140,
-      "cardsLost": -77
-    },
-    {
-      "managerId": 18710,
-      "managerName": "Big BUMBO FC",
-      "goals": 241,
-      "assists": 144,
-      "cleanSheets": 218,
-      "defensiveContribution": 116,
-      "bonus": 122,
-      "cardsLost": -62
-    },
-    {
-      "managerId": 18802,
-      "managerName": "Chud FC*",
-      "goals": 228,
-      "assists": 102,
-      "cleanSheets": 230,
-      "defensiveContribution": 96,
-      "bonus": 121,
-      "cardsLost": -49
-    },
-    {
-      "managerId": 19191,
+      "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "goals": 318,
-      "assists": 123,
-      "cleanSheets": 194,
-      "defensiveContribution": 70,
-      "bonus": 135,
-      "cardsLost": -56
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "defensiveContribution": 0,
+      "bonus": 0,
+      "cardsLost": 0
     },
     {
-      "managerId": 33346,
-      "managerName": "Muk’s Militia",
-      "goals": 233,
-      "assists": 126,
-      "cleanSheets": 290,
-      "defensiveContribution": 148,
-      "bonus": 127,
-      "cardsLost": -66
+      "managerId": 1471,
+      "managerName": "Big BUMBO",
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "defensiveContribution": 0,
+      "bonus": 0,
+      "cardsLost": 0
     },
     {
-      "managerId": 55642,
-      "managerName": "Mou’s Ego Unlimited",
-      "goals": 242,
-      "assists": 102,
-      "cleanSheets": 291,
-      "defensiveContribution": 68,
-      "bonus": 109,
-      "cardsLost": -56
+      "managerId": 1501,
+      "managerName": "C",
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "defensiveContribution": 0,
+      "bonus": 0,
+      "cardsLost": 0
     },
     {
-      "managerId": 79487,
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "defensiveContribution": 0,
+      "bonus": 0,
+      "cardsLost": 0
+    },
+    {
+      "managerId": 1857,
+      "managerName": "CHANGE NAME",
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "defensiveContribution": 0,
+      "bonus": 0,
+      "cardsLost": 0
+    },
+    {
+      "managerId": 1947,
       "managerName": "FC General",
-      "goals": 290,
-      "assists": 138,
-      "cleanSheets": 281,
-      "defensiveContribution": 114,
-      "bonus": 136,
-      "cardsLost": -55
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "defensiveContribution": 0,
+      "bonus": 0,
+      "cardsLost": 0
     },
     {
-      "managerId": 89722,
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "defensiveContribution": 0,
+      "bonus": 0,
+      "cardsLost": 0
+    },
+    {
+      "managerId": 10375,
       "managerName": "NEEN FC",
-      "goals": 310,
-      "assists": 153,
-      "cleanSheets": 270,
-      "defensiveContribution": 98,
-      "bonus": 165,
-      "cardsLost": -57
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "defensiveContribution": 0,
+      "bonus": 0,
+      "cardsLost": 0
     },
     {
-      "managerId": 130236,
-      "managerName": "Kiss My Pass FC",
-      "goals": 226,
-      "assists": 120,
-      "cleanSheets": 235,
-      "defensiveContribution": 96,
-      "bonus": 121,
-      "cardsLost": -64
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "defensiveContribution": 0,
+      "bonus": 0,
+      "cardsLost": 0
     },
     {
-      "managerId": 139975,
-      "managerName": "Gooners quadruple FC",
-      "goals": 240,
-      "assists": 111,
-      "cleanSheets": 227,
-      "defensiveContribution": 100,
-      "bonus": 131,
-      "cardsLost": -58
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "defensiveContribution": 0,
+      "bonus": 0,
+      "cardsLost": 0
     },
     {
-      "managerId": 146136,
-      "managerName": "Auto Draft 2025",
-      "goals": 263,
-      "assists": 99,
-      "cleanSheets": 264,
-      "defensiveContribution": 134,
-      "bonus": 148,
-      "cardsLost": -56
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "defensiveContribution": 0,
+      "bonus": 0,
+      "cardsLost": 0
     }
   ]
 }

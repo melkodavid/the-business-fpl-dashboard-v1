@@ -12,6 +12,14 @@ export function computeSchedule(context) {
   const rankByManagerId = new Map(standings.map((s) => [s.managerId, s.rank]));
   const totalByManagerId = new Map(standings.map((s) => [s.managerId, s.total]));
 
+  // Pre-draft (or the schedule not published yet), there are no matches at
+  // all -- distinct from "season complete", where every match exists and is
+  // finished. Both leave `upcomingGw` undefined, so they have to be told
+  // apart explicitly rather than inferred from that alone.
+  if (matches.length === 0) {
+    return { gw: null, seasonComplete: false, fixtures: [] };
+  }
+
   const events = [...new Set(matches.map((m) => m.event))].sort((a, b) => a - b);
   const upcomingGw = events.find((gw) => matches.some((m) => m.event === gw && !m.finished));
   const seasonComplete = upcomingGw === undefined;

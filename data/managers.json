@@ -1,8 +1,8 @@
 {
   "list": [
     {
-      "id": 18493,
-      "name": "Lu’s Rules FC ***",
+      "id": 1377,
+      "name": "Lu’s Rules FC ****",
       "shortName": "LP",
       "playerName": "Lu Palladino",
       "personKey": "lu",
@@ -11,37 +11,7 @@
       "titles": 4
     },
     {
-      "id": 18616,
-      "name": "Syria FC **",
-      "shortName": "IA",
-      "playerName": "Ibrahim Abdulnour",
-      "personKey": "ibrahim",
-      "color": "#e0393f",
-      "abbreviation": "IBR",
-      "titles": 2
-    },
-    {
-      "id": 18710,
-      "name": "Big BUMBO FC",
-      "shortName": "MC",
-      "playerName": "Marshall Curtin-Dudzic",
-      "personKey": "marshall",
-      "color": "#1fa15c",
-      "abbreviation": "MAR",
-      "titles": 0
-    },
-    {
-      "id": 18802,
-      "name": "Chud FC*",
-      "shortName": "DM",
-      "playerName": "David Melko",
-      "personKey": "david",
-      "color": "#f0a623",
-      "abbreviation": "DAV",
-      "titles": 1
-    },
-    {
-      "id": 19191,
+      "id": 1425,
       "name": "Pearl Street Pirates",
       "shortName": "NP",
       "playerName": "Noah Palladino",
@@ -51,8 +21,28 @@
       "titles": 0
     },
     {
-      "id": 33346,
-      "name": "Muk’s Militia",
+      "id": 1471,
+      "name": "Big BUMBO",
+      "shortName": "MC",
+      "playerName": "Marshall Curtin-Dudzic",
+      "personKey": "marshall",
+      "color": "#1fa15c",
+      "abbreviation": "MAR",
+      "titles": 0
+    },
+    {
+      "id": 1501,
+      "name": "C",
+      "shortName": "CF",
+      "playerName": "Carmine Francella",
+      "personKey": "carmine",
+      "color": "#26a69a",
+      "abbreviation": "CAR",
+      "titles": 0
+    },
+    {
+      "id": 1530,
+      "name": "Muks Militia",
       "shortName": "MP",
       "playerName": "Muk P",
       "personKey": "muk",
@@ -61,17 +51,17 @@
       "titles": 0
     },
     {
-      "id": 55642,
-      "name": "Mou’s Ego Unlimited",
-      "shortName": "PT",
-      "playerName": "Pat Takala",
-      "personKey": "pat",
-      "color": "#e0499b",
-      "abbreviation": "PAT",
-      "titles": 0
+      "id": 1857,
+      "name": "CHANGE NAME",
+      "shortName": "DM",
+      "playerName": "David Melko",
+      "personKey": "david",
+      "color": "#f0a623",
+      "abbreviation": "DAV",
+      "titles": 1
     },
     {
-      "id": 79487,
+      "id": 1947,
       "name": "FC General",
       "shortName": "MG",
       "playerName": "General Mitchell P. Grice",
@@ -81,7 +71,17 @@
       "titles": 0
     },
     {
-      "id": 89722,
+      "id": 10210,
+      "name": "Syria FC**",
+      "shortName": "IA",
+      "playerName": "Ibrahim Abdulnour",
+      "personKey": "ibrahim",
+      "color": "#e0393f",
+      "abbreviation": "IBR",
+      "titles": 2
+    },
+    {
+      "id": 10375,
       "name": "NEEN FC",
       "shortName": "AP",
       "playerName": "Anthony Palladino",
@@ -91,33 +91,33 @@
       "titles": 0
     },
     {
-      "id": 130236,
-      "name": "Kiss My Pass FC",
-      "shortName": "PF",
-      "playerName": "Pasquale Frappa",
-      "personKey": "pasquale",
-      "color": "#5b5be0",
-      "abbreviation": "PAS",
-      "titles": 1
+      "id": 26227,
+      "name": "Mourinho’s Ego FT",
+      "shortName": "PT",
+      "playerName": "Pat Takala",
+      "personKey": "pat",
+      "color": "#e0499b",
+      "abbreviation": "PAT",
+      "titles": 0
     },
     {
-      "id": 139975,
-      "name": "Gooners quadruple FC",
+      "id": 29975,
+      "name": "Zacharias United",
+      "shortName": "ZC",
+      "playerName": "Zac Collins",
+      "personKey": "zac",
+      "color": "#ec407a",
+      "abbreviation": "ZAC",
+      "titles": 0
+    },
+    {
+      "id": 99786,
+      "name": "Patso Ball Fc",
       "shortName": "OT",
       "playerName": "Ostap Tsymbalista",
       "personKey": "ostap",
       "color": "#2fb89a",
       "abbreviation": "OST",
-      "titles": 0
-    },
-    {
-      "id": 146136,
-      "name": "Auto Draft 2025",
-      "shortName": "ML",
-      "playerName": "Mark Lamascese",
-      "personKey": "mark",
-      "color": "#c9a227",
-      "abbreviation": "MRK",
       "titles": 0
     }
   ]

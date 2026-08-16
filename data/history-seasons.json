@@ -130,6 +130,24 @@
         { "rank": 11, "team": "NEEN FC", "manager": "Anthony", "managerKey": "anthony", "w": 13, "d": 2, "l": 23, "plus": 1374, "pts": 41 },
         { "rank": 12, "team": "Mourinho's Ego", "manager": "Pat", "managerKey": "pat", "w": 13, "d": 1, "l": 24, "plus": 1571, "pts": 40 }
       ]
+    },
+    {
+      "year": "25/26",
+      "championKey": "lu",
+      "table": [
+        { "rank": 1, "team": "Lu’s Rules FC ***", "manager": "Lu", "managerKey": "lu", "w": 26, "d": 1, "l": 11, "plus": 1846, "pts": 79 },
+        { "rank": 2, "team": "Muk’s Militia", "manager": "Muk", "managerKey": "muk", "w": 22, "d": 1, "l": 15, "plus": 1587, "pts": 67 },
+        { "rank": 3, "team": "Auto Draft 2025", "manager": "Mark", "managerKey": "mark", "w": 22, "d": 1, "l": 15, "plus": 1557, "pts": 67 },
+        { "rank": 4, "team": "NEEN FC", "manager": "Anthony", "managerKey": "anthony", "w": 20, "d": 1, "l": 17, "plus": 1680, "pts": 61 },
+        { "rank": 5, "team": "Big BUMBO FC", "manager": "Marshall", "managerKey": "marshall", "w": 19, "d": 1, "l": 18, "plus": 1486, "pts": 58 },
+        { "rank": 6, "team": "FC General", "manager": "Mitch", "managerKey": "mitch", "w": 19, "d": 0, "l": 19, "plus": 1645, "pts": 57 },
+        { "rank": 7, "team": "Syria FC **", "manager": "Ibrahim", "managerKey": "ibrahim", "w": 18, "d": 1, "l": 19, "plus": 1540, "pts": 55 },
+        { "rank": 8, "team": "Pearl Street Pirates", "manager": "Noah", "managerKey": "noah", "w": 17, "d": 0, "l": 21, "plus": 1516, "pts": 51 },
+        { "rank": 9, "team": "Chud FC*", "manager": "David", "managerKey": "david", "w": 17, "d": 0, "l": 21, "plus": 1458, "pts": 51 },
+        { "rank": 10, "team": "Gooners quadruple FC", "manager": "Ostap", "managerKey": "ostap", "w": 16, "d": 2, "l": 20, "plus": 1447, "pts": 50 },
+        { "rank": 11, "team": "Kiss My Pass FC", "manager": "Pasquale", "managerKey": "pasquale", "w": 15, "d": 1, "l": 22, "plus": 1467, "pts": 46 },
+        { "rank": 12, "team": "Mou’s Ego Unlimited", "manager": "Pat", "managerKey": "pat", "w": 12, "d": 1, "l": 25, "plus": 1431, "pts": 37 }
+      ]
     }
   ]
 }

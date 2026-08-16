@@ -965,7 +965,7 @@
         {
           "rank": 1,
           "team": "Lu’s Rules FC ***",
-          "manager": "Lu Palladino",
+          "manager": "Lu",
           "managerKey": "lu",
           "w": 26,
           "d": 1,
@@ -976,7 +976,7 @@
         {
           "rank": 2,
           "team": "Muk’s Militia",
-          "manager": "Muk P",
+          "manager": "Muk",
           "managerKey": "muk",
           "w": 22,
           "d": 1,
@@ -987,7 +987,7 @@
         {
           "rank": 3,
           "team": "Auto Draft 2025",
-          "manager": "Mark Lamascese",
+          "manager": "Mark",
           "managerKey": "mark",
           "w": 22,
           "d": 1,
@@ -998,7 +998,7 @@
         {
           "rank": 4,
           "team": "NEEN FC",
-          "manager": "Anthony Palladino",
+          "manager": "Anthony",
           "managerKey": "anthony",
           "w": 20,
           "d": 1,
@@ -1009,7 +1009,7 @@
         {
           "rank": 5,
           "team": "Big BUMBO FC",
-          "manager": "Marshall Curtin-Dudzic",
+          "manager": "Marshall",
           "managerKey": "marshall",
           "w": 19,
           "d": 1,
@@ -1020,7 +1020,7 @@
         {
           "rank": 6,
           "team": "FC General",
-          "manager": "Mitch Grice",
+          "manager": "Mitch",
           "managerKey": "mitch",
           "w": 19,
           "d": 0,
@@ -1031,7 +1031,7 @@
         {
           "rank": 7,
           "team": "Syria FC **",
-          "manager": "Ibrahim Abdulnour",
+          "manager": "Ibrahim",
           "managerKey": "ibrahim",
           "w": 18,
           "d": 1,
@@ -1042,7 +1042,7 @@
         {
           "rank": 8,
           "team": "Pearl Street Pirates",
-          "manager": "Noah Palladino",
+          "manager": "Noah",
           "managerKey": "noah",
           "w": 17,
           "d": 0,
@@ -1053,7 +1053,7 @@
         {
           "rank": 9,
           "team": "Chud FC*",
-          "manager": "David Melko",
+          "manager": "David",
           "managerKey": "david",
           "w": 17,
           "d": 0,
@@ -1064,7 +1064,7 @@
         {
           "rank": 10,
           "team": "Gooners quadruple FC",
-          "manager": "Ostap Tsymbalista",
+          "manager": "Ostap",
           "managerKey": "ostap",
           "w": 16,
           "d": 2,
@@ -1075,7 +1075,7 @@
         {
           "rank": 11,
           "team": "Kiss My Pass FC",
-          "manager": "Pasquale Frappa",
+          "manager": "Pasquale",
           "managerKey": "pasquale",
           "w": 15,
           "d": 1,
@@ -1086,7 +1086,7 @@
         {
           "rank": 12,
           "team": "Mou’s Ego Unlimited",
-          "manager": "Pat Takala",
+          "manager": "Pat",
           "managerKey": "pat",
           "w": 12,
           "d": 1,
@@ -1095,8 +1095,12 @@
           "pts": 37
         }
       ],
-      "isCurrent": true,
       "championTitleNumber": 4
+    },
+    {
+      "year": "26/27",
+      "table": [],
+      "isCurrent": true
     }
   ],
   "titleCounts": {

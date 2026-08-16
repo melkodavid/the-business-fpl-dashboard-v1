@@ -12,6 +12,8 @@
     { "personKey": "anthony", "displayName": "Anthony Palladino", "color": "#e0662f", "abbreviation": "ANT" },
     { "personKey": "pasquale", "displayName": "Pasquale Frappa", "color": "#5b5be0", "abbreviation": "PAS" },
     { "personKey": "ostap", "displayName": "Ostap Tsymbalista", "color": "#2fb89a", "abbreviation": "OST" },
-    { "personKey": "mark", "displayName": "Mark Lamascese", "color": "#c9a227", "abbreviation": "MRK" }
+    { "personKey": "mark", "displayName": "Mark Lamascese", "color": "#c9a227", "abbreviation": "MRK" },
+    { "personKey": "carmine", "displayName": "Carmine Francella", "color": "#26a69a", "abbreviation": "CAR" },
+    { "personKey": "zac", "displayName": "Zac Collins", "color": "#ec407a", "abbreviation": "ZAC" }
   ]
 }

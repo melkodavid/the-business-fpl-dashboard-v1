@@ -68,7 +68,21 @@ export function render(container, data, managers) {
     })
     .join("");
 
-  const rookiesHtml = (data.upcomingManagers?.upcoming ?? [])
+  // Real league members (post-draft, or new joiners with no completed
+  // season yet) have no career-leaderboard row until their first season's
+  // standings exist -- give them the same "Rookie" treatment as an explicit
+  // upcoming-managers.json entry so they still have a card to pick.
+  const careerKeys = new Set(careerCards.map((c) => c.managerKey));
+  const newRealManagers = managers.all
+    .filter((m) => !careerKeys.has(m.personKey))
+    .map((m) => ({
+      personKey: m.personKey,
+      displayName: m.playerName ?? m.name,
+      color: m.color ?? "#5a6472",
+      abbreviation: m.abbreviation ?? m.shortName ?? "???",
+    }));
+
+  const rookiesHtml = [...newRealManagers, ...(data.upcomingManagers?.upcoming ?? [])]
     .map((person) => {
       const isYou = person.personKey === me;
       return `

@@ -54,11 +54,21 @@ const PITCH_LINES_SVG = `
 
 export function render(container, data, managers) {
   const { gw, seasonComplete, fixtures } = data.schedule;
+  const notStarted = gw === null;
 
-  const kicker = seasonComplete ? "Final Day Recap" : "Ranked by Stakes";
-  const heroSub = seasonComplete
-    ? `The season's played out — here's how the final gameweek (GW${gw}) landed. Check back once next season's fixtures are live.`
-    : `Gameweek ${gw}'s fixtures, ranked by matchup importance — title six-pointers and bottom-of-the-table battles float to the top.`;
+  const currentYear = data.history?.seasons?.find((s) => s.isCurrent)?.year;
+  const eyebrow = notStarted
+    ? `Season ${currentYear ?? ""}`.trim()
+    : seasonComplete
+      ? `Season ${currentYear ?? ""} · Final Standings`.trim()
+      : `Season ${currentYear ?? ""}`.trim();
+
+  const kicker = notStarted ? "Not Started" : seasonComplete ? "Final Day Recap" : "Ranked by Stakes";
+  const heroSub = notStarted
+    ? "The draft hasn't happened yet — check back once fixtures are live."
+    : seasonComplete
+      ? `The season's played out — here's how the final gameweek (GW${gw}) landed. Check back once next season's fixtures are live.`
+      : `Gameweek ${gw}'s fixtures, ranked by matchup importance — title six-pointers and bottom-of-the-table battles float to the top.`;
 
   // Tale of the Tape enrichment (rivalry history, form, luck, positional edge,
   // lore hooks) only makes sense for a genuinely upcoming gameweek -- once the
@@ -77,7 +87,7 @@ export function render(container, data, managers) {
       <div class="hero-block">
         <div class="giant-mark" aria-hidden="true">X</div>
         <div class="hero-content">
-          <span class="eyebrow">Season 25/26 · Final Standings</span>
+          <span class="eyebrow">${eyebrow}</span>
           <span class="title-line-2">The Business</span>
           <span class="est-line">Est. 2017 · Tenth Anniversary Season</span>
           <div class="hero-rule"><span></span><span class="dot"></span><span></span></div>
@@ -97,7 +107,7 @@ export function render(container, data, managers) {
         <canvas id="passNetwork" class="sl-pass-canvas"></canvas>
         <div class="fixtures-title">
           <span class="kicker">${kicker}</span>
-          <h2>${seasonComplete ? "Final Day Recap" : "This Week's Fixtures"}</h2>
+          <h2>${notStarted ? "No Fixtures Yet" : seasonComplete ? "Final Day Recap" : "This Week's Fixtures"}</h2>
         </div>
         <div class="fixture-list">
           ${cardsHtml || '<p class="empty-state">No fixtures to show.</p>'}

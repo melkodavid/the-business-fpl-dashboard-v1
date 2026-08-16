@@ -1,257 +1,53 @@
 {
-  "instances": [
-    {
-      "gw": 1,
-      "managerId": 18616,
-      "elementId": 370,
-      "playerName": "Frimpong",
-      "fixtureId": 1
-    },
-    {
-      "gw": 1,
-      "managerId": 55642,
-      "elementId": 19,
-      "playerName": "Martinelli",
-      "fixtureId": 9
-    },
-    {
-      "gw": 1,
-      "managerId": 55642,
-      "elementId": 661,
-      "playerName": "Gyökeres",
-      "fixtureId": 9
-    },
-    {
-      "gw": 1,
-      "managerId": 139975,
-      "elementId": 371,
-      "playerName": "Kerkez",
-      "fixtureId": 1
-    },
-    {
-      "gw": 4,
-      "managerId": 18493,
-      "elementId": 525,
-      "playerName": "Wood",
-      "fixtureId": 31
-    },
-    {
-      "gw": 4,
-      "managerId": 79487,
-      "elementId": 516,
-      "playerName": "Hudson-Odoi",
-      "fixtureId": 31
-    },
-    {
-      "gw": 6,
-      "managerId": 130236,
-      "elementId": 669,
-      "playerName": "Ndoye",
-      "fixtureId": 59
-    },
-    {
-      "gw": 8,
-      "managerId": 18616,
-      "elementId": 584,
-      "playerName": "Tel",
-      "fixtureId": 79
-    },
-    {
-      "gw": 12,
-      "managerId": 19191,
-      "elementId": 283,
-      "playerName": "Mateta",
-      "fixtureId": 120
-    },
-    {
-      "gw": 13,
-      "managerId": 146136,
-      "elementId": 674,
-      "playerName": "J.Palhinha",
-      "fixtureId": 129
-    },
-    {
-      "gw": 13,
-      "managerId": 146136,
-      "elementId": 597,
-      "playerName": "Richarlison",
-      "fixtureId": 129
-    },
-    {
-      "gw": 16,
-      "managerId": 18802,
-      "elementId": 10,
-      "playerName": "Lewis-Skelly",
-      "fixtureId": 151
-    },
-    {
-      "gw": 18,
-      "managerId": 139975,
-      "elementId": 679,
-      "playerName": "Šeško",
-      "fixtureId": 177
-    },
-    {
-      "gw": 25,
-      "managerId": 19191,
-      "elementId": 18,
-      "playerName": "Madueke",
-      "fixtureId": 241
-    },
-    {
-      "gw": 25,
-      "managerId": 89722,
-      "elementId": 31,
-      "playerName": "G.Jesus",
-      "fixtureId": 241
-    },
-    {
-      "gw": 26,
-      "managerId": 18493,
-      "elementId": 407,
-      "playerName": "Matheus N.",
-      "fixtureId": 256
-    },
-    {
-      "gw": 26,
-      "managerId": 33346,
-      "elementId": 416,
-      "playerName": "Bernardo",
-      "fixtureId": 256
-    },
-    {
-      "gw": 26,
-      "managerId": 146136,
-      "elementId": 50,
-      "playerName": "Buendía",
-      "fixtureId": 251
-    },
-    {
-      "gw": 28,
-      "managerId": 146136,
-      "elementId": 699,
-      "playerName": "Douglas Luiz",
-      "fixtureId": 280
-    },
-    {
-      "gw": 29,
-      "managerId": 18493,
-      "elementId": 337,
-      "playerName": "Raúl",
-      "fixtureId": 285
-    },
-    {
-      "gw": 30,
-      "managerId": 18802,
-      "elementId": 654,
-      "playerName": "Strand Larsen",
-      "fixtureId": 295
-    },
-    {
-      "gw": 30,
-      "managerId": 33346,
-      "elementId": 402,
-      "playerName": "Aït-Nouri",
-      "fixtureId": 300
-    },
-    {
-      "gw": 30,
-      "managerId": 89722,
-      "elementId": 413,
-      "playerName": "Marmoush",
-      "fixtureId": 300
-    },
-    {
-      "gw": 30,
-      "managerId": 130236,
-      "elementId": 64,
-      "playerName": "Watkins",
-      "fixtureId": 297
-    },
-    {
-      "gw": 35,
-      "managerId": 55642,
-      "elementId": 806,
-      "playerName": "Abraham",
-      "fixtureId": 342
-    },
-    {
-      "gw": 36,
-      "managerId": 18493,
-      "elementId": 417,
-      "playerName": "Cherki",
-      "fixtureId": 356
-    },
-    {
-      "gw": 36,
-      "managerId": 18710,
-      "elementId": 283,
-      "playerName": "Mateta",
-      "fixtureId": 307
-    },
-    {
-      "gw": 37,
-      "managerId": 19191,
-      "elementId": 532,
-      "playerName": "Hume",
-      "fixtureId": 366
-    },
-    {
-      "gw": 37,
-      "managerId": 19191,
-      "elementId": 350,
-      "playerName": "Aaronson",
-      "fixtureId": 367
-    }
-  ],
+  "instances": [],
   "seasonTotals": [
     {
-      "managerId": 18493,
-      "count": 4
+      "managerId": 1377,
+      "count": 0
     },
     {
-      "managerId": 18616,
-      "count": 2
+      "managerId": 1425,
+      "count": 0
     },
     {
-      "managerId": 18710,
-      "count": 1
+      "managerId": 1471,
+      "count": 0
     },
     {
-      "managerId": 18802,
-      "count": 2
+      "managerId": 1501,
+      "count": 0
     },
     {
-      "managerId": 19191,
-      "count": 4
+      "managerId": 1530,
+      "count": 0
     },
     {
-      "managerId": 33346,
-      "count": 2
+      "managerId": 1857,
+      "count": 0
     },
     {
-      "managerId": 55642,
-      "count": 3
+      "managerId": 1947,
+      "count": 0
     },
     {
-      "managerId": 79487,
-      "count": 1
+      "managerId": 10210,
+      "count": 0
     },
     {
-      "managerId": 89722,
-      "count": 2
+      "managerId": 10375,
+      "count": 0
     },
     {
-      "managerId": 130236,
-      "count": 2
+      "managerId": 26227,
+      "count": 0
     },
     {
-      "managerId": 139975,
-      "count": 2
+      "managerId": 29975,
+      "count": 0
     },
     {
-      "managerId": 146136,
-      "count": 4
+      "managerId": 99786,
+      "count": 0
     }
   ]
 }

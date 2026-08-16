@@ -3,7 +3,7 @@
   "people": [
     { "personKey": "lu", "nicknames": ["Lu"], "generation": "97s",
       "family": { "group": "palladino", "pair": "lu-muk", "relation": "brother" },
-      "bridesmaid": false, "flags": [] },
+      "bridesmaid": false, "flags": ["lu-post-mark-era"] },
 
     { "personKey": "muk", "nicknames": ["Muk", "Marcus"], "generation": "01s",
       "family": { "group": "palladino", "pair": "lu-muk", "relation": "brother" },
@@ -39,6 +39,12 @@
       "family": null, "bridesmaid": false, "flags": [] },
 
     { "personKey": "mark", "nicknames": [], "generation": "The Ditch",
+      "family": null, "bridesmaid": false, "flags": [] },
+
+    { "personKey": "carmine", "nicknames": [],
+      "family": null, "bridesmaid": false, "flags": [] },
+
+    { "personKey": "zac", "nicknames": [],
       "family": null, "bridesmaid": false, "flags": [] }
   ],
   "rivalries": [
