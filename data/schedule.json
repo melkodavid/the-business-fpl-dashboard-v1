@@ -1,5 +1,84 @@
 {
-  "gw": null,
+  "gw": 1,
   "seasonComplete": false,
-  "fixtures": []
+  "fixtures": [
+    {
+      "event": 1,
+      "homeManagerId": 10210,
+      "awayManagerId": 1377,
+      "homeRank": 12,
+      "awayRank": 12,
+      "homePoints": 0,
+      "awayPoints": 0,
+      "started": false,
+      "finished": false,
+      "importance": 3.5,
+      "tag": "Wooden Spoon Battle"
+    },
+    {
+      "event": 1,
+      "homeManagerId": 10375,
+      "awayManagerId": 1947,
+      "homeRank": 12,
+      "awayRank": 12,
+      "homePoints": 0,
+      "awayPoints": 0,
+      "started": false,
+      "finished": false,
+      "importance": 3.5,
+      "tag": "Wooden Spoon Battle"
+    },
+    {
+      "event": 1,
+      "homeManagerId": 26227,
+      "awayManagerId": 1857,
+      "homeRank": 12,
+      "awayRank": 12,
+      "homePoints": 0,
+      "awayPoints": 0,
+      "started": false,
+      "finished": false,
+      "importance": 3.5,
+      "tag": "Wooden Spoon Battle"
+    },
+    {
+      "event": 1,
+      "homeManagerId": 29975,
+      "awayManagerId": 1530,
+      "homeRank": 12,
+      "awayRank": 12,
+      "homePoints": 0,
+      "awayPoints": 0,
+      "started": false,
+      "finished": false,
+      "importance": 3.5,
+      "tag": "Wooden Spoon Battle"
+    },
+    {
+      "event": 1,
+      "homeManagerId": 99786,
+      "awayManagerId": 1501,
+      "homeRank": 12,
+      "awayRank": 12,
+      "homePoints": 0,
+      "awayPoints": 0,
+      "started": false,
+      "finished": false,
+      "importance": 3.5,
+      "tag": "Wooden Spoon Battle"
+    },
+    {
+      "event": 1,
+      "homeManagerId": 1425,
+      "awayManagerId": 1471,
+      "homeRank": 12,
+      "awayRank": 12,
+      "homePoints": 0,
+      "awayPoints": 0,
+      "started": false,
+      "finished": false,
+      "importance": 3.5,
+      "tag": "Wooden Spoon Battle"
+    }
+  ]
 }

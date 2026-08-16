@@ -1,5 +1,1534 @@
 {
-  "started": false,
-  "slots": [],
-  "rounds": []
+  "started": true,
+  "slots": [
+    1857,
+    29975,
+    10375,
+    1530,
+    26227,
+    1425,
+    1947,
+    1501,
+    10210,
+    1471,
+    99786,
+    1377
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "cells": [
+        {
+          "index": 1,
+          "managerId": 1857,
+          "playerName": "Haaland",
+          "playerCode": 223094,
+          "position": "FWD",
+          "teamName": "Man City"
+        },
+        {
+          "index": 2,
+          "managerId": 29975,
+          "playerName": "B.Fernandes",
+          "playerCode": 141746,
+          "position": "MID",
+          "teamName": "Man Utd"
+        },
+        {
+          "index": 3,
+          "managerId": 10375,
+          "playerName": "Isak",
+          "playerCode": 219168,
+          "position": "FWD",
+          "teamName": "Liverpool"
+        },
+        {
+          "index": 4,
+          "managerId": 1530,
+          "playerName": "Palmer",
+          "playerCode": 244851,
+          "position": "MID",
+          "teamName": "Chelsea"
+        },
+        {
+          "index": 5,
+          "managerId": 26227,
+          "playerName": "Saka",
+          "playerCode": 223340,
+          "position": "MID",
+          "teamName": "Arsenal"
+        },
+        {
+          "index": 6,
+          "managerId": 1425,
+          "playerName": "João Pedro",
+          "playerCode": 475168,
+          "position": "FWD",
+          "teamName": "Chelsea"
+        },
+        {
+          "index": 7,
+          "managerId": 1947,
+          "playerName": "Thiago",
+          "playerCode": 502500,
+          "position": "FWD",
+          "teamName": "Brentford"
+        },
+        {
+          "index": 8,
+          "managerId": 1501,
+          "playerName": "Gibbs-White",
+          "playerCode": 222531,
+          "position": "MID",
+          "teamName": "Nott'm Forest"
+        },
+        {
+          "index": 9,
+          "managerId": 10210,
+          "playerName": "Semenyo",
+          "playerCode": 437730,
+          "position": "MID",
+          "teamName": "Man City"
+        },
+        {
+          "index": 10,
+          "managerId": 1471,
+          "playerName": "Watkins",
+          "playerCode": 178301,
+          "position": "FWD",
+          "teamName": "Aston Villa"
+        },
+        {
+          "index": 11,
+          "managerId": 99786,
+          "playerName": "Mbeumo",
+          "playerCode": 446008,
+          "position": "MID",
+          "teamName": "Man Utd"
+        },
+        {
+          "index": 12,
+          "managerId": 1377,
+          "playerName": "Wirtz",
+          "playerCode": 494595,
+          "position": "MID",
+          "teamName": "Liverpool"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "cells": [
+        {
+          "index": 24,
+          "managerId": 1857,
+          "playerName": "Enzo",
+          "playerCode": 448047,
+          "position": "MID",
+          "teamName": "Chelsea"
+        },
+        {
+          "index": 23,
+          "managerId": 29975,
+          "playerName": "Mateta",
+          "playerCode": 231747,
+          "position": "FWD",
+          "teamName": "Crystal Palace"
+        },
+        {
+          "index": 22,
+          "managerId": 10375,
+          "playerName": "Bruno G.",
+          "playerCode": 208706,
+          "position": "MID",
+          "teamName": "Arsenal"
+        },
+        {
+          "index": 21,
+          "managerId": 1530,
+          "playerName": "Anderson",
+          "playerCode": 215379,
+          "position": "MID",
+          "teamName": "Man City"
+        },
+        {
+          "index": 20,
+          "managerId": 26227,
+          "playerName": "Cherki",
+          "playerCode": 466052,
+          "position": "MID",
+          "teamName": "Man City"
+        },
+        {
+          "index": 19,
+          "managerId": 1425,
+          "playerName": "Cunha",
+          "playerCode": 430871,
+          "position": "MID",
+          "teamName": "Man Utd"
+        },
+        {
+          "index": 18,
+          "managerId": 1947,
+          "playerName": "Šeško",
+          "playerCode": 485711,
+          "position": "FWD",
+          "teamName": "Man Utd"
+        },
+        {
+          "index": 17,
+          "managerId": 1501,
+          "playerName": "Szoboszlai",
+          "playerCode": 424876,
+          "position": "MID",
+          "teamName": "Liverpool"
+        },
+        {
+          "index": 16,
+          "managerId": 10210,
+          "playerName": "Gyökeres",
+          "playerCode": 224117,
+          "position": "FWD",
+          "teamName": "Arsenal"
+        },
+        {
+          "index": 15,
+          "managerId": 1471,
+          "playerName": "Rogers",
+          "playerCode": 244850,
+          "position": "MID",
+          "teamName": "Chelsea"
+        },
+        {
+          "index": 14,
+          "managerId": 99786,
+          "playerName": "Rice",
+          "playerCode": 204480,
+          "position": "MID",
+          "teamName": "Arsenal"
+        },
+        {
+          "index": 13,
+          "managerId": 1377,
+          "playerName": "Gabriel",
+          "playerCode": 226597,
+          "position": "DEF",
+          "teamName": "Arsenal"
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "cells": [
+        {
+          "index": 25,
+          "managerId": 1857,
+          "playerName": "Sarr",
+          "playerCode": 232185,
+          "position": "MID",
+          "teamName": "Crystal Palace"
+        },
+        {
+          "index": 26,
+          "managerId": 29975,
+          "playerName": "Rayan",
+          "playerCode": 499604,
+          "position": "MID",
+          "teamName": "Bournemouth"
+        },
+        {
+          "index": 27,
+          "managerId": 10375,
+          "playerName": "Calvert-Lewin",
+          "playerCode": 177815,
+          "position": "FWD",
+          "teamName": "Leeds"
+        },
+        {
+          "index": 28,
+          "managerId": 1530,
+          "playerName": "Wilson",
+          "playerCode": 153682,
+          "position": "MID",
+          "teamName": "Leeds"
+        },
+        {
+          "index": 29,
+          "managerId": 26227,
+          "playerName": "Ekitiké",
+          "playerCode": 510663,
+          "position": "FWD",
+          "teamName": "Liverpool"
+        },
+        {
+          "index": 30,
+          "managerId": 1425,
+          "playerName": "Guéhi",
+          "playerCode": 209036,
+          "position": "DEF",
+          "teamName": "Man City"
+        },
+        {
+          "index": 31,
+          "managerId": 1947,
+          "playerName": "Virgil",
+          "playerCode": 97032,
+          "position": "DEF",
+          "teamName": "Liverpool"
+        },
+        {
+          "index": 32,
+          "managerId": 1501,
+          "playerName": "Evanilson",
+          "playerCode": 444102,
+          "position": "FWD",
+          "teamName": "Bournemouth"
+        },
+        {
+          "index": 33,
+          "managerId": 10210,
+          "playerName": "O'Reilly",
+          "playerCode": 472769,
+          "position": "DEF",
+          "teamName": "Man City"
+        },
+        {
+          "index": 34,
+          "managerId": 1471,
+          "playerName": "Foden",
+          "playerCode": 209244,
+          "position": "MID",
+          "teamName": "Man City"
+        },
+        {
+          "index": 35,
+          "managerId": 99786,
+          "playerName": "Truffert",
+          "playerCode": 494521,
+          "position": "DEF",
+          "teamName": "Bournemouth"
+        },
+        {
+          "index": 36,
+          "managerId": 1377,
+          "playerName": "Doku",
+          "playerCode": 248875,
+          "position": "MID",
+          "teamName": "Man City"
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "cells": [
+        {
+          "index": 48,
+          "managerId": 1857,
+          "playerName": "Havertz",
+          "playerCode": 219847,
+          "position": "FWD",
+          "teamName": "Arsenal"
+        },
+        {
+          "index": 47,
+          "managerId": 29975,
+          "playerName": "Muñoz",
+          "playerCode": 247348,
+          "position": "DEF",
+          "teamName": "Crystal Palace"
+        },
+        {
+          "index": 46,
+          "managerId": 10375,
+          "playerName": "Pedro Porro",
+          "playerCode": 441164,
+          "position": "DEF",
+          "teamName": "Spurs"
+        },
+        {
+          "index": 45,
+          "managerId": 1530,
+          "playerName": "Eze",
+          "playerCode": 232413,
+          "position": "MID",
+          "teamName": "Arsenal"
+        },
+        {
+          "index": 44,
+          "managerId": 26227,
+          "playerName": "Kroupi.Jr",
+          "playerCode": 560262,
+          "position": "MID",
+          "teamName": "Bournemouth"
+        },
+        {
+          "index": 43,
+          "managerId": 1425,
+          "playerName": "O.Dango",
+          "playerCode": 533463,
+          "position": "MID",
+          "teamName": "Brentford"
+        },
+        {
+          "index": 42,
+          "managerId": 1947,
+          "playerName": "Gvardiol",
+          "playerCode": 477424,
+          "position": "DEF",
+          "teamName": "Man City"
+        },
+        {
+          "index": 41,
+          "managerId": 1501,
+          "playerName": "Tarkowski",
+          "playerCode": 17761,
+          "position": "DEF",
+          "teamName": "Everton"
+        },
+        {
+          "index": 40,
+          "managerId": 10210,
+          "playerName": "Raya",
+          "playerCode": 154561,
+          "position": "GKP",
+          "teamName": "Arsenal"
+        },
+        {
+          "index": 39,
+          "managerId": 1471,
+          "playerName": "Calafiori",
+          "playerCode": 466075,
+          "position": "DEF",
+          "teamName": "Arsenal"
+        },
+        {
+          "index": 38,
+          "managerId": 99786,
+          "playerName": "Brobbey",
+          "playerCode": 441264,
+          "position": "FWD",
+          "teamName": "Sunderland"
+        },
+        {
+          "index": 37,
+          "managerId": 1377,
+          "playerName": "Igor Jesus",
+          "playerCode": 482973,
+          "position": "FWD",
+          "teamName": "Nott'm Forest"
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "cells": [
+        {
+          "index": 49,
+          "managerId": 1857,
+          "playerName": "Rúben",
+          "playerCode": 171314,
+          "position": "DEF",
+          "teamName": "Man City"
+        },
+        {
+          "index": 50,
+          "managerId": 29975,
+          "playerName": "Hume",
+          "playerCode": 487676,
+          "position": "DEF",
+          "teamName": "Sunderland"
+        },
+        {
+          "index": 51,
+          "managerId": 10375,
+          "playerName": "Donnarumma",
+          "playerCode": 204936,
+          "position": "GKP",
+          "teamName": "Man City"
+        },
+        {
+          "index": 52,
+          "managerId": 1530,
+          "playerName": "Van Hecke",
+          "playerCode": 469142,
+          "position": "DEF",
+          "teamName": "Spurs"
+        },
+        {
+          "index": 53,
+          "managerId": 26227,
+          "playerName": "Gakpo",
+          "playerCode": 243298,
+          "position": "MID",
+          "teamName": "Liverpool"
+        },
+        {
+          "index": 54,
+          "managerId": 1425,
+          "playerName": "Lacroix",
+          "playerCode": 437499,
+          "position": "DEF",
+          "teamName": "Chelsea"
+        },
+        {
+          "index": 55,
+          "managerId": 1947,
+          "playerName": "Dewsbury-Hall",
+          "playerCode": 215413,
+          "position": "MID",
+          "teamName": "Everton"
+        },
+        {
+          "index": 56,
+          "managerId": 1501,
+          "playerName": "Maddison",
+          "playerCode": 172780,
+          "position": "MID",
+          "teamName": "Spurs"
+        },
+        {
+          "index": 57,
+          "managerId": 10210,
+          "playerName": "Ødegaard",
+          "playerCode": 184029,
+          "position": "MID",
+          "teamName": "Arsenal"
+        },
+        {
+          "index": 58,
+          "managerId": 1471,
+          "playerName": "Hill",
+          "playerCode": 463981,
+          "position": "DEF",
+          "teamName": "Bournemouth"
+        },
+        {
+          "index": 59,
+          "managerId": 99786,
+          "playerName": "Van de Ven",
+          "playerCode": 491279,
+          "position": "DEF",
+          "teamName": "Spurs"
+        },
+        {
+          "index": 60,
+          "managerId": 1377,
+          "playerName": "Buendía",
+          "playerCode": 195546,
+          "position": "MID",
+          "teamName": "Aston Villa"
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "cells": [
+        {
+          "index": 72,
+          "managerId": 1857,
+          "playerName": "Scott",
+          "playerCode": 503139,
+          "position": "MID",
+          "teamName": "Bournemouth"
+        },
+        {
+          "index": 71,
+          "managerId": 29975,
+          "playerName": "Solanke",
+          "playerCode": 154566,
+          "position": "FWD",
+          "teamName": "Spurs"
+        },
+        {
+          "index": 70,
+          "managerId": 10375,
+          "playerName": "Tzolis",
+          "playerCode": 439509,
+          "position": "MID",
+          "teamName": "Arsenal"
+        },
+        {
+          "index": 69,
+          "managerId": 1530,
+          "playerName": "Osula",
+          "playerCode": 538207,
+          "position": "FWD",
+          "teamName": "Newcastle"
+        },
+        {
+          "index": 68,
+          "managerId": 26227,
+          "playerName": "Marmoush",
+          "playerCode": 438234,
+          "position": "FWD",
+          "teamName": "Man City"
+        },
+        {
+          "index": 67,
+          "managerId": 1425,
+          "playerName": "Tavernier",
+          "playerCode": 201658,
+          "position": "MID",
+          "teamName": "Bournemouth"
+        },
+        {
+          "index": 66,
+          "managerId": 1947,
+          "playerName": "Groß",
+          "playerCode": 60307,
+          "position": "MID",
+          "teamName": "Brighton"
+        },
+        {
+          "index": 65,
+          "managerId": 1501,
+          "playerName": "Matheus N.",
+          "playerCode": 465351,
+          "position": "DEF",
+          "teamName": "Man City"
+        },
+        {
+          "index": 64,
+          "managerId": 10210,
+          "playerName": "Munoz",
+          "playerCode": 551499,
+          "position": "MID",
+          "teamName": "Liverpool"
+        },
+        {
+          "index": 63,
+          "managerId": 1471,
+          "playerName": "Schade",
+          "playerCode": 513418,
+          "position": "MID",
+          "teamName": "Brentford"
+        },
+        {
+          "index": 62,
+          "managerId": 99786,
+          "playerName": "Pickford",
+          "playerCode": 111234,
+          "position": "GKP",
+          "teamName": "Everton"
+        },
+        {
+          "index": 61,
+          "managerId": 1377,
+          "playerName": "Ndiaye",
+          "playerCode": 440993,
+          "position": "MID",
+          "teamName": "Everton"
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "cells": [
+        {
+          "index": 73,
+          "managerId": 1857,
+          "playerName": "James",
+          "playerCode": 225796,
+          "position": "DEF",
+          "teamName": "Chelsea"
+        },
+        {
+          "index": 74,
+          "managerId": 29975,
+          "playerName": "Rashford",
+          "playerCode": 176297,
+          "position": "MID",
+          "teamName": "Man Utd"
+        },
+        {
+          "index": 75,
+          "managerId": 10375,
+          "playerName": "Kerkez",
+          "playerCode": 544877,
+          "position": "DEF",
+          "teamName": "Liverpool"
+        },
+        {
+          "index": 76,
+          "managerId": 1530,
+          "playerName": "Woltemade",
+          "playerCode": 470313,
+          "position": "FWD",
+          "teamName": "Newcastle"
+        },
+        {
+          "index": 77,
+          "managerId": 26227,
+          "playerName": "J.Timber",
+          "playerCode": 445122,
+          "position": "DEF",
+          "teamName": "Arsenal"
+        },
+        {
+          "index": 78,
+          "managerId": 1425,
+          "playerName": "Palestra",
+          "playerCode": 620109,
+          "position": "DEF",
+          "teamName": "Chelsea"
+        },
+        {
+          "index": 79,
+          "managerId": 1947,
+          "playerName": "N.Williams",
+          "playerCode": 215136,
+          "position": "DEF",
+          "teamName": "Nott'm Forest"
+        },
+        {
+          "index": 80,
+          "managerId": 1501,
+          "playerName": "Mosquera",
+          "playerCode": 500040,
+          "position": "DEF",
+          "teamName": "Arsenal"
+        },
+        {
+          "index": 81,
+          "managerId": 10210,
+          "playerName": "Wissa",
+          "playerCode": 216646,
+          "position": "FWD",
+          "teamName": "Newcastle"
+        },
+        {
+          "index": 82,
+          "managerId": 1471,
+          "playerName": "Colwill",
+          "playerCode": 460028,
+          "position": "DEF",
+          "teamName": "Chelsea"
+        },
+        {
+          "index": 83,
+          "managerId": 99786,
+          "playerName": "Strand Larsen",
+          "playerCode": 247412,
+          "position": "FWD",
+          "teamName": "Crystal Palace"
+        },
+        {
+          "index": 84,
+          "managerId": 1377,
+          "playerName": "Georginio",
+          "playerCode": 463067,
+          "position": "FWD",
+          "teamName": "Brighton"
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "cells": [
+        {
+          "index": 96,
+          "managerId": 1857,
+          "playerName": "Barry",
+          "playerCode": 586309,
+          "position": "FWD",
+          "teamName": "Everton"
+        },
+        {
+          "index": 95,
+          "managerId": 29975,
+          "playerName": "Hincapie",
+          "playerCode": 448104,
+          "position": "DEF",
+          "teamName": "Arsenal"
+        },
+        {
+          "index": 94,
+          "managerId": 10375,
+          "playerName": "Caicedo",
+          "playerCode": 486672,
+          "position": "MID",
+          "teamName": "Chelsea"
+        },
+        {
+          "index": 93,
+          "managerId": 1530,
+          "playerName": "Aït-Nouri",
+          "playerCode": 448514,
+          "position": "DEF",
+          "teamName": "Man City"
+        },
+        {
+          "index": 92,
+          "managerId": 26227,
+          "playerName": "Neto",
+          "playerCode": 247632,
+          "position": "MID",
+          "teamName": "Chelsea"
+        },
+        {
+          "index": 91,
+          "managerId": 1425,
+          "playerName": "Fernandes",
+          "playerCode": 551226,
+          "position": "MID",
+          "teamName": "Spurs"
+        },
+        {
+          "index": 90,
+          "managerId": 1947,
+          "playerName": "Kudus",
+          "playerCode": 460842,
+          "position": "MID",
+          "teamName": "Spurs"
+        },
+        {
+          "index": 89,
+          "managerId": 1501,
+          "playerName": "Frimpong",
+          "playerCode": 216094,
+          "position": "DEF",
+          "teamName": "Liverpool"
+        },
+        {
+          "index": 88,
+          "managerId": 10210,
+          "playerName": "Senesi",
+          "playerCode": 221466,
+          "position": "DEF",
+          "teamName": "Spurs"
+        },
+        {
+          "index": 87,
+          "managerId": 1471,
+          "playerName": "Gonzalo",
+          "playerCode": 551466,
+          "position": "FWD",
+          "teamName": "Fulham"
+        },
+        {
+          "index": 86,
+          "managerId": 99786,
+          "playerName": "Barnes",
+          "playerCode": 201666,
+          "position": "MID",
+          "teamName": "Newcastle"
+        },
+        {
+          "index": 85,
+          "managerId": 1377,
+          "playerName": "Thiaw",
+          "playerCode": 465642,
+          "position": "DEF",
+          "teamName": "Newcastle"
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "cells": [
+        {
+          "index": 97,
+          "managerId": 1857,
+          "playerName": "A.Becker",
+          "playerCode": 116535,
+          "position": "GKP",
+          "teamName": "Liverpool"
+        },
+        {
+          "index": 98,
+          "managerId": 29975,
+          "playerName": "Verbruggen",
+          "playerCode": 489639,
+          "position": "GKP",
+          "teamName": "Brighton"
+        },
+        {
+          "index": 99,
+          "managerId": 10375,
+          "playerName": "Xhaka",
+          "playerCode": 84450,
+          "position": "MID",
+          "teamName": "Sunderland"
+        },
+        {
+          "index": 100,
+          "managerId": 1530,
+          "playerName": "Sánchez",
+          "playerCode": 215059,
+          "position": "GKP",
+          "teamName": "Chelsea"
+        },
+        {
+          "index": 101,
+          "managerId": 26227,
+          "playerName": "N.Jackson",
+          "playerCode": 517052,
+          "position": "FWD",
+          "teamName": "Chelsea"
+        },
+        {
+          "index": 102,
+          "managerId": 1425,
+          "playerName": "Henderson",
+          "playerCode": 172649,
+          "position": "GKP",
+          "teamName": "Crystal Palace"
+        },
+        {
+          "index": 103,
+          "managerId": 1947,
+          "playerName": "Sels",
+          "playerCode": 85633,
+          "position": "GKP",
+          "teamName": "Nott'm Forest"
+        },
+        {
+          "index": 104,
+          "managerId": 1501,
+          "playerName": "Stach",
+          "playerCode": 466525,
+          "position": "MID",
+          "teamName": "Leeds"
+        },
+        {
+          "index": 105,
+          "managerId": 10210,
+          "playerName": "Hudson-Odoi",
+          "playerCode": 209046,
+          "position": "MID",
+          "teamName": "Nott'm Forest"
+        },
+        {
+          "index": 106,
+          "managerId": 1471,
+          "playerName": "E.Le Fée",
+          "playerCode": 484420,
+          "position": "MID",
+          "teamName": "Sunderland"
+        },
+        {
+          "index": 107,
+          "managerId": 99786,
+          "playerName": "Dorgu",
+          "playerCode": 596777,
+          "position": "MID",
+          "teamName": "Man Utd"
+        },
+        {
+          "index": 108,
+          "managerId": 1377,
+          "playerName": "Roefs",
+          "playerCode": 498016,
+          "position": "GKP",
+          "teamName": "Sunderland"
+        }
+      ]
+    },
+    {
+      "round": 10,
+      "cells": [
+        {
+          "index": 120,
+          "managerId": 1857,
+          "playerName": "Sangaré",
+          "playerCode": 513545,
+          "position": "MID",
+          "teamName": "Brentford"
+        },
+        {
+          "index": 119,
+          "managerId": 29975,
+          "playerName": "Kluivert",
+          "playerCode": 222683,
+          "position": "MID",
+          "teamName": "Bournemouth"
+        },
+        {
+          "index": 118,
+          "managerId": 10375,
+          "playerName": "McBurnie",
+          "playerCode": 169432,
+          "position": "FWD",
+          "teamName": "Hull City"
+        },
+        {
+          "index": 117,
+          "managerId": 1530,
+          "playerName": "Mitchell",
+          "playerCode": 244723,
+          "position": "DEF",
+          "teamName": "Crystal Palace"
+        },
+        {
+          "index": 116,
+          "managerId": 26227,
+          "playerName": "Saliba",
+          "playerCode": 462424,
+          "position": "DEF",
+          "teamName": "Arsenal"
+        },
+        {
+          "index": 115,
+          "managerId": 1425,
+          "playerName": "Johnson",
+          "playerCode": 242898,
+          "position": "MID",
+          "teamName": "Everton"
+        },
+        {
+          "index": 114,
+          "managerId": 1947,
+          "playerName": "Ampadu",
+          "playerCode": 199598,
+          "position": "MID",
+          "teamName": "Leeds"
+        },
+        {
+          "index": 113,
+          "managerId": 1501,
+          "playerName": "Kelleher",
+          "playerCode": 200720,
+          "position": "GKP",
+          "teamName": "Brentford"
+        },
+        {
+          "index": 112,
+          "managerId": 10210,
+          "playerName": "Collins",
+          "playerCode": 432830,
+          "position": "DEF",
+          "teamName": "Brentford"
+        },
+        {
+          "index": 111,
+          "managerId": 1471,
+          "playerName": "Vuskovic",
+          "playerCode": 610799,
+          "position": "DEF",
+          "teamName": "Brighton"
+        },
+        {
+          "index": 110,
+          "managerId": 99786,
+          "playerName": "Diomande",
+          "playerCode": 568420,
+          "position": "DEF",
+          "teamName": "Nott'm Forest"
+        },
+        {
+          "index": 109,
+          "managerId": 1377,
+          "playerName": "Richards",
+          "playerCode": 427623,
+          "position": "DEF",
+          "teamName": "Crystal Palace"
+        }
+      ]
+    },
+    {
+      "round": 11,
+      "cells": [
+        {
+          "index": 121,
+          "managerId": 1857,
+          "playerName": "Muharemović",
+          "playerCode": 522047,
+          "position": "DEF",
+          "teamName": "Leeds"
+        },
+        {
+          "index": 122,
+          "managerId": 29975,
+          "playerName": "Araujo",
+          "playerCode": 445087,
+          "position": "DEF",
+          "teamName": "Liverpool"
+        },
+        {
+          "index": 123,
+          "managerId": 10375,
+          "playerName": "Cash",
+          "playerCode": 199796,
+          "position": "DEF",
+          "teamName": "Aston Villa"
+        },
+        {
+          "index": 124,
+          "managerId": 1530,
+          "playerName": "Aaronson",
+          "playerCode": 427637,
+          "position": "MID",
+          "teamName": "Leeds"
+        },
+        {
+          "index": 125,
+          "managerId": 26227,
+          "playerName": "Mukiele",
+          "playerCode": 200834,
+          "position": "DEF",
+          "teamName": "Sunderland"
+        },
+        {
+          "index": 126,
+          "managerId": 1425,
+          "playerName": "Kinsky",
+          "playerCode": 485055,
+          "position": "GKP",
+          "teamName": "Spurs"
+        },
+        {
+          "index": 127,
+          "managerId": 1947,
+          "playerName": "Lammens",
+          "playerCode": 465247,
+          "position": "GKP",
+          "teamName": "Man Utd"
+        },
+        {
+          "index": 128,
+          "managerId": 1501,
+          "playerName": "Maatsen",
+          "playerCode": 441302,
+          "position": "DEF",
+          "teamName": "Aston Villa"
+        },
+        {
+          "index": 129,
+          "managerId": 10210,
+          "playerName": "Elanga",
+          "playerCode": 449434,
+          "position": "MID",
+          "teamName": "Newcastle"
+        },
+        {
+          "index": 130,
+          "managerId": 1471,
+          "playerName": "Milenković",
+          "playerCode": 227444,
+          "position": "DEF",
+          "teamName": "Nott'm Forest"
+        },
+        {
+          "index": 131,
+          "managerId": 99786,
+          "playerName": "Gravenberch",
+          "playerCode": 441266,
+          "position": "MID",
+          "teamName": "Liverpool"
+        },
+        {
+          "index": 132,
+          "managerId": 1377,
+          "playerName": "Konsa",
+          "playerCode": 199798,
+          "position": "DEF",
+          "teamName": "Aston Villa"
+        }
+      ]
+    },
+    {
+      "round": 12,
+      "cells": [
+        {
+          "index": 144,
+          "managerId": 1857,
+          "playerName": "Horníček",
+          "playerCode": 470551,
+          "position": "GKP",
+          "teamName": "Newcastle"
+        },
+        {
+          "index": 143,
+          "managerId": 29975,
+          "playerName": "Nmecha",
+          "playerCode": 174594,
+          "position": "FWD",
+          "teamName": "Leeds"
+        },
+        {
+          "index": 142,
+          "managerId": 10375,
+          "playerName": "Ngumoha",
+          "playerCode": 611922,
+          "position": "MID",
+          "teamName": "Liverpool"
+        },
+        {
+          "index": 141,
+          "managerId": 1530,
+          "playerName": "White",
+          "playerCode": 198869,
+          "position": "DEF",
+          "teamName": "Arsenal"
+        },
+        {
+          "index": 140,
+          "managerId": 26227,
+          "playerName": "Khusanov",
+          "playerCode": 578153,
+          "position": "DEF",
+          "teamName": "Man City"
+        },
+        {
+          "index": 139,
+          "managerId": 1425,
+          "playerName": "Emersonn",
+          "playerCode": 543968,
+          "position": "FWD",
+          "teamName": "Ipswich Town"
+        },
+        {
+          "index": 138,
+          "managerId": 1947,
+          "playerName": "Richarlison",
+          "playerCode": 212319,
+          "position": "FWD",
+          "teamName": "Spurs"
+        },
+        {
+          "index": 137,
+          "managerId": 1501,
+          "playerName": "Tielemans",
+          "playerCode": 166989,
+          "position": "MID",
+          "teamName": "Man Utd"
+        },
+        {
+          "index": 136,
+          "managerId": 10210,
+          "playerName": "Dalot",
+          "playerCode": 216051,
+          "position": "DEF",
+          "teamName": "Man Utd"
+        },
+        {
+          "index": 135,
+          "managerId": 1471,
+          "playerName": "Trafford",
+          "playerCode": 432720,
+          "position": "GKP",
+          "teamName": "Leeds"
+        },
+        {
+          "index": 134,
+          "managerId": 99786,
+          "playerName": "Beto",
+          "playerCode": 486385,
+          "position": "FWD",
+          "teamName": "Everton"
+        },
+        {
+          "index": 133,
+          "managerId": 1377,
+          "playerName": "Murillo",
+          "playerCode": 575476,
+          "position": "DEF",
+          "teamName": "Nott'm Forest"
+        }
+      ]
+    },
+    {
+      "round": 13,
+      "cells": [
+        {
+          "index": 145,
+          "managerId": 1857,
+          "playerName": "Canvot",
+          "playerCode": 651426,
+          "position": "DEF",
+          "teamName": "Crystal Palace"
+        },
+        {
+          "index": 146,
+          "managerId": 29975,
+          "playerName": "Hall",
+          "playerCode": 487838,
+          "position": "DEF",
+          "teamName": "Newcastle"
+        },
+        {
+          "index": 147,
+          "managerId": 10375,
+          "playerName": "Martinez",
+          "playerCode": 98980,
+          "position": "GKP",
+          "teamName": "Aston Villa"
+        },
+        {
+          "index": 148,
+          "managerId": 1530,
+          "playerName": "Ballard",
+          "playerCode": 223827,
+          "position": "DEF",
+          "teamName": "Sunderland"
+        },
+        {
+          "index": 149,
+          "managerId": 26227,
+          "playerName": "Branthwaite",
+          "playerCode": 480455,
+          "position": "DEF",
+          "teamName": "Everton"
+        },
+        {
+          "index": 150,
+          "managerId": 1425,
+          "playerName": "Jacquet",
+          "playerCode": 606702,
+          "position": "DEF",
+          "teamName": "Liverpool"
+        },
+        {
+          "index": 151,
+          "managerId": 1947,
+          "playerName": "Maguire",
+          "playerCode": 95658,
+          "position": "DEF",
+          "teamName": "Man Utd"
+        },
+        {
+          "index": 152,
+          "managerId": 1501,
+          "playerName": "Welbeck",
+          "playerCode": 50175,
+          "position": "FWD",
+          "teamName": "Chelsea"
+        },
+        {
+          "index": 153,
+          "managerId": 10210,
+          "playerName": "Wright",
+          "playerCode": 176412,
+          "position": "FWD",
+          "teamName": "Coventry City"
+        },
+        {
+          "index": 154,
+          "managerId": 1471,
+          "playerName": "Awoniyi",
+          "playerCode": 210156,
+          "position": "FWD",
+          "teamName": "Nott'm Forest"
+        },
+        {
+          "index": 155,
+          "managerId": 99786,
+          "playerName": "Kayode",
+          "playerCode": 607464,
+          "position": "DEF",
+          "teamName": "Brentford"
+        },
+        {
+          "index": 156,
+          "managerId": 1377,
+          "playerName": "Wood",
+          "playerCode": 60689,
+          "position": "FWD",
+          "teamName": "Nott'm Forest"
+        }
+      ]
+    },
+    {
+      "round": 14,
+      "cells": [
+        {
+          "index": 168,
+          "managerId": 1857,
+          "playerName": "Ndoye",
+          "playerCode": 456512,
+          "position": "MID",
+          "teamName": "Nott'm Forest"
+        },
+        {
+          "index": 167,
+          "managerId": 29975,
+          "playerName": "Damsgaard",
+          "playerCode": 440089,
+          "position": "MID",
+          "teamName": "Brentford"
+        },
+        {
+          "index": 166,
+          "managerId": 10375,
+          "playerName": "Robertson",
+          "playerCode": 122798,
+          "position": "DEF",
+          "teamName": "Spurs"
+        },
+        {
+          "index": 165,
+          "managerId": 1530,
+          "playerName": "Isidor",
+          "playerCode": 437505,
+          "position": "FWD",
+          "teamName": "Sunderland"
+        },
+        {
+          "index": 164,
+          "managerId": 26227,
+          "playerName": "Pope",
+          "playerCode": 98747,
+          "position": "GKP",
+          "teamName": "Newcastle"
+        },
+        {
+          "index": 163,
+          "managerId": 1425,
+          "playerName": "Bogle",
+          "playerCode": 226182,
+          "position": "DEF",
+          "teamName": "Leeds"
+        },
+        {
+          "index": 162,
+          "managerId": 1947,
+          "playerName": "Aina",
+          "playerCode": 159506,
+          "position": "DEF",
+          "teamName": "Nott'm Forest"
+        },
+        {
+          "index": 161,
+          "managerId": 1501,
+          "playerName": "Petrović",
+          "playerCode": 457569,
+          "position": "GKP",
+          "teamName": "Bournemouth"
+        },
+        {
+          "index": 160,
+          "managerId": 10210,
+          "playerName": "Dunk",
+          "playerCode": 83299,
+          "position": "DEF",
+          "teamName": "Brighton"
+        },
+        {
+          "index": 159,
+          "managerId": 1471,
+          "playerName": "Garner",
+          "playerCode": 232928,
+          "position": "MID",
+          "teamName": "Everton"
+        },
+        {
+          "index": 158,
+          "managerId": 99786,
+          "playerName": "F.Kadıoğlu",
+          "playerCode": 231416,
+          "position": "DEF",
+          "teamName": "Brighton"
+        },
+        {
+          "index": 157,
+          "managerId": 1377,
+          "playerName": "Leno",
+          "playerCode": 80201,
+          "position": "GKP",
+          "teamName": "Fulham"
+        }
+      ]
+    },
+    {
+      "round": 15,
+      "cells": [
+        {
+          "index": 169,
+          "managerId": 1857,
+          "playerName": "Shaw",
+          "playerCode": 106760,
+          "position": "DEF",
+          "teamName": "Man Utd"
+        },
+        {
+          "index": 170,
+          "managerId": 29975,
+          "playerName": "Vicario",
+          "playerCode": 184254,
+          "position": "GKP",
+          "teamName": "Spurs"
+        },
+        {
+          "index": 171,
+          "managerId": 10375,
+          "playerName": "Mykolenko",
+          "playerCode": 224967,
+          "position": "DEF",
+          "teamName": "Everton"
+        },
+        {
+          "index": 172,
+          "managerId": 1530,
+          "playerName": "Penders",
+          "playerCode": 549939,
+          "position": "GKP",
+          "teamName": "Chelsea"
+        },
+        {
+          "index": 173,
+          "managerId": 26227,
+          "playerName": "Mamardashvili",
+          "playerCode": 449027,
+          "position": "GKP",
+          "teamName": "Liverpool"
+        },
+        {
+          "index": 174,
+          "managerId": 1425,
+          "playerName": "Muniz",
+          "playerCode": 244042,
+          "position": "FWD",
+          "teamName": "Fulham"
+        },
+        {
+          "index": 175,
+          "managerId": 1947,
+          "playerName": "Andrey Santos",
+          "playerCode": 532605,
+          "position": "MID",
+          "teamName": "Man Utd"
+        },
+        {
+          "index": 176,
+          "managerId": 1501,
+          "playerName": "Simms",
+          "playerCode": 218997,
+          "position": "FWD",
+          "teamName": "Coventry City"
+        },
+        {
+          "index": 177,
+          "managerId": 10210,
+          "playerName": "Arrizabalaga",
+          "playerCode": 109745,
+          "position": "GKP",
+          "teamName": "Arsenal"
+        },
+        {
+          "index": 178,
+          "managerId": 1471,
+          "playerName": "Rulli",
+          "playerCode": 106921,
+          "position": "GKP",
+          "teamName": "Man City"
+        },
+        {
+          "index": 179,
+          "managerId": 99786,
+          "playerName": "Perri",
+          "playerCode": 201595,
+          "position": "GKP",
+          "teamName": "Leeds"
+        },
+        {
+          "index": 180,
+          "managerId": 1377,
+          "playerName": "Tonali",
+          "playerCode": 432422,
+          "position": "MID",
+          "teamName": "Spurs"
+        }
+      ]
+    }
+  ]
 }
