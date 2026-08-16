@@ -109,8 +109,11 @@ function careerCardShellHtml(card, managers, statsHtml, { maxTitles = 0, isReign
   const person = personFor(card.managerKey, card.displayName, managers);
   const theme = person.theme;
   // Skip the corner badge when the avatar itself already *is* the theme icon
-  // (e.g. ostap) -- showing it twice on one card would be redundant.
-  const showCornerBadge = theme && !theme.avatarIcon;
+  // (e.g. ostap) -- showing it twice would be redundant. Same for a manager
+  // with a flag mast (e.g. noah) -- the mast already carries the theme, and
+  // the corner badge sits large enough on a small photo to cover real facial
+  // detail, which it isn't worth doing twice over.
+  const showCornerBadge = theme && !theme.avatarIcon && !theme.flag;
   const tier = titleTier(card.titles, maxTitles);
   return `
     <div class="card tier-career title-${tier}" data-manager-key="${card.managerKey}">
@@ -190,7 +193,10 @@ export function beltIconHtml(size = 32) {
 export function memberTileHtml(card, managers, { maxTitles = 0, isReigningChampion = false } = {}) {
   const person = personFor(card.managerKey, card.displayName, managers);
   const theme = person.theme;
-  const showCornerBadge = theme && !theme.avatarIcon;
+  // Skipped for avatarIcon (badge would duplicate the avatar) and flag
+  // (the mast already carries the theme, and the badge is large enough on
+  // this tile's small photo to cover real facial detail).
+  const showCornerBadge = theme && !theme.avatarIcon && !theme.flag;
   const tier = titleTier(card.titles, maxTitles);
 
   return `
