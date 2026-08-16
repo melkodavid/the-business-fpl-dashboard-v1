@@ -3,6 +3,7 @@
 // watching?" picker (the same card fronts, no binder, click-to-select
 // instead of click-to-expand) -- kept here so neither duplicates the other's
 // markup.
+import { escapeHtml } from "../format.js";
 export const TIER_LABEL = {
   legendary: "Champion",
   rare: "Top 4",
@@ -17,14 +18,26 @@ function initialsOf(name) {
 export function personFor(managerKey, displayName, managers) {
   const current = managers.all.find((m) => m.personKey === managerKey);
   return {
+    personKey: managerKey,
     name: current?.playerName ?? displayName ?? managerKey,
     color: current?.color ?? "#5a6472",
     abbreviation: current?.abbreviation ?? initialsOf(current?.playerName ?? displayName),
+    theme: managers.themeForPersonKey?.(managerKey) ?? null,
   };
 }
 
+// theme.avatarIcon (see data/league-lore.json) replaces the abbreviation
+// outright with the theme icon -- for a manager whose running joke *is*
+// their identity, rather than a badge layered on top of it. Otherwise, same
+// assets/managers/{personKey}.jpg convention as the small site-wide avatar
+// (js/data.js) -- falls back to the abbreviation if no photo file exists.
 export function avatarHtml(person) {
-  return `<span class="avatar" style="background:${person.color}">${person.abbreviation}</span>`;
+  if (person.theme?.avatarIcon) {
+    return `<span class="avatar avatar-theme-icon" style="background:${person.color}" title="${escapeHtml(person.theme.label)}">${person.theme.icon}</span>`;
+  }
+  const photoSrc = person.personKey ? `assets/managers/${person.personKey}.jpg` : null;
+  const photoTag = photoSrc ? `<img class="avatar-photo" src="${photoSrc}" alt="" onerror="this.remove()">` : "";
+  return `<span class="avatar" style="background:${person.color}">${person.abbreviation}${photoTag}</span>`;
 }
 
 export function winRate(w, d, l) {
@@ -84,14 +97,20 @@ export function miniCardHtml(card, managers) {
 // plain select-to-continue button instead.
 export function careerCardFrontHtml(card, managers) {
   const person = personFor(card.managerKey, card.displayName, managers);
+  const theme = person.theme;
+  // Skip the corner badge when the avatar itself already *is* the theme icon
+  // (e.g. ostap) -- showing it twice on one card would be redundant.
+  const showCornerBadge = theme && !theme.avatarIcon;
   return `
     <div class="card tier-career" data-manager-key="${card.managerKey}">
+      ${theme?.flag ? `<span class="card-flag-mast" aria-hidden="true">${theme.icon}</span>` : ""}
       <div class="card-inner">
         <div class="sheen"></div>
         <div class="card-photo">
           <div class="rank-badge">#${card.bestRank}</div>
           <span class="tier-tag">All-Time</span>
           ${avatarHtml(person)}
+          ${showCornerBadge ? `<span class="card-theme-badge" title="${escapeHtml(theme.label)}">${theme.icon}</span>` : ""}
         </div>
         <div class="career-body">
           <div class="card-name">${person.name}</div>

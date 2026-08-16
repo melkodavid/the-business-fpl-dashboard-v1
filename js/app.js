@@ -15,6 +15,7 @@ import { render as renderScoring } from "./render/scoringType.js";
 import { render as renderFiftyNine } from "./render/fiftyNineClub.js";
 import { render as renderBench } from "./render/benchStats.js";
 import { render as renderDraft } from "./render/draftGrades.js";
+import { render as renderDraftBoard } from "./render/draftBoard.js";
 import { render as renderTrades } from "./render/tradeLedger.js";
 import { render as renderWaivers } from "./render/waiverHitRate.js";
 import { render as renderForm } from "./render/formGuide.js";
@@ -36,6 +37,7 @@ const ROUTES = {
   "fifty-nine": renderFiftyNine,
   bench: renderBench,
   draft: renderDraft,
+  "draft-board": renderDraftBoard,
   trades: renderTrades,
   waivers: renderWaivers,
   form: renderForm,

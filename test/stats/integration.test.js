@@ -14,6 +14,7 @@ import { computeScoringType } from "../../scripts/stats/scoringType.js";
 import { computeFiftyNineClub } from "../../scripts/stats/fiftyNineClub.js";
 import { computeBenchStats } from "../../scripts/stats/benchStats.js";
 import { computeDraftGrades } from "../../scripts/stats/draftGrades.js";
+import { computeDraftBoard } from "../../scripts/stats/draftBoard.js";
 import { computeTradeLedger } from "../../scripts/stats/tradeLedger.js";
 import { computeWaiverHitRate } from "../../scripts/stats/waiverHitRate.js";
 import { computeFormGuide } from "../../scripts/stats/formGuide.js";
@@ -82,6 +83,31 @@ test("draft grades: every drafted player appears exactly once in the scatter dat
   const { leaderboard, scatter } = computeDraftGrades(context);
   assert.equal(leaderboard.length, 12);
   assert.equal(scatter.length, context.draftChoices.length);
+});
+
+test("draft board: every column is one manager's round-1 slot, every pick lands exactly once", () => {
+  const { started, slots, rounds } = computeDraftBoard(context);
+  assert.equal(started, true);
+  assert.equal(slots.length, 12);
+  assert.equal(new Set(slots).size, 12, "no manager should hold two slots");
+
+  const seenIndexes = new Set();
+  for (const r of rounds) {
+    assert.equal(r.cells.length, slots.length);
+    for (let col = 0; col < r.cells.length; col++) {
+      const cell = r.cells[col];
+      if (!cell) continue;
+      assert.equal(cell.managerId, slots[col], "a pick must sit in its own manager's column");
+      assert.ok("playerCode" in cell, "cell should carry a playerCode field (null when unknown) for the photo lookup");
+      seenIndexes.add(cell.index);
+    }
+  }
+  assert.equal(seenIndexes.size, context.draftChoices.length);
+});
+
+test("draft board: no picks yet returns started: false instead of an empty grid", () => {
+  const empty = computeDraftBoard({ ...context, draftChoices: [] });
+  assert.deepEqual(empty, { started: false, slots: [], rounds: [] });
 });
 
 test("trade ledger: every trade nets to zero across both sides", () => {

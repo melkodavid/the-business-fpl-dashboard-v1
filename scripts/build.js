@@ -24,6 +24,7 @@ import { computeScoringType } from "./stats/scoringType.js";
 import { computeFiftyNineClub } from "./stats/fiftyNineClub.js";
 import { computeBenchStats } from "./stats/benchStats.js";
 import { computeDraftGrades } from "./stats/draftGrades.js";
+import { computeDraftBoard } from "./stats/draftBoard.js";
 import { computeTradeLedger } from "./stats/tradeLedger.js";
 import { computeWaiverHitRate } from "./stats/waiverHitRate.js";
 import { computeFormGuide } from "./stats/formGuide.js";
@@ -152,6 +153,7 @@ async function main() {
   writeData("fifty-nine-club.json", fiftyNineClub);
   writeData("bench-stats.json", benchStats);
   writeData("draft-grades.json", computeDraftGrades(context));
+  writeData("draft-board.json", computeDraftBoard(context));
   writeData("trade-ledger.json", tradeLedger);
   writeData("waiver-hit-rate.json", waiverHitRate);
   writeData("form-guide.json", computeFormGuide(context));
@@ -170,11 +172,15 @@ async function main() {
   writeRecapArchive(recapsByGw, join(DATA_DIR, "recaps"));
   writeData("season-arcs.json", seasonArcs);
 
+  const draftInfo = raw.leagueDetails?.league?.drafts?.[0];
   writeData("meta.json", {
     lastUpdated: new Date().toISOString(),
     currentGw: context.currentGw,
     finishedThroughGw: context.finishedGws[context.finishedGws.length - 1] ?? null,
     leagueName: raw.leagueDetails?.league?.name,
+    draftDt: raw.leagueDetails?.league?.draft_dt ?? null,
+    draftStarted: Boolean(draftInfo?.draft_started),
+    draftCompleted: Boolean(draftInfo?.draft_completed),
     mock: MOCK,
   });
 

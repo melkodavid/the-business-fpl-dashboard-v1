@@ -81,6 +81,7 @@ function buildPlayers(elements, elementTypes, teams) {
 
   const list = elements.map((el) => ({
     id: el.id,
+    code: el.code,
     webName: el.web_name,
     firstName: el.first_name,
     secondName: el.second_name,

@@ -1,5 +1,5 @@
 {
-  "_comment": "Editable by hand, keyed by personKey (same convention as manager-profiles.json). Tolerates personKeys not present in the current season's managers.json, and managers with no lore entry at all. Add rivalries/nicknames/flags any time -- the narrative engine reads this fresh on every build. CONTENT RULE: noah's nicknames[] must stay to whatever the league itself adds here -- never introduce an offensive or historical-dictator comparison; render as plain \"Noah\" unless this file adds a real nickname.",
+  "_comment": "Editable by hand, keyed by personKey (same convention as manager-profiles.json). Tolerates personKeys not present in the current season's managers.json, and managers with no lore entry at all. Add rivalries/nicknames/flags any time -- the narrative engine reads this fresh on every build. Optional `theme: { icon, label, avatarIcon?, flag? }` gives a manager a decorative touch wherever their avatar/card appears site-wide -- only add it for a running joke/known team identity (e.g. noah/'The Pirates', ostap/'Stop Signs'); most people should have no theme at all, just their manager-profiles.json color. `avatarIcon: true` replaces the manager's initials/photo everywhere with the theme icon itself (use when the joke *is* their identity, e.g. ostap). `flag: true` adds a waving flag banner above their career card (use sparingly -- it's a bigger visual swing). CONTENT RULE: noah's nicknames[] must stay to whatever the league itself adds here -- never introduce an offensive or historical-dictator comparison; render as plain \"Noah\" unless this file adds a real nickname.",
   "people": [
     { "personKey": "lu", "nicknames": ["Lu"], "generation": "97s",
       "family": { "group": "palladino", "pair": "lu-muk", "relation": "brother" },
@@ -15,7 +15,8 @@
 
     { "personKey": "noah", "nicknames": [], "generation": "97s",
       "family": { "group": "palladino", "pair": "anthony-noah", "relation": "brother" },
-      "bridesmaid": false, "flags": ["noah-bad-trades"] },
+      "bridesmaid": false, "flags": ["noah-bad-trades"],
+      "theme": { "icon": "🏴‍☠️", "label": "The Pirates", "flag": true } },
 
     { "personKey": "ibrahim", "nicknames": ["Abe"], "generation": "01s",
       "family": null, "bridesmaid": false, "flags": [] },
@@ -36,7 +37,8 @@
       "family": null, "bridesmaid": false, "flags": [] },
 
     { "personKey": "ostap", "nicknames": [], "generation": "2000s",
-      "family": null, "bridesmaid": false, "flags": [] },
+      "family": null, "bridesmaid": false, "flags": [],
+      "theme": { "icon": "🛑", "label": "Stop Signs", "avatarIcon": true } },
 
     { "personKey": "mark", "nicknames": [], "generation": "The Ditch",
       "family": null, "bridesmaid": false, "flags": [] },

@@ -11,13 +11,15 @@ const SELECT_ANIMATION_MS = 420;
 // first season. Uses the same data-manager-key attribute as a real career
 // card, so the existing click handler needs no special-casing for it.
 function rookieCardHtml(person) {
+  const photoSrc = person.personKey ? `assets/managers/${person.personKey}.jpg` : null;
+  const photoTag = photoSrc ? `<img class="avatar-photo" src="${photoSrc}" alt="" onerror="this.remove()">` : "";
   return `
     <div class="card tier-rookie">
       <div class="card-inner">
         <div class="sheen"></div>
         <div class="card-photo">
           <span class="tier-tag">Rookie</span>
-          <span class="avatar" style="background:${person.color}">${person.abbreviation}</span>
+          <span class="avatar" style="background:${person.color}">${person.abbreviation}${photoTag}</span>
         </div>
         <div class="career-body">
           <div class="card-name">${person.displayName}</div>
@@ -104,7 +106,6 @@ export function render(container, data, managers) {
           <span class="title-line-2">The Business</span>
           <span class="est-line">Est. 2017 · Tenth Anniversary Season</span>
           <div class="hero-rule"><span></span><span class="dot"></span><span></span></div>
-          <p class="hero-sub">Pick your card to see your season, your history, and what's coming up next — or take the general view and see everything, for everyone.</p>
         </div>
         <canvas id="landingPassNetwork" class="sl-pass-canvas"></canvas>
       </div>

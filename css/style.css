@@ -395,6 +395,11 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
 .scatter-wrap { overflow-x: auto; }
 
 /* ---- manager avatar (photo w/ initials fallback, tinted to chosen color) ---- */
+.mgr-avatar-wrap {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+}
 .mgr-avatar {
   position: relative;
   display: inline-flex;
@@ -415,6 +420,27 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* theme.avatarIcon (see data/league-lore.json) -- the avatar's initials are
+   replaced entirely by a bigger centered emoji instead. */
+.mgr-avatar-icon { font-size: 1.05rem; }
+/* Decorative per-manager theme badge (see data/league-lore.json's `theme`
+   field) -- sits on the wrap, not inside the circle, so it isn't clipped by
+   .mgr-avatar's overflow:hidden. Present for only a couple of managers. */
+.mgr-avatar-theme {
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  width: 15px;
+  height: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.62rem;
+  line-height: 1;
+  background: var(--surface, #1a1d27);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1.5px var(--bg, #10121a);
 }
 
 /* ---- Shared fixture-card base -- .schedule-luxury layers its own skin on
@@ -914,6 +940,64 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
   .schedule-luxury .fixture-side.away { justify-content: center; }
 }
 
+/* ---- draft countdown ---- */
+.draft-central .countdown {
+  display: flex; justify-content: center; gap: 0.9rem; margin: 2rem auto 0; position: relative; z-index: 1;
+}
+.draft-central .countdown-unit {
+  display: flex; flex-direction: column; align-items: center; gap: 0.3rem;
+  min-width: 4.2rem; padding: 0.9rem 0.4rem;
+  background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.03));
+  border: 1px solid rgba(255,255,255,0.14); border-radius: 14px;
+  box-shadow: 0 18px 36px -16px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.12);
+}
+.draft-central .countdown-value {
+  font-family: "Bebas Neue", "Archivo", sans-serif; font-size: 2.2rem; line-height: 1;
+  color: var(--sl-lime); text-shadow: 0 0 12px rgba(0,255,133,0.4);
+}
+.draft-central .countdown-label {
+  font-family: "Archivo", sans-serif; font-size: 0.62rem; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--sl-text-muted);
+}
+.draft-central .countdown-done {
+  text-align: center; margin-top: 1.6rem; font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic; font-size: 1.2rem; color: var(--sl-gold-bright); position: relative; z-index: 1;
+}
+
+/* ---- draft board grid ---- */
+.draft-board-card { margin-top: 2.2rem; position: relative; z-index: 1; }
+.draft-board-table th { text-align: center; }
+.draft-board-table thead th { padding-bottom: 0.6rem; vertical-align: bottom; }
+.draft-board-table .draft-col-name {
+  margin-top: 0.3rem; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em;
+}
+.draft-board-table .draft-col-unknown {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 2rem; height: 2rem; border-radius: 50%; margin: 0 auto;
+  background: rgba(255,255,255,0.06); border: 1px dashed var(--sl-edge, rgba(255,255,255,0.2));
+  color: var(--sl-text-muted); font-size: 0.9rem; font-weight: 700;
+}
+.draft-board-table tbody th {
+  color: var(--sl-gold-bright, var(--text-muted)); font-size: 0.72rem;
+}
+.draft-board-table td { text-align: center; vertical-align: middle; }
+.draft-board-table .draft-pick-num {
+  display: block; font-size: 0.64rem; color: var(--text-muted);
+}
+.draft-board-table .draft-pick-photo {
+  display: block; width: 30px; height: 30px; margin: 0.2rem auto 0.1rem;
+  border-radius: 50%; object-fit: cover; background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+}
+.draft-board-table .draft-pick-player {
+  display: block; font-weight: 600; font-size: 0.86rem;
+}
+.draft-board-table .draft-pick-pos {
+  display: inline-block; margin-top: 0.2rem; font-size: 0.6rem; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted);
+  border: 1px solid var(--border); border-radius: 999px; padding: 0.05rem 0.4rem;
+}
+
 /* -----------------------------------------------------------------------
    Narrative layer: recap section + Tale of the Tape cards + season-arc
    widgets, scoped to .schedule-luxury (This Week landing page). The Season
@@ -1104,10 +1188,17 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
   background: var(--card-surface-2);
 }
 .cards-theme .avatar {
+  position: relative; overflow: hidden;
   width: 76px; height: 76px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
   font-family: "Archivo", sans-serif; font-weight: 700; font-size: 1.5rem; color: #fff;
   box-shadow: 0 8px 20px rgba(0,0,0,0.35), 0 0 0 4px var(--card-surface);
 }
+/* assets/managers/{personKey}.jpg, same convention as the small site-wide
+   avatar -- sits over the abbreviation/color fallback underneath. */
+.cards-theme .avatar-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+/* theme.avatarIcon (see data/league-lore.json) -- the avatar becomes the
+   theme icon itself instead of initials. */
+.cards-theme .avatar-theme-icon { font-size: 2.5rem; }
 .cards-theme .rank-badge {
   position: absolute; top: 10px; left: 10px; width: 38px; height: 38px; border-radius: 9px;
   background: var(--frame); display: flex; align-items: center; justify-content: center;
@@ -1120,6 +1211,27 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
   border-radius: 999px; background: rgba(0,0,0,0.35); color: var(--tier-color, #fff); backdrop-filter: blur(3px);
 }
 .cards-theme .title-star { position: absolute; bottom: 8px; right: 10px; font-size: 1.05rem; color: var(--gold-2); text-shadow: 0 0 8px rgba(217,165,60,0.6); }
+/* Decorative per-manager theme badge (see data/league-lore.json's `theme`
+   field) -- only a couple of managers with a known running joke have one. */
+.cards-theme .card-theme-badge { position: absolute; bottom: 8px; right: 10px; font-size: 1.3rem; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); }
+
+/* theme.flag (see data/league-lore.json) -- a waving flag banner planted
+   above the card, like a mast poking above the frame. `.cards-theme .card`
+   is the positioning context (position: relative, see above). */
+.card-flag-mast {
+  position: absolute; top: -22px; left: 50%; z-index: 4;
+  font-size: 1.9rem; line-height: 1; pointer-events: none;
+  transform-origin: 25% 95%;
+  animation: card-flag-wave 2.6s ease-in-out infinite;
+  filter: drop-shadow(0 3px 5px rgba(0,0,0,0.55));
+}
+@keyframes card-flag-wave {
+  0%, 100% { transform: translateX(-50%) rotate(-10deg); }
+  50% { transform: translateX(-50%) rotate(10deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card-flag-mast { animation: none; transform: translateX(-50%) rotate(-6deg); }
+}
 
 .cards-theme .card-body, .cards-theme .career-body { flex: 1; padding: 0.8rem 1rem 1rem; display: flex; flex-direction: column; }
 .cards-theme .card-name { font-family: "Archivo", sans-serif; font-weight: 700; font-size: 1rem; line-height: 1.15; }
@@ -1203,7 +1315,11 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
    (hero + pass-network) and .cards-theme (card fronts) verbatim; only the
    picker-specific interaction layer below is new.
    ========================================================================= */
-.landing-hero .hero-block { min-height: 340px; padding-bottom: 2rem; }
+/* min-height sized to the hero's content now that it's just eyebrow/title/
+   est-line/rule (no more hero-sub paragraph) -- was 340px when that extra
+   line existed, which left a dead gap above the picker grid once it was
+   removed. */
+.landing-hero .hero-block { min-height: 200px; padding-bottom: 1.25rem; }
 
 .picker-grid { margin-top: 0.5rem; }
 .picker-slot { display: flex; }
@@ -1249,5 +1365,5 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
 .general-view-card .card-name { font-size: 1.05rem; }
 
 @media (max-width: 560px) {
-  .landing-hero .hero-block { min-height: 260px; }
+  .landing-hero .hero-block { min-height: 160px; }
 }
