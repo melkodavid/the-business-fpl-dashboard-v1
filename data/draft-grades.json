@@ -1,65 +1,1004 @@
 {
   "leaderboard": [
     {
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
+      "draftTeamPoints": 589
+    },
+    {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 0
-    },
-    {
-      "managerId": 1425,
-      "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 0
-    },
-    {
-      "managerId": 1471,
-      "managerName": "Big BUMBO",
-      "draftTeamPoints": 0
-    },
-    {
-      "managerId": 1501,
-      "managerName": "C",
-      "draftTeamPoints": 0
-    },
-    {
-      "managerId": 1530,
-      "managerName": "Muks Militia",
-      "draftTeamPoints": 0
+      "draftTeamPoints": 568
     },
     {
       "managerId": 1857,
       "managerName": "CHANGE NAME",
-      "draftTeamPoints": 0
+      "draftTeamPoints": 513
     },
     {
-      "managerId": 1947,
-      "managerName": "FC General",
-      "draftTeamPoints": 0
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "draftTeamPoints": 499
     },
     {
       "managerId": 10210,
       "managerName": "Syria FC**",
-      "draftTeamPoints": 0
+      "draftTeamPoints": 490
     },
     {
-      "managerId": 10375,
-      "managerName": "NEEN FC",
-      "draftTeamPoints": 0
+      "managerId": 1471,
+      "managerName": "Big BUMBO",
+      "draftTeamPoints": 467
+    },
+    {
+      "managerId": 1947,
+      "managerName": "FC General",
+      "draftTeamPoints": 467
+    },
+    {
+      "managerId": 1501,
+      "managerName": "C",
+      "draftTeamPoints": 463
+    },
+    {
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "draftTeamPoints": 462
     },
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
-      "draftTeamPoints": 0
+      "draftTeamPoints": 417
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "draftTeamPoints": 0
+      "draftTeamPoints": 416
     },
     {
-      "managerId": 99786,
-      "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 0
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "draftTeamPoints": 337
     }
   ],
-  "scatter": []
+  "scatter": [
+    {
+      "pickNumber": 1,
+      "seasonPoints": 239,
+      "managerId": 1857,
+      "playerName": "Haaland"
+    },
+    {
+      "pickNumber": 2,
+      "seasonPoints": 235,
+      "managerId": 29975,
+      "playerName": "B.Fernandes"
+    },
+    {
+      "pickNumber": 3,
+      "seasonPoints": 41,
+      "managerId": 10375,
+      "playerName": "Isak"
+    },
+    {
+      "pickNumber": 4,
+      "seasonPoints": 114,
+      "managerId": 1530,
+      "playerName": "Palmer"
+    },
+    {
+      "pickNumber": 5,
+      "seasonPoints": 157,
+      "managerId": 26227,
+      "playerName": "Saka"
+    },
+    {
+      "pickNumber": 6,
+      "seasonPoints": 177,
+      "managerId": 1425,
+      "playerName": "João Pedro"
+    },
+    {
+      "pickNumber": 7,
+      "seasonPoints": 181,
+      "managerId": 1947,
+      "playerName": "Thiago"
+    },
+    {
+      "pickNumber": 8,
+      "seasonPoints": 188,
+      "managerId": 1501,
+      "playerName": "Gibbs-White"
+    },
+    {
+      "pickNumber": 9,
+      "seasonPoints": 202,
+      "managerId": 10210,
+      "playerName": "Semenyo"
+    },
+    {
+      "pickNumber": 10,
+      "seasonPoints": 167,
+      "managerId": 1471,
+      "playerName": "Watkins"
+    },
+    {
+      "pickNumber": 11,
+      "seasonPoints": 148,
+      "managerId": 99786,
+      "playerName": "Mbeumo"
+    },
+    {
+      "pickNumber": 12,
+      "seasonPoints": 125,
+      "managerId": 1377,
+      "playerName": "Wirtz"
+    },
+    {
+      "pickNumber": 13,
+      "seasonPoints": 209,
+      "managerId": 1377,
+      "playerName": "Gabriel"
+    },
+    {
+      "pickNumber": 14,
+      "seasonPoints": 184,
+      "managerId": 99786,
+      "playerName": "Rice"
+    },
+    {
+      "pickNumber": 15,
+      "seasonPoints": 169,
+      "managerId": 1471,
+      "playerName": "Rogers"
+    },
+    {
+      "pickNumber": 16,
+      "seasonPoints": 128,
+      "managerId": 10210,
+      "playerName": "Gyökeres"
+    },
+    {
+      "pickNumber": 17,
+      "seasonPoints": 160,
+      "managerId": 1501,
+      "playerName": "Szoboszlai"
+    },
+    {
+      "pickNumber": 18,
+      "seasonPoints": 111,
+      "managerId": 1947,
+      "playerName": "Šeško"
+    },
+    {
+      "pickNumber": 19,
+      "seasonPoints": 143,
+      "managerId": 1425,
+      "playerName": "Cunha"
+    },
+    {
+      "pickNumber": 20,
+      "seasonPoints": 135,
+      "managerId": 26227,
+      "playerName": "Cherki"
+    },
+    {
+      "pickNumber": 21,
+      "seasonPoints": 180,
+      "managerId": 1530,
+      "playerName": "Anderson"
+    },
+    {
+      "pickNumber": 22,
+      "seasonPoints": 154,
+      "managerId": 10375,
+      "playerName": "Bruno G."
+    },
+    {
+      "pickNumber": 23,
+      "seasonPoints": 114,
+      "managerId": 29975,
+      "playerName": "Mateta"
+    },
+    {
+      "pickNumber": 24,
+      "seasonPoints": 157,
+      "managerId": 1857,
+      "playerName": "Enzo"
+    },
+    {
+      "pickNumber": 25,
+      "seasonPoints": 117,
+      "managerId": 1857,
+      "playerName": "Sarr"
+    },
+    {
+      "pickNumber": 26,
+      "seasonPoints": 67,
+      "managerId": 29975,
+      "playerName": "Rayan"
+    },
+    {
+      "pickNumber": 27,
+      "seasonPoints": 142,
+      "managerId": 10375,
+      "playerName": "Calvert-Lewin"
+    },
+    {
+      "pickNumber": 28,
+      "seasonPoints": 168,
+      "managerId": 1530,
+      "playerName": "Wilson"
+    },
+    {
+      "pickNumber": 29,
+      "seasonPoints": 125,
+      "managerId": 26227,
+      "playerName": "Ekitiké"
+    },
+    {
+      "pickNumber": 30,
+      "seasonPoints": 179,
+      "managerId": 1425,
+      "playerName": "Guéhi"
+    },
+    {
+      "pickNumber": 31,
+      "seasonPoints": 175,
+      "managerId": 1947,
+      "playerName": "Virgil"
+    },
+    {
+      "pickNumber": 32,
+      "seasonPoints": 115,
+      "managerId": 1501,
+      "playerName": "Evanilson"
+    },
+    {
+      "pickNumber": 33,
+      "seasonPoints": 160,
+      "managerId": 10210,
+      "playerName": "O'Reilly"
+    },
+    {
+      "pickNumber": 34,
+      "seasonPoints": 131,
+      "managerId": 1471,
+      "playerName": "Foden"
+    },
+    {
+      "pickNumber": 35,
+      "seasonPoints": 165,
+      "managerId": 99786,
+      "playerName": "Truffert"
+    },
+    {
+      "pickNumber": 36,
+      "seasonPoints": 120,
+      "managerId": 1377,
+      "playerName": "Doku"
+    },
+    {
+      "pickNumber": 37,
+      "seasonPoints": 114,
+      "managerId": 1377,
+      "playerName": "Igor Jesus"
+    },
+    {
+      "pickNumber": 38,
+      "seasonPoints": 92,
+      "managerId": 99786,
+      "playerName": "Brobbey"
+    },
+    {
+      "pickNumber": 39,
+      "seasonPoints": 0,
+      "managerId": 1471
+    },
+    {
+      "pickNumber": 40,
+      "seasonPoints": 0,
+      "managerId": 10210
+    },
+    {
+      "pickNumber": 41,
+      "seasonPoints": 0,
+      "managerId": 1501
+    },
+    {
+      "pickNumber": 42,
+      "seasonPoints": 0,
+      "managerId": 1947
+    },
+    {
+      "pickNumber": 43,
+      "seasonPoints": 0,
+      "managerId": 1425
+    },
+    {
+      "pickNumber": 44,
+      "seasonPoints": 0,
+      "managerId": 26227
+    },
+    {
+      "pickNumber": 45,
+      "seasonPoints": 0,
+      "managerId": 1530
+    },
+    {
+      "pickNumber": 46,
+      "seasonPoints": 0,
+      "managerId": 10375
+    },
+    {
+      "pickNumber": 47,
+      "seasonPoints": 0,
+      "managerId": 29975
+    },
+    {
+      "pickNumber": 48,
+      "seasonPoints": 0,
+      "managerId": 1857
+    },
+    {
+      "pickNumber": 49,
+      "seasonPoints": 0,
+      "managerId": 1857
+    },
+    {
+      "pickNumber": 50,
+      "seasonPoints": 0,
+      "managerId": 29975
+    },
+    {
+      "pickNumber": 51,
+      "seasonPoints": 0,
+      "managerId": 10375
+    },
+    {
+      "pickNumber": 52,
+      "seasonPoints": 0,
+      "managerId": 1530
+    },
+    {
+      "pickNumber": 53,
+      "seasonPoints": 0,
+      "managerId": 26227
+    },
+    {
+      "pickNumber": 54,
+      "seasonPoints": 0,
+      "managerId": 1425
+    },
+    {
+      "pickNumber": 55,
+      "seasonPoints": 0,
+      "managerId": 1947
+    },
+    {
+      "pickNumber": 56,
+      "seasonPoints": 0,
+      "managerId": 1501
+    },
+    {
+      "pickNumber": 57,
+      "seasonPoints": 0,
+      "managerId": 10210
+    },
+    {
+      "pickNumber": 58,
+      "seasonPoints": 0,
+      "managerId": 1471
+    },
+    {
+      "pickNumber": 59,
+      "seasonPoints": 0,
+      "managerId": 99786
+    },
+    {
+      "pickNumber": 60,
+      "seasonPoints": 0,
+      "managerId": 1377
+    },
+    {
+      "pickNumber": 61,
+      "seasonPoints": 0,
+      "managerId": 1377
+    },
+    {
+      "pickNumber": 62,
+      "seasonPoints": 0,
+      "managerId": 99786
+    },
+    {
+      "pickNumber": 63,
+      "seasonPoints": 0,
+      "managerId": 1471
+    },
+    {
+      "pickNumber": 64,
+      "seasonPoints": 0,
+      "managerId": 10210
+    },
+    {
+      "pickNumber": 65,
+      "seasonPoints": 0,
+      "managerId": 1501
+    },
+    {
+      "pickNumber": 66,
+      "seasonPoints": 0,
+      "managerId": 1947
+    },
+    {
+      "pickNumber": 67,
+      "seasonPoints": 0,
+      "managerId": 1425
+    },
+    {
+      "pickNumber": 68,
+      "seasonPoints": 0,
+      "managerId": 26227
+    },
+    {
+      "pickNumber": 69,
+      "seasonPoints": 0,
+      "managerId": 1530
+    },
+    {
+      "pickNumber": 70,
+      "seasonPoints": 0,
+      "managerId": 10375
+    },
+    {
+      "pickNumber": 71,
+      "seasonPoints": 0,
+      "managerId": 29975
+    },
+    {
+      "pickNumber": 72,
+      "seasonPoints": 0,
+      "managerId": 1857
+    },
+    {
+      "pickNumber": 73,
+      "seasonPoints": 0,
+      "managerId": 1857
+    },
+    {
+      "pickNumber": 74,
+      "seasonPoints": 0,
+      "managerId": 29975
+    },
+    {
+      "pickNumber": 75,
+      "seasonPoints": 0,
+      "managerId": 10375
+    },
+    {
+      "pickNumber": 76,
+      "seasonPoints": 0,
+      "managerId": 1530
+    },
+    {
+      "pickNumber": 77,
+      "seasonPoints": 0,
+      "managerId": 26227
+    },
+    {
+      "pickNumber": 78,
+      "seasonPoints": 0,
+      "managerId": 1425
+    },
+    {
+      "pickNumber": 79,
+      "seasonPoints": 0,
+      "managerId": 1947
+    },
+    {
+      "pickNumber": 80,
+      "seasonPoints": 0,
+      "managerId": 1501
+    },
+    {
+      "pickNumber": 81,
+      "seasonPoints": 0,
+      "managerId": 10210
+    },
+    {
+      "pickNumber": 82,
+      "seasonPoints": 0,
+      "managerId": 1471
+    },
+    {
+      "pickNumber": 83,
+      "seasonPoints": 0,
+      "managerId": 99786
+    },
+    {
+      "pickNumber": 84,
+      "seasonPoints": 0,
+      "managerId": 1377
+    },
+    {
+      "pickNumber": 85,
+      "seasonPoints": 0,
+      "managerId": 1377
+    },
+    {
+      "pickNumber": 86,
+      "seasonPoints": 0,
+      "managerId": 99786
+    },
+    {
+      "pickNumber": 87,
+      "seasonPoints": 0,
+      "managerId": 1471
+    },
+    {
+      "pickNumber": 88,
+      "seasonPoints": 0,
+      "managerId": 10210
+    },
+    {
+      "pickNumber": 89,
+      "seasonPoints": 0,
+      "managerId": 1501
+    },
+    {
+      "pickNumber": 90,
+      "seasonPoints": 0,
+      "managerId": 1947
+    },
+    {
+      "pickNumber": 91,
+      "seasonPoints": 0,
+      "managerId": 1425
+    },
+    {
+      "pickNumber": 92,
+      "seasonPoints": 0,
+      "managerId": 26227
+    },
+    {
+      "pickNumber": 93,
+      "seasonPoints": 0,
+      "managerId": 1530
+    },
+    {
+      "pickNumber": 94,
+      "seasonPoints": 0,
+      "managerId": 10375
+    },
+    {
+      "pickNumber": 95,
+      "seasonPoints": 0,
+      "managerId": 29975
+    },
+    {
+      "pickNumber": 96,
+      "seasonPoints": 0,
+      "managerId": 1857
+    },
+    {
+      "pickNumber": 97,
+      "seasonPoints": 0,
+      "managerId": 1857
+    },
+    {
+      "pickNumber": 98,
+      "seasonPoints": 0,
+      "managerId": 29975
+    },
+    {
+      "pickNumber": 99,
+      "seasonPoints": 0,
+      "managerId": 10375
+    },
+    {
+      "pickNumber": 100,
+      "seasonPoints": 0,
+      "managerId": 1530
+    },
+    {
+      "pickNumber": 101,
+      "seasonPoints": 0,
+      "managerId": 26227
+    },
+    {
+      "pickNumber": 102,
+      "seasonPoints": 0,
+      "managerId": 1425
+    },
+    {
+      "pickNumber": 103,
+      "seasonPoints": 0,
+      "managerId": 1947
+    },
+    {
+      "pickNumber": 104,
+      "seasonPoints": 0,
+      "managerId": 1501
+    },
+    {
+      "pickNumber": 105,
+      "seasonPoints": 0,
+      "managerId": 10210
+    },
+    {
+      "pickNumber": 106,
+      "seasonPoints": 0,
+      "managerId": 1471
+    },
+    {
+      "pickNumber": 107,
+      "seasonPoints": 0,
+      "managerId": 99786
+    },
+    {
+      "pickNumber": 108,
+      "seasonPoints": 0,
+      "managerId": 1377
+    },
+    {
+      "pickNumber": 109,
+      "seasonPoints": 0,
+      "managerId": 1377
+    },
+    {
+      "pickNumber": 110,
+      "seasonPoints": 0,
+      "managerId": 99786
+    },
+    {
+      "pickNumber": 111,
+      "seasonPoints": 0,
+      "managerId": 1471
+    },
+    {
+      "pickNumber": 112,
+      "seasonPoints": 0,
+      "managerId": 10210
+    },
+    {
+      "pickNumber": 113,
+      "seasonPoints": 0,
+      "managerId": 1501
+    },
+    {
+      "pickNumber": 114,
+      "seasonPoints": 0,
+      "managerId": 1947
+    },
+    {
+      "pickNumber": 115,
+      "seasonPoints": 0,
+      "managerId": 1425
+    },
+    {
+      "pickNumber": 116,
+      "seasonPoints": 0,
+      "managerId": 26227
+    },
+    {
+      "pickNumber": 117,
+      "seasonPoints": 0,
+      "managerId": 1530
+    },
+    {
+      "pickNumber": 118,
+      "seasonPoints": 0,
+      "managerId": 10375
+    },
+    {
+      "pickNumber": 119,
+      "seasonPoints": 0,
+      "managerId": 29975
+    },
+    {
+      "pickNumber": 120,
+      "seasonPoints": 0,
+      "managerId": 1857
+    },
+    {
+      "pickNumber": 121,
+      "seasonPoints": 0,
+      "managerId": 1857
+    },
+    {
+      "pickNumber": 122,
+      "seasonPoints": 0,
+      "managerId": 29975
+    },
+    {
+      "pickNumber": 123,
+      "seasonPoints": 0,
+      "managerId": 10375
+    },
+    {
+      "pickNumber": 124,
+      "seasonPoints": 0,
+      "managerId": 1530
+    },
+    {
+      "pickNumber": 125,
+      "seasonPoints": 0,
+      "managerId": 26227
+    },
+    {
+      "pickNumber": 126,
+      "seasonPoints": 0,
+      "managerId": 1425
+    },
+    {
+      "pickNumber": 127,
+      "seasonPoints": 0,
+      "managerId": 1947
+    },
+    {
+      "pickNumber": 128,
+      "seasonPoints": 0,
+      "managerId": 1501
+    },
+    {
+      "pickNumber": 129,
+      "seasonPoints": 0,
+      "managerId": 10210
+    },
+    {
+      "pickNumber": 130,
+      "seasonPoints": 0,
+      "managerId": 1471
+    },
+    {
+      "pickNumber": 131,
+      "seasonPoints": 0,
+      "managerId": 99786
+    },
+    {
+      "pickNumber": 132,
+      "seasonPoints": 0,
+      "managerId": 1377
+    },
+    {
+      "pickNumber": 133,
+      "seasonPoints": 0,
+      "managerId": 1377
+    },
+    {
+      "pickNumber": 134,
+      "seasonPoints": 0,
+      "managerId": 99786
+    },
+    {
+      "pickNumber": 135,
+      "seasonPoints": 0,
+      "managerId": 1471
+    },
+    {
+      "pickNumber": 136,
+      "seasonPoints": 0,
+      "managerId": 10210
+    },
+    {
+      "pickNumber": 137,
+      "seasonPoints": 0,
+      "managerId": 1501
+    },
+    {
+      "pickNumber": 138,
+      "seasonPoints": 0,
+      "managerId": 1947
+    },
+    {
+      "pickNumber": 139,
+      "seasonPoints": 0,
+      "managerId": 1425
+    },
+    {
+      "pickNumber": 140,
+      "seasonPoints": 0,
+      "managerId": 26227
+    },
+    {
+      "pickNumber": 141,
+      "seasonPoints": 0,
+      "managerId": 1530
+    },
+    {
+      "pickNumber": 142,
+      "seasonPoints": 0,
+      "managerId": 10375
+    },
+    {
+      "pickNumber": 143,
+      "seasonPoints": 0,
+      "managerId": 29975
+    },
+    {
+      "pickNumber": 144,
+      "seasonPoints": 0,
+      "managerId": 1857
+    },
+    {
+      "pickNumber": 145,
+      "seasonPoints": 0,
+      "managerId": 1857
+    },
+    {
+      "pickNumber": 146,
+      "seasonPoints": 0,
+      "managerId": 29975
+    },
+    {
+      "pickNumber": 147,
+      "seasonPoints": 0,
+      "managerId": 10375
+    },
+    {
+      "pickNumber": 148,
+      "seasonPoints": 0,
+      "managerId": 1530
+    },
+    {
+      "pickNumber": 149,
+      "seasonPoints": 0,
+      "managerId": 26227
+    },
+    {
+      "pickNumber": 150,
+      "seasonPoints": 0,
+      "managerId": 1425
+    },
+    {
+      "pickNumber": 151,
+      "seasonPoints": 0,
+      "managerId": 1947
+    },
+    {
+      "pickNumber": 152,
+      "seasonPoints": 0,
+      "managerId": 1501
+    },
+    {
+      "pickNumber": 153,
+      "seasonPoints": 0,
+      "managerId": 10210
+    },
+    {
+      "pickNumber": 154,
+      "seasonPoints": 0,
+      "managerId": 1471
+    },
+    {
+      "pickNumber": 155,
+      "seasonPoints": 0,
+      "managerId": 99786
+    },
+    {
+      "pickNumber": 156,
+      "seasonPoints": 0,
+      "managerId": 1377
+    },
+    {
+      "pickNumber": 157,
+      "seasonPoints": 0,
+      "managerId": 1377
+    },
+    {
+      "pickNumber": 158,
+      "seasonPoints": 0,
+      "managerId": 99786
+    },
+    {
+      "pickNumber": 159,
+      "seasonPoints": 0,
+      "managerId": 1471
+    },
+    {
+      "pickNumber": 160,
+      "seasonPoints": 0,
+      "managerId": 10210
+    },
+    {
+      "pickNumber": 161,
+      "seasonPoints": 0,
+      "managerId": 1501
+    },
+    {
+      "pickNumber": 162,
+      "seasonPoints": 0,
+      "managerId": 1947
+    },
+    {
+      "pickNumber": 163,
+      "seasonPoints": 0,
+      "managerId": 1425
+    },
+    {
+      "pickNumber": 164,
+      "seasonPoints": 0,
+      "managerId": 26227
+    },
+    {
+      "pickNumber": 165,
+      "seasonPoints": 0,
+      "managerId": 1530
+    },
+    {
+      "pickNumber": 166,
+      "seasonPoints": 0,
+      "managerId": 10375
+    },
+    {
+      "pickNumber": 167,
+      "seasonPoints": 0,
+      "managerId": 29975
+    },
+    {
+      "pickNumber": 168,
+      "seasonPoints": 0,
+      "managerId": 1857
+    },
+    {
+      "pickNumber": 169,
+      "seasonPoints": 0,
+      "managerId": 1857
+    },
+    {
+      "pickNumber": 170,
+      "seasonPoints": 0,
+      "managerId": 29975
+    },
+    {
+      "pickNumber": 171,
+      "seasonPoints": 0,
+      "managerId": 10375
+    },
+    {
+      "pickNumber": 172,
+      "seasonPoints": 0,
+      "managerId": 1530
+    },
+    {
+      "pickNumber": 173,
+      "seasonPoints": 0,
+      "managerId": 26227
+    },
+    {
+      "pickNumber": 174,
+      "seasonPoints": 0,
+      "managerId": 1425
+    },
+    {
+      "pickNumber": 175,
+      "seasonPoints": 0,
+      "managerId": 1947
+    },
+    {
+      "pickNumber": 176,
+      "seasonPoints": 0,
+      "managerId": 1501
+    },
+    {
+      "pickNumber": 177,
+      "seasonPoints": 0,
+      "managerId": 10210
+    },
+    {
+      "pickNumber": 178,
+      "seasonPoints": 0,
+      "managerId": 1471
+    },
+    {
+      "pickNumber": 179,
+      "seasonPoints": 0,
+      "managerId": 99786
+    },
+    {
+      "pickNumber": 180,
+      "seasonPoints": 0,
+      "managerId": 1377
+    }
+  ]
 }
