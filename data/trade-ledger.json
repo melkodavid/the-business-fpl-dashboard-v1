@@ -1,5 +1,92 @@
 {
-  "log": [],
+  "log": [
+    {
+      "tradeId": 36281,
+      "gw": 1,
+      "sides": [
+        {
+          "managerId": 1530,
+          "received": [
+            {
+              "elementId": 8,
+              "playerName": "Calafiori",
+              "points": 0
+            },
+            {
+              "elementId": 398,
+              "playerName": "Foden",
+              "points": 0
+            },
+            {
+              "elementId": 55,
+              "playerName": "Watkins",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 112,
+              "playerName": "Van Hecke",
+              "points": 0
+            },
+            {
+              "elementId": 154,
+              "playerName": "Palmer",
+              "points": 0
+            },
+            {
+              "elementId": 463,
+              "playerName": "Woltemade",
+              "points": 0
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0
+        },
+        {
+          "managerId": 1471,
+          "received": [
+            {
+              "elementId": 112,
+              "playerName": "Van Hecke",
+              "points": 0
+            },
+            {
+              "elementId": 154,
+              "playerName": "Palmer",
+              "points": 0
+            },
+            {
+              "elementId": 463,
+              "playerName": "Woltemade",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 8,
+              "playerName": "Calafiori",
+              "points": 0
+            },
+            {
+              "elementId": 398,
+              "playerName": "Foden",
+              "points": 0
+            },
+            {
+              "elementId": 55,
+              "playerName": "Watkins",
+              "points": 0
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0
+        }
+      ]
+    }
+  ],
   "leaderboard": [
     {
       "managerId": 1377,
