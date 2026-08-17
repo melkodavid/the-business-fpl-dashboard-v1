@@ -1,5 +1,15 @@
 {
   "gauntletWatch": null,
-  "lifeAfterMark": null,
+  "lifeAfterMark": {
+    "type": "lu-post-mark-trade-scrutiny",
+    "personKeys": [
+      "lu"
+    ],
+    "facts": {
+      "tradeId": 36917,
+      "netValue": 0
+    },
+    "gw": 1
+  },
   "generationWar": null
 }

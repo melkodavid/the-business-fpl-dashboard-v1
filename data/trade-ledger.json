@@ -85,6 +85,72 @@
           "netValue": 0
         }
       ]
+    },
+    {
+      "tradeId": 36917,
+      "gw": 1,
+      "sides": [
+        {
+          "managerId": 1857,
+          "received": [
+            {
+              "elementId": 366,
+              "playerName": "Wirtz",
+              "points": 0
+            },
+            {
+              "elementId": 455,
+              "playerName": "Tonali",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 155,
+              "playerName": "Enzo",
+              "points": 0
+            },
+            {
+              "elementId": 208,
+              "playerName": "Sarr",
+              "points": 0
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0
+        },
+        {
+          "managerId": 1377,
+          "received": [
+            {
+              "elementId": 155,
+              "playerName": "Enzo",
+              "points": 0
+            },
+            {
+              "elementId": 208,
+              "playerName": "Sarr",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 366,
+              "playerName": "Wirtz",
+              "points": 0
+            },
+            {
+              "elementId": 455,
+              "playerName": "Tonali",
+              "points": 0
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0
+        }
+      ]
     }
   ],
   "leaderboard": [
