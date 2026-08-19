@@ -151,6 +151,72 @@
           "netValue": 0
         }
       ]
+    },
+    {
+      "tradeId": 48518,
+      "gw": 1,
+      "sides": [
+        {
+          "managerId": 29975,
+          "received": [
+            {
+              "elementId": 357,
+              "playerName": "Frimpong",
+              "points": 0
+            },
+            {
+              "elementId": 43,
+              "playerName": "Tielemans",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 449,
+              "playerName": "Hall",
+              "points": 0
+            },
+            {
+              "elementId": 70,
+              "playerName": "Kluivert",
+              "points": 0
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0
+        },
+        {
+          "managerId": 1501,
+          "received": [
+            {
+              "elementId": 449,
+              "playerName": "Hall",
+              "points": 0
+            },
+            {
+              "elementId": 70,
+              "playerName": "Kluivert",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 357,
+              "playerName": "Frimpong",
+              "points": 0
+            },
+            {
+              "elementId": 43,
+              "playerName": "Tielemans",
+              "points": 0
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0
+        }
+      ]
     }
   ],
   "leaderboard": [
