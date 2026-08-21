@@ -1,49 +1,49 @@
 {
   "leaderboard": [
     {
-      "managerId": 1857,
-      "managerName": "i can fix him*",
-      "draftTeamPoints": 8
-    },
-    {
-      "managerId": 1471,
-      "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 6
-    },
-    {
-      "managerId": 1501,
-      "managerName": "C",
-      "draftTeamPoints": 2
-    },
-    {
       "managerId": 10210,
       "managerName": "Syria FC**",
-      "draftTeamPoints": 2
-    },
-    {
-      "managerId": 10375,
-      "managerName": "NEEN FC",
-      "draftTeamPoints": 2
-    },
-    {
-      "managerId": 1377,
-      "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 1
+      "draftTeamPoints": 17
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "draftTeamPoints": 1
+      "draftTeamPoints": 10
     },
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
-      "draftTeamPoints": 1
+      "draftTeamPoints": 10
+    },
+    {
+      "managerId": 1471,
+      "managerName": "🥶CPR🥶",
+      "draftTeamPoints": 9
+    },
+    {
+      "managerId": 1501,
+      "managerName": "C",
+      "draftTeamPoints": 8
+    },
+    {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "draftTeamPoints": 6
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "draftTeamPoints": 6
+    },
+    {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "draftTeamPoints": 5
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 1
+      "draftTeamPoints": 3
     },
     {
       "managerId": 1425,
@@ -88,7 +88,7 @@
     },
     {
       "pickNumber": 5,
-      "seasonPoints": 1,
+      "seasonPoints": 10,
       "managerId": 26227,
       "playerName": "Saka"
     },
@@ -136,13 +136,13 @@
     },
     {
       "pickNumber": 13,
-      "seasonPoints": 1,
+      "seasonPoints": 5,
       "managerId": 1377,
       "playerName": "Gabriel"
     },
     {
       "pickNumber": 14,
-      "seasonPoints": 1,
+      "seasonPoints": 3,
       "managerId": 99786,
       "playerName": "Rice"
     },
@@ -292,13 +292,13 @@
     },
     {
       "pickNumber": 39,
-      "seasonPoints": 6,
+      "seasonPoints": 9,
       "managerId": 1471,
       "playerName": "Calafiori"
     },
     {
       "pickNumber": 40,
-      "seasonPoints": 1,
+      "seasonPoints": 6,
       "managerId": 10210,
       "playerName": "Raya"
     },
@@ -346,7 +346,7 @@
     },
     {
       "pickNumber": 48,
-      "seasonPoints": 8,
+      "seasonPoints": 6,
       "managerId": 1857,
       "playerName": "Havertz"
     },
@@ -400,7 +400,7 @@
     },
     {
       "pickNumber": 57,
-      "seasonPoints": 1,
+      "seasonPoints": 11,
       "managerId": 10210,
       "playerName": "Ødegaard"
     },
@@ -478,7 +478,7 @@
     },
     {
       "pickNumber": 70,
-      "seasonPoints": 2,
+      "seasonPoints": 6,
       "managerId": 10375,
       "playerName": "Tzolis"
     },
@@ -538,7 +538,7 @@
     },
     {
       "pickNumber": 80,
-      "seasonPoints": 1,
+      "seasonPoints": 6,
       "managerId": 1501,
       "playerName": "Mosquera"
     },
@@ -904,7 +904,7 @@
     },
     {
       "pickNumber": 141,
-      "seasonPoints": 1,
+      "seasonPoints": 10,
       "managerId": 1530,
       "playerName": "White"
     },
@@ -1114,7 +1114,7 @@
     },
     {
       "pickNumber": 176,
-      "seasonPoints": 1,
+      "seasonPoints": 2,
       "managerId": 1501,
       "playerName": "Simms"
     },
