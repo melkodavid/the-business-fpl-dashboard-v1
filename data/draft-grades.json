@@ -13,7 +13,7 @@
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 30
+      "draftTeamPoints": 32
     },
     {
       "managerId": 10375,
@@ -742,7 +742,7 @@
     },
     {
       "pickNumber": 114,
-      "seasonPoints": 3,
+      "seasonPoints": 5,
       "managerId": 1947,
       "playerName": "Ampadu"
     },
