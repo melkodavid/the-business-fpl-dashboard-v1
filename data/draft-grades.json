@@ -1,29 +1,39 @@
 {
   "leaderboard": [
     {
+      "managerId": 1947,
+      "managerName": "FC General",
+      "draftTeamPoints": 19
+    },
+    {
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "draftTeamPoints": 18
+    },
+    {
       "managerId": 10210,
       "managerName": "Syria FC**",
       "draftTeamPoints": 18
     },
     {
-      "managerId": 1530,
-      "managerName": "Muks Militia",
-      "draftTeamPoints": 16
-    },
-    {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "draftTeamPoints": 14
+      "draftTeamPoints": 17
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 13
+      "draftTeamPoints": 14
     },
     {
       "managerId": 1501,
       "managerName": "C",
       "draftTeamPoints": 13
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "draftTeamPoints": 12
     },
     {
       "managerId": 1857,
@@ -33,11 +43,6 @@
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 10
-    },
-    {
-      "managerId": 1947,
-      "managerName": "FC General",
       "draftTeamPoints": 10
     },
     {
@@ -54,11 +59,6 @@
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
       "draftTeamPoints": 7
-    },
-    {
-      "managerId": 1425,
-      "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 5
     }
   ],
   "scatter": [
@@ -220,7 +220,7 @@
     },
     {
       "pickNumber": 27,
-      "seasonPoints": 1,
+      "seasonPoints": 0,
       "managerId": 10375,
       "playerName": "Calvert-Lewin"
     },
@@ -388,7 +388,7 @@
     },
     {
       "pickNumber": 55,
-      "seasonPoints": 1,
+      "seasonPoints": 9,
       "managerId": 1947,
       "playerName": "Dewsbury-Hall"
     },
@@ -652,7 +652,7 @@
     },
     {
       "pickNumber": 99,
-      "seasonPoints": 1,
+      "seasonPoints": 5,
       "managerId": 10375,
       "playerName": "Xhaka"
     },
@@ -742,7 +742,7 @@
     },
     {
       "pickNumber": 114,
-      "seasonPoints": 1,
+      "seasonPoints": 3,
       "managerId": 1947,
       "playerName": "Ampadu"
     },
@@ -802,7 +802,7 @@
     },
     {
       "pickNumber": 124,
-      "seasonPoints": 1,
+      "seasonPoints": 4,
       "managerId": 1530,
       "playerName": "Aaronson"
     },
@@ -868,7 +868,7 @@
     },
     {
       "pickNumber": 135,
-      "seasonPoints": 1,
+      "seasonPoints": 2,
       "managerId": 1471,
       "playerName": "Trafford"
     },
@@ -892,7 +892,7 @@
     },
     {
       "pickNumber": 139,
-      "seasonPoints": 1,
+      "seasonPoints": 8,
       "managerId": 1425,
       "playerName": "Emersonn"
     },
@@ -946,7 +946,7 @@
     },
     {
       "pickNumber": 148,
-      "seasonPoints": 1,
+      "seasonPoints": 0,
       "managerId": 1530,
       "playerName": "Ballard"
     },
@@ -1030,7 +1030,7 @@
     },
     {
       "pickNumber": 162,
-      "seasonPoints": 1,
+      "seasonPoints": 0,
       "managerId": 1947,
       "playerName": "Aina"
     },
