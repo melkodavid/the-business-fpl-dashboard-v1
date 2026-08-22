@@ -11,9 +11,19 @@
       "draftTeamPoints": 12
     },
     {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "draftTeamPoints": 11
+    },
+    {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
       "draftTeamPoints": 10
+    },
+    {
+      "managerId": 1501,
+      "managerName": "C",
+      "draftTeamPoints": 9
     },
     {
       "managerId": 26227,
@@ -21,18 +31,8 @@
       "draftTeamPoints": 9
     },
     {
-      "managerId": 1501,
-      "managerName": "C",
-      "draftTeamPoints": 8
-    },
-    {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "draftTeamPoints": 6
-    },
-    {
-      "managerId": 10375,
-      "managerName": "NEEN FC",
       "draftTeamPoints": 6
     },
     {
@@ -43,22 +43,22 @@
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 3
+      "draftTeamPoints": 4
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "draftTeamPoints": 1
+      "draftTeamPoints": 2
     },
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 0
+      "draftTeamPoints": 1
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 0
+      "draftTeamPoints": 1
     }
   ],
   "scatter": [
@@ -70,7 +70,7 @@
     },
     {
       "pickNumber": 2,
-      "seasonPoints": 0,
+      "seasonPoints": 1,
       "managerId": 29975,
       "playerName": "B.Fernandes"
     },
@@ -124,7 +124,7 @@
     },
     {
       "pickNumber": 11,
-      "seasonPoints": 0,
+      "seasonPoints": 1,
       "managerId": 99786,
       "playerName": "Mbeumo"
     },
@@ -172,7 +172,7 @@
     },
     {
       "pickNumber": 19,
-      "seasonPoints": 0,
+      "seasonPoints": 1,
       "managerId": 1425,
       "playerName": "Cunha"
     },
@@ -766,7 +766,7 @@
     },
     {
       "pickNumber": 118,
-      "seasonPoints": 0,
+      "seasonPoints": 5,
       "managerId": 10375,
       "playerName": "McBurnie"
     },
@@ -880,7 +880,7 @@
     },
     {
       "pickNumber": 137,
-      "seasonPoints": 0,
+      "seasonPoints": 1,
       "managerId": 1501,
       "playerName": "Tielemans"
     },
@@ -1108,7 +1108,7 @@
     },
     {
       "pickNumber": 175,
-      "seasonPoints": 0,
+      "seasonPoints": 1,
       "managerId": 1947,
       "playerName": "Andrey Santos"
     },
