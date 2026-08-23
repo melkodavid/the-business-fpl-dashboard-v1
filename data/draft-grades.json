@@ -1,13 +1,13 @@
 {
   "leaderboard": [
     {
-      "managerId": 10210,
-      "managerName": "Syria FC**",
-      "draftTeamPoints": 55
-    },
-    {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
+      "draftTeamPoints": 54
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
       "draftTeamPoints": 54
     },
     {
@@ -31,6 +31,11 @@
       "draftTeamPoints": 39
     },
     {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "draftTeamPoints": 37
+    },
+    {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
       "draftTeamPoints": 37
@@ -43,11 +48,6 @@
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 35
-    },
-    {
-      "managerId": 26227,
-      "managerName": "Mourinho’s Ego FT",
       "draftTeamPoints": 35
     },
     {
@@ -376,7 +376,7 @@
     },
     {
       "pickNumber": 53,
-      "seasonPoints": 10,
+      "seasonPoints": 12,
       "managerId": 26227,
       "playerName": "Gakpo"
     },
@@ -832,7 +832,7 @@
     },
     {
       "pickNumber": 129,
-      "seasonPoints": 10,
+      "seasonPoints": 9,
       "managerId": 10210,
       "playerName": "Elanga"
     },
