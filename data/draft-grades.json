@@ -3,16 +3,16 @@
     {
       "managerId": 10210,
       "managerName": "Syria FC**",
-      "draftTeamPoints": 52
+      "draftTeamPoints": 55
+    },
+    {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "draftTeamPoints": 54
     },
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "draftTeamPoints": 49
-    },
-    {
-      "managerId": 1501,
-      "managerName": "C",
       "draftTeamPoints": 48
     },
     {
@@ -23,17 +23,17 @@
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 44
+      "draftTeamPoints": 45
     },
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 40
+      "draftTeamPoints": 39
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 38
+      "draftTeamPoints": 37
     },
     {
       "managerId": 10375,
@@ -58,7 +58,7 @@
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "draftTeamPoints": 26
+      "draftTeamPoints": 25
     }
   ],
   "scatter": [
@@ -160,7 +160,7 @@
     },
     {
       "pickNumber": 17,
-      "seasonPoints": 2,
+      "seasonPoints": 8,
       "managerId": 1501,
       "playerName": "Szoboszlai"
     },
@@ -244,7 +244,7 @@
     },
     {
       "pickNumber": 31,
-      "seasonPoints": 1,
+      "seasonPoints": 2,
       "managerId": 1947,
       "playerName": "Virgil"
     },
@@ -442,7 +442,7 @@
     },
     {
       "pickNumber": 64,
-      "seasonPoints": 1,
+      "seasonPoints": 4,
       "managerId": 10210,
       "playerName": "Munoz"
     },
@@ -568,7 +568,7 @@
     },
     {
       "pickNumber": 85,
-      "seasonPoints": 4,
+      "seasonPoints": 3,
       "managerId": 1377,
       "playerName": "Thiaw"
     },
@@ -640,7 +640,7 @@
     },
     {
       "pickNumber": 97,
-      "seasonPoints": 1,
+      "seasonPoints": 2,
       "managerId": 1857,
       "playerName": "A.Becker"
     },
@@ -844,7 +844,7 @@
     },
     {
       "pickNumber": 131,
-      "seasonPoints": 6,
+      "seasonPoints": 5,
       "managerId": 99786,
       "playerName": "Gravenberch"
     },
@@ -922,7 +922,7 @@
     },
     {
       "pickNumber": 144,
-      "seasonPoints": 3,
+      "seasonPoints": 1,
       "managerId": 1857,
       "playerName": "Horníček"
     },
@@ -934,7 +934,7 @@
     },
     {
       "pickNumber": 146,
-      "seasonPoints": 4,
+      "seasonPoints": 3,
       "managerId": 29975,
       "playerName": "Hall"
     },
