@@ -1,24 +1,24 @@
 {
   "leaderboard": [
     {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "draftTeamPoints": 52
+    },
+    {
       "managerId": 1857,
       "managerName": "i can fix him*",
+      "draftTeamPoints": 49
+    },
+    {
+      "managerId": 1501,
+      "managerName": "C",
       "draftTeamPoints": 48
     },
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
       "draftTeamPoints": 47
-    },
-    {
-      "managerId": 1501,
-      "managerName": "C",
-      "draftTeamPoints": 47
-    },
-    {
-      "managerId": 10210,
-      "managerName": "Syria FC**",
-      "draftTeamPoints": 46
     },
     {
       "managerId": 1947,
@@ -28,7 +28,17 @@
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 37
+      "draftTeamPoints": 40
+    },
+    {
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
+      "draftTeamPoints": 38
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "draftTeamPoints": 36
     },
     {
       "managerId": 1471,
@@ -36,29 +46,19 @@
       "draftTeamPoints": 35
     },
     {
-      "managerId": 10375,
-      "managerName": "NEEN FC",
-      "draftTeamPoints": 34
-    },
-    {
-      "managerId": 99786,
-      "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 32
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "draftTeamPoints": 35
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "draftTeamPoints": 29
-    },
-    {
-      "managerId": 26227,
-      "managerName": "Mourinho’s Ego FT",
-      "draftTeamPoints": 26
+      "draftTeamPoints": 27
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "draftTeamPoints": 22
+      "draftTeamPoints": 26
     }
   ],
   "scatter": [
@@ -76,7 +76,7 @@
     },
     {
       "pickNumber": 3,
-      "seasonPoints": 1,
+      "seasonPoints": 2,
       "managerId": 10375,
       "playerName": "Isak"
     },
@@ -160,7 +160,7 @@
     },
     {
       "pickNumber": 17,
-      "seasonPoints": 1,
+      "seasonPoints": 2,
       "managerId": 1501,
       "playerName": "Szoboszlai"
     },
@@ -376,7 +376,7 @@
     },
     {
       "pickNumber": 53,
-      "seasonPoints": 1,
+      "seasonPoints": 10,
       "managerId": 26227,
       "playerName": "Gakpo"
     },
@@ -442,7 +442,7 @@
     },
     {
       "pickNumber": 64,
-      "seasonPoints": 0,
+      "seasonPoints": 1,
       "managerId": 10210,
       "playerName": "Munoz"
     },
@@ -472,7 +472,7 @@
     },
     {
       "pickNumber": 69,
-      "seasonPoints": 6,
+      "seasonPoints": 4,
       "managerId": 1530,
       "playerName": "Osula"
     },
@@ -544,7 +544,7 @@
     },
     {
       "pickNumber": 81,
-      "seasonPoints": 0,
+      "seasonPoints": 4,
       "managerId": 10210,
       "playerName": "Wissa"
     },
@@ -568,13 +568,13 @@
     },
     {
       "pickNumber": 85,
-      "seasonPoints": 1,
+      "seasonPoints": 4,
       "managerId": 1377,
       "playerName": "Thiaw"
     },
     {
       "pickNumber": 86,
-      "seasonPoints": 1,
+      "seasonPoints": 2,
       "managerId": 99786,
       "playerName": "Barnes"
     },
@@ -790,7 +790,7 @@
     },
     {
       "pickNumber": 122,
-      "seasonPoints": 0,
+      "seasonPoints": 1,
       "managerId": 29975,
       "playerName": "Araujo"
     },
@@ -832,7 +832,7 @@
     },
     {
       "pickNumber": 129,
-      "seasonPoints": 9,
+      "seasonPoints": 10,
       "managerId": 10210,
       "playerName": "Elanga"
     },
@@ -844,7 +844,7 @@
     },
     {
       "pickNumber": 131,
-      "seasonPoints": 1,
+      "seasonPoints": 6,
       "managerId": 99786,
       "playerName": "Gravenberch"
     },
@@ -910,7 +910,7 @@
     },
     {
       "pickNumber": 142,
-      "seasonPoints": 1,
+      "seasonPoints": 2,
       "managerId": 10375,
       "playerName": "Ngumoha"
     },
@@ -922,7 +922,7 @@
     },
     {
       "pickNumber": 144,
-      "seasonPoints": 2,
+      "seasonPoints": 3,
       "managerId": 1857,
       "playerName": "Horníček"
     },
@@ -934,7 +934,7 @@
     },
     {
       "pickNumber": 146,
-      "seasonPoints": 1,
+      "seasonPoints": 4,
       "managerId": 29975,
       "playerName": "Hall"
     },
