@@ -11,14 +11,9 @@
       "draftTeamPoints": 42
     },
     {
-      "managerId": 1377,
-      "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 35
-    },
-    {
-      "managerId": 1471,
-      "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 33
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "draftTeamPoints": 36
     },
     {
       "managerId": 1947,
@@ -26,8 +21,13 @@
       "draftTeamPoints": 33
     },
     {
-      "managerId": 10375,
-      "managerName": "NEEN FC",
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "draftTeamPoints": 32
+    },
+    {
+      "managerId": 1471,
+      "managerName": "🥶CPR🥶",
       "draftTeamPoints": 32
     },
     {
@@ -36,14 +36,14 @@
       "draftTeamPoints": 30
     },
     {
-      "managerId": 99786,
-      "managerName": "Patso Ball Fc",
+      "managerId": 10375,
+      "managerName": "NEEN FC",
       "draftTeamPoints": 30
     },
     {
-      "managerId": 1425,
-      "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 28
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
+      "draftTeamPoints": 30
     },
     {
       "managerId": 1530,
@@ -250,7 +250,7 @@
     },
     {
       "pickNumber": 32,
-      "seasonPoints": 1,
+      "seasonPoints": 4,
       "managerId": 1501,
       "playerName": "Evanilson"
     },
@@ -262,7 +262,7 @@
     },
     {
       "pickNumber": 34,
-      "seasonPoints": 4,
+      "seasonPoints": 3,
       "managerId": 1471,
       "playerName": "Foden"
     },
@@ -364,7 +364,7 @@
     },
     {
       "pickNumber": 51,
-      "seasonPoints": 2,
+      "seasonPoints": 1,
       "managerId": 10375,
       "playerName": "Donnarumma"
     },
@@ -460,7 +460,7 @@
     },
     {
       "pickNumber": 67,
-      "seasonPoints": 1,
+      "seasonPoints": 9,
       "managerId": 1425,
       "playerName": "Tavernier"
     },
@@ -562,7 +562,7 @@
     },
     {
       "pickNumber": 84,
-      "seasonPoints": 7,
+      "seasonPoints": 4,
       "managerId": 1377,
       "playerName": "Georginio"
     },
@@ -796,7 +796,7 @@
     },
     {
       "pickNumber": 123,
-      "seasonPoints": 0,
+      "seasonPoints": -1,
       "managerId": 10375,
       "playerName": "Cash"
     },
@@ -826,7 +826,7 @@
     },
     {
       "pickNumber": 128,
-      "seasonPoints": 0,
+      "seasonPoints": -1,
       "managerId": 1501,
       "playerName": "Maatsen"
     },
@@ -1024,7 +1024,7 @@
     },
     {
       "pickNumber": 161,
-      "seasonPoints": 3,
+      "seasonPoints": 1,
       "managerId": 1501,
       "playerName": "Petrović"
     },
