@@ -1,6 +1,11 @@
 {
   "leaderboard": [
     {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "draftTeamPoints": 56
+    },
+    {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
       "draftTeamPoints": 54
@@ -13,12 +18,7 @@
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "draftTeamPoints": 48
-    },
-    {
-      "managerId": 1425,
-      "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 47
+      "draftTeamPoints": 49
     },
     {
       "managerId": 1947,
@@ -28,7 +28,12 @@
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 39
+      "draftTeamPoints": 40
+    },
+    {
+      "managerId": 1471,
+      "managerName": "🥶CPR🥶",
+      "draftTeamPoints": 38
     },
     {
       "managerId": 26227,
@@ -46,14 +51,9 @@
       "draftTeamPoints": 36
     },
     {
-      "managerId": 1471,
-      "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 35
-    },
-    {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "draftTeamPoints": 27
+      "draftTeamPoints": 34
     },
     {
       "managerId": 29975,
@@ -82,7 +82,7 @@
     },
     {
       "pickNumber": 4,
-      "seasonPoints": 0,
+      "seasonPoints": 6,
       "managerId": 1530,
       "playerName": "Palmer"
     },
@@ -94,7 +94,7 @@
     },
     {
       "pickNumber": 6,
-      "seasonPoints": 0,
+      "seasonPoints": 8,
       "managerId": 1425,
       "playerName": "João Pedro"
     },
@@ -148,7 +148,7 @@
     },
     {
       "pickNumber": 15,
-      "seasonPoints": 0,
+      "seasonPoints": 2,
       "managerId": 1471,
       "playerName": "Rogers"
     },
@@ -382,7 +382,7 @@
     },
     {
       "pickNumber": 54,
-      "seasonPoints": 0,
+      "seasonPoints": 1,
       "managerId": 1425,
       "playerName": "Lacroix"
     },
@@ -496,7 +496,7 @@
     },
     {
       "pickNumber": 73,
-      "seasonPoints": 0,
+      "seasonPoints": 1,
       "managerId": 1857,
       "playerName": "James"
     },
@@ -580,7 +580,7 @@
     },
     {
       "pickNumber": 87,
-      "seasonPoints": 0,
+      "seasonPoints": 1,
       "managerId": 1471,
       "playerName": "Gonzalo"
     },
@@ -658,7 +658,7 @@
     },
     {
       "pickNumber": 100,
-      "seasonPoints": 0,
+      "seasonPoints": 1,
       "managerId": 1530,
       "playerName": "Sánchez"
     },
@@ -1000,7 +1000,7 @@
     },
     {
       "pickNumber": 157,
-      "seasonPoints": 0,
+      "seasonPoints": 1,
       "managerId": 1377,
       "playerName": "Leno"
     },
