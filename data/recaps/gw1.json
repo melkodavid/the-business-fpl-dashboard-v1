@@ -1,0 +1,83 @@
+{
+  "gw": 1,
+  "headline": {
+    "type": "record-high-gw",
+    "personKeys": [
+      "carmine"
+    ],
+    "text": "New season high: Carmine Francella drops 51.",
+    "facts": {
+      "managerId": 1501,
+      "score": 51
+    },
+    "gw": 1
+  },
+  "secondaries": [
+    {
+      "type": "record-high-gw",
+      "personKeys": [
+        "ibrahim"
+      ],
+      "text": "New season high: Abe drops 48.",
+      "facts": {
+        "managerId": 10210,
+        "score": 48
+      },
+      "gw": 1
+    },
+    {
+      "type": "record-high-gw",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "Noah Palladino just posted the best score of the season: 68.",
+      "facts": {
+        "managerId": 1425,
+        "score": 68
+      },
+      "gw": 1
+    },
+    {
+      "type": "record-closest",
+      "personKeys": [
+        "ibrahim",
+        "lu"
+      ],
+      "text": "Closest match of the season: Ibrahim Abdulnour over Lu Palladino by 13.",
+      "facts": {
+        "winnerId": 10210,
+        "loserId": 1377,
+        "margin": 13
+      },
+      "gw": 1
+    },
+    {
+      "type": "record-closest",
+      "personKeys": [
+        "david",
+        "pat"
+      ],
+      "text": "2 points. That's how close David Melko vs. Pat Takala was.",
+      "facts": {
+        "winnerId": 1857,
+        "loserId": 26227,
+        "margin": 2
+      },
+      "gw": 1
+    },
+    {
+      "type": "record-blowout",
+      "personKeys": [
+        "ibrahim",
+        "lu"
+      ],
+      "text": "Ibrahim Abdulnour didn't just beat Lu -- they took them behind the bushes.",
+      "facts": {
+        "winnerId": 10210,
+        "loserId": 1377,
+        "margin": 13
+      },
+      "gw": 1
+    }
+  ]
+}

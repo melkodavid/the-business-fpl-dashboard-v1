@@ -1,17 +1,150 @@
 {
-  "pickups": [],
-  "hitRateLeaderboard": [
+  "pickups": [
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "totalPickups": 0,
-      "hits": 0,
-      "hitRate": 0
+      "elementId": 593,
+      "playerName": "David",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 6,
+      "pointsPerGw": 6,
+      "isHit": true
+    },
+    {
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "elementId": 497,
+      "playerName": "Dubravka",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 110,
+      "playerName": "Rushworth",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 431,
+      "playerName": "Amad",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 2,
+      "pointsPerGw": 2,
+      "isHit": false
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 232,
+      "playerName": "O'Brien",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "elementId": 403,
+      "playerName": "Savinho",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
     },
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "totalPickups": 0,
+      "elementId": 123,
+      "playerName": "Hinshelwood",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 2,
+      "pointsPerGw": 2,
+      "isHit": false
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "elementId": 56,
+      "playerName": "Abraham",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "elementId": 129,
+      "playerName": "Ayari",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 2,
+      "pointsPerGw": 2,
+      "isHit": false
+    },
+    {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "elementId": 27,
+      "playerName": "G.Jesus",
+      "kind": "f",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "elementId": 153,
+      "playerName": "Disasi",
+      "kind": "f",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    }
+  ],
+  "hitRateLeaderboard": [
+    {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "totalPickups": 1,
+      "hits": 1,
+      "hitRate": 1
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "totalPickups": 2,
       "hits": 0,
       "hitRate": 0
     },
@@ -25,7 +158,7 @@
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "totalPickups": 0,
+      "totalPickups": 1,
       "hits": 0,
       "hitRate": 0
     },
@@ -39,7 +172,7 @@
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "totalPickups": 0,
+      "totalPickups": 1,
       "hits": 0,
       "hitRate": 0
     },
@@ -53,28 +186,28 @@
     {
       "managerId": 10210,
       "managerName": "Syria FC**",
-      "totalPickups": 0,
+      "totalPickups": 2,
       "hits": 0,
       "hitRate": 0
     },
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "totalPickups": 0,
+      "totalPickups": 1,
       "hits": 0,
       "hitRate": 0
     },
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
-      "totalPickups": 0,
+      "totalPickups": 2,
       "hits": 0,
       "hitRate": 0
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "totalPickups": 0,
+      "totalPickups": 1,
       "hits": 0,
       "hitRate": 0
     },
@@ -86,7 +219,273 @@
       "hitRate": 0
     }
   ],
-  "bestPickups": [],
+  "bestPickups": [
+    {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "elementId": 593,
+      "playerName": "David",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 6,
+      "pointsPerGw": 6,
+      "isHit": true
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 431,
+      "playerName": "Amad",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 2,
+      "pointsPerGw": 2,
+      "isHit": false
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "elementId": 123,
+      "playerName": "Hinshelwood",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 2,
+      "pointsPerGw": 2,
+      "isHit": false
+    },
+    {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "elementId": 129,
+      "playerName": "Ayari",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 2,
+      "pointsPerGw": 2,
+      "isHit": false
+    },
+    {
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "elementId": 497,
+      "playerName": "Dubravka",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 110,
+      "playerName": "Rushworth",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 232,
+      "playerName": "O'Brien",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "elementId": 403,
+      "playerName": "Savinho",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "elementId": 56,
+      "playerName": "Abraham",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "elementId": 27,
+      "playerName": "G.Jesus",
+      "kind": "f",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "elementId": 153,
+      "playerName": "Disasi",
+      "kind": "f",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    }
+  ],
   "mostEfficient": [],
-  "bestOneWeekPunts": []
+  "bestOneWeekPunts": [
+    {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "elementId": 593,
+      "playerName": "David",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 6,
+      "pointsPerGw": 6,
+      "isHit": true
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 431,
+      "playerName": "Amad",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 2,
+      "pointsPerGw": 2,
+      "isHit": false
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "elementId": 123,
+      "playerName": "Hinshelwood",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 2,
+      "pointsPerGw": 2,
+      "isHit": false
+    },
+    {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "elementId": 129,
+      "playerName": "Ayari",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 2,
+      "pointsPerGw": 2,
+      "isHit": false
+    },
+    {
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "elementId": 497,
+      "playerName": "Dubravka",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 110,
+      "playerName": "Rushworth",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 232,
+      "playerName": "O'Brien",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "elementId": 403,
+      "playerName": "Savinho",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "elementId": 56,
+      "playerName": "Abraham",
+      "kind": "w",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "elementId": 27,
+      "playerName": "G.Jesus",
+      "kind": "f",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "elementId": 153,
+      "playerName": "Disasi",
+      "kind": "f",
+      "acquiredGw": 1,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    }
+  ]
 }
