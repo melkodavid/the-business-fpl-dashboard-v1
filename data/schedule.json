@@ -10,7 +10,7 @@
       "awayRank": 1,
       "homePoints": 0,
       "awayPoints": 0,
-      "started": false,
+      "started": true,
       "finished": false,
       "importance": 3.82,
       "tag": "Title Six-Pointer"
@@ -23,7 +23,7 @@
       "awayRank": 12,
       "homePoints": 0,
       "awayPoints": 0,
-      "started": false,
+      "started": true,
       "finished": false,
       "importance": 3.82,
       "tag": "Title Six-Pointer"
@@ -36,7 +36,7 @@
       "awayRank": 3,
       "homePoints": 0,
       "awayPoints": 0,
-      "started": false,
+      "started": true,
       "finished": false,
       "importance": 3,
       "tag": "Title Six-Pointer"
@@ -49,7 +49,7 @@
       "awayRank": 9,
       "homePoints": 0,
       "awayPoints": 0,
-      "started": false,
+      "started": true,
       "finished": false,
       "importance": 1.33,
       "tag": "Midtable Clash"
@@ -62,7 +62,7 @@
       "awayRank": 8,
       "homePoints": 0,
       "awayPoints": 0,
-      "started": false,
+      "started": true,
       "finished": false,
       "importance": 1.06,
       "tag": "Midtable Clash"
@@ -75,7 +75,7 @@
       "awayRank": 9,
       "homePoints": 0,
       "awayPoints": 0,
-      "started": false,
+      "started": true,
       "finished": false,
       "importance": 0.89,
       "tag": "Midtable Clash"
