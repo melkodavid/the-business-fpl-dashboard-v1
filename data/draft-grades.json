@@ -18,7 +18,7 @@
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 78
+      "draftTeamPoints": 76
     },
     {
       "managerId": 1471,
@@ -460,7 +460,7 @@
     },
     {
       "pickNumber": 67,
-      "seasonPoints": 13,
+      "seasonPoints": 11,
       "managerId": 1425,
       "playerName": "Tavernier"
     },
