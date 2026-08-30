@@ -33,7 +33,7 @@
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
-      "draftTeamPoints": 83
+      "draftTeamPoints": 81
     },
     {
       "managerId": 29975,
@@ -43,16 +43,16 @@
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "draftTeamPoints": 73
-    },
-    {
-      "managerId": 1377,
-      "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 68
+      "draftTeamPoints": 75
     },
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
+      "draftTeamPoints": 71
+    },
+    {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
       "draftTeamPoints": 68
     },
     {
@@ -652,7 +652,7 @@
     },
     {
       "pickNumber": 99,
-      "seasonPoints": 12,
+      "seasonPoints": 15,
       "managerId": 10375,
       "playerName": "Xhaka"
     },
@@ -808,7 +808,7 @@
     },
     {
       "pickNumber": 125,
-      "seasonPoints": 11,
+      "seasonPoints": 9,
       "managerId": 26227,
       "playerName": "Mukiele"
     },
@@ -946,7 +946,7 @@
     },
     {
       "pickNumber": 148,
-      "seasonPoints": 6,
+      "seasonPoints": 8,
       "managerId": 1530,
       "playerName": "Ballard"
     },
