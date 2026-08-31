@@ -1,58 +1,21 @@
 {
-  "gauntletWatch": {
-    "type": "gauntlet-watch",
-    "personKeys": [
-      "carmine"
-    ],
-    "facts": {
-      "managerId": 1501,
-      "startGw": 4,
-      "length": 3,
-      "opponentIds": [
-        1425,
-        1530,
-        1377
-      ]
-    },
-    "gw": 1
-  },
-  "lifeAfterMark": {
-    "type": "lu-post-mark-tracker",
-    "personKeys": [
-      "lu"
-    ],
-    "facts": {
-      "managerId": 1377,
-      "rank": 11,
-      "total": 0
-    },
-    "gw": 1
-  },
+  "gauntletWatch": null,
+  "lifeAfterMark": null,
   "generationWar": {
     "matrix": {
-      "01s|97s": {
-        "wins": 2,
-        "draws": 0,
-        "losses": 1
-      },
       "97s|01s": {
         "wins": 1,
         "draws": 0,
-        "losses": 2
-      },
-      "2000s|ancient": {
-        "wins": 0,
-        "draws": 0,
         "losses": 1
       },
-      "ancient|2000s": {
+      "01s|97s": {
         "wins": 1,
         "draws": 0,
-        "losses": 0
+        "losses": 1
       }
     },
     "oneOhOnesVsRest": {
-      "wins": 2,
+      "wins": 1,
       "draws": 0,
       "losses": 1
     }
