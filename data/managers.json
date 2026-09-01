@@ -18,7 +18,7 @@
       "personKey": "noah",
       "color": "#9b51e0",
       "abbreviation": "NOA",
-      "titles": 1
+      "titles": 0
     },
     {
       "id": 1471,
@@ -38,7 +38,7 @@
       "personKey": "carmine",
       "color": "#26a69a",
       "abbreviation": "CAR",
-      "titles": 0
+      "titles": 1
     },
     {
       "id": 1530,
@@ -84,8 +84,8 @@
       "id": 10375,
       "name": "ZZZZZZZZZZZZZZZZZZZZ",
       "shortName": "ZZ1",
-      "playerName": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
-      "personKey": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "playerName": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "personKey": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
       "color": null,
       "abbreviation": "ZZ1",
       "titles": 0

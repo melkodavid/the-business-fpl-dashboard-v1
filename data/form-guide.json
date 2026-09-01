@@ -1,197 +1,269 @@
 {
   "rows": [
     {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "gwsIncluded": [
+        1,
+        2
+      ],
+      "results": [
+        {
+          "gw": 1,
+          "result": "W",
+          "points": 51
+        },
+        {
+          "gw": 2,
+          "result": "W",
+          "points": 71
+        }
+      ],
+      "avgPoints": 61,
+      "diffFromLeagueAvg": 18.3
+    },
+    {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
       "gwsIncluded": [
-        1
+        1,
+        2
       ],
       "results": [
         {
           "gw": 1,
           "result": "W",
           "points": 68
+        },
+        {
+          "gw": 2,
+          "result": "W",
+          "points": 32
         }
       ],
-      "avgPoints": 68,
-      "diffFromLeagueAvg": 26.5
+      "avgPoints": 50,
+      "diffFromLeagueAvg": 7.3
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
       "gwsIncluded": [
-        1
+        1,
+        2
       ],
       "results": [
         {
           "gw": 1,
           "result": "L",
           "points": 51
-        }
-      ],
-      "avgPoints": 51,
-      "diffFromLeagueAvg": 9.5
-    },
-    {
-      "managerId": 1501,
-      "managerName": "Set Piece Fc",
-      "gwsIncluded": [
-        1
-      ],
-      "results": [
+        },
         {
-          "gw": 1,
+          "gw": 2,
           "result": "W",
-          "points": 51
+          "points": 49
         }
       ],
-      "avgPoints": 51,
-      "diffFromLeagueAvg": 9.5
-    },
-    {
-      "managerId": 10210,
-      "managerName": "Syria FC**",
-      "gwsIncluded": [
-        1
-      ],
-      "results": [
-        {
-          "gw": 1,
-          "result": "W",
-          "points": 48
-        }
-      ],
-      "avgPoints": 48,
-      "diffFromLeagueAvg": 6.5
-    },
-    {
-      "managerId": 1857,
-      "managerName": "i can fix him*",
-      "gwsIncluded": [
-        1
-      ],
-      "results": [
-        {
-          "gw": 1,
-          "result": "W",
-          "points": 40
-        }
-      ],
-      "avgPoints": 40,
-      "diffFromLeagueAvg": -1.5
-    },
-    {
-      "managerId": 1947,
-      "managerName": "FC General",
-      "gwsIncluded": [
-        1
-      ],
-      "results": [
-        {
-          "gw": 1,
-          "result": "W",
-          "points": 40
-        }
-      ],
-      "avgPoints": 40,
-      "diffFromLeagueAvg": -1.5
+      "avgPoints": 50,
+      "diffFromLeagueAvg": 7.3
     },
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
       "gwsIncluded": [
-        1
+        1,
+        2
       ],
       "results": [
         {
           "gw": 1,
           "result": "L",
           "points": 38
+        },
+        {
+          "gw": 2,
+          "result": "W",
+          "points": 62
         }
       ],
-      "avgPoints": 38,
-      "diffFromLeagueAvg": -3.5
+      "avgPoints": 50,
+      "diffFromLeagueAvg": 7.3
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "gwsIncluded": [
+        1,
+        2
+      ],
+      "results": [
+        {
+          "gw": 1,
+          "result": "W",
+          "points": 48
+        },
+        {
+          "gw": 2,
+          "result": "W",
+          "points": 44
+        }
+      ],
+      "avgPoints": 46,
+      "diffFromLeagueAvg": 3.3
+    },
+    {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "gwsIncluded": [
+        1,
+        2
+      ],
+      "results": [
+        {
+          "gw": 1,
+          "result": "W",
+          "points": 40
+        },
+        {
+          "gw": 2,
+          "result": "W",
+          "points": 47
+        }
+      ],
+      "avgPoints": 43.5,
+      "diffFromLeagueAvg": 0.8
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
       "gwsIncluded": [
-        1
+        1,
+        2
       ],
       "results": [
         {
           "gw": 1,
           "result": "W",
           "points": 37
+        },
+        {
+          "gw": 2,
+          "result": "L",
+          "points": 45
         }
       ],
-      "avgPoints": 37,
-      "diffFromLeagueAvg": -4.5
+      "avgPoints": 41,
+      "diffFromLeagueAvg": -1.7
     },
     {
-      "managerId": 10375,
-      "managerName": "ZZZZZZZZZZZZZZZZZZZZ",
+      "managerId": 1947,
+      "managerName": "FC General",
       "gwsIncluded": [
-        1
+        1,
+        2
       ],
       "results": [
         {
           "gw": 1,
+          "result": "W",
+          "points": 40
+        },
+        {
+          "gw": 2,
           "result": "L",
-          "points": 36
+          "points": 40
         }
       ],
-      "avgPoints": 36,
-      "diffFromLeagueAvg": -5.5
+      "avgPoints": 40,
+      "diffFromLeagueAvg": -2.7
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
       "gwsIncluded": [
-        1
+        1,
+        2
       ],
       "results": [
         {
           "gw": 1,
           "result": "L",
           "points": 36
+        },
+        {
+          "gw": 2,
+          "result": "L",
+          "points": 32
         }
       ],
-      "avgPoints": 36,
-      "diffFromLeagueAvg": -5.5
+      "avgPoints": 34,
+      "diffFromLeagueAvg": -8.7
     },
     {
       "managerId": 1377,
       "managerName": "ZZZZZZZZZZZZZZZZZZZZ",
       "gwsIncluded": [
-        1
+        1,
+        2
       ],
       "results": [
         {
           "gw": 1,
           "result": "L",
           "points": 35
+        },
+        {
+          "gw": 2,
+          "result": "L",
+          "points": 30
         }
       ],
-      "avgPoints": 35,
-      "diffFromLeagueAvg": -6.5
+      "avgPoints": 32.5,
+      "diffFromLeagueAvg": -10.2
+    },
+    {
+      "managerId": 10375,
+      "managerName": "ZZZZZZZZZZZZZZZZZZZZ",
+      "gwsIncluded": [
+        1,
+        2
+      ],
+      "results": [
+        {
+          "gw": 1,
+          "result": "L",
+          "points": 36
+        },
+        {
+          "gw": 2,
+          "result": "L",
+          "points": 29
+        }
+      ],
+      "avgPoints": 32.5,
+      "diffFromLeagueAvg": -10.2
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
       "gwsIncluded": [
-        1
+        1,
+        2
       ],
       "results": [
         {
           "gw": 1,
           "result": "L",
           "points": 18
+        },
+        {
+          "gw": 2,
+          "result": "L",
+          "points": 47
         }
       ],
-      "avgPoints": 18,
-      "diffFromLeagueAvg": -23.5
+      "avgPoints": 32.5,
+      "diffFromLeagueAvg": -10.2
     }
   ],
-  "leagueAvgPoints": 41.5
+  "leagueAvgPoints": 42.8
 }

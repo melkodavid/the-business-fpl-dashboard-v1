@@ -1,0 +1,81 @@
+{
+  "gw": 2,
+  "headline": {
+    "type": "table-new-leader",
+    "personKeys": [
+      "carmine",
+      "noah"
+    ],
+    "text": "The table has a new #1: Carmine Francella.",
+    "facts": {
+      "newLeaderId": 1501,
+      "previousLeaderId": 1425
+    },
+    "gw": 2
+  },
+  "secondaries": [
+    {
+      "type": "belt-changed-hands",
+      "personKeys": [
+        "lu",
+        "carmine"
+      ],
+      "text": "After a season carrying it, lu hands the Belt to Carmine Francella.",
+      "facts": {
+        "beltHolderKey": "lu",
+        "newChampionKey": "carmine"
+      },
+      "gw": 2
+    },
+    {
+      "type": "record-blowout",
+      "personKeys": [
+        "carmine",
+        "zac"
+      ],
+      "text": "24-point beatdown: Carmine Francella over Zac Collins. No mercy.",
+      "facts": {
+        "winnerId": 1501,
+        "loserId": 29975,
+        "margin": 24
+      },
+      "gw": 2
+    },
+    {
+      "type": "record-low-win",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "Noah Palladino won this week with just 32 points.",
+      "facts": {
+        "managerId": 1425,
+        "score": 32
+      },
+      "gw": 2
+    },
+    {
+      "type": "record-high-gw",
+      "personKeys": [
+        "carmine"
+      ],
+      "text": "71 points. Carmine Francella. Season high.",
+      "facts": {
+        "managerId": 1501,
+        "score": 71
+      },
+      "gw": 2
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "The 97s swept every cross-generation matchup this week, 1-0.",
+      "facts": {
+        "generation": "97s",
+        "count": 1
+      },
+      "gw": 2
+    }
+  ]
+}

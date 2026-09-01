@@ -1,6 +1,7 @@
 {
   "perGw": {
-    "1": []
+    "1": [],
+    "2": []
   },
   "standings": [
     {
@@ -14,22 +15,22 @@
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
       "expectedWins": 0,
-      "actualWins": 1,
-      "luckScore": 1
+      "actualWins": 2,
+      "luckScore": 2
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
       "expectedWins": 0,
-      "actualWins": 0,
-      "luckScore": 0
+      "actualWins": 1,
+      "luckScore": 1
     },
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
       "expectedWins": 0,
-      "actualWins": 1,
-      "luckScore": 1
+      "actualWins": 2,
+      "luckScore": 2
     },
     {
       "managerId": 1530,
@@ -42,8 +43,8 @@
       "managerId": 1857,
       "managerName": "i can fix him*",
       "expectedWins": 0,
-      "actualWins": 1,
-      "luckScore": 1
+      "actualWins": 2,
+      "luckScore": 2
     },
     {
       "managerId": 1947,
@@ -56,8 +57,8 @@
       "managerId": 10210,
       "managerName": "Syria FC**",
       "expectedWins": 0,
-      "actualWins": 1,
-      "luckScore": 1
+      "actualWins": 2,
+      "luckScore": 2
     },
     {
       "managerId": 10375,
@@ -70,8 +71,8 @@
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
       "expectedWins": 0,
-      "actualWins": 0,
-      "luckScore": 0
+      "actualWins": 1,
+      "luckScore": 1
     },
     {
       "managerId": 29975,

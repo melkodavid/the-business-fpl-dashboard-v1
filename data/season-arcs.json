@@ -4,20 +4,40 @@
   "generationWar": {
     "matrix": {
       "97s|01s": {
-        "wins": 1,
+        "wins": 2,
         "draws": 0,
         "losses": 1
       },
       "01s|97s": {
         "wins": 1,
         "draws": 0,
+        "losses": 2
+      },
+      "01s|2000s": {
+        "wins": 1,
+        "draws": 0,
+        "losses": 0
+      },
+      "2000s|01s": {
+        "wins": 0,
+        "draws": 0,
         "losses": 1
+      },
+      "ancient|01s": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 1
+      },
+      "01s|ancient": {
+        "wins": 1,
+        "draws": 0,
+        "losses": 0
       }
     },
     "oneOhOnesVsRest": {
-      "wins": 1,
+      "wins": 3,
       "draws": 0,
-      "losses": 1
+      "losses": 2
     }
   }
 }
