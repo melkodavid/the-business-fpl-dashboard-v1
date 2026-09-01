@@ -263,6 +263,92 @@
           "netValue": 0
         }
       ]
+    },
+    {
+      "tradeId": 155857,
+      "gw": 3,
+      "sides": [
+        {
+          "managerId": 1377,
+          "received": [
+            {
+              "elementId": 391,
+              "playerName": "Gvardiol",
+              "points": 0
+            },
+            {
+              "elementId": 244,
+              "playerName": "Armstrong",
+              "points": 0
+            },
+            {
+              "elementId": 527,
+              "playerName": "Richarlison",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 472,
+              "playerName": "Murillo",
+              "points": 0
+            },
+            {
+              "elementId": 67,
+              "playerName": "Rayan",
+              "points": 0
+            },
+            {
+              "elementId": 125,
+              "playerName": "Georginio",
+              "points": 0
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0
+        },
+        {
+          "managerId": 1947,
+          "received": [
+            {
+              "elementId": 472,
+              "playerName": "Murillo",
+              "points": 0
+            },
+            {
+              "elementId": 67,
+              "playerName": "Rayan",
+              "points": 0
+            },
+            {
+              "elementId": 125,
+              "playerName": "Georginio",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 391,
+              "playerName": "Gvardiol",
+              "points": 0
+            },
+            {
+              "elementId": 244,
+              "playerName": "Armstrong",
+              "points": 0
+            },
+            {
+              "elementId": 527,
+              "playerName": "Richarlison",
+              "points": 0
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0
+        }
+      ]
     }
   ],
   "leaderboard": [
