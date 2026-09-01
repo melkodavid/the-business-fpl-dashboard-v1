@@ -217,6 +217,52 @@
           "netValue": 4
         }
       ]
+    },
+    {
+      "tradeId": 155002,
+      "gw": 3,
+      "sides": [
+        {
+          "managerId": 1377,
+          "received": [
+            {
+              "elementId": 67,
+              "playerName": "Rayan",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 41,
+              "playerName": "Buendía",
+              "points": 0
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0
+        },
+        {
+          "managerId": 29975,
+          "received": [
+            {
+              "elementId": 41,
+              "playerName": "Buendía",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 67,
+              "playerName": "Rayan",
+              "points": 0
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0
+        }
+      ]
     }
   ],
   "leaderboard": [
