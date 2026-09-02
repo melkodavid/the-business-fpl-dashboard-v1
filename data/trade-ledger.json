@@ -349,6 +349,52 @@
           "netValue": 0
         }
       ]
+    },
+    {
+      "tradeId": 167473,
+      "gw": 3,
+      "sides": [
+        {
+          "managerId": 29975,
+          "received": [
+            {
+              "elementId": 532,
+              "playerName": "Ballard",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 357,
+              "playerName": "Frimpong",
+              "points": 0
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0
+        },
+        {
+          "managerId": 1530,
+          "received": [
+            {
+              "elementId": 357,
+              "playerName": "Frimpong",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 532,
+              "playerName": "Ballard",
+              "points": 0
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0
+        }
+      ]
     }
   ],
   "leaderboard": [
