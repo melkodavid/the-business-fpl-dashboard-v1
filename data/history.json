@@ -1224,9 +1224,9 @@
         },
         {
           "rank": 10,
-          "team": "ZZZZZZZZZZZZZZZZZZZZ",
-          "manager": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
-          "managerKey": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+          "team": "Lu’s Rules FC ****",
+          "manager": "Lu Palladino",
+          "managerKey": "lu",
           "w": 0,
           "d": 0,
           "l": 2,
@@ -1250,19 +1250,19 @@
     {
       "managerKey": "lu",
       "displayName": "Lucas",
-      "seasons": 8,
+      "seasons": 9,
       "titles": 4,
       "top4": 5,
-      "bottom3": 0,
+      "bottom3": 1,
       "lastPlace": 0,
-      "rankSum": 26,
+      "rankSum": 36,
       "bestRank": 1,
-      "pointsForSum": 13245,
+      "pointsForSum": 13310,
       "pointsSum": 557,
       "wSum": 184,
       "dSum": 5,
-      "lSum": 111,
-      "avgRank": 3.3
+      "lSum": 113,
+      "avgRank": 4
     },
     {
       "managerKey": "ibrahim",
@@ -1622,23 +1622,6 @@
       "avgRank": 10
     },
     {
-      "managerKey": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
-      "displayName": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
-      "seasons": 1,
-      "titles": 0,
-      "top4": 0,
-      "bottom3": 1,
-      "lastPlace": 0,
-      "rankSum": 10,
-      "bestRank": 10,
-      "pointsForSum": 65,
-      "pointsSum": 0,
-      "wSum": 0,
-      "dSum": 0,
-      "lSum": 2,
-      "avgRank": 10
-    },
-    {
       "managerKey": "matt",
       "displayName": "Matt",
       "seasons": 1,
@@ -1742,14 +1725,14 @@
     {
       "managerKey": "lu",
       "displayName": "Lucas",
-      "seasons": 8,
+      "seasons": 9,
       "titles": 4,
       "w": 184,
       "d": 5,
-      "l": 111,
-      "wlDiff": 73,
-      "winPct": 61.3,
-      "pointsFor": 13245,
+      "l": 113,
+      "wlDiff": 71,
+      "winPct": 60.9,
+      "pointsFor": 13310,
       "points": 557
     },
     {
@@ -2028,19 +2011,6 @@
     {
       "managerKey": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
       "displayName": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
-      "seasons": 1,
-      "titles": 0,
-      "w": 0,
-      "d": 0,
-      "l": 2,
-      "wlDiff": -2,
-      "winPct": 0,
-      "pointsFor": 65,
-      "points": 0
-    },
-    {
-      "managerKey": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
-      "displayName": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
       "seasons": 1,
       "titles": 0,
       "w": 0,

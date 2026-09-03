@@ -395,6 +395,92 @@
           "netValue": 0
         }
       ]
+    },
+    {
+      "tradeId": 175698,
+      "gw": 3,
+      "sides": [
+        {
+          "managerId": 1530,
+          "received": [
+            {
+              "elementId": 390,
+              "playerName": "Rúben",
+              "points": 0
+            },
+            {
+              "elementId": 210,
+              "playerName": "Wharton",
+              "points": 0
+            },
+            {
+              "elementId": 26,
+              "playerName": "Havertz",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 10,
+              "playerName": "White",
+              "points": 0
+            },
+            {
+              "elementId": 481,
+              "playerName": "Anderson",
+              "points": 0
+            },
+            {
+              "elementId": 55,
+              "playerName": "Watkins",
+              "points": 0
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0
+        },
+        {
+          "managerId": 1857,
+          "received": [
+            {
+              "elementId": 10,
+              "playerName": "White",
+              "points": 0
+            },
+            {
+              "elementId": 481,
+              "playerName": "Anderson",
+              "points": 0
+            },
+            {
+              "elementId": 55,
+              "playerName": "Watkins",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 390,
+              "playerName": "Rúben",
+              "points": 0
+            },
+            {
+              "elementId": 210,
+              "playerName": "Wharton",
+              "points": 0
+            },
+            {
+              "elementId": 26,
+              "playerName": "Havertz",
+              "points": 0
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0
+        }
+      ]
     }
   ],
   "leaderboard": [
@@ -450,7 +536,7 @@
     },
     {
       "managerId": 1377,
-      "managerName": "ZZZZZZZZZZZZZZZZZZZZ",
+      "managerName": "Lu’s Rules FC ****",
       "netTradeValue": -7
     },
     {

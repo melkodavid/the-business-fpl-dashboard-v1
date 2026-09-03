@@ -2,13 +2,13 @@
   "list": [
     {
       "id": 1377,
-      "name": "ZZZZZZZZZZZZZZZZZZZZ",
-      "shortName": "ZZ",
-      "playerName": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
-      "personKey": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
-      "color": null,
-      "abbreviation": "ZZ",
-      "titles": 0
+      "name": "Lu’s Rules FC ****",
+      "shortName": "LP",
+      "playerName": "Lu Palladino",
+      "personKey": "lu",
+      "color": "#2f6fed",
+      "abbreviation": "LUC",
+      "titles": 4
     },
     {
       "id": 1425,
@@ -83,11 +83,11 @@
     {
       "id": 10375,
       "name": "ZZZZZZZZZZZZZZZZZZZZ",
-      "shortName": "ZZ1",
+      "shortName": "ZZ",
       "playerName": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
       "personKey": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
       "color": null,
-      "abbreviation": "ZZ1",
+      "abbreviation": "ZZ",
       "titles": 0
     },
     {
