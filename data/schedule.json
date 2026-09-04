@@ -10,7 +10,7 @@
       "awayRank": 10,
       "homePoints": 0,
       "awayPoints": 0,
-      "started": false,
+      "started": true,
       "finished": false,
       "importance": 3.5,
       "tag": "Wooden Spoon Battle"
@@ -23,7 +23,7 @@
       "awayRank": 3,
       "homePoints": 0,
       "awayPoints": 0,
-      "started": false,
+      "started": true,
       "finished": false,
       "importance": 2.56,
       "tag": "Title Six-Pointer"
@@ -36,7 +36,7 @@
       "awayRank": 8,
       "homePoints": 0,
       "awayPoints": 0,
-      "started": false,
+      "started": true,
       "finished": false,
       "importance": 2.56,
       "tag": "Wooden Spoon Battle"
@@ -49,7 +49,7 @@
       "awayRank": 1,
       "homePoints": 0,
       "awayPoints": 0,
-      "started": false,
+      "started": true,
       "finished": false,
       "importance": 2.43,
       "tag": "Title Six-Pointer"
@@ -62,7 +62,7 @@
       "awayRank": 7,
       "homePoints": 0,
       "awayPoints": 0,
-      "started": false,
+      "started": true,
       "finished": false,
       "importance": 2.39,
       "tag": "Title Six-Pointer"
@@ -75,7 +75,7 @@
       "awayRank": 4,
       "homePoints": 0,
       "awayPoints": 0,
-      "started": false,
+      "started": true,
       "finished": false,
       "importance": 0.74,
       "tag": "Midtable Clash"
