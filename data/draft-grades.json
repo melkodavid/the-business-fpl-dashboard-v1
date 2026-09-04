@@ -1,14 +1,24 @@
 {
   "leaderboard": [
     {
-      "managerId": 1501,
-      "managerName": "Set Piece Fc",
-      "draftTeamPoints": 110
-    },
-    {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "draftTeamPoints": 108
+      "draftTeamPoints": 115
+    },
+    {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "draftTeamPoints": 112
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "draftTeamPoints": 106
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "draftTeamPoints": 105
     },
     {
       "managerId": 1471,
@@ -16,24 +26,24 @@
       "draftTeamPoints": 103
     },
     {
-      "managerId": 1425,
-      "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 101
-    },
-    {
       "managerId": 10210,
       "managerName": "Syria FC**",
-      "draftTeamPoints": 98
-    },
-    {
-      "managerId": 26227,
-      "managerName": "Mourinho’s Ego FT",
-      "draftTeamPoints": 98
+      "draftTeamPoints": 100
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 87
+      "draftTeamPoints": 92
+    },
+    {
+      "managerId": 10375,
+      "managerName": "ZZZZZZZZZZZZZZZZZZZZ",
+      "draftTeamPoints": 92
+    },
+    {
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "draftTeamPoints": 86
     },
     {
       "managerId": 1530,
@@ -41,24 +51,14 @@
       "draftTeamPoints": 83
     },
     {
-      "managerId": 29975,
-      "managerName": "Zacharias United",
-      "draftTeamPoints": 81
-    },
-    {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 80
-    },
-    {
-      "managerId": 10375,
-      "managerName": "ZZZZZZZZZZZZZZZZZZZZ",
-      "draftTeamPoints": 80
+      "draftTeamPoints": 82
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 72
+      "draftTeamPoints": 73
     }
   ],
   "scatter": [
@@ -76,7 +76,7 @@
     },
     {
       "pickNumber": 3,
-      "seasonPoints": 15,
+      "seasonPoints": 23,
       "managerId": 10375,
       "playerName": "Isak"
     },
@@ -130,7 +130,7 @@
     },
     {
       "pickNumber": 12,
-      "seasonPoints": 7,
+      "seasonPoints": 9,
       "managerId": 1377,
       "playerName": "Wirtz"
     },
@@ -160,7 +160,7 @@
     },
     {
       "pickNumber": 17,
-      "seasonPoints": 13,
+      "seasonPoints": 15,
       "managerId": 1501,
       "playerName": "Szoboszlai"
     },
@@ -244,7 +244,7 @@
     },
     {
       "pickNumber": 31,
-      "seasonPoints": 4,
+      "seasonPoints": 9,
       "managerId": 1947,
       "playerName": "Virgil"
     },
@@ -376,7 +376,7 @@
     },
     {
       "pickNumber": 53,
-      "seasonPoints": 21,
+      "seasonPoints": 28,
       "managerId": 26227,
       "playerName": "Gakpo"
     },
@@ -442,7 +442,7 @@
     },
     {
       "pickNumber": 64,
-      "seasonPoints": 11,
+      "seasonPoints": 13,
       "managerId": 10210,
       "playerName": "Munoz"
     },
@@ -508,7 +508,7 @@
     },
     {
       "pickNumber": 75,
-      "seasonPoints": 2,
+      "seasonPoints": 6,
       "managerId": 10375,
       "playerName": "Kerkez"
     },
@@ -640,7 +640,7 @@
     },
     {
       "pickNumber": 97,
-      "seasonPoints": 3,
+      "seasonPoints": 10,
       "managerId": 1857,
       "playerName": "A.Becker"
     },
@@ -790,7 +790,7 @@
     },
     {
       "pickNumber": 122,
-      "seasonPoints": 2,
+      "seasonPoints": 7,
       "managerId": 29975,
       "playerName": "Araujo"
     },
@@ -844,7 +844,7 @@
     },
     {
       "pickNumber": 131,
-      "seasonPoints": 6,
+      "seasonPoints": 7,
       "managerId": 99786,
       "playerName": "Gravenberch"
     },
@@ -892,7 +892,7 @@
     },
     {
       "pickNumber": 139,
-      "seasonPoints": 11,
+      "seasonPoints": 12,
       "managerId": 1425,
       "playerName": "Emersonn"
     },
@@ -958,7 +958,7 @@
     },
     {
       "pickNumber": 150,
-      "seasonPoints": 5,
+      "seasonPoints": 9,
       "managerId": 1425,
       "playerName": "Jacquet"
     },
