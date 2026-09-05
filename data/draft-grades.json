@@ -18,16 +18,21 @@
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "draftTeamPoints": 123
+      "draftTeamPoints": 130
     },
     {
-      "managerId": 1947,
-      "managerName": "FC General",
-      "draftTeamPoints": 119
+      "managerId": 10375,
+      "managerName": "ZZZZZZZZZZZZZZZZZZZZ",
+      "draftTeamPoints": 121
     },
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
+      "draftTeamPoints": 121
+    },
+    {
+      "managerId": 1947,
+      "managerName": "FC General",
       "draftTeamPoints": 119
     },
     {
@@ -41,11 +46,6 @@
       "draftTeamPoints": 114
     },
     {
-      "managerId": 10375,
-      "managerName": "ZZZZZZZZZZZZZZZZZZZZ",
-      "draftTeamPoints": 113
-    },
-    {
       "managerId": 29975,
       "managerName": "Zacharias United",
       "draftTeamPoints": 109
@@ -53,7 +53,7 @@
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 101
+      "draftTeamPoints": 104
     },
     {
       "managerId": 99786,
@@ -418,7 +418,7 @@
     },
     {
       "pickNumber": 60,
-      "seasonPoints": 4,
+      "seasonPoints": 7,
       "managerId": 1377,
       "playerName": "Buendía"
     },
@@ -664,7 +664,7 @@
     },
     {
       "pickNumber": 101,
-      "seasonPoints": 2,
+      "seasonPoints": 4,
       "managerId": 26227,
       "playerName": "N.Jackson"
     },
@@ -766,7 +766,7 @@
     },
     {
       "pickNumber": 118,
-      "seasonPoints": 6,
+      "seasonPoints": 8,
       "managerId": 10375,
       "playerName": "McBurnie"
     },
@@ -796,7 +796,7 @@
     },
     {
       "pickNumber": 123,
-      "seasonPoints": 1,
+      "seasonPoints": 7,
       "managerId": 10375,
       "playerName": "Cash"
     },
@@ -826,7 +826,7 @@
     },
     {
       "pickNumber": 128,
-      "seasonPoints": 1,
+      "seasonPoints": 8,
       "managerId": 1501,
       "playerName": "Maatsen"
     },
