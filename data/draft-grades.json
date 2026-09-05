@@ -3,12 +3,12 @@
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "draftTeamPoints": 153
+      "draftTeamPoints": 151
     },
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 147
+      "draftTeamPoints": 148
     },
     {
       "managerId": 1471,
@@ -21,11 +21,6 @@
       "draftTeamPoints": 130
     },
     {
-      "managerId": 10375,
-      "managerName": "ZZZZZZZZZZZZZZZZZZZZ",
-      "draftTeamPoints": 121
-    },
-    {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
       "draftTeamPoints": 121
@@ -33,6 +28,11 @@
     {
       "managerId": 1947,
       "managerName": "FC General",
+      "draftTeamPoints": 120
+    },
+    {
+      "managerId": 10375,
+      "managerName": "ZZZZZZZZZZZZZZZZZZZZ",
       "draftTeamPoints": 119
     },
     {
@@ -53,12 +53,12 @@
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 104
+      "draftTeamPoints": 106
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 99
+      "draftTeamPoints": 101
     }
   ],
   "scatter": [
@@ -238,7 +238,7 @@
     },
     {
       "pickNumber": 30,
-      "seasonPoints": 19,
+      "seasonPoints": 20,
       "managerId": 1425,
       "playerName": "Guéhi"
     },
@@ -334,7 +334,7 @@
     },
     {
       "pickNumber": 46,
-      "seasonPoints": 10,
+      "seasonPoints": 8,
       "managerId": 10375,
       "playerName": "Pedro Porro"
     },
@@ -412,7 +412,7 @@
     },
     {
       "pickNumber": 59,
-      "seasonPoints": 7,
+      "seasonPoints": 9,
       "managerId": 99786,
       "playerName": "Van de Ven"
     },
@@ -532,7 +532,7 @@
     },
     {
       "pickNumber": 79,
-      "seasonPoints": 14,
+      "seasonPoints": 15,
       "managerId": 1947,
       "playerName": "N.Williams"
     },
@@ -856,7 +856,7 @@
     },
     {
       "pickNumber": 133,
-      "seasonPoints": 11,
+      "seasonPoints": 13,
       "managerId": 1377,
       "playerName": "Murillo"
     },
@@ -928,7 +928,7 @@
     },
     {
       "pickNumber": 145,
-      "seasonPoints": 4,
+      "seasonPoints": 2,
       "managerId": 1857,
       "playerName": "Canvot"
     },
