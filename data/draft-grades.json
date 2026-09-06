@@ -8,17 +8,17 @@
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 153
+      "draftTeamPoints": 155
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 152
+      "draftTeamPoints": 151
     },
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "draftTeamPoints": 135
+      "draftTeamPoints": 136
     },
     {
       "managerId": 1947,
@@ -26,24 +26,29 @@
       "draftTeamPoints": 132
     },
     {
-      "managerId": 26227,
-      "managerName": "Mourinho’s Ego FT",
-      "draftTeamPoints": 126
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "draftTeamPoints": 129
     },
     {
       "managerId": 10375,
       "managerName": "ZZZZZZZZZZZZZZZZZZZZ",
-      "draftTeamPoints": 124
+      "draftTeamPoints": 128
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "draftTeamPoints": 128
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "draftTeamPoints": 119
+      "draftTeamPoints": 121
     },
     {
-      "managerId": 10210,
-      "managerName": "Syria FC**",
-      "draftTeamPoints": 117
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "draftTeamPoints": 116
     },
     {
       "managerId": 99786,
@@ -51,14 +56,9 @@
       "draftTeamPoints": 116
     },
     {
-      "managerId": 29975,
-      "managerName": "Zacharias United",
-      "draftTeamPoints": 115
-    },
-    {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 108
+      "draftTeamPoints": 112
     }
   ],
   "scatter": [
@@ -82,19 +82,19 @@
     },
     {
       "pickNumber": 4,
-      "seasonPoints": 20,
+      "seasonPoints": 21,
       "managerId": 1530,
       "playerName": "Palmer"
     },
     {
       "pickNumber": 5,
-      "seasonPoints": 21,
+      "seasonPoints": 22,
       "managerId": 26227,
       "playerName": "Saka"
     },
     {
       "pickNumber": 6,
-      "seasonPoints": 20,
+      "seasonPoints": 21,
       "managerId": 1425,
       "playerName": "João Pedro"
     },
@@ -136,7 +136,7 @@
     },
     {
       "pickNumber": 13,
-      "seasonPoints": 14,
+      "seasonPoints": 15,
       "managerId": 1377,
       "playerName": "Gabriel"
     },
@@ -148,13 +148,13 @@
     },
     {
       "pickNumber": 15,
-      "seasonPoints": 21,
+      "seasonPoints": 19,
       "managerId": 1471,
       "playerName": "Rogers"
     },
     {
       "pickNumber": 16,
-      "seasonPoints": 0,
+      "seasonPoints": 1,
       "managerId": 10210,
       "playerName": "Gyökeres"
     },
@@ -292,13 +292,13 @@
     },
     {
       "pickNumber": 39,
-      "seasonPoints": 21,
+      "seasonPoints": 22,
       "managerId": 1471,
       "playerName": "Calafiori"
     },
     {
       "pickNumber": 40,
-      "seasonPoints": 13,
+      "seasonPoints": 15,
       "managerId": 10210,
       "playerName": "Raya"
     },
@@ -382,7 +382,7 @@
     },
     {
       "pickNumber": 54,
-      "seasonPoints": 8,
+      "seasonPoints": 9,
       "managerId": 1425,
       "playerName": "Lacroix"
     },
@@ -400,7 +400,7 @@
     },
     {
       "pickNumber": 57,
-      "seasonPoints": 15,
+      "seasonPoints": 24,
       "managerId": 10210,
       "playerName": "Ødegaard"
     },
@@ -478,7 +478,7 @@
     },
     {
       "pickNumber": 70,
-      "seasonPoints": 7,
+      "seasonPoints": 11,
       "managerId": 10375,
       "playerName": "Tzolis"
     },
@@ -610,7 +610,7 @@
     },
     {
       "pickNumber": 92,
-      "seasonPoints": 9,
+      "seasonPoints": 10,
       "managerId": 26227,
       "playerName": "Neto"
     },
@@ -628,7 +628,7 @@
     },
     {
       "pickNumber": 95,
-      "seasonPoints": 1,
+      "seasonPoints": 2,
       "managerId": 29975,
       "playerName": "Hincapie"
     },
@@ -850,7 +850,7 @@
     },
     {
       "pickNumber": 132,
-      "seasonPoints": 2,
+      "seasonPoints": 5,
       "managerId": 1377,
       "playerName": "Konsa"
     },
@@ -904,7 +904,7 @@
     },
     {
       "pickNumber": 141,
-      "seasonPoints": 19,
+      "seasonPoints": 20,
       "managerId": 1530,
       "playerName": "White"
     },
@@ -970,7 +970,7 @@
     },
     {
       "pickNumber": 152,
-      "seasonPoints": 0,
+      "seasonPoints": 1,
       "managerId": 1501,
       "playerName": "Welbeck"
     },
