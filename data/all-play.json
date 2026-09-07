@@ -1,7 +1,8 @@
 {
   "perGw": {
     "1": [],
-    "2": []
+    "2": [],
+    "3": []
   },
   "standings": [
     {
@@ -15,15 +16,15 @@
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
       "expectedWins": 0,
-      "actualWins": 2,
-      "luckScore": 2
+      "actualWins": 3,
+      "luckScore": 3
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
       "expectedWins": 0,
-      "actualWins": 1,
-      "luckScore": 1
+      "actualWins": 2,
+      "luckScore": 2
     },
     {
       "managerId": 1501,
@@ -43,15 +44,15 @@
       "managerId": 1857,
       "managerName": "i can fix him*",
       "expectedWins": 0,
-      "actualWins": 2,
-      "luckScore": 2
+      "actualWins": 3,
+      "luckScore": 3
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
       "expectedWins": 0,
-      "actualWins": 1,
-      "luckScore": 1
+      "actualWins": 2,
+      "luckScore": 2
     },
     {
       "managerId": 10210,
@@ -64,15 +65,15 @@
       "managerId": 10375,
       "managerName": "ZZZZZZZZZZZZZZZZZZZZ",
       "expectedWins": 0,
-      "actualWins": 0,
-      "luckScore": 0
+      "actualWins": 1,
+      "luckScore": 1
     },
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
       "expectedWins": 0,
-      "actualWins": 1,
-      "luckScore": 1
+      "actualWins": 2,
+      "luckScore": 2
     },
     {
       "managerId": 29975,

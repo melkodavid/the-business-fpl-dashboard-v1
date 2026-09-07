@@ -1,0 +1,81 @@
+{
+  "gw": 3,
+  "headline": {
+    "type": "belt-changed-hands",
+    "personKeys": [
+      "lu",
+      "noah"
+    ],
+    "text": "Noah Palladino takes the Belt from Lu. The reign is over.",
+    "facts": {
+      "beltHolderKey": "lu",
+      "newChampionKey": "noah"
+    },
+    "gw": 3
+  },
+  "secondaries": [
+    {
+      "type": "streak",
+      "personKeys": [
+        "david"
+      ],
+      "text": "David Melko is at 3 straight now.",
+      "facts": {
+        "managerId": 1857,
+        "streakType": "W",
+        "length": 3
+      },
+      "gw": 3
+    },
+    {
+      "type": "streak",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "Noah Palladino is at 3 straight now.",
+      "facts": {
+        "managerId": 1425,
+        "streakType": "W",
+        "length": 3
+      },
+      "gw": 3
+    },
+    {
+      "type": "table-enter-top4",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "Pat Takala is back in the top 4, sitting 4.",
+      "facts": {
+        "managerId": 26227,
+        "rank": 4
+      },
+      "gw": 3
+    },
+    {
+      "type": "table-exit-top4",
+      "personKeys": [
+        "ibrahim"
+      ],
+      "text": "Top 4 watch: Ibrahim Abdulnour is out.",
+      "facts": {
+        "managerId": 10210,
+        "rank": 6
+      },
+      "gw": 3
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "pat",
+        "noah"
+      ],
+      "text": "Clean sweep for the 97s across 2 cross-generation matchups.",
+      "facts": {
+        "generation": "97s",
+        "count": 2
+      },
+      "gw": 3
+    }
+  ]
+}

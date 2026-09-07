@@ -10,7 +10,7 @@
             {
               "elementId": 8,
               "playerName": "Calafiori",
-              "points": 24
+              "points": 26
             },
             {
               "elementId": 398,
@@ -40,9 +40,9 @@
               "points": 0
             }
           ],
-          "gained": 24,
+          "gained": 26,
           "givenUp": 0,
-          "netValue": 24
+          "netValue": 26
         },
         {
           "managerId": 1471,
@@ -67,7 +67,7 @@
             {
               "elementId": 8,
               "playerName": "Calafiori",
-              "points": 24
+              "points": 26
             },
             {
               "elementId": 398,
@@ -81,8 +81,8 @@
             }
           ],
           "gained": 0,
-          "givenUp": 24,
-          "netValue": -24
+          "givenUp": 26,
+          "netValue": -26
         }
       ]
     },
@@ -96,12 +96,12 @@
             {
               "elementId": 366,
               "playerName": "Wirtz",
-              "points": 2
+              "points": 10
             },
             {
               "elementId": 455,
               "playerName": "Tonali",
-              "points": 5
+              "points": 6
             }
           ],
           "given": [
@@ -116,9 +116,9 @@
               "points": 0
             }
           ],
-          "gained": 7,
+          "gained": 16,
           "givenUp": 0,
-          "netValue": 7
+          "netValue": 16
         },
         {
           "managerId": 1377,
@@ -138,17 +138,17 @@
             {
               "elementId": 366,
               "playerName": "Wirtz",
-              "points": 2
+              "points": 10
             },
             {
               "elementId": 455,
               "playerName": "Tonali",
-              "points": 5
+              "points": 6
             }
           ],
           "gained": 0,
-          "givenUp": 7,
-          "netValue": -7
+          "givenUp": 16,
+          "netValue": -16
         }
       ]
     },
@@ -174,7 +174,7 @@
             {
               "elementId": 449,
               "playerName": "Hall",
-              "points": 4
+              "points": 14
             },
             {
               "elementId": 70,
@@ -183,8 +183,8 @@
             }
           ],
           "gained": 0,
-          "givenUp": 4,
-          "netValue": -4
+          "givenUp": 14,
+          "netValue": -14
         },
         {
           "managerId": 1501,
@@ -192,7 +192,7 @@
             {
               "elementId": 449,
               "playerName": "Hall",
-              "points": 4
+              "points": 14
             },
             {
               "elementId": 70,
@@ -212,9 +212,9 @@
               "points": 0
             }
           ],
-          "gained": 4,
+          "gained": 14,
           "givenUp": 0,
-          "netValue": 4
+          "netValue": 14
         }
       ]
     },
@@ -228,19 +228,19 @@
             {
               "elementId": 67,
               "playerName": "Rayan",
-              "points": 0
+              "points": 5
             }
           ],
           "given": [
             {
               "elementId": 41,
               "playerName": "Buendía",
-              "points": 0
+              "points": 1
             }
           ],
-          "gained": 0,
-          "givenUp": 0,
-          "netValue": 0
+          "gained": 5,
+          "givenUp": 1,
+          "netValue": 4
         },
         {
           "managerId": 29975,
@@ -248,19 +248,19 @@
             {
               "elementId": 41,
               "playerName": "Buendía",
-              "points": 0
+              "points": 1
             }
           ],
           "given": [
             {
               "elementId": 67,
               "playerName": "Rayan",
-              "points": 0
+              "points": 5
             }
           ],
-          "gained": 0,
-          "givenUp": 0,
-          "netValue": 0
+          "gained": 1,
+          "givenUp": 5,
+          "netValue": -4
         }
       ]
     },
@@ -296,7 +296,7 @@
             {
               "elementId": 67,
               "playerName": "Rayan",
-              "points": 0
+              "points": 5
             },
             {
               "elementId": 125,
@@ -305,8 +305,8 @@
             }
           ],
           "gained": 0,
-          "givenUp": 0,
-          "netValue": 0
+          "givenUp": 5,
+          "netValue": -5
         },
         {
           "managerId": 1947,
@@ -319,7 +319,7 @@
             {
               "elementId": 67,
               "playerName": "Rayan",
-              "points": 0
+              "points": 5
             },
             {
               "elementId": 125,
@@ -344,9 +344,9 @@
               "points": 0
             }
           ],
-          "gained": 0,
+          "gained": 5,
           "givenUp": 0,
-          "netValue": 0
+          "netValue": 5
         }
       ]
     },
@@ -360,7 +360,7 @@
             {
               "elementId": 532,
               "playerName": "Ballard",
-              "points": 0
+              "points": 2
             }
           ],
           "given": [
@@ -370,9 +370,9 @@
               "points": 0
             }
           ],
-          "gained": 0,
+          "gained": 2,
           "givenUp": 0,
-          "netValue": 0
+          "netValue": 2
         },
         {
           "managerId": 1530,
@@ -387,12 +387,12 @@
             {
               "elementId": 532,
               "playerName": "Ballard",
-              "points": 0
+              "points": 2
             }
           ],
           "gained": 0,
-          "givenUp": 0,
-          "netValue": 0
+          "givenUp": 2,
+          "netValue": -2
         }
       ]
     },
@@ -406,17 +406,17 @@
             {
               "elementId": 390,
               "playerName": "Rúben",
-              "points": 0
+              "points": 2
             },
             {
               "elementId": 210,
               "playerName": "Wharton",
-              "points": 0
+              "points": 3
             },
             {
               "elementId": 26,
               "playerName": "Havertz",
-              "points": 0
+              "points": 1
             }
           ],
           "given": [
@@ -436,9 +436,9 @@
               "points": 0
             }
           ],
-          "gained": 0,
+          "gained": 6,
           "givenUp": 0,
-          "netValue": 0
+          "netValue": 6
         },
         {
           "managerId": 1857,
@@ -463,22 +463,22 @@
             {
               "elementId": 390,
               "playerName": "Rúben",
-              "points": 0
+              "points": 2
             },
             {
               "elementId": 210,
               "playerName": "Wharton",
-              "points": 0
+              "points": 3
             },
             {
               "elementId": 26,
               "playerName": "Havertz",
-              "points": 0
+              "points": 1
             }
           ],
           "gained": 0,
-          "givenUp": 0,
-          "netValue": 0
+          "givenUp": 6,
+          "netValue": -6
         }
       ]
     }
@@ -487,26 +487,26 @@
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "netTradeValue": 24
-    },
-    {
-      "managerId": 1857,
-      "managerName": "i can fix him*",
-      "netTradeValue": 7
+      "netTradeValue": 30
     },
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "netTradeValue": 4
+      "netTradeValue": 14
     },
     {
-      "managerId": 1425,
-      "managerName": "Pearl Street Pirates",
-      "netTradeValue": 0
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "netTradeValue": 10
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
+      "netTradeValue": 5
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
       "netTradeValue": 0
     },
     {
@@ -532,17 +532,17 @@
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "netTradeValue": -4
+      "netTradeValue": -16
     },
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "netTradeValue": -7
+      "netTradeValue": -17
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "netTradeValue": -24
+      "netTradeValue": -26
     }
   ]
 }
