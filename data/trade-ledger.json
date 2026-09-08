@@ -1,39 +1,741 @@
 {
-  "log": [],
+  "log": [
+    {
+      "tradeId": 36281,
+      "gw": 1,
+      "sides": [
+        {
+          "managerId": 1530,
+          "received": [
+            {
+              "elementId": 8,
+              "playerName": "Calafiori",
+              "points": 22
+            },
+            {
+              "elementId": 398,
+              "playerName": "Foden",
+              "points": 11
+            },
+            {
+              "elementId": 55,
+              "playerName": "Watkins",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 112,
+              "playerName": "Van Hecke",
+              "points": 2,
+              "positionRipple": {
+                "elementId": 151,
+                "playerName": "Acheampong",
+                "position": "DEF",
+                "acquiredGw": 2,
+                "gwsStarted": 1,
+                "points": 1
+              }
+            },
+            {
+              "elementId": 154,
+              "playerName": "Palmer",
+              "points": 21,
+              "positionRipple": {
+                "elementId": 268,
+                "playerName": "King",
+                "position": "MID",
+                "acquiredGw": 2,
+                "gwsStarted": 0,
+                "points": 0
+              }
+            },
+            {
+              "elementId": 463,
+              "playerName": "Woltemade",
+              "points": 4,
+              "positionRipple": {
+                "elementId": 224,
+                "playerName": "Nketiah",
+                "position": "FWD",
+                "acquiredGw": 2,
+                "gwsStarted": 2,
+                "points": 6
+              }
+            }
+          ],
+          "gained": 33,
+          "givenUp": 27,
+          "netValue": 6,
+          "resultImpact": []
+        },
+        {
+          "managerId": 1471,
+          "received": [
+            {
+              "elementId": 112,
+              "playerName": "Van Hecke",
+              "points": 2
+            },
+            {
+              "elementId": 154,
+              "playerName": "Palmer",
+              "points": 21
+            },
+            {
+              "elementId": 463,
+              "playerName": "Woltemade",
+              "points": 4
+            }
+          ],
+          "given": [
+            {
+              "elementId": 8,
+              "playerName": "Calafiori",
+              "points": 22,
+              "positionRipple": {
+                "elementId": 595,
+                "playerName": "Dedić",
+                "position": "DEF",
+                "acquiredGw": 2,
+                "gwsStarted": 2,
+                "points": 12
+              }
+            },
+            {
+              "elementId": 398,
+              "playerName": "Foden",
+              "points": 11,
+              "positionRipple": null
+            },
+            {
+              "elementId": 55,
+              "playerName": "Watkins",
+              "points": 0,
+              "positionRipple": {
+                "elementId": 593,
+                "playerName": "David",
+                "position": "FWD",
+                "acquiredGw": 3,
+                "gwsStarted": 0,
+                "points": 0
+              }
+            }
+          ],
+          "gained": 27,
+          "givenUp": 33,
+          "netValue": -6,
+          "resultImpact": []
+        }
+      ]
+    },
+    {
+      "tradeId": 36917,
+      "gw": 1,
+      "sides": [
+        {
+          "managerId": 1857,
+          "received": [
+            {
+              "elementId": 366,
+              "playerName": "Wirtz",
+              "points": 9
+            },
+            {
+              "elementId": 455,
+              "playerName": "Tonali",
+              "points": 9
+            }
+          ],
+          "given": [
+            {
+              "elementId": 155,
+              "playerName": "Enzo",
+              "points": 4,
+              "positionRipple": {
+                "elementId": 129,
+                "playerName": "Ayari",
+                "position": "MID",
+                "acquiredGw": 1,
+                "gwsStarted": 0,
+                "points": 0
+              }
+            },
+            {
+              "elementId": 208,
+              "playerName": "Sarr",
+              "points": 0,
+              "positionRipple": {
+                "elementId": 129,
+                "playerName": "Ayari",
+                "position": "MID",
+                "acquiredGw": 1,
+                "gwsStarted": 0,
+                "points": 0
+              }
+            }
+          ],
+          "gained": 18,
+          "givenUp": 4,
+          "netValue": 14,
+          "resultImpact": []
+        },
+        {
+          "managerId": 1377,
+          "received": [
+            {
+              "elementId": 155,
+              "playerName": "Enzo",
+              "points": 4
+            },
+            {
+              "elementId": 208,
+              "playerName": "Sarr",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 366,
+              "playerName": "Wirtz",
+              "points": 9,
+              "positionRipple": {
+                "elementId": 628,
+                "playerName": "Barcola",
+                "position": "MID",
+                "acquiredGw": 3,
+                "gwsStarted": 1,
+                "points": 1
+              }
+            },
+            {
+              "elementId": 455,
+              "playerName": "Tonali",
+              "points": 9,
+              "positionRipple": {
+                "elementId": 628,
+                "playerName": "Barcola",
+                "position": "MID",
+                "acquiredGw": 3,
+                "gwsStarted": 1,
+                "points": 1
+              }
+            }
+          ],
+          "gained": 4,
+          "givenUp": 18,
+          "netValue": -14,
+          "resultImpact": [
+            {
+              "gw": 2,
+              "opponentId": 1425,
+              "actualScore": 30,
+              "actualResult": "L",
+              "counterfactualScore": 36,
+              "counterfactualResult": "W",
+              "opponentScore": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tradeId": 48518,
+      "gw": 1,
+      "sides": [
+        {
+          "managerId": 29975,
+          "received": [
+            {
+              "elementId": 357,
+              "playerName": "Frimpong",
+              "points": 1
+            },
+            {
+              "elementId": 43,
+              "playerName": "Tielemans",
+              "points": 2
+            }
+          ],
+          "given": [
+            {
+              "elementId": 449,
+              "playerName": "Hall",
+              "points": 18,
+              "positionRipple": {
+                "elementId": 258,
+                "playerName": "Castagne",
+                "position": "DEF",
+                "acquiredGw": 3,
+                "gwsStarted": 1,
+                "points": 1
+              }
+            },
+            {
+              "elementId": 70,
+              "playerName": "Kluivert",
+              "points": 7,
+              "positionRipple": {
+                "elementId": 591,
+                "playerName": "Enciso",
+                "position": "MID",
+                "acquiredGw": 2,
+                "gwsStarted": 1,
+                "points": 5
+              }
+            }
+          ],
+          "gained": 3,
+          "givenUp": 25,
+          "netValue": -22,
+          "resultImpact": []
+        },
+        {
+          "managerId": 1501,
+          "received": [
+            {
+              "elementId": 449,
+              "playerName": "Hall",
+              "points": 18
+            },
+            {
+              "elementId": 70,
+              "playerName": "Kluivert",
+              "points": 7
+            }
+          ],
+          "given": [
+            {
+              "elementId": 357,
+              "playerName": "Frimpong",
+              "points": 1,
+              "positionRipple": {
+                "elementId": 327,
+                "playerName": "Bijol",
+                "position": "DEF",
+                "acquiredGw": 2,
+                "gwsStarted": 0,
+                "points": 0
+              }
+            },
+            {
+              "elementId": 43,
+              "playerName": "Tielemans",
+              "points": 2,
+              "positionRipple": {
+                "elementId": 264,
+                "playerName": "Bobb",
+                "position": "MID",
+                "acquiredGw": 2,
+                "gwsStarted": 1,
+                "points": 3
+              }
+            }
+          ],
+          "gained": 25,
+          "givenUp": 3,
+          "netValue": 22,
+          "resultImpact": []
+        }
+      ]
+    },
+    {
+      "tradeId": 155002,
+      "gw": 3,
+      "sides": [
+        {
+          "managerId": 1377,
+          "received": [
+            {
+              "elementId": 67,
+              "playerName": "Rayan",
+              "points": 2
+            }
+          ],
+          "given": [
+            {
+              "elementId": 41,
+              "playerName": "Buendía",
+              "points": 3,
+              "positionRipple": {
+                "elementId": 628,
+                "playerName": "Barcola",
+                "position": "MID",
+                "acquiredGw": 3,
+                "gwsStarted": 1,
+                "points": 1
+              }
+            }
+          ],
+          "gained": 2,
+          "givenUp": 3,
+          "netValue": -1,
+          "resultImpact": []
+        },
+        {
+          "managerId": 29975,
+          "received": [
+            {
+              "elementId": 41,
+              "playerName": "Buendía",
+              "points": 3
+            }
+          ],
+          "given": [
+            {
+              "elementId": 67,
+              "playerName": "Rayan",
+              "points": 2,
+              "positionRipple": null
+            }
+          ],
+          "gained": 3,
+          "givenUp": 2,
+          "netValue": 1,
+          "resultImpact": []
+        }
+      ]
+    },
+    {
+      "tradeId": 155857,
+      "gw": 3,
+      "sides": [
+        {
+          "managerId": 1377,
+          "received": [
+            {
+              "elementId": 391,
+              "playerName": "Gvardiol",
+              "points": 8
+            },
+            {
+              "elementId": 244,
+              "playerName": "Armstrong",
+              "points": 1
+            },
+            {
+              "elementId": 527,
+              "playerName": "Richarlison",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 472,
+              "playerName": "Murillo",
+              "points": 8,
+              "positionRipple": {
+                "elementId": 620,
+                "playerName": "Diouf",
+                "position": "DEF",
+                "acquiredGw": 3,
+                "gwsStarted": 1,
+                "points": 0
+              }
+            },
+            {
+              "elementId": 67,
+              "playerName": "Rayan",
+              "points": 2,
+              "positionRipple": {
+                "elementId": 628,
+                "playerName": "Barcola",
+                "position": "MID",
+                "acquiredGw": 3,
+                "gwsStarted": 1,
+                "points": 1
+              }
+            },
+            {
+              "elementId": 125,
+              "playerName": "Georginio",
+              "points": 0,
+              "positionRipple": {
+                "elementId": 81,
+                "playerName": "Rodríguez",
+                "position": "FWD",
+                "acquiredGw": 3,
+                "gwsStarted": 0,
+                "points": 0
+              }
+            }
+          ],
+          "gained": 9,
+          "givenUp": 10,
+          "netValue": -1,
+          "resultImpact": []
+        },
+        {
+          "managerId": 1947,
+          "received": [
+            {
+              "elementId": 472,
+              "playerName": "Murillo",
+              "points": 8
+            },
+            {
+              "elementId": 67,
+              "playerName": "Rayan",
+              "points": 2
+            },
+            {
+              "elementId": 125,
+              "playerName": "Georginio",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 391,
+              "playerName": "Gvardiol",
+              "points": 8,
+              "positionRipple": {
+                "elementId": 555,
+                "playerName": "Silva",
+                "position": "DEF",
+                "acquiredGw": 3,
+                "gwsStarted": 1,
+                "points": 1
+              }
+            },
+            {
+              "elementId": 244,
+              "playerName": "Armstrong",
+              "points": 1,
+              "positionRipple": null
+            },
+            {
+              "elementId": 527,
+              "playerName": "Richarlison",
+              "points": 0,
+              "positionRipple": null
+            }
+          ],
+          "gained": 10,
+          "givenUp": 9,
+          "netValue": 1,
+          "resultImpact": []
+        }
+      ]
+    },
+    {
+      "tradeId": 167473,
+      "gw": 3,
+      "sides": [
+        {
+          "managerId": 29975,
+          "received": [
+            {
+              "elementId": 532,
+              "playerName": "Ballard",
+              "points": 4
+            }
+          ],
+          "given": [
+            {
+              "elementId": 357,
+              "playerName": "Frimpong",
+              "points": 0,
+              "positionRipple": {
+                "elementId": 258,
+                "playerName": "Castagne",
+                "position": "DEF",
+                "acquiredGw": 3,
+                "gwsStarted": 1,
+                "points": 1
+              }
+            }
+          ],
+          "gained": 4,
+          "givenUp": 0,
+          "netValue": 4,
+          "resultImpact": []
+        },
+        {
+          "managerId": 1530,
+          "received": [
+            {
+              "elementId": 357,
+              "playerName": "Frimpong",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 532,
+              "playerName": "Ballard",
+              "points": 4,
+              "positionRipple": {
+                "elementId": 130,
+                "playerName": "Wieffer",
+                "position": "DEF",
+                "acquiredGw": 3,
+                "gwsStarted": 0,
+                "points": 0
+              }
+            }
+          ],
+          "gained": 0,
+          "givenUp": 4,
+          "netValue": -4,
+          "resultImpact": []
+        }
+      ]
+    },
+    {
+      "tradeId": 175698,
+      "gw": 3,
+      "sides": [
+        {
+          "managerId": 1530,
+          "received": [
+            {
+              "elementId": 390,
+              "playerName": "Rúben",
+              "points": 6
+            },
+            {
+              "elementId": 210,
+              "playerName": "Wharton",
+              "points": 2
+            },
+            {
+              "elementId": 26,
+              "playerName": "Havertz",
+              "points": 8
+            }
+          ],
+          "given": [
+            {
+              "elementId": 10,
+              "playerName": "White",
+              "points": 2,
+              "positionRipple": {
+                "elementId": 130,
+                "playerName": "Wieffer",
+                "position": "DEF",
+                "acquiredGw": 3,
+                "gwsStarted": 0,
+                "points": 0
+              }
+            },
+            {
+              "elementId": 481,
+              "playerName": "Anderson",
+              "points": 3,
+              "positionRipple": {
+                "elementId": 377,
+                "playerName": "Munoz",
+                "position": "MID",
+                "acquiredGw": 3,
+                "gwsStarted": 1,
+                "points": 3
+              }
+            },
+            {
+              "elementId": 55,
+              "playerName": "Watkins",
+              "points": 0,
+              "positionRipple": null
+            }
+          ],
+          "gained": 16,
+          "givenUp": 5,
+          "netValue": 11,
+          "resultImpact": []
+        },
+        {
+          "managerId": 1857,
+          "received": [
+            {
+              "elementId": 10,
+              "playerName": "White",
+              "points": 2
+            },
+            {
+              "elementId": 481,
+              "playerName": "Anderson",
+              "points": 3
+            },
+            {
+              "elementId": 55,
+              "playerName": "Watkins",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 390,
+              "playerName": "Rúben",
+              "points": 6,
+              "positionRipple": {
+                "elementId": 87,
+                "playerName": "Ajer",
+                "position": "DEF",
+                "acquiredGw": 3,
+                "gwsStarted": 1,
+                "points": 2
+              }
+            },
+            {
+              "elementId": 210,
+              "playerName": "Wharton",
+              "points": 2,
+              "positionRipple": {
+                "elementId": 268,
+                "playerName": "King",
+                "position": "MID",
+                "acquiredGw": 3,
+                "gwsStarted": 1,
+                "points": 10
+              }
+            },
+            {
+              "elementId": 26,
+              "playerName": "Havertz",
+              "points": 8,
+              "positionRipple": {
+                "elementId": 108,
+                "playerName": "Wilson",
+                "position": "FWD",
+                "acquiredGw": 3,
+                "gwsStarted": 0,
+                "points": 0
+              }
+            }
+          ],
+          "gained": 5,
+          "givenUp": 16,
+          "netValue": -11,
+          "resultImpact": []
+        }
+      ]
+    }
+  ],
   "leaderboard": [
     {
-      "managerId": 1377,
-      "managerName": "Lu’s Rules FC ****",
-      "netTradeValue": 0
-    },
-    {
-      "managerId": 1425,
-      "managerName": "Pearl Street Pirates",
-      "netTradeValue": 0
-    },
-    {
-      "managerId": 1471,
-      "managerName": "Big BUMBO",
-      "netTradeValue": 0
-    },
-    {
       "managerId": 1501,
-      "managerName": "C",
-      "netTradeValue": 0
+      "managerName": "Set Piece Fc",
+      "netTradeValue": 22
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "netTradeValue": 0
+      "netTradeValue": 13
     },
     {
       "managerId": 1857,
-      "managerName": "CHANGE NAME",
-      "netTradeValue": 0
+      "managerName": "i can fix him*",
+      "netTradeValue": 3
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
+      "netTradeValue": 1
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
       "netTradeValue": 0
     },
     {
@@ -43,7 +745,7 @@
     },
     {
       "managerId": 10375,
-      "managerName": "NEEN FC",
+      "managerName": "ZZZZZZZZZZZZZZZZZZZZ",
       "netTradeValue": 0
     },
     {
@@ -52,14 +754,24 @@
       "netTradeValue": 0
     },
     {
-      "managerId": 29975,
-      "managerName": "Zacharias United",
-      "netTradeValue": 0
-    },
-    {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
       "netTradeValue": 0
+    },
+    {
+      "managerId": 1471,
+      "managerName": "🥶CPR🥶",
+      "netTradeValue": -6
+    },
+    {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "netTradeValue": -16
+    },
+    {
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "netTradeValue": -17
     }
   ]
 }

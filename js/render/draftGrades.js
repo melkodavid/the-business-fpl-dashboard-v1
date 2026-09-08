@@ -62,6 +62,27 @@ function buildScatter(scatter, managers) {
     </div>`;
 }
 
+function projectedPointsCardHtml(projected, managers) {
+  if (!projected?.leaderboard?.length) return "";
+  const rows = projected.leaderboard
+    .map(
+      (m, i) => `<tr><td>${i + 1}</td><td class="text-left">${managers.nameHtml(m.managerId)}</td><td>${m.projectedPoints}</td></tr>`
+    )
+    .join("");
+  const sourceLine = projected.source
+    ? `<p class="section-subtitle">Source: ${escapeHtml(projected.source)}${projected.pulledAt ? ` (pulled ${escapeHtml(projected.pulledAt)})` : ""}. A third-party preseason estimate, not official FPL data — just something to argue about in the group chat until real points start coming in.</p>`
+    : "";
+  return `
+    <div class="card">
+      <h3>Projected Points (Preseason)</h3>
+      ${sourceLine}
+      <table>
+        <thead><tr><th>#</th><th class="text-left">Manager</th><th>Projected Pts</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
 export function render(container, data, managers) {
   const leaderboardHtml = data.draftGrades.leaderboard
     .map(
@@ -72,6 +93,7 @@ export function render(container, data, managers) {
   container.innerHTML = `
     <h2 class="section-title">Draft Grades — Pure Draft Team Tracker</h2>
     <p class="section-subtitle">Each manager's originally drafted squad, locked at draft completion and tracked independently of trades or waivers.</p>
+    ${projectedPointsCardHtml(data.projectedPoints, managers)}
     <div class="card">
       <h3>Draft Team Points</h3>
       <table>

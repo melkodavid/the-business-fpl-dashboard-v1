@@ -2,3 +2,9 @@ node_modules/
 *.log
 .DS_Store
 .claude/settings.local.json
+
+# Build-time cache of finished-gameweek API responses (see scripts/cache/store.js).
+# Never committed -- a stale copy surviving a season rollover (old league's
+# entry IDs cached under this season's GW numbers) silently broke every stat
+# that depends on per-GW player data. Each environment rebuilds its own.
+cache/

@@ -392,6 +392,13 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
 }
 .recap .award-line { margin: 0.2rem 0; }
 
+/* Trade Ledger's loose, for-fun supplementary notes -- deliberately more
+   muted/smaller than the trade line itself, since neither is a hard fact. */
+.trade-ripple, .trade-impact {
+  margin-top: 0.3rem; font-size: 0.78rem; color: var(--text-muted); font-style: italic;
+}
+.trade-impact { color: var(--accent, #6f4fd6); font-style: normal; }
+
 .scatter-wrap { overflow-x: auto; }
 
 /* ---- manager avatar (photo w/ initials fallback, tinted to chosen color) ---- */

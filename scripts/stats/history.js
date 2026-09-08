@@ -20,7 +20,14 @@ export function computeHistory(context, historySeasonsData, currentSeasonLabel) 
         pts: s.total,
       };
     });
-  const currentChampion = currentTable.find((r) => r.rank === 1);
+  // A season only has a real champion once it's actually finished -- whoever
+  // sits at rank 1 mid-season is just today's leader, not a decided title,
+  // and treating it as one would hand out a phantom title (and the crown/
+  // tier/reigning-champion treatment that comes with it) the moment anyone
+  // takes top spot in week 1. Same "any match still unplayed" signal
+  // computeSchedule already uses to know a season is truly over.
+  const seasonComplete = context.matches.length > 0 && context.matches.every((m) => m.finished);
+  const currentChampion = seasonComplete ? currentTable.find((r) => r.rank === 1) : undefined;
   const currentSeason = {
     year: currentSeasonLabel,
     championKey: currentChampion?.managerKey,
@@ -123,9 +130,11 @@ export function computeHistory(context, historySeasonsData, currentSeasonLabel) 
     })
     .sort((a, b) => b.points - a.points);
 
-  // Most recent season with a decided champion -- skips the live in-progress
-  // season while it has no table yet, so this correctly points at last
-  // season's winner until the current one actually has a rank 1.
+  // Most recent season with a *decided* champion. Safe to scan `seasons`
+  // (historical + current) since currentSeason.championKey is now gated on
+  // seasonComplete above -- it stays unset all season long and flips the
+  // instant the season is mathematically over, without waiting on anyone to
+  // hand-add it to history-seasons.json first.
   const reigningChampionKey = [...seasons].reverse().find((s) => s.championKey)?.championKey ?? null;
 
   return {

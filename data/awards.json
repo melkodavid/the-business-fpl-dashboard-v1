@@ -1,9 +1,142 @@
 {
-  "recaps": [],
+  "recaps": [
+    {
+      "gw": 1,
+      "topScore": {
+        "managerIds": [
+          1425
+        ],
+        "score": 68
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          29975
+        ],
+        "score": 18
+      },
+      "blowout": {
+        "title": "Muks Militia took Zacharias United behind the bushes",
+        "winnerId": 1530,
+        "loserId": 29975,
+        "margin": 19
+      },
+      "worstLineup": {
+        "managerIds": [
+          1857
+        ],
+        "benchPoints": 12
+      },
+      "fiftyNineClubInstances": []
+    },
+    {
+      "gw": 2,
+      "topScore": {
+        "managerIds": [
+          1501
+        ],
+        "score": 71
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          10375
+        ],
+        "score": 29
+      },
+      "blowout": {
+        "title": "Set Piece Fc took Zacharias United behind the bushes",
+        "winnerId": 1501,
+        "loserId": 29975,
+        "margin": 24
+      },
+      "worstLineup": {
+        "managerIds": [
+          99786
+        ],
+        "benchPoints": 13
+      },
+      "fiftyNineClubInstances": []
+    },
+    {
+      "gw": 3,
+      "topScore": {
+        "managerIds": [
+          1857
+        ],
+        "score": 53
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          1377
+        ],
+        "score": 24
+      },
+      "blowout": {
+        "title": "ZZZZZZZZZZZZZZZZZZZZ took Lu’s Rules FC **** behind the bushes",
+        "winnerId": 10375,
+        "loserId": 1377,
+        "margin": 24
+      },
+      "worstLineup": {
+        "managerIds": [
+          99786
+        ],
+        "benchPoints": 12
+      },
+      "fiftyNineClubInstances": []
+    }
+  ],
   "hallOfFame": {
-    "topScore": [],
-    "markOfTheWeek": [],
-    "blowout": [],
-    "worstLineup": []
+    "topScore": [
+      {
+        "managerId": 1425,
+        "count": 1
+      },
+      {
+        "managerId": 1501,
+        "count": 1
+      },
+      {
+        "managerId": 1857,
+        "count": 1
+      }
+    ],
+    "markOfTheWeek": [
+      {
+        "managerId": 29975,
+        "count": 1
+      },
+      {
+        "managerId": 10375,
+        "count": 1
+      },
+      {
+        "managerId": 1377,
+        "count": 1
+      }
+    ],
+    "blowout": [
+      {
+        "managerId": 1530,
+        "count": 1
+      },
+      {
+        "managerId": 1501,
+        "count": 1
+      },
+      {
+        "managerId": 10375,
+        "count": 1
+      }
+    ],
+    "worstLineup": [
+      {
+        "managerId": 99786,
+        "count": 2
+      },
+      {
+        "managerId": 1857,
+        "count": 1
+      }
+    ]
   }
 }

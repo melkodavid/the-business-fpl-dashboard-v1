@@ -9,6 +9,7 @@ const FILES = {
   fiftyNineClub: "fifty-nine-club.json",
   benchStats: "bench-stats.json",
   draftGrades: "draft-grades.json",
+  projectedPoints: "projected-points.json",
   draftBoard: "draft-board.json",
   tradeLedger: "trade-ledger.json",
   waiverHitRate: "waiver-hit-rate.json",

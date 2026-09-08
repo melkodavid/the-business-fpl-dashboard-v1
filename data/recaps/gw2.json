@@ -1,0 +1,96 @@
+{
+  "gw": 2,
+  "headline": {
+    "type": "table-new-leader",
+    "personKeys": [
+      "carmine",
+      "noah"
+    ],
+    "text": "The table has a new #1: Carmine Francella.",
+    "facts": {
+      "newLeaderId": 1501,
+      "previousLeaderId": 1425
+    },
+    "gw": 2
+  },
+  "secondaries": [
+    {
+      "type": "record-blowout",
+      "personKeys": [
+        "carmine",
+        "zac"
+      ],
+      "text": "24-point beatdown: Carmine Francella over Zac Collins. No mercy.",
+      "facts": {
+        "winnerId": 1501,
+        "loserId": 29975,
+        "margin": 24
+      },
+      "gw": 2
+    },
+    {
+      "type": "record-low-win",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "Noah Palladino won this week with just 32 points.",
+      "facts": {
+        "managerId": 1425,
+        "score": 32
+      },
+      "gw": 2
+    },
+    {
+      "type": "family-cousin-clash",
+      "personKeys": [
+        "lu",
+        "noah"
+      ],
+      "text": "Ernesto vs. Tongar: The Sperm Derby. Lu vs. Noah Palladino -- which seed will prevail?",
+      "facts": {
+        "homeManagerId": 1377,
+        "awayManagerId": 1425,
+        "homePoints": 30,
+        "awayPoints": 32,
+        "relation": "cousin"
+      },
+      "gw": 2
+    },
+    {
+      "type": "gauntlet-watch",
+      "personKeys": [
+        "carmine"
+      ],
+      "text": "Carmine Francella is about to walk into the Palladino gauntlet -- 3 in a row.",
+      "facts": {
+        "managerId": 1501,
+        "startGw": 15,
+        "length": 3,
+        "opponentIds": [
+          1425,
+          1530,
+          1377
+        ]
+      },
+      "gw": 2
+    },
+    {
+      "type": "gauntlet-watch",
+      "personKeys": [
+        "carmine"
+      ],
+      "text": "Coming up for Carmine Francella: 3 consecutive fixtures against the family. All of it.",
+      "facts": {
+        "managerId": 1501,
+        "startGw": 26,
+        "length": 3,
+        "opponentIds": [
+          1425,
+          1530,
+          1377
+        ]
+      },
+      "gw": 2
+    }
+  ]
+}

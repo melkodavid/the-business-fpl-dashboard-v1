@@ -15,6 +15,7 @@ import { computeFiftyNineClub } from "../../scripts/stats/fiftyNineClub.js";
 import { computeBenchStats } from "../../scripts/stats/benchStats.js";
 import { computeDraftGrades } from "../../scripts/stats/draftGrades.js";
 import { computeDraftBoard } from "../../scripts/stats/draftBoard.js";
+import { computeProjectedPoints } from "../../scripts/stats/projectedPoints.js";
 import { computeTradeLedger } from "../../scripts/stats/tradeLedger.js";
 import { computeWaiverHitRate } from "../../scripts/stats/waiverHitRate.js";
 import { computeFormGuide } from "../../scripts/stats/formGuide.js";
@@ -85,6 +86,22 @@ test("draft grades: every drafted player appears exactly once in the scatter dat
   assert.equal(scatter.length, context.draftChoices.length);
 });
 
+test("projected points: falls back to a flat value per pick when a player isn't in the projections file", () => {
+  const fallbackPoints = 15;
+  const { leaderboard, source, pulledAt } = computeProjectedPoints(context, {
+    projections: {}, // no codes known -- every pick should hit the fallback
+    fallbackPoints,
+    source: "Test Source",
+    pulledAt: "2026-01-01",
+  });
+  assert.equal(leaderboard.length, 12);
+  assert.equal(source, "Test Source");
+  assert.equal(pulledAt, "2026-01-01");
+  const totalPicks = context.draftChoices.length;
+  const totalProjected = leaderboard.reduce((sum, m) => sum + m.projectedPoints, 0);
+  assert.equal(Math.round(totalProjected), totalPicks * fallbackPoints);
+});
+
 test("draft board: every column is one manager's round-1 slot, every pick lands exactly once", () => {
   const { started, slots, rounds } = computeDraftBoard(context);
   assert.equal(started, true);
@@ -124,7 +141,37 @@ test("waiver hit rate: pickup count matches approved free-agent/waiver transacti
   const approvedAdds = context.transactions.filter((t) => t.result === "a" && t.elementIn != null);
   assert.equal(pickups.length, approvedAdds.length);
   assert.equal(hitRateLeaderboard.length, 12);
-  assert.ok(pickups.some((p) => p.isHit), "mock fixtures should include at least one hit");
+});
+
+test("waiver hit rate: only the last same-GW re-add counts, and bench weeks never count as a hit", () => {
+  const finishedGws = [1, 2];
+  const fixtureContext = {
+    finishedGws,
+    managers: { list: [{ id: 1, name: "A" }], byId: new Map([[1, { id: 1, name: "A" }]]) },
+    players: { byId: new Map([[99, { webName: "Ghost" }]]) },
+    transactions: [
+      // Added, then re-added (higher id = later) within the same GW -- only
+      // the second should ever be evaluated.
+      { id: 1, event: 1, managerId: 1, elementIn: 99, elementOut: 50, result: "a" },
+      { id: 2, event: 1, managerId: 1, elementIn: 99, elementOut: 51, result: "a" },
+    ],
+    trades: [],
+    draftChoices: [],
+    gwPicks: {
+      1: { 1: { starters: [99], bench: [] } }, // started GW1 -- should count
+      2: { 1: { starters: [], bench: [99] } }, // benched GW2 despite a big haul -- must not count
+    },
+    gwPlayerStats: {
+      1: { 99: { totalPoints: 10 } },
+      2: { 99: { totalPoints: 20 } }, // would easily be a "hit" if bench counted
+    },
+  };
+  const { pickups } = computeWaiverHitRate(fixtureContext);
+  assert.equal(pickups.length, 1, "the earlier same-GW add must be discarded, not double-counted");
+  const [pickup] = pickups;
+  assert.equal(pickup.gwsRostered, 1, "only the started GW1 counts, not the benched GW2");
+  assert.equal(pickup.pointsWhileRostered, 10, "GW2's 20-point bench haul must not be included");
+  assert.equal(pickup.isHit, true, "10 pts in 1 started GW clears the 5pt/GW threshold");
 });
 
 test("form guide: rolling window never exceeds 5 gameweeks, W/D/L and averages check out", () => {

@@ -30,8 +30,20 @@ Run through this at the start of each new season, before the first real Action r
    no lore entry just gets plain rendering — but the family/generation-war/gauntlet
    detectors can only ever reference managers who have one.
 3. **Set `LEAGUE_ID`** (see below).
-4. **Set `CUP_ROUND_GWS`** (see below).
-5. **Set the `lu-post-mark-era` lore flag** once it's actually relevant (Lu's
+4. **Clear the local event cache: delete everything under `cache/events/`** (kept
+   only as a build-time performance cache of *finished*-gameweek API responses,
+   keyed by GW number alone — see `scripts/cache/store.js`). It's gitignored, so a
+   fresh clone never has this problem, but an existing working directory does: a
+   file cached under the old league's GW1 will still be sitting there under that
+   same GW number once the new league starts playing its own GW1, and `build.js`
+   will silently serve that stale, wrong-league data instead of fetching fresh —
+   breaking every stat that depends on per-GW player data (awards, all-play, form
+   guide, luck scores, positional strength, scoring type, trade ledger, bench
+   stats, waiver hit rate, 59 club) while standings/schedule look fine, since
+   those come from a different, unaffected endpoint. This exact bug happened once
+   already; don't skip this step.
+5. **Set `CUP_ROUND_GWS`** (see below).
+6. **Set the `lu-post-mark-era` lore flag** once it's actually relevant (Lu's
    detector-driven "Life After Mark" storylines are gated entirely behind
    `lu.flags` containing `"lu-post-mark-era"` in `data/league-lore.json` — leave it
    unset for any season where that arc isn't live).

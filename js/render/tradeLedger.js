@@ -1,7 +1,34 @@
-import { signed, signedClass } from "../format.js";
+import { signed, signedClass, escapeHtml } from "../format.js";
 
 function playerList(players) {
-  return players.map((p) => `${p.playerName} (${signed(p.points)})`).join(", ") || "—";
+  return players.map((p) => `${escapeHtml(p.playerName)} (${signed(p.points)})`).join(", ") || "—";
+}
+
+// Loose "here's what followed" context, not a claim the trade caused it --
+// see nextSamePositionPickup() in scripts/stats/tradeLedger.js.
+function positionRippleHtml(given) {
+  const withRipple = given.filter((p) => p.positionRipple);
+  if (!withRipple.length) return "";
+  const items = withRipple
+    .map((p) => {
+      const r = p.positionRipple;
+      return `${escapeHtml(p.playerName)} out &rarr; next ${escapeHtml(r.position)} pickup was ${escapeHtml(r.playerName)} (GW${r.acquiredGw}, ${r.points} pts in ${r.gwsStarted} started GW${r.gwsStarted === 1 ? "" : "s"})`;
+    })
+    .join("; ");
+  return `<div class="trade-ripple">${items}</div>`;
+}
+
+// Rough counterfactual, not a precise account of what really would have
+// happened -- see resultImpactForSide() in scripts/stats/tradeLedger.js.
+function resultImpactHtml(managerId, impacts, managers) {
+  if (!impacts?.length) return "";
+  const lines = impacts
+    .map(
+      (i) =>
+        `GW${i.gw}: actually ${i.actualResult} (${i.actualScore}-${i.opponentScore}) vs. ${managers.nameHtml(i.opponentId)} &mdash; would've been ${i.counterfactualResult} (${i.counterfactualScore}-${i.opponentScore}) keeping the original players`
+    )
+    .join("<br>");
+  return `<div class="trade-impact">${lines}</div>`;
 }
 
 export function render(container, data, managers) {
@@ -14,6 +41,8 @@ export function render(container, data, managers) {
           <div style="margin-bottom:0.4rem;">
             <strong>${managers.nameHtml(s.managerId)}</strong> receives [${playerList(s.received)}]
             for [${playerList(s.given)}] — Net: <span class="${signedClass(s.netValue)}">${signed(s.netValue)}</span>
+            ${positionRippleHtml(s.given)}
+            ${resultImpactHtml(s.managerId, s.resultImpact, managers)}
           </div>`
         )
         .join("");
@@ -33,7 +62,7 @@ export function render(container, data, managers) {
 
   container.innerHTML = `
     <h2 class="section-title">Trade Ledger</h2>
-    <p class="section-subtitle">Every trade's per-player point contributions, and each manager's season-long net trade value.</p>
+    <p class="section-subtitle">Every trade's per-player point contributions, and each manager's season-long net trade value. The position-ripple and result-impact notes below are rough, for-fun estimates (see the trade for details), not precise accounting.</p>
     <div class="card">
       <h3>Net Trade Value</h3>
       <table>

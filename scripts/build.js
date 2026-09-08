@@ -25,6 +25,7 @@ import { computeFiftyNineClub } from "./stats/fiftyNineClub.js";
 import { computeBenchStats } from "./stats/benchStats.js";
 import { computeDraftGrades } from "./stats/draftGrades.js";
 import { computeDraftBoard } from "./stats/draftBoard.js";
+import { computeProjectedPoints } from "./stats/projectedPoints.js";
 import { computeTradeLedger } from "./stats/tradeLedger.js";
 import { computeWaiverHitRate } from "./stats/waiverHitRate.js";
 import { computeFormGuide } from "./stats/formGuide.js";
@@ -154,6 +155,8 @@ async function main() {
   writeData("bench-stats.json", benchStats);
   writeData("draft-grades.json", computeDraftGrades(context));
   writeData("draft-board.json", computeDraftBoard(context));
+  const projectionsData = readJson(join(ROOT, "data", "player-projections.json"));
+  writeData("projected-points.json", computeProjectedPoints(context, projectionsData));
   writeData("trade-ledger.json", tradeLedger);
   writeData("waiver-hit-rate.json", waiverHitRate);
   writeData("form-guide.json", computeFormGuide(context));

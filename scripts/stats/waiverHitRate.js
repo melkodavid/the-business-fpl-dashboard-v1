@@ -1,4 +1,5 @@
 import { buildRosterEvents } from "../lib/rosterEvents.js";
+import { pointsWhileStarted } from "../lib/startedPoints.js";
 
 const HIT_THRESHOLD_PER_GW = 5;
 const MIN_GWS_FOR_EFFICIENCY = 3;
@@ -10,16 +11,37 @@ export function computeWaiverHitRate(context) {
   const { tenureEndGw } = buildRosterEvents(context);
   const seasonEnd = context.finishedGws[context.finishedGws.length - 1] ?? 0;
 
-  const pickups = [];
+  // A manager can add, drop, and re-add the same player before a single
+  // gameweek's deadline (e.g. add X, immediately swap X back out for Y, then
+  // re-add X) -- the roster timeline only has GW-level granularity, so
+  // tenureEndGw can't tell those apart and would credit the same real points
+  // to every one of those "a" transactions independently. Only the last add
+  // before the deadline is the one that actually left them rostered that
+  // week, so within a given manager+player+gameweek, every earlier add is
+  // discarded in favor of the highest transaction id (ids increase with time).
+  const latestByManagerPlayerGw = new Map();
   for (const t of context.transactions) {
     if (t.result !== "a" || t.elementIn == null) continue;
+    const key = `${t.managerId}:${t.elementIn}:${t.event}`;
+    const existing = latestByManagerPlayerGw.get(key);
+    if (!existing || t.id > existing.id) latestByManagerPlayerGw.set(key, t);
+  }
+
+  const pickups = [];
+  for (const t of latestByManagerPlayerGw.values()) {
     if (t.event > seasonEnd) continue; // no finished GWs elapsed yet to judge this pickup
 
     const tenureEnd = Math.min(tenureEndGw(t.managerId, t.elementIn, t.event, seasonEnd), seasonEnd);
-    const gwsRostered = context.finishedGws.filter((gw) => gw >= t.event && gw <= tenureEnd).length;
-    const pointsWhileRostered = context.finishedGws
-      .filter((gw) => gw >= t.event && gw <= tenureEnd)
-      .reduce((sum, gw) => sum + (context.gwPlayerStats[gw]?.[t.elementIn]?.totalPoints ?? 0), 0);
+    // Only gameweeks the player actually started count -- a haul from the
+    // bench never helped the team, so it shouldn't count toward whether this
+    // pickup was a "hit" (or inflate its points-while-rostered total).
+    const { gwsStarted: gwsRostered, points: pointsWhileRostered } = pointsWhileStarted(
+      context,
+      t.managerId,
+      t.elementIn,
+      t.event,
+      tenureEnd
+    );
     const pointsPerGw = gwsRostered > 0 ? pointsWhileRostered / gwsRostered : 0;
 
     pickups.push({

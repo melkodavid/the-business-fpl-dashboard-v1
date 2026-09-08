@@ -4,217 +4,217 @@
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
       "for": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 8,
+        "DEF": 44,
+        "MID": 25,
+        "FWD": 12
       },
       "against": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 14,
+        "DEF": 40,
+        "MID": 44,
+        "FWD": 30
       },
-      "topForPosition": "GK",
-      "topAgainstPosition": "GK"
+      "topForPosition": "DEF",
+      "topAgainstPosition": "MID"
     },
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
       "for": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 5,
+        "DEF": 60,
+        "MID": 61,
+        "FWD": 22
       },
       "against": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 17,
+        "DEF": 36,
+        "MID": 37,
+        "FWD": 20
       },
-      "topForPosition": "GK",
-      "topAgainstPosition": "GK"
+      "topForPosition": "MID",
+      "topAgainstPosition": "MID"
     },
     {
       "managerId": 1471,
-      "managerName": "Big BUMBO",
+      "managerName": "🥶CPR🥶",
       "for": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 15,
+        "DEF": 41,
+        "MID": 70,
+        "FWD": 14
       },
       "against": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 7,
+        "DEF": 43,
+        "MID": 64,
+        "FWD": 15
       },
-      "topForPosition": "GK",
-      "topAgainstPosition": "GK"
+      "topForPosition": "MID",
+      "topAgainstPosition": "MID"
     },
     {
       "managerId": 1501,
-      "managerName": "C",
+      "managerName": "Set Piece Fc",
       "for": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 11,
+        "DEF": 64,
+        "MID": 65,
+        "FWD": 11
       },
       "against": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 10,
+        "DEF": 35,
+        "MID": 66,
+        "FWD": 12
       },
-      "topForPosition": "GK",
-      "topAgainstPosition": "GK"
+      "topForPosition": "MID",
+      "topAgainstPosition": "MID"
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
       "for": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 6,
+        "DEF": 58,
+        "MID": 29,
+        "FWD": 18
       },
       "against": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 10,
+        "DEF": 48,
+        "MID": 64,
+        "FWD": 6
       },
-      "topForPosition": "GK",
-      "topAgainstPosition": "GK"
+      "topForPosition": "DEF",
+      "topAgainstPosition": "MID"
     },
     {
       "managerId": 1857,
-      "managerName": "CHANGE NAME",
+      "managerName": "i can fix him*",
       "for": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 10,
+        "DEF": 25,
+        "MID": 69,
+        "FWD": 36
       },
       "against": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 6,
+        "DEF": 22,
+        "MID": 65,
+        "FWD": 20
       },
-      "topForPosition": "GK",
-      "topAgainstPosition": "GK"
+      "topForPosition": "MID",
+      "topAgainstPosition": "MID"
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
       "for": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 9,
+        "DEF": 64,
+        "MID": 44,
+        "FWD": 7
       },
       "against": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 12,
+        "DEF": 23,
+        "MID": 55,
+        "FWD": 21
       },
-      "topForPosition": "GK",
-      "topAgainstPosition": "GK"
+      "topForPosition": "DEF",
+      "topAgainstPosition": "MID"
     },
     {
       "managerId": 10210,
       "managerName": "Syria FC**",
       "for": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 15,
+        "DEF": 30,
+        "MID": 70,
+        "FWD": 13
       },
       "against": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 13,
+        "DEF": 46,
+        "MID": 51,
+        "FWD": 14
       },
-      "topForPosition": "GK",
-      "topAgainstPosition": "GK"
+      "topForPosition": "MID",
+      "topAgainstPosition": "MID"
     },
     {
       "managerId": 10375,
-      "managerName": "NEEN FC",
+      "managerName": "ZZZZZZZZZZZZZZZZZZZZ",
       "for": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 10,
+        "DEF": 32,
+        "MID": 30,
+        "FWD": 41
       },
       "against": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 2,
+        "DEF": 40,
+        "MID": 47,
+        "FWD": 22
       },
-      "topForPosition": "GK",
-      "topAgainstPosition": "GK"
+      "topForPosition": "FWD",
+      "topAgainstPosition": "MID"
     },
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
       "for": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 12,
+        "DEF": 39,
+        "MID": 92,
+        "FWD": 6
       },
       "against": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 7,
+        "DEF": 46,
+        "MID": 57,
+        "FWD": 11
       },
-      "topForPosition": "GK",
-      "topAgainstPosition": "GK"
+      "topForPosition": "MID",
+      "topAgainstPosition": "MID"
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
       "for": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 9,
+        "DEF": 17,
+        "MID": 57,
+        "FWD": 13
       },
       "against": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 10,
+        "DEF": 87,
+        "MID": 44,
+        "FWD": 11
       },
-      "topForPosition": "GK",
-      "topAgainstPosition": "GK"
+      "topForPosition": "MID",
+      "topAgainstPosition": "DEF"
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
       "for": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 16,
+        "DEF": 30,
+        "MID": 60,
+        "FWD": 8
       },
       "against": {
-        "GK": 0,
-        "DEF": 0,
-        "MID": 0,
-        "FWD": 0
+        "GK": 18,
+        "DEF": 38,
+        "MID": 78,
+        "FWD": 19
       },
-      "topForPosition": "GK",
-      "topAgainstPosition": "GK"
+      "topForPosition": "MID",
+      "topAgainstPosition": "MID"
     }
   ]
 }

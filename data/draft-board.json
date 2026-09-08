@@ -125,7 +125,7 @@
           "playerName": "Enzo",
           "playerCode": 448047,
           "position": "MID",
-          "teamName": "Chelsea"
+          "teamName": "Man City"
         },
         {
           "index": 23,
@@ -335,7 +335,7 @@
           "playerName": "Muñoz",
           "playerCode": 247348,
           "position": "DEF",
-          "teamName": "Crystal Palace"
+          "teamName": "Nott'm Forest"
         },
         {
           "index": 46,
@@ -561,7 +561,7 @@
           "playerName": "Marmoush",
           "playerCode": 438234,
           "position": "FWD",
-          "teamName": "Man City"
+          "teamName": "Spurs"
         },
         {
           "index": 67,
@@ -617,7 +617,7 @@
           "playerName": "Ndiaye",
           "playerCode": 440993,
           "position": "MID",
-          "teamName": "Everton"
+          "teamName": "Man City"
         }
       ]
     },
@@ -864,7 +864,7 @@
           "playerName": "N.Jackson",
           "playerCode": 517052,
           "position": "FWD",
-          "teamName": "Chelsea"
+          "teamName": "Aston Villa"
         },
         {
           "index": 102,
@@ -930,7 +930,7 @@
         {
           "index": 120,
           "managerId": 1857,
-          "playerName": "Sangaré",
+          "playerName": "M.Sangaré",
           "playerCode": 513545,
           "position": "MID",
           "teamName": "Brentford"
@@ -1122,7 +1122,7 @@
           "playerName": "Konsa",
           "playerCode": 199798,
           "position": "DEF",
-          "teamName": "Aston Villa"
+          "teamName": "Arsenal"
         }
       ]
     },
@@ -1252,7 +1252,7 @@
           "playerName": "Martinez",
           "playerCode": 98980,
           "position": "GKP",
-          "teamName": "Aston Villa"
+          "teamName": "Chelsea"
         },
         {
           "index": 148,
@@ -1308,7 +1308,7 @@
           "playerName": "Awoniyi",
           "playerCode": 210156,
           "position": "FWD",
-          "teamName": "Nott'm Forest"
+          "teamName": "Coventry City"
         },
         {
           "index": 155,
