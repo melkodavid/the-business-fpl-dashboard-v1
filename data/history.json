@@ -1099,7 +1099,6 @@
     },
     {
       "year": "26/27",
-      "championKey": "noah",
       "table": [
         {
           "rank": 1,
@@ -1234,8 +1233,7 @@
           "pts": 0
         }
       ],
-      "isCurrent": true,
-      "championTitleNumber": 1
+      "isCurrent": true
     }
   ],
   "titleCounts": {
@@ -1243,8 +1241,7 @@
     "lu": 4,
     "ibrahim": 2,
     "pasquale": 1,
-    "david": 1,
-    "noah": 1
+    "david": 1
   },
   "leaderboard": [
     {
@@ -1331,23 +1328,6 @@
       "dSum": 2,
       "lSum": 42,
       "avgRank": 7.5
-    },
-    {
-      "managerKey": "noah",
-      "displayName": "Noah",
-      "seasons": 6,
-      "titles": 1,
-      "top4": 1,
-      "bottom3": 2,
-      "lastPlace": 2,
-      "rankSum": 48,
-      "bestRank": 1,
-      "pointsForSum": 7154,
-      "pointsSum": 231,
-      "wSum": 75,
-      "dSum": 6,
-      "lSum": 111,
-      "avgRank": 8
     },
     {
       "managerKey": "carmine",
@@ -1693,7 +1673,7 @@
       "managerKey": "noah",
       "displayName": "Noah",
       "seasons": 6,
-      "titles": 1,
+      "titles": 0,
       "top4": 1,
       "bottom3": 2,
       "lastPlace": 2,
@@ -2055,5 +2035,5 @@
       "points": 0
     }
   ],
-  "reigningChampionKey": "noah"
+  "reigningChampionKey": "lu"
 }
