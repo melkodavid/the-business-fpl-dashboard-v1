@@ -10,31 +10,38 @@ function pointsWhileWithNewTeam(context, elementId, fromGw, throughGw) {
   return sum;
 }
 
-// "Position ripple" -- a manager's *next* waiver/FA add in the same position
-// as a player they just gave up in this trade. Framed loosely on purpose: a
-// trade can create value beyond the players directly swapped (e.g. freeing a
-// roster spot that lets a later waiver pickup actually start), but that's a
-// lineup decision the manager makes, not something this can prove happened
-// *because of* the trade -- so this only ever shows "here's what followed",
-// never a claim of causation.
-function nextSamePositionPickup(context, tenureEndGw, managerId, position, afterGw, seasonEnd) {
+// "Position ripple" -- a manager's *next* waiver/FA add(s) in the same
+// position as a player they just gave up in this trade. Framed loosely on
+// purpose: a trade can create value beyond the players directly swapped
+// (e.g. freeing a roster spot that lets a later waiver pickup actually
+// start), but that's a lineup decision the manager makes, not something
+// this can prove happened *because of* the trade -- so this only ever shows
+// "here's what followed", never a claim of causation.
+//
+// Returns up to `count` *distinct* pickups in this position, in order --
+// the caller is responsible for assigning one to each given-up player in
+// that position so the same real pickup is never attributed to more than
+// one of them (e.g. give up two MIDs in one trade, and only one MID was
+// added afterward: the 1st given-up MID gets it, the 2nd gets nothing,
+// rather than both claiming the same single pickup).
+function nextSamePositionPickups(context, tenureEndGw, managerId, position, afterGw, seasonEnd, count) {
   const candidates = context.transactions
     .filter((t) => t.result === "a" && t.elementIn != null && t.managerId === managerId && t.event >= afterGw)
     .filter((t) => context.players.byId.get(t.elementIn)?.positionName === position)
     .sort((a, b) => a.event - b.event || a.id - b.id);
-  const next = candidates[0];
-  if (!next) return null;
 
-  const tenureEnd = Math.min(tenureEndGw(managerId, next.elementIn, next.event, seasonEnd), seasonEnd);
-  const { gwsStarted, points } = pointsWhileStarted(context, managerId, next.elementIn, next.event, tenureEnd);
-  return {
-    elementId: next.elementIn,
-    playerName: context.players.byId.get(next.elementIn)?.webName,
-    position,
-    acquiredGw: next.event,
-    gwsStarted,
-    points,
-  };
+  return candidates.slice(0, count).map((t) => {
+    const tenureEnd = Math.min(tenureEndGw(managerId, t.elementIn, t.event, seasonEnd), seasonEnd);
+    const { gwsStarted, points } = pointsWhileStarted(context, managerId, t.elementIn, t.event, tenureEnd);
+    return {
+      elementId: t.elementIn,
+      playerName: context.players.byId.get(t.elementIn)?.webName,
+      position,
+      acquiredGw: t.event,
+      gwsStarted,
+      points,
+    };
+  });
 }
 
 // Counterfactual win/loss impact -- "if this manager had kept the player(s)
@@ -117,17 +124,37 @@ export function computeTradeLedger(context) {
         playerName: context.players.byId.get(elementId)?.webName,
         points: pointsByElement.get(elementId) ?? 0,
       }));
-      const given = side.playersOut.map((elementId) => {
+      // Group given-up players by position first so, when a trade gives up
+      // more than one of the same position, each one gets a *different*
+      // later pickup (see nextSamePositionPickups) instead of all of them
+      // independently latching onto the same single next add.
+      const byPosition = new Map();
+      side.playersOut.forEach((elementId, idx) => {
         const position = context.players.byId.get(elementId)?.positionName;
-        return {
-          elementId,
-          playerName: context.players.byId.get(elementId)?.webName,
-          points: pointsByElement.get(elementId) ?? 0,
-          positionRipple: position
-            ? nextSamePositionPickup(context, tenureEndGw, side.managerId, position, trade.event, seasonEnd)
-            : null,
-        };
+        if (!position) return;
+        if (!byPosition.has(position)) byPosition.set(position, []);
+        byPosition.get(position).push(idx);
       });
+      const rippleByIdx = new Map();
+      for (const [position, idxs] of byPosition) {
+        const pickups = nextSamePositionPickups(
+          context,
+          tenureEndGw,
+          side.managerId,
+          position,
+          trade.event,
+          seasonEnd,
+          idxs.length
+        );
+        idxs.forEach((idx, i) => rippleByIdx.set(idx, pickups[i] ?? null));
+      }
+
+      const given = side.playersOut.map((elementId, idx) => ({
+        elementId,
+        playerName: context.players.byId.get(elementId)?.webName,
+        points: pointsByElement.get(elementId) ?? 0,
+        positionRipple: rippleByIdx.get(idx) ?? null,
+      }));
       const gained = received.reduce((sum, p) => sum + p.points, 0);
       const givenUp = given.reduce((sum, p) => sum + p.points, 0);
       const netValue = gained - givenUp;

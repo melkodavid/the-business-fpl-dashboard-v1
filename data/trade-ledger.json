@@ -166,12 +166,12 @@
               "playerName": "Sarr",
               "points": 0,
               "positionRipple": {
-                "elementId": 129,
-                "playerName": "Ayari",
+                "elementId": 210,
+                "playerName": "Wharton",
                 "position": "MID",
-                "acquiredGw": 1,
-                "gwsStarted": 0,
-                "points": 0
+                "acquiredGw": 2,
+                "gwsStarted": 1,
+                "points": 2
               }
             }
           ],
@@ -212,14 +212,7 @@
               "elementId": 455,
               "playerName": "Tonali",
               "points": 9,
-              "positionRipple": {
-                "elementId": 628,
-                "playerName": "Barcola",
-                "position": "MID",
-                "acquiredGw": 3,
-                "gwsStarted": 1,
-                "points": 1
-              }
+              "positionRipple": null
             }
           ],
           "gained": 4,

@@ -136,6 +136,78 @@ test("trade ledger: every trade nets to zero across both sides", () => {
   }
 });
 
+test("trade ledger: giving up two players in the same position each get a different position-ripple pickup, never the same one twice", () => {
+  const finishedGws = [1, 2];
+  const fixtureContext = {
+    finishedGws,
+    matches: [],
+    managers: { list: [{ id: 1, name: "A" }, { id: 2, name: "B" }] },
+    players: {
+      byId: new Map([
+        [10, { webName: "GivenMid1" }],
+        [11, { webName: "GivenMid2" }],
+        [12, { webName: "ReceivedMid" }],
+        [20, { webName: "FirstPickup" }],
+        [21, { webName: "SecondPickup" }],
+      ]),
+    },
+    // Both given-up players (10, 11) are MID; two distinct MID waivers (20,
+    // then 21) happen afterward -- each given-up player should claim one.
+    transactions: [
+      { id: 1, event: 1, managerId: 1, elementIn: 20, elementOut: null, result: "a" },
+      { id: 2, event: 2, managerId: 1, elementIn: 21, elementOut: null, result: "a" },
+    ],
+    trades: [{ id: 500, event: 1, sides: [
+      { managerId: 1, playersIn: [12], playersOut: [10, 11] },
+      { managerId: 2, playersIn: [10, 11], playersOut: [12] },
+    ] }],
+    draftChoices: [],
+    gwPicks: {},
+    gwPlayerStats: {},
+  };
+  // positionName lookups need element 10/11 to resolve to "MID" too.
+  fixtureContext.players.byId.set(10, { webName: "GivenMid1", positionName: "MID" });
+  fixtureContext.players.byId.set(11, { webName: "GivenMid2", positionName: "MID" });
+  fixtureContext.players.byId.set(12, { webName: "ReceivedMid", positionName: "MID" });
+  fixtureContext.players.byId.set(20, { webName: "FirstPickup", positionName: "MID" });
+  fixtureContext.players.byId.set(21, { webName: "SecondPickup", positionName: "MID" });
+
+  const { log } = computeTradeLedger(fixtureContext);
+  const side = log[0].sides.find((s) => s.managerId === 1);
+  const [given1, given2] = side.given;
+  assert.equal(given1.positionRipple.elementId, 20, "the first given-up MID should claim the first later MID pickup");
+  assert.equal(given2.positionRipple.elementId, 21, "the second given-up MID should claim the second, not repeat the first");
+});
+
+test("trade ledger: a given-up player gets no position-ripple when there aren't enough later pickups to go around", () => {
+  const fixtureContext = {
+    finishedGws: [1],
+    matches: [],
+    managers: { list: [{ id: 1, name: "A" }, { id: 2, name: "B" }] },
+    players: {
+      byId: new Map([
+        [10, { webName: "GivenMid1", positionName: "MID" }],
+        [11, { webName: "GivenMid2", positionName: "MID" }],
+        [12, { webName: "ReceivedMid", positionName: "MID" }],
+        [20, { webName: "OnlyPickup", positionName: "MID" }],
+      ]),
+    },
+    transactions: [{ id: 1, event: 1, managerId: 1, elementIn: 20, elementOut: null, result: "a" }],
+    trades: [{ id: 501, event: 1, sides: [
+      { managerId: 1, playersIn: [12], playersOut: [10, 11] },
+      { managerId: 2, playersIn: [10, 11], playersOut: [12] },
+    ] }],
+    draftChoices: [],
+    gwPicks: {},
+    gwPlayerStats: {},
+  };
+  const { log } = computeTradeLedger(fixtureContext);
+  const side = log[0].sides.find((s) => s.managerId === 1);
+  const [given1, given2] = side.given;
+  assert.equal(given1.positionRipple.elementId, 20);
+  assert.equal(given2.positionRipple, null, "no second pickup exists, so this must be null, not a repeat of the first");
+});
+
 test("waiver hit rate: pickup count matches approved free-agent/waiver transactions", () => {
   const { pickups, hitRateLeaderboard } = computeWaiverHitRate(context);
   const approvedAdds = context.transactions.filter((t) => t.result === "a" && t.elementIn != null);
