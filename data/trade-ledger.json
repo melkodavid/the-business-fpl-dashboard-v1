@@ -502,7 +502,14 @@
               "elementId": 244,
               "playerName": "Armstrong",
               "points": 4,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 486,
+                "playerName": "McAtee",
+                "position": "MID",
+                "acquiredGw": 5,
+                "gwsStarted": 0,
+                "points": 0
+              }
             },
             {
               "elementId": 527,
