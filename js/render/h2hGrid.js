@@ -27,7 +27,7 @@ export function render(container, data, managers) {
 
   container.innerHTML = `
     <h2 class="section-title">Head-to-Head Rivalry Grid</h2>
-    <p class="section-subtitle">Row's all-time record (W-L-D) against column. Hover a cell for points and streak.</p>
+    <p class="section-subtitle">Row's record (W-L-D) against column this season. Hover a cell for points and streak.</p>
     <div class="card">
       <table>
         <thead><tr><th class="text-left">vs</th>${headerHtml}</tr></thead>

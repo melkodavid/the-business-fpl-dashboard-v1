@@ -101,8 +101,8 @@ export function buildTaleOfTheTapeCard(fixture, data, managers, lore) {
   const awayShare = 100 - homeShare;
 
   const rivalryLine = h2h
-    ? `${h2h.wins}-${h2h.draws}-${h2h.losses} all-time${h2h.streak.count > 1 ? ` &middot; ${h2h.streak.type === "W" ? managers.name(homeId) : managers.name(awayId)} on a ${h2h.streak.count}-game run` : ""}`
-    : "First ever meeting";
+    ? `${h2h.wins}-${h2h.draws}-${h2h.losses} this season${h2h.streak.count > 1 ? ` &middot; ${h2h.streak.type === "W" ? managers.name(homeId) : managers.name(awayId)} on a ${h2h.streak.count}-game run` : ""}`
+    : "First meeting this season";
   const lastMeetingLine = h2h
     ? `Last time: GW${h2h.lastMeeting.gw}, ${h2h.lastMeeting.pointsFor}-${h2h.lastMeeting.pointsAgainst}`
     : "";

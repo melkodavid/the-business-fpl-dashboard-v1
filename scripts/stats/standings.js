@@ -22,7 +22,10 @@ export function computeStandings(context) {
       managerName: manager?.name,
       shortName: manager?.shortName,
       rank: s.rank,
-      played: s.played,
+      // The Draft API's own matches_played is the full season's scheduled
+      // fixture count (e.g. 38), not games actually completed -- derive the
+      // real number from won/drawn/lost instead of trusting that field.
+      played: s.won + s.drawn + s.lost,
       won: s.won,
       drawn: s.drawn,
       lost: s.lost,
