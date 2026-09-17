@@ -1,0 +1,99 @@
+{
+  "gw": 4,
+  "headline": {
+    "type": "record-blowout",
+    "personKeys": [
+      "ostap",
+      "muk"
+    ],
+    "text": "The margin: 33. The victim: Muk P.",
+    "facts": {
+      "winnerId": 99786,
+      "loserId": 1530,
+      "margin": 33
+    },
+    "gw": 4
+  },
+  "secondaries": [
+    {
+      "type": "belt-changed-hands",
+      "personKeys": [
+        "lu",
+        "noah"
+      ],
+      "text": "After a season carrying it, Lu hands the Belt to Noah Palladino.",
+      "facts": {
+        "beltHolderKey": "lu",
+        "newChampionKey": "noah"
+      },
+      "gw": 4
+    },
+    {
+      "type": "gauntlet-watch",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "Coming up for Mitch Grice: 3 consecutive fixtures against the family. All of it.",
+      "facts": {
+        "managerId": 1947,
+        "startGw": 10,
+        "length": 3,
+        "opponentIds": [
+          1530,
+          1377,
+          10375
+        ]
+      },
+      "gw": 4
+    },
+    {
+      "type": "gauntlet-watch",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "GAUNTLET WATCH: Mitch Grice faces 3 straight Palladinos starting GW21.",
+      "facts": {
+        "managerId": 1947,
+        "startGw": 21,
+        "length": 3,
+        "opponentIds": [
+          1530,
+          1377,
+          10375
+        ]
+      },
+      "gw": 4
+    },
+    {
+      "type": "gauntlet-watch",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "Coming up for Mitch Grice: 3 consecutive fixtures against the family. All of it.",
+      "facts": {
+        "managerId": 1947,
+        "startGw": 32,
+        "length": 3,
+        "opponentIds": [
+          1530,
+          1377,
+          10375
+        ]
+      },
+      "gw": 4
+    },
+    {
+      "type": "bridesmaid-costly-loss",
+      "personKeys": [
+        "pat"
+      ],
+      "text": "A costly loss for Pat Takala -- right on schedule.",
+      "facts": {
+        "managerId": 26227,
+        "gw": 4,
+        "importance": 2.56
+      },
+      "gw": 4
+    }
+  ]
+}

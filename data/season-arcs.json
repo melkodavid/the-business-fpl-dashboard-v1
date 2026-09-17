@@ -1,20 +1,16 @@
 {
   "gauntletWatch": {
-    "type": "gauntlet-watch",
+    "type": "gauntlet-progress",
     "personKeys": [
       "carmine"
     ],
     "facts": {
       "managerId": 1501,
-      "startGw": 4,
-      "length": 3,
-      "opponentIds": [
-        1425,
-        1530,
-        1377
-      ]
+      "wins": 0,
+      "played": 1,
+      "length": 3
     },
-    "gw": 3
+    "gw": 4
   },
   "lifeAfterMark": {
     "type": "lu-post-mark-tracker",
@@ -23,32 +19,42 @@
     ],
     "facts": {
       "managerId": 1377,
-      "rank": 12,
-      "total": 0
+      "rank": 10,
+      "total": 3
     },
-    "gw": 3
+    "gw": 4
   },
   "generationWar": {
     "matrix": {
       "01s|97s": {
         "wins": 2,
         "draws": 0,
-        "losses": 4
+        "losses": 5
       },
       "97s|01s": {
-        "wins": 4,
+        "wins": 5,
         "draws": 0,
         "losses": 2
       },
-      "01s|2000s": {
-        "wins": 2,
+      "2000s|ancient": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 1
+      },
+      "ancient|2000s": {
+        "wins": 1,
         "draws": 0,
         "losses": 0
       },
-      "2000s|01s": {
-        "wins": 0,
+      "01s|2000s": {
+        "wins": 3,
         "draws": 0,
         "losses": 2
+      },
+      "2000s|01s": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 3
       },
       "ancient|01s": {
         "wins": 0,
@@ -59,12 +65,32 @@
         "wins": 1,
         "draws": 0,
         "losses": 0
+      },
+      "2000s|97s": {
+        "wins": 1,
+        "draws": 0,
+        "losses": 0
+      },
+      "97s|2000s": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 1
+      },
+      "ancient|97s": {
+        "wins": 1,
+        "draws": 0,
+        "losses": 0
+      },
+      "97s|ancient": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 1
       }
     },
     "oneOhOnesVsRest": {
-      "wins": 5,
+      "wins": 6,
       "draws": 0,
-      "losses": 4
+      "losses": 7
     }
   }
 }

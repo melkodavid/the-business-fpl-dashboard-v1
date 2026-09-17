@@ -1,5 +1,20 @@
 {
-  "instances": [],
+  "instances": [
+    {
+      "gw": 4,
+      "managerId": 10210,
+      "elementId": 86,
+      "playerName": "Lewis-Potter",
+      "fixtureId": 32
+    },
+    {
+      "gw": 4,
+      "managerId": 29975,
+      "elementId": 377,
+      "playerName": "Munoz",
+      "fixtureId": 35
+    }
+  ],
   "seasonTotals": [
     {
       "managerId": 1377,
@@ -31,7 +46,7 @@
     },
     {
       "managerId": 10210,
-      "count": 0
+      "count": 1
     },
     {
       "managerId": 10375,
@@ -43,7 +58,7 @@
     },
     {
       "managerId": 29975,
-      "count": 0
+      "count": 1
     },
     {
       "managerId": 99786,

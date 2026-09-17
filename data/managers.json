@@ -82,12 +82,12 @@
     },
     {
       "id": 10375,
-      "name": "ZZZZZZZZZZZZZZZZZZZZ",
-      "shortName": "ZZ",
-      "playerName": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
-      "personKey": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
-      "color": null,
-      "abbreviation": "ZZ",
+      "name": "NEEN FC",
+      "shortName": "AP",
+      "playerName": "Anthony Palladino",
+      "personKey": "anthony",
+      "color": "#e0662f",
+      "abbreviation": "ANT",
       "titles": 0
     },
     {

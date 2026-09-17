@@ -3,41 +3,41 @@
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "goals": 0,
-      "assists": 6,
-      "cleanSheets": 23,
-      "defensiveContribution": 14,
-      "bonus": 3,
-      "cardsLost": -2
+      "goals": 8,
+      "assists": 9,
+      "cleanSheets": 37,
+      "defensiveContribution": 18,
+      "bonus": 10,
+      "cardsLost": -6
     },
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "goals": 40,
-      "assists": 15,
-      "cleanSheets": 19,
+      "goals": 55,
+      "assists": 18,
+      "cleanSheets": 37,
       "defensiveContribution": 6,
-      "bonus": 21,
-      "cardsLost": -6
+      "bonus": 32,
+      "cardsLost": -7
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "goals": 40,
-      "assists": 9,
-      "cleanSheets": 14,
-      "defensiveContribution": 4,
-      "bonus": 14,
-      "cardsLost": -3
+      "goals": 55,
+      "assists": 12,
+      "cleanSheets": 19,
+      "defensiveContribution": 8,
+      "bonus": 18,
+      "cardsLost": -8
     },
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "goals": 21,
-      "assists": 12,
-      "cleanSheets": 30,
-      "defensiveContribution": 16,
-      "bonus": 14,
+      "goals": 32,
+      "assists": 18,
+      "cleanSheets": 40,
+      "defensiveContribution": 18,
+      "bonus": 21,
       "cardsLost": -2
     },
     {
@@ -45,80 +45,80 @@
       "managerName": "Muks Militia",
       "goals": 4,
       "assists": 21,
-      "cleanSheets": 27,
-      "defensiveContribution": 4,
+      "cleanSheets": 35,
+      "defensiveContribution": 6,
       "bonus": 8,
-      "cardsLost": -4
+      "cardsLost": -8
     },
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "goals": 26,
-      "assists": 15,
-      "cleanSheets": 13,
-      "defensiveContribution": 10,
-      "bonus": 18,
+      "goals": 30,
+      "assists": 18,
+      "cleanSheets": 20,
+      "defensiveContribution": 18,
+      "bonus": 23,
       "cardsLost": -5
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "goals": 16,
-      "assists": 12,
-      "cleanSheets": 27,
-      "defensiveContribution": 8,
-      "bonus": 9,
-      "cardsLost": -4
+      "goals": 21,
+      "assists": 24,
+      "cleanSheets": 33,
+      "defensiveContribution": 18,
+      "bonus": 12,
+      "cardsLost": -8
     },
     {
       "managerId": 10210,
       "managerName": "Syria FC**",
       "goals": 24,
       "assists": 15,
-      "cleanSheets": 21,
+      "cleanSheets": 27,
       "defensiveContribution": 6,
-      "bonus": 11,
-      "cardsLost": -6
+      "bonus": 14,
+      "cardsLost": -9
     },
     {
       "managerId": 10375,
-      "managerName": "ZZZZZZZZZZZZZZZZZZZZ",
-      "goals": 16,
-      "assists": 9,
-      "cleanSheets": 22,
-      "defensiveContribution": 6,
-      "bonus": 13,
-      "cardsLost": -8
+      "managerName": "NEEN FC",
+      "goals": 20,
+      "assists": 15,
+      "cleanSheets": 27,
+      "defensiveContribution": 10,
+      "bonus": 15,
+      "cardsLost": -11
     },
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
-      "goals": 30,
+      "goals": 41,
       "assists": 18,
-      "cleanSheets": 24,
+      "cleanSheets": 34,
       "defensiveContribution": 8,
       "bonus": 17,
-      "cardsLost": -2
+      "cardsLost": -3
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
       "goals": 15,
       "assists": 15,
-      "cleanSheets": 11,
-      "defensiveContribution": 2,
+      "cleanSheets": 23,
+      "defensiveContribution": 6,
       "bonus": 6,
-      "cardsLost": -2
+      "cardsLost": -4
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "goals": 21,
-      "assists": 15,
-      "cleanSheets": 19,
+      "goals": 29,
+      "assists": 24,
+      "cleanSheets": 32,
       "defensiveContribution": 2,
-      "bonus": 8,
-      "cardsLost": -5
+      "bonus": 13,
+      "cardsLost": -7
     }
   ]
 }

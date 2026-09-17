@@ -41,55 +41,69 @@
       "26227": 3,
       "29975": 2,
       "99786": 12
+    },
+    "4": {
+      "1377": 14,
+      "1425": 13,
+      "1471": 1,
+      "1501": 5,
+      "1530": 0,
+      "1857": 14,
+      "1947": 4,
+      "10210": 0,
+      "10375": 15,
+      "26227": 6,
+      "29975": 7,
+      "99786": 7
     }
   },
   "perManager": [
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "benchPointsWasted": 7,
+      "benchPointsWasted": 21,
       "couldHaveWonCount": 0,
       "eligibleLossesOrDraws": 3
     },
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "benchPointsWasted": 22,
+      "benchPointsWasted": 35,
       "couldHaveWonCount": 0,
       "eligibleLossesOrDraws": 0
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "benchPointsWasted": 7,
+      "benchPointsWasted": 8,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 1
+      "eligibleLossesOrDraws": 2
     },
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "benchPointsWasted": 10,
+      "benchPointsWasted": 15,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 1
+      "eligibleLossesOrDraws": 2
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
       "benchPointsWasted": 3,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 2
+      "eligibleLossesOrDraws": 3
     },
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "benchPointsWasted": 27,
+      "benchPointsWasted": 41,
       "couldHaveWonCount": 0,
       "eligibleLossesOrDraws": 0
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "benchPointsWasted": 15,
+      "benchPointsWasted": 19,
       "couldHaveWonCount": 0,
       "eligibleLossesOrDraws": 1
     },
@@ -98,33 +112,33 @@
       "managerName": "Syria FC**",
       "benchPointsWasted": 1,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 1
+      "eligibleLossesOrDraws": 2
     },
     {
       "managerId": 10375,
-      "managerName": "ZZZZZZZZZZZZZZZZZZZZ",
-      "benchPointsWasted": 14,
+      "managerName": "NEEN FC",
+      "benchPointsWasted": 29,
       "couldHaveWonCount": 0,
       "eligibleLossesOrDraws": 2
     },
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
-      "benchPointsWasted": 14,
+      "benchPointsWasted": 20,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 1
+      "eligibleLossesOrDraws": 2
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "benchPointsWasted": 5,
+      "benchPointsWasted": 12,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 3
+      "eligibleLossesOrDraws": 4
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "benchPointsWasted": 26,
+      "benchPointsWasted": 33,
       "couldHaveWonCount": 1,
       "eligibleLossesOrDraws": 3
     }

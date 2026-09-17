@@ -71,7 +71,7 @@
         "score": 24
       },
       "blowout": {
-        "title": "ZZZZZZZZZZZZZZZZZZZZ took Lu’s Rules FC **** behind the bushes",
+        "title": "NEEN FC took Lu’s Rules FC **** behind the bushes",
         "winnerId": 10375,
         "loserId": 1377,
         "margin": 24
@@ -83,13 +83,56 @@
         "benchPoints": 12
       },
       "fiftyNineClubInstances": []
+    },
+    {
+      "gw": 4,
+      "topScore": {
+        "managerIds": [
+          1425
+        ],
+        "score": 68
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          1530
+        ],
+        "score": 21
+      },
+      "blowout": {
+        "title": "Patso Ball Fc took Muks Militia behind the bushes",
+        "winnerId": 99786,
+        "loserId": 1530,
+        "margin": 33
+      },
+      "worstLineup": {
+        "managerIds": [
+          10375
+        ],
+        "benchPoints": 15
+      },
+      "fiftyNineClubInstances": [
+        {
+          "gw": 4,
+          "managerId": 10210,
+          "elementId": 86,
+          "playerName": "Lewis-Potter",
+          "fixtureId": 32
+        },
+        {
+          "gw": 4,
+          "managerId": 29975,
+          "elementId": 377,
+          "playerName": "Munoz",
+          "fixtureId": 35
+        }
+      ]
     }
   ],
   "hallOfFame": {
     "topScore": [
       {
         "managerId": 1425,
-        "count": 1
+        "count": 2
       },
       {
         "managerId": 1501,
@@ -112,6 +155,10 @@
       {
         "managerId": 1377,
         "count": 1
+      },
+      {
+        "managerId": 1530,
+        "count": 1
       }
     ],
     "blowout": [
@@ -126,6 +173,10 @@
       {
         "managerId": 10375,
         "count": 1
+      },
+      {
+        "managerId": 99786,
+        "count": 1
       }
     ],
     "worstLineup": [
@@ -135,6 +186,10 @@
       },
       {
         "managerId": 1857,
+        "count": 1
+      },
+      {
+        "managerId": 10375,
         "count": 1
       }
     ]
