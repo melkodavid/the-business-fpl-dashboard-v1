@@ -3,10 +3,13 @@
 // whoever won the most recently completed PRIOR season. It does NOT change
 // hands week to week just because the in-progress table has a new leader --
 // the current table leader is merely "on track", not "carrying the belt".
-// The belt only actually changes hands (or is retained) once THIS season
-// itself concludes and crowns its own champion. Reads history.json's
-// already-computed seasons list rather than duplicating title data (per the
-// brief: "Title data: read from history.json, do NOT duplicate titles in lore").
+// This only tracks the in-season "is the holder still on track" drama --
+// actual belt resolution (retained/changed hands) isn't detected here since
+// this league doesn't hand the title off mid-season the way that implied;
+// history.js's championKey/reigningChampionKey is the source of truth once a
+// season actually completes. Reads history.json's already-computed seasons
+// list rather than duplicating title data (per the brief: "Title data: read
+// from history.json, do NOT duplicate titles in lore").
 //
 // The anth-belt-photos flag doesn't need its own detector output -- it's a
 // template-level flourish added when rendering an existing
@@ -33,22 +36,6 @@ export function detectBeltWatch(context, replay, history) {
       baseWeight: gw >= LATE_SEASON_FROM_GW ? 6 : 2,
       gw,
       dedupeKey: `belt-in-danger:${gw >= LATE_SEASON_FROM_GW ? "late" : "early"}`,
-    });
-  }
-
-  const finalGw = context.finishedGws[context.finishedGws.length - 1];
-  if (finalGw) {
-    const finalChampion = replay.at(finalGw).standings.find((r) => r.rank === 1);
-    const finalChampionKey = context.managers.byId.get(finalChampion.managerId)?.personKey;
-    const retained = finalChampionKey === beltHolderKey;
-
-    storylines.push({
-      type: retained ? "belt-retained" : "belt-changed-hands",
-      personKeys: retained ? [beltHolderKey] : [beltHolderKey, finalChampionKey],
-      facts: { beltHolderKey, newChampionKey: finalChampionKey },
-      baseWeight: 8,
-      gw: finalGw,
-      dedupeKey: "belt-resolution",
     });
   }
 

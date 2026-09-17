@@ -72,8 +72,6 @@ const canonicalStorylines = {
   "noah-trade-desk-negative": { personKeys: ["lu"], facts: { tradeId: 1, netValue: -5, runningTotal: -3 } },
   "noah-trade-desk-running-total": { personKeys: ["lu"], facts: { runningTotal: -3 } },
   "belt-in-danger": { personKeys: ["lu", "muk"], facts: { beltHolderKey: "lu", currentLeaderKey: "muk", gw: 1 } },
-  "belt-retained": { personKeys: ["lu"], facts: { beltHolderKey: "lu", newChampionKey: "lu" } },
-  "belt-changed-hands": { personKeys: ["lu", "muk"], facts: { beltHolderKey: "lu", newChampionKey: "muk" } },
   "lu-post-mark-tracker": { personKeys: ["lu"], facts: { managerId: 1, rank: 2, total: 45 } },
   "lu-post-mark-trade-scrutiny": { personKeys: ["lu"], facts: { tradeId: 1, netValue: -5 } },
   "lu-post-mark-resolution-won": { personKeys: ["lu"], facts: { managerId: 1 } },

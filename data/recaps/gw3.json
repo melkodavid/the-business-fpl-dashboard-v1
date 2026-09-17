@@ -1,15 +1,18 @@
 {
   "gw": 3,
   "headline": {
-    "type": "belt-changed-hands",
+    "type": "lineup-could-have-won",
     "personKeys": [
-      "lu",
-      "noah"
+      "ostap"
     ],
-    "text": "Noah Palladino takes the Belt from Lu. The reign is over.",
+    "text": "With the right lineup, Ostap Tsymbalista wins this week. Instead: a loss.",
     "facts": {
-      "beltHolderKey": "lu",
-      "newChampionKey": "noah"
+      "gw": 3,
+      "managerId": 99786,
+      "opponentId": 1857,
+      "actualScore": 46,
+      "optimalScore": 55,
+      "opponentScore": 53
     },
     "gw": 3
   },
@@ -24,6 +27,19 @@
         "managerId": 1857,
         "streakType": "W",
         "length": 3
+      },
+      "gw": 3
+    },
+    {
+      "type": "table-new-leader",
+      "personKeys": [
+        "noah",
+        "carmine"
+      ],
+      "text": "Noah Palladino moves top of the table, past Carmine Francella.",
+      "facts": {
+        "newLeaderId": 1425,
+        "previousLeaderId": 1501
       },
       "gw": 3
     },
@@ -61,19 +77,6 @@
       "facts": {
         "managerId": 10210,
         "rank": 6
-      },
-      "gw": 3
-    },
-    {
-      "type": "generation-sweep",
-      "personKeys": [
-        "pat",
-        "noah"
-      ],
-      "text": "Clean sweep for the 97s across 2 cross-generation matchups.",
-      "facts": {
-        "generation": "97s",
-        "count": 2
       },
       "gw": 3
     }

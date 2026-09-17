@@ -16,19 +16,6 @@
   },
   "secondaries": [
     {
-      "type": "belt-changed-hands",
-      "personKeys": [
-        "lu",
-        "noah"
-      ],
-      "text": "After a season carrying it, Lu hands the Belt to Noah Palladino.",
-      "facts": {
-        "beltHolderKey": "lu",
-        "newChampionKey": "noah"
-      },
-      "gw": 4
-    },
-    {
       "type": "gauntlet-watch",
       "personKeys": [
         "mitch"
@@ -92,6 +79,24 @@
         "managerId": 26227,
         "gw": 4,
         "importance": 2.56
+      },
+      "gw": 4
+    },
+    {
+      "type": "gauntlet-watch",
+      "personKeys": [
+        "carmine"
+      ],
+      "text": "Coming up for Carmine Francella: 3 consecutive fixtures against the family. All of it.",
+      "facts": {
+        "managerId": 1501,
+        "startGw": 26,
+        "length": 3,
+        "opponentIds": [
+          1425,
+          1530,
+          1377
+        ]
       },
       "gw": 4
     }

@@ -171,17 +171,6 @@
     "The Belt is in danger. {name2} has passed {name1} at the top.",
     "{name1} is on track to lose the Belt to {name2}."
   ],
-  "belt-retained": [
-    "{name1} retains the Belt.",
-    "The Belt stays where it belongs: {name1}.",
-    "{name1} defends the Belt successfully."
-  ],
-  "belt-changed-hands": [
-    "{name2} takes the Belt from {name1}. The reign is over.",
-    "After a season carrying it, {name1} hands the Belt to {name2}.",
-    "New Belt holder: {name2}. {name1}'s defense ends here."
-  ],
-
   "lu-post-mark-tracker": [
     "Life After Mark: {name1} sits {rank} in the table.",
     "The Life After Mark tracker: {name1}, rank {rank}.",

@@ -258,22 +258,8 @@ test("beltWatch: escalates weight sharply from GW30+", () => {
   assert.ok(late.baseWeight > early.baseWeight);
 });
 
-test("beltWatch: resolves belt-retained when the prior holder wins again, belt-changed-hands otherwise", () => {
-  const retainedContext = {
-    managers: managers([
-      { id: 1, personKey: "david" },
-      { id: 2, personKey: "lu" },
-    ]),
-    matches: [{ event: 1, finished: true, homeManagerId: 1, awayManagerId: 2, homePoints: 60, awayPoints: 40 }],
-    finishedGws: [1],
-  };
-  const retainedReplay = buildSeasonReplay(retainedContext);
-  const history = { seasons: [{ championKey: "david" }, { isCurrent: true }] };
-  const retainedStorylines = detectBeltWatch(retainedContext, retainedReplay, history);
-  assert.ok(retainedStorylines.some((s) => s.type === "belt-retained"));
-  assert.ok(!retainedStorylines.some((s) => s.type === "belt-changed-hands"));
-
-  const changedContext = {
+test("beltWatch: never emits a resolution storyline mid-season -- this league doesn't hand the belt off until the season actually ends", () => {
+  const context = {
     managers: managers([
       { id: 1, personKey: "david" },
       { id: 2, personKey: "lu" },
@@ -281,12 +267,11 @@ test("beltWatch: resolves belt-retained when the prior holder wins again, belt-c
     matches: [{ event: 1, finished: true, homeManagerId: 1, awayManagerId: 2, homePoints: 40, awayPoints: 60 }],
     finishedGws: [1],
   };
-  const changedReplay = buildSeasonReplay(changedContext);
-  const changedStorylines = detectBeltWatch(changedContext, changedReplay, history);
-  const changeStoryline = changedStorylines.find((s) => s.type === "belt-changed-hands");
-  assert.ok(changeStoryline);
-  assert.equal(changeStoryline.facts.beltHolderKey, "david");
-  assert.equal(changeStoryline.facts.newChampionKey, "lu");
+  const replay = buildSeasonReplay(context);
+  const history = { seasons: [{ championKey: "david" }, { isCurrent: true }] };
+  const storylines = detectBeltWatch(context, replay, history);
+  assert.ok(!storylines.some((s) => s.type === "belt-retained"));
+  assert.ok(!storylines.some((s) => s.type === "belt-changed-hands"));
 });
 
 test("luPostMark: inert when the lore flag is unset", () => {
