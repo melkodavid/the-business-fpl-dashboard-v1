@@ -3,7 +3,7 @@
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 236
+      "draftTeamPoints": 239
     },
     {
       "managerId": 1857,
@@ -13,31 +13,31 @@
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 198
+      "draftTeamPoints": 206
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 191
+      "draftTeamPoints": 195
     },
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "draftTeamPoints": 187
+      "draftTeamPoints": 190
     },
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "draftTeamPoints": 185
-    },
-    {
-      "managerId": 10210,
-      "managerName": "Syria FC**",
-      "draftTeamPoints": 167
+      "draftTeamPoints": 186
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
+      "draftTeamPoints": 172
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
       "draftTeamPoints": 167
     },
     {
@@ -48,17 +48,17 @@
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "draftTeamPoints": 151
+      "draftTeamPoints": 153
     },
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
-      "draftTeamPoints": 150
+      "draftTeamPoints": 151
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "draftTeamPoints": 146
+      "draftTeamPoints": 147
     }
   ],
   "scatter": [
@@ -82,7 +82,7 @@
     },
     {
       "pickNumber": 4,
-      "seasonPoints": 27,
+      "seasonPoints": 28,
       "managerId": 1530,
       "playerName": "Palmer"
     },
@@ -100,7 +100,7 @@
     },
     {
       "pickNumber": 7,
-      "seasonPoints": 6,
+      "seasonPoints": 10,
       "managerId": 1947,
       "playerName": "Thiago"
     },
@@ -148,7 +148,7 @@
     },
     {
       "pickNumber": 15,
-      "seasonPoints": 28,
+      "seasonPoints": 29,
       "managerId": 1471,
       "playerName": "Rogers"
     },
@@ -316,7 +316,7 @@
     },
     {
       "pickNumber": 43,
-      "seasonPoints": 6,
+      "seasonPoints": 7,
       "managerId": 1425,
       "playerName": "O.Dango"
     },
@@ -382,7 +382,7 @@
     },
     {
       "pickNumber": 54,
-      "seasonPoints": 11,
+      "seasonPoints": 13,
       "managerId": 1425,
       "playerName": "Lacroix"
     },
@@ -436,7 +436,7 @@
     },
     {
       "pickNumber": 63,
-      "seasonPoints": 32,
+      "seasonPoints": 39,
       "managerId": 1471,
       "playerName": "Schade"
     },
@@ -610,7 +610,7 @@
     },
     {
       "pickNumber": 92,
-      "seasonPoints": 13,
+      "seasonPoints": 14,
       "managerId": 26227,
       "playerName": "Neto"
     },
@@ -736,7 +736,7 @@
     },
     {
       "pickNumber": 113,
-      "seasonPoints": 17,
+      "seasonPoints": 20,
       "managerId": 1501,
       "playerName": "Kelleher"
     },
@@ -940,7 +940,7 @@
     },
     {
       "pickNumber": 147,
-      "seasonPoints": 8,
+      "seasonPoints": 9,
       "managerId": 10375,
       "playerName": "Martinez"
     },
@@ -988,7 +988,7 @@
     },
     {
       "pickNumber": 155,
-      "seasonPoints": 18,
+      "seasonPoints": 23,
       "managerId": 99786,
       "playerName": "Kayode"
     },
@@ -1060,7 +1060,7 @@
     },
     {
       "pickNumber": 167,
-      "seasonPoints": 14,
+      "seasonPoints": 16,
       "managerId": 29975,
       "playerName": "Damsgaard"
     },
