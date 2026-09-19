@@ -13,7 +13,7 @@
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 221
+      "draftTeamPoints": 220
     },
     {
       "managerId": 1471,
@@ -33,17 +33,17 @@
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 197
+      "draftTeamPoints": 198
     },
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 187
+      "draftTeamPoints": 192
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "draftTeamPoints": 175
+      "draftTeamPoints": 176
     },
     {
       "managerId": 10210,
@@ -106,7 +106,7 @@
     },
     {
       "pickNumber": 8,
-      "seasonPoints": 29,
+      "seasonPoints": 28,
       "managerId": 1501,
       "playerName": "Gibbs-White"
     },
@@ -280,7 +280,7 @@
     },
     {
       "pickNumber": 37,
-      "seasonPoints": 11,
+      "seasonPoints": 12,
       "managerId": 1377,
       "playerName": "Igor Jesus"
     },
@@ -340,7 +340,7 @@
     },
     {
       "pickNumber": 47,
-      "seasonPoints": 4,
+      "seasonPoints": 5,
       "managerId": 29975,
       "playerName": "Muñoz"
     },
@@ -532,7 +532,7 @@
     },
     {
       "pickNumber": 79,
-      "seasonPoints": 21,
+      "seasonPoints": 19,
       "managerId": 1947,
       "playerName": "N.Williams"
     },
@@ -646,7 +646,7 @@
     },
     {
       "pickNumber": 98,
-      "seasonPoints": 24,
+      "seasonPoints": 23,
       "managerId": 29975,
       "playerName": "Verbruggen"
     },
@@ -676,7 +676,7 @@
     },
     {
       "pickNumber": 103,
-      "seasonPoints": 13,
+      "seasonPoints": 14,
       "managerId": 1947,
       "playerName": "Sels"
     },
@@ -718,7 +718,7 @@
     },
     {
       "pickNumber": 110,
-      "seasonPoints": 6,
+      "seasonPoints": 7,
       "managerId": 99786,
       "playerName": "Diomande"
     },
@@ -856,7 +856,7 @@
     },
     {
       "pickNumber": 133,
-      "seasonPoints": 20,
+      "seasonPoints": 23,
       "managerId": 1377,
       "playerName": "Murillo"
     },
@@ -934,7 +934,7 @@
     },
     {
       "pickNumber": 146,
-      "seasonPoints": 30,
+      "seasonPoints": 31,
       "managerId": 29975,
       "playerName": "Hall"
     },
@@ -994,7 +994,7 @@
     },
     {
       "pickNumber": 156,
-      "seasonPoints": 3,
+      "seasonPoints": 4,
       "managerId": 1377,
       "playerName": "Wood"
     },
@@ -1114,7 +1114,7 @@
     },
     {
       "pickNumber": 176,
-      "seasonPoints": 3,
+      "seasonPoints": 4,
       "managerId": 1501,
       "playerName": "Simms"
     },
