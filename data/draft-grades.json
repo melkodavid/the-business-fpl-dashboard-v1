@@ -21,14 +21,14 @@
       "draftTeamPoints": 239
     },
     {
-      "managerId": 1501,
-      "managerName": "Set Piece Fc",
-      "draftTeamPoints": 226
-    },
-    {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
       "draftTeamPoints": 226
+    },
+    {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "draftTeamPoints": 224
     },
     {
       "managerId": 10375,
@@ -448,7 +448,7 @@
     },
     {
       "pickNumber": 65,
-      "seasonPoints": 13,
+      "seasonPoints": 11,
       "managerId": 1501,
       "playerName": "Matheus N."
     },
