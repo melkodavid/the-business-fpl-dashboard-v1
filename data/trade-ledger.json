@@ -889,6 +889,78 @@
           "resultImpact": []
         }
       ]
+    },
+    {
+      "tradeId": 293087,
+      "gw": 6,
+      "sides": [
+        {
+          "managerId": 29975,
+          "received": [
+            {
+              "elementId": 580,
+              "playerName": "Araujo",
+              "points": 0
+            },
+            {
+              "elementId": 432,
+              "playerName": "Mainoo",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 201,
+              "playerName": "Muñoz",
+              "points": 0,
+              "positionRipple": null
+            },
+            {
+              "elementId": 429,
+              "playerName": "Rashford",
+              "points": 0,
+              "positionRipple": null
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0,
+          "resultImpact": []
+        },
+        {
+          "managerId": 1530,
+          "received": [
+            {
+              "elementId": 201,
+              "playerName": "Muñoz",
+              "points": 0
+            },
+            {
+              "elementId": 429,
+              "playerName": "Rashford",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 580,
+              "playerName": "Araujo",
+              "points": 0,
+              "positionRipple": null
+            },
+            {
+              "elementId": 432,
+              "playerName": "Mainoo",
+              "points": 0,
+              "positionRipple": null
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0,
+          "resultImpact": []
+        }
+      ]
     }
   ],
   "leaderboard": [
