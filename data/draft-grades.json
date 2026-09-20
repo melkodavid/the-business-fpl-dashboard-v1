@@ -28,7 +28,7 @@
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "draftTeamPoints": 200
+      "draftTeamPoints": 199
     },
     {
       "managerId": 99786,
@@ -766,7 +766,7 @@
     },
     {
       "pickNumber": 118,
-      "seasonPoints": 14,
+      "seasonPoints": 13,
       "managerId": 10375,
       "playerName": "McBurnie"
     },
