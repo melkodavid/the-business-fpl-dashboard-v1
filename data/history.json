@@ -1107,8 +1107,19 @@
           "managerKey": "noah",
           "w": 4,
           "d": 0,
-          "l": 0,
-          "plus": 216,
+          "l": 1,
+          "plus": 254,
+          "pts": 12
+        },
+        {
+          "rank": 2,
+          "team": "FC General",
+          "manager": "Mitch Grice",
+          "managerKey": "mitch",
+          "w": 4,
+          "d": 0,
+          "l": 1,
+          "plus": 227,
           "pts": 12
         },
         {
@@ -1118,107 +1129,96 @@
           "managerKey": "david",
           "w": 4,
           "d": 0,
-          "l": 0,
-          "plus": 188,
-          "pts": 12
-        },
-        {
-          "rank": 3,
-          "team": "FC General",
-          "manager": "Mitch Grice",
-          "managerKey": "mitch",
-          "w": 3,
-          "d": 0,
           "l": 1,
-          "plus": 177,
-          "pts": 9
+          "plus": 227,
+          "pts": 12
         },
         {
           "rank": 4,
           "team": "Set Piece Fc",
           "manager": "Carmine Francella",
           "managerKey": "carmine",
-          "w": 2,
+          "w": 3,
           "d": 0,
           "l": 2,
-          "plus": 206,
-          "pts": 6
+          "plus": 269,
+          "pts": 9
         },
         {
           "rank": 5,
           "team": "Mourinho’s Ego FT",
           "manager": "Pat Takala",
           "managerKey": "pat",
-          "w": 2,
+          "w": 3,
           "d": 0,
           "l": 2,
-          "plus": 187,
-          "pts": 6
+          "plus": 235,
+          "pts": 9
         },
         {
           "rank": 6,
           "team": "🥶CPR🥶",
           "manager": "Marshall Curtin-Dudzic",
           "managerKey": "marshall",
-          "w": 2,
+          "w": 3,
           "d": 0,
           "l": 2,
-          "plus": 183,
-          "pts": 6
+          "plus": 230,
+          "pts": 9
         },
         {
           "rank": 7,
+          "team": "NEEN FC",
+          "manager": "Anthony Palladino",
+          "managerKey": "anthony",
+          "w": 3,
+          "d": 0,
+          "l": 2,
+          "plus": 183,
+          "pts": 9
+        },
+        {
+          "rank": 8,
+          "team": "Patso Ball Fc",
+          "manager": "Ostap Tsymbalista",
+          "managerKey": "ostap",
+          "w": 2,
+          "d": 0,
+          "l": 3,
+          "plus": 211,
+          "pts": 6
+        },
+        {
+          "rank": 9,
           "team": "Syria FC**",
           "manager": "Ibrahim Abdulnour",
           "managerKey": "ibrahim",
           "w": 2,
           "d": 0,
-          "l": 2,
-          "plus": 152,
-          "pts": 6
-        },
-        {
-          "rank": 8,
-          "team": "NEEN FC",
-          "manager": "Anthony Palladino",
-          "managerKey": "anthony",
-          "w": 2,
-          "d": 0,
-          "l": 2,
-          "plus": 147,
-          "pts": 6
-        },
-        {
-          "rank": 9,
-          "team": "Patso Ball Fc",
-          "manager": "Ostap Tsymbalista",
-          "managerKey": "ostap",
-          "w": 1,
-          "d": 0,
           "l": 3,
-          "plus": 168,
-          "pts": 3
+          "plus": 189,
+          "pts": 6
         },
         {
           "rank": 10,
-          "team": "Lu’s Rules FC ****",
-          "manager": "Lu Palladino",
-          "managerKey": "lu",
-          "w": 1,
-          "d": 0,
-          "l": 3,
-          "plus": 138,
-          "pts": 3
-        },
-        {
-          "rank": 11,
           "team": "Muks Militia",
           "manager": "Muk P",
           "managerKey": "muk",
           "w": 1,
           "d": 0,
-          "l": 3,
-          "plus": 132,
+          "l": 4,
+          "plus": 174,
+          "pts": 3
+        },
+        {
+          "rank": 11,
+          "team": "Lu’s Rules FC ****",
+          "manager": "Lu Palladino",
+          "managerKey": "lu",
+          "w": 1,
+          "d": 0,
+          "l": 4,
+          "plus": 172,
           "pts": 3
         },
         {
@@ -1228,8 +1228,8 @@
           "managerKey": "zac",
           "w": 0,
           "d": 0,
-          "l": 4,
-          "plus": 131,
+          "l": 5,
+          "plus": 153,
           "pts": 0
         }
       ],
@@ -1252,14 +1252,14 @@
       "top4": 5,
       "bottom3": 1,
       "lastPlace": 0,
-      "rankSum": 36,
+      "rankSum": 37,
       "bestRank": 1,
-      "pointsForSum": 13383,
+      "pointsForSum": 13417,
       "pointsSum": 560,
       "wSum": 185,
       "dSum": 5,
-      "lSum": 114,
-      "avgRank": 4
+      "lSum": 115,
+      "avgRank": 4.1
     },
     {
       "managerKey": "ibrahim",
@@ -1269,14 +1269,14 @@
       "top4": 3,
       "bottom3": 1,
       "lastPlace": 0,
-      "rankSum": 34,
+      "rankSum": 36,
       "bestRank": 1,
-      "pointsForSum": 9167,
+      "pointsForSum": 9204,
       "pointsSum": 378,
       "wSum": 125,
       "dSum": 3,
-      "lSum": 103,
-      "avgRank": 4.9
+      "lSum": 104,
+      "avgRank": 5.1
     },
     {
       "managerKey": "david",
@@ -1288,11 +1288,11 @@
       "lastPlace": 0,
       "rankSum": 47,
       "bestRank": 1,
-      "pointsForSum": 9164,
+      "pointsForSum": 9203,
       "pointsSum": 348,
       "wSum": 114,
       "dSum": 6,
-      "lSum": 111,
+      "lSum": 112,
       "avgRank": 6.7
     },
     {
@@ -1330,6 +1330,23 @@
       "avgRank": 7.5
     },
     {
+      "managerKey": "carmine",
+      "displayName": "Carmine Francella",
+      "seasons": 1,
+      "titles": 0,
+      "top4": 1,
+      "bottom3": 0,
+      "lastPlace": 0,
+      "rankSum": 4,
+      "bestRank": 4,
+      "pointsForSum": 269,
+      "pointsSum": 9,
+      "wSum": 3,
+      "dSum": 0,
+      "lSum": 2,
+      "avgRank": 4
+    },
+    {
       "managerKey": "ivan",
       "displayName": "Ivan",
       "seasons": 2,
@@ -1347,23 +1364,6 @@
       "avgRank": 4
     },
     {
-      "managerKey": "carmine",
-      "displayName": "Carmine Francella",
-      "seasons": 1,
-      "titles": 0,
-      "top4": 1,
-      "bottom3": 0,
-      "lastPlace": 0,
-      "rankSum": 4,
-      "bestRank": 4,
-      "pointsForSum": 206,
-      "pointsSum": 6,
-      "wSum": 2,
-      "dSum": 0,
-      "lSum": 2,
-      "avgRank": 4
-    },
-    {
       "managerKey": "mitch",
       "displayName": "Mitch",
       "seasons": 8,
@@ -1371,14 +1371,14 @@
       "top4": 4,
       "bottom3": 0,
       "lastPlace": 0,
-      "rankSum": 41,
-      "bestRank": 3,
-      "pointsForSum": 11074,
-      "pointsSum": 416,
-      "wSum": 136,
+      "rankSum": 40,
+      "bestRank": 2,
+      "pointsForSum": 11124,
+      "pointsSum": 419,
+      "wSum": 137,
       "dSum": 8,
       "lSum": 125,
-      "avgRank": 5.1
+      "avgRank": 5
     },
     {
       "managerKey": "anthony",
@@ -1388,14 +1388,14 @@
       "top4": 4,
       "bottom3": 1,
       "lastPlace": 0,
-      "rankSum": 47,
+      "rankSum": 46,
       "bestRank": 2,
-      "pointsForSum": 12893,
-      "pointsSum": 487,
-      "wSum": 160,
+      "pointsForSum": 12929,
+      "pointsSum": 490,
+      "wSum": 161,
       "dSum": 7,
       "lSum": 137,
-      "avgRank": 5.2
+      "avgRank": 5.1
     },
     {
       "managerKey": "nolan",
@@ -1424,9 +1424,9 @@
       "lastPlace": 0,
       "rankSum": 50,
       "bestRank": 3,
-      "pointsForSum": 12603,
-      "pointsSum": 473,
-      "wSum": 156,
+      "pointsForSum": 12650,
+      "pointsSum": 476,
+      "wSum": 157,
       "dSum": 5,
       "lSum": 143,
       "avgRank": 5.6
@@ -1439,14 +1439,14 @@
       "top4": 3,
       "bottom3": 1,
       "lastPlace": 0,
-      "rankSum": 45,
+      "rankSum": 44,
       "bestRank": 4,
-      "pointsForSum": 9279,
-      "pointsSum": 366,
-      "wSum": 119,
+      "pointsForSum": 9322,
+      "pointsSum": 369,
+      "wSum": 120,
       "dSum": 9,
       "lSum": 103,
-      "avgRank": 6.4
+      "avgRank": 6.3
     },
     {
       "managerKey": "pat",
@@ -1458,9 +1458,9 @@
       "lastPlace": 2,
       "rankSum": 47,
       "bestRank": 2,
-      "pointsForSum": 9569,
-      "pointsSum": 339,
-      "wSum": 110,
+      "pointsForSum": 9617,
+      "pointsSum": 342,
+      "wSum": 111,
       "dSum": 9,
       "lSum": 112,
       "avgRank": 6.7
@@ -1490,14 +1490,14 @@
       "top4": 1,
       "bottom3": 2,
       "lastPlace": 0,
-      "rankSum": 48,
+      "rankSum": 47,
       "bestRank": 2,
-      "pointsForSum": 7323,
+      "pointsForSum": 7365,
       "pointsSum": 274,
       "wSum": 90,
       "dSum": 4,
-      "lSum": 99,
-      "avgRank": 8
+      "lSum": 100,
+      "avgRank": 7.8
     },
     {
       "managerKey": "jonpaul",
@@ -1526,11 +1526,11 @@
       "lastPlace": 2,
       "rankSum": 48,
       "bestRank": 1,
-      "pointsForSum": 7222,
+      "pointsForSum": 7260,
       "pointsSum": 234,
       "wSum": 76,
       "dSum": 6,
-      "lSum": 111,
+      "lSum": 112,
       "avgRank": 8
     },
     {
@@ -1594,11 +1594,11 @@
       "lastPlace": 1,
       "rankSum": 12,
       "bestRank": 12,
-      "pointsForSum": 131,
+      "pointsForSum": 153,
       "pointsSum": 0,
       "wSum": 0,
       "dSum": 0,
-      "lSum": 4,
+      "lSum": 5,
       "avgRank": 12
     },
     {
@@ -1646,9 +1646,9 @@
       "lastPlace": 2,
       "rankSum": 47,
       "bestRank": 2,
-      "pointsForSum": 9569,
-      "pointsSum": 339,
-      "wSum": 110,
+      "pointsForSum": 9617,
+      "pointsSum": 342,
+      "wSum": 111,
       "dSum": 9,
       "lSum": 112
     },
@@ -1662,11 +1662,11 @@
       "lastPlace": 2,
       "rankSum": 48,
       "bestRank": 1,
-      "pointsForSum": 7222,
+      "pointsForSum": 7260,
       "pointsSum": 234,
       "wSum": 76,
       "dSum": 6,
-      "lSum": 111
+      "lSum": 112
     },
     {
       "managerKey": "jonpaul",
@@ -1710,11 +1710,11 @@
       "lastPlace": 1,
       "rankSum": 12,
       "bestRank": 12,
-      "pointsForSum": 131,
+      "pointsForSum": 153,
       "pointsSum": 0,
       "wSum": 0,
       "dSum": 0,
-      "lSum": 4
+      "lSum": 5
     }
   ],
   "allTimeTable": [
@@ -1725,10 +1725,10 @@
       "titles": 4,
       "w": 185,
       "d": 5,
-      "l": 114,
-      "wlDiff": 71,
-      "winPct": 60.9,
-      "pointsFor": 13383,
+      "l": 115,
+      "wlDiff": 70,
+      "winPct": 60.7,
+      "pointsFor": 13417,
       "points": 560
     },
     {
@@ -1736,39 +1736,39 @@
       "displayName": "Anthony",
       "seasons": 9,
       "titles": 0,
-      "w": 160,
+      "w": 161,
       "d": 7,
       "l": 137,
-      "wlDiff": 23,
-      "winPct": 52.6,
-      "pointsFor": 12893,
-      "points": 487
+      "wlDiff": 24,
+      "winPct": 52.8,
+      "pointsFor": 12929,
+      "points": 490
     },
     {
       "managerKey": "marshall",
       "displayName": "Marshall",
       "seasons": 9,
       "titles": 0,
-      "w": 156,
+      "w": 157,
       "d": 5,
       "l": 143,
-      "wlDiff": 13,
-      "winPct": 51.3,
-      "pointsFor": 12603,
-      "points": 473
+      "wlDiff": 14,
+      "winPct": 51.5,
+      "pointsFor": 12650,
+      "points": 476
     },
     {
       "managerKey": "mitch",
       "displayName": "Mitch",
       "seasons": 8,
       "titles": 0,
-      "w": 136,
+      "w": 137,
       "d": 8,
       "l": 125,
-      "wlDiff": 11,
-      "winPct": 50.6,
-      "pointsFor": 11074,
-      "points": 416
+      "wlDiff": 12,
+      "winPct": 50.7,
+      "pointsFor": 11124,
+      "points": 419
     },
     {
       "managerKey": "pasquale",
@@ -1790,10 +1790,10 @@
       "titles": 2,
       "w": 125,
       "d": 3,
-      "l": 103,
-      "wlDiff": 22,
-      "winPct": 54.1,
-      "pointsFor": 9167,
+      "l": 104,
+      "wlDiff": 21,
+      "winPct": 53.9,
+      "pointsFor": 9204,
       "points": 378
     },
     {
@@ -1801,13 +1801,13 @@
       "displayName": "Ostap",
       "seasons": 7,
       "titles": 0,
-      "w": 119,
+      "w": 120,
       "d": 9,
       "l": 103,
-      "wlDiff": 16,
-      "winPct": 51.5,
-      "pointsFor": 9279,
-      "points": 366
+      "wlDiff": 17,
+      "winPct": 51.7,
+      "pointsFor": 9322,
+      "points": 369
     },
     {
       "managerKey": "david",
@@ -1816,11 +1816,24 @@
       "titles": 1,
       "w": 114,
       "d": 6,
-      "l": 111,
-      "wlDiff": 3,
-      "winPct": 49.4,
-      "pointsFor": 9164,
+      "l": 112,
+      "wlDiff": 2,
+      "winPct": 49.1,
+      "pointsFor": 9203,
       "points": 348
+    },
+    {
+      "managerKey": "pat",
+      "displayName": "Patrick",
+      "seasons": 7,
+      "titles": 0,
+      "w": 111,
+      "d": 9,
+      "l": 112,
+      "wlDiff": -1,
+      "winPct": 47.8,
+      "pointsFor": 9617,
+      "points": 342
     },
     {
       "managerKey": "mark",
@@ -1836,29 +1849,16 @@
       "points": 341
     },
     {
-      "managerKey": "pat",
-      "displayName": "Patrick",
-      "seasons": 7,
-      "titles": 0,
-      "w": 110,
-      "d": 9,
-      "l": 112,
-      "wlDiff": -2,
-      "winPct": 47.6,
-      "pointsFor": 9569,
-      "points": 339
-    },
-    {
       "managerKey": "muk",
       "displayName": "Marcus",
       "seasons": 6,
       "titles": 0,
       "w": 90,
       "d": 4,
-      "l": 99,
-      "wlDiff": -9,
-      "winPct": 46.6,
-      "pointsFor": 7323,
+      "l": 100,
+      "wlDiff": -10,
+      "winPct": 46.4,
+      "pointsFor": 7365,
       "points": 274
     },
     {
@@ -1868,10 +1868,10 @@
       "titles": 0,
       "w": 76,
       "d": 6,
-      "l": 111,
-      "wlDiff": -35,
-      "winPct": 39.4,
-      "pointsFor": 7222,
+      "l": 112,
+      "wlDiff": -36,
+      "winPct": 39.2,
+      "pointsFor": 7260,
       "points": 234
     },
     {
@@ -1983,13 +1983,13 @@
       "displayName": "Carmine Francella",
       "seasons": 1,
       "titles": 0,
-      "w": 2,
+      "w": 3,
       "d": 0,
       "l": 2,
-      "wlDiff": 0,
-      "winPct": 50,
-      "pointsFor": 206,
-      "points": 6
+      "wlDiff": 1,
+      "winPct": 60,
+      "pointsFor": 269,
+      "points": 9
     },
     {
       "managerKey": "zac",
@@ -1998,10 +1998,10 @@
       "titles": 0,
       "w": 0,
       "d": 0,
-      "l": 4,
-      "wlDiff": -4,
+      "l": 5,
+      "wlDiff": -5,
       "winPct": 0,
-      "pointsFor": 131,
+      "pointsFor": 153,
       "points": 0
     }
   ],

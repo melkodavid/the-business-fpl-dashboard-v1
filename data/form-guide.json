@@ -1,47 +1,14 @@
 {
   "rows": [
     {
-      "managerId": 1425,
-      "managerName": "Pearl Street Pirates",
-      "gwsIncluded": [
-        1,
-        2,
-        3,
-        4
-      ],
-      "results": [
-        {
-          "gw": 1,
-          "result": "W",
-          "points": 68
-        },
-        {
-          "gw": 2,
-          "result": "W",
-          "points": 32
-        },
-        {
-          "gw": 3,
-          "result": "W",
-          "points": 48
-        },
-        {
-          "gw": 4,
-          "result": "W",
-          "points": 68
-        }
-      ],
-      "avgPoints": 54,
-      "diffFromLeagueAvg": 11.8
-    },
-    {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
       "gwsIncluded": [
         1,
         2,
         3,
-        4
+        4,
+        5
       ],
       "results": [
         {
@@ -63,44 +30,55 @@
           "gw": 4,
           "result": "L",
           "points": 55
+        },
+        {
+          "gw": 5,
+          "result": "W",
+          "points": 63
         }
       ],
-      "avgPoints": 51.5,
-      "diffFromLeagueAvg": 9.3
+      "avgPoints": 53.8,
+      "diffFromLeagueAvg": 11.7
     },
     {
-      "managerId": 1857,
-      "managerName": "i can fix him*",
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
       "gwsIncluded": [
         1,
         2,
         3,
-        4
+        4,
+        5
       ],
       "results": [
         {
           "gw": 1,
           "result": "W",
-          "points": 40
+          "points": 68
         },
         {
           "gw": 2,
           "result": "W",
-          "points": 47
+          "points": 32
         },
         {
           "gw": 3,
           "result": "W",
-          "points": 53
+          "points": 48
         },
         {
           "gw": 4,
           "result": "W",
-          "points": 48
+          "points": 68
+        },
+        {
+          "gw": 5,
+          "result": "L",
+          "points": 38
         }
       ],
-      "avgPoints": 47,
-      "diffFromLeagueAvg": 4.8
+      "avgPoints": 50.8,
+      "diffFromLeagueAvg": 8.7
     },
     {
       "managerId": 26227,
@@ -109,7 +87,8 @@
         1,
         2,
         3,
-        4
+        4,
+        5
       ],
       "results": [
         {
@@ -131,10 +110,15 @@
           "gw": 4,
           "result": "L",
           "points": 38
+        },
+        {
+          "gw": 5,
+          "result": "W",
+          "points": 48
         }
       ],
-      "avgPoints": 46.8,
-      "diffFromLeagueAvg": 4.6
+      "avgPoints": 47,
+      "diffFromLeagueAvg": 4.9
     },
     {
       "managerId": 1471,
@@ -143,7 +127,8 @@
         1,
         2,
         3,
-        4
+        4,
+        5
       ],
       "results": [
         {
@@ -165,10 +150,55 @@
           "gw": 4,
           "result": "L",
           "points": 43
+        },
+        {
+          "gw": 5,
+          "result": "W",
+          "points": 47
         }
       ],
-      "avgPoints": 45.8,
-      "diffFromLeagueAvg": 3.6
+      "avgPoints": 46,
+      "diffFromLeagueAvg": 3.9
+    },
+    {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "gwsIncluded": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "results": [
+        {
+          "gw": 1,
+          "result": "W",
+          "points": 40
+        },
+        {
+          "gw": 2,
+          "result": "W",
+          "points": 47
+        },
+        {
+          "gw": 3,
+          "result": "W",
+          "points": 53
+        },
+        {
+          "gw": 4,
+          "result": "W",
+          "points": 48
+        },
+        {
+          "gw": 5,
+          "result": "L",
+          "points": 39
+        }
+      ],
+      "avgPoints": 45.4,
+      "diffFromLeagueAvg": 3.3
     },
     {
       "managerId": 1947,
@@ -177,7 +207,8 @@
         1,
         2,
         3,
-        4
+        4,
+        5
       ],
       "results": [
         {
@@ -199,10 +230,15 @@
           "gw": 4,
           "result": "W",
           "points": 53
+        },
+        {
+          "gw": 5,
+          "result": "W",
+          "points": 50
         }
       ],
-      "avgPoints": 44.3,
-      "diffFromLeagueAvg": 2.1
+      "avgPoints": 45.4,
+      "diffFromLeagueAvg": 3.3
     },
     {
       "managerId": 99786,
@@ -211,7 +247,8 @@
         1,
         2,
         3,
-        4
+        4,
+        5
       ],
       "results": [
         {
@@ -233,10 +270,15 @@
           "gw": 4,
           "result": "W",
           "points": 54
+        },
+        {
+          "gw": 5,
+          "result": "W",
+          "points": 43
         }
       ],
-      "avgPoints": 42,
-      "diffFromLeagueAvg": -0.2
+      "avgPoints": 42.2,
+      "diffFromLeagueAvg": 0.1
     },
     {
       "managerId": 10210,
@@ -245,7 +287,8 @@
         1,
         2,
         3,
-        4
+        4,
+        5
       ],
       "results": [
         {
@@ -267,10 +310,15 @@
           "gw": 4,
           "result": "L",
           "points": 24
+        },
+        {
+          "gw": 5,
+          "result": "L",
+          "points": 37
         }
       ],
-      "avgPoints": 38,
-      "diffFromLeagueAvg": -4.2
+      "avgPoints": 37.8,
+      "diffFromLeagueAvg": -4.3
     },
     {
       "managerId": 10375,
@@ -279,7 +327,8 @@
         1,
         2,
         3,
-        4
+        4,
+        5
       ],
       "results": [
         {
@@ -301,44 +350,15 @@
           "gw": 4,
           "result": "W",
           "points": 34
-        }
-      ],
-      "avgPoints": 36.8,
-      "diffFromLeagueAvg": -5.4
-    },
-    {
-      "managerId": 1377,
-      "managerName": "Lu’s Rules FC ****",
-      "gwsIncluded": [
-        1,
-        2,
-        3,
-        4
-      ],
-      "results": [
-        {
-          "gw": 1,
-          "result": "L",
-          "points": 35
         },
         {
-          "gw": 2,
-          "result": "L",
-          "points": 30
-        },
-        {
-          "gw": 3,
-          "result": "L",
-          "points": 24
-        },
-        {
-          "gw": 4,
+          "gw": 5,
           "result": "W",
-          "points": 49
+          "points": 36
         }
       ],
-      "avgPoints": 34.5,
-      "diffFromLeagueAvg": -7.7
+      "avgPoints": 36.6,
+      "diffFromLeagueAvg": -5.5
     },
     {
       "managerId": 1530,
@@ -347,7 +367,8 @@
         1,
         2,
         3,
-        4
+        4,
+        5
       ],
       "results": [
         {
@@ -369,10 +390,55 @@
           "gw": 4,
           "result": "L",
           "points": 21
+        },
+        {
+          "gw": 5,
+          "result": "L",
+          "points": 42
         }
       ],
-      "avgPoints": 33,
-      "diffFromLeagueAvg": -9.2
+      "avgPoints": 34.8,
+      "diffFromLeagueAvg": -7.3
+    },
+    {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "gwsIncluded": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "results": [
+        {
+          "gw": 1,
+          "result": "L",
+          "points": 35
+        },
+        {
+          "gw": 2,
+          "result": "L",
+          "points": 30
+        },
+        {
+          "gw": 3,
+          "result": "L",
+          "points": 24
+        },
+        {
+          "gw": 4,
+          "result": "W",
+          "points": 49
+        },
+        {
+          "gw": 5,
+          "result": "L",
+          "points": 34
+        }
+      ],
+      "avgPoints": 34.4,
+      "diffFromLeagueAvg": -7.7
     },
     {
       "managerId": 29975,
@@ -381,7 +447,8 @@
         1,
         2,
         3,
-        4
+        4,
+        5
       ],
       "results": [
         {
@@ -403,11 +470,16 @@
           "gw": 4,
           "result": "L",
           "points": 35
+        },
+        {
+          "gw": 5,
+          "result": "L",
+          "points": 22
         }
       ],
-      "avgPoints": 32.8,
-      "diffFromLeagueAvg": -9.4
+      "avgPoints": 30.6,
+      "diffFromLeagueAvg": -11.5
     }
   ],
-  "leagueAvgPoints": 42.2
+  "leagueAvgPoints": 42.1
 }

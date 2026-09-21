@@ -126,6 +126,49 @@
           "fixtureId": 35
         }
       ]
+    },
+    {
+      "gw": 5,
+      "topScore": {
+        "managerIds": [
+          1501
+        ],
+        "score": 63
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          29975
+        ],
+        "score": 22
+      },
+      "blowout": {
+        "title": "Set Piece Fc took Muks Militia behind the bushes",
+        "winnerId": 1501,
+        "loserId": 1530,
+        "margin": 21
+      },
+      "worstLineup": {
+        "managerIds": [
+          99786
+        ],
+        "benchPoints": 32
+      },
+      "fiftyNineClubInstances": [
+        {
+          "gw": 5,
+          "managerId": 1471,
+          "elementId": 5,
+          "playerName": "J.Timber",
+          "fixtureId": 42
+        },
+        {
+          "gw": 5,
+          "managerId": 10375,
+          "elementId": 452,
+          "playerName": "Bruno G.",
+          "fixtureId": 42
+        }
+      ]
     }
   ],
   "hallOfFame": {
@@ -136,7 +179,7 @@
       },
       {
         "managerId": 1501,
-        "count": 1
+        "count": 2
       },
       {
         "managerId": 1857,
@@ -146,7 +189,7 @@
     "markOfTheWeek": [
       {
         "managerId": 29975,
-        "count": 1
+        "count": 2
       },
       {
         "managerId": 10375,
@@ -163,11 +206,11 @@
     ],
     "blowout": [
       {
-        "managerId": 1530,
-        "count": 1
+        "managerId": 1501,
+        "count": 2
       },
       {
-        "managerId": 1501,
+        "managerId": 1530,
         "count": 1
       },
       {
@@ -182,7 +225,7 @@
     "worstLineup": [
       {
         "managerId": 99786,
-        "count": 2
+        "count": 3
       },
       {
         "managerId": 1857,
