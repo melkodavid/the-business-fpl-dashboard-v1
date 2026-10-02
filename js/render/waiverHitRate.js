@@ -5,7 +5,7 @@ function pickupTable(rows, extraCol, managers) {
       (p) => `
         <tr>
           <td class="text-left">${p.playerName}</td>
-          <td class="text-left">${managers.nameHtml(p.managerId)}</td>
+          <td class="text-left">${managers.clubHtml(p.managerId)}</td>
           <td>GW${p.acquiredGw}</td>
           <td>${p.gwsRostered}</td>
           <td>${p.pointsWhileRostered}</td>
@@ -31,7 +31,7 @@ export function render(container, data, managers) {
     .map(
       (m) => `
         <tr>
-          <td class="text-left">${managers.nameHtml(m.managerId)}</td>
+          <td class="text-left">${managers.clubHtml(m.managerId)}</td>
           <td>${m.hits}/${m.totalPickups}</td>
           <td>${(m.hitRate * 100).toFixed(0)}%</td>
         </tr>`

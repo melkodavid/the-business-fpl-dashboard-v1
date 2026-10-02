@@ -8,6 +8,7 @@
       "personKey": "lu",
       "color": "#2f6fed",
       "abbreviation": "LUC",
+      "badge": null,
       "titles": 4
     },
     {
@@ -18,6 +19,7 @@
       "personKey": "noah",
       "color": "#9b51e0",
       "abbreviation": "NOA",
+      "badge": null,
       "titles": 0
     },
     {
@@ -28,6 +30,7 @@
       "personKey": "marshall",
       "color": "#1fa15c",
       "abbreviation": "MAR",
+      "badge": null,
       "titles": 0
     },
     {
@@ -38,6 +41,7 @@
       "personKey": "carmine",
       "color": "#26a69a",
       "abbreviation": "CAR",
+      "badge": null,
       "titles": 0
     },
     {
@@ -48,6 +52,7 @@
       "personKey": "muk",
       "color": "#17b8c4",
       "abbreviation": "MUK",
+      "badge": null,
       "titles": 0
     },
     {
@@ -58,6 +63,7 @@
       "personKey": "david",
       "color": "#f0a623",
       "abbreviation": "DAV",
+      "badge": null,
       "titles": 1
     },
     {
@@ -68,6 +74,7 @@
       "personKey": "mitch",
       "color": "#7cb518",
       "abbreviation": "GEN",
+      "badge": null,
       "titles": 0
     },
     {
@@ -78,6 +85,7 @@
       "personKey": "ibrahim",
       "color": "#e0393f",
       "abbreviation": "IBR",
+      "badge": null,
       "titles": 2
     },
     {
@@ -88,6 +96,7 @@
       "personKey": "anthony",
       "color": "#e0662f",
       "abbreviation": "ANT",
+      "badge": null,
       "titles": 0
     },
     {
@@ -98,6 +107,7 @@
       "personKey": "pat",
       "color": "#e0499b",
       "abbreviation": "PAT",
+      "badge": null,
       "titles": 0
     },
     {
@@ -108,6 +118,7 @@
       "personKey": "zac",
       "color": "#ec407a",
       "abbreviation": "ZAC",
+      "badge": null,
       "titles": 0
     },
     {
@@ -118,6 +129,7 @@
       "personKey": "ostap",
       "color": "#2fb89a",
       "abbreviation": "OST",
+      "badge": null,
       "titles": 0
     }
   ]

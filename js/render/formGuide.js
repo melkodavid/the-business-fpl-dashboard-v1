@@ -18,7 +18,7 @@ export function render(container, data, managers) {
       (r, i) => `
         <tr>
           <td>${i + 1}</td>
-          <td class="text-left">${managers.nameHtml(r.managerId)}</td>
+          <td class="text-left">${managers.clubHtml(r.managerId)}</td>
           <td class="text-left"><div class="form-strip">${formBoxes(r.results)}</div></td>
           <td>${r.avgPoints}</td>
           <td class="${signedClass(r.diffFromLeagueAvg)}">${signed(r.diffFromLeagueAvg)}</td>

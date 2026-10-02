@@ -9,7 +9,7 @@ export function render(container, data, managers) {
       (s, i) => `
         <tr class="${s.managerId === myId ? "is-me" : ""}">
           <td>${rankChipHtml(i + 1)}</td>
-          <td class="text-left">${managers.nameHtml(s.managerId)}</td>
+          <td class="text-left">${managers.clubHtml(s.managerId)}</td>
           <td>${s.actualWins}</td>
           <td>${round1(s.expectedWins)}</td>
           <td>${luckPillHtml(s.luckScore)}</td>

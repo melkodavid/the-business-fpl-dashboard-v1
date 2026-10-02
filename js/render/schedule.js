@@ -19,7 +19,7 @@ function fixtureCard(f, managers) {
       <div class="fixture-tag">${f.tag}</div>
       <div class="fixture-body">
         <div class="fixture-side">
-          <span class="fixture-name">${managers.nameHtml(f.homeManagerId)}</span>
+          <span class="fixture-name">${managers.clubHtml(f.homeManagerId)}</span>
           <span class="fixture-rank">#${f.homeRank}</span>
           <span class="fixture-abbr" style="background:${homeColor}">${managers.abbreviation(f.homeManagerId)}</span>
           ${managers.avatarHtml(f.homeManagerId)}
@@ -30,7 +30,7 @@ function fixtureCard(f, managers) {
           <span class="${f.finished || f.started ? "" : "score-pending"}">${f.started || f.finished ? f.awayPoints : "–"}</span>
         </div>
         <div class="fixture-side away">
-          <span class="fixture-name">${managers.nameHtml(f.awayManagerId)}</span>
+          <span class="fixture-name">${managers.clubHtml(f.awayManagerId)}</span>
           <span class="fixture-rank">#${f.awayRank}</span>
           <span class="fixture-abbr" style="background:${awayColor}">${managers.abbreviation(f.awayManagerId)}</span>
           ${managers.avatarHtml(f.awayManagerId)}
@@ -112,6 +112,7 @@ export function render(container, data, managers) {
         <div class="fixture-list">
           ${cardsHtml || '<p class="empty-state">No fixtures to show.</p>'}
         </div>
+        ${data.schedule.oddsMeta ? `<p class="odds-note">${data.schedule.oddsMeta.basis === "live" ? "Live odds" : "Win odds"} compare each manager's best XI using ${data.schedule.oddsMeta.source} &mdash; a for-fun estimate, not a bookmaker's price.</p>` : ""}
       </div>
     </div>
   `;

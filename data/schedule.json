@@ -13,7 +13,16 @@
       "started": false,
       "finished": false,
       "importance": 3,
-      "tag": "Title Six-Pointer"
+      "tag": "Title Six-Pointer",
+      "odds": {
+        "homeWinPct": 32,
+        "drawPct": 3,
+        "awayWinPct": 65,
+        "homeExpected": 53.2,
+        "awayExpected": 59.2,
+        "homeSoFar": null,
+        "awaySoFar": null
+      }
     },
     {
       "event": 6,
@@ -26,7 +35,16 @@
       "started": false,
       "finished": false,
       "importance": 2.32,
-      "tag": "Wooden Spoon Battle"
+      "tag": "Wooden Spoon Battle",
+      "odds": {
+        "homeWinPct": 24,
+        "drawPct": 2,
+        "awayWinPct": 74,
+        "homeExpected": 34.6,
+        "awayExpected": 44.2,
+        "homeSoFar": null,
+        "awaySoFar": null
+      }
     },
     {
       "event": 6,
@@ -39,7 +57,16 @@
       "started": false,
       "finished": false,
       "importance": 2.27,
-      "tag": "Wooden Spoon Battle"
+      "tag": "Wooden Spoon Battle",
+      "odds": {
+        "homeWinPct": 10,
+        "drawPct": 1,
+        "awayWinPct": 89,
+        "homeExpected": 29.9,
+        "awayExpected": 48.2,
+        "homeSoFar": null,
+        "awaySoFar": null
+      }
     },
     {
       "event": 6,
@@ -52,7 +79,16 @@
       "started": false,
       "finished": false,
       "importance": 2.21,
-      "tag": "Title Six-Pointer"
+      "tag": "Title Six-Pointer",
+      "odds": {
+        "homeWinPct": 31,
+        "drawPct": 3,
+        "awayWinPct": 66,
+        "homeExpected": 49.4,
+        "awayExpected": 56,
+        "homeSoFar": null,
+        "awaySoFar": null
+      }
     },
     {
       "event": 6,
@@ -65,7 +101,16 @@
       "started": false,
       "finished": false,
       "importance": 2.2,
-      "tag": "Wooden Spoon Battle"
+      "tag": "Wooden Spoon Battle",
+      "odds": {
+        "homeWinPct": 21,
+        "drawPct": 2,
+        "awayWinPct": 77,
+        "homeExpected": 40.7,
+        "awayExpected": 51.6,
+        "homeSoFar": null,
+        "awaySoFar": null
+      }
     },
     {
       "event": 6,
@@ -78,7 +123,21 @@
       "started": false,
       "finished": false,
       "importance": 1.33,
-      "tag": "Midtable Clash"
+      "tag": "Midtable Clash",
+      "odds": {
+        "homeWinPct": 40,
+        "drawPct": 3,
+        "awayWinPct": 57,
+        "homeExpected": 39.4,
+        "awayExpected": 42.6,
+        "homeSoFar": null,
+        "awaySoFar": null
+      }
     }
-  ]
+  ],
+  "oddsMeta": {
+    "source": "Official FPL expected points (next gameweek)",
+    "basis": "pre-match",
+    "sigma": 10.2
+  }
 }

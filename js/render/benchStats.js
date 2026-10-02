@@ -24,7 +24,7 @@ function benchWeekHtml(week, rank, managers) {
 
   const resultWord = { W: "Won", L: "Lost", D: "Drew" }[week.result];
   const resultHtml = week.result
-    ? `<span class="bench-result bench-result-${week.result}">${resultWord} ${week.ownScore}&ndash;${week.opponentScore} vs ${managers.nameHtml(week.opponentId)}</span>`
+    ? `<span class="bench-result bench-result-${week.result}">${resultWord} ${week.ownScore}&ndash;${week.opponentScore} vs ${managers.clubHtml(week.opponentId)}</span>`
     : "";
   const costHtml = week.couldHaveWon
     ? `<span class="bench-cost" title="The best possible lineup from this squad would have beaten their opponent">Cost them the win</span>`
@@ -33,7 +33,7 @@ function benchWeekHtml(week, rank, managers) {
   return `
     <article class="bench-week">
       <header class="bench-week-head">
-        <div class="bench-week-who">${rankChipHtml(rank)}<div><strong>${managers.nameHtml(week.managerId)}</strong><span class="bench-week-gw">GW${week.gw}</span></div></div>
+        <div class="bench-week-who">${rankChipHtml(rank)}<div><strong>${managers.clubHtml(week.managerId)}</strong><span class="bench-week-gw">GW${week.gw}</span></div></div>
         <div class="bench-week-total"><strong>${week.benchPoints}</strong><span>pts on the bench</span></div>
       </header>
       <div class="bench-week-meta">${resultHtml}${costHtml}</div>
@@ -47,7 +47,7 @@ export function render(container, data, managers) {
     .map(
       (m) => `
         <tr>
-          <td class="text-left">${managers.nameHtml(m.managerId)}</td>
+          <td class="text-left">${managers.clubHtml(m.managerId)}</td>
           <td>${m.benchPointsWasted}</td>
           <td>${m.couldHaveWonCount}</td>
           <td>${m.eligibleLossesOrDraws}</td>

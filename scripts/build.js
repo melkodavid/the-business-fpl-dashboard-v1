@@ -31,6 +31,8 @@ import { computeWaiverHitRate } from "./stats/waiverHitRate.js";
 import { computeFormGuide } from "./stats/formGuide.js";
 import { computeHistory } from "./stats/history.js";
 import { computeSchedule } from "./stats/schedule.js";
+import { computeMatchupOdds, attachOdds } from "./stats/matchupOdds.js";
+import { gatherOddsInputs } from "./fetch/oddsInputs.js";
 import { buildNarrativeLayer } from "./narrative/index.js";
 import { writeRecapArchive } from "./narrative/archive.js";
 
@@ -134,6 +136,10 @@ async function main() {
         personKey: m.personKey,
         color: profile?.color ?? null,
         abbreviation: profile?.abbreviation ?? m.shortName,
+        // Optional custom club badge (emoji, or an image path) from
+        // manager-profiles.json; otherwise assets/badges/{personKey}.png or
+        // the generated shield is used (see js/data.js).
+        badge: profile?.badge ?? null,
         titles: history.titleCounts[m.personKey] ?? 0,
       };
     }),
@@ -160,7 +166,20 @@ async function main() {
   writeData("trade-ledger.json", tradeLedger);
   writeData("waiver-hit-rate.json", waiverHitRate);
   writeData("form-guide.json", computeFormGuide(context));
-  writeData("schedule.json", computeSchedule(context));
+  const schedule = computeSchedule(context);
+  // Win odds are a bonus: any failure here (the classic FPL API being down or
+  // changing shape) must never break the hourly data refresh, so the fixtures
+  // just go without odds and the site falls back to its form bar.
+  if (!MOCK && !schedule.seasonComplete && schedule.gw != null) {
+    try {
+      const started = context.matches.some((m) => m.event === schedule.gw && m.started);
+      const inputs = await gatherOddsInputs(context, { leagueId: config.LEAGUE_ID, gw: schedule.gw, started });
+      attachOdds(schedule, computeMatchupOdds(context, inputs));
+    } catch (err) {
+      console.warn(`Matchup odds skipped: ${err.message}`);
+    }
+  }
+  writeData("schedule.json", schedule);
   writeData("cup.json", cup);
 
   const loreRaw = readJson(join(ROOT, "data", "league-lore.json"));

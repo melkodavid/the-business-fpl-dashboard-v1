@@ -6,7 +6,7 @@ export function render(container, data, managers) {
     .map(
       (m) => `
         <tr>
-          <td class="text-left">${managers.nameHtml(m.managerId)}</td>
+          <td class="text-left">${managers.clubHtml(m.managerId)}</td>
           <td class="pos-for block-start">${m.for.GK}</td><td class="pos-for">${m.for.DEF}</td><td class="pos-for">${m.for.MID}</td><td class="pos-for">${m.for.FWD}</td>
           <td class="pos-for"><strong>${m.topForPosition}</strong></td>
           <td class="pos-against block-start">${m.against.GK}</td><td class="pos-against">${m.against.DEF}</td><td class="pos-against">${m.against.MID}</td><td class="pos-against">${m.against.FWD}</td>

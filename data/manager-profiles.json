@@ -1,5 +1,5 @@
 {
-  "_comment": "Edit freely -- these are placeholder colors/abbreviations. Keyed by personKey (each manager's first name, lowercased), which is how this file stays correct even when team names change every season. To add a manager photo, drop an image at assets/managers/{personKey}.jpg (e.g. assets/managers/lu.jpg) -- no JSON edit needed, the site falls back to initials automatically if no photo file exists.",
+  "_comment": "Edit freely -- these are placeholder colors/abbreviations. Keyed by personKey (each manager's first name, lowercased), which is how this file stays correct even when team names change every season. To add a manager photo, drop an image at assets/managers/{personKey}.jpg (e.g. assets/managers/lu.jpg) -- no JSON edit needed, the site falls back to initials automatically if no photo file exists. Club badges work the same way: drop assets/badges/{personKey}.png, or add an optional 'badge' field to a profile (an emoji like 🏴‍☠️, or an image path) -- see assets/badges/README.md.",
   "profiles": [
     { "personKey": "lu", "displayName": "Lu Palladino", "color": "#2f6fed", "abbreviation": "LUC" },
     { "personKey": "ibrahim", "displayName": "Ibrahim Abdulnour", "color": "#e0393f", "abbreviation": "IBR" },

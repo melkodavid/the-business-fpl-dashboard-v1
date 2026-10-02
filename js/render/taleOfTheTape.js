@@ -81,6 +81,24 @@ function gauntletHook(homeId, awayId, seasonArcs) {
   return { label: "Gauntlet Watch", text: `Leg ${played + 1} of ${length} against the family.` };
 }
 
+// Three-way win / draw / win bar with the projected XI totals underneath. In a
+// live gameweek the totals also show what's actually been scored so far.
+function oddsHtml(odds, meta) {
+  const live = meta?.basis === "live";
+  const sub = live
+    ? `Live &middot; scored ${odds.homeSoFar}&ndash;${odds.awaySoFar} &middot; projected finish ${odds.homeExpected}&ndash;${odds.awayExpected}`
+    : `Projected XI ${odds.homeExpected}&ndash;${odds.awayExpected}`;
+  return `
+      <div class="tale-win-prob tale-odds" title="${meta?.source ?? "FPL expected points"} -- a for-fun estimate, not a bookmaker's price">
+        <span class="tale-win-prob-label">${live ? "Live odds" : "Win odds"}</span>
+        <div class="tale-odds-bar">
+          <span class="odds-home" style="width:${odds.homeWinPct}%"></span><span class="odds-draw" style="width:${odds.drawPct}%"></span><span class="odds-away" style="width:${odds.awayWinPct}%"></span>
+        </div>
+        <span class="tale-win-prob-split">${odds.homeWinPct}% &middot; ${odds.drawPct}% &middot; ${odds.awayWinPct}%</span>
+      </div>
+      <div class="tale-odds-sub">${sub}</div>`;
+}
+
 export function buildTaleOfTheTapeCard(fixture, data, managers, lore) {
   const { homeManagerId: homeId, awayManagerId: awayId } = fixture;
   const homeKey = personKeyOf(homeId, managers);
@@ -100,6 +118,16 @@ export function buildTaleOfTheTapeCard(fixture, data, managers, lore) {
   const homeShare = Math.round((homePct / total) * 100);
   const awayShare = 100 - homeShare;
 
+  // Official-FPL-expected-points odds when the build produced them; otherwise
+  // the older form-based split so the card never goes without a bar.
+  const winProbHtml = fixture.odds
+    ? oddsHtml(fixture.odds, data.schedule?.oddsMeta)
+    : `<div class="tale-win-prob">
+        <span class="tale-win-prob-label">Form says</span>
+        <div class="tale-win-prob-bar"><span style="width:${homeShare}%"></span></div>
+        <span class="tale-win-prob-split">${homeShare}/${awayShare}</span>
+      </div>`;
+
   const rivalryLine = h2h
     ? `${h2h.wins}-${h2h.draws}-${h2h.losses} this season${h2h.streak.count > 1 ? ` &middot; ${h2h.streak.type === "W" ? managers.name(homeId) : managers.name(awayId)} on a ${h2h.streak.count}-game run` : ""}`
     : "First meeting this season";
@@ -113,12 +141,12 @@ export function buildTaleOfTheTapeCard(fixture, data, managers, lore) {
       <div class="tale-heads">
         <div class="tale-side">
           ${managers.avatarHtml(homeId)}
-          <span class="fixture-name">${managers.nameHtml(homeId)}</span>
+          <span class="fixture-name">${managers.clubHtml(homeId)}</span>
           <span class="fixture-rank">#${fixture.homeRank}</span>
         </div>
         <div class="tale-vs">vs</div>
         <div class="tale-side away">
-          <span class="fixture-name">${managers.nameHtml(awayId)}</span>
+          <span class="fixture-name">${managers.clubHtml(awayId)}</span>
           <span class="fixture-rank">#${fixture.awayRank}</span>
           ${managers.avatarHtml(awayId)}
         </div>
@@ -140,13 +168,7 @@ export function buildTaleOfTheTapeCard(fixture, data, managers, lore) {
         </div>
       </div>
 
-      <div class="tale-win-prob">
-        <span class="tale-win-prob-label">Form says</span>
-        <div class="tale-win-prob-bar">
-          <span style="width:${homeShare}%"></span>
-        </div>
-        <span class="tale-win-prob-split">${homeShare}/${awayShare}</span>
-      </div>
+      ${winProbHtml}
 
       ${edges.length ? `<div class="tale-edges">${edges.map((e) => `<span class="tale-edge">${e}</span>`).join("")}</div>` : ""}
 

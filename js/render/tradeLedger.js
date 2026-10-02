@@ -26,7 +26,7 @@ function scorecardHtml(data, managers) {
       const net = netByManager.get(s.managerId) ?? 0;
       return `
         <tr>
-          <td class="text-left">${managers.nameHtml(s.managerId)}</td>
+          <td class="text-left">${managers.clubHtml(s.managerId)}</td>
           <td>${s.tradeCount}</td>
           <td class="${signedClass(net)}">${signed(net)}</td>
           <td>${rec(s.actual)}</td>
@@ -71,11 +71,11 @@ function flippedWeeksHtml(data, managers) {
           return `
             <li class="${improved ? "flip-would-improve" : "flip-would-worsen"}">
               <span class="flip-gw">GW${f.gw}</span>
-              <span>${verb} ${f.actualScore}&ndash;${f.opponentScore} vs ${managers.nameHtml(f.opponentId)} &rarr; without trades would have ${word[f.counterfactualResult]} ${f.counterfactualScore}&ndash;${f.opponentScore}</span>
+              <span>${verb} ${f.actualScore}&ndash;${f.opponentScore} vs ${managers.clubHtml(f.opponentId)} &rarr; without trades would have ${word[f.counterfactualResult]} ${f.counterfactualScore}&ndash;${f.opponentScore}</span>
             </li>`;
         })
         .join("");
-      return `<div class="flip-block"><strong>${managers.nameHtml(s.managerId)}</strong><ul class="flip-list">${lines}</ul></div>`;
+      return `<div class="flip-block"><strong>${managers.clubHtml(s.managerId)}</strong><ul class="flip-list">${lines}</ul></div>`;
     })
     .join("");
 
@@ -116,7 +116,7 @@ function impactHtml(impacts, managers) {
   const lines = impacts
     .map(
       (i) =>
-        `<li>GW${i.gw}: actually ${i.actualResult} (${i.actualScore}&ndash;${i.opponentScore}) vs ${managers.nameHtml(i.opponentId)} &mdash; would've been ${i.counterfactualResult} (${i.counterfactualScore}&ndash;${i.opponentScore}) keeping the original players</li>`
+        `<li>GW${i.gw}: actually ${i.actualResult} (${i.actualScore}&ndash;${i.opponentScore}) vs ${managers.clubHtml(i.opponentId)} &mdash; would've been ${i.counterfactualResult} (${i.counterfactualScore}&ndash;${i.opponentScore}) keeping the original players</li>`
     )
     .join("");
   return `<div class="trade-impact"><ul>${lines}</ul></div>`;
@@ -124,14 +124,14 @@ function impactHtml(impacts, managers) {
 
 function tradeItemHtml(trade, managers) {
   const swings = trade.sides.reduce((n, s) => n + (s.resultImpact?.length ?? 0), 0);
-  const parties = trade.sides.map((s) => managers.nameHtml(s.managerId)).join(' <span class="trade-swap">&#8644;</span> ');
+  const parties = trade.sides.map((s) => managers.clubHtml(s.managerId)).join(' <span class="trade-swap">&#8644;</span> ');
   const nets = trade.sides.map((s) => `<span class="trade-net">${luckPillHtml(s.netValue)}</span>`).join("");
 
   const sidesHtml = trade.sides
     .map(
       (s) => `
         <div class="trade-side">
-          <div class="trade-side-head"><strong>${managers.nameHtml(s.managerId)}</strong>${luckPillHtml(s.netValue)}</div>
+          <div class="trade-side-head"><strong>${managers.clubHtml(s.managerId)}</strong>${luckPillHtml(s.netValue)}</div>
           <div class="trade-row"><span class="trade-label">Got</span><span class="trade-chips">${playerChips(s.received)}</span></div>
           <div class="trade-row"><span class="trade-label">Gave up</span><span class="trade-chips">${playerChips(s.given)}</span></div>
           ${rippleHtml(s.given)}

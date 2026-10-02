@@ -1996,3 +1996,30 @@ tfoot td { border-top: 2px solid var(--edge-bright); border-bottom: 0; }
 
 .member-meta { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .member-stars { color: var(--gold-1); letter-spacing: 0.04em; }
+
+/* ---- Club badges: the crest beside a team name on current-season pages ---- */
+.club { display: inline-flex; align-items: center; gap: 0.5em; vertical-align: middle; max-width: 100%; }
+.club-text { display: inline-flex; flex-direction: column; line-height: 1.18; min-width: 0; }
+.club-sub { font-size: 0.68em; color: var(--text-muted); font-weight: 500; letter-spacing: 0.02em; }
+.podium-name .club { justify-content: center; text-align: left; }
+.club-badge { position: relative; display: inline-block; flex-shrink: 0; width: 1.35em; height: 1.55em; }
+.club-badge-shape {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding-bottom: 0.14em;
+  clip-path: polygon(0 0, 100% 0, 100% 62%, 50% 100%, 0 62%);
+  background: linear-gradient(160deg, color-mix(in srgb, var(--bc, #5a6472) 78%, #fff 22%), var(--bc, #5a6472) 55%, color-mix(in srgb, var(--bc, #5a6472) 70%, #000));
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.35);
+}
+.club-badge-text { font-family: "Archivo", sans-serif; font-weight: 800; font-size: 0.44em; letter-spacing: 0.02em; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,0.55); }
+.club-badge-emoji .club-badge-text { font-size: 0.78em; text-shadow: none; }
+.club-badge-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5)); }
+.club-badge:has(.club-badge-img) .club-badge-shape { visibility: hidden; }
+.podium-name .club-badge { width: 1.5em; height: 1.75em; }
+
+/* ---- This Week: win / draw / win odds ---- */
+.schedule-luxury .tale-odds-bar { flex: 1; display: flex; height: 8px; border-radius: 999px; overflow: hidden; background: rgba(255,255,255,0.08); }
+.schedule-luxury .tale-odds-bar span { display: block; height: 100%; transition: width 0.6s ease; }
+.schedule-luxury .tale-odds-bar .odds-home { background: linear-gradient(90deg, var(--sl-lime), #5cf2b0); }
+.schedule-luxury .tale-odds-bar .odds-draw { background: rgba(255,255,255,0.4); }
+.schedule-luxury .tale-odds-bar .odds-away { background: linear-gradient(90deg, var(--sl-purple-bright), #c79bff); }
+.schedule-luxury .tale-odds-sub { margin-top: 0.3rem; font-size: 0.72rem; color: var(--sl-text-muted); text-align: center; letter-spacing: 0.02em; }
+.schedule-luxury .odds-note { position: relative; z-index: 1; margin: 1.1rem auto 0; max-width: 40rem; text-align: center; font-size: 0.74rem; color: var(--sl-text-muted); font-style: italic; }

@@ -90,6 +90,30 @@ function avatarHtml(m, theme) {
   return `<span class="mgr-avatar-wrap"><span class="mgr-avatar" style="background:${color}"><span class="mgr-avatar-initials">${label}</span>${photoTag}</span>${themeBadgeHtml(theme)}</span>`;
 }
 
+// Club badge -- the crest next to a team name on current-season pages, so the
+// club reads as distinct from the person running it (history pages show the
+// manager's name instead). Resolved in order:
+//   1. a custom image dropped at assets/badges/{personKey}.png (or a path set
+//      as `badge` in manager-profiles.json) -- shown over the shield
+//   2. an emoji set as `badge` in manager-profiles.json
+//   3. the default: a shield in the manager's colour with their abbreviation
+function clubBadgeHtml(m) {
+  const color = m?.color ?? "#5a6472";
+  const badge = m?.badge ?? "";
+  const isPath = /\.(png|jpe?g|svg|webp|gif)$/i.test(badge);
+  const label = badge && !isPath ? badge : (m?.abbreviation ?? initialsOf(m?.name));
+  const imgSrc = isPath ? badge : m?.personKey ? `assets/badges/${m.personKey}.png` : null;
+  const imgTag = imgSrc ? `<img class="club-badge-img" src="${escapeAttr(imgSrc)}" alt="" loading="lazy" onerror="this.remove()">` : "";
+  const emojiClass = badge && !isPath ? " club-badge-emoji" : "";
+  return `<span class="club-badge${emojiClass}" style="--bc:${color}"><span class="club-badge-shape"><span class="club-badge-text">${escapeAttr(label)}</span></span>${imgTag}</span>`;
+}
+
+function clubHtml(m, id, { sub = false } = {}) {
+  const name = m?.name ?? `Manager ${id}`;
+  const subHtml = sub && m?.playerName ? `<span class="club-sub">${escapeAttr(m.playerName)}</span>` : "";
+  return `<span class="club" title="${escapeAttr(m?.playerName ?? "")}">${clubBadgeHtml(m)}<span class="club-text"><span class="club-name">${name}${starBadges(m?.titles)}</span>${subHtml}</span></span>`;
+}
+
 export function managerLookup(data) {
   const byId = new Map(data.managers.list.map((m) => [m.id, m]));
   const byPersonKey = new Map(data.managers.list.map((m) => [m.personKey, m]));
@@ -100,6 +124,11 @@ export function managerLookup(data) {
     name: (id) => byId.get(id)?.name ?? `Manager ${id}`,
     shortName: (id) => byId.get(id)?.shortName ?? `M${id}`,
     nameHtml: (id) => `${byId.get(id)?.name ?? `Manager ${id}`}${starBadges(byId.get(id)?.titles)}`,
+    // Club (team name + badge, manager on hover) for current-season pages;
+    // nameHtml stays the plain team name, which the Cup page keeps using.
+    clubHtml: (id, opts) => clubHtml(byId.get(id), id, opts),
+    badgeHtml: (id) => clubBadgeHtml(byId.get(id)),
+    playerName: (id) => byId.get(id)?.playerName ?? "",
     starsHtml: (id) => starBadges(byId.get(id)?.titles),
     color: (id) => byId.get(id)?.color ?? null,
     abbreviation: (id) => byId.get(id)?.abbreviation ?? byId.get(id)?.shortName ?? "???",

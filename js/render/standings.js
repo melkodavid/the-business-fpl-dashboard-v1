@@ -19,7 +19,7 @@ function podiumHtml(rows, managers, myId) {
         <div class="podium-place place-${place} ${r.managerId === myId ? "is-me" : ""}">
           <div class="podium-medal">${PODIUM_LABEL[place]}</div>
           <div class="podium-avatar">${managers.avatarHtml(r.managerId)}</div>
-          <div class="podium-name">${managers.nameHtml(r.managerId)}</div>
+          <div class="podium-name">${managers.clubHtml(r.managerId, { sub: true })}</div>
           <div class="podium-pts"><strong>${r.total}</strong> pts</div>
           <div class="podium-record">${r.won}-${r.drawn}-${r.lost} &middot; ${r.pointsFor} PF</div>
         </div>`;
@@ -38,7 +38,7 @@ export function render(container, data, managers) {
       return `
         <tr class="${r.managerId === myId ? "is-me" : ""}">
           <td>${rankChipHtml(r.rank)}</td>
-          <td class="text-left">${managers.nameHtml(r.managerId)}</td>
+          <td class="text-left">${managers.clubHtml(r.managerId, { sub: true })}</td>
           <td>${r.played}</td>
           <td>${r.won}</td>
           <td>${r.drawn}</td>

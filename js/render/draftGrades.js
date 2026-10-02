@@ -50,7 +50,7 @@ function buildScatter(scatter, managers) {
     .map(
       (m) => `
         <button type="button" class="team-chip is-on" data-mgr="${m.id}" aria-pressed="true">
-          <span class="team-chip-dot" style="background:${colors.get(m.id)}"></span>${managers.nameHtml(m.id)}
+          <span class="team-chip-dot" style="background:${colors.get(m.id)}"></span>${managers.clubHtml(m.id)}
         </button>`
     )
     .join("");
@@ -120,7 +120,7 @@ function projectedPointsCardHtml(projected, managers) {
   if (!projected?.leaderboard?.length) return "";
   const rows = projected.leaderboard
     .map(
-      (m, i) => `<tr><td>${i + 1}</td><td class="text-left">${managers.nameHtml(m.managerId)}</td><td>${m.projectedPoints}</td></tr>`
+      (m, i) => `<tr><td>${i + 1}</td><td class="text-left">${managers.clubHtml(m.managerId)}</td><td>${m.projectedPoints}</td></tr>`
     )
     .join("");
   const sourceLine = projected.source
@@ -165,7 +165,7 @@ function leagueTableHtml(data, managers, selectedId) {
       const actual = m.draftTeamPoints;
       return `
         <tr class="draft-team-row ${m.managerId === selectedId ? "is-selected" : ""}" data-mgr="${m.managerId}" tabindex="0">
-          <td class="text-left">${managers.nameHtml(m.managerId)}</td>
+          <td class="text-left">${managers.clubHtml(m.managerId)}</td>
           <td>${season}</td>
           <td>${pace}</td>
           <td><strong>${actual}</strong></td>
@@ -220,7 +220,7 @@ function teamDraftHtml(data, managers, managerId) {
   const diff = round1(totalActual - totalPace);
   return `
     <div class="draft-team-head">
-      <div class="draft-team-title">${managers.avatarHtml(managerId)}<strong>${managers.nameHtml(managerId)}</strong></div>
+      <div class="draft-team-title">${managers.avatarHtml(managerId)}<strong>${managers.clubHtml(managerId)}</strong></div>
       <div class="draft-team-stats">
         <span><b>${totalActual}</b> actual pts</span>
         <span><b>${round1(totalPace)}</b> pace</span>
@@ -300,7 +300,7 @@ function wireExplorer(container, data, managers, initialId) {
 export function render(container, data, managers) {
   const leaderboardHtml = data.draftGrades.leaderboard
     .map(
-      (m, i) => `<tr><td>${i + 1}</td><td class="text-left">${managers.nameHtml(m.managerId)}</td><td>${m.draftTeamPoints}</td></tr>`
+      (m, i) => `<tr><td>${i + 1}</td><td class="text-left">${managers.clubHtml(m.managerId)}</td><td>${m.draftTeamPoints}</td></tr>`
     )
     .join("");
 

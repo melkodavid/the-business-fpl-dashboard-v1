@@ -29,7 +29,7 @@ export function render(container, data, managers) {
       .map(
         (m) => `
           <tr>
-            <td class="text-left">${managers.nameHtml(m.managerId)}</td>
+            <td class="text-left">${managers.clubHtml(m.managerId)}</td>
             <td>${m.goals}</td><td>${m.assists}</td><td>${m.cleanSheets}</td>
             <td>${m.defensiveContribution}</td><td>${m.bonus}</td>
             <td class="${m.cardsLost < 0 ? "neg" : ""}">${m.cardsLost}</td>

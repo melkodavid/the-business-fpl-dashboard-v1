@@ -93,7 +93,7 @@ export async function render(container, data, managers) {
 
   container.innerHTML = `
     <h2 class="section-title">My Season</h2>
-    <p class="section-subtitle">${managers.nameHtml(myId)}'s season at a glance.</p>
+    <p class="section-subtitle">${managers.clubHtml(myId)}'s season at a glance.</p>
 
     <div class="grid-cols two">
       <div class="card">
@@ -119,7 +119,7 @@ export async function render(container, data, managers) {
         ? `
       <div class="card">
         <h3>${data.schedule.seasonComplete ? "Final Fixture" : "This Week's Fixture"}</h3>
-        <p>${managers.nameHtml(fixture.homeManagerId)} vs. ${managers.nameHtml(fixture.awayManagerId)}${fixture.finished ? ` &middot; ${fixture.homePoints}-${fixture.awayPoints}` : ""}</p>
+        <p>${managers.clubHtml(fixture.homeManagerId)} vs. ${managers.clubHtml(fixture.awayManagerId)}${fixture.finished ? ` &middot; ${fixture.homePoints}-${fixture.awayPoints}` : ""}</p>
       </div>`
         : ""
     }
