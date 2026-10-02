@@ -167,6 +167,8 @@ async function main() {
   writeData("waiver-hit-rate.json", waiverHitRate);
   writeData("form-guide.json", computeFormGuide(context));
   const schedule = computeSchedule(context);
+  // When this gameweek's lineups lock (the FPL deadline) -- for countdowns.
+  schedule.deadline = raw.bootstrap?.events?.data?.find((e) => e.id === schedule.gw)?.deadline_time ?? null;
   // Win odds are a bonus: any failure here (the classic FPL API being down or
   // changing shape) must never break the hourly data refresh, so the fixtures
   // just go without odds and the site falls back to its form bar.

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Concept A — Matchday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* CONCEPT A -- "Matchday". Inspired by the polish and energy of a top-flight
+     league broadcast, but legally its own thing: original palette (violet +
+     citrus + hot pink), an off-the-shelf typeface instead of any league font,
+     no lion/crest/wordmark, and "Matchday" instead of the league's own terms. */
+  :root {
+    --ink: #0e0420; --plum: #230a47; --violet: #6a2be0; --pink: #ff2e93;
+    --citrus: #d4ff3a; --ice: #7df3ff; --text: #f6f1ff; --muted: #a994d6;
+    --panel: rgba(255,255,255,0.06); --line: rgba(255,255,255,0.12);
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--ink); }
+  body {
+    margin: 0; color: var(--text); font-family: "Barlow", sans-serif; min-height: 100vh;
+    background:
+      radial-gradient(900px 500px at 85% -10%, rgba(255,46,147,0.35), transparent 60%),
+      radial-gradient(900px 600px at 0% 0%, rgba(106,43,224,0.55), transparent 60%),
+      linear-gradient(180deg, #1a0838, var(--ink) 600px);
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px 80px; }
+  .cond { font-family: "Barlow Condensed", sans-serif; text-transform: uppercase; }
+
+  /* top bar */
+  .bar { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+  .brand { font: 900 28px/1 "Barlow Condensed"; letter-spacing: 0.04em; text-transform: uppercase; transform: skewX(-8deg); }
+  .brand span { color: var(--citrus); }
+  .nav { display: flex; gap: 6px; }
+  .nav a { color: var(--muted); text-decoration: none; font: 700 14px "Barlow Condensed"; letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 14px; border-radius: 4px; }
+  .nav a.on { color: var(--ink); background: var(--citrus); transform: skewX(-8deg); }
+
+  /* hero */
+  .hero { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding: 24px 0 34px; }
+  .kicker { font: 700 15px "Barlow Condensed"; letter-spacing: 0.34em; text-transform: uppercase; color: var(--citrus); }
+  .big { font: 900 clamp(90px, 18vw, 190px)/0.82 "Barlow Condensed"; letter-spacing: -0.02em; margin: 6px 0 0; text-transform: uppercase; }
+  .big .word { font-size: 0.5em; letter-spacing: 0.02em; }
+  .big .num { color: transparent; -webkit-text-stroke: 3px var(--citrus); }
+  .lock { text-align: right; }
+  .lock small { display: block; font: 700 13px "Barlow Condensed"; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+  .clock { display: flex; gap: 8px; justify-content: flex-end; }
+  .clock div { min-width: 70px; padding: 10px 8px 8px; text-align: center; background: var(--panel); border: 1px solid var(--line); clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px)); }
+  .clock b { display: block; font: 800 38px/1 "Barlow Condensed"; }
+  .clock span { font: 600 11px "Barlow Condensed"; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
+
+  /* shared crest */
+  .crest { position: relative; display: inline-grid; place-items: center; width: var(--s, 56px); height: var(--s, 56px); flex-shrink: 0; border-radius: 50%;
+    background: radial-gradient(circle at 30% 25%, color-mix(in srgb, var(--c) 70%, #fff 30%), var(--c) 55%, color-mix(in srgb, var(--c) 55%, #000)); box-shadow: 0 6px 18px -6px var(--c), inset 0 0 0 2px rgba(255,255,255,0.35); }
+  .crest b { font: 900 calc(var(--s, 56px) * 0.3)/1 "Barlow Condensed"; letter-spacing: 0.04em; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+  .crest img { position: absolute; inset: -6%; width: 112%; height: 112%; object-fit: contain; border-radius: 14%; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5)); }
+  .crest:has(img) { background: none; box-shadow: none; }
+  .crest:has(img) b { display: none; }
+  .crest.xl { --s: 132px; } .crest.lg { --s: 84px; }
+
+  .f { display: inline-grid; place-items: center; width: 20px; height: 20px; margin-right: 3px; font: 800 11px "Barlow Condensed"; font-style: normal; border-radius: 3px; color: #10041f; }
+  .f-W { background: var(--citrus); } .f-L { background: var(--pink); color: #fff; } .f-D { background: #b9a9e6; }
+
+  /* odds capsule */
+  .odds { display: grid; gap: 6px; width: 100%; max-width: 270px; margin: 0 auto; }
+  .odds .nums { display: flex; justify-content: space-between; font: 800 26px/1 "Barlow Condensed"; }
+  .odds .nums .d { color: var(--muted); font-size: 18px; align-self: end; }
+  .odds .home { color: var(--citrus); } .odds .away { color: var(--pink); }
+  .track { display: flex; height: 8px; border-radius: 99px; overflow: hidden; background: rgba(255,255,255,0.1); }
+  .track i { display: block; height: 100%; }
+  .track .h { background: var(--citrus); } .track .dr { background: #ffffff66; } .track .a { background: var(--pink); }
+  .odds small { text-align: center; font: 600 11px "Barlow Condensed"; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
+
+  /* featured match */
+  .feature { position: relative; margin-bottom: 26px; padding: 30px 26px 26px; overflow: hidden;
+    background: linear-gradient(120deg, rgba(106,43,224,0.55), rgba(255,46,147,0.35)); border: 1px solid var(--line);
+    clip-path: polygon(0 0, calc(100% - 34px) 0, 100% 34px, 100% 100%, 34px 100%, 0 calc(100% - 34px)); }
+  .feature::after { content: "VS"; position: absolute; left: 50%; top: 14px; transform: translateX(-50%); font: 900 240px/1 "Barlow Condensed"; color: rgba(255,255,255,0.05); pointer-events: none; }
+  .ribbon { display: inline-block; font: 800 13px "Barlow Condensed"; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink); background: var(--citrus); padding: 5px 14px 4px; transform: skewX(-12deg); }
+  .feature-grid { display: grid; grid-template-columns: 1fr minmax(240px, 300px) 1fr; align-items: center; gap: 18px; margin-top: 18px; position: relative; z-index: 1; }
+  .fside { display: grid; justify-items: center; text-align: center; gap: 8px; }
+  .fside h3 { margin: 6px 0 0; font: 900 38px/0.95 "Barlow Condensed"; text-transform: uppercase; }
+  .fside p { margin: 0; color: var(--muted); font-size: 14px; }
+  .fside .meta { font: 700 13px "Barlow Condensed"; letter-spacing: 0.14em; text-transform: uppercase; color: var(--citrus); }
+  .cmp { margin-top: 20px; display: grid; grid-template-columns: 1fr; gap: 8px; max-width: 640px; margin-left: auto; margin-right: auto; position: relative; z-index: 1; }
+  .cmp div { display: grid; grid-template-columns: 1fr 140px 1fr; align-items: center; gap: 12px; font: 800 22px "Barlow Condensed"; }
+  .cmp span:first-child { text-align: right; } .cmp em { font-style: normal; text-align: center; color: var(--muted); letter-spacing: 0.18em; font-size: 11px; text-transform: uppercase; }
+  .cmp .lead { color: var(--citrus); }
+
+  /* fixture strips */
+  .strip { position: relative; margin-bottom: 12px; cursor: pointer; background: var(--panel); border: 1px solid var(--line);
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px)); transition: background .2s, transform .2s; }
+  .strip:hover { background: rgba(255,255,255,0.1); transform: translateX(3px); }
+  .strip .tag { position: absolute; left: 0; top: 0; font: 800 11px "Barlow Condensed"; letter-spacing: 0.18em; text-transform: uppercase; padding: 3px 12px 2px; background: var(--pink); color: #fff; }
+  .row { display: grid; grid-template-columns: 1fr 290px 1fr; align-items: center; gap: 16px; padding: 30px 26px 18px; }
+  .team { display: flex; align-items: center; gap: 14px; min-width: 0; }
+  .team.r { flex-direction: row-reverse; text-align: right; }
+  .team h4 { margin: 0; font: 800 26px/1 "Barlow Condensed"; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .team p { margin: 3px 0 6px; font-size: 13px; color: var(--muted); }
+  .team .rk { color: var(--citrus); font-weight: 600; }
+  .detail { display: none; padding: 4px 26px 20px; border-top: 1px solid var(--line); }
+  .strip.open .detail { display: grid; gap: 14px; grid-template-columns: 1fr 1fr 1fr; padding-top: 16px; }
+  .strip.open .chev { transform: rotate(180deg); }
+  .box { background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3px solid var(--violet); }
+  .box small { display: block; font: 700 11px "Barlow Condensed"; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+  .box b { font: 800 22px "Barlow Condensed"; }
+  .foot { margin-top: 30px; color: var(--muted); font-size: 12px; text-align: center; font-style: italic; }
+  @media (max-width: 760px) {
+    .feature-grid, .row { grid-template-columns: 1fr; }
+    .team.r { flex-direction: row; text-align: left; }
+    .lock { text-align: left; } .clock { justify-content: flex-start; }
+    .strip.open .detail { grid-template-columns: 1fr; }
+    .cmp div { grid-template-columns: 1fr 70px 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bar">
+    <div class="brand">The <span>Business</span></div>
+    <nav class="nav"><a class="on" href="#">Fixtures</a><a href="#">Table</a><a href="#">Form</a><a href="#">Stats</a></nav>
+  </div>
+
+  <section class="hero">
+    <div>
+      <div class="kicker">Season 26/27 · This week</div>
+      <h1 class="big"><span class="word">Matchday</span><br><span class="num" id="gwnum">06</span></h1>
+    </div>
+    <div class="lock">
+      <small id="locklabel">Lineups lock in</small>
+      <div class="clock" id="clock"></div>
+    </div>
+  </section>
+
+  <section id="feature"></section>
+  <section id="list"></section>
+  <p class="foot" id="foot"></p>
+</div>
+
+<script type="module">
+import { loadMatchups, crestHtml, countdown, formDots, sign } from "./common.js";
+
+const data = await loadMatchups();
+document.getElementById("gwnum").textContent = String(data.gw).padStart(2, "0");
+
+// countdown to the lineup deadline
+function tick() {
+  const c = countdown(data.deadline);
+  document.getElementById("locklabel").textContent = c.over ? "Lineups are locked" : "Lineups lock in";
+  document.getElementById("clock").innerHTML = [["d", "Days"], ["h", "Hrs"], ["m", "Min"], ["s", "Sec"]]
+    .map(([k, l]) => `<div><b>${String(c[k]).padStart(2, "0")}</b><span>${l}</span></div>`).join("");
+}
+tick(); setInterval(tick, 1000);
+
+const odds = (f) => `
+  <div class="odds">
+    <div class="nums"><span class="home">${f.home.winPct}%</span><span class="d">${f.drawPct}% draw</span><span class="away">${f.away.winPct}%</span></div>
+    <div class="track"><i class="h" style="width:${f.home.winPct}%"></i><i class="dr" style="width:${f.drawPct}%"></i><i class="a" style="width:${f.away.winPct}%"></i></div>
+    <small>${data.oddsMeta?.basis === "live" ? "Live win odds" : "Win odds"} · projected ${f.home.expected}–${f.away.expected}</small>
+  </div>`;
+
+const better = (a, b, higherIsBetter = true) => (a === b ? "" : (higherIsBetter ? a > b : a < b) ? "lead" : "");
+
+// ---- featured match = highest-importance fixture ----
+const [top, ...rest] = [...data.fixtures].sort((a, b) => b.importance - a.importance);
+document.getElementById("feature").innerHTML = top ? `
+  <div class="feature">
+    <span class="ribbon">${top.tag || "Match of the week"}</span>
+    <div class="feature-grid">
+      <div class="fside">${crestHtml(top.home, "xl")}<h3>${top.home.club}</h3><p>${top.home.manager}</p><div class="meta">#${top.home.rank} · ${top.home.points} pts · ${top.home.record}</div><div>${formDots(top.home.form)}</div></div>
+      ${odds(top)}
+      <div class="fside">${crestHtml(top.away, "xl")}<h3>${top.away.club}</h3><p>${top.away.manager}</p><div class="meta">#${top.away.rank} · ${top.away.points} pts · ${top.away.record}</div><div>${formDots(top.away.form)}</div></div>
+    </div>
+    <div class="cmp">
+      <div><span class="${better(top.home.formAvg, top.away.formAvg)}">${top.home.formAvg}</span><em>Avg score</em><span class="${better(top.away.formAvg, top.home.formAvg)}">${top.away.formAvg}</span></div>
+      <div><span class="${better(top.home.pf, top.away.pf)}">${top.home.pf}</span><em>Points for</em><span class="${better(top.away.pf, top.home.pf)}">${top.away.pf}</span></div>
+      <div><span>${sign(top.home.luck)}</span><em>Luck</em><span>${sign(top.away.luck)}</span></div>
+      <div><span class="${better(top.home.expected, top.away.expected)}">${top.home.expected}</span><em>Projected XI</em><span class="${better(top.away.expected, top.home.expected)}">${top.away.expected}</span></div>
+    </div>
+  </div>` : "";
+
+// ---- remaining fixtures ----
+document.getElementById("list").innerHTML = rest.map((f) => `
+  <article class="strip">
+    ${f.tag ? `<span class="tag">${f.tag}</span>` : ""}
+    <div class="row">
+      <div class="team">${crestHtml(f.home, "lg")}<div><h4>${f.home.club}</h4><p><span class="rk">#${f.home.rank}</span> · ${f.home.manager}</p>${formDots(f.home.form)}</div></div>
+      ${odds(f)}
+      <div class="team r">${crestHtml(f.away, "lg")}<div><h4>${f.away.club}</h4><p><span class="rk">#${f.away.rank}</span> · ${f.away.manager}</p>${formDots(f.away.form)}</div></div>
+    </div>
+    <div class="detail">
+      <div class="box"><small>Head to head this season</small><b>${f.h2h ? `${f.h2h.w}W ${f.h2h.d}D ${f.h2h.l}L` : "First meeting"}</b></div>
+      <div class="box"><small>Form (avg score)</small><b>${f.home.formAvg} vs ${f.away.formAvg}</b></div>
+      <div class="box"><small>Luck score</small><b>${sign(f.home.luck)} vs ${sign(f.away.luck)}</b></div>
+    </div>
+  </article>`).join("");
+document.querySelectorAll(".strip").forEach((el) => el.addEventListener("click", () => el.classList.toggle("open")));
+
+document.getElementById("foot").textContent = data.oddsMeta
+  ? `Odds use ${data.oddsMeta.source} for each manager's best XI — a for-fun estimate. Tap a fixture to open it.`
+  : "Tap a fixture to open it.";
+</script>
+</body>
+</html>
