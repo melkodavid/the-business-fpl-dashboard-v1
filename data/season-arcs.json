@@ -6,11 +6,11 @@
     ],
     "facts": {
       "managerId": 1501,
-      "wins": 0,
-      "played": 1,
+      "wins": 1,
+      "played": 2,
       "length": 3
     },
-    "gw": 4
+    "gw": 5
   },
   "lifeAfterMark": {
     "type": "lu-post-mark-tracker",
@@ -19,10 +19,10 @@
     ],
     "facts": {
       "managerId": 1377,
-      "rank": 10,
+      "rank": 11,
       "total": 3
     },
-    "gw": 4
+    "gw": 5
   },
   "generationWar": {
     "matrix": {
@@ -49,10 +49,10 @@
       "01s|2000s": {
         "wins": 3,
         "draws": 0,
-        "losses": 2
+        "losses": 3
       },
       "2000s|01s": {
-        "wins": 2,
+        "wins": 3,
         "draws": 0,
         "losses": 3
       },
@@ -77,20 +77,20 @@
         "losses": 1
       },
       "ancient|97s": {
-        "wins": 1,
+        "wins": 2,
         "draws": 0,
         "losses": 0
       },
       "97s|ancient": {
         "wins": 0,
         "draws": 0,
-        "losses": 1
+        "losses": 2
       }
     },
     "oneOhOnesVsRest": {
       "wins": 6,
       "draws": 0,
-      "losses": 7
+      "losses": 8
     }
   }
 }

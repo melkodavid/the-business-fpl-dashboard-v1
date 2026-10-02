@@ -61,12 +61,32 @@ function placeholderBoardHtml(managerCount) {
 }
 
 // Official Premier League player-photo CDN, keyed by each player's stable
-// `code` field from bootstrap-static -- same source the real FPL site uses,
-// so every player is covered with no uploads or hosting of our own.
+// `code` field from bootstrap-static -- same source the real FPL site uses.
+// The current-season path ("premierleague25") has the up-to-date shots and
+// covers every new signing; the legacy path is only a fallback for the few
+// players the new one is missing. If both 404 a neutral silhouette is shown
+// so the grid cell keeps the same height as its neighbours.
+const PHOTO_CDN = "https://resources.premierleague.com";
+const SILHOUETTE =
+  "data:image/svg+xml;utf8," +
+  encodeURIComponent(
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 140"><rect width="110" height="140" fill="#1c1f2b"/><circle cx="55" cy="52" r="24" fill="#3a4052"/><path d="M10 140c0-34 20-52 45-52s45 18 45 52z" fill="#3a4052"/></svg>`
+  );
+window.__draftPhotoFallback = (img) => {
+  if (img.dataset.legacySrc && !img.dataset.triedLegacy) {
+    img.dataset.triedLegacy = "1";
+    img.src = img.dataset.legacySrc;
+  } else {
+    img.onerror = null;
+    img.src = SILHOUETTE;
+  }
+};
+
 function playerPhotoHtml(code) {
   if (!code) return "";
-  const src = `https://resources.premierleague.com/premierleague/photos/players/110x140/p${code}.png`;
-  return `<img class="draft-pick-photo" src="${src}" alt="" onerror="this.remove()">`;
+  const src = `${PHOTO_CDN}/premierleague25/photos/players/110x140/${code}.png`;
+  const legacy = `${PHOTO_CDN}/premierleague/photos/players/110x140/p${code}.png`;
+  return `<img class="draft-pick-photo" src="${src}" data-legacy-src="${legacy}" alt="" loading="lazy" onerror="window.__draftPhotoFallback(this)">`;
 }
 
 function boardTableHtml(board, managers) {
@@ -89,7 +109,7 @@ function boardTableHtml(board, managers) {
             ? `<span class="draft-pick-pos">${escapeHtml(cell.position)}</span>`
             : "";
           return `
-            <td>
+            <td class="draft-pick pos-${escapeHtml((cell.position ?? "").toLowerCase())}">
               <span class="draft-pick-num">#${cell.index}</span>
               ${playerPhotoHtml(cell.playerCode)}
               <span class="draft-pick-player">${escapeHtml(cell.playerName)}</span>

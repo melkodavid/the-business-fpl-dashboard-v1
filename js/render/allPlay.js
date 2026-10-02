@@ -1,5 +1,6 @@
-import { signed, signedClass, round1 } from "../format.js";
+import { round1, rankChipHtml, luckPillHtml } from "../format.js";
 import { getIdentity } from "../identity.js";
+import { luckExplainerHtml } from "../lib/luckExplainer.js";
 
 export function render(container, data, managers) {
   const myId = managers.idForPersonKey(getIdentity());
@@ -7,18 +8,18 @@ export function render(container, data, managers) {
     .map(
       (s, i) => `
         <tr class="${s.managerId === myId ? "is-me" : ""}">
-          <td>${i + 1}</td>
+          <td>${rankChipHtml(i + 1)}</td>
           <td class="text-left">${managers.nameHtml(s.managerId)}</td>
           <td>${s.actualWins}</td>
           <td>${round1(s.expectedWins)}</td>
-          <td class="${signedClass(s.luckScore)}">${signed(s.luckScore)}</td>
+          <td>${luckPillHtml(s.luckScore)}</td>
         </tr>`
     )
     .join("");
 
   container.innerHTML = `
     <h2 class="section-title">All-Play Standings</h2>
-    <p class="section-subtitle">Each manager's score compared against all 11 others every gameweek — sorted by Expected Wins.</p>
+    <p class="section-subtitle">Each manager's score compared against all 11 others every gameweek — sorted by Expected Wins. Luck Score = Actual Wins − Expected Wins.</p>
     <div class="card">
       <table>
         <thead>
@@ -27,5 +28,6 @@ export function render(container, data, managers) {
         <tbody>${rowsHtml}</tbody>
       </table>
     </div>
+    ${luckExplainerHtml(data, managers, myId)}
   `;
 }

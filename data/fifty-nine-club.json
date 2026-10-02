@@ -13,6 +13,20 @@
       "elementId": 377,
       "playerName": "Munoz",
       "fixtureId": 35
+    },
+    {
+      "gw": 5,
+      "managerId": 1471,
+      "elementId": 5,
+      "playerName": "J.Timber",
+      "fixtureId": 42
+    },
+    {
+      "gw": 5,
+      "managerId": 10375,
+      "elementId": 452,
+      "playerName": "Bruno G.",
+      "fixtureId": 42
     }
   ],
   "seasonTotals": [
@@ -26,7 +40,7 @@
     },
     {
       "managerId": 1471,
-      "count": 0
+      "count": 1
     },
     {
       "managerId": 1501,
@@ -50,7 +64,7 @@
     },
     {
       "managerId": 10375,
-      "count": 0
+      "count": 1
     },
     {
       "managerId": 26227,

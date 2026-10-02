@@ -17,6 +17,20 @@ export function streakBadge(streak) {
   return `<span class="badge ${cls}">${streak.type}${streak.count}</span>`;
 }
 
+// Gold/silver/bronze medallion for the top 3, plain number chip otherwise.
+export function rankChipHtml(rank) {
+  const tier = rank >= 1 && rank <= 3 ? rank : "n";
+  return `<span class="rank-chip rank-${tier}">${rank}</span>`;
+}
+
+// Luck as a tinted pill with a direction arrow, rather than bare coloured text.
+export function luckPillHtml(luck) {
+  const rounded = Math.round(luck * 10) / 10;
+  const cls = rounded > 0 ? "luck-up" : rounded < 0 ? "luck-down" : "luck-flat";
+  const arrow = rounded > 0 ? "▲" : rounded < 0 ? "▼" : "•";
+  return `<span class="luck-pill ${cls}">${arrow} ${signed(luck)}</span>`;
+}
+
 export function escapeHtml(str) {
   return String(str).replace(/[&<>"']/g, (c) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
