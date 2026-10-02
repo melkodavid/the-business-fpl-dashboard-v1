@@ -103,3 +103,31 @@ test("against the real committed data/history.json: every season card has a vali
     assert.deepEqual(years, [...years].sort(), `binder for ${managerKey} not chronological`);
   }
 });
+
+test("buildSeasonCards: a season still in progress never hands out Champion or Wooden Spoon", () => {
+  const live = {
+    seasons: [
+      {
+        year: "26/27",
+        isCurrent: true, // no championKey yet -- season isn't over
+        table: [
+          { rank: 1, team: "A", manager: "A", managerKey: "a", w: 3, d: 0, l: 0, plus: 150, pts: 9 },
+          { rank: 2, team: "B", manager: "B", managerKey: "b", w: 2, d: 0, l: 1, plus: 140, pts: 6 },
+          { rank: 3, team: "C", manager: "C", managerKey: "c", w: 1, d: 0, l: 2, plus: 120, pts: 3 },
+          { rank: 4, team: "D", manager: "D", managerKey: "d", w: 1, d: 0, l: 2, plus: 110, pts: 3 },
+          { rank: 5, team: "E", manager: "E", managerKey: "e", w: 0, d: 0, l: 3, plus: 90, pts: 0 },
+        ],
+      },
+    ],
+    leaderboard: [],
+    allTimeTable: [],
+  };
+  const tiers = Object.fromEntries(buildSeasonCards(live).map((c) => [c.managerKey, c.tier]));
+  assert.equal(tiers.a, "rare");
+  assert.equal(tiers.e, "common");
+
+  live.seasons[0].championKey = "a"; // season decided
+  const decided = Object.fromEntries(buildSeasonCards(live).map((c) => [c.managerKey, c.tier]));
+  assert.equal(decided.a, "legendary");
+  assert.equal(decided.e, "spoon");
+});

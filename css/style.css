@@ -1166,39 +1166,7 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
   perspective: 1400px;
 }
 
-/* Border-gradient technique: .card's own background IS the foil frame; a
-   thin padding reveals it as a ring, .card-inner sits inset and opaque. */
-.cards-theme .card {
-  position: relative; aspect-ratio: 5 / 7; border-radius: 16px; padding: 3px;
-  background: var(--frame, linear-gradient(155deg, var(--pewter-1), var(--pewter-3)));
-  box-shadow: 0 26px 54px -20px rgba(0,0,0,0.6), 0 2px 0 rgba(255,255,255,0.08) inset;
-  transition: transform 0.4s cubic-bezier(.2,.8,.2,1);
-  /* Overrides the site-wide .card's overflow-x: auto (meant for cards that
-     scroll a wide table) -- trading cards never scroll internally, and that
-     inherited rule was clipping anything meant to poke past the card's own
-     box, like the crown badge and Noah's flag mast. */
-  overflow: visible;
-}
-.cards-theme .card:hover { transform: translateY(-5px) rotateX(2deg) rotateY(-2deg); }
 
-.cards-theme .card-inner {
-  position: relative; width: 100%; height: 100%; border-radius: 13px; overflow: hidden;
-  background: var(--card-surface); display: flex; flex-direction: column;
-}
-
-/* Hover-triggered shimmer sweep -- cheap (only animates on :hover), the
-   Career Card gets a subtler always-on version further down. */
-.cards-theme .sheen {
-  position: absolute; inset: 0; z-index: 3; pointer-events: none; mix-blend-mode: overlay;
-  background: linear-gradient(115deg, transparent 30%, rgba(255,255,255,0.5) 47%, rgba(255,255,255,0.18) 50%, transparent 65%);
-  opacity: 0; transition: opacity 0.5s ease;
-}
-.cards-theme .card:hover .sheen { opacity: 0.6; }
-
-.cards-theme .card-photo {
-  position: relative; height: 44%; display: flex; align-items: center; justify-content: center;
-  background: var(--card-surface-2);
-}
 .cards-theme .avatar {
   position: relative; overflow: hidden;
   width: 76px; height: 76px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
@@ -1211,18 +1179,6 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
 /* theme.avatarIcon (see data/league-lore.json) -- the avatar becomes the
    theme icon itself instead of initials. */
 .cards-theme .avatar-theme-icon { font-size: 2.5rem; }
-.cards-theme .rank-badge {
-  position: absolute; top: 10px; left: 10px; width: 38px; height: 38px; border-radius: 9px;
-  background: var(--frame); display: flex; align-items: center; justify-content: center;
-  font-family: "Bebas Neue", sans-serif; font-size: 1.2rem; color: var(--card-ink);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-}
-.cards-theme .tier-tag {
-  position: absolute; top: 10px; right: 10px; font-family: "Archivo", sans-serif; font-weight: 700;
-  font-size: 0.55rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.28rem 0.55rem;
-  border-radius: 999px; background: rgba(0,0,0,0.35); color: var(--tier-color, #fff); backdrop-filter: blur(3px);
-}
-.cards-theme .title-star { position: absolute; bottom: 8px; right: 10px; font-size: 1.05rem; color: var(--gold-2); text-shadow: 0 0 8px rgba(217,165,60,0.6); }
 /* Decorative per-manager theme badge (see data/league-lore.json's `theme`
    field) -- only a couple of managers with a known running joke have one. */
 .cards-theme .card-theme-badge { position: absolute; bottom: 8px; right: 10px; font-size: 1.3rem; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); }
@@ -1245,89 +1201,13 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
   .card-flag-mast { animation: none; transform: translateX(-50%) rotate(-6deg); }
 }
 
-.cards-theme .card-body, .cards-theme .career-body { flex: 1; padding: 0.8rem 1rem 1rem; display: flex; flex-direction: column; }
-.cards-theme .card-name { font-family: "Archivo", sans-serif; font-weight: 700; font-size: 1rem; line-height: 1.15; }
-.cards-theme .card-team { font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; color: var(--card-text-muted); font-size: 0.78rem; margin-top: 0.15rem; }
-.cards-theme .card-season {
-  font-family: "Archivo", sans-serif; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em;
-  text-transform: uppercase; color: var(--tier-color, var(--card-text-muted)); margin-top: 0.5rem;
-}
 
-.cards-theme .stat-line {
-  margin-top: auto; padding-top: 0.65rem; border-top: 1px solid var(--card-hairline);
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.3rem; text-align: center;
-}
-.cards-theme .stat-line div { display: flex; flex-direction: column; gap: 0.15rem; }
-.cards-theme .stat-num { font-family: "Bebas Neue", sans-serif; font-size: 1.1rem; font-variant-numeric: tabular-nums; }
-.cards-theme .stat-label { font-family: "Archivo", sans-serif; font-size: 0.52rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--card-text-muted); }
-
-.cards-theme .tier-legendary { --frame: linear-gradient(155deg, var(--gold-1), var(--gold-2) 55%, var(--gold-3)); --tier-color: var(--gold-1); }
-.cards-theme .tier-rare { --frame: linear-gradient(155deg, var(--chrome-1), var(--chrome-2) 55%, var(--chrome-3)); --tier-color: var(--chrome-1); }
-.cards-theme .tier-common { --frame: linear-gradient(155deg, var(--pewter-1), var(--pewter-2) 55%, var(--pewter-3)); --tier-color: var(--pewter-1); }
-.cards-theme .tier-spoon { --frame: linear-gradient(155deg, var(--rust-1), var(--rust-2) 55%, var(--rust-3)); --tier-color: var(--rust-1); }
-.cards-theme .tier-spoon .card-inner { filter: saturate(0.85); }
-
-/* ROOKIE -- someone who hasn't joined the league yet (data/upcoming-managers.json),
-   fresh mint/paper foil distinct from the four earned tiers, no stat-grid. */
-.cards-theme .tier-rookie { --frame: linear-gradient(155deg, var(--rookie-1), var(--rookie-2) 55%, var(--rookie-3)); --tier-color: var(--rookie-1); }
-.cards-theme .tier-rookie .card-photo { font-size: 1.6rem; }
-
-/* CAREER / ALL-TIME tier -- one rung above Legendary: a shifting prismatic
-   foil, since this card represents a whole body of work, not one season. */
-.cards-theme .tier-career {
-  --frame: linear-gradient(120deg, #f2a4d9, #f7e2a4, #a4f0c8, #a4d6f7, #d1a4f7, #f2a4d9);
-  background-size: 300% 300%; --tier-color: #fff;
-  animation: cards-holo-shift 6s ease infinite;
-}
-@keyframes cards-holo-shift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .cards-theme .tier-career { animation: none; background-position: 30% 50%; }
-}
-.cards-theme .tier-career .sheen { opacity: 0.3; mix-blend-mode: soft-light; }
-.cards-theme .tier-career:hover .sheen { opacity: 0.55; }
-
-/* Titles-won rarity layered on top of the holo-shift shimmer above (see
-   titleTier() in cardRender.js): untitled dials it back to almost nothing
-   -- never having won is deliberately the least special-looking -- while
-   elder/legendary escalate with a stronger frame and a glow, and legendary
-   (whoever holds the most titles of anyone right now) gets a crown too. */
-.cards-theme .tier-career.title-untitled {
-  --frame: linear-gradient(155deg, var(--pewter-1), var(--pewter-2) 55%, var(--pewter-3));
-  animation: none; background-position: 30% 50%;
-}
-.cards-theme .tier-career.title-untitled .sheen { opacity: 0.12; }
-.cards-theme .tier-career.title-elder .card-inner { box-shadow: 0 0 20px -4px rgba(217,165,60,0.4); }
-.cards-theme .tier-career.title-legendary .card-inner { animation: member-legend-glow 3s ease-in-out infinite; }
-@media (prefers-reduced-motion: reduce) {
-  .cards-theme .tier-career.title-legendary .card-inner { animation: none; box-shadow: 0 0 14px 2px rgba(217,165,60,0.35); }
-}
 .crown-badge {
   position: absolute; top: -15px; left: 50%; transform: translateX(-50%); z-index: 3;
   font-size: 1.4rem; filter: drop-shadow(0 3px 4px rgba(0,0,0,0.5));
 }
 .member-tile .crown-badge { left: 22px; transform: none; }
 
-.cards-theme .card-name-row { display: flex; align-items: center; gap: 0.4rem; }
-
-.cards-theme .career-titles { margin-top: 0.5rem; font-size: 0.92rem; letter-spacing: 0.04em; color: var(--gold-2); text-shadow: 0 0 8px rgba(217,165,60,0.5); }
-/* 2 columns (not 3) so each cell has enough room for a 3-digit-heavy
-   W-D-L record without wrapping; stat-num shrinks a touch from the site
-   default plus a hard nowrap, since 6 stats need more headroom than the
-   4-stat season-card stat-line this font size was originally tuned for. */
-.cards-theme .career-stat-grid {
-  margin-top: 0.6rem; padding-top: 0.65rem; border-top: 1px solid var(--card-hairline);
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem 0.6rem; text-align: center;
-}
-/* Number stacked above its label with a little breathing room between them
-   -- same pattern as .stat-line elsewhere. Without this, the two sit
-   inline on one row with no gap at all (e.g. "184-5-111W-D-L"), since
-   nowrap above stops the line break that used to separate them by accident. */
-.cards-theme .career-stat-grid > div { display: flex; flex-direction: column; gap: 0.2rem; }
-.cards-theme .career-stat-grid .stat-num { font-size: 0.92rem; white-space: nowrap; }
-.cards-theme .career-stat-grid .stat-label { white-space: nowrap; }
 .cards-theme .career-grid { align-items: start; }
 .cards-theme .career-card-slot { display: flex; flex-direction: column; }
 .cards-theme .binder-toggle {
@@ -1341,15 +1221,6 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
 }
 .cards-theme .binder-strip.open { display: grid; }
 
-.cards-theme .card-mini { aspect-ratio: 5 / 7; border-radius: 10px; padding: 2px; background: var(--frame); }
-.cards-theme .card-mini .card-inner { border-radius: 8px; }
-.cards-theme .card-mini .card-photo { height: 50%; }
-.cards-theme .card-mini .avatar { width: 36px; height: 36px; font-size: 0.75rem; }
-.cards-theme .card-mini .rank-badge { width: 20px; height: 20px; font-size: 0.7rem; top: 5px; left: 5px; border-radius: 5px; }
-.cards-theme .card-mini .card-body { padding: 0.4rem 0.5rem 0.55rem; }
-.cards-theme .card-mini .card-season { margin-top: 0; font-size: 0.54rem; }
-.cards-theme .card-mini .stat-line { grid-template-columns: 1fr; padding-top: 0.35rem; }
-.cards-theme .card-mini .stat-num { font-size: 0.82rem; }
 
 @media (max-width: 560px) {
   .cards-theme .grid { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1.2rem; }
@@ -1437,28 +1308,6 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
 .member-record .stat-num { font-family: "Bebas Neue", sans-serif; font-size: 0.98rem; font-variant-numeric: tabular-nums; }
 .belt-icon { flex-shrink: 0; }
 
-/* untitled -- 0 titles, deliberately the plainest tier. */
-.member-tile.tier-untitled { background: var(--card-hairline); }
-
-/* titled -- exactly 1 title, a soft gold edge. */
-.member-tile.tier-titled { background: linear-gradient(135deg, var(--gold-2), var(--card-hairline) 70%); }
-.member-tile.tier-titled .member-tile-inner { box-shadow: inset 0 0 0 1px rgba(217,165,60,0.25); }
-
-/* elder -- 2+ titles but not the current record holder: stronger frame + glow. */
-.member-tile.tier-elder { background: linear-gradient(135deg, var(--gold-1), var(--gold-3)); }
-.member-tile.tier-elder .member-tile-inner { box-shadow: 0 0 18px -2px rgba(217,165,60,0.35), inset 0 0 0 1px rgba(247,226,164,0.4); }
-
-/* legendary -- whoever holds the most titles of anyone right now: full
-   regal treatment, pulsing glow, crown above the tile. */
-.member-tile.tier-legendary { background: linear-gradient(135deg, var(--gold-1), var(--gold-2) 45%, var(--gold-3)); }
-.member-tile.tier-legendary .member-tile-inner { animation: member-legend-glow 3s ease-in-out infinite; }
-@keyframes member-legend-glow {
-  0%, 100% { box-shadow: 0 0 14px 2px rgba(217,165,60,0.35), inset 0 0 0 1px rgba(247,226,164,0.6); }
-  50% { box-shadow: 0 0 26px 6px rgba(247,226,164,0.55), inset 0 0 0 1px rgba(247,226,164,0.8); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .member-tile.tier-legendary .member-tile-inner { animation: none; box-shadow: 0 0 14px 2px rgba(217,165,60,0.35), inset 0 0 0 1px rgba(247,226,164,0.6); }
-}
 
 /* Champion spotlight -- Home page banner for whoever won the most recent
    decided season (data/history.json's reigningChampionKey), sitting between
@@ -1877,3 +1726,273 @@ tfoot td { border-top: 2px solid var(--edge-bright); border-bottom: 0; }
 
 /* Subtitles inside cards sit flush with the card content, not indented like page headings. */
 .card p.section-subtitle { padding-left: 0; max-width: none; }
+
+/* =========================================================================
+   Trading cards -- real card anatomy (frame, name plate, art window, type
+   line, stat box, footer gem) with a rarity ladder that gets louder the more
+   a manager has won. Every size inside a card is in cqw so the same markup
+   scales from the full card down to a binder-strip mini.
+   Rarity tokens (--rc / --rc2) are shared with the Home picker tiles.
+   ========================================================================= */
+@property --spin { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+
+.rarity-common, .member-tile.tier-common { --rc: #b3aa97; --rc2: #5b5446; }
+.rarity-uncommon, .member-tile.tier-uncommon { --rc: #3fd68a; --rc2: #176a45; }
+.rarity-rare, .member-tile.tier-rare { --rc: #52aeff; --rc2: #173f7a; }
+.rarity-epic, .member-tile.tier-epic { --rc: #b873ff; --rc2: #4a1b8c; }
+.rarity-legendary, .member-tile.tier-legendary { --rc: #ffc93f; --rc2: #8a5806; }
+.rarity-mythic, .member-tile.tier-mythic { --rc: #ff6ad0; --rc2: #3b2fd9; }
+.rarity-spoon { --rc: #cf9a5c; --rc2: #3c2415; }
+
+/* ---- the gem: a different silhouette for every rarity ---- */
+.tcg-gem {
+  display: inline-block; flex-shrink: 0; width: 4.4cqw; aspect-ratio: 1;
+  background: radial-gradient(circle at 30% 28%, #fff 0, var(--rc) 38%, var(--rc2) 100%);
+  border-radius: 50%;
+}
+.rarity-uncommon .tcg-gem { border-radius: 0; clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); }
+.rarity-rare .tcg-gem { border-radius: 0; clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0 50%); }
+.rarity-epic .tcg-gem { border-radius: 0; clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%); }
+.rarity-legendary .tcg-gem { border-radius: 0; clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+.rarity-mythic .tcg-gem {
+  border-radius: 0; background: conic-gradient(from var(--spin), #ff6ad0, #ffd84d, #5dffa4, #4cc9ff, #9a6bff, #ff6ad0);
+  clip-path: polygon(50% 0, 60% 25%, 85% 15%, 75% 40%, 100% 50%, 75% 60%, 85% 85%, 60% 75%, 50% 100%, 40% 75%, 15% 85%, 25% 60%, 0 50%, 25% 40%, 15% 15%, 40% 25%);
+  animation: tcg-spin 5s linear infinite;
+}
+
+/* ---- card shell: the metal frame is the card's own background ---- */
+.tcg {
+  --spin: 0deg; --rx: 0deg; --ry: 0deg;
+  --frame: linear-gradient(145deg, #cfc6b4, #7a7060 50%, #4d463a);
+  --glow: 0px; --foil: 0; --glare: 0.5;
+  position: relative; container-type: inline-size; aspect-ratio: 5 / 7;
+  padding: 6px; border-radius: 14px; background: var(--frame);
+  transform: perspective(1000px) rotateX(var(--ry)) rotateY(var(--rx));
+  transition: transform 0.5s cubic-bezier(.2,.8,.2,1), box-shadow 0.4s ease;
+  box-shadow: 0 26px 40px -24px rgba(0,0,0,0.85), 0 0 var(--glow) -4px var(--rc);
+  overflow: visible;
+}
+.tcg.is-tilting { transition: transform 0.08s linear, box-shadow 0.4s ease; }
+
+.rarity-uncommon { --frame: linear-gradient(145deg, #8bf0bd, #1f9a63 50%, #0e4a2e); --glow: 16px; }
+.rarity-rare { --frame: linear-gradient(145deg, #bfe3ff, #3f93e6 50%, #123a73); --glow: 26px; }
+.rarity-epic { --frame: linear-gradient(145deg, #e2c1ff, #9b4bf0 45%, #3c1380); --glow: 38px; --foil: 0.38; }
+.rarity-legendary {
+  --frame: conic-gradient(from var(--spin), #fff3b8, #ffc93f, #a86a07, #fff3b8, #ffc93f, #a86a07, #fff3b8);
+  --glow: 54px; --foil: 0.5; --glare: 0.75;
+  animation: tcg-spin 9s linear infinite;
+}
+.rarity-mythic {
+  --frame: conic-gradient(from var(--spin), #ff6ad0, #ffd84d, #5dffa4, #4cc9ff, #9a6bff, #ff6ad0);
+  --glow: 76px; --foil: 0.75; --glare: 0.9;
+  padding: 7px;
+  animation: tcg-spin 5s linear infinite, tcg-float 4.5s ease-in-out infinite;
+}
+.rarity-spoon {
+  --frame: repeating-linear-gradient(92deg, #8a5a30 0 7px, #744a26 7px 14px, #8f6034 14px 19px);
+}
+.rarity-rare:hover { --foil: 0.45; }
+.rarity-epic:hover { --foil: 0.62; }
+.rarity-legendary:hover { --foil: 0.8; }
+.rarity-mythic:hover { --foil: 1; }
+@keyframes tcg-spin { to { --spin: 360deg; } }
+@keyframes tcg-float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -7px; } }
+
+.tcg-crown {
+  position: absolute; top: -17px; left: 50%; transform: translateX(-50%); z-index: 6;
+  font-size: 28px; filter: drop-shadow(0 3px 5px rgba(0,0,0,0.6));
+}
+.rarity-mythic .tcg-crown { font-size: 36px; top: -24px; animation: tcg-crown-bob 3s ease-in-out infinite; }
+@keyframes tcg-crown-bob { 50% { transform: translateX(-50%) translateY(-4px) rotate(4deg); } }
+
+/* ---- the card face ---- */
+.tcg-face {
+  position: relative; isolation: isolate; height: 100%; overflow: hidden; border-radius: 9px;
+  display: flex; flex-direction: column; gap: 2cqw; padding: 3cqw;
+  background:
+    linear-gradient(165deg, color-mix(in srgb, var(--rc) 26%, #0f1118), #0b0c12 55%, color-mix(in srgb, var(--rc2) 45%, #0b0c12));
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.14), inset 0 0 40px rgba(0,0,0,0.55);
+  color: #eef1f4;
+}
+.rarity-mythic .tcg-face {
+  background:
+    radial-gradient(circle at 18% 12%, rgba(255,106,208,0.34), transparent 46%),
+    radial-gradient(circle at 88% 82%, rgba(76,201,255,0.32), transparent 46%),
+    radial-gradient(circle at 60% 40%, rgba(154,107,255,0.22), transparent 55%), #0b0b16;
+}
+.rarity-spoon .tcg-face { background: linear-gradient(165deg, #3a2716, #1c130b 60%, #2c1d10); }
+
+.tcg-foil, .tcg-glare, .tcg-stars { position: absolute; inset: 0; pointer-events: none; z-index: 4; }
+.tcg-foil {
+  opacity: var(--foil); mix-blend-mode: color-dodge; transition: opacity 0.35s ease;
+  background: linear-gradient(115deg, transparent 12%, rgba(255,70,200,0.55) 30%, rgba(70,255,220,0.5) 43%, rgba(255,240,80,0.45) 56%, rgba(120,90,255,0.5) 69%, transparent 88%);
+  background-size: 260% 260%; filter: hue-rotate(var(--seed, 0deg));
+  animation: tcg-foil-drift 7s ease-in-out infinite alternate;
+}
+@keyframes tcg-foil-drift { from { background-position: 0% 0%; } to { background-position: 100% 100%; } }
+.tcg-glare {
+  opacity: 0; transition: opacity 0.3s ease; mix-blend-mode: overlay;
+  background: radial-gradient(circle at var(--mx, 30%) var(--my, 15%), rgba(255,255,255,0.7), rgba(255,255,255,0) 52%);
+}
+.tcg.is-tilting .tcg-glare { opacity: var(--glare); }
+
+/* twinkling sparkles -- legendary and up only */
+.tcg-stars { display: none; z-index: 5; background-repeat: no-repeat; }
+.rarity-legendary .tcg-stars, .rarity-mythic .tcg-stars {
+  display: block; animation: tcg-twinkle 2.6s ease-in-out infinite alternate;
+  background-image:
+    radial-gradient(circle, #fff 0 1px, rgba(255,255,255,0) 3px), radial-gradient(circle, #fff 0 1px, rgba(255,255,255,0) 3px),
+    radial-gradient(circle, #fff 0 1px, rgba(255,255,255,0) 3px), radial-gradient(circle, #fff 0 1px, rgba(255,255,255,0) 3px),
+    radial-gradient(circle, #fff 0 1px, rgba(255,255,255,0) 3px);
+  background-size: 14px 14px, 11px 11px, 16px 16px, 10px 10px, 13px 13px;
+  background-position: 10% 18%, 82% 10%, 38% 58%, 92% 68%, 18% 90%;
+}
+.rarity-mythic .tcg-stars { animation-duration: 1.7s; }
+@keyframes tcg-twinkle { from { opacity: 0.25; } to { opacity: 1; } }
+
+/* ---- name plate ---- */
+.tcg-top {
+  display: flex; align-items: center; justify-content: space-between; gap: 2cqw;
+  padding: 1.4cqw 2.8cqw; border-radius: 6px; color: #0a0a10;
+  background: linear-gradient(100deg, var(--rc), color-mix(in srgb, var(--rc) 55%, #000));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.55), 0 2px 6px rgba(0,0,0,0.5);
+}
+.rarity-legendary .tcg-top { background: linear-gradient(100deg, #fff0a6, #ffc93f 45%, #b9780a); }
+.rarity-mythic .tcg-top {
+  background: linear-gradient(100deg, #ff6ad0, #ffd84d, #5dffa4, #4cc9ff, #9a6bff, #ff6ad0); background-size: 220% 100%;
+  animation: tcg-plate 6s linear infinite;
+}
+@keyframes tcg-plate { to { background-position: 220% 0; } }
+.tcg-name-wrap { display: flex; align-items: center; gap: 1.5cqw; min-width: 0; }
+.tcg-name {
+  font-family: "Archivo", sans-serif; font-weight: 800; font-size: 5.6cqw; line-height: 1.06;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.tcg-prestige { display: flex; flex-direction: column; align-items: flex-end; line-height: 0.85; flex-shrink: 0; }
+.tcg-prestige b { font-family: "Bebas Neue", sans-serif; font-weight: 400; font-size: 8.4cqw; letter-spacing: 0.02em; }
+.tcg-prestige small { font-size: 2.5cqw; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.75; }
+
+/* ---- art window ---- */
+.tcg-art {
+  position: relative; flex: 1 1 0; min-height: 0; overflow: hidden; border-radius: 6px;
+  border: 0.7cqw solid var(--rc); background: #000;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.7), inset 0 0 30px rgba(0,0,0,0.7);
+}
+.tcg-art-fill {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  background:
+    radial-gradient(circle at 50% 32%, color-mix(in srgb, var(--mc, #4a5566) 80%, #fff 10%), color-mix(in srgb, var(--mc, #4a5566) 38%, #000) 80%);
+}
+.tcg-initials { font-family: "Bebas Neue", sans-serif; font-size: 30cqw; color: rgba(255,255,255,0.85); text-shadow: 0 4px 16px rgba(0,0,0,0.4); }
+.tcg-art-icon { font-size: 34cqw; }
+.tcg-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
+.rarity-spoon .tcg-art-fill { filter: saturate(0.65) sepia(0.3); }
+.tcg-ribbon {
+  position: absolute; left: 0; right: 0; bottom: 0; text-align: center; padding: 1.1cqw 0;
+  font-family: "Archivo", sans-serif; font-weight: 800; font-size: 3.4cqw; letter-spacing: 0.24em; text-transform: uppercase; color: var(--rc);
+  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.78) 18%, rgba(0,0,0,0.78) 82%, transparent);
+}
+.tcg-best {
+  position: absolute; top: 2cqw; left: 2cqw; padding: 0.7cqw 2.2cqw; border-radius: 3px;
+  font-family: "Archivo", sans-serif; font-weight: 800; font-size: 3cqw; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--rc); background: rgba(0,0,0,0.7);
+}
+.tcg-theme-badge { position: absolute; top: 1.2cqw; right: 2cqw; font-size: 7cqw; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.6)); }
+
+/* ---- type line, stats, climb meter, footer ---- */
+.tcg-type {
+  display: flex; justify-content: space-between; gap: 2cqw; padding: 1cqw 1.5cqw;
+  font-family: "Archivo", sans-serif; font-weight: 700; font-size: 3.3cqw; letter-spacing: 0.06em; text-transform: uppercase; color: var(--rc);
+  border-top: 1px solid color-mix(in srgb, var(--rc) 45%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--rc) 45%, transparent);
+}
+.tcg-type-titles { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.tcg-type span:last-child { flex-shrink: 0; color: rgba(255,255,255,0.65); }
+.tcg-stats {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6cqw 2cqw; padding: 2cqw; text-align: center;
+  border-radius: 6px; background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.09);
+}
+.tcg .stat-num { display: block; font-family: "Bebas Neue", sans-serif; font-weight: 400; font-size: 6.4cqw; letter-spacing: 0.02em; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.tcg .stat-label { display: block; font-family: "Archivo", sans-serif; font-weight: 600; font-size: 2.8cqw; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.6); }
+.tcg-climb { display: grid; gap: 0.9cqw; font-family: "Archivo", sans-serif; font-weight: 600; font-size: 3.1cqw; color: rgba(255,255,255,0.75); }
+.tcg-climb b { color: var(--rc); }
+.tcg-climb-bar { height: 1.3cqw; border-radius: 99px; background: rgba(255,255,255,0.13); overflow: hidden; }
+.tcg-climb-bar i { display: block; height: 100%; background: linear-gradient(90deg, var(--rc2), var(--rc)); }
+.tcg-climb-max { text-align: center; color: var(--rc); letter-spacing: 0.14em; text-transform: uppercase; }
+.tcg-foot {
+  display: flex; align-items: center; gap: 2cqw; padding-top: 0.4cqw;
+  font-family: "Archivo", sans-serif; font-weight: 800; font-size: 3.5cqw; letter-spacing: 0.1em; text-transform: uppercase; color: var(--rc);
+}
+.tcg-blurb { font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; font-weight: 500; font-size: 4cqw; letter-spacing: 0; text-transform: none; color: rgba(255,255,255,0.55); }
+.tcg-serial { margin-left: auto; font-family: "Bebas Neue", sans-serif; font-weight: 400; font-size: 5.2cqw; letter-spacing: 0.06em; color: rgba(255,255,255,0.65); }
+
+/* ---- binder-strip mini cards ---- */
+.tcg-mini { padding: 3px; border-radius: 9px; box-shadow: 0 10px 18px -12px rgba(0,0,0,0.85); transform: none; animation: none !important; translate: none; }
+.tcg-mini .tcg-face { padding: 4cqw; gap: 3cqw; border-radius: 6px; }
+.tcg-mini .tcg-top { padding: 1.2cqw 3.5cqw; border-radius: 4px; }
+.tcg-mini .tcg-name { font-size: 10cqw; }
+.tcg-mini .tcg-prestige b { font-size: 13cqw; }
+.tcg-mini .tcg-gem { width: 8cqw; }
+.tcg-mini .tcg-foot { font-size: 8.5cqw; letter-spacing: 0.06em; }
+.tcg-mini .tcg-initials { font-size: 40cqw; }
+
+/* ---- layout on the Cards page ---- */
+.cards-theme .career-grid { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 2.6rem 1.8rem; padding-top: 1.4rem; }
+.cards-theme .career-card-slot { animation: tcg-deal 0.6s cubic-bezier(.2,.9,.3,1) backwards; }
+.cards-theme .career-card-slot:nth-child(2) { animation-delay: 0.05s; }
+.cards-theme .career-card-slot:nth-child(3) { animation-delay: 0.1s; }
+.cards-theme .career-card-slot:nth-child(4) { animation-delay: 0.15s; }
+.cards-theme .career-card-slot:nth-child(5) { animation-delay: 0.2s; }
+.cards-theme .career-card-slot:nth-child(6) { animation-delay: 0.25s; }
+.cards-theme .career-card-slot:nth-child(7) { animation-delay: 0.3s; }
+.cards-theme .career-card-slot:nth-child(8) { animation-delay: 0.35s; }
+.cards-theme .career-card-slot:nth-child(n+9) { animation-delay: 0.4s; }
+@keyframes tcg-deal { from { opacity: 0; transform: translateY(26px) scale(0.96); } to { opacity: 1; transform: none; } }
+
+/* ---- "how rarity works" strip ---- */
+.rarity-guide { max-width: 900px; margin: 0 auto 1.8rem; text-align: center; }
+.rarity-guide-rule { margin: 0 0 0.8rem; font-size: 0.86rem; color: var(--card-text-muted); }
+.rarity-guide-rule b { color: var(--gold-bright); }
+.rarity-guide-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+.rarity-guide-item {
+  display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.35rem 0.85rem; border-radius: 4px;
+  border: 1px solid color-mix(in srgb, var(--rc) 55%, transparent); background: color-mix(in srgb, var(--rc) 10%, transparent);
+}
+.rarity-guide-item .tcg-gem { width: 15px; height: 15px; }
+.rarity-guide-item b { color: var(--rc); font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase; }
+.rarity-guide-item small { color: var(--card-text-muted); font-size: 0.72rem; }
+
+/* =========================================================================
+   Home page picker tiles -- squarer corners, same rarity ladder as the cards.
+   ========================================================================= */
+.member-tile { border-radius: 5px; }
+.member-tile-inner { border-radius: 4px; }
+.picker-card-btn { border-radius: 6px; }
+.champion-spotlight { border-radius: 6px; }
+.member-rarity { font-family: "Archivo", sans-serif; font-style: normal; font-weight: 800; font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rc, var(--card-text-muted)); }
+
+.member-tile.tier-common { background: var(--card-hairline); }
+.member-tile.tier-uncommon { background: linear-gradient(135deg, var(--rc), var(--card-hairline) 65%); }
+.member-tile.tier-uncommon .member-tile-inner { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--rc) 28%, transparent); }
+.member-tile.tier-rare { background: linear-gradient(135deg, #bfe3ff, var(--rc) 40%, var(--rc2)); }
+.member-tile.tier-rare .member-tile-inner { box-shadow: 0 0 18px -4px var(--rc), inset 0 0 0 1px color-mix(in srgb, var(--rc) 40%, transparent); }
+.member-tile.tier-epic { background: linear-gradient(135deg, #e2c1ff, var(--rc) 40%, var(--rc2)); }
+.member-tile.tier-epic .member-tile-inner { box-shadow: 0 0 26px -2px var(--rc), inset 0 0 0 1px color-mix(in srgb, var(--rc) 55%, transparent); }
+.member-tile.tier-legendary { --spin: 0deg; background: conic-gradient(from var(--spin), #fff3b8, #ffc93f, #a86a07, #fff3b8, #ffc93f, #a86a07, #fff3b8); animation: tcg-spin 9s linear infinite; }
+.member-tile.tier-legendary .member-tile-inner { animation: member-legend-glow 3s ease-in-out infinite; }
+.member-tile.tier-mythic { --spin: 0deg; background: conic-gradient(from var(--spin), #ff6ad0, #ffd84d, #5dffa4, #4cc9ff, #9a6bff, #ff6ad0); padding: 2px; animation: tcg-spin 5s linear infinite; box-shadow: 0 0 32px -6px #ff6ad0, 0 0 40px -10px #4cc9ff; }
+.member-tile.tier-mythic .member-tile-inner { box-shadow: inset 0 0 22px -6px rgba(255,106,208,0.55); }
+@keyframes member-legend-glow {
+  0%, 100% { box-shadow: 0 0 14px 2px rgba(217,165,60,0.35), inset 0 0 0 1px rgba(247,226,164,0.6); }
+  50% { box-shadow: 0 0 26px 6px rgba(247,226,164,0.55), inset 0 0 0 1px rgba(247,226,164,0.8); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tcg, .tcg *, .member-tile, .member-tile *, .cards-theme .career-card-slot { animation: none !important; transition: none !important; }
+  .tcg-foil { opacity: calc(var(--foil) * 0.6); }
+}
+@media (max-width: 560px) {
+  .cards-theme .career-grid { grid-template-columns: minmax(0, 330px); justify-content: center; }
+}
+
+.member-meta { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.member-stars { color: var(--gold-1); letter-spacing: 0.04em; }

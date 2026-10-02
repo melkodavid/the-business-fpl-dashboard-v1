@@ -1,9 +1,15 @@
 // Shared trading-card DOM-string builders. Used by the Cards page (full
-// cards with a season binder attached) and the landing page's "who's
-// watching?" picker (the same card fronts, no binder, click-to-select
-// instead of click-to-expand) -- kept here so neither duplicates the other's
-// markup.
+// trading cards with a season binder attached) and the landing page's "who's
+// watching?" picker (compact member tiles, click-to-select) -- kept here so
+// neither duplicates the other's markup.
+//
+// Rarity is earned by winning (see cardRarity.js): the more titles and match
+// wins a manager has, the rarer and more elaborate their card gets.
 import { escapeHtml } from "../format.js";
+import { rarityFor, seedHue } from "./cardRarity.js";
+
+// Season-card tiers (where a manager finished that year) -- separate from the
+// career rarity ladder above.
 export const TIER_LABEL = {
   legendary: "Champion",
   rare: "Top 4",
@@ -14,6 +20,12 @@ export const TIER_LABEL = {
 function initialsOf(name) {
   return (name ?? "?").trim().split(/\s+/).map((w) => w[0]).join("").slice(0, 2).toUpperCase();
 }
+
+const ordinal = (n) => {
+  const v = n % 100;
+  if (v >= 11 && v <= 13) return `${n}th`;
+  return `${n}${{ 1: "st", 2: "nd", 3: "rd" }[n % 10] ?? "th"}`;
+};
 
 export function personFor(managerKey, displayName, managers) {
   const current = managers.all.find((m) => m.personKey === managerKey);
@@ -45,129 +57,150 @@ export function winRate(w, d, l) {
   return played > 0 ? Math.round((w / played) * 100) : 0;
 }
 
+// The picture window of a trading card: full-bleed photo (initials/icon
+// behind it as the fallback), tinted with the manager's own colour.
+function artHtml(person) {
+  if (person.theme?.avatarIcon) {
+    return `<div class="tcg-art-fill tcg-art-icon" style="--mc:${person.color}" title="${escapeHtml(person.theme.label)}">${person.theme.icon}</div>`;
+  }
+  const photoSrc = person.personKey ? `assets/managers/${person.personKey}.jpg` : null;
+  const photoTag = photoSrc ? `<img class="tcg-photo" src="${photoSrc}" alt="" loading="lazy" onerror="this.remove()">` : "";
+  return `<div class="tcg-art-fill" style="--mc:${person.color}"><span class="tcg-initials">${escapeHtml(person.abbreviation)}</span>${photoTag}</div>`;
+}
+
+// Belt, flag mast and corner badge are the league's running-joke decorations
+// (see data/league-lore.json `theme`). The corner badge is skipped when the
+// avatar already IS the icon, or a flag mast already carries it -- it sits
+// large enough on a photo to cover real faces, so it isn't worth doing twice.
+function decorationsFor(person) {
+  const theme = person.theme;
+  const showCornerBadge = theme && !theme.avatarIcon && !theme.flag;
+  return {
+    flag: theme?.flag ? `<span class="card-flag-mast" aria-hidden="true">${theme.icon}</span>` : "",
+    corner: showCornerBadge ? `<span class="tcg-theme-badge" title="${escapeHtml(theme.label)}">${theme.icon}</span>` : "",
+  };
+}
+
+// Special ribbon text for the top tiers -- the "eccentric" part: the more
+// you win, the more the card shouts about it.
+const RIBBON = { mythic: "Hall of Fame", legendary: "Legend" };
+
+// ---------------------------------------------------------------------------
+// Career card -- the headline trading card on the Cards tab.
+// ---------------------------------------------------------------------------
+export function careerCardFrontHtml(card, managers, { isReigningChampion = false, ladder = null } = {}) {
+  const person = personFor(card.managerKey, card.displayName, managers);
+  const rarity = rarityFor(card);
+  const { flag, corner } = decorationsFor(person);
+  const showCrown = rarity.id === "legendary" || rarity.id === "mythic";
+  const ribbon = isReigningChampion ? "Reigning Champion" : RIBBON[rarity.id];
+
+  const stat = (num, label) => `<div><span class="stat-num">${num}</span><span class="stat-label">${label}</span></div>`;
+  const climb = rarity.next
+    ? `<div class="tcg-climb" title="${rarity.next.needed} more prestige reaches ${rarity.next.label}">
+         <span class="tcg-climb-text">Next: <b>${rarity.next.label}</b> &middot; ${rarity.next.needed} to go</span>
+         <span class="tcg-climb-bar"><i style="width:${Math.round(rarity.progress * 100)}%"></i></span>
+       </div>`
+    : `<div class="tcg-climb tcg-climb-max"><span class="tcg-climb-text">Peak rarity reached</span></div>`;
+
+  return `
+    <div class="tcg rarity-${rarity.id}" data-manager-key="${card.managerKey}" data-rarity="${rarity.id}" style="--seed:${seedHue(card.managerKey)}deg">
+      ${flag}
+      ${showCrown ? `<span class="tcg-crown" aria-hidden="true">👑</span>` : ""}
+      <div class="tcg-face">
+        <div class="tcg-foil"></div>
+        <div class="tcg-stars"></div>
+        <div class="tcg-glare"></div>
+        <header class="tcg-top">
+          <div class="tcg-name-wrap">
+            <span class="tcg-name">${escapeHtml(person.name)}</span>
+            ${isReigningChampion ? beltIconHtml(26) : ""}
+          </div>
+          <div class="tcg-prestige"><b>${rarity.prestige}</b><small>Prestige</small></div>
+        </header>
+        <div class="tcg-art">
+          ${artHtml(person)}
+          ${ribbon ? `<span class="tcg-ribbon">${ribbon}</span>` : ""}
+          <span class="tcg-best" title="Best finish in any season">Best ${ordinal(card.bestRank)}</span>
+          ${corner}
+        </div>
+        <div class="tcg-type">
+          <span class="tcg-type-titles">${card.titles ? `${"★".repeat(Math.min(card.titles, 8))} ${card.titles} Title${card.titles === 1 ? "" : "s"}` : "No titles yet"}</span>
+          <span>${card.seasons} season${card.seasons === 1 ? "" : "s"}</span>
+        </div>
+        <div class="tcg-stats">
+          ${stat(`${card.w}-${card.d}-${card.l}`, "W-D-L")}
+          ${stat(`${card.winPct}%`, "Win Rate")}
+          ${stat(card.top4, "Top-4s")}
+          ${stat(card.pointsFor.toLocaleString(), "Pts For")}
+          ${stat(card.points, "League Pts")}
+          ${stat(card.avgRank, "Avg Rank")}
+        </div>
+        ${climb}
+        <footer class="tcg-foot">
+          <span class="tcg-gem" aria-hidden="true"></span>
+          <span class="tcg-rarity-name">${rarity.label}</span>
+          <span class="tcg-blurb">${rarity.blurb}</span>
+          ${ladder ? `<span class="tcg-serial" title="Place on the prestige ladder">${String(ladder.rank).padStart(2, "0")}/${String(ladder.total).padStart(2, "0")}</span>` : ""}
+        </footer>
+      </div>
+    </div>`;
+}
+
+// ---------------------------------------------------------------------------
+// Season card (one per manager per season; tier = where they finished).
+// ---------------------------------------------------------------------------
+const SEASON_RARITY = { legendary: "legendary", rare: "rare", common: "common", spoon: "spoon" };
+
 export function seasonCardHtml(card, managers) {
   const person = personFor(card.managerKey, card.manager, managers);
   const tierLabel = TIER_LABEL[card.tier];
+  const stat = (num, label) => `<div><span class="stat-num">${num}</span><span class="stat-label">${label}</span></div>`;
   return `
-    <div class="card tier-${card.tier}">
-      <div class="card-inner">
-        <div class="sheen"></div>
-        <div class="card-photo">
-          <div class="rank-badge">${card.rank}</div>
-          <span class="tier-tag">${tierLabel}</span>
-          ${avatarHtml(person)}
-          ${card.tier === "legendary" ? '<span class="title-star">★</span>' : ""}
+    <div class="tcg rarity-${SEASON_RARITY[card.tier]}" data-manager-key="${card.managerKey}" style="--seed:${seedHue(card.managerKey)}deg">
+      <div class="tcg-face">
+        <div class="tcg-foil"></div>
+        <div class="tcg-stars"></div>
+        <div class="tcg-glare"></div>
+        <header class="tcg-top">
+          <div class="tcg-name-wrap"><span class="tcg-name">${escapeHtml(person.name)}</span></div>
+          <div class="tcg-prestige"><b>${card.rank}</b><small>Rank</small></div>
+        </header>
+        <div class="tcg-art">
+          ${artHtml(person)}
+          ${card.tier === "legendary" ? `<span class="tcg-ribbon">Champion</span>` : ""}
         </div>
-        <div class="card-body">
-          <div class="card-name">${person.name}</div>
-          <div class="card-team">${card.team ?? ""}</div>
-          <div class="card-season">${card.year}${card.isCurrent ? " · Current" : ""} · ${tierLabel}</div>
-          <div class="stat-line">
-            <div><span class="stat-num">${card.w}-${card.d}-${card.l}</span><span class="stat-label">W-D-L</span></div>
-            <div><span class="stat-num">${card.plus}</span><span class="stat-label">Pts For</span></div>
-            <div><span class="stat-num">${card.pts}</span><span class="stat-label">League Pts</span></div>
-            <div><span class="stat-num">${winRate(card.w, card.d, card.l)}%</span><span class="stat-label">Win Rate</span></div>
-          </div>
+        <div class="tcg-type">
+          <span class="tcg-type-titles">${escapeHtml(card.team ?? "")}</span>
+          <span>${card.year}${card.isCurrent ? " &middot; live" : ""}</span>
         </div>
+        <div class="tcg-stats">
+          ${stat(`${card.w}-${card.d}-${card.l}`, "W-D-L")}
+          ${stat(`${winRate(card.w, card.d, card.l)}%`, "Win Rate")}
+          ${stat(card.pts, "League Pts")}
+        </div>
+        <footer class="tcg-foot">
+          <span class="tcg-gem" aria-hidden="true"></span>
+          <span class="tcg-rarity-name">${tierLabel}</span>
+          <span class="tcg-blurb">${card.plus} pts for</span>
+        </footer>
       </div>
     </div>`;
 }
 
+// Small binder-strip card: just the season, the picture, and the result.
 export function miniCardHtml(card, managers) {
   const person = personFor(card.managerKey, card.manager, managers);
   return `
-    <div class="card-mini tier-${card.tier}">
-      <div class="card-inner">
-        <div class="sheen"></div>
-        <div class="card-photo">
-          <div class="rank-badge">${card.rank}</div>
-          ${avatarHtml(person)}
-        </div>
-        <div class="card-body">
-          <div class="card-season">${card.year}</div>
-          <div class="stat-line"><div><span class="stat-num">${card.pts} pts</span></div></div>
-        </div>
+    <div class="tcg tcg-mini rarity-${SEASON_RARITY[card.tier]}" style="--seed:${seedHue(card.managerKey)}deg">
+      <div class="tcg-face">
+        <div class="tcg-foil"></div>
+        <div class="tcg-glare"></div>
+        <header class="tcg-top"><span class="tcg-name">${card.year}</span><div class="tcg-prestige"><b>${card.rank}</b></div></header>
+        <div class="tcg-art">${artHtml(person)}</div>
+        <footer class="tcg-foot"><span class="tcg-gem" aria-hidden="true"></span><span class="tcg-rarity-name">${card.pts} pts</span></footer>
       </div>
     </div>`;
-}
-
-// Shared shell for a career/all-time card -- photo/badge/avatar/name/team/
-// titles, with `statsHtml` as the only part that varies between the full
-// breakdown (Cards tab) and the condensed highlight (landing page picker).
-// No surrounding .career-card-slot wrapper and no binder chrome -- cards.js
-// wraps this with a binder-toggle + binder-strip; the landing page wraps it
-// with a plain select-to-continue button instead.
-//
-// Rarity/glow here is titles won (see titleTier), layered on top of the
-// tier-career holo-shift shimmer every all-time card already has: untitled
-// dials that shimmer back to near nothing (never won = least special by
-// design), titled/elder/legendary escalate it, and legendary (the current
-// title leader) adds a crown + the strongest pulsing glow. isReigningChampion
-// is a separate signal (who won most recently, not who's won the most) and
-// gets its own championship-belt badge next to their name.
-function careerCardShellHtml(card, managers, statsHtml, { maxTitles = 0, isReigningChampion = false } = {}) {
-  const person = personFor(card.managerKey, card.displayName, managers);
-  const theme = person.theme;
-  // Skip the corner badge when the avatar itself already *is* the theme icon
-  // (e.g. ostap) -- showing it twice would be redundant. Same for a manager
-  // with a flag mast (e.g. noah) -- the mast already carries the theme, and
-  // the corner badge sits large enough on a small photo to cover real facial
-  // detail, which it isn't worth doing twice over.
-  const showCornerBadge = theme && !theme.avatarIcon && !theme.flag;
-  const tier = titleTier(card.titles, maxTitles);
-  return `
-    <div class="card tier-career title-${tier}" data-manager-key="${card.managerKey}">
-      ${theme?.flag ? `<span class="card-flag-mast" aria-hidden="true">${theme.icon}</span>` : ""}
-      ${tier === "legendary" ? `<span class="crown-badge" aria-hidden="true">👑</span>` : ""}
-      <div class="card-inner">
-        <div class="sheen"></div>
-        <div class="card-photo">
-          <div class="rank-badge">#${card.bestRank}</div>
-          <span class="tier-tag">All-Time</span>
-          ${avatarHtml(person)}
-          ${showCornerBadge ? `<span class="card-theme-badge" title="${escapeHtml(theme.label)}">${theme.icon}</span>` : ""}
-        </div>
-        <div class="career-body">
-          <div class="card-name-row">
-            <span class="card-name">${person.name}</span>
-            ${isReigningChampion ? beltIconHtml(24) : ""}
-          </div>
-          <div class="card-team">${card.seasons} season${card.seasons === 1 ? "" : "s"} in The Business</div>
-          ${card.titles ? `<div class="career-titles">${"★ ".repeat(card.titles).trim()} &nbsp;${card.titles} Title${card.titles === 1 ? "" : "s"}</div>` : ""}
-          ${statsHtml}
-        </div>
-      </div>
-    </div>`;
-}
-
-// Full 6-stat breakdown -- the Cards tab, where the whole point is to dig
-// into someone's career numbers.
-export function careerCardFrontHtml(card, managers, opts) {
-  // Labels dropped their redundant "Career" prefix (the whole section is
-  // already understood to be career stats) -- shorter labels plus the grid
-  // CSS below (2 columns instead of 3, content-sized not forced-equal) is
-  // what actually stops these from wrapping at a trading card's width.
-  const statsHtml = `
-    <div class="career-stat-grid">
-      <div><span class="stat-num">${card.w}-${card.d}-${card.l}</span><span class="stat-label">W-D-L</span></div>
-      <div><span class="stat-num">${card.winPct}%</span><span class="stat-label">Win Rate</span></div>
-      <div><span class="stat-num">${card.top4}</span><span class="stat-label">Top-4s</span></div>
-      <div><span class="stat-num">${card.pointsFor.toLocaleString()}</span><span class="stat-label">Pts For</span></div>
-      <div><span class="stat-num">${card.points}</span><span class="stat-label">League Pts</span></div>
-      <div><span class="stat-num">${card.avgRank}</span><span class="stat-label">Avg Rank</span></div>
-    </div>`;
-  return careerCardShellHtml(card, managers, statsHtml, opts);
-}
-
-// Rarity here is titles won, not season performance: legendary = whoever
-// currently holds the most titles of anyone in the league (crown-worthy),
-// elder = multiple titles but not the record holder, titled = exactly one,
-// untitled = none yet and plainest by design.
-export function titleTier(titles, maxTitles) {
-  if (titles > 0 && titles === maxTitles) return "legendary";
-  if (titles >= 2) return "elder";
-  if (titles === 1) return "titled";
-  return "untitled";
 }
 
 // Small inline SVG strap-buckle-strap championship belt -- no external
@@ -187,22 +220,20 @@ export function beltIconHtml(size = 32) {
 }
 
 // Compact roster-picker tile -- landing page only. Deliberately not built on
-// the trading-card shell: no fixed tall aspect ratio, no rank-badge/tier-tag
-// chrome, just enough to identify and pick someone, sized to its own
-// content instead of a card shape meant for a full stat breakdown.
-export function memberTileHtml(card, managers, { maxTitles = 0, isReigningChampion = false } = {}) {
+// the trading-card shell: just enough to identify and pick someone. Its frame
+// follows the same rarity ladder as the full cards, so a manager's tile and
+// card always agree.
+export function memberTileHtml(card, managers, { isReigningChampion = false } = {}) {
   const person = personFor(card.managerKey, card.displayName, managers);
   const theme = person.theme;
-  // Skipped for avatarIcon (badge would duplicate the avatar) and flag
-  // (the mast already carries the theme, and the badge is large enough on
-  // this tile's small photo to cover real facial detail).
   const showCornerBadge = theme && !theme.avatarIcon && !theme.flag;
-  const tier = titleTier(card.titles, maxTitles);
+  const rarity = rarityFor(card);
+  const showCrown = rarity.id === "legendary" || rarity.id === "mythic";
 
   return `
-    <div class="member-tile tier-${tier}" data-manager-key="${card.managerKey}">
+    <div class="member-tile tier-${rarity.id}" data-manager-key="${card.managerKey}" data-rarity="${rarity.id}">
       ${theme?.flag ? `<span class="card-flag-mast" aria-hidden="true">${theme.icon}</span>` : ""}
-      ${tier === "legendary" ? `<span class="crown-badge" aria-hidden="true">👑</span>` : ""}
+      ${showCrown ? `<span class="crown-badge" aria-hidden="true">👑</span>` : ""}
       <div class="member-tile-inner">
         <div class="sheen"></div>
         <div class="member-photo">
@@ -211,11 +242,11 @@ export function memberTileHtml(card, managers, { maxTitles = 0, isReigningChampi
         </div>
         <div class="member-info">
           <div class="member-name-row">
-            <span class="member-name">${person.name}</span>
+            <span class="member-name">${escapeHtml(person.name)}</span>
             ${isReigningChampion ? beltIconHtml(26) : ""}
           </div>
           <div class="member-meta">
-            ${card.seasons} season${card.seasons === 1 ? "" : "s"}${card.titles ? ` &middot; ${"★".repeat(card.titles)} ${card.titles} Title${card.titles === 1 ? "" : "s"}` : ""}
+            <span class="member-rarity">${rarity.label}</span> &middot; ${card.seasons} season${card.seasons === 1 ? "" : "s"}${card.titles ? ` &middot; <span class="member-stars" title="${card.titles} title${card.titles === 1 ? "" : "s"}">${"★".repeat(card.titles)}</span>` : ""}
           </div>
           <div class="member-record">
             <span class="stat-num">${card.w}-${card.d}-${card.l}</span> &middot; <span class="stat-num">${card.winPct}%</span> win

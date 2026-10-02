@@ -16,7 +16,7 @@ function rookieTileHtml(person) {
   const photoSrc = person.personKey ? `assets/managers/${person.personKey}.jpg` : null;
   const photoTag = photoSrc ? `<img class="avatar-photo" src="${photoSrc}" alt="" onerror="this.remove()">` : "";
   return `
-    <div class="member-tile tier-untitled" data-manager-key="${person.personKey}">
+    <div class="member-tile tier-common" data-manager-key="${person.personKey}">
       <div class="member-tile-inner">
         <div class="sheen"></div>
         <div class="member-photo">
@@ -57,7 +57,6 @@ export function render(container, data, managers) {
   // Already sorted titles desc, then avg rank asc, then win% desc (see
   // scripts/stats/history.js's leaderboard) -- no extra sort needed here.
   const careerCards = buildCareerCards(data.history).filter((c) => managers.all.some((m) => m.personKey === c.managerKey));
-  const maxTitles = careerCards.reduce((max, c) => Math.max(max, c.titles), 0);
   const reigningChampionKey = data.history?.reigningChampionKey ?? null;
   const reigningChampionCard = careerCards.find((c) => c.managerKey === reigningChampionKey) ?? null;
 
@@ -68,7 +67,7 @@ export function render(container, data, managers) {
       return `
         <div class="career-card-slot picker-slot">
           <button type="button" class="picker-card-btn ${isYou ? "is-you" : ""}" data-manager-key="${card.managerKey}">
-            ${memberTileHtml(card, managers, { maxTitles, isReigningChampion })}
+            ${memberTileHtml(card, managers, { isReigningChampion })}
             <span class="picker-card-cta">${isYou ? "Continue as You →" : "Play as this manager →"}</span>
           </button>
         </div>`;

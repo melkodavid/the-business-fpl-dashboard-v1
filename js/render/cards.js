@@ -1,13 +1,68 @@
 import { buildSeasonCards, buildCareerCards, cardsByManager } from "../lib/cardTiers.js";
 import { seasonCardHtml, miniCardHtml, careerCardFrontHtml } from "../lib/cardRender.js";
+import { RARITIES, prestigeRanks, TITLE_PRESTIGE } from "../lib/cardRarity.js";
 import { getIdentity } from "../identity.js";
 import { openIdentityPanel } from "../identitySwitcher.js";
 
-function careerCardHtml(card, managers, seasonsByManager, tierOpts) {
+// The "how rarity works" strip: one gem per tier with the prestige it takes.
+function rarityGuideHtml() {
+  const tiers = [...RARITIES].reverse();
+  const items = tiers
+    .map((r, i) => {
+      const next = tiers[i + 1];
+      const range = next ? `${r.min}–${next.min - 1}` : `${r.min}+`;
+      return `<li class="rarity-guide-item rarity-${r.id}"><span class="tcg-gem" aria-hidden="true"></span><b>${r.label}</b><small>${range}</small></li>`;
+    })
+    .join("");
+  return `
+    <div class="rarity-guide">
+      <p class="rarity-guide-rule"><b>Prestige</b> = ${TITLE_PRESTIGE} per title + 1 per career win. Every win moves a card closer to the next rarity.</p>
+      <ul class="rarity-guide-list">${items}</ul>
+    </div>`;
+}
+
+// Mouse-follow tilt + glare. Delegated from the page root, so cards added later
+// (the season grid re-renders) work with no extra wiring. Pointer devices only;
+// skipped entirely under reduced-motion.
+function attachTilt(root) {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  let active = null;
+  const reset = (el) => {
+    if (!el) return;
+    el.style.removeProperty("--mx");
+    el.style.removeProperty("--my");
+    el.style.removeProperty("--rx");
+    el.style.removeProperty("--ry");
+    el.classList.remove("is-tilting");
+  };
+  root.addEventListener("pointermove", (e) => {
+    if (e.pointerType === "touch") return;
+    const card = e.target.closest(".tcg:not(.tcg-mini)");
+    if (card !== active) {
+      reset(active);
+      active = card;
+    }
+    if (!card) return;
+    const r = card.getBoundingClientRect();
+    const px = (e.clientX - r.left) / r.width;
+    const py = (e.clientY - r.top) / r.height;
+    card.classList.add("is-tilting");
+    card.style.setProperty("--mx", `${(px * 100).toFixed(1)}%`);
+    card.style.setProperty("--my", `${(py * 100).toFixed(1)}%`);
+    card.style.setProperty("--rx", `${((px - 0.5) * 14).toFixed(2)}deg`);
+    card.style.setProperty("--ry", `${(-(py - 0.5) * 14).toFixed(2)}deg`);
+  });
+  root.addEventListener("pointerleave", () => {
+    reset(active);
+    active = null;
+  });
+}
+
+function careerCardHtml(card, managers, seasonsByManager, cardOpts) {
   const binderCards = seasonsByManager.get(card.managerKey) ?? [];
   return `
     <div class="career-card-slot">
-      ${careerCardFrontHtml(card, managers, tierOpts)}
+      ${careerCardFrontHtml(card, managers, cardOpts)}
       <button type="button" class="binder-toggle" data-binder-toggle="${card.managerKey}">
         ▾ Open Full Collection (${binderCards.length} season${binderCards.length === 1 ? "" : "s"})
       </button>
@@ -24,12 +79,12 @@ export function render(container, data, managers) {
   const seasonsByManager = cardsByManager(seasonCards);
   const seasonYears = [...history.seasons].filter((s) => s.table).reverse();
 
-  // Titles-based rarity (see titleTier in cardRender.js) considers the whole
-  // all-time leaderboard, not just the current 12 -- "most titles of anyone"
-  // shouldn't reset just because a past champion has since left the league.
-  const maxTitles = careerCards.reduce((max, c) => Math.max(max, c.titles), 0);
+  // Each card's place on the prestige ladder is judged against the whole
+  // all-time leaderboard, not just the current 12 -- a past champion who has
+  // since left the league still counts.
+  const ladder = prestigeRanks(careerCards);
   const reigningChampionKey = history.reigningChampionKey ?? null;
-  const tierOpts = (card) => ({ maxTitles, isReigningChampion: card.managerKey === reigningChampionKey });
+  const cardOpts = (card) => ({ isReigningChampion: card.managerKey === reigningChampionKey, ladder: ladder.get(card.managerKey) });
 
   const yearOptions = seasonYears.map((s) => `<option value="${s.year}">${s.year}${s.isCurrent ? " (current)" : ""}</option>`).join("");
 
@@ -38,8 +93,9 @@ export function render(container, data, managers) {
       <div class="page-head">
         <span class="eyebrow">Season Wrapped &middot; Collectible Archive</span>
         <h2 class="page-title">Trading Cards</h2>
-        <p class="page-sub">One card per manager, per season. Foil tier is earned by where the table left them.</p>
+        <p class="page-sub">The more you win, the rarer your card. Season cards are earned by where the table left each manager that year.</p>
       </div>
+      ${rarityGuideHtml()}
 
       <div class="filter-row">
         <button type="button" class="filter-pill active" data-view="manager">All Managers</button>
@@ -52,7 +108,7 @@ export function render(container, data, managers) {
       </div>
 
       <div id="cards-grid" class="grid career-grid">
-        ${careerCards.map((c) => careerCardHtml(c, managers, seasonsByManager, tierOpts(c))).join("")}
+        ${careerCards.map((c) => careerCardHtml(c, managers, seasonsByManager, cardOpts(c))).join("")}
       </div>
 
       <div id="cards-season-grid" class="grid" hidden></div>
@@ -105,6 +161,7 @@ export function render(container, data, managers) {
   });
 
   ctaBox.querySelector("#cards-identity-cta-btn").addEventListener("click", openIdentityPanel);
+  attachTilt(root);
 
   function jumpToMyBinder() {
     const me = getIdentity();
@@ -113,7 +170,7 @@ export function render(container, data, managers) {
       return;
     }
     ctaBox.hidden = true;
-    const card = root.querySelector(`.card.tier-career[data-manager-key="${me}"]`);
+    const card = root.querySelector(`.tcg[data-manager-key="${me}"]`);
     const strip = root.querySelector(`[data-binder="${me}"]`);
     const toggle = root.querySelector(`[data-binder-toggle="${me}"]`);
     if (strip && !strip.classList.contains("open")) {

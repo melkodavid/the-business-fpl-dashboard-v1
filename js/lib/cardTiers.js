@@ -20,12 +20,17 @@ export function buildSeasonCards(history) {
   for (const season of history.seasons) {
     if (!season.table) continue;
     const seasonSize = season.table.length;
+    // A season still being played has no champion yet (history.js only sets
+    // championKey once every fixture is done), so its table-leader isn't a
+    // "Champion" and its bottom team isn't a "Wooden Spoon" -- those honors
+    // wait until the season is actually decided.
+    const inProgress = Boolean(season.isCurrent) && !season.championKey;
     for (const row of season.table) {
       cards.push({
         managerKey: row.managerKey,
         year: season.year,
         isCurrent: Boolean(season.isCurrent),
-        tier: tierForRank(row.rank, seasonSize),
+        tier: inProgress ? (row.rank <= 4 ? "rare" : "common") : tierForRank(row.rank, seasonSize),
         rank: row.rank,
         team: row.team,
         manager: row.manager,
