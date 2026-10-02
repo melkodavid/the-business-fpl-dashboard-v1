@@ -2023,3 +2023,7 @@ tfoot td { border-top: 2px solid var(--edge-bright); border-bottom: 0; }
 .schedule-luxury .tale-odds-bar .odds-away { background: linear-gradient(90deg, var(--sl-purple-bright), #c79bff); }
 .schedule-luxury .tale-odds-sub { margin-top: 0.3rem; font-size: 0.72rem; color: var(--sl-text-muted); text-align: center; letter-spacing: 0.02em; }
 .schedule-luxury .odds-note { position: relative; z-index: 1; margin: 1.1rem auto 0; max-width: 40rem; text-align: center; font-size: 0.74rem; color: var(--sl-text-muted); font-style: italic; }
+
+/* Custom crest images are detailed -- give them a larger, square box than the compact generated shield. */
+.club-badge:has(.club-badge-img) { width: 1.95em; height: 1.95em; }
+.podium-name .club-badge:has(.club-badge-img) { width: 2.4em; height: 2.4em; }
