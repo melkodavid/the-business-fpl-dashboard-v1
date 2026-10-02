@@ -129,6 +129,11 @@ async function init() {
     const managers = managerLookup(data);
     mountIdentitySwitcher(managers, data.upcomingManagers?.upcoming ?? []);
 
+    const seasonYear = data.history?.seasons?.find((s) => s.isCurrent)?.year;
+    if (seasonYear) {
+      document.getElementById("site-season").textContent = /season/i.test(seasonYear) ? seasonYear : `Season ${seasonYear}`;
+    }
+
     if (data.meta?.lastUpdated) {
       const date = new Date(data.meta.lastUpdated);
       document.getElementById("last-updated").textContent =

@@ -7,6 +7,16 @@ import { matchImportance } from "../lib/matchImportance.js";
 import { hashString } from "../lib/seededHash.js";
 
 const MAX_SECONDARIES = 5;
+
+// Repetition guards, applied to what a single recap may contain. Without them
+// an early-season week can fill up with near-identical lines (three "season
+// high" records, four streaks) just because they all score similarly.
+const MAX_PER_TYPE = 2; // lines of one storyline type in a single recap (headline included)
+const MAX_PER_TYPE_OVERRIDES = { "gauntlet-watch": 1, "record-high-gw": 1, "record-low-gw": 1 };
+const MAX_PER_PERSON = 2; // lines about the same person in a single recap (headline included)
+const SAME_SUBJECT_COOLDOWN_GWS = 2; // a secondary skips "same type about same people" seen this recently
+const COOLDOWN_EXEMPT_TYPES = new Set(["gauntlet-swept"]); // resolutions are one-off, never "repeats"
+
 const SEASON_FIRST_BONUS = 1.5;
 const HEAVY_FRESHNESS_PENALTY = 0.3; // same type headlined within the last 3 gws
 const MILD_FRESHNESS_PENALTY = 0.7; // same type appeared (any role) last gw
@@ -134,6 +144,10 @@ function scoreStoryline(storyline, context, replay, seenDedupeKeys, priorSelecti
 // Selects one gw's headline + secondaries. Exported mainly for direct
 // testing; selectSeasonNarrative is the real entry point since freshness/
 // rarity are inherently sequential (they depend on what earlier gws picked).
+export function subjectKey(storyline) {
+  return `${storyline.type}|${[...storyline.personKeys].map(String).sort().join(",")}`;
+}
+
 export function selectForGw(allStorylines, gw, context, replay, priorSelections, seenDedupeKeys) {
   const candidates = allStorylines.filter((s) => s.gw === gw);
   const scored = candidates
@@ -141,7 +155,30 @@ export function selectForGw(allStorylines, gw, context, replay, priorSelections,
     .sort((a, b) => b.score - a.score || seededTiebreak(a, b));
 
   const headline = scored[0] ?? null;
-  const secondaries = scored.slice(1, 1 + MAX_SECONDARIES);
+
+  const typeCounts = new Map();
+  const personCounts = new Map();
+  const take = (s) => {
+    typeCounts.set(s.type, (typeCounts.get(s.type) ?? 0) + 1);
+    for (const p of s.personKeys.map(String)) personCounts.set(p, (personCounts.get(p) ?? 0) + 1);
+  };
+  if (headline) take(headline);
+
+  const secondaries = [];
+  for (const s of scored.slice(1)) {
+    if (secondaries.length >= MAX_SECONDARIES) break;
+    if ((typeCounts.get(s.type) ?? 0) >= (MAX_PER_TYPE_OVERRIDES[s.type] ?? MAX_PER_TYPE)) continue;
+    if (s.personKeys.some((p) => (personCounts.get(String(p)) ?? 0) >= MAX_PER_PERSON)) continue;
+    if (!COOLDOWN_EXEMPT_TYPES.has(s.type)) {
+      const key = subjectKey(s);
+      const recentlyShown = priorSelections.some(
+        (p) => p.subject === key && p.gw >= gw - SAME_SUBJECT_COOLDOWN_GWS && p.gw < gw
+      );
+      if (recentlyShown) continue;
+    }
+    secondaries.push(s);
+    take(s);
+  }
 
   return { headline, secondaries };
 }
@@ -159,11 +196,11 @@ export function selectSeasonNarrative(allStorylines, context, replay) {
 
     if (headline) {
       seenDedupeKeys.add(headline.dedupeKey);
-      priorSelections.push({ gw, type: headline.type, dedupeKey: headline.dedupeKey, role: "headline" });
+      priorSelections.push({ gw, type: headline.type, dedupeKey: headline.dedupeKey, role: "headline", subject: subjectKey(headline) });
     }
     for (const s of secondaries) {
       seenDedupeKeys.add(s.dedupeKey);
-      priorSelections.push({ gw, type: s.type, dedupeKey: s.dedupeKey, role: "secondary" });
+      priorSelections.push({ gw, type: s.type, dedupeKey: s.dedupeKey, role: "secondary", subject: subjectKey(s) });
     }
   }
 

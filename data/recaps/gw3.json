@@ -5,7 +5,7 @@
     "personKeys": [
       "ostap"
     ],
-    "text": "With the right lineup, Ostap Tsymbalista wins this week. Instead: a loss.",
+    "text": "Ostap Tsymbalista's bench had the answer. The lineup didn't use it.",
     "facts": {
       "gw": 3,
       "managerId": 99786,
@@ -22,7 +22,7 @@
       "personKeys": [
         "david"
       ],
-      "text": "David Melko is at 3 straight now.",
+      "text": "David Melko makes it 3 on the bounce -- won every one.",
       "facts": {
         "managerId": 1857,
         "streakType": "W",
@@ -31,24 +31,11 @@
       "gw": 3
     },
     {
-      "type": "table-new-leader",
-      "personKeys": [
-        "noah",
-        "carmine"
-      ],
-      "text": "Noah Palladino moves top of the table, past Carmine Francella.",
-      "facts": {
-        "newLeaderId": 1425,
-        "previousLeaderId": 1501
-      },
-      "gw": 3
-    },
-    {
       "type": "streak",
       "personKeys": [
         "noah"
       ],
-      "text": "Noah Palladino is at 3 straight now.",
+      "text": "The winning streak reaches 3 for Noah Palladino.",
       "facts": {
         "managerId": 1425,
         "streakType": "W",
@@ -61,7 +48,7 @@
       "personKeys": [
         "pat"
       ],
-      "text": "Pat Takala is back in the top 4, sitting 4.",
+      "text": "Top 4 watch: Pat Takala is in.",
       "facts": {
         "managerId": 26227,
         "rank": 4
@@ -73,10 +60,23 @@
       "personKeys": [
         "ibrahim"
       ],
-      "text": "Top 4 watch: Ibrahim Abdulnour is out.",
+      "text": "The top 4 has a vacancy: Ibrahim Abdulnour falls to 6.",
       "facts": {
         "managerId": 10210,
         "rank": 6
+      },
+      "gw": 3
+    },
+    {
+      "type": "trade-value-flip",
+      "personKeys": [
+        "david"
+      ],
+      "text": "David Melko's trade luck just flipped -- this one's a net -7.",
+      "facts": {
+        "managerId": 1857,
+        "tradeId": 175698,
+        "netValue": -7
       },
       "gw": 3
     }

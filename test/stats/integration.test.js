@@ -136,6 +136,21 @@ test("trade ledger: every trade nets to zero across both sides", () => {
   }
 });
 
+test("trade ledger: season impact -- trades never change games played, and managers who never traded are untouched", () => {
+  const { seasonImpact } = computeTradeLedger(context);
+  assert.equal(seasonImpact.length, context.managers.list.length);
+  for (const row of seasonImpact) {
+    const actual = row.actual.w + row.actual.d + row.actual.l;
+    const without = row.withoutTrades.w + row.withoutTrades.d + row.withoutTrades.l;
+    assert.equal(actual, without);
+    assert.equal(row.winsDelta, row.actual.w - row.withoutTrades.w);
+    if (row.tradeCount === 0) {
+      assert.equal(row.pointsDelta, 0);
+      assert.equal(row.flips.length, 0);
+    }
+  }
+});
+
 test("trade ledger: giving up two players in the same position each get a different position-ripple pickup, never the same one twice", () => {
   const finishedGws = [1, 2];
   const fixtureContext = {

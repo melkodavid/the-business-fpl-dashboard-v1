@@ -1024,5 +1024,294 @@
       "managerName": "Zacharias United",
       "netTradeValue": -31
     }
+  ],
+  "seasonImpact": [
+    {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "tradeCount": 2,
+      "actual": {
+        "w": 4,
+        "d": 0,
+        "l": 1
+      },
+      "withoutTrades": {
+        "w": 4,
+        "d": 0,
+        "l": 1
+      },
+      "winsDelta": 0,
+      "lossesDelta": 0,
+      "pointsDelta": 0,
+      "flips": []
+    },
+    {
+      "managerId": 1471,
+      "managerName": "🥶CPR🥶",
+      "tradeCount": 1,
+      "actual": {
+        "w": 3,
+        "d": 0,
+        "l": 2
+      },
+      "withoutTrades": {
+        "w": 3,
+        "d": 0,
+        "l": 2
+      },
+      "winsDelta": 0,
+      "lossesDelta": 0,
+      "pointsDelta": 0,
+      "flips": []
+    },
+    {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "tradeCount": 1,
+      "actual": {
+        "w": 3,
+        "d": 0,
+        "l": 2
+      },
+      "withoutTrades": {
+        "w": 3,
+        "d": 0,
+        "l": 2
+      },
+      "winsDelta": 0,
+      "lossesDelta": 0,
+      "pointsDelta": 0,
+      "flips": []
+    },
+    {
+      "managerId": 1947,
+      "managerName": "FC General",
+      "tradeCount": 1,
+      "actual": {
+        "w": 4,
+        "d": 0,
+        "l": 1
+      },
+      "withoutTrades": {
+        "w": 4,
+        "d": 0,
+        "l": 1
+      },
+      "winsDelta": 0,
+      "lossesDelta": 0,
+      "pointsDelta": 0,
+      "flips": []
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "tradeCount": 0,
+      "actual": {
+        "w": 4,
+        "d": 0,
+        "l": 1
+      },
+      "withoutTrades": {
+        "w": 4,
+        "d": 0,
+        "l": 1
+      },
+      "winsDelta": 0,
+      "lossesDelta": 0,
+      "pointsDelta": 0,
+      "flips": []
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "tradeCount": 0,
+      "actual": {
+        "w": 2,
+        "d": 0,
+        "l": 3
+      },
+      "withoutTrades": {
+        "w": 2,
+        "d": 0,
+        "l": 3
+      },
+      "winsDelta": 0,
+      "lossesDelta": 0,
+      "pointsDelta": 0,
+      "flips": []
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "tradeCount": 0,
+      "actual": {
+        "w": 3,
+        "d": 0,
+        "l": 2
+      },
+      "withoutTrades": {
+        "w": 3,
+        "d": 0,
+        "l": 2
+      },
+      "winsDelta": 0,
+      "lossesDelta": 0,
+      "pointsDelta": 0,
+      "flips": []
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "tradeCount": 0,
+      "actual": {
+        "w": 3,
+        "d": 0,
+        "l": 2
+      },
+      "withoutTrades": {
+        "w": 3,
+        "d": 0,
+        "l": 2
+      },
+      "winsDelta": 0,
+      "lossesDelta": 0,
+      "pointsDelta": 0,
+      "flips": []
+    },
+    {
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
+      "tradeCount": 0,
+      "actual": {
+        "w": 2,
+        "d": 0,
+        "l": 3
+      },
+      "withoutTrades": {
+        "w": 2,
+        "d": 0,
+        "l": 3
+      },
+      "winsDelta": 0,
+      "lossesDelta": 0,
+      "pointsDelta": 0,
+      "flips": []
+    },
+    {
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "tradeCount": 5,
+      "actual": {
+        "w": 1,
+        "d": 0,
+        "l": 4
+      },
+      "withoutTrades": {
+        "w": 1,
+        "d": 1,
+        "l": 3
+      },
+      "winsDelta": 0,
+      "lossesDelta": 1,
+      "pointsDelta": -1,
+      "flips": [
+        {
+          "gw": 4,
+          "opponentId": 99786,
+          "actualResult": "L",
+          "actualScore": 21,
+          "counterfactualResult": "D",
+          "counterfactualScore": 54,
+          "opponentScore": 54,
+          "tradeIds": [
+            36281,
+            167473,
+            175698,
+            232186
+          ]
+        }
+      ]
+    },
+    {
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "tradeCount": 5,
+      "actual": {
+        "w": 0,
+        "d": 0,
+        "l": 5
+      },
+      "withoutTrades": {
+        "w": 1,
+        "d": 0,
+        "l": 4
+      },
+      "winsDelta": -1,
+      "lossesDelta": 1,
+      "pointsDelta": -3,
+      "flips": [
+        {
+          "gw": 5,
+          "opponentId": 10375,
+          "actualResult": "L",
+          "actualScore": 22,
+          "counterfactualResult": "W",
+          "counterfactualScore": 37,
+          "opponentScore": 36,
+          "tradeIds": [
+            48518,
+            155002,
+            167473,
+            232186
+          ]
+        }
+      ]
+    },
+    {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "tradeCount": 3,
+      "actual": {
+        "w": 1,
+        "d": 0,
+        "l": 4
+      },
+      "withoutTrades": {
+        "w": 3,
+        "d": 0,
+        "l": 2
+      },
+      "winsDelta": -2,
+      "lossesDelta": 2,
+      "pointsDelta": -6,
+      "flips": [
+        {
+          "gw": 2,
+          "opponentId": 1425,
+          "actualResult": "L",
+          "actualScore": 30,
+          "counterfactualResult": "W",
+          "counterfactualScore": 36,
+          "opponentScore": 32,
+          "tradeIds": [
+            36917
+          ]
+        },
+        {
+          "gw": 5,
+          "opponentId": 26227,
+          "actualResult": "L",
+          "actualScore": 34,
+          "counterfactualResult": "W",
+          "counterfactualScore": 50,
+          "opponentScore": 48,
+          "tradeIds": [
+            36917,
+            155002,
+            155857
+          ]
+        }
+      ]
+    }
   ]
 }

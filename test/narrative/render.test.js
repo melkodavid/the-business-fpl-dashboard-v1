@@ -105,6 +105,24 @@ test("rendering the same storyline twice is deterministic (same variant, same ni
   assert.equal(first, second);
 });
 
+test("with a variant history, a type never reuses one of its last 3 wordings, and the sequence is deterministic", () => {
+  const plainLore = loadLore({ people: [{ personKey: "lu" }] }); // no nicknames, so text differences are purely the wording
+  const run = () => {
+    const history = new Map();
+    return Array.from({ length: 14 }, (_, i) => {
+      const storyline = { type: "streak", gw: i + 1, dedupeKey: `streak:${i}`, ...canonicalStorylines.streak };
+      return renderStoryline(storyline, context, plainLore, templates, history);
+    });
+  };
+  const texts = run();
+  texts.forEach((text, i) => {
+    for (let back = 1; back <= 3 && i - back >= 0; back++) {
+      assert.notEqual(text, texts[i - back], `gw${i + 1} repeats the wording from ${back} recap(s) earlier: "${text}"`);
+    }
+  });
+  assert.deepEqual(run(), texts);
+});
+
 test("renderRecap stores rendered text alongside the original structured facts", () => {
   const headline = { type: "streak", gw: 3, dedupeKey: "streak:3", score: 0, ...canonicalStorylines.streak };
   const selection = { gw: 3, headline, secondaries: [] };

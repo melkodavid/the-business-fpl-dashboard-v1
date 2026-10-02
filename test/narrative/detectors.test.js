@@ -224,3 +224,24 @@ test("trades-waivers: two separate real pickups of the same player in the same g
   const outscores = storylines.filter((s) => s.type === "trade-waiver-outscores-r1");
   assert.equal(outscores.length, 1);
 });
+
+test("records: when several matches in one gw each beat the running record, only the final record-holder is announced", () => {
+  const managers = [1, 2, 3, 4].map((id) => ({ id, personKey: `p${id}` }));
+  const ctx = {
+    managers: { byId: new Map(managers.map((m) => [m.id, m])) },
+    finishedGws: [1],
+    matches: [
+      { event: 1, finished: true, homeManagerId: 1, awayManagerId: 2, homePoints: 63, awayPoints: 50 }, // margin 13
+      { event: 1, finished: true, homeManagerId: 3, awayManagerId: 4, homePoints: 52, awayPoints: 50 }, // margin 2 -- the real closest
+    ],
+  };
+  const records = detectRecords(ctx);
+  const closest = records.filter((s) => s.type === "record-closest");
+  assert.equal(closest.length, 1);
+  assert.equal(closest[0].facts.margin, 2);
+  const blowouts = records.filter((s) => s.type === "record-blowout");
+  assert.equal(blowouts.length, 1);
+  assert.equal(blowouts[0].facts.margin, 13);
+  assert.equal(records.filter((s) => s.type === "record-high-gw").length, 1);
+  assert.equal(records.find((s) => s.type === "record-high-gw").facts.score, 63);
+});

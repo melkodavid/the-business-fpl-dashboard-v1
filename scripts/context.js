@@ -118,6 +118,23 @@ function statValue(stats, identifiers) {
   return found ? found.value : 0;
 }
 
+// Per-stat totals across a player's fixtures that gameweek, each with the exact
+// points it earned (e.g. goals_scored: value 2, points 10). Real responses name
+// the key `stat`, the mock uses `identifier`.
+function aggregateBreakdown(fixtureBreakdowns) {
+  const byStat = new Map();
+  for (const f of fixtureBreakdowns) {
+    for (const s of f.stats) {
+      const stat = s.identifier ?? s.stat ?? s.name;
+      const entry = byStat.get(stat) ?? { stat, value: 0, points: 0 };
+      entry.value += s.value ?? 0;
+      entry.points += s.points ?? 0;
+      byStat.set(stat, entry);
+    }
+  }
+  return [...byStat.values()];
+}
+
 function buildGwPlayerStats(gw, live) {
   const result = {};
   for (const [elementId, data] of Object.entries(live.elements ?? {})) {
@@ -126,7 +143,8 @@ function buildGwPlayerStats(gw, live) {
     // first would mis-score a double-gameweek player who had, say, 6 defensive
     // actions in each of two fixtures (12 combined, over the MID/FWD threshold
     // of 12) despite neither individual fixture actually crossing it.
-    const fixtures = extractFixtureBreakdowns(data.explain).map((f) => ({
+    const fixtureBreakdowns = extractFixtureBreakdowns(data.explain);
+    const fixtures = fixtureBreakdowns.map((f) => ({
       fixtureId: f.fixtureId,
       minutes: statValue(f.stats, ["minutes"]),
       defensiveContribution: statValue(f.stats, ["defensive_contribution"]),
@@ -143,6 +161,7 @@ function buildGwPlayerStats(gw, live) {
       bonus: stats.bonus ?? 0,
       yellowCards: stats.yellow_cards ?? 0,
       redCards: stats.red_cards ?? 0,
+      breakdown: aggregateBreakdown(fixtureBreakdowns),
       fixtures,
     };
   }

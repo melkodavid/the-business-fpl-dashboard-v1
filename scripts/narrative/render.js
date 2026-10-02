@@ -63,15 +63,39 @@ function fillTemplate(template, substitutions) {
   });
 }
 
-export function renderStoryline(storyline, context, lore, templates) {
+// How many of a type's most recent wordings to steer away from. Capped at
+// (pool size - 1) so a small pool can always still pick something.
+const VARIANT_MEMORY = 3;
+
+// Seeded starting pick, then -- when a history is supplied -- walk forward to
+// the first wording this type hasn't used recently, so the same sentence isn't
+// served in back-to-back recaps (or twice in one recap). Still fully
+// deterministic: history only ever flows forward through the season in order.
+function pickVariantIndex(storyline, variants, variantHistory) {
+  const start = Math.floor(seededFloat(`${storyline.gw}:${storyline.dedupeKey}:variant`) * variants.length);
+  if (!variantHistory) return start;
+
+  const recent = variantHistory.get(storyline.type) ?? [];
+  const avoid = new Set(recent.slice(-Math.min(VARIANT_MEMORY, variants.length - 1)));
+  let chosen = start;
+  for (let step = 0; step < variants.length; step++) {
+    const idx = (start + step) % variants.length;
+    if (!avoid.has(idx)) {
+      chosen = idx;
+      break;
+    }
+  }
+  variantHistory.set(storyline.type, [...recent, chosen]);
+  return chosen;
+}
+
+export function renderStoryline(storyline, context, lore, templates, variantHistory) {
   const variants = templates[storyline.type];
   if (!variants || variants.length === 0) {
     throw new Error(`No templates found for storyline type "${storyline.type}"`);
   }
 
-  const variantSeed = `${storyline.gw}:${storyline.dedupeKey}:variant`;
-  const variantIndex = Math.floor(seededFloat(variantSeed) * variants.length);
-  const template = variants[variantIndex];
+  const template = variants[pickVariantIndex(storyline, variants, variantHistory)];
 
   const substitutions = buildSubstitutions(storyline, context, lore);
   return fillTemplate(template, substitutions);
@@ -81,11 +105,11 @@ export function renderStoryline(storyline, context, lore, templates) {
 // rendered text AND the structured facts side by side (see the brief's
 // section 3 -- future-proofs an LLM rewrite pass later without re-deriving
 // facts from the raw data).
-export function renderRecap(selection, context, lore, templates) {
+export function renderRecap(selection, context, lore, templates, variantHistory) {
   const renderOne = (storyline) => ({
     type: storyline.type,
     personKeys: storyline.personKeys,
-    text: renderStoryline(storyline, context, lore, templates),
+    text: renderStoryline(storyline, context, lore, templates, variantHistory),
     facts: storyline.facts,
     gw: storyline.gw,
   });

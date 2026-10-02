@@ -4,10 +4,16 @@
 // opponents), so the "watch" fires ahead of the run actually starting;
 // progress is tracked fixture-by-fixture as the run plays out; a clean
 // sweep (0-for-N) gets its own resolution storyline.
+// A manager can have several separate runs in a season; announcing all of them
+// at once (and from the opening week) just repeats the same line. Each recap
+// only gets the manager's NEXT run, and only once it's close.
+const WATCH_LEAD_GWS = 3;
+
 export function detectPalladinoGauntlet(context, lore) {
   const storylines = [];
 
   for (const manager of context.managers.list) {
+    const upcomingRuns = [];
     const fixtures = context.matches
       .filter((m) => m.homeManagerId === manager.id || m.awayManagerId === manager.id)
       .sort((a, b) => a.event - b.event)
@@ -34,20 +40,7 @@ export function detectPalladinoGauntlet(context, lore) {
         const startGw = run[0].gw;
         const runKey = `${manager.id}:${startGw}`;
 
-        // GAUNTLET WATCH -- announced in every recap before the run begins;
-        // the same dedupeKey across weeks means selection's freshness penalty
-        // (not this detector) decides how many times it actually gets featured.
-        for (const gw of context.finishedGws) {
-          if (gw >= startGw) continue;
-          storylines.push({
-            type: "gauntlet-watch",
-            personKeys: [manager.personKey],
-            facts: { managerId: manager.id, startGw, length: run.length, opponentIds: run.map((f) => f.opponentId) },
-            baseWeight: 3,
-            gw,
-            dedupeKey: `gauntlet-watch:${runKey}`,
-          });
-        }
+        upcomingRuns.push({ startGw, runKey, length: run.length, opponentIds: run.map((f) => f.opponentId) });
 
         // PROGRESS -- one storyline per fixture in the run, the gw it resolves.
         let wins = 0;
@@ -79,6 +72,22 @@ export function detectPalladinoGauntlet(context, lore) {
       }
 
       i = j;
+    }
+
+    // GAUNTLET WATCH -- each finished gw announces only the next run still to
+    // start, and only inside the lead window. The dedupeKey is per run, so
+    // selection's freshness penalty still throttles how often it's featured.
+    for (const gw of context.finishedGws) {
+      const next = upcomingRuns.filter((r) => r.startGw > gw).sort((a, b) => a.startGw - b.startGw)[0];
+      if (!next || next.startGw - gw > WATCH_LEAD_GWS) continue;
+      storylines.push({
+        type: "gauntlet-watch",
+        personKeys: [manager.personKey],
+        facts: { managerId: manager.id, startGw: next.startGw, length: next.length, opponentIds: next.opponentIds },
+        baseWeight: 3,
+        gw,
+        dedupeKey: `gauntlet-watch:${next.runKey}`,
+      });
     }
   }
 

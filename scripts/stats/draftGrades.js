@@ -13,6 +13,7 @@ export function computeDraftGrades(context) {
 
   const draftTeamPoints = new Map(context.managers.list.map((m) => [m.id, 0]));
   const scatter = [];
+  const teamCount = context.managers.list.length || 1;
 
   for (const pick of context.draftChoices) {
     const player = context.players.byId.get(pick.elementId);
@@ -20,9 +21,13 @@ export function computeDraftGrades(context) {
     draftTeamPoints.set(pick.managerId, draftTeamPoints.get(pick.managerId) + seasonPoints);
     scatter.push({
       pickNumber: pick.index,
+      round: Math.ceil(pick.index / teamCount),
       seasonPoints,
       managerId: pick.managerId,
+      elementId: pick.elementId,
       playerName: player?.webName,
+      position: player?.positionName,
+      clubName: player?.teamName,
     });
   }
 

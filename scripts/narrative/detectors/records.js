@@ -16,6 +16,13 @@ export function detectRecords(context) {
   for (const gw of context.finishedGws) {
     const gwMatches = context.matches.filter((m) => m.event === gw && m.finished);
 
+    // Matches are checked one at a time against the running record, so an early
+    // match can "set" a record that a later match the same week then beats.
+    // Only the last setter of each type survives -- otherwise a recap would
+    // announce e.g. a 13-point "closest match of the season" next to the real
+    // 2-point one from the same gameweek.
+    const pushed = storylines.length;
+
     for (const m of gwMatches) {
       for (const s of [
         { managerId: m.homeManagerId, score: m.homePoints },
@@ -98,6 +105,10 @@ export function detectRecords(context) {
         });
       }
     }
+
+    const lastOfType = new Map();
+    for (const s of storylines.splice(pushed)) lastOfType.set(s.type, s);
+    storylines.push(...lastOfType.values());
   }
 
   return storylines;

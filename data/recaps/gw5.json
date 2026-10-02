@@ -5,7 +5,7 @@
     "personKeys": [
       "mitch"
     ],
-    "text": "Mitch Grice has won 3 straight.",
+    "text": "3-game winning streak for Mitch Grice.",
     "facts": {
       "managerId": 1947,
       "streakType": "W",
@@ -19,7 +19,7 @@
       "personKeys": [
         "anthony"
       ],
-      "text": "3-game winning streak for Anthony Palladino.",
+      "text": "Still going: Anthony Palladino is on a 3-game winning streak.",
       "facts": {
         "managerId": 10375,
         "streakType": "W",
@@ -28,52 +28,59 @@
       "gw": 5
     },
     {
-      "type": "luck-robbery",
+      "type": "lineup-59-club",
+      "personKeys": [
+        "marshall"
+      ],
+      "text": "Marshall Curtin-Dudzic gets the 59 Club treatment: J.Timber off at the hour, minus one.",
+      "facts": {
+        "gw": 5,
+        "managerId": 1471,
+        "elementId": 5,
+        "playerName": "J.Timber",
+        "fixtureId": 42
+      },
+      "gw": 5
+    },
+    {
+      "type": "lu-post-mark-tracker",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "Checking in on Life After Mark: Lu Palladino is 11.",
+      "facts": {
+        "managerId": 1377,
+        "rank": 11,
+        "total": 3
+      },
+      "gw": 5
+    },
+    {
+      "type": "gauntlet-progress",
+      "personKeys": [
+        "carmine"
+      ],
+      "text": "Still in the gauntlet: Carmine Francella stands at 1 from 2 against the family.",
+      "facts": {
+        "managerId": 1501,
+        "wins": 1,
+        "played": 2,
+        "length": 3
+      },
+      "gw": 5
+    },
+    {
+      "type": "lineup-59-club",
       "personKeys": [
         "anthony"
       ],
-      "text": "Anthony Palladino shouldn't have won this one. But here we are.",
+      "text": "Pulled at 59. Bruno G. joins the club, courtesy of Neen.",
       "facts": {
+        "gw": 5,
         "managerId": 10375,
-        "opponentId": 29975
-      },
-      "gw": 5
-    },
-    {
-      "type": "streak",
-      "personKeys": [
-        "zac"
-      ],
-      "text": "Zac Collins is at 5 straight now.",
-      "facts": {
-        "managerId": 29975,
-        "streakType": "L",
-        "length": 5
-      },
-      "gw": 5
-    },
-    {
-      "type": "streak",
-      "personKeys": [
-        "muk"
-      ],
-      "text": "4-game losing streak for Muk P.",
-      "facts": {
-        "managerId": 1530,
-        "streakType": "L",
-        "length": 4
-      },
-      "gw": 5
-    },
-    {
-      "type": "generation-sweep",
-      "personKeys": [
-        "ostap"
-      ],
-      "text": "Clean sweep for the 2000s across 1 cross-generation matchups.",
-      "facts": {
-        "generation": "2000s",
-        "count": 1
+        "elementId": 452,
+        "playerName": "Bruno G.",
+        "fixtureId": 42
       },
       "gw": 5
     }

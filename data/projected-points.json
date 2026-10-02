@@ -61,6 +61,910 @@
       "projectedPoints": 1412
     }
   ],
+  "perPick": [
+    {
+      "pickNumber": 1,
+      "managerId": 1857,
+      "projectedPoints": 214.5
+    },
+    {
+      "pickNumber": 2,
+      "managerId": 29975,
+      "projectedPoints": 220.6
+    },
+    {
+      "pickNumber": 3,
+      "managerId": 10375,
+      "projectedPoints": 132.3
+    },
+    {
+      "pickNumber": 4,
+      "managerId": 1530,
+      "projectedPoints": 159.7
+    },
+    {
+      "pickNumber": 5,
+      "managerId": 26227,
+      "projectedPoints": 185.7
+    },
+    {
+      "pickNumber": 6,
+      "managerId": 1425,
+      "projectedPoints": 144.5
+    },
+    {
+      "pickNumber": 7,
+      "managerId": 1947,
+      "projectedPoints": 164.8
+    },
+    {
+      "pickNumber": 8,
+      "managerId": 1501,
+      "projectedPoints": 207.4
+    },
+    {
+      "pickNumber": 9,
+      "managerId": 10210,
+      "projectedPoints": 173.3
+    },
+    {
+      "pickNumber": 10,
+      "managerId": 1471,
+      "projectedPoints": 165.6
+    },
+    {
+      "pickNumber": 11,
+      "managerId": 99786,
+      "projectedPoints": 172.9
+    },
+    {
+      "pickNumber": 12,
+      "managerId": 1377,
+      "projectedPoints": 163.1
+    },
+    {
+      "pickNumber": 13,
+      "managerId": 1377,
+      "projectedPoints": 178
+    },
+    {
+      "pickNumber": 14,
+      "managerId": 99786,
+      "projectedPoints": 159.9
+    },
+    {
+      "pickNumber": 15,
+      "managerId": 1471,
+      "projectedPoints": 153.3
+    },
+    {
+      "pickNumber": 16,
+      "managerId": 10210,
+      "projectedPoints": 120.8
+    },
+    {
+      "pickNumber": 17,
+      "managerId": 1501,
+      "projectedPoints": 188.7
+    },
+    {
+      "pickNumber": 18,
+      "managerId": 1947,
+      "projectedPoints": 128.7
+    },
+    {
+      "pickNumber": 19,
+      "managerId": 1425,
+      "projectedPoints": 186.4
+    },
+    {
+      "pickNumber": 20,
+      "managerId": 26227,
+      "projectedPoints": 137.9
+    },
+    {
+      "pickNumber": 21,
+      "managerId": 1530,
+      "projectedPoints": 136.5
+    },
+    {
+      "pickNumber": 22,
+      "managerId": 10375,
+      "projectedPoints": 136.9
+    },
+    {
+      "pickNumber": 23,
+      "managerId": 29975,
+      "projectedPoints": 117.5
+    },
+    {
+      "pickNumber": 24,
+      "managerId": 1857,
+      "projectedPoints": 136.7
+    },
+    {
+      "pickNumber": 25,
+      "managerId": 1857,
+      "projectedPoints": 150.1
+    },
+    {
+      "pickNumber": 26,
+      "managerId": 29975,
+      "projectedPoints": 155.4
+    },
+    {
+      "pickNumber": 27,
+      "managerId": 10375,
+      "projectedPoints": 141.7
+    },
+    {
+      "pickNumber": 28,
+      "managerId": 1530,
+      "projectedPoints": 123.1
+    },
+    {
+      "pickNumber": 29,
+      "managerId": 26227,
+      "projectedPoints": 55.8
+    },
+    {
+      "pickNumber": 30,
+      "managerId": 1425,
+      "projectedPoints": 131.3
+    },
+    {
+      "pickNumber": 31,
+      "managerId": 1947,
+      "projectedPoints": 159.7
+    },
+    {
+      "pickNumber": 32,
+      "managerId": 1501,
+      "projectedPoints": 120.5
+    },
+    {
+      "pickNumber": 33,
+      "managerId": 10210,
+      "projectedPoints": 151.2
+    },
+    {
+      "pickNumber": 34,
+      "managerId": 1471,
+      "projectedPoints": 138.4
+    },
+    {
+      "pickNumber": 35,
+      "managerId": 99786,
+      "projectedPoints": 156.3
+    },
+    {
+      "pickNumber": 36,
+      "managerId": 1377,
+      "projectedPoints": 148
+    },
+    {
+      "pickNumber": 37,
+      "managerId": 1377,
+      "projectedPoints": 128.1
+    },
+    {
+      "pickNumber": 38,
+      "managerId": 99786,
+      "projectedPoints": 115.6
+    },
+    {
+      "pickNumber": 39,
+      "managerId": 1471,
+      "projectedPoints": 130.5
+    },
+    {
+      "pickNumber": 40,
+      "managerId": 10210,
+      "projectedPoints": 158.4
+    },
+    {
+      "pickNumber": 41,
+      "managerId": 1501,
+      "projectedPoints": 152.2
+    },
+    {
+      "pickNumber": 42,
+      "managerId": 1947,
+      "projectedPoints": 116
+    },
+    {
+      "pickNumber": 43,
+      "managerId": 1425,
+      "projectedPoints": 141.1
+    },
+    {
+      "pickNumber": 44,
+      "managerId": 26227,
+      "projectedPoints": 123.2
+    },
+    {
+      "pickNumber": 45,
+      "managerId": 1530,
+      "projectedPoints": 100.5
+    },
+    {
+      "pickNumber": 46,
+      "managerId": 10375,
+      "projectedPoints": 152.5
+    },
+    {
+      "pickNumber": 47,
+      "managerId": 29975,
+      "projectedPoints": 157.7
+    },
+    {
+      "pickNumber": 48,
+      "managerId": 1857,
+      "projectedPoints": 102.1
+    },
+    {
+      "pickNumber": 49,
+      "managerId": 1857,
+      "projectedPoints": 109.7
+    },
+    {
+      "pickNumber": 50,
+      "managerId": 29975,
+      "projectedPoints": 107.2
+    },
+    {
+      "pickNumber": 51,
+      "managerId": 10375,
+      "projectedPoints": 150.6
+    },
+    {
+      "pickNumber": 52,
+      "managerId": 1530,
+      "projectedPoints": 134.1
+    },
+    {
+      "pickNumber": 53,
+      "managerId": 26227,
+      "projectedPoints": 145.7
+    },
+    {
+      "pickNumber": 54,
+      "managerId": 1425,
+      "projectedPoints": 103.2
+    },
+    {
+      "pickNumber": 55,
+      "managerId": 1947,
+      "projectedPoints": 167.3
+    },
+    {
+      "pickNumber": 56,
+      "managerId": 1501,
+      "projectedPoints": 122.3
+    },
+    {
+      "pickNumber": 57,
+      "managerId": 10210,
+      "projectedPoints": 120.8
+    },
+    {
+      "pickNumber": 58,
+      "managerId": 1471,
+      "projectedPoints": 99.8
+    },
+    {
+      "pickNumber": 59,
+      "managerId": 99786,
+      "projectedPoints": 83.7
+    },
+    {
+      "pickNumber": 60,
+      "managerId": 1377,
+      "projectedPoints": 146.9
+    },
+    {
+      "pickNumber": 61,
+      "managerId": 1377,
+      "projectedPoints": 163
+    },
+    {
+      "pickNumber": 62,
+      "managerId": 99786,
+      "projectedPoints": 140.5
+    },
+    {
+      "pickNumber": 63,
+      "managerId": 1471,
+      "projectedPoints": 132.9
+    },
+    {
+      "pickNumber": 64,
+      "managerId": 10210,
+      "projectedPoints": 97.8
+    },
+    {
+      "pickNumber": 65,
+      "managerId": 1501,
+      "projectedPoints": 149.1
+    },
+    {
+      "pickNumber": 66,
+      "managerId": 1947,
+      "projectedPoints": 132.5
+    },
+    {
+      "pickNumber": 67,
+      "managerId": 1425,
+      "projectedPoints": 154.6
+    },
+    {
+      "pickNumber": 68,
+      "managerId": 26227,
+      "projectedPoints": 70.1
+    },
+    {
+      "pickNumber": 69,
+      "managerId": 1530,
+      "projectedPoints": 107.5
+    },
+    {
+      "pickNumber": 70,
+      "managerId": 10375,
+      "projectedPoints": 103.1
+    },
+    {
+      "pickNumber": 71,
+      "managerId": 29975,
+      "projectedPoints": 108.5
+    },
+    {
+      "pickNumber": 72,
+      "managerId": 1857,
+      "projectedPoints": 142.9
+    },
+    {
+      "pickNumber": 73,
+      "managerId": 1857,
+      "projectedPoints": 102.1
+    },
+    {
+      "pickNumber": 74,
+      "managerId": 29975,
+      "projectedPoints": 15
+    },
+    {
+      "pickNumber": 75,
+      "managerId": 10375,
+      "projectedPoints": 136.9
+    },
+    {
+      "pickNumber": 76,
+      "managerId": 1530,
+      "projectedPoints": 99.9
+    },
+    {
+      "pickNumber": 77,
+      "managerId": 26227,
+      "projectedPoints": 138.4
+    },
+    {
+      "pickNumber": 78,
+      "managerId": 1425,
+      "projectedPoints": 72.9
+    },
+    {
+      "pickNumber": 79,
+      "managerId": 1947,
+      "projectedPoints": 162.4
+    },
+    {
+      "pickNumber": 80,
+      "managerId": 1501,
+      "projectedPoints": 88.2
+    },
+    {
+      "pickNumber": 81,
+      "managerId": 10210,
+      "projectedPoints": 68.7
+    },
+    {
+      "pickNumber": 82,
+      "managerId": 1471,
+      "projectedPoints": 84.7
+    },
+    {
+      "pickNumber": 83,
+      "managerId": 99786,
+      "projectedPoints": 64.4
+    },
+    {
+      "pickNumber": 84,
+      "managerId": 1377,
+      "projectedPoints": 102.9
+    },
+    {
+      "pickNumber": 85,
+      "managerId": 1377,
+      "projectedPoints": 147
+    },
+    {
+      "pickNumber": 86,
+      "managerId": 99786,
+      "projectedPoints": 122
+    },
+    {
+      "pickNumber": 87,
+      "managerId": 1471,
+      "projectedPoints": 114.4
+    },
+    {
+      "pickNumber": 88,
+      "managerId": 10210,
+      "projectedPoints": 137
+    },
+    {
+      "pickNumber": 89,
+      "managerId": 1501,
+      "projectedPoints": 95.6
+    },
+    {
+      "pickNumber": 90,
+      "managerId": 1947,
+      "projectedPoints": 97.5
+    },
+    {
+      "pickNumber": 91,
+      "managerId": 1425,
+      "projectedPoints": 104.8
+    },
+    {
+      "pickNumber": 92,
+      "managerId": 26227,
+      "projectedPoints": 70.8
+    },
+    {
+      "pickNumber": 93,
+      "managerId": 1530,
+      "projectedPoints": 57.1
+    },
+    {
+      "pickNumber": 94,
+      "managerId": 10375,
+      "projectedPoints": 133.3
+    },
+    {
+      "pickNumber": 95,
+      "managerId": 29975,
+      "projectedPoints": 113.2
+    },
+    {
+      "pickNumber": 96,
+      "managerId": 1857,
+      "projectedPoints": 89.1
+    },
+    {
+      "pickNumber": 97,
+      "managerId": 1857,
+      "projectedPoints": 137.6
+    },
+    {
+      "pickNumber": 98,
+      "managerId": 29975,
+      "projectedPoints": 128.5
+    },
+    {
+      "pickNumber": 99,
+      "managerId": 10375,
+      "projectedPoints": 140.6
+    },
+    {
+      "pickNumber": 100,
+      "managerId": 1530,
+      "projectedPoints": 131.8
+    },
+    {
+      "pickNumber": 101,
+      "managerId": 26227,
+      "projectedPoints": 15
+    },
+    {
+      "pickNumber": 102,
+      "managerId": 1425,
+      "projectedPoints": 129.5
+    },
+    {
+      "pickNumber": 103,
+      "managerId": 1947,
+      "projectedPoints": 133.7
+    },
+    {
+      "pickNumber": 104,
+      "managerId": 1501,
+      "projectedPoints": 138.2
+    },
+    {
+      "pickNumber": 105,
+      "managerId": 10210,
+      "projectedPoints": 94.6
+    },
+    {
+      "pickNumber": 106,
+      "managerId": 1471,
+      "projectedPoints": 158.5
+    },
+    {
+      "pickNumber": 107,
+      "managerId": 99786,
+      "projectedPoints": 81.7
+    },
+    {
+      "pickNumber": 108,
+      "managerId": 1377,
+      "projectedPoints": 137.3
+    },
+    {
+      "pickNumber": 109,
+      "managerId": 1377,
+      "projectedPoints": 142.2
+    },
+    {
+      "pickNumber": 110,
+      "managerId": 99786,
+      "projectedPoints": 94.3
+    },
+    {
+      "pickNumber": 111,
+      "managerId": 1471,
+      "projectedPoints": 74.6
+    },
+    {
+      "pickNumber": 112,
+      "managerId": 10210,
+      "projectedPoints": 136.9
+    },
+    {
+      "pickNumber": 113,
+      "managerId": 1501,
+      "projectedPoints": 139.9
+    },
+    {
+      "pickNumber": 114,
+      "managerId": 1947,
+      "projectedPoints": 145.6
+    },
+    {
+      "pickNumber": 115,
+      "managerId": 1425,
+      "projectedPoints": 56.9
+    },
+    {
+      "pickNumber": 116,
+      "managerId": 26227,
+      "projectedPoints": 86.8
+    },
+    {
+      "pickNumber": 117,
+      "managerId": 1530,
+      "projectedPoints": 139.2
+    },
+    {
+      "pickNumber": 118,
+      "managerId": 10375,
+      "projectedPoints": 109.1
+    },
+    {
+      "pickNumber": 119,
+      "managerId": 29975,
+      "projectedPoints": 104.9
+    },
+    {
+      "pickNumber": 120,
+      "managerId": 1857,
+      "projectedPoints": 101.7
+    },
+    {
+      "pickNumber": 121,
+      "managerId": 1857,
+      "projectedPoints": 102.1
+    },
+    {
+      "pickNumber": 122,
+      "managerId": 29975,
+      "projectedPoints": 91.4
+    },
+    {
+      "pickNumber": 123,
+      "managerId": 10375,
+      "projectedPoints": 128.8
+    },
+    {
+      "pickNumber": 124,
+      "managerId": 1530,
+      "projectedPoints": 87.5
+    },
+    {
+      "pickNumber": 125,
+      "managerId": 26227,
+      "projectedPoints": 136.6
+    },
+    {
+      "pickNumber": 126,
+      "managerId": 1425,
+      "projectedPoints": 126.9
+    },
+    {
+      "pickNumber": 127,
+      "managerId": 1947,
+      "projectedPoints": 124.7
+    },
+    {
+      "pickNumber": 128,
+      "managerId": 1501,
+      "projectedPoints": 127.4
+    },
+    {
+      "pickNumber": 129,
+      "managerId": 10210,
+      "projectedPoints": 62.6
+    },
+    {
+      "pickNumber": 130,
+      "managerId": 1471,
+      "projectedPoints": 132.4
+    },
+    {
+      "pickNumber": 131,
+      "managerId": 99786,
+      "projectedPoints": 159
+    },
+    {
+      "pickNumber": 132,
+      "managerId": 1377,
+      "projectedPoints": 109.2
+    },
+    {
+      "pickNumber": 133,
+      "managerId": 1377,
+      "projectedPoints": 135.2
+    },
+    {
+      "pickNumber": 134,
+      "managerId": 99786,
+      "projectedPoints": 95
+    },
+    {
+      "pickNumber": 135,
+      "managerId": 1471,
+      "projectedPoints": 134.1
+    },
+    {
+      "pickNumber": 136,
+      "managerId": 10210,
+      "projectedPoints": 116.1
+    },
+    {
+      "pickNumber": 137,
+      "managerId": 1501,
+      "projectedPoints": 139.9
+    },
+    {
+      "pickNumber": 138,
+      "managerId": 1947,
+      "projectedPoints": 94.7
+    },
+    {
+      "pickNumber": 139,
+      "managerId": 1425,
+      "projectedPoints": 74.6
+    },
+    {
+      "pickNumber": 140,
+      "managerId": 26227,
+      "projectedPoints": 79.2
+    },
+    {
+      "pickNumber": 141,
+      "managerId": 1530,
+      "projectedPoints": 89.1
+    },
+    {
+      "pickNumber": 142,
+      "managerId": 10375,
+      "projectedPoints": 57.5
+    },
+    {
+      "pickNumber": 143,
+      "managerId": 29975,
+      "projectedPoints": 44.5
+    },
+    {
+      "pickNumber": 144,
+      "managerId": 1857,
+      "projectedPoints": 135.2
+    },
+    {
+      "pickNumber": 145,
+      "managerId": 1857,
+      "projectedPoints": 114.7
+    },
+    {
+      "pickNumber": 146,
+      "managerId": 29975,
+      "projectedPoints": 109.9
+    },
+    {
+      "pickNumber": 147,
+      "managerId": 10375,
+      "projectedPoints": 134.4
+    },
+    {
+      "pickNumber": 148,
+      "managerId": 1530,
+      "projectedPoints": 118.1
+    },
+    {
+      "pickNumber": 149,
+      "managerId": 26227,
+      "projectedPoints": 136.8
+    },
+    {
+      "pickNumber": 150,
+      "managerId": 1425,
+      "projectedPoints": 67.1
+    },
+    {
+      "pickNumber": 151,
+      "managerId": 1947,
+      "projectedPoints": 62.5
+    },
+    {
+      "pickNumber": 152,
+      "managerId": 1501,
+      "projectedPoints": 78.2
+    },
+    {
+      "pickNumber": 153,
+      "managerId": 10210,
+      "projectedPoints": 114.7
+    },
+    {
+      "pickNumber": 154,
+      "managerId": 1471,
+      "projectedPoints": 26.2
+    },
+    {
+      "pickNumber": 155,
+      "managerId": 99786,
+      "projectedPoints": 138.7
+    },
+    {
+      "pickNumber": 156,
+      "managerId": 1377,
+      "projectedPoints": 119.8
+    },
+    {
+      "pickNumber": 157,
+      "managerId": 1377,
+      "projectedPoints": 123.4
+    },
+    {
+      "pickNumber": 158,
+      "managerId": 99786,
+      "projectedPoints": 131.3
+    },
+    {
+      "pickNumber": 159,
+      "managerId": 1471,
+      "projectedPoints": 148.1
+    },
+    {
+      "pickNumber": 160,
+      "managerId": 10210,
+      "projectedPoints": 78.2
+    },
+    {
+      "pickNumber": 161,
+      "managerId": 1501,
+      "projectedPoints": 133.8
+    },
+    {
+      "pickNumber": 162,
+      "managerId": 1947,
+      "projectedPoints": 112.7
+    },
+    {
+      "pickNumber": 163,
+      "managerId": 1425,
+      "projectedPoints": 103.9
+    },
+    {
+      "pickNumber": 164,
+      "managerId": 26227,
+      "projectedPoints": 15
+    },
+    {
+      "pickNumber": 165,
+      "managerId": 1530,
+      "projectedPoints": 49.9
+    },
+    {
+      "pickNumber": 166,
+      "managerId": 10375,
+      "projectedPoints": 35.3
+    },
+    {
+      "pickNumber": 167,
+      "managerId": 29975,
+      "projectedPoints": 126.8
+    },
+    {
+      "pickNumber": 168,
+      "managerId": 1857,
+      "projectedPoints": 82.4
+    },
+    {
+      "pickNumber": 169,
+      "managerId": 1857,
+      "projectedPoints": 90.3
+    },
+    {
+      "pickNumber": 170,
+      "managerId": 29975,
+      "projectedPoints": 15
+    },
+    {
+      "pickNumber": 171,
+      "managerId": 10375,
+      "projectedPoints": 140.8
+    },
+    {
+      "pickNumber": 172,
+      "managerId": 1530,
+      "projectedPoints": 15
+    },
+    {
+      "pickNumber": 173,
+      "managerId": 26227,
+      "projectedPoints": 15
+    },
+    {
+      "pickNumber": 174,
+      "managerId": 1425,
+      "projectedPoints": 79.8
+    },
+    {
+      "pickNumber": 175,
+      "managerId": 1947,
+      "projectedPoints": 68.8
+    },
+    {
+      "pickNumber": 176,
+      "managerId": 1501,
+      "projectedPoints": 65.1
+    },
+    {
+      "pickNumber": 177,
+      "managerId": 10210,
+      "projectedPoints": 15
+    },
+    {
+      "pickNumber": 178,
+      "managerId": 1471,
+      "projectedPoints": 15
+    },
+    {
+      "pickNumber": 179,
+      "managerId": 99786,
+      "projectedPoints": 15
+    },
+    {
+      "pickNumber": 180,
+      "managerId": 1377,
+      "projectedPoints": 111
+    }
+  ],
+  "gwsPlayed": 5,
+  "seasonLengthGws": 38,
   "source": "RotoWire FPL Top 400 Rankings 2026/27 (rotowire.com)",
   "pulledAt": "2026-08-16"
 }

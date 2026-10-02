@@ -166,5 +166,538 @@
       "optimalScore": 55,
       "opponentScore": 53
     }
+  ],
+  "topBenchWeeks": [
+    {
+      "gw": 5,
+      "managerId": 99786,
+      "benchPoints": 32,
+      "players": [
+        {
+          "elementId": 552,
+          "playerName": "Brobbey",
+          "position": "FWD",
+          "points": 17,
+          "scoring": [
+            {
+              "text": "3 goals",
+              "points": 12
+            },
+            {
+              "text": "3 bonus",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "elementId": 571,
+          "playerName": "Tzolakis",
+          "position": "GKP",
+          "points": 6,
+          "scoring": [
+            {
+              "text": "penalty save",
+              "points": 5
+            },
+            {
+              "text": "3 saves",
+              "points": 1
+            },
+            {
+              "text": "2 goals conceded",
+              "points": -1
+            },
+            {
+              "text": "yellow card",
+              "points": -1
+            }
+          ]
+        },
+        {
+          "elementId": 115,
+          "playerName": "De Cuyper",
+          "position": "DEF",
+          "points": 6,
+          "scoring": [
+            {
+              "text": "clean sheet",
+              "points": 4
+            },
+            {
+              "text": "1 bonus",
+              "points": 1
+            },
+            {
+              "text": "yellow card",
+              "points": -1
+            }
+          ]
+        },
+        {
+          "elementId": 214,
+          "playerName": "Kamada",
+          "position": "MID",
+          "points": 3,
+          "scoring": [
+            {
+              "text": "clean sheet",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "opponentId": 10210,
+      "ownScore": 43,
+      "opponentScore": 37,
+      "result": "W",
+      "couldHaveWon": false
+    },
+    {
+      "gw": 4,
+      "managerId": 10375,
+      "benchPoints": 15,
+      "players": [
+        {
+          "elementId": 384,
+          "playerName": "Donnarumma",
+          "position": "GKP",
+          "points": 7,
+          "scoring": [
+            {
+              "text": "clean sheet",
+              "points": 4
+            },
+            {
+              "text": "3 saves",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "elementId": 452,
+          "playerName": "Bruno G.",
+          "position": "MID",
+          "points": 7,
+          "scoring": [
+            {
+              "text": "goal",
+              "points": 5
+            },
+            {
+              "text": "1 bonus",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "elementId": 631,
+          "playerName": "Mbaye",
+          "position": "MID",
+          "points": 1,
+          "scoring": []
+        }
+      ],
+      "opponentId": 10210,
+      "ownScore": 34,
+      "opponentScore": 24,
+      "result": "W",
+      "couldHaveWon": false
+    },
+    {
+      "gw": 4,
+      "managerId": 1377,
+      "benchPoints": 14,
+      "players": [
+        {
+          "elementId": 250,
+          "playerName": "Leno",
+          "position": "GKP",
+          "points": 9,
+          "scoring": [
+            {
+              "text": "clean sheet",
+              "points": 4
+            },
+            {
+              "text": "2 bonus",
+              "points": 2
+            },
+            {
+              "text": "3 saves",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "elementId": 646,
+          "playerName": "Flemming",
+          "position": "FWD",
+          "points": 5,
+          "scoring": [
+            {
+              "text": "goal",
+              "points": 4
+            }
+          ]
+        }
+      ],
+      "opponentId": 1471,
+      "ownScore": 49,
+      "opponentScore": 43,
+      "result": "W",
+      "couldHaveWon": false
+    },
+    {
+      "gw": 4,
+      "managerId": 1857,
+      "benchPoints": 14,
+      "players": [
+        {
+          "elementId": 233,
+          "playerName": "Mykolenko",
+          "position": "DEF",
+          "points": 11,
+          "scoring": [
+            {
+              "text": "clean sheet",
+              "points": 4
+            },
+            {
+              "text": "3 bonus",
+              "points": 3
+            },
+            {
+              "text": "defensive contribution",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "elementId": 526,
+          "playerName": "Solanke",
+          "position": "FWD",
+          "points": 2,
+          "scoring": []
+        },
+        {
+          "elementId": 566,
+          "playerName": "Horníček",
+          "position": "GKP",
+          "points": 1,
+          "scoring": [
+            {
+              "text": "3 saves",
+              "points": 1
+            },
+            {
+              "text": "4 goals conceded",
+              "points": -2
+            }
+          ]
+        }
+      ],
+      "opponentId": 29975,
+      "ownScore": 48,
+      "opponentScore": 35,
+      "result": "W",
+      "couldHaveWon": false
+    },
+    {
+      "gw": 5,
+      "managerId": 1947,
+      "benchPoints": 13,
+      "players": [
+        {
+          "elementId": 202,
+          "playerName": "Richards",
+          "position": "DEF",
+          "points": 8,
+          "scoring": [
+            {
+              "text": "clean sheet",
+              "points": 4
+            },
+            {
+              "text": "defensive contribution",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "elementId": 412,
+          "playerName": "Lammens",
+          "position": "GKP",
+          "points": 4,
+          "scoring": [
+            {
+              "text": "6 saves",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "elementId": 125,
+          "playerName": "Georginio",
+          "position": "FWD",
+          "points": 1,
+          "scoring": []
+        }
+      ],
+      "opponentId": 1425,
+      "ownScore": 50,
+      "opponentScore": 38,
+      "result": "W",
+      "couldHaveWon": false
+    },
+    {
+      "gw": 4,
+      "managerId": 1425,
+      "benchPoints": 13,
+      "players": [
+        {
+          "elementId": 316,
+          "playerName": "Emersonn",
+          "position": "FWD",
+          "points": 12,
+          "scoring": [
+            {
+              "text": "goal",
+              "points": 4
+            },
+            {
+              "text": "assist",
+              "points": 3
+            },
+            {
+              "text": "3 bonus",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "elementId": 56,
+          "playerName": "Abraham",
+          "position": "FWD",
+          "points": 1,
+          "scoring": []
+        }
+      ],
+      "opponentId": 1501,
+      "ownScore": 68,
+      "opponentScore": 55,
+      "result": "W",
+      "couldHaveWon": false
+    },
+    {
+      "gw": 2,
+      "managerId": 99786,
+      "benchPoints": 13,
+      "players": [
+        {
+          "elementId": 571,
+          "playerName": "Tzolakis",
+          "position": "GKP",
+          "points": 10,
+          "scoring": [
+            {
+              "text": "clean sheet",
+              "points": 4
+            },
+            {
+              "text": "3 bonus",
+              "points": 3
+            },
+            {
+              "text": "3 saves",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "elementId": 222,
+          "playerName": "Strand Larsen",
+          "position": "FWD",
+          "points": 2,
+          "scoring": []
+        },
+        {
+          "elementId": 248,
+          "playerName": "Beto",
+          "position": "FWD",
+          "points": 1,
+          "scoring": []
+        }
+      ],
+      "opponentId": 1471,
+      "ownScore": 32,
+      "opponentScore": 49,
+      "result": "L",
+      "couldHaveWon": false
+    },
+    {
+      "gw": 5,
+      "managerId": 1857,
+      "benchPoints": 12,
+      "players": [
+        {
+          "elementId": 350,
+          "playerName": "A.Becker",
+          "position": "GKP",
+          "points": 8,
+          "scoring": [
+            {
+              "text": "clean sheet",
+              "points": 4
+            },
+            {
+              "text": "2 bonus",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "elementId": 526,
+          "playerName": "Solanke",
+          "position": "FWD",
+          "points": 2,
+          "scoring": []
+        },
+        {
+          "elementId": 254,
+          "playerName": "Robinson",
+          "position": "DEF",
+          "points": 2,
+          "scoring": []
+        }
+      ],
+      "opponentId": 1471,
+      "ownScore": 39,
+      "opponentScore": 47,
+      "result": "L",
+      "couldHaveWon": false
+    },
+    {
+      "gw": 3,
+      "managerId": 99786,
+      "benchPoints": 12,
+      "players": [
+        {
+          "elementId": 503,
+          "playerName": "Van de Ven",
+          "position": "DEF",
+          "points": 9,
+          "scoring": [
+            {
+              "text": "clean sheet",
+              "points": 4
+            },
+            {
+              "text": "3 bonus",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "elementId": 138,
+          "playerName": "Kostoulas",
+          "position": "FWD",
+          "points": 2,
+          "scoring": []
+        },
+        {
+          "elementId": 226,
+          "playerName": "Pickford",
+          "position": "GKP",
+          "points": 1,
+          "scoring": [
+            {
+              "text": "2 goals conceded",
+              "points": -1
+            }
+          ]
+        }
+      ],
+      "opponentId": 1857,
+      "ownScore": 46,
+      "opponentScore": 53,
+      "result": "L",
+      "couldHaveWon": true
+    },
+    {
+      "gw": 1,
+      "managerId": 1857,
+      "benchPoints": 12,
+      "players": [
+        {
+          "elementId": 249,
+          "playerName": "Barry",
+          "position": "FWD",
+          "points": 8,
+          "scoring": [
+            {
+              "text": "goal",
+              "points": 4
+            },
+            {
+              "text": "2 bonus",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "elementId": 129,
+          "playerName": "Ayari",
+          "position": "MID",
+          "points": 2,
+          "scoring": [
+            {
+              "text": "clean sheet",
+              "points": 1
+            },
+            {
+              "text": "yellow card",
+              "points": -1
+            }
+          ]
+        },
+        {
+          "elementId": 566,
+          "playerName": "Horníček",
+          "position": "GKP",
+          "points": 1,
+          "scoring": [
+            {
+              "text": "5 saves",
+              "points": 1
+            },
+            {
+              "text": "2 goals conceded",
+              "points": -1
+            },
+            {
+              "text": "yellow card",
+              "points": -1
+            }
+          ]
+        },
+        {
+          "elementId": 203,
+          "playerName": "Canvot",
+          "position": "DEF",
+          "points": 1,
+          "scoring": [
+            {
+              "text": "2 goals conceded",
+              "points": -1
+            }
+          ]
+        }
+      ],
+      "opponentId": 26227,
+      "ownScore": 40,
+      "opponentScore": 38,
+      "result": "W",
+      "couldHaveWon": false
+    }
   ]
 }

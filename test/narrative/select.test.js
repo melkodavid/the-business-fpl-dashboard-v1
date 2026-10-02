@@ -23,9 +23,9 @@ function storyline(overrides) {
 
 test("the highest-scoring candidate becomes the headline, the rest sort into secondaries", () => {
   const candidates = [
-    storyline({ dedupeKey: "a", baseWeight: 2 }),
-    storyline({ dedupeKey: "b", baseWeight: 5 }),
-    storyline({ dedupeKey: "c", baseWeight: 3 }),
+    storyline({ type: "t-a", personKeys: ["p1"], dedupeKey: "a", baseWeight: 2 }),
+    storyline({ type: "t-b", personKeys: ["p2"], dedupeKey: "b", baseWeight: 5 }),
+    storyline({ type: "t-c", personKeys: ["p3"], dedupeKey: "c", baseWeight: 3 }),
   ];
   const { headline, secondaries } = selectForGw(candidates, 1, stubContext, stubReplay, [], new Set());
   assert.equal(headline.dedupeKey, "b");
@@ -33,9 +33,54 @@ test("the highest-scoring candidate becomes the headline, the rest sort into sec
 });
 
 test("secondaries are hard-capped at 5 even with more candidates available", () => {
-  const candidates = Array.from({ length: 9 }, (_, i) => storyline({ dedupeKey: `s${i}`, baseWeight: 9 - i }));
+  const candidates = Array.from({ length: 9 }, (_, i) =>
+    storyline({ type: `t-${i}`, personKeys: [`p${i}`], dedupeKey: `s${i}`, baseWeight: 9 - i })
+  );
   const { secondaries } = selectForGw(candidates, 1, stubContext, stubReplay, [], new Set());
   assert.equal(secondaries.length, 5);
+});
+
+test("a single recap never carries more than 2 lines of one type (headline included)", () => {
+  const candidates = Array.from({ length: 5 }, (_, i) =>
+    storyline({ type: "streak", personKeys: [`p${i}`], dedupeKey: `s${i}`, baseWeight: 9 - i, facts: { length: 3 } })
+  );
+  const { headline, secondaries } = selectForGw(candidates, 1, stubContext, stubReplay, [], new Set());
+  assert.equal([headline, ...secondaries].filter((s) => s.type === "streak").length, 2);
+});
+
+test("gauntlet-watch and season-high records are limited to one per recap", () => {
+  const candidates = [
+    storyline({ type: "record-high-gw", personKeys: ["a"], dedupeKey: "h1", baseWeight: 9 }),
+    storyline({ type: "record-high-gw", personKeys: ["b"], dedupeKey: "h2", baseWeight: 8 }),
+    storyline({ type: "gauntlet-watch", personKeys: ["c"], dedupeKey: "w1", baseWeight: 7 }),
+    storyline({ type: "gauntlet-watch", personKeys: ["d"], dedupeKey: "w2", baseWeight: 6 }),
+  ];
+  const { headline, secondaries } = selectForGw(candidates, 1, stubContext, stubReplay, [], new Set());
+  const all = [headline, ...secondaries];
+  assert.equal(all.filter((s) => s.type === "record-high-gw").length, 1);
+  assert.equal(all.filter((s) => s.type === "gauntlet-watch").length, 1);
+});
+
+test("one person can't dominate a recap: at most 2 lines about the same person", () => {
+  const candidates = ["t1", "t2", "t3", "t4"].map((type, i) =>
+    storyline({ type, personKeys: ["noah"], dedupeKey: `n${i}`, baseWeight: 9 - i })
+  );
+  candidates.push(storyline({ type: "t5", personKeys: ["other"], dedupeKey: "o", baseWeight: 1 }));
+  const { headline, secondaries } = selectForGw(candidates, 1, stubContext, stubReplay, [], new Set());
+  const all = [headline, ...secondaries];
+  assert.equal(all.filter((s) => s.personKeys.includes("noah")).length, 2);
+  assert.ok(all.some((s) => s.type === "t5"));
+});
+
+test("the same type about the same people is skipped as a secondary for a couple of recaps", () => {
+  const prior = [{ gw: 2, type: "streak", dedupeKey: "old", role: "secondary", subject: "streak|david" }];
+  const candidates = [
+    storyline({ type: "t-head", personKeys: ["x"], dedupeKey: "head", baseWeight: 9, gw: 3 }),
+    storyline({ type: "streak", personKeys: ["david"], dedupeKey: "s-david", baseWeight: 5, gw: 3 }),
+    storyline({ type: "streak", personKeys: ["noah"], dedupeKey: "s-noah", baseWeight: 4, gw: 3 }),
+  ];
+  const { secondaries } = selectForGw(candidates, 3, stubContext, stubReplay, prior, new Set());
+  assert.deepEqual(secondaries.map((s) => s.dedupeKey), ["s-noah"]);
 });
 
 test("freshness penalty demotes a repeat headline: a fresh lower-weight type beats a stale higher-weight repeat", () => {

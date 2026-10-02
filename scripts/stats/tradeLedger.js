@@ -177,5 +177,84 @@ export function computeTradeLedger(context) {
     .map((m) => ({ managerId: m.id, managerName: m.name, netTradeValue: netValueByManager.get(m.id) }))
     .sort((a, b) => b.netTradeValue - a.netTradeValue);
 
-  return { log, leaderboard };
+  return { log, leaderboard, seasonImpact: computeSeasonImpact(context, context.trades) };
+}
+
+// Points a trade moved into/out of a manager's lineup in one gameweek: what the
+// players they gave up scored (assumed to have started, as in
+// resultImpactForSide) minus what the players they received scored while
+// actually starting.
+function tradeLineupDelta(context, side, gw) {
+  const started = context.gwPicks[gw]?.[side.managerId]?.starters ?? [];
+  const received = side.playersIn.reduce(
+    (sum, id) => sum + (started.includes(id) ? context.gwPlayerStats[gw]?.[id]?.totalPoints ?? 0 : 0),
+    0
+  );
+  const given = side.playersOut.reduce((sum, id) => sum + (context.gwPlayerStats[gw]?.[id]?.totalPoints ?? 0), 0);
+  return given - received;
+}
+
+const resultOf = (own, opp) => (own > opp ? "W" : own < opp ? "L" : "D");
+
+// Season-long "what if they'd never traded?" -- every trade a manager made is
+// undone at once, gameweek by gameweek (a week only feels the trades already
+// made by then), and each H2H result is re-decided. Same rough model as the
+// per-trade counterfactual (and the same caveat: for-fun, not precise), but
+// summed up so one week touched by two trades isn't double-counted.
+function computeSeasonImpact(context, trades) {
+  return context.managers.list
+    .map((manager) => {
+      const mine = trades
+        .map((t) => ({ tradeId: t.id, event: t.event, side: t.sides.find((s) => s.managerId === manager.id) }))
+        .filter((t) => t.side);
+
+      const actual = { w: 0, d: 0, l: 0 };
+      const without = { w: 0, d: 0, l: 0 };
+      const flips = [];
+
+      for (const gw of context.finishedGws) {
+        const match = context.matches.find(
+          (m) => m.event === gw && m.finished && (m.homeManagerId === manager.id || m.awayManagerId === manager.id)
+        );
+        if (!match) continue;
+        const isHome = match.homeManagerId === manager.id;
+        const own = isHome ? match.homePoints : match.awayPoints;
+        const opp = isHome ? match.awayPoints : match.homePoints;
+
+        const applicable = mine.filter((t) => t.event <= gw);
+        const delta = applicable.reduce((sum, t) => sum + tradeLineupDelta(context, t.side, gw), 0);
+        const counterfactual = own + delta;
+
+        const a = resultOf(own, opp);
+        const c = resultOf(counterfactual, opp);
+        actual[a.toLowerCase()]++;
+        without[c.toLowerCase()]++;
+        if (a !== c) {
+          flips.push({
+            gw,
+            opponentId: isHome ? match.awayManagerId : match.homeManagerId,
+            actualResult: a,
+            actualScore: own,
+            counterfactualResult: c,
+            counterfactualScore: counterfactual,
+            opponentScore: opp,
+            tradeIds: applicable.map((t) => t.tradeId),
+          });
+        }
+      }
+
+      const pts = (r) => r.w * 3 + r.d;
+      return {
+        managerId: manager.id,
+        managerName: manager.name,
+        tradeCount: mine.length,
+        actual,
+        withoutTrades: without,
+        winsDelta: actual.w - without.w,
+        lossesDelta: actual.l - without.l,
+        pointsDelta: pts(actual) - pts(without),
+        flips,
+      };
+    })
+    .sort((a, b) => b.pointsDelta - a.pointsDelta || b.tradeCount - a.tradeCount);
 }

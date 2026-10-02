@@ -6,7 +6,7 @@
       "ostap",
       "muk"
     ],
-    "text": "The margin: 33. The victim: Muk P.",
+    "text": "Call it what it is: Ostap Tsymbalista won by 33, and Muk P was there for it.",
     "facts": {
       "winnerId": 99786,
       "loserId": 1530,
@@ -16,65 +16,11 @@
   },
   "secondaries": [
     {
-      "type": "gauntlet-watch",
-      "personKeys": [
-        "mitch"
-      ],
-      "text": "Coming up for Mitch Grice: 3 consecutive fixtures against the family. All of it.",
-      "facts": {
-        "managerId": 1947,
-        "startGw": 10,
-        "length": 3,
-        "opponentIds": [
-          1530,
-          1377,
-          10375
-        ]
-      },
-      "gw": 4
-    },
-    {
-      "type": "gauntlet-watch",
-      "personKeys": [
-        "mitch"
-      ],
-      "text": "GAUNTLET WATCH: Mitch Grice faces 3 straight Palladinos starting GW21.",
-      "facts": {
-        "managerId": 1947,
-        "startGw": 21,
-        "length": 3,
-        "opponentIds": [
-          1530,
-          1377,
-          10375
-        ]
-      },
-      "gw": 4
-    },
-    {
-      "type": "gauntlet-watch",
-      "personKeys": [
-        "mitch"
-      ],
-      "text": "Coming up for Mitch Grice: 3 consecutive fixtures against the family. All of it.",
-      "facts": {
-        "managerId": 1947,
-        "startGw": 32,
-        "length": 3,
-        "opponentIds": [
-          1530,
-          1377,
-          10375
-        ]
-      },
-      "gw": 4
-    },
-    {
       "type": "bridesmaid-costly-loss",
       "personKeys": [
         "pat"
       ],
-      "text": "A costly loss for Pat Takala -- right on schedule.",
+      "text": "Pat Takala drops a big one. We've seen this story before.",
       "facts": {
         "managerId": 26227,
         "gw": 4,
@@ -83,20 +29,51 @@
       "gw": 4
     },
     {
-      "type": "gauntlet-watch",
+      "type": "luck-snakebit",
       "personKeys": [
         "carmine"
       ],
-      "text": "Coming up for Carmine Francella: 3 consecutive fixtures against the family. All of it.",
+      "text": "Snakebit: Carmine Francella had one of the best scores this week and lost anyway.",
       "facts": {
         "managerId": 1501,
-        "startGw": 26,
-        "length": 3,
-        "opponentIds": [
-          1425,
-          1530,
-          1377
-        ]
+        "opponentId": 1425
+      },
+      "gw": 4
+    },
+    {
+      "type": "record-high-loss",
+      "personKeys": [
+        "carmine"
+      ],
+      "text": "Harsh: Carmine Francella puts up 55 and goes home with nothing.",
+      "facts": {
+        "managerId": 1501,
+        "score": 55
+      },
+      "gw": 4
+    },
+    {
+      "type": "luck-robbery",
+      "personKeys": [
+        "anthony"
+      ],
+      "text": "Neen shouldn't have won this one. But here we are.",
+      "facts": {
+        "managerId": 10375,
+        "opponentId": 10210
+      },
+      "gw": 4
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "ostap",
+        "anthony"
+      ],
+      "text": "The 2000s swept every cross-generation matchup this week, 2-0.",
+      "facts": {
+        "generation": "2000s",
+        "count": 2
       },
       "gw": 4
     }

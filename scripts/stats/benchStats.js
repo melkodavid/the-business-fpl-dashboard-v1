@@ -1,5 +1,6 @@
 import { benchPointsForGw } from "../lib/benchPoints.js";
 import { computeOptimalXI } from "../lib/optimalXI.js";
+import { describeScoring } from "../lib/scoringBreakdown.js";
 
 // Spec §8 — Bench Stats: points left on the bench, and the "Could Have Won"
 // simplified win/loss counter (flips only, not a point-delta — that fuller
@@ -60,5 +61,63 @@ export function computeBenchStats(context) {
     eligibleLossesOrDraws: eligibleCounts.get(m.id),
   }));
 
-  return { perGw, perManager, couldHaveWonInstances: instances };
+  return {
+    perGw,
+    perManager,
+    couldHaveWonInstances: instances,
+    topBenchWeeks: computeTopBenchWeeks(context, perGw, instances),
+  };
+}
+
+const TOP_BENCH_WEEKS = 10;
+
+// The single weeks where the most points sat on a bench, league-wide: who was
+// benched, what they scored, and how (goals/assists/clean sheet/bonus...), plus
+// the manager's actual result so "this cost them the match" is visible.
+function computeTopBenchWeeks(context, perGw, couldHaveWonInstances) {
+  const weeks = [];
+  for (const gw of context.finishedGws) {
+    for (const manager of context.managers.list) {
+      const benchPoints = perGw[gw]?.[manager.id] ?? 0;
+      if (benchPoints <= 0) continue;
+      const picks = context.gwPicks[gw]?.[manager.id];
+      if (!picks) continue;
+
+      const players = picks.bench
+        .map((elementId) => {
+          const stats = context.gwPlayerStats[gw]?.[elementId];
+          const player = context.players.byId.get(elementId);
+          return {
+            elementId,
+            playerName: player?.webName,
+            position: player?.positionName,
+            points: stats?.totalPoints ?? 0,
+            scoring: describeScoring(stats?.breakdown),
+          };
+        })
+        .filter((p) => p.points > 0)
+        .sort((a, b) => b.points - a.points);
+
+      const match = context.matches.find(
+        (m) => m.event === gw && m.finished && (m.homeManagerId === manager.id || m.awayManagerId === manager.id)
+      );
+      const isHome = match?.homeManagerId === manager.id;
+      const ownScore = match ? (isHome ? match.homePoints : match.awayPoints) : null;
+      const opponentScore = match ? (isHome ? match.awayPoints : match.homePoints) : null;
+
+      weeks.push({
+        gw,
+        managerId: manager.id,
+        benchPoints,
+        players,
+        opponentId: match ? (isHome ? match.awayManagerId : match.homeManagerId) : null,
+        ownScore,
+        opponentScore,
+        result: match ? (ownScore > opponentScore ? "W" : ownScore < opponentScore ? "L" : "D") : null,
+        couldHaveWon: couldHaveWonInstances.some((i) => i.gw === gw && i.managerId === manager.id),
+      });
+    }
+  }
+
+  return weeks.sort((a, b) => b.benchPoints - a.benchPoints || b.gw - a.gw).slice(0, TOP_BENCH_WEEKS);
 }

@@ -64,1083 +64,1803 @@
   "scatter": [
     {
       "pickNumber": 1,
+      "round": 1,
       "seasonPoints": 39,
       "managerId": 1857,
-      "playerName": "Haaland"
+      "elementId": 411,
+      "playerName": "Haaland",
+      "position": "FWD",
+      "clubName": "Man City"
     },
     {
       "pickNumber": 2,
+      "round": 1,
       "seasonPoints": 31,
       "managerId": 29975,
-      "playerName": "B.Fernandes"
+      "elementId": 426,
+      "playerName": "B.Fernandes",
+      "position": "MID",
+      "clubName": "Man Utd"
     },
     {
       "pickNumber": 3,
+      "round": 1,
       "seasonPoints": 33,
       "managerId": 10375,
-      "playerName": "Isak"
+      "elementId": 379,
+      "playerName": "Isak",
+      "position": "FWD",
+      "clubName": "Liverpool"
     },
     {
       "pickNumber": 4,
+      "round": 1,
       "seasonPoints": 28,
       "managerId": 1530,
-      "playerName": "Palmer"
+      "elementId": 154,
+      "playerName": "Palmer",
+      "position": "MID",
+      "clubName": "Chelsea"
     },
     {
       "pickNumber": 5,
+      "round": 1,
       "seasonPoints": 32,
       "managerId": 26227,
-      "playerName": "Saka"
+      "elementId": 12,
+      "playerName": "Saka",
+      "position": "MID",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 6,
+      "round": 1,
       "seasonPoints": 33,
       "managerId": 1425,
-      "playerName": "João Pedro"
+      "elementId": 165,
+      "playerName": "João Pedro",
+      "position": "FWD",
+      "clubName": "Chelsea"
     },
     {
       "pickNumber": 7,
+      "round": 1,
       "seasonPoints": 10,
       "managerId": 1947,
-      "playerName": "Thiago"
+      "elementId": 106,
+      "playerName": "Thiago",
+      "position": "FWD",
+      "clubName": "Brentford"
     },
     {
       "pickNumber": 8,
+      "round": 1,
       "seasonPoints": 28,
       "managerId": 1501,
-      "playerName": "Gibbs-White"
+      "elementId": 480,
+      "playerName": "Gibbs-White",
+      "position": "MID",
+      "clubName": "Nott'm Forest"
     },
     {
       "pickNumber": 9,
+      "round": 1,
       "seasonPoints": 33,
       "managerId": 10210,
-      "playerName": "Semenyo"
+      "elementId": 397,
+      "playerName": "Semenyo",
+      "position": "MID",
+      "clubName": "Man City"
     },
     {
       "pickNumber": 10,
+      "round": 1,
       "seasonPoints": 0,
       "managerId": 1471,
-      "playerName": "Watkins"
+      "elementId": 55,
+      "playerName": "Watkins",
+      "position": "FWD",
+      "clubName": "Aston Villa"
     },
     {
       "pickNumber": 11,
+      "round": 1,
       "seasonPoints": 25,
       "managerId": 99786,
-      "playerName": "Mbeumo"
+      "elementId": 427,
+      "playerName": "Mbeumo",
+      "position": "MID",
+      "clubName": "Man Utd"
     },
     {
       "pickNumber": 12,
+      "round": 1,
       "seasonPoints": 18,
       "managerId": 1377,
-      "playerName": "Wirtz"
+      "elementId": 366,
+      "playerName": "Wirtz",
+      "position": "MID",
+      "clubName": "Liverpool"
     },
     {
       "pickNumber": 13,
+      "round": 2,
       "seasonPoints": 25,
       "managerId": 1377,
-      "playerName": "Gabriel"
+      "elementId": 4,
+      "playerName": "Gabriel",
+      "position": "DEF",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 14,
+      "round": 2,
       "seasonPoints": 20,
       "managerId": 99786,
-      "playerName": "Rice"
+      "elementId": 13,
+      "playerName": "Rice",
+      "position": "MID",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 15,
+      "round": 2,
       "seasonPoints": 29,
       "managerId": 1471,
-      "playerName": "Rogers"
+      "elementId": 40,
+      "playerName": "Rogers",
+      "position": "MID",
+      "clubName": "Chelsea"
     },
     {
       "pickNumber": 16,
+      "round": 2,
       "seasonPoints": 2,
       "managerId": 10210,
-      "playerName": "Gyökeres"
+      "elementId": 25,
+      "playerName": "Gyökeres",
+      "position": "FWD",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 17,
+      "round": 2,
       "seasonPoints": 20,
       "managerId": 1501,
-      "playerName": "Szoboszlai"
+      "elementId": 368,
+      "playerName": "Szoboszlai",
+      "position": "MID",
+      "clubName": "Liverpool"
     },
     {
       "pickNumber": 18,
+      "round": 2,
       "seasonPoints": 8,
       "managerId": 1947,
-      "playerName": "Šeško"
+      "elementId": 439,
+      "playerName": "Šeško",
+      "position": "FWD",
+      "clubName": "Man Utd"
     },
     {
       "pickNumber": 19,
+      "round": 2,
       "seasonPoints": 26,
       "managerId": 1425,
-      "playerName": "Cunha"
+      "elementId": 428,
+      "playerName": "Cunha",
+      "position": "MID",
+      "clubName": "Man Utd"
     },
     {
       "pickNumber": 20,
+      "round": 2,
       "seasonPoints": 34,
       "managerId": 26227,
-      "playerName": "Cherki"
+      "elementId": 399,
+      "playerName": "Cherki",
+      "position": "MID",
+      "clubName": "Man City"
     },
     {
       "pickNumber": 21,
+      "round": 2,
       "seasonPoints": 15,
       "managerId": 1530,
-      "playerName": "Anderson"
+      "elementId": 481,
+      "playerName": "Anderson",
+      "position": "MID",
+      "clubName": "Man City"
     },
     {
       "pickNumber": 22,
+      "round": 2,
       "seasonPoints": 9,
       "managerId": 10375,
-      "playerName": "Bruno G."
+      "elementId": 452,
+      "playerName": "Bruno G.",
+      "position": "MID",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 23,
+      "round": 2,
       "seasonPoints": 2,
       "managerId": 29975,
-      "playerName": "Mateta"
+      "elementId": 223,
+      "playerName": "Mateta",
+      "position": "FWD",
+      "clubName": "Crystal Palace"
     },
     {
       "pickNumber": 24,
+      "round": 2,
       "seasonPoints": 13,
       "managerId": 1857,
-      "playerName": "Enzo"
+      "elementId": 155,
+      "playerName": "Enzo",
+      "position": "MID",
+      "clubName": "Man City"
     },
     {
       "pickNumber": 25,
+      "round": 3,
       "seasonPoints": 1,
       "managerId": 1857,
-      "playerName": "Sarr"
+      "elementId": 208,
+      "playerName": "Sarr",
+      "position": "MID",
+      "clubName": "Crystal Palace"
     },
     {
       "pickNumber": 26,
+      "round": 3,
       "seasonPoints": 10,
       "managerId": 29975,
-      "playerName": "Rayan"
+      "elementId": 67,
+      "playerName": "Rayan",
+      "position": "MID",
+      "clubName": "Bournemouth"
     },
     {
       "pickNumber": 27,
+      "round": 3,
       "seasonPoints": 22,
       "managerId": 10375,
-      "playerName": "Calvert-Lewin"
+      "elementId": 346,
+      "playerName": "Calvert-Lewin",
+      "position": "FWD",
+      "clubName": "Leeds"
     },
     {
       "pickNumber": 28,
+      "round": 3,
       "seasonPoints": 5,
       "managerId": 1530,
-      "playerName": "Wilson"
+      "elementId": 260,
+      "playerName": "Wilson",
+      "position": "MID",
+      "clubName": "Leeds"
     },
     {
       "pickNumber": 29,
+      "round": 3,
       "seasonPoints": 0,
       "managerId": 26227,
-      "playerName": "Ekitiké"
+      "elementId": 380,
+      "playerName": "Ekitiké",
+      "position": "FWD",
+      "clubName": "Liverpool"
     },
     {
       "pickNumber": 30,
+      "round": 3,
       "seasonPoints": 30,
       "managerId": 1425,
-      "playerName": "Guéhi"
+      "elementId": 388,
+      "playerName": "Guéhi",
+      "position": "DEF",
+      "clubName": "Man City"
     },
     {
       "pickNumber": 31,
+      "round": 3,
       "seasonPoints": 25,
       "managerId": 1947,
-      "playerName": "Virgil"
+      "elementId": 356,
+      "playerName": "Virgil",
+      "position": "DEF",
+      "clubName": "Liverpool"
     },
     {
       "pickNumber": 32,
+      "round": 3,
       "seasonPoints": 18,
       "managerId": 1501,
-      "playerName": "Evanilson"
+      "elementId": 79,
+      "playerName": "Evanilson",
+      "position": "FWD",
+      "clubName": "Bournemouth"
     },
     {
       "pickNumber": 33,
+      "round": 3,
       "seasonPoints": 6,
       "managerId": 10210,
-      "playerName": "O'Reilly"
+      "elementId": 387,
+      "playerName": "O'Reilly",
+      "position": "DEF",
+      "clubName": "Man City"
     },
     {
       "pickNumber": 34,
+      "round": 3,
       "seasonPoints": 9,
       "managerId": 1471,
-      "playerName": "Foden"
+      "elementId": 398,
+      "playerName": "Foden",
+      "position": "MID",
+      "clubName": "Man City"
     },
     {
       "pickNumber": 35,
+      "round": 3,
       "seasonPoints": 10,
       "managerId": 99786,
-      "playerName": "Truffert"
+      "elementId": 61,
+      "playerName": "Truffert",
+      "position": "DEF",
+      "clubName": "Bournemouth"
     },
     {
       "pickNumber": 36,
+      "round": 3,
       "seasonPoints": 1,
       "managerId": 1377,
-      "playerName": "Doku"
+      "elementId": 400,
+      "playerName": "Doku",
+      "position": "MID",
+      "clubName": "Man City"
     },
     {
       "pickNumber": 37,
+      "round": 4,
       "seasonPoints": 12,
       "managerId": 1377,
-      "playerName": "Igor Jesus"
+      "elementId": 491,
+      "playerName": "Igor Jesus",
+      "position": "FWD",
+      "clubName": "Nott'm Forest"
     },
     {
       "pickNumber": 38,
+      "round": 4,
       "seasonPoints": 24,
       "managerId": 99786,
-      "playerName": "Brobbey"
+      "elementId": 552,
+      "playerName": "Brobbey",
+      "position": "FWD",
+      "clubName": "Sunderland"
     },
     {
       "pickNumber": 39,
+      "round": 4,
       "seasonPoints": 29,
       "managerId": 1471,
-      "playerName": "Calafiori"
+      "elementId": 8,
+      "playerName": "Calafiori",
+      "position": "DEF",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 40,
+      "round": 4,
       "seasonPoints": 30,
       "managerId": 10210,
-      "playerName": "Raya"
+      "elementId": 1,
+      "playerName": "Raya",
+      "position": "GKP",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 41,
+      "round": 4,
       "seasonPoints": 43,
       "managerId": 1501,
-      "playerName": "Tarkowski"
+      "elementId": 229,
+      "playerName": "Tarkowski",
+      "position": "DEF",
+      "clubName": "Everton"
     },
     {
       "pickNumber": 42,
+      "round": 4,
       "seasonPoints": 37,
       "managerId": 1947,
-      "playerName": "Gvardiol"
+      "elementId": 391,
+      "playerName": "Gvardiol",
+      "position": "DEF",
+      "clubName": "Man City"
     },
     {
       "pickNumber": 43,
+      "round": 4,
       "seasonPoints": 7,
       "managerId": 1425,
-      "playerName": "O.Dango"
+      "elementId": 95,
+      "playerName": "O.Dango",
+      "position": "MID",
+      "clubName": "Brentford"
     },
     {
       "pickNumber": 44,
+      "round": 4,
       "seasonPoints": 0,
       "managerId": 26227,
-      "playerName": "Kroupi.Jr"
+      "elementId": 78,
+      "playerName": "Kroupi.Jr",
+      "position": "MID",
+      "clubName": "Bournemouth"
     },
     {
       "pickNumber": 45,
+      "round": 4,
       "seasonPoints": 4,
       "managerId": 1530,
-      "playerName": "Eze"
+      "elementId": 14,
+      "playerName": "Eze",
+      "position": "MID",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 46,
+      "round": 4,
       "seasonPoints": 9,
       "managerId": 10375,
-      "playerName": "Pedro Porro"
+      "elementId": 499,
+      "playerName": "Pedro Porro",
+      "position": "DEF",
+      "clubName": "Spurs"
     },
     {
       "pickNumber": 47,
+      "round": 4,
       "seasonPoints": 5,
       "managerId": 29975,
-      "playerName": "Muñoz"
+      "elementId": 201,
+      "playerName": "Muñoz",
+      "position": "DEF",
+      "clubName": "Nott'm Forest"
     },
     {
       "pickNumber": 48,
+      "round": 4,
       "seasonPoints": 19,
       "managerId": 1857,
-      "playerName": "Havertz"
+      "elementId": 26,
+      "playerName": "Havertz",
+      "position": "FWD",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 49,
+      "round": 5,
       "seasonPoints": 17,
       "managerId": 1857,
-      "playerName": "Rúben"
+      "elementId": 390,
+      "playerName": "Rúben",
+      "position": "DEF",
+      "clubName": "Man City"
     },
     {
       "pickNumber": 50,
+      "round": 5,
       "seasonPoints": 10,
       "managerId": 29975,
-      "playerName": "Hume"
+      "elementId": 534,
+      "playerName": "Hume",
+      "position": "DEF",
+      "clubName": "Sunderland"
     },
     {
       "pickNumber": 51,
+      "round": 5,
       "seasonPoints": 19,
       "managerId": 10375,
-      "playerName": "Donnarumma"
+      "elementId": 384,
+      "playerName": "Donnarumma",
+      "position": "GKP",
+      "clubName": "Man City"
     },
     {
       "pickNumber": 52,
+      "round": 5,
       "seasonPoints": 24,
       "managerId": 1530,
-      "playerName": "Van Hecke"
+      "elementId": 112,
+      "playerName": "Van Hecke",
+      "position": "DEF",
+      "clubName": "Spurs"
     },
     {
       "pickNumber": 53,
+      "round": 5,
       "seasonPoints": 32,
       "managerId": 26227,
-      "playerName": "Gakpo"
+      "elementId": 367,
+      "playerName": "Gakpo",
+      "position": "MID",
+      "clubName": "Liverpool"
     },
     {
       "pickNumber": 54,
+      "round": 5,
       "seasonPoints": 13,
       "managerId": 1425,
-      "playerName": "Lacroix"
+      "elementId": 200,
+      "playerName": "Lacroix",
+      "position": "DEF",
+      "clubName": "Chelsea"
     },
     {
       "pickNumber": 55,
+      "round": 5,
       "seasonPoints": 20,
       "managerId": 1947,
-      "playerName": "Dewsbury-Hall"
+      "elementId": 236,
+      "playerName": "Dewsbury-Hall",
+      "position": "MID",
+      "clubName": "Everton"
     },
     {
       "pickNumber": 56,
+      "round": 5,
       "seasonPoints": 3,
       "managerId": 1501,
-      "playerName": "Maddison"
+      "elementId": 515,
+      "playerName": "Maddison",
+      "position": "MID",
+      "clubName": "Spurs"
     },
     {
       "pickNumber": 57,
+      "round": 5,
       "seasonPoints": 29,
       "managerId": 10210,
-      "playerName": "Ødegaard"
+      "elementId": 15,
+      "playerName": "Ødegaard",
+      "position": "MID",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 58,
+      "round": 5,
       "seasonPoints": 12,
       "managerId": 1471,
-      "playerName": "Hill"
+      "elementId": 60,
+      "playerName": "Hill",
+      "position": "DEF",
+      "clubName": "Bournemouth"
     },
     {
       "pickNumber": 59,
+      "round": 5,
       "seasonPoints": 16,
       "managerId": 99786,
-      "playerName": "Van de Ven"
+      "elementId": 503,
+      "playerName": "Van de Ven",
+      "position": "DEF",
+      "clubName": "Spurs"
     },
     {
       "pickNumber": 60,
+      "round": 5,
       "seasonPoints": 21,
       "managerId": 1377,
-      "playerName": "Buendía"
+      "elementId": 41,
+      "playerName": "Buendía",
+      "position": "MID",
+      "clubName": "Aston Villa"
     },
     {
       "pickNumber": 61,
+      "round": 6,
       "seasonPoints": 22,
       "managerId": 1377,
-      "playerName": "Ndiaye"
+      "elementId": 237,
+      "playerName": "Ndiaye",
+      "position": "MID",
+      "clubName": "Man City"
     },
     {
       "pickNumber": 62,
+      "round": 6,
       "seasonPoints": 25,
       "managerId": 99786,
-      "playerName": "Pickford"
+      "elementId": 226,
+      "playerName": "Pickford",
+      "position": "GKP",
+      "clubName": "Everton"
     },
     {
       "pickNumber": 63,
+      "round": 6,
       "seasonPoints": 39,
       "managerId": 1471,
-      "playerName": "Schade"
+      "elementId": 94,
+      "playerName": "Schade",
+      "position": "MID",
+      "clubName": "Brentford"
     },
     {
       "pickNumber": 64,
+      "round": 6,
       "seasonPoints": 15,
       "managerId": 10210,
-      "playerName": "Munoz"
+      "elementId": 377,
+      "playerName": "Munoz",
+      "position": "MID",
+      "clubName": "Liverpool"
     },
     {
       "pickNumber": 65,
+      "round": 6,
       "seasonPoints": 11,
       "managerId": 1501,
-      "playerName": "Matheus N."
+      "elementId": 389,
+      "playerName": "Matheus N.",
+      "position": "DEF",
+      "clubName": "Man City"
     },
     {
       "pickNumber": 66,
+      "round": 6,
       "seasonPoints": 47,
       "managerId": 1947,
-      "playerName": "Groß"
+      "elementId": 124,
+      "playerName": "Groß",
+      "position": "MID",
+      "clubName": "Brighton"
     },
     {
       "pickNumber": 67,
+      "round": 6,
       "seasonPoints": 31,
       "managerId": 1425,
-      "playerName": "Tavernier"
+      "elementId": 68,
+      "playerName": "Tavernier",
+      "position": "MID",
+      "clubName": "Bournemouth"
     },
     {
       "pickNumber": 68,
+      "round": 6,
       "seasonPoints": 8,
       "managerId": 26227,
-      "playerName": "Marmoush"
+      "elementId": 401,
+      "playerName": "Marmoush",
+      "position": "FWD",
+      "clubName": "Spurs"
     },
     {
       "pickNumber": 69,
+      "round": 6,
       "seasonPoints": 4,
       "managerId": 1530,
-      "playerName": "Osula"
+      "elementId": 465,
+      "playerName": "Osula",
+      "position": "FWD",
+      "clubName": "Newcastle"
     },
     {
       "pickNumber": 70,
+      "round": 6,
       "seasonPoints": 16,
       "managerId": 10375,
-      "playerName": "Tzolis"
+      "elementId": 554,
+      "playerName": "Tzolis",
+      "position": "MID",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 71,
+      "round": 6,
       "seasonPoints": 7,
       "managerId": 29975,
-      "playerName": "Solanke"
+      "elementId": 526,
+      "playerName": "Solanke",
+      "position": "FWD",
+      "clubName": "Spurs"
     },
     {
       "pickNumber": 72,
+      "round": 6,
       "seasonPoints": 30,
       "managerId": 1857,
-      "playerName": "Scott"
+      "elementId": 69,
+      "playerName": "Scott",
+      "position": "MID",
+      "clubName": "Bournemouth"
     },
     {
       "pickNumber": 73,
+      "round": 7,
       "seasonPoints": 3,
       "managerId": 1857,
-      "playerName": "James"
+      "elementId": 142,
+      "playerName": "James",
+      "position": "DEF",
+      "clubName": "Chelsea"
     },
     {
       "pickNumber": 74,
+      "round": 7,
       "seasonPoints": 10,
       "managerId": 29975,
-      "playerName": "Rashford"
+      "elementId": 429,
+      "playerName": "Rashford",
+      "position": "MID",
+      "clubName": "Man Utd"
     },
     {
       "pickNumber": 75,
+      "round": 7,
       "seasonPoints": 13,
       "managerId": 10375,
-      "playerName": "Kerkez"
+      "elementId": 358,
+      "playerName": "Kerkez",
+      "position": "DEF",
+      "clubName": "Liverpool"
     },
     {
       "pickNumber": 76,
+      "round": 7,
       "seasonPoints": 4,
       "managerId": 1530,
-      "playerName": "Woltemade"
+      "elementId": 463,
+      "playerName": "Woltemade",
+      "position": "FWD",
+      "clubName": "Newcastle"
     },
     {
       "pickNumber": 77,
+      "round": 7,
       "seasonPoints": 1,
       "managerId": 26227,
-      "playerName": "J.Timber"
+      "elementId": 5,
+      "playerName": "J.Timber",
+      "position": "DEF",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 78,
+      "round": 7,
       "seasonPoints": 0,
       "managerId": 1425,
-      "playerName": "Palestra"
+      "elementId": 152,
+      "playerName": "Palestra",
+      "position": "DEF",
+      "clubName": "Chelsea"
     },
     {
       "pickNumber": 79,
+      "round": 7,
       "seasonPoints": 19,
       "managerId": 1947,
-      "playerName": "N.Williams"
+      "elementId": 469,
+      "playerName": "N.Williams",
+      "position": "DEF",
+      "clubName": "Nott'm Forest"
     },
     {
       "pickNumber": 80,
+      "round": 7,
       "seasonPoints": 12,
       "managerId": 1501,
-      "playerName": "Mosquera"
+      "elementId": 11,
+      "playerName": "Mosquera",
+      "position": "DEF",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 81,
+      "round": 7,
       "seasonPoints": 15,
       "managerId": 10210,
-      "playerName": "Wissa"
+      "elementId": 464,
+      "playerName": "Wissa",
+      "position": "FWD",
+      "clubName": "Newcastle"
     },
     {
       "pickNumber": 82,
+      "round": 7,
       "seasonPoints": 3,
       "managerId": 1471,
-      "playerName": "Colwill"
+      "elementId": 149,
+      "playerName": "Colwill",
+      "position": "DEF",
+      "clubName": "Chelsea"
     },
     {
       "pickNumber": 83,
+      "round": 7,
       "seasonPoints": 14,
       "managerId": 99786,
-      "playerName": "Strand Larsen"
+      "elementId": 222,
+      "playerName": "Strand Larsen",
+      "position": "FWD",
+      "clubName": "Crystal Palace"
     },
     {
       "pickNumber": 84,
+      "round": 7,
       "seasonPoints": 6,
       "managerId": 1377,
-      "playerName": "Georginio"
+      "elementId": 125,
+      "playerName": "Georginio",
+      "position": "FWD",
+      "clubName": "Brighton"
     },
     {
       "pickNumber": 85,
+      "round": 8,
       "seasonPoints": 14,
       "managerId": 1377,
-      "playerName": "Thiaw"
+      "elementId": 445,
+      "playerName": "Thiaw",
+      "position": "DEF",
+      "clubName": "Newcastle"
     },
     {
       "pickNumber": 86,
+      "round": 8,
       "seasonPoints": 28,
       "managerId": 99786,
-      "playerName": "Barnes"
+      "elementId": 453,
+      "playerName": "Barnes",
+      "position": "MID",
+      "clubName": "Newcastle"
     },
     {
       "pickNumber": 87,
+      "round": 8,
       "seasonPoints": 14,
       "managerId": 1471,
-      "playerName": "Gonzalo"
+      "elementId": 569,
+      "playerName": "Gonzalo",
+      "position": "FWD",
+      "clubName": "Fulham"
     },
     {
       "pickNumber": 88,
+      "round": 8,
       "seasonPoints": 3,
       "managerId": 10210,
-      "playerName": "Senesi"
+      "elementId": 498,
+      "playerName": "Senesi",
+      "position": "DEF",
+      "clubName": "Spurs"
     },
     {
       "pickNumber": 89,
+      "round": 8,
       "seasonPoints": 2,
       "managerId": 1501,
-      "playerName": "Frimpong"
+      "elementId": 357,
+      "playerName": "Frimpong",
+      "position": "DEF",
+      "clubName": "Liverpool"
     },
     {
       "pickNumber": 90,
+      "round": 8,
       "seasonPoints": 7,
       "managerId": 1947,
-      "playerName": "Kudus"
+      "elementId": 512,
+      "playerName": "Kudus",
+      "position": "MID",
+      "clubName": "Spurs"
     },
     {
       "pickNumber": 91,
+      "round": 8,
       "seasonPoints": 7,
       "managerId": 1425,
-      "playerName": "Fernandes"
+      "elementId": 525,
+      "playerName": "Fernandes",
+      "position": "MID",
+      "clubName": "Spurs"
     },
     {
       "pickNumber": 92,
+      "round": 8,
       "seasonPoints": 14,
       "managerId": 26227,
-      "playerName": "Neto"
+      "elementId": 156,
+      "playerName": "Neto",
+      "position": "MID",
+      "clubName": "Chelsea"
     },
     {
       "pickNumber": 93,
+      "round": 8,
       "seasonPoints": 0,
       "managerId": 1530,
-      "playerName": "Aït-Nouri"
+      "elementId": 392,
+      "playerName": "Aït-Nouri",
+      "position": "DEF",
+      "clubName": "Man City"
     },
     {
       "pickNumber": 94,
+      "round": 8,
       "seasonPoints": 1,
       "managerId": 10375,
-      "playerName": "Caicedo"
+      "elementId": 159,
+      "playerName": "Caicedo",
+      "position": "MID",
+      "clubName": "Chelsea"
     },
     {
       "pickNumber": 95,
+      "round": 8,
       "seasonPoints": 2,
       "managerId": 29975,
-      "playerName": "Hincapie"
+      "elementId": 9,
+      "playerName": "Hincapie",
+      "position": "DEF",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 96,
+      "round": 8,
       "seasonPoints": 20,
       "managerId": 1857,
-      "playerName": "Barry"
+      "elementId": 249,
+      "playerName": "Barry",
+      "position": "FWD",
+      "clubName": "Everton"
     },
     {
       "pickNumber": 97,
+      "round": 9,
       "seasonPoints": 27,
       "managerId": 1857,
-      "playerName": "A.Becker"
+      "elementId": 350,
+      "playerName": "A.Becker",
+      "position": "GKP",
+      "clubName": "Liverpool"
     },
     {
       "pickNumber": 98,
+      "round": 9,
       "seasonPoints": 23,
       "managerId": 29975,
-      "playerName": "Verbruggen"
+      "elementId": 109,
+      "playerName": "Verbruggen",
+      "position": "GKP",
+      "clubName": "Brighton"
     },
     {
       "pickNumber": 99,
+      "round": 9,
       "seasonPoints": 21,
       "managerId": 10375,
-      "playerName": "Xhaka"
+      "elementId": 544,
+      "playerName": "Xhaka",
+      "position": "MID",
+      "clubName": "Sunderland"
     },
     {
       "pickNumber": 100,
+      "round": 9,
       "seasonPoints": 2,
       "managerId": 1530,
-      "playerName": "Sánchez"
+      "elementId": 140,
+      "playerName": "Sánchez",
+      "position": "GKP",
+      "clubName": "Chelsea"
     },
     {
       "pickNumber": 101,
+      "round": 9,
       "seasonPoints": 10,
       "managerId": 26227,
-      "playerName": "N.Jackson"
+      "elementId": 166,
+      "playerName": "N.Jackson",
+      "position": "FWD",
+      "clubName": "Aston Villa"
     },
     {
       "pickNumber": 102,
+      "round": 9,
       "seasonPoints": 5,
       "managerId": 1425,
-      "playerName": "Henderson"
+      "elementId": 198,
+      "playerName": "Henderson",
+      "position": "GKP",
+      "clubName": "Crystal Palace"
     },
     {
       "pickNumber": 103,
+      "round": 9,
       "seasonPoints": 14,
       "managerId": 1947,
-      "playerName": "Sels"
+      "elementId": 467,
+      "playerName": "Sels",
+      "position": "GKP",
+      "clubName": "Nott'm Forest"
     },
     {
       "pickNumber": 104,
+      "round": 9,
       "seasonPoints": 27,
       "managerId": 1501,
-      "playerName": "Stach"
+      "elementId": 335,
+      "playerName": "Stach",
+      "position": "MID",
+      "clubName": "Leeds"
     },
     {
       "pickNumber": 105,
+      "round": 9,
       "seasonPoints": 1,
       "managerId": 10210,
-      "playerName": "Hudson-Odoi"
+      "elementId": 482,
+      "playerName": "Hudson-Odoi",
+      "position": "MID",
+      "clubName": "Nott'm Forest"
     },
     {
       "pickNumber": 106,
+      "round": 9,
       "seasonPoints": 18,
       "managerId": 1471,
-      "playerName": "E.Le Fée"
+      "elementId": 542,
+      "playerName": "E.Le Fée",
+      "position": "MID",
+      "clubName": "Sunderland"
     },
     {
       "pickNumber": 107,
+      "round": 9,
       "seasonPoints": 10,
       "managerId": 99786,
-      "playerName": "Dorgu"
+      "elementId": 415,
+      "playerName": "Dorgu",
+      "position": "MID",
+      "clubName": "Man Utd"
     },
     {
       "pickNumber": 108,
+      "round": 9,
       "seasonPoints": 11,
       "managerId": 1377,
-      "playerName": "Roefs"
+      "elementId": 529,
+      "playerName": "Roefs",
+      "position": "GKP",
+      "clubName": "Sunderland"
     },
     {
       "pickNumber": 109,
+      "round": 10,
       "seasonPoints": 14,
       "managerId": 1377,
-      "playerName": "Richards"
+      "elementId": 202,
+      "playerName": "Richards",
+      "position": "DEF",
+      "clubName": "Crystal Palace"
     },
     {
       "pickNumber": 110,
+      "round": 10,
       "seasonPoints": 7,
       "managerId": 99786,
-      "playerName": "Diomande"
+      "elementId": 581,
+      "playerName": "Diomande",
+      "position": "DEF",
+      "clubName": "Nott'm Forest"
     },
     {
       "pickNumber": 111,
+      "round": 10,
       "seasonPoints": 32,
       "managerId": 1471,
-      "playerName": "Vuskovic"
+      "elementId": 504,
+      "playerName": "Vuskovic",
+      "position": "DEF",
+      "clubName": "Brighton"
     },
     {
       "pickNumber": 112,
+      "round": 10,
       "seasonPoints": 10,
       "managerId": 10210,
-      "playerName": "Collins"
+      "elementId": 84,
+      "playerName": "Collins",
+      "position": "DEF",
+      "clubName": "Brentford"
     },
     {
       "pickNumber": 113,
+      "round": 10,
       "seasonPoints": 20,
       "managerId": 1501,
-      "playerName": "Kelleher"
+      "elementId": 82,
+      "playerName": "Kelleher",
+      "position": "GKP",
+      "clubName": "Brentford"
     },
     {
       "pickNumber": 114,
+      "round": 10,
       "seasonPoints": 21,
       "managerId": 1947,
-      "playerName": "Ampadu"
+      "elementId": 338,
+      "playerName": "Ampadu",
+      "position": "MID",
+      "clubName": "Leeds"
     },
     {
       "pickNumber": 115,
+      "round": 10,
       "seasonPoints": 9,
       "managerId": 1425,
-      "playerName": "Johnson"
+      "elementId": 209,
+      "playerName": "Johnson",
+      "position": "MID",
+      "clubName": "Everton"
     },
     {
       "pickNumber": 116,
+      "round": 10,
       "seasonPoints": 0,
       "managerId": 26227,
-      "playerName": "Saliba"
+      "elementId": 6,
+      "playerName": "Saliba",
+      "position": "DEF",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 117,
+      "round": 10,
       "seasonPoints": 24,
       "managerId": 1530,
-      "playerName": "Mitchell"
+      "elementId": 204,
+      "playerName": "Mitchell",
+      "position": "DEF",
+      "clubName": "Crystal Palace"
     },
     {
       "pickNumber": 118,
+      "round": 10,
       "seasonPoints": 13,
       "managerId": 10375,
-      "playerName": "McBurnie"
+      "elementId": 295,
+      "playerName": "McBurnie",
+      "position": "FWD",
+      "clubName": "Hull City"
     },
     {
       "pickNumber": 119,
+      "round": 10,
       "seasonPoints": 15,
       "managerId": 29975,
-      "playerName": "Kluivert"
+      "elementId": 70,
+      "playerName": "Kluivert",
+      "position": "MID",
+      "clubName": "Bournemouth"
     },
     {
       "pickNumber": 120,
+      "round": 10,
       "seasonPoints": 22,
       "managerId": 1857,
-      "playerName": "M.Sangaré"
+      "elementId": 556,
+      "playerName": "M.Sangaré",
+      "position": "MID",
+      "clubName": "Brentford"
     },
     {
       "pickNumber": 121,
+      "round": 11,
       "seasonPoints": 27,
       "managerId": 1857,
-      "playerName": "Muharemović"
+      "elementId": 334,
+      "playerName": "Muharemović",
+      "position": "DEF",
+      "clubName": "Leeds"
     },
     {
       "pickNumber": 122,
+      "round": 11,
       "seasonPoints": 22,
       "managerId": 29975,
-      "playerName": "Araujo"
+      "elementId": 580,
+      "playerName": "Araujo",
+      "position": "DEF",
+      "clubName": "Liverpool"
     },
     {
       "pickNumber": 123,
+      "round": 11,
       "seasonPoints": 6,
       "managerId": 10375,
-      "playerName": "Cash"
+      "elementId": 32,
+      "playerName": "Cash",
+      "position": "DEF",
+      "clubName": "Aston Villa"
     },
     {
       "pickNumber": 124,
+      "round": 11,
       "seasonPoints": 7,
       "managerId": 1530,
-      "playerName": "Aaronson"
+      "elementId": 337,
+      "playerName": "Aaronson",
+      "position": "MID",
+      "clubName": "Leeds"
     },
     {
       "pickNumber": 125,
+      "round": 11,
       "seasonPoints": 13,
       "managerId": 26227,
-      "playerName": "Mukiele"
+      "elementId": 533,
+      "playerName": "Mukiele",
+      "position": "DEF",
+      "clubName": "Sunderland"
     },
     {
       "pickNumber": 126,
+      "round": 11,
       "seasonPoints": 18,
       "managerId": 1425,
-      "playerName": "Kinsky"
+      "elementId": 496,
+      "playerName": "Kinsky",
+      "position": "GKP",
+      "clubName": "Spurs"
     },
     {
       "pickNumber": 127,
+      "round": 11,
       "seasonPoints": 11,
       "managerId": 1947,
-      "playerName": "Lammens"
+      "elementId": 412,
+      "playerName": "Lammens",
+      "position": "GKP",
+      "clubName": "Man Utd"
     },
     {
       "pickNumber": 128,
+      "round": 11,
       "seasonPoints": 9,
       "managerId": 1501,
-      "playerName": "Maatsen"
+      "elementId": 36,
+      "playerName": "Maatsen",
+      "position": "DEF",
+      "clubName": "Aston Villa"
     },
     {
       "pickNumber": 129,
+      "round": 11,
       "seasonPoints": 18,
       "managerId": 10210,
-      "playerName": "Elanga"
+      "elementId": 454,
+      "playerName": "Elanga",
+      "position": "MID",
+      "clubName": "Newcastle"
     },
     {
       "pickNumber": 130,
+      "round": 11,
       "seasonPoints": 12,
       "managerId": 1471,
-      "playerName": "Milenković"
+      "elementId": 471,
+      "playerName": "Milenković",
+      "position": "DEF",
+      "clubName": "Nott'm Forest"
     },
     {
       "pickNumber": 131,
+      "round": 11,
       "seasonPoints": 9,
       "managerId": 99786,
-      "playerName": "Gravenberch"
+      "elementId": 371,
+      "playerName": "Gravenberch",
+      "position": "MID",
+      "clubName": "Liverpool"
     },
     {
       "pickNumber": 132,
+      "round": 11,
       "seasonPoints": 12,
       "managerId": 1377,
-      "playerName": "Konsa"
+      "elementId": 31,
+      "playerName": "Konsa",
+      "position": "DEF",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 133,
+      "round": 12,
       "seasonPoints": 23,
       "managerId": 1377,
-      "playerName": "Murillo"
+      "elementId": 472,
+      "playerName": "Murillo",
+      "position": "DEF",
+      "clubName": "Nott'm Forest"
     },
     {
       "pickNumber": 134,
+      "round": 12,
       "seasonPoints": 2,
       "managerId": 99786,
-      "playerName": "Beto"
+      "elementId": 248,
+      "playerName": "Beto",
+      "position": "FWD",
+      "clubName": "Everton"
     },
     {
       "pickNumber": 135,
+      "round": 12,
       "seasonPoints": 28,
       "managerId": 1471,
-      "playerName": "Trafford"
+      "elementId": 385,
+      "playerName": "Trafford",
+      "position": "GKP",
+      "clubName": "Leeds"
     },
     {
       "pickNumber": 136,
+      "round": 12,
       "seasonPoints": 8,
       "managerId": 10210,
-      "playerName": "Dalot"
+      "elementId": 417,
+      "playerName": "Dalot",
+      "position": "DEF",
+      "clubName": "Man Utd"
     },
     {
       "pickNumber": 137,
+      "round": 12,
       "seasonPoints": 14,
       "managerId": 1501,
-      "playerName": "Tielemans"
+      "elementId": 43,
+      "playerName": "Tielemans",
+      "position": "MID",
+      "clubName": "Man Utd"
     },
     {
       "pickNumber": 138,
+      "round": 12,
       "seasonPoints": 2,
       "managerId": 1947,
-      "playerName": "Richarlison"
+      "elementId": 527,
+      "playerName": "Richarlison",
+      "position": "FWD",
+      "clubName": "Spurs"
     },
     {
       "pickNumber": 139,
+      "round": 12,
       "seasonPoints": 26,
       "managerId": 1425,
-      "playerName": "Emersonn"
+      "elementId": 316,
+      "playerName": "Emersonn",
+      "position": "FWD",
+      "clubName": "Ipswich Town"
     },
     {
       "pickNumber": 140,
+      "round": 12,
       "seasonPoints": 9,
       "managerId": 26227,
-      "playerName": "Khusanov"
+      "elementId": 393,
+      "playerName": "Khusanov",
+      "position": "DEF",
+      "clubName": "Man City"
     },
     {
       "pickNumber": 141,
+      "round": 12,
       "seasonPoints": 21,
       "managerId": 1530,
-      "playerName": "White"
+      "elementId": 10,
+      "playerName": "White",
+      "position": "DEF",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 142,
+      "round": 12,
       "seasonPoints": 4,
       "managerId": 10375,
-      "playerName": "Ngumoha"
+      "elementId": 369,
+      "playerName": "Ngumoha",
+      "position": "MID",
+      "clubName": "Liverpool"
     },
     {
       "pickNumber": 143,
+      "round": 12,
       "seasonPoints": 7,
       "managerId": 29975,
-      "playerName": "Nmecha"
+      "elementId": 347,
+      "playerName": "Nmecha",
+      "position": "FWD",
+      "clubName": "Leeds"
     },
     {
       "pickNumber": 144,
+      "round": 12,
       "seasonPoints": 14,
       "managerId": 1857,
-      "playerName": "Horníček"
+      "elementId": 566,
+      "playerName": "Horníček",
+      "position": "GKP",
+      "clubName": "Newcastle"
     },
     {
       "pickNumber": 145,
+      "round": 13,
       "seasonPoints": 10,
       "managerId": 1857,
-      "playerName": "Canvot"
+      "elementId": 203,
+      "playerName": "Canvot",
+      "position": "DEF",
+      "clubName": "Crystal Palace"
     },
     {
       "pickNumber": 146,
+      "round": 13,
       "seasonPoints": 31,
       "managerId": 29975,
-      "playerName": "Hall"
+      "elementId": 449,
+      "playerName": "Hall",
+      "position": "DEF",
+      "clubName": "Newcastle"
     },
     {
       "pickNumber": 147,
+      "round": 13,
       "seasonPoints": 9,
       "managerId": 10375,
-      "playerName": "Martinez"
+      "elementId": 28,
+      "playerName": "Martinez",
+      "position": "GKP",
+      "clubName": "Chelsea"
     },
     {
       "pickNumber": 148,
+      "round": 13,
       "seasonPoints": 14,
       "managerId": 1530,
-      "playerName": "Ballard"
+      "elementId": 532,
+      "playerName": "Ballard",
+      "position": "DEF",
+      "clubName": "Sunderland"
     },
     {
       "pickNumber": 149,
+      "round": 13,
       "seasonPoints": 27,
       "managerId": 26227,
-      "playerName": "Branthwaite"
+      "elementId": 230,
+      "playerName": "Branthwaite",
+      "position": "DEF",
+      "clubName": "Everton"
     },
     {
       "pickNumber": 150,
+      "round": 13,
       "seasonPoints": 24,
       "managerId": 1425,
-      "playerName": "Jacquet"
+      "elementId": 362,
+      "playerName": "Jacquet",
+      "position": "DEF",
+      "clubName": "Liverpool"
     },
     {
       "pickNumber": 151,
+      "round": 13,
       "seasonPoints": 10,
       "managerId": 1947,
-      "playerName": "Maguire"
+      "elementId": 418,
+      "playerName": "Maguire",
+      "position": "DEF",
+      "clubName": "Man Utd"
     },
     {
       "pickNumber": 152,
+      "round": 13,
       "seasonPoints": 4,
       "managerId": 1501,
-      "playerName": "Welbeck"
+      "elementId": 136,
+      "playerName": "Welbeck",
+      "position": "FWD",
+      "clubName": "Chelsea"
     },
     {
       "pickNumber": 153,
+      "round": 13,
       "seasonPoints": 0,
       "managerId": 10210,
-      "playerName": "Wright"
+      "elementId": 193,
+      "playerName": "Wright",
+      "position": "FWD",
+      "clubName": "Coventry City"
     },
     {
       "pickNumber": 154,
+      "round": 13,
       "seasonPoints": 3,
       "managerId": 1471,
-      "playerName": "Awoniyi"
+      "elementId": 492,
+      "playerName": "Awoniyi",
+      "position": "FWD",
+      "clubName": "Coventry City"
     },
     {
       "pickNumber": 155,
+      "round": 13,
       "seasonPoints": 23,
       "managerId": 99786,
-      "playerName": "Kayode"
+      "elementId": 88,
+      "playerName": "Kayode",
+      "position": "DEF",
+      "clubName": "Brentford"
     },
     {
       "pickNumber": 156,
+      "round": 13,
       "seasonPoints": 4,
       "managerId": 1377,
-      "playerName": "Wood"
+      "elementId": 490,
+      "playerName": "Wood",
+      "position": "FWD",
+      "clubName": "Nott'm Forest"
     },
     {
       "pickNumber": 157,
+      "round": 14,
       "seasonPoints": 18,
       "managerId": 1377,
-      "playerName": "Leno"
+      "elementId": 250,
+      "playerName": "Leno",
+      "position": "GKP",
+      "clubName": "Fulham"
     },
     {
       "pickNumber": 158,
+      "round": 14,
       "seasonPoints": 13,
       "managerId": 99786,
-      "playerName": "F.Kadıoğlu"
+      "elementId": 113,
+      "playerName": "F.Kadıoğlu",
+      "position": "DEF",
+      "clubName": "Brighton"
     },
     {
       "pickNumber": 159,
+      "round": 14,
       "seasonPoints": 11,
       "managerId": 1471,
-      "playerName": "Garner"
+      "elementId": 239,
+      "playerName": "Garner",
+      "position": "MID",
+      "clubName": "Everton"
     },
     {
       "pickNumber": 160,
+      "round": 14,
       "seasonPoints": 22,
       "managerId": 10210,
-      "playerName": "Dunk"
+      "elementId": 116,
+      "playerName": "Dunk",
+      "position": "DEF",
+      "clubName": "Brighton"
     },
     {
       "pickNumber": 161,
+      "round": 14,
       "seasonPoints": 9,
       "managerId": 1501,
-      "playerName": "Petrović"
+      "elementId": 57,
+      "playerName": "Petrović",
+      "position": "GKP",
+      "clubName": "Bournemouth"
     },
     {
       "pickNumber": 162,
+      "round": 14,
       "seasonPoints": 8,
       "managerId": 1947,
-      "playerName": "Aina"
+      "elementId": 473,
+      "playerName": "Aina",
+      "position": "DEF",
+      "clubName": "Nott'm Forest"
     },
     {
       "pickNumber": 163,
+      "round": 14,
       "seasonPoints": 42,
       "managerId": 1425,
-      "playerName": "Bogle"
+      "elementId": 330,
+      "playerName": "Bogle",
+      "position": "DEF",
+      "clubName": "Leeds"
     },
     {
       "pickNumber": 164,
+      "round": 14,
       "seasonPoints": 0,
       "managerId": 26227,
-      "playerName": "Pope"
+      "elementId": 442,
+      "playerName": "Pope",
+      "position": "GKP",
+      "clubName": "Newcastle"
     },
     {
       "pickNumber": 165,
+      "round": 14,
       "seasonPoints": 15,
       "managerId": 1530,
-      "playerName": "Isidor"
+      "elementId": 553,
+      "playerName": "Isidor",
+      "position": "FWD",
+      "clubName": "Sunderland"
     },
     {
       "pickNumber": 166,
+      "round": 14,
       "seasonPoints": 17,
       "managerId": 10375,
-      "playerName": "Robertson"
+      "elementId": 502,
+      "playerName": "Robertson",
+      "position": "DEF",
+      "clubName": "Spurs"
     },
     {
       "pickNumber": 167,
+      "round": 14,
       "seasonPoints": 16,
       "managerId": 29975,
-      "playerName": "Damsgaard"
+      "elementId": 96,
+      "playerName": "Damsgaard",
+      "position": "MID",
+      "clubName": "Brentford"
     },
     {
       "pickNumber": 168,
+      "round": 14,
       "seasonPoints": 15,
       "managerId": 1857,
-      "playerName": "Ndoye"
+      "elementId": 483,
+      "playerName": "Ndoye",
+      "position": "MID",
+      "clubName": "Nott'm Forest"
     },
     {
       "pickNumber": 169,
+      "round": 15,
       "seasonPoints": 9,
       "managerId": 1857,
-      "playerName": "Shaw"
+      "elementId": 423,
+      "playerName": "Shaw",
+      "position": "DEF",
+      "clubName": "Man Utd"
     },
     {
       "pickNumber": 170,
+      "round": 15,
       "seasonPoints": 0,
       "managerId": 29975,
-      "playerName": "Vicario"
+      "elementId": 494,
+      "playerName": "Vicario",
+      "position": "GKP",
+      "clubName": "Spurs"
     },
     {
       "pickNumber": 171,
+      "round": 15,
       "seasonPoints": 27,
       "managerId": 10375,
-      "playerName": "Mykolenko"
+      "elementId": 233,
+      "playerName": "Mykolenko",
+      "position": "DEF",
+      "clubName": "Everton"
     },
     {
       "pickNumber": 172,
+      "round": 15,
       "seasonPoints": 0,
       "managerId": 1530,
-      "playerName": "Penders"
+      "elementId": 557,
+      "playerName": "Penders",
+      "position": "GKP",
+      "clubName": "Chelsea"
     },
     {
       "pickNumber": 173,
+      "round": 15,
       "seasonPoints": 0,
       "managerId": 26227,
-      "playerName": "Mamardashvili"
+      "elementId": 351,
+      "playerName": "Mamardashvili",
+      "position": "GKP",
+      "clubName": "Liverpool"
     },
     {
       "pickNumber": 174,
+      "round": 15,
       "seasonPoints": 3,
       "managerId": 1425,
-      "playerName": "Muniz"
+      "elementId": 271,
+      "playerName": "Muniz",
+      "position": "FWD",
+      "clubName": "Fulham"
     },
     {
       "pickNumber": 175,
+      "round": 15,
       "seasonPoints": 4,
       "managerId": 1947,
-      "playerName": "Andrey Santos"
+      "elementId": 162,
+      "playerName": "Andrey Santos",
+      "position": "MID",
+      "clubName": "Man Utd"
     },
     {
       "pickNumber": 176,
+      "round": 15,
       "seasonPoints": 4,
       "managerId": 1501,
-      "playerName": "Simms"
+      "elementId": 195,
+      "playerName": "Simms",
+      "position": "FWD",
+      "clubName": "Coventry City"
     },
     {
       "pickNumber": 177,
+      "round": 15,
       "seasonPoints": 0,
       "managerId": 10210,
-      "playerName": "Arrizabalaga"
+      "elementId": 2,
+      "playerName": "Arrizabalaga",
+      "position": "GKP",
+      "clubName": "Arsenal"
     },
     {
       "pickNumber": 178,
+      "round": 15,
       "seasonPoints": 0,
       "managerId": 1471,
-      "playerName": "Rulli"
+      "elementId": 587,
+      "playerName": "Rulli",
+      "position": "GKP",
+      "clubName": "Man City"
     },
     {
       "pickNumber": 179,
+      "round": 15,
       "seasonPoints": 0,
       "managerId": 99786,
-      "playerName": "Perri"
+      "elementId": 326,
+      "playerName": "Perri",
+      "position": "GKP",
+      "clubName": "Leeds"
     },
     {
       "pickNumber": 180,
+      "round": 15,
       "seasonPoints": 14,
       "managerId": 1377,
-      "playerName": "Tonali"
+      "elementId": 455,
+      "playerName": "Tonali",
+      "position": "MID",
+      "clubName": "Spurs"
     }
   ]
 }

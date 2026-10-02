@@ -66,8 +66,11 @@ export function detectLuPostMark(context, replay, tradeLedger, lore) {
     }
   }
 
+  // "Won the Belt" is only true once the season is actually over -- being 1st
+  // after the latest finished gw is just today's table.
+  const seasonComplete = context.matches.length > 0 && context.matches.every((m) => m.finished);
   const finalGw = context.finishedGws[context.finishedGws.length - 1];
-  if (finalGw) {
+  if (finalGw && seasonComplete) {
     const finalRow = replay.at(finalGw).standings.find((r) => r.managerId === lu.id);
     if (finalRow?.rank === 1) {
       storylines.push({

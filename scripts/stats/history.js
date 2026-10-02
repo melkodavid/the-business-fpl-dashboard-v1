@@ -52,6 +52,10 @@ export function computeHistory(context, historySeasonsData, currentSeasonLabel) 
   for (const season of seasons) {
     if (!season.table) continue;
     const seasonSize = season.table.length;
+    // Same reasoning as the champion gate above: a mid-season position isn't
+    // a finish yet, so it must not count toward top-4 / bottom-3 / last-place
+    // tallies (it still feeds W/D/L, points and the live average rank).
+    const positionIsFinal = !(season.isCurrent && !seasonComplete);
     for (const row of season.table) {
       if (!row.managerKey) continue;
       if (!agg.has(row.managerKey)) {
@@ -84,9 +88,11 @@ export function computeHistory(context, historySeasonsData, currentSeasonLabel) 
       a.wSum += row.w ?? 0;
       a.dSum += row.d ?? 0;
       a.lSum += row.l ?? 0;
-      if (row.rank <= 4) a.top4++;
-      if (row.rank > seasonSize - 3) a.bottom3++;
-      if (row.rank === seasonSize) a.lastPlace++;
+      if (positionIsFinal) {
+        if (row.rank <= 4) a.top4++;
+        if (row.rank > seasonSize - 3) a.bottom3++;
+        if (row.rank === seasonSize) a.lastPlace++;
+      }
       if (row.rank < a.bestRank) a.bestRank = row.rank;
     }
   }

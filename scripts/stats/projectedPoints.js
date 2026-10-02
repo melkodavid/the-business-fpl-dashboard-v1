@@ -3,16 +3,22 @@
 // researched, third-party snapshot; see that file's own _comment for the
 // source and caveats). Purely for fun preseason banter until real points
 // start coming in via computeDraftGrades, which this has nothing to do with.
+// Projections are full-season totals, so anything compared against points
+// actually earned so far has to be scaled to the gameweeks played ("pace").
+export const SEASON_LENGTH_GWS = 38;
+
 export function computeProjectedPoints(context, projectionsData) {
   const projections = projectionsData.projections ?? {};
   const fallback = projectionsData.fallbackPoints ?? 0;
 
   const teamPoints = new Map(context.managers.list.map((m) => [m.id, 0]));
+  const perPick = [];
 
   for (const pick of context.draftChoices) {
     const player = context.players.byId.get(pick.elementId);
     const pts = player?.code != null ? (projections[player.code] ?? fallback) : fallback;
     teamPoints.set(pick.managerId, teamPoints.get(pick.managerId) + pts);
+    perPick.push({ pickNumber: pick.index, managerId: pick.managerId, projectedPoints: pts });
   }
 
   const leaderboard = context.managers.list
@@ -25,6 +31,9 @@ export function computeProjectedPoints(context, projectionsData) {
 
   return {
     leaderboard,
+    perPick,
+    gwsPlayed: context.finishedGws.length,
+    seasonLengthGws: SEASON_LENGTH_GWS,
     source: projectionsData.source ?? null,
     pulledAt: projectionsData.pulledAt ?? null,
   };

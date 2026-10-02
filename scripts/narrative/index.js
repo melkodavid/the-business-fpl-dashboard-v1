@@ -56,8 +56,9 @@ export function buildNarrativeLayer(context, history, loreRaw, templates, statMo
   const selectionByGw = selectSeasonNarrative(allStorylines, context, replay);
 
   const recapsByGw = {};
+  const variantHistory = new Map(); // wording rotation, carried forward gw by gw
   for (const gw of context.finishedGws) {
-    recapsByGw[gw] = renderRecap(selectionByGw[gw], context, lore, templates);
+    recapsByGw[gw] = renderRecap(selectionByGw[gw], context, lore, templates, variantHistory);
   }
 
   const seasonArcs = computeSeasonArcs(allStorylines, generationWar.matrix, summarize01sVsRest);

@@ -1,42 +1,32 @@
 {
   "gw": 2,
   "headline": {
-    "type": "table-new-leader",
+    "type": "trade-ex-factor",
     "personKeys": [
-      "carmine",
-      "noah"
+      "zac",
+      "carmine"
     ],
-    "text": "The table has a new #1: Carmine Francella.",
+    "text": "Zac Collins cut Hall loose. Hall just scored 11 against them.",
     "facts": {
-      "newLeaderId": 1501,
-      "previousLeaderId": 1425
+      "oldManagerId": 29975,
+      "opponentId": 1501,
+      "elementId": 449,
+      "playerName": "Hall",
+      "points": 11
     },
     "gw": 2
   },
   "secondaries": [
     {
-      "type": "record-blowout",
+      "type": "table-new-leader",
       "personKeys": [
         "carmine",
-        "zac"
-      ],
-      "text": "24-point beatdown: Carmine Francella over Zac Collins. No mercy.",
-      "facts": {
-        "winnerId": 1501,
-        "loserId": 29975,
-        "margin": 24
-      },
-      "gw": 2
-    },
-    {
-      "type": "record-low-win",
-      "personKeys": [
         "noah"
       ],
-      "text": "Noah Palladino won this week with just 32 points.",
+      "text": "Top spot belongs to Carmine Francella now. Noah Palladino will want it back.",
       "facts": {
-        "managerId": 1425,
-        "score": 32
+        "newLeaderId": 1501,
+        "previousLeaderId": 1425
       },
       "gw": 2
     },
@@ -57,38 +47,27 @@
       "gw": 2
     },
     {
-      "type": "gauntlet-watch",
+      "type": "lu-post-mark-tracker",
       "personKeys": [
-        "carmine"
+        "lu"
       ],
-      "text": "Carmine Francella is about to walk into the Palladino gauntlet -- 3 in a row.",
+      "text": "The Life After Mark tracker: Lu Palladino, rank 10.",
       "facts": {
-        "managerId": 1501,
-        "startGw": 15,
-        "length": 3,
-        "opponentIds": [
-          1425,
-          1530,
-          1377
-        ]
+        "managerId": 1377,
+        "rank": 10,
+        "total": 0
       },
       "gw": 2
     },
     {
-      "type": "gauntlet-watch",
+      "type": "generation-sweep",
       "personKeys": [
-        "carmine"
+        "pat"
       ],
-      "text": "Coming up for Carmine Francella: 3 consecutive fixtures against the family. All of it.",
+      "text": "97s vs. everyone else this week: 97s wins all 1.",
       "facts": {
-        "managerId": 1501,
-        "startGw": 26,
-        "length": 3,
-        "opponentIds": [
-          1425,
-          1530,
-          1377
-        ]
+        "generation": "97s",
+        "count": 1
       },
       "gw": 2
     }

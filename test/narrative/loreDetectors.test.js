@@ -88,6 +88,36 @@ test("palladinoGauntlet: watches in advance, tracks progress, flags a clean swee
   assert.equal(swept[0].personKeys[0], "pat");
 });
 
+test("palladinoGauntlet: announces only the next run, and only in the few weeks before it starts", () => {
+  const lore = loadLore({
+    people: [
+      { personKey: "lu", family: { group: "palladino", pair: "lu-muk", relation: "brother" } },
+      { personKey: "muk", family: { group: "palladino", pair: "lu-muk", relation: "brother" } },
+      { personKey: "anthony", family: { group: "palladino", pair: "anthony-noah", relation: "brother" } },
+      { personKey: "pat" },
+      { personKey: "ibrahim" },
+    ],
+  });
+  // Pat faces the family GW10-12 and again GW20-22; every other week is Ibrahim.
+  const opponentByGw = (gw) => (gw >= 10 && gw <= 12 ? [1, 2, 3][gw - 10] : gw >= 20 && gw <= 22 ? [1, 2, 3][gw - 20] : 6);
+  const matches = Array.from({ length: 22 }, (_, i) => ({
+    event: i + 1, finished: i + 1 <= 8, homeManagerId: 5, awayManagerId: opponentByGw(i + 1), homePoints: 50, awayPoints: 40,
+  }));
+  const context = {
+    managers: managers([
+      { id: 5, personKey: "pat" }, { id: 1, personKey: "lu" }, { id: 2, personKey: "muk" },
+      { id: 3, personKey: "anthony" }, { id: 6, personKey: "ibrahim" },
+    ]),
+    matches,
+    finishedGws: [1, 2, 3, 4, 5, 6, 7, 8],
+  };
+  const watches = detectPalladinoGauntlet(context, lore).filter((s) => s.type === "gauntlet-watch");
+  // GW10 run is announced from GW7 (3 weeks out) -- never from GW1-6, and never the GW20 run yet.
+  assert.deepEqual(watches.map((s) => s.gw), [7, 8]);
+  assert.ok(watches.every((s) => s.facts.startGw === 10));
+  assert.ok(watches.every((s) => s.dedupeKey === "gauntlet-watch:5:10"));
+});
+
 test("generationWar: a generation sweeping every cross-generation matchup that gw fires generation-sweep, and the matrix tallies correctly", () => {
   const lore = loadLore({
     people: [
