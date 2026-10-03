@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home C — Trophy Room</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Bebas+Neue&display=swap" rel="stylesheet">
+<!-- the site's own stylesheet, so the trading cards here are the real ones -->
+<link rel="stylesheet" href="../css/style.css">
+<style id="local">
+  /* HOME C -- "Trophy Room". The Home page becomes a trophy cabinet: the
+     reigning champion's real trading card sits under a spotlight, belt beside
+     it, and the rest of the league is dealt out as the actual rarity cards from
+     the Cards page. Click any card to play as that manager. */
+  body { background: radial-gradient(900px 500px at 12% -8%, rgba(106,47,168,0.3), transparent 60%), radial-gradient(800px 460px at 100% 0%, rgba(0,255,133,0.07), transparent 60%), radial-gradient(900px 500px at 50% 118%, rgba(201,166,96,0.12), transparent 60%), #0a0b12; }
+  body::before { display: none; }
+  .head { text-align: center; padding: 42px 0 8px; }
+  .eyebrow { margin: 0 0 8px; font: 700 12px "Archivo"; letter-spacing: 0.4em; text-transform: uppercase; color: var(--gold); animation: fadeUp .9s .1s both; }
+  .title { margin: 0; font: italic 500 clamp(54px, 9vw, 92px)/1 "Cormorant Garamond"; background: linear-gradient(100deg, #8a7a5a 20%, #fff7df 45%, #ecd9a3 52%, #8a7a5a 80%) 0 0 / 250% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: titleIn 1.3s .2s cubic-bezier(.2,.9,.2,1) both, shimmer 7s 1.6s ease-in-out infinite; }
+  @keyframes titleIn { from { opacity: 0; filter: blur(12px); transform: translateY(24px); } to { opacity: 1; filter: none; transform: none; } }
+  @keyframes shimmer { from { background-position: 150% 0; } to { background-position: -50% 0; } }
+
+  .room { position: relative; display: grid; grid-template-columns: 1fr 300px 1fr; align-items: center; gap: 28px; padding: 40px 0 30px; }
+  .spot { position: absolute; left: 50%; top: -20px; width: 640px; height: 560px; transform: translateX(-50%); pointer-events: none; z-index: 0;
+    background: conic-gradient(from 180deg at 50% 0%, transparent 162deg, rgba(255,235,170,0.2) 175deg, rgba(255,235,170,0.24) 180deg, rgba(255,235,170,0.2) 185deg, transparent 198deg);
+    -webkit-mask-image: linear-gradient(180deg, #000, transparent 88%); mask-image: linear-gradient(180deg, #000, transparent 88%); animation: spotpulse 5s ease-in-out infinite; }
+  @keyframes spotpulse { 50% { opacity: 0.65; } }
+  .floor { position: absolute; left: 50%; bottom: 8px; width: 380px; height: 40px; transform: translateX(-50%); background: radial-gradient(ellipse, rgba(236,217,163,0.35), transparent 70%); filter: blur(6px); animation: spotpulse 5s ease-in-out infinite; }
+  .centre { position: relative; z-index: 1; animation: rise 1.3s .5s cubic-bezier(.2,.9,.2,1) both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(60px) scale(0.9); } to { opacity: 1; transform: none; } }
+  .centre .tcg { box-shadow: 0 40px 60px -30px rgba(0,0,0,0.95), 0 0 70px -10px var(--rc); }
+  .side { position: relative; z-index: 1; animation: fadeUp 1s 1s both; }
+  .side.r { text-align: right; }
+  .side small { display: block; font: 800 11px "Archivo"; letter-spacing: 0.26em; text-transform: uppercase; color: var(--gold); }
+  .side h2 { margin: 6px 0 8px; font: italic 600 clamp(34px, 4.6vw, 52px)/1 "Cormorant Garamond"; }
+  .side p { margin: 0; color: var(--muted); line-height: 1.6; font-size: 14px; }
+  .side .big { margin: 8px 0 2px; font: 400 64px/1 "Bebas Neue"; color: var(--gold-b); letter-spacing: 0.02em; text-shadow: 0 0 24px rgba(236,217,163,0.4); }
+  .side .belt { animation: bob 4s ease-in-out infinite; margin: 8px 0; }
+  @keyframes bob { 50% { transform: translateY(-6px) rotate(-1.5deg); } }
+  .sp { position: absolute; z-index: 2; width: 4px; height: 4px; border-radius: 50%; background: #fff6d0; box-shadow: 0 0 10px 2px rgba(255,230,150,0.8); animation: twinkle 3s ease-in-out infinite; pointer-events: none; }
+  @keyframes twinkle { 0%, 100% { opacity: 0; transform: scale(0.4); } 50% { opacity: 1; transform: scale(1.2) translateY(-12px); } }
+
+  .shelf-head { display: flex; align-items: center; gap: 16px; margin: 26px 0 22px; }
+  .shelf-head h3 { margin: 0; font: 800 12px "Archivo"; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); }
+  .shelf-head i { flex: 1; height: 1px; background: linear-gradient(90deg, var(--gold), transparent); }
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(236px, 1fr)); gap: 40px 24px; padding: 14px 0 50px; }
+  .pick { position: relative; display: block; padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; animation: deal .8s calc(var(--i) * 70ms + 1.2s) cubic-bezier(.2,.9,.2,1) both; }
+  @keyframes deal { from { opacity: 0; transform: translate(calc((50vw - 50%) * 0.2), -120px) rotate(-6deg) scale(0.8); } to { opacity: 1; transform: none; } }
+  .pick .go { position: absolute; left: 50%; bottom: -26px; transform: translate(-50%, 6px); white-space: nowrap; font: 800 10px "Archivo"; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-b); opacity: 0; transition: opacity .25s, transform .25s; }
+  .pick:hover .go, .pick:focus-visible .go { opacity: 1; transform: translate(-50%, 0); }
+  @media (max-width: 860px) { .room { grid-template-columns: 1fr; justify-items: center; text-align: center; } .centre { width: 280px; } .side, .side.r { text-align: center; } .spot { width: 420px; } }
+</style>
+</head>
+<body>
+<canvas class="net" id="net"></canvas>
+<div class="page">
+  <header class="head"><p class="eyebrow">Who's watching?</p><h1 class="title">The Business</h1></header>
+  <section class="room" id="room"></section>
+  <div class="shelf-head"><h3>Choose your card</h3><i></i></div>
+  <section class="cards" id="cards"></section>
+</div>
+<div id="banner"></div>
+
+<script type="module">
+import { loadHome, startNetwork, newsBannerHtml, selectManager, sharedCss } from "./home-shared.js";
+import { careerCardFrontHtml } from "../js/lib/cardRender.js";
+document.head.insertAdjacentHTML("beforeend", `<style>${sharedCss}</style>`);
+
+const { people, champion, news, lookup, ladder } = await loadHome();
+startNetwork(document.getElementById("net"), { nodeCount: 16 });
+document.getElementById("banner").innerHTML = newsBannerHtml(news);
+
+// the card renderer uses site-root image paths; this page lives one folder down
+const cardFor = (p) => careerCardFrontHtml(p.career, lookup, { isReigningChampion: p.isReigning, ladder: ladder.get(p.key) }).replaceAll('src="assets/', 'src="../assets/');
+const beltSvg = (s) => `<svg class="belt" width="${s}" height="${s * 0.4}" viewBox="0 0 100 40"><rect x="0" y="15" width="34" height="10" rx="3" fill="#d9a53c"/><rect x="66" y="15" width="34" height="10" rx="3" fill="#d9a53c"/><rect x="28" y="4" width="44" height="32" rx="7" fill="#c9922e" stroke="#f7e2a4" stroke-width="1.5"/><rect x="34" y="10" width="32" height="20" rx="4" fill="#8a5c14"/><text x="50" y="25" text-anchor="middle" font-size="16" font-weight="700" fill="#f7e2a4">★</text></svg>`;
+const sparks = Array.from({ length: 14 }, (_, i) => `<i class="sp" style="left:${6 + ((i * 47) % 88)}%;top:${8 + ((i * 31) % 82)}%;animation-delay:${(i * 0.4).toFixed(1)}s"></i>`).join("");
+
+document.getElementById("room").innerHTML = `
+  <div class="spot"></div><div class="floor"></div>${sparks}
+  <div class="side">
+    <small>Reigning champion</small>
+    <h2>${champion.name}</h2>
+    <p>Holder of the Belt. ${champion.titles} titles across ${champion.seasons} seasons, a ${Math.round(champion.winPct)}% win rate and the most decorated card in the league.</p>
+  </div>
+  <button class="pick centre" data-key="${champion.key}" style="animation:none">${cardFor(champion)}<span class="go">Play as ${champion.name.split(" ")[0]} →</span></button>
+  <div class="side r">
+    <small>The Belt</small>
+    ${beltSvg(150)}
+    <div class="big">${champion.w}</div>
+    <p>career wins and counting. Every win moves a card closer to the next rarity.</p>
+  </div>`;
+
+document.getElementById("cards").innerHTML = people.filter((p) => p.key !== champion.key).map((p, i) =>
+  `<button class="pick" style="--i:${i}" data-key="${p.key}">${cardFor(p)}<span class="go">Play as ${p.name.split(" ")[0]} →</span></button>`).join("");
+
+// mouse-follow tilt + glare on the real cards
+if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  let active = null;
+  const reset = (el) => { if (!el) return; ["--mx", "--my", "--rx", "--ry"].forEach((v) => el.style.removeProperty(v)); el.classList.remove("is-tilting"); };
+  document.addEventListener("pointermove", (e) => {
+    if (e.pointerType === "touch") return;
+    const card = e.target.closest(".tcg");
+    if (card !== active) { reset(active); active = card; }
+    if (!card) return;
+    const r = card.getBoundingClientRect(), px = (e.clientX - r.left) / r.width, py = (e.clientY - r.top) / r.height;
+    card.classList.add("is-tilting");
+    card.style.setProperty("--mx", `${(px * 100).toFixed(1)}%`); card.style.setProperty("--my", `${(py * 100).toFixed(1)}%`);
+    card.style.setProperty("--rx", `${((px - 0.5) * 14).toFixed(2)}deg`); card.style.setProperty("--ry", `${(-(py - 0.5) * 14).toFixed(2)}deg`);
+  });
+}
+document.addEventListener("click", (e) => { const b = e.target.closest(".pick"); if (b) selectManager(b.dataset.key); });
+</script>
+</body>
+</html>

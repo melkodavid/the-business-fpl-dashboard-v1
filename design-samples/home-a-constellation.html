@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home A — Constellation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style id="local">
+  /* HOME A -- "Constellation". The current Home page, elevated: the same dark
+     gold-and-plum world and drifting pass map, now interactive (lines near the
+     cursor glow), with a cinematic title reveal, a spinning-gold-ring champion
+     spotlight and tilt-and-glare roster tiles that count their records up. */
+  .hero { position: relative; text-align: center; padding: 70px 0 40px; }
+  .giant { position: absolute; left: 50%; top: 10px; transform: translateX(-50%) translate(var(--px, 0px), var(--py, 0px)); font: 400 380px/1 "Cormorant Garamond"; font-style: italic; color: transparent;
+    -webkit-text-stroke: 1.5px rgba(201,166,96,0.2); user-select: none; pointer-events: none; transition: transform .25s ease-out; animation: fadeUp 1.6s both; }
+  .giant::after { content: "X"; position: absolute; inset: 0; background: linear-gradient(100deg, transparent 38%, rgba(236,217,163,0.55) 50%, transparent 62%) 0 0 / 260% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-stroke: 0; animation: sweep 6s 2s ease-in-out infinite; }
+  @keyframes sweep { from { background-position: 160% 0; } to { background-position: -60% 0; } }
+  .eyebrow { position: relative; margin: 0 0 14px; font: 700 12px "Archivo"; letter-spacing: 0.4em; text-transform: uppercase; color: var(--gold); animation: fadeUp .9s .1s both; }
+  .title { position: relative; margin: 0; font: italic 500 clamp(64px, 12vw, 128px)/1 "Cormorant Garamond"; letter-spacing: 0.01em;
+    background: linear-gradient(100deg, #8a7a5a 20%, #fff7df 45%, #ecd9a3 52%, #8a7a5a 80%) 0 0 / 250% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
+    animation: titleIn 1.4s .2s cubic-bezier(.2,.9,.2,1) both, shimmer 7s 1.8s ease-in-out infinite; }
+  @keyframes titleIn { from { opacity: 0; filter: blur(14px); letter-spacing: 0.12em; transform: translateY(30px); } to { opacity: 1; filter: none; transform: none; } }
+  @keyframes shimmer { from { background-position: 150% 0; } to { background-position: -50% 0; } }
+  .est { position: relative; margin: 14px 0 0; font: 600 11px "Archivo"; letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted); animation: fadeUp .9s .8s both; }
+  .rule { position: relative; display: flex; align-items: center; justify-content: center; gap: 12px; margin: 22px auto 0; width: 220px; animation: fadeUp .9s 1s both; }
+  .rule i { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); } .rule i:last-child { transform: scaleX(-1); }
+  .rule b { width: 6px; height: 6px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 12px var(--lime); animation: blip 2s infinite; }
+  .cue { position: relative; margin-top: 26px; font: 600 11px "Archivo"; letter-spacing: 0.26em; text-transform: uppercase; color: var(--muted); animation: fadeUp .9s 1.3s both; }
+  .cue::after { content: ""; display: block; width: 1px; height: 28px; margin: 10px auto 0; background: linear-gradient(var(--gold), transparent); animation: drop 2s ease-in-out infinite; }
+  @keyframes drop { 0% { transform: scaleY(0); transform-origin: top; } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
+
+  /* champion spotlight */
+  .champ { position: relative; display: flex; align-items: center; gap: 22px; margin: 10px 0 34px; padding: 22px 28px; border-radius: 6px; overflow: hidden;
+    background: linear-gradient(120deg, rgba(217,165,60,0.2), rgba(217,165,60,0.04) 60%), rgba(18,20,29,0.7); border: 1px solid rgba(217,165,60,0.4); box-shadow: 0 24px 50px -24px rgba(0,0,0,0.8), 0 0 60px -20px rgba(217,165,60,0.35); }
+  .champ::before { content: ""; position: absolute; inset: 0; background: linear-gradient(105deg, transparent 40%, rgba(255,240,190,0.16) 50%, transparent 60%); transform: translateX(-120%); animation: champsheen 6s 2s ease-in-out infinite; }
+  @keyframes champsheen { 40%, 100% { transform: translateX(120%); } }
+  .ring { position: relative; flex-shrink: 0; width: 92px; height: 92px; border-radius: 50%; padding: 4px; background: conic-gradient(from var(--spin), #fff3b8, #ffc93f, #a86a07, #fff3b8); animation: spin 6s linear infinite; box-shadow: 0 0 30px rgba(255,201,63,0.45); }
+  .ring .av { --s: 84px; border: 3px solid var(--bg); }
+  .champ .txt small { display: block; font: 800 11px "Archivo"; letter-spacing: 0.26em; text-transform: uppercase; color: var(--gold); }
+  .champ .txt h2 { margin: 4px 0 4px; font: italic 600 clamp(30px, 5vw, 44px)/1 "Cormorant Garamond"; }
+  .champ .txt span { color: var(--gold-b); letter-spacing: 0.08em; font-size: 14px; }
+  .champ .belt { margin-left: auto; animation: bob 4s ease-in-out infinite; }
+  @keyframes bob { 50% { transform: translateY(-6px) rotate(-1.5deg); } }
+  .champ .sp { position: absolute; width: 4px; height: 4px; border-radius: 50%; background: #fff6d0; box-shadow: 0 0 10px 2px rgba(255,230,150,0.8); animation: twinkle 3s ease-in-out infinite; }
+  @keyframes twinkle { 0%, 100% { opacity: 0; transform: scale(0.4); } 50% { opacity: 1; transform: scale(1.2) translateY(-10px); } }
+
+  /* roster tiles */
+  .roster { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 18px; padding-bottom: 40px; }
+  .rv { opacity: 0; translate: 0 26px; }
+  .rv.in { opacity: 1; translate: 0 0; transition: opacity .7s ease, translate .8s cubic-bezier(.2,.9,.2,1), transform .5s cubic-bezier(.2,.8,.2,1); transition-delay: calc(var(--i, 0) * 70ms), calc(var(--i, 0) * 70ms), 0s; }
+  .tile { position: relative; border-radius: 6px; padding: 1.5px; background: var(--line); cursor: pointer; text-align: left; border: 0; color: inherit; font: inherit; }
+  .tile.in.tilt.tilting { transition: opacity .7s ease, translate .8s ease, transform .08s linear; transition-delay: 0s; }
+  .tile-in { position: relative; display: flex; align-items: center; gap: 16px; padding: 16px 18px 16px; border-radius: 5px; overflow: hidden; background: linear-gradient(160deg, #161926, #0f111a); }
+  .tile-in::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .3s; mix-blend-mode: overlay; background: radial-gradient(circle at var(--mx, 30%) var(--my, 20%), rgba(255,255,255,0.55), transparent 55%); }
+  .tile.tilting .tile-in::after { opacity: 1; }
+  .tile .av { --s: 68px; box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px var(--rc, #555); transition: transform .35s cubic-bezier(.2,1.4,.4,1); }
+  .tile:hover .av { transform: scale(1.08) rotate(-3deg); }
+  .tile h3 { margin: 0; font: 800 17px "Archivo"; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .tile .meta { margin-top: 3px; font: 600 11px "Archivo"; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .tile .meta .rar { color: var(--rc); } .tile .meta .st { color: var(--gold-b); letter-spacing: 0.04em; }
+  .tile .rec { margin-top: 8px; font: 400 22px "Bebas Neue"; letter-spacing: 0.03em; } .tile .rec small { font: 600 11px "Archivo"; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; margin-left: 6px; }
+  .tile .play { position: absolute; left: 0; right: 0; bottom: 0; padding: 7px 0 6px; text-align: center; font: 800 11px "Archivo"; letter-spacing: 0.22em; text-transform: uppercase; color: #1b1405;
+    background: linear-gradient(90deg, var(--gold), var(--gold-b), var(--gold)); transform: translateY(100%); transition: transform .3s cubic-bezier(.2,.9,.2,1); }
+  .tile:hover .play, .tile:focus-visible .play { transform: none; }
+  .tile .crown { position: absolute; top: -14px; left: 20px; z-index: 3; font-size: 24px; filter: drop-shadow(0 3px 5px rgba(0,0,0,0.6)); animation: bob 3.5s ease-in-out infinite; }
+  .tile .flag { position: absolute; top: -20px; right: 24px; z-index: 3; font-size: 30px; transform-origin: 25% 95%; animation: wave 2.6s ease-in-out infinite; filter: drop-shadow(0 3px 5px rgba(0,0,0,0.6)); }
+  @keyframes wave { 0%, 100% { transform: rotate(-10deg); } 50% { transform: rotate(10deg); } }
+  /* rarity frames: louder the more they've won */
+  .tile.r-uncommon { background: linear-gradient(135deg, var(--rc), var(--line) 65%); }
+  .tile.r-rare { background: linear-gradient(135deg, #bfe3ff, var(--rc) 40%, var(--rc2)); box-shadow: 0 0 22px -8px var(--rc); }
+  .tile.r-epic { background: linear-gradient(135deg, #e2c1ff, var(--rc) 40%, var(--rc2)); box-shadow: 0 0 30px -6px var(--rc); }
+  .tile.r-legendary { background: conic-gradient(from var(--spin), #fff3b8, #ffc93f, #a86a07, #fff3b8, #ffc93f, #a86a07, #fff3b8); animation: spin 9s linear infinite; box-shadow: 0 0 40px -8px #ffc93f; }
+  .tile.r-mythic { background: conic-gradient(from var(--spin), #ff6ad0, #ffd84d, #5dffa4, #4cc9ff, #9a6bff, #ff6ad0); padding: 2.5px; animation: spin 5s linear infinite; box-shadow: 0 0 40px -6px #ff6ad0, 0 0 50px -10px #4cc9ff; }
+  .tile.r-mythic .tile-in { background: radial-gradient(circle at 15% 10%, rgba(255,106,208,0.22), transparent 50%), linear-gradient(160deg, #161926, #0f111a); }
+  @media (max-width: 700px) { .giant { font-size: 240px; } .champ { flex-wrap: wrap; } .champ .belt { margin-left: 0; } }
+</style>
+</head>
+<body>
+<canvas class="net" id="net"></canvas>
+<div class="page">
+  <header class="hero" id="hero">
+    <div class="giant serif" aria-hidden="true">X</div>
+    <p class="eyebrow">Who's watching?</p>
+    <h1 class="title">The Business</h1>
+    <p class="est" id="est">Est. 2017 · Tenth Anniversary Season</p>
+    <div class="rule"><i></i><b></b><i></i></div>
+    <div class="cue">Choose your manager</div>
+  </header>
+  <section id="champ"></section>
+  <section class="roster" id="roster"></section>
+</div>
+<div id="banner"></div>
+
+<script type="module">
+import { loadHome, avatarHtml, startNetwork, newsBannerHtml, selectManager, countUp, revealOnScroll, attachTilt, sharedCss } from "./home-shared.js";
+document.head.insertAdjacentHTML("beforeend", `<style>${sharedCss}</style>`);
+const { people, champion, news } = await loadHome();
+
+startNetwork(document.getElementById("net"), { nodeCount: 18 });
+document.getElementById("banner").innerHTML = newsBannerHtml(news);
+
+// the giant X drifts slightly against the pointer
+const hero = document.getElementById("hero"), giant = hero.querySelector(".giant");
+addEventListener("pointermove", (e) => {
+  giant.style.setProperty("--px", `${(e.clientX / innerWidth - 0.5) * -30}px`);
+  giant.style.setProperty("--py", `${(e.clientY / innerHeight - 0.5) * -18}px`);
+});
+
+const beltSvg = (s) => `<svg class="belt" width="${s}" height="${s * 0.4}" viewBox="0 0 100 40"><rect x="0" y="15" width="34" height="10" rx="3" fill="#d9a53c"/><rect x="66" y="15" width="34" height="10" rx="3" fill="#d9a53c"/><rect x="28" y="4" width="44" height="32" rx="7" fill="#c9922e" stroke="#f7e2a4" stroke-width="1.5"/><rect x="34" y="10" width="32" height="20" rx="4" fill="#8a5c14"/><text x="50" y="25" text-anchor="middle" font-size="16" font-weight="700" fill="#f7e2a4">★</text></svg>`;
+const sparks = Array.from({ length: 10 }, (_, i) => `<i class="sp" style="left:${8 + ((i * 41) % 84)}%;top:${10 + ((i * 29) % 70)}%;animation-delay:${(i * 0.5).toFixed(1)}s"></i>`).join("");
+document.getElementById("champ").innerHTML = `
+  <div class="champ rv">
+    ${sparks}
+    <div class="ring">${avatarHtml(champion)}</div>
+    <div class="txt"><small>Reigning champion</small><h2>${champion.name}</h2><span>${"★".repeat(champion.titles)} ${champion.titles} Titles</span></div>
+    ${beltSvg(110)}
+  </div>`;
+
+document.getElementById("roster").innerHTML = people.map((p, i) => `
+  <button class="tile tilt rv r-${p.rarity.id}" style="--i:${i}" data-key="${p.key}">
+    ${p.rarity.id === "legendary" || p.rarity.id === "mythic" ? `<span class="crown">👑</span>` : ""}
+    ${p.theme?.flag ? `<span class="flag">${p.theme.icon}</span>` : ""}
+    <div class="tile-in">
+      ${avatarHtml(p)}
+      <div>
+        <h3>${p.name}</h3>
+        <div class="meta"><span class="rar">${p.rarity.label}</span> · ${p.seasons} season${p.seasons === 1 ? "" : "s"}${p.titles ? ` · <span class="st">${"★".repeat(p.titles)}</span>` : ""}</div>
+        <div class="rec"><span data-v="${p.w}" class="cu">0</span>-<span data-v="${p.d}" class="cu">0</span>-<span data-v="${p.l}" class="cu">0</span><small><span data-v="${Math.round(p.winPct)}" class="cu">0</span>% win</small></div>
+      </div>
+      <span class="play">Play as ${p.name.split(" ")[0]} →</span>
+    </div>
+  </button>`).join("");
+
+revealOnScroll(".rv", (el) => el.querySelectorAll(".cu").forEach((c) => setTimeout(() => countUp(c), 400)));
+attachTilt(document.getElementById("roster"));
+document.getElementById("roster").addEventListener("click", (e) => { const t = e.target.closest(".tile"); if (t) selectManager(t.dataset.key); });
+</script>
+</body>
+</html>
