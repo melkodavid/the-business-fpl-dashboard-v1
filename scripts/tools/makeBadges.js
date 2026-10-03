@@ -77,17 +77,66 @@ const EMBLEMS = {
     <polygon points="${octagon(64)}" fill="#d62828" stroke="${s}" stroke-width="5" stroke-linejoin="round"/>
     <polygon points="${octagon(55)}" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"/>
     <text x="0" y="14" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-weight="900" font-size="38" fill="#ffffff" letter-spacing="2">STOP</text>`,
-  // Zacharias United -- a Z built as a lightning bolt
+  // Zacharias United -- a Z built as a lightning bolt (kept as an alternative)
   zbolt: (f, s, a) => `
     <polygon points="-52,-58 58,-58 8,-4 62,-4 -56,64 -4,6 -58,6" fill="${f}" stroke="${s}" stroke-width="5" stroke-linejoin="round"/>
     <polygon points="-34,-44 40,-44 4,-10 18,-10 -22,30 -8,-6 -34,-6" fill="${a}" opacity="0.75"/>`,
+  // I can fix him -- a lit cigarette with a gold star above it
+  cigarette: (f, s, a) => `
+    <g transform="rotate(-22)">
+      <path d="M-56 -52 q-12 -12 0 -24 q12 -12 0 -24" transform="translate(98 46)" fill="none" stroke="${s}" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+      <rect x="-72" y="10" width="40" height="22" rx="4" fill="#e3a869" stroke="${s}" stroke-width="5"/>
+      <line x1="-58" y1="12" x2="-58" y2="30" stroke="${s}" stroke-width="2.5" opacity="0.5"/><line x1="-46" y1="12" x2="-46" y2="30" stroke="${s}" stroke-width="2.5" opacity="0.5"/>
+      <rect x="-32" y="10" width="86" height="22" rx="4" fill="#ffffff" stroke="${s}" stroke-width="5"/>
+      <rect x="-32" y="10" width="6" height="22" fill="${s}" opacity="0.8"/>
+      <rect x="54" y="10" width="14" height="22" rx="4" fill="#e8590c" stroke="${s}" stroke-width="5"/>
+      <rect x="62" y="13" width="3" height="16" fill="#ffd24a"/>
+    </g>
+    ${star(30, 13, a, s, -6, -36, 4)}`,
+  // Marsh -- a pint of beer with a foamy head
+  beer: (f, s, a) => `
+    <path d="M-38 -34 L38 -34 L32 62 Q32 68 26 68 L-26 68 Q-32 68 -32 62 Z" fill="#f2b134" stroke="${s}" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M-34 6 L34 6 L32 62 Q32 68 26 68 L-26 68 Q-32 68 -32 62 Z" fill="#e0911c" opacity="0.55"/>
+    <path d="M38 -16 h16 q14 0 14 14 v28 q0 14 -14 14 h-12" fill="none" stroke="${s}" stroke-width="9" stroke-linecap="round"/>
+    <path d="M38 -16 h16 q14 0 14 14 v28 q0 14 -14 14 h-12" fill="none" stroke="#f2b134" stroke-width="3.5" stroke-linecap="round"/>
+    <g fill="#ffffff" stroke="${s}" stroke-width="4"><circle cx="-26" cy="-38" r="15"/><circle cx="-4" cy="-48" r="18"/><circle cx="20" cy="-40" r="16"/><circle cx="36" cy="-32" r="10"/></g>
+    <rect x="-34" y="-36" width="70" height="10" fill="#ffffff"/>
+    ${[[-16, 24, 4], [2, 40, 3], [14, 18, 3.5], [-6, 54, 3], [20, 48, 2.5]].map(([x, y, r]) => `<circle cx="${x}" cy="${y}" r="${r}" fill="#fff3c4" stroke="${s}" stroke-width="1.5"/>`).join("")}`,
+  // Carm -- an Italian-flavoured crest: a tricolour roundel in a laurel wreath
+  italian: (f, s, a) => `
+    <defs><clipPath id="itclip"><circle r="38"/></clipPath></defs>
+    ${[-1, 1].map((d) => `<g transform="scale(${d} 1)">${Array.from({ length: 8 }, (_, i) => { const ang = 118 + i * 16, rad = (ang * Math.PI) / 180, x = (Math.cos(rad) * 54).toFixed(1), y = (Math.sin(rad) * 54).toFixed(1); return `<ellipse cx="${x}" cy="${y}" rx="14" ry="6.5" transform="rotate(${ang + 90} ${x} ${y})" fill="#3a9d4b" stroke="${s}" stroke-width="3"/>`; }).join("")}</g>`).join("")}
+    <g clip-path="url(#itclip)"><rect x="-40" y="-40" width="27" height="80" fill="#2e9e44"/><rect x="-13" y="-40" width="26" height="80" fill="#ffffff"/><rect x="13" y="-40" width="27" height="80" fill="#d62d2d"/></g>
+    <circle r="38" fill="none" stroke="${s}" stroke-width="5"/>
+    ${star(15, 6.5, a, s, 0, 0, 2.5)}
+    <path d="M-26 62 Q0 74 26 62" fill="none" stroke="${s}" stroke-width="5" stroke-linecap="round"/><circle cx="0" cy="68" r="5" fill="${a}" stroke="${s}" stroke-width="3"/>`,
+  // Muk -- the scales of justice
+  scales: (f, s, a) => `
+    <rect x="-4" y="-50" width="8" height="106" rx="3" fill="${f}" stroke="${s}" stroke-width="4"/>
+    <path d="M-30 64 L30 64 L22 52 L-22 52 Z" fill="${f}" stroke="${s}" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="0" cy="-56" r="9" fill="${a}" stroke="${s}" stroke-width="4"/>
+    <path d="M-62 -36 L62 -36" stroke="${s}" stroke-width="10" stroke-linecap="round"/><path d="M-62 -36 L62 -36" stroke="${f}" stroke-width="4" stroke-linecap="round"/>
+    ${[-60, 60].map((x) => `<path d="M${x} -36 L${x - 26} 14 M${x} -36 L${x + 26} 14" stroke="${s}" stroke-width="3" fill="none"/><path d="M${x - 30} 14 L${x + 30} 14 Q${x + 28} 38 ${x} 38 Q${x - 28} 38 ${x - 30} 14 Z" fill="${a}" stroke="${s}" stroke-width="4" stroke-linejoin="round"/>`).join("")}`,
+  // Zac -- ZC over a factory, with a Love Island flavour: hearts, a palm and a sunset
+  zcfactory: (f, s, a) => `
+    <g fill="#ff5c8a" stroke="${s}" stroke-width="3" stroke-linejoin="round">
+      ${[[-44, -48, 0.8], [0, -60, 1.1], [44, -48, 0.8]].map(([x, y, k]) => `<path transform="translate(${x} ${y}) scale(${k})" d="M0 14 C-24 -2 -16 -20 -6 -18 C-2 -17 0 -12 0 -9 C0 -12 2 -17 6 -18 C16 -20 24 -2 0 14 Z"/>`).join("")}
+    </g>
+    <text x="0" y="22" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="900" font-size="80" letter-spacing="2" fill="${f}" stroke="${s}" stroke-width="5" paint-order="stroke">ZC</text>
+    <path d="M-62 66 A30 30 0 0 1 -2 66 Z" fill="#ff9a3c" stroke="${s}" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M-64 32 L-64 66 L36 66 L36 32 L20 42 L20 32 L2 42 L2 32 L-16 42 L-16 32 L-34 42 L-34 32 Z" fill="${s}" opacity="0.92"/>
+    <rect x="-56" y="14" width="9" height="22" fill="${s}"/><rect x="-24" y="18" width="9" height="20" fill="${s}"/>
+    ${[-50, -34].map((x, i) => `<circle cx="${x + 5}" cy="${8 - i * 4}" r="${4 + i * 2}" fill="#fff" stroke="${s}" stroke-width="2" opacity="0.9"/>`).join("")}
+    ${[-52, -38, -22, -8, 6, 20].map((x) => `<rect x="${x}" y="50" width="7" height="9" fill="#ffd24a"/>`).join("")}
+    <path d="M52 66 Q50 40 56 14" fill="none" stroke="${s}" stroke-width="6" stroke-linecap="round"/>
+    ${[[-30, -22], [-12, -34], [12, -34], [30, -20]].map(([dx, dy]) => `<path d="M56 14 Q${56 + dx * 0.7} ${14 + dy - 12} ${56 + dx} ${14 + dy + 18}" fill="none" stroke="#2e9e44" stroke-width="7" stroke-linecap="round"/>`).join("")}`,
 };
 
 // ---------- the managers still without a custom badge ----------
 const TEAMS = [
-  { key: "ibrahim", emblem: "crown" }, { key: "david", emblem: "wrench" }, { key: "mitch", emblem: "general" },
-  { key: "marshall", emblem: "heart" }, { key: "carmine", emblem: "flag" }, { key: "muk", emblem: "swords" },
-  { key: "pat", emblem: "one" }, { key: "ostap", emblem: "stop" }, { key: "zac", emblem: "zbolt" },
+  { key: "ibrahim", emblem: "crown" }, { key: "david", emblem: "cigarette" }, { key: "mitch", emblem: "general" },
+  { key: "marshall", emblem: "beer" }, { key: "carmine", emblem: "italian" }, { key: "muk", emblem: "scales" },
+  { key: "pat", emblem: "one" }, { key: "ostap", emblem: "stop" }, { key: "zac", emblem: "zcfactory" },
 ];
 
 const FONT = `font-family="Georgia, 'Times New Roman', serif"`;

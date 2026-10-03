@@ -5,8 +5,11 @@
   <g clip-path="url(#face)">
     <path d="M0 0 H400 V126 Q200 170 0 126Z" fill="#d5f2f4" opacity="0.7"/>
     <g transform="translate(200 132) scale(0.84)">
-    <g transform="rotate(-42)"><polygon points="-9,-70 9,-70 9,28 0,40 -9,28" fill="#17b8c4" stroke="#14161d" stroke-width="4" stroke-linejoin="round"/><rect x="-24" y="28" width="48" height="10" rx="4" fill="#ffd24a" stroke="#14161d" stroke-width="4"/><rect x="-5" y="38" width="10" height="26" rx="3" fill="#14161d"/><circle cy="68" r="7" fill="#ffd24a" stroke="#14161d" stroke-width="3"/></g><g transform="rotate(42)"><polygon points="-9,-70 9,-70 9,28 0,40 -9,28" fill="#17b8c4" stroke="#14161d" stroke-width="4" stroke-linejoin="round"/><rect x="-24" y="28" width="48" height="10" rx="4" fill="#ffd24a" stroke="#14161d" stroke-width="4"/><rect x="-5" y="38" width="10" height="26" rx="3" fill="#14161d"/><circle cy="68" r="7" fill="#ffd24a" stroke="#14161d" stroke-width="3"/></g>
-    <polygon transform="translate(0 -44)" points="0.0,-22.0 5.9,-8.1 20.9,-6.8 9.5,3.1 12.9,17.8 0.0,10.0 -12.9,17.8 -9.5,3.1 -20.9,-6.8 -5.9,-8.1" fill="#ffd24a" stroke="#14161d" stroke-width="3" stroke-linejoin="round"/></g>
+    <rect x="-4" y="-50" width="8" height="106" rx="3" fill="#17b8c4" stroke="#14161d" stroke-width="4"/>
+    <path d="M-30 64 L30 64 L22 52 L-22 52 Z" fill="#17b8c4" stroke="#14161d" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="0" cy="-56" r="9" fill="#ffd24a" stroke="#14161d" stroke-width="4"/>
+    <path d="M-62 -36 L62 -36" stroke="#14161d" stroke-width="10" stroke-linecap="round"/><path d="M-62 -36 L62 -36" stroke="#17b8c4" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-60 -36 L-86 14 M-60 -36 L-34 14" stroke="#14161d" stroke-width="3" fill="none"/><path d="M-90 14 L-30 14 Q-32 38 -60 38 Q-88 38 -90 14 Z" fill="#ffd24a" stroke="#14161d" stroke-width="4" stroke-linejoin="round"/><path d="M60 -36 L34 14 M60 -36 L86 14" stroke="#14161d" stroke-width="3" fill="none"/><path d="M30 14 L90 14 Q88 38 60 38 Q32 38 30 14 Z" fill="#ffd24a" stroke="#14161d" stroke-width="4" stroke-linejoin="round"/></g>
     <text x="200" y="262" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="900" font-size="68" letter-spacing="3" fill="#14161d" stroke="#17b8c4" stroke-width="2.4" paint-order="stroke">MUK</text>
     <path d="M112 278 Q200 260 288 278" fill="none" stroke="#17b8c4" stroke-width="6" stroke-linecap="round"/>
     <path d="M146 288 Q200 276 254 288" fill="none" stroke="#118a93" stroke-width="3.5" stroke-linecap="round"/>

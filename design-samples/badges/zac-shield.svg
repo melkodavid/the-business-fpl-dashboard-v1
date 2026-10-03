@@ -5,8 +5,17 @@
   <g clip-path="url(#face)">
     <path d="M0 0 H400 V126 Q200 170 0 126Z" fill="#fcdde7" opacity="0.7"/>
     <g transform="translate(200 132) scale(0.84)">
-    <polygon points="-52,-58 58,-58 8,-4 62,-4 -56,64 -4,6 -58,6" fill="#ec407a" stroke="#14161d" stroke-width="5" stroke-linejoin="round"/>
-    <polygon points="-34,-44 40,-44 4,-10 18,-10 -22,30 -8,-6 -34,-6" fill="#ffd24a" opacity="0.75"/></g>
+    <g fill="#ff5c8a" stroke="#14161d" stroke-width="3" stroke-linejoin="round">
+      <path transform="translate(-44 -48) scale(0.8)" d="M0 14 C-24 -2 -16 -20 -6 -18 C-2 -17 0 -12 0 -9 C0 -12 2 -17 6 -18 C16 -20 24 -2 0 14 Z"/><path transform="translate(0 -60) scale(1.1)" d="M0 14 C-24 -2 -16 -20 -6 -18 C-2 -17 0 -12 0 -9 C0 -12 2 -17 6 -18 C16 -20 24 -2 0 14 Z"/><path transform="translate(44 -48) scale(0.8)" d="M0 14 C-24 -2 -16 -20 -6 -18 C-2 -17 0 -12 0 -9 C0 -12 2 -17 6 -18 C16 -20 24 -2 0 14 Z"/>
+    </g>
+    <text x="0" y="22" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="900" font-size="80" letter-spacing="2" fill="#ec407a" stroke="#14161d" stroke-width="5" paint-order="stroke">ZC</text>
+    <path d="M-62 66 A30 30 0 0 1 -2 66 Z" fill="#ff9a3c" stroke="#14161d" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M-64 32 L-64 66 L36 66 L36 32 L20 42 L20 32 L2 42 L2 32 L-16 42 L-16 32 L-34 42 L-34 32 Z" fill="#14161d" opacity="0.92"/>
+    <rect x="-56" y="14" width="9" height="22" fill="#14161d"/><rect x="-24" y="18" width="9" height="20" fill="#14161d"/>
+    <circle cx="-45" cy="8" r="4" fill="#fff" stroke="#14161d" stroke-width="2" opacity="0.9"/><circle cx="-29" cy="4" r="6" fill="#fff" stroke="#14161d" stroke-width="2" opacity="0.9"/>
+    <rect x="-52" y="50" width="7" height="9" fill="#ffd24a"/><rect x="-38" y="50" width="7" height="9" fill="#ffd24a"/><rect x="-22" y="50" width="7" height="9" fill="#ffd24a"/><rect x="-8" y="50" width="7" height="9" fill="#ffd24a"/><rect x="6" y="50" width="7" height="9" fill="#ffd24a"/><rect x="20" y="50" width="7" height="9" fill="#ffd24a"/>
+    <path d="M52 66 Q50 40 56 14" fill="none" stroke="#14161d" stroke-width="6" stroke-linecap="round"/>
+    <path d="M56 14 Q35 -20 26 10" fill="none" stroke="#2e9e44" stroke-width="7" stroke-linecap="round"/><path d="M56 14 Q47.6 -32 44 -2" fill="none" stroke="#2e9e44" stroke-width="7" stroke-linecap="round"/><path d="M56 14 Q64.4 -32 68 -2" fill="none" stroke="#2e9e44" stroke-width="7" stroke-linecap="round"/><path d="M56 14 Q77 -18 86 12" fill="none" stroke="#2e9e44" stroke-width="7" stroke-linecap="round"/></g>
     <text x="200" y="262" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="900" font-size="68" letter-spacing="3" fill="#14161d" stroke="#ec407a" stroke-width="2.4" paint-order="stroke">ZAC</text>
     <path d="M112 278 Q200 260 288 278" fill="none" stroke="#ec407a" stroke-width="6" stroke-linecap="round"/>
     <path d="M146 288 Q200 276 254 288" fill="none" stroke="#b1305c" stroke-width="3.5" stroke-linecap="round"/>

@@ -40,7 +40,7 @@
 </main>
 <script type="module">
 const managers = (await (await fetch("../data/managers.json")).json()).list;
-const EMBLEM = { ibrahim: "Crown over two stars (two titles)", david: "Wrench crossed with a ball", mitch: "Three stars over rank chevrons", marshall: "Heart with a heartbeat line", carmine: "Corner flag and ball", muk: "Crossed swords under a star", pat: "The Special One: crown over a 1", ostap: "The Stop Sign", zac: "Z built as a lightning bolt" };
+const EMBLEM = { ibrahim: "Crown over two stars (two titles)", david: "A cigarette with a star over it", mitch: "Three stars over rank chevrons", marshall: "A pint of beer", carmine: "Tricolour roundel in a laurel wreath", muk: "The scales of justice", pat: "The Special One: crown over a 1", ostap: "The Stop Sign", zac: "ZC with a factory, hearts and a palm" };
 document.getElementById("grid").innerHTML = Object.keys(EMBLEM).map((key) => {
   const m = managers.find((x) => x.personKey === key);
   const club = m.name.replace(/\s*\*+$/, "");
