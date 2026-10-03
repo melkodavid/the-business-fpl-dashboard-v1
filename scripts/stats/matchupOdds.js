@@ -156,3 +156,43 @@ export function computeMatchupOdds(context, inputs) {
 
   return { gw, source: inputs.source, sigma: Math.round(sigma * 10) / 10, basis: live ? "live" : "pre-match", fixtures };
 }
+
+const POS_ORDER = { 1: 0, 2: 1, 3: 2, 4: 3 };
+
+// Each manager's predicted lineup for the gameweek: the best legal XI from their
+// current squad by expected points (or the real starters once lineups lock), the
+// formation it makes, and the bench. Feeds the pitch visualiser on the Home page.
+export function predictLineups(context, inputs) {
+  const { ep, squads, live } = inputs;
+  const lineups = {};
+  const card = (id) => {
+    const p = context.players.byId.get(id);
+    return p && { id, name: p.webName, pos: p.positionName, type: p.elementType, team: p.teamName, ep: Math.round((ep.get(id) ?? 0) * 10) / 10 };
+  };
+  for (const manager of context.managers.list) {
+    const squad = squads.get(manager.id) ?? [];
+    let starters = live?.starters.get(manager.id);
+    const locked = Boolean(starters);
+    if (!starters) {
+      const roster = squad
+        .map((elementId) => ({ elementId, elementType: context.players.byId.get(elementId)?.elementType, points: ep.get(elementId) ?? 0 }))
+        .filter((p) => p.elementType);
+      starters = computeOptimalXI(roster)?.starters;
+    }
+    if (!starters?.length) continue;
+    const xi = starters.map(card).filter(Boolean).sort((a, b) => POS_ORDER[a.type] - POS_ORDER[b.type] || b.ep - a.ep);
+    const inXi = new Set(xi.map((p) => p.id));
+    const bench = squad.filter((id) => !inXi.has(id)).map(card).filter(Boolean).sort((a, b) => POS_ORDER[a.type] - POS_ORDER[b.type] || b.ep - a.ep);
+    const count = (t) => xi.filter((p) => p.type === t).length;
+    const captain = xi.reduce((best, p) => (p.ep > (best?.ep ?? -1) ? p : best), null);
+    lineups[manager.id] = {
+      formation: `${count(2)}-${count(3)}-${count(4)}`,
+      expected: Math.round(xi.reduce((s, p) => s + p.ep, 0) * 10) / 10,
+      captainId: captain?.id ?? null,
+      locked,
+      xi,
+      bench,
+    };
+  }
+  return lineups;
+}

@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import {
-  computeMatchupOdds, outcomeProbabilities, toPercents, normalCdf, estimateSigma, DEFAULT_SIGMA,
+  computeMatchupOdds, outcomeProbabilities, toPercents, normalCdf, estimateSigma, DEFAULT_SIGMA, predictLineups,
 } from "../../scripts/stats/matchupOdds.js";
 
 // 15-man squad: 2 GK, 5 DEF, 5 MID, 3 FWD, element ids base..base+14
@@ -111,4 +111,23 @@ test("estimateSigma: default with too little history, otherwise the league's own
   });
   const sigma = estimateSigma({ finishedGws: [1, 2, 3, 4, 5], managers: { list: [{ id: 1 }, { id: 2 }] }, gwPicks });
   assert.ok(sigma >= 8 && sigma <= 14);
+});
+
+test("predictLineups: best legal XI by expected points, formation, bench and star man", () => {
+  const ctx = buildContext();
+  for (const [id, p] of ctx.players.byId) p.webName = `P${id}`;
+  const ep = epFor(100, 2);
+  ep.set(100, 5); // the first keeper outscores the second
+  ep.set(112, 9); // a forward is the top scorer
+  const squads = new Map([[1, squadWith(100, 0).ids], [2, squadWith(200, 0).ids]]);
+  const lineups = predictLineups(ctx, { ep, squads });
+  const lu = lineups[1];
+  assert.equal(lu.xi.length, 11);
+  assert.equal(lu.bench.length, 4);
+  assert.equal(lu.xi.filter((p) => p.type === 1).length, 1);
+  assert.equal(lu.xi[0].id, 100); // best keeper starts
+  assert.equal(lu.captainId, 112);
+  assert.match(lu.formation, /^\d-\d-\d$/);
+  assert.equal(lu.formation.split("-").reduce((s, n) => s + Number(n), 0), 10);
+  assert.equal(lu.locked, false);
 });

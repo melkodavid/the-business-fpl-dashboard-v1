@@ -99,7 +99,7 @@ function main(data, managers) {
     setActiveNav(route);
     ROUTES[route](app, data, managers);
     // The Cup page runs its own motion choreography (see render/cup.js), so it skips the site-wide pass.
-    if (route !== "cup") {
+    if (route !== "cup" && route !== "landing") {
       initScrollReveal();
       // Restart the CSS fade-in animation on every route change by removing
       // and re-adding the class after a reflow, rather than just on first load.

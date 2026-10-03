@@ -1,162 +1,264 @@
-import { initPassNetwork } from "../lib/passNetwork.js";
-import { memberTileHtml, beltIconHtml, avatarHtml, personFor } from "../lib/cardRender.js";
+import { startConstellation } from "../lib/constellation.js";
+import { renderLineupPitch } from "../lib/lineupPitch.js";
+import { beltIconHtml, avatarHtml, personFor } from "../lib/cardRender.js";
 import { buildCareerCards } from "../lib/cardTiers.js";
+import { rarityFor } from "../lib/cardRarity.js";
+import { escapeHtml } from "../format.js";
 import { getIdentity, setIdentity } from "../identity.js";
 
 const SELECT_ANIMATION_MS = 420;
+const reduced = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const cleanClub = (name) => (name ?? "").replace(/\s*\*+$/, "");
 
-// A manager who hasn't joined the real league yet (see
-// data/upcoming-managers.json) -- no stats to show, just a distinct "not
-// started yet" tile so they still have something to click ahead of their
-// first season. Same member-tile shell as everyone else so the grid doesn't
-// mix two different card shapes; uses the same data-manager-key attribute
-// as a real member tile, so the existing click handler needs no
-// special-casing for it.
-function rookieTileHtml(person) {
-  const photoSrc = person.personKey ? `assets/managers/${person.personKey}.jpg` : null;
-  const photoTag = photoSrc ? `<img class="avatar-photo" src="${photoSrc}" alt="" onerror="this.remove()">` : "";
-  return `
-    <div class="member-tile tier-common" data-manager-key="${person.personKey}">
-      <div class="member-tile-inner">
-        <div class="sheen"></div>
-        <div class="member-photo">
-          <span class="avatar" style="background:${person.color}">${person.abbreviation}${photoTag}</span>
-        </div>
-        <div class="member-info">
-          <div class="member-name-row"><span class="member-name">${person.displayName}</span></div>
-          <div class="member-meta">Rookie &middot; First season coming up</div>
-        </div>
-      </div>
-    </div>`;
+// ---- count-up numbers + reveal-on-scroll (with a fallback so nothing can stay hidden) ----
+function countUp(el, ms = 1100) {
+  const target = Number(el.dataset.v);
+  if (reduced()) { el.textContent = target; return; }
+  const start = performance.now();
+  const step = (now) => {
+    const t = Math.min(1, (now - start) / ms);
+    el.textContent = Math.round(target * (1 - (1 - t) ** 3));
+    if (t < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
 }
 
-// Home page spotlight for whoever won the most recent decided season (see
-// history.reigningChampionKey) -- separate from the crown/tier system,
-// which is about total titles held, not who's currently on top.
-function championSpotlightHtml(card, managers) {
+function revealOnScroll(root) {
+  const items = [...root.querySelectorAll(".hm-rv")];
+  const show = (el) => {
+    if (el.classList.contains("in")) return;
+    el.classList.add("in");
+    el.querySelectorAll(".hm-cu").forEach((c) => setTimeout(() => countUp(c), 400));
+  };
+  if (reduced() || !("IntersectionObserver" in window)) { items.forEach(show); return; }
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) if (e.isIntersecting) { show(e.target); io.unobserve(e.target); }
+  }, { threshold: 0.12 });
+  items.forEach((el) => io.observe(el));
+  // a hidden/background tab never fires observers -- don't leave tiles invisible
+  setTimeout(() => items.forEach(show), 2500);
+}
+
+// ---- mouse-follow tilt + glare ----
+function attachTilt(root) {
+  if (reduced()) return;
+  let active = null;
+  const reset = (el) => {
+    if (!el) return;
+    ["--mx", "--my", "--rx", "--ry"].forEach((v) => el.style.removeProperty(v));
+    el.classList.remove("tilting");
+  };
+  root.addEventListener("pointermove", (e) => {
+    if (e.pointerType === "touch") return;
+    const card = e.target.closest(".hm-tilt");
+    if (card !== active) { reset(active); active = card; }
+    if (!card) return;
+    const r = card.getBoundingClientRect();
+    const px = (e.clientX - r.left) / r.width;
+    const py = (e.clientY - r.top) / r.height;
+    card.classList.add("tilting");
+    card.style.setProperty("--mx", `${(px * 100).toFixed(1)}%`);
+    card.style.setProperty("--my", `${(py * 100).toFixed(1)}%`);
+    card.style.setProperty("--rx", `${((px - 0.5) * 12).toFixed(2)}deg`);
+    card.style.setProperty("--ry", `${(-(py - 0.5) * 12).toFixed(2)}deg`);
+  });
+  root.addEventListener("pointerleave", () => { reset(active); active = null; });
+}
+
+// A manager who hasn't joined the real league yet (see data/upcoming-managers.json) -- no
+// stats, just a calm "first season coming up" tile so they still have something to click.
+function rookieTileHtml(person, i) {
+  return `
+    <button type="button" class="hm-tile hm-tilt hm-rv hm-r-common" style="--i:${i}" data-manager-key="${person.personKey}">
+      <div class="hm-tile-in">
+        ${avatarHtml({ ...person, name: person.displayName })}
+        <div class="hm-tile-txt">
+          <h3>${escapeHtml(person.displayName)}</h3>
+          <div class="hm-meta"><span class="hm-rar">Rookie</span> · First season coming up</div>
+        </div>
+        <span class="hm-play">Play as ${escapeHtml(person.displayName.split(" ")[0])} →</span>
+      </div>
+    </button>`;
+}
+
+function tileHtml(card, i, managers, me, isReigning) {
   const person = personFor(card.managerKey, card.displayName, managers);
+  const rarity = rarityFor(card);
+  const theme = person.theme;
+  const first = person.name.split(" ")[0];
   return `
-    <div class="champion-spotlight">
-      <div class="champion-photo">${avatarHtml(person)}</div>
-      <div class="champion-info">
-        <span class="champion-eyebrow">Reigning Champion</span>
-        <span class="champion-name">${person.name}</span>
-        <span class="champion-titles">${"★".repeat(card.titles)} ${card.titles} Title${card.titles === 1 ? "" : "s"}</span>
+    <button type="button" class="hm-tile hm-tilt hm-rv hm-r-${rarity.id}${card.managerKey === me ? " is-you" : ""}" style="--i:${i}" data-manager-key="${card.managerKey}">
+      ${rarity.id === "legendary" || rarity.id === "mythic" ? `<span class="hm-crown" aria-hidden="true">👑</span>` : ""}
+      ${theme?.flag ? `<span class="hm-flag" aria-hidden="true">${theme.icon}</span>` : ""}
+      <div class="hm-tile-in">
+        ${avatarHtml(person)}
+        <div class="hm-tile-txt">
+          <h3>${escapeHtml(person.name)}${isReigning ? ` ${beltIconHtml(26)}` : ""}</h3>
+          <div class="hm-meta"><span class="hm-rar">${rarity.label}</span> · ${card.seasons} season${card.seasons === 1 ? "" : "s"}${card.titles ? ` · <span class="hm-st">${"★".repeat(Math.min(card.titles, 8))}</span>` : ""}</div>
+          <div class="hm-rec"><span class="hm-cu" data-v="${card.w}">0</span>-<span class="hm-cu" data-v="${card.d}">0</span>-<span class="hm-cu" data-v="${card.l}">0</span><small><span class="hm-cu" data-v="${Math.round(card.winPct)}">0</span>% win</small></div>
+        </div>
+        <span class="hm-play">${card.managerKey === me ? "Continue as you" : `Play as ${escapeHtml(first)}`} →</span>
       </div>
-      ${beltIconHtml(60)}
+    </button>`;
+}
+
+function championHtml(card, managers) {
+  const person = personFor(card.managerKey, card.displayName, managers);
+  const sparks = Array.from({ length: 10 }, (_, i) => `<i class="hm-sp" style="left:${8 + ((i * 41) % 84)}%;top:${10 + ((i * 29) % 70)}%;animation-delay:${(i * 0.5).toFixed(1)}s"></i>`).join("");
+  return `
+    <div class="hm-champ hm-rv">
+      ${sparks}
+      <div class="hm-ring">${avatarHtml(person)}</div>
+      <div class="hm-champ-txt">
+        <small>Reigning champion</small>
+        <h2>${escapeHtml(person.name)}</h2>
+        <span>${"★".repeat(Math.min(card.titles, 8))} ${card.titles} Title${card.titles === 1 ? "" : "s"}</span>
+      </div>
+      <span class="hm-belt">${beltIconHtml(110)}</span>
     </div>`;
 }
 
+// ---------------------------------------------------------------- predicted lineups
+function lineupSection(data, managers, me, champKey) {
+  const lineups = data.schedule?.lineups;
+  if (!lineups || !Object.keys(lineups).length) return null;
+  const myId = managers.idForPersonKey(me) ?? managers.idForPersonKey(champKey);
+  const ids = managers.all.filter((m) => lineups[m.id]).map((m) => m.id);
+  const fixtures = data.schedule.fixtures ?? [];
+  const meta = data.schedule.lineupsMeta;
+
+  const html = `
+    <section class="hm-lineups hm-rv" id="hm-lineups">
+      <div class="hm-sec-head"><h3>Predicted XI</h3><i></i></div>
+      <p class="hm-lead">Each team's best legal lineup for <b>Gameweek ${meta?.gw ?? data.schedule.gw}</b>, picked by the official FPL expected-points projections. Pick a team to line them up.</p>
+      <div class="hm-chips" role="tablist" aria-label="Choose a team">
+        ${ids.map((id) => {
+          const m = managers.all.find((x) => x.id === id);
+          return `<button type="button" role="tab" class="hm-chip" data-id="${id}" style="--c:${m.color ?? "#6a2fa8"}"><i></i>${escapeHtml(cleanClub(m.name))}</button>`;
+        }).join("")}
+      </div>
+      <div class="hm-lp-head" id="hm-lp-head"></div>
+      <div id="hm-lp-pitch"></div>
+      <div class="hm-bench" id="hm-lp-bench"></div>
+      <p class="hm-foot">${meta?.source ? `${escapeHtml(meta.source)}. ` : ""}Jersey numbers are expected points for the gameweek — a for-fun forecast, not a promise.</p>
+    </section>`;
+
+  function mount(root) {
+    const head = root.querySelector("#hm-lp-head");
+    const pitch = root.querySelector("#hm-lp-pitch");
+    const bench = root.querySelector("#hm-lp-bench");
+    let current = null;
+    function show(id) {
+      current = id;
+      const m = managers.all.find((x) => x.id === id);
+      const lu = lineups[id];
+      root.querySelectorAll(".hm-chip").forEach((c) => c.setAttribute("aria-selected", String(Number(c.dataset.id) === id)));
+      const fx = fixtures.find((f) => f.homeManagerId === id || f.awayManagerId === id);
+      let vs = "";
+      if (fx) {
+        const home = fx.homeManagerId === id;
+        const oppId = home ? fx.awayManagerId : fx.homeManagerId;
+        const opp = managers.all.find((x) => x.id === oppId);
+        const lu2 = lineups[oppId];
+        const win = fx.odds ? (home ? fx.odds.homeWinPct : fx.odds.awayWinPct) : null;
+        vs = `<a class="hm-vs" href="#schedule">${home ? "vs" : "@"} ${escapeHtml(cleanClub(opp?.name))}${lu2 ? ` <small>(${lu2.expected.toFixed(1)} predicted)</small>` : ""}${win != null ? ` · <b>${win}% to win</b>` : ""}</a>`;
+      }
+      head.innerHTML = `
+        <div class="hm-lp-team">
+          <h4>${escapeHtml(cleanClub(m.name))}</h4>
+          <span>${escapeHtml(m.playerName ?? "")} · ${lu.formation}${lu.locked ? ` · <b class="hm-locked">Lineup locked in</b>` : ""}</span>
+        </div>
+        <div class="hm-lp-total"><b>${lu.expected.toFixed(1)}</b><small>predicted pts</small></div>
+        ${vs}`;
+      renderLineupPitch(pitch, lu, m.color ?? "#6a2fa8");
+      bench.innerHTML = lu.bench.length
+        ? `<span class="hm-bench-lab">Bench</span>${lu.bench.map((p) => `<span class="hm-bchip"><b>${p.ep.toFixed(1)}</b>${escapeHtml(p.name)}</span>`).join("")}`
+        : "";
+    }
+    root.querySelector(".hm-chips").addEventListener("click", (e) => {
+      const chip = e.target.closest(".hm-chip");
+      if (chip && Number(chip.dataset.id) !== current) show(Number(chip.dataset.id));
+    });
+    show(ids.includes(myId) ? myId : ids[0]);
+  }
+  return { html, mount };
+}
+
+// ---------------------------------------------------------------- page
 export function render(container, data, managers) {
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const me = getIdentity();
 
-  // Only the 12 current managers belong as "who's viewing" choices --
-  // buildCareerCards() also returns departed/historical managers from the
-  // all-time leaderboard, which don't make sense as login-style options.
-  // Already sorted titles desc, then avg rank asc, then win% desc (see
-  // scripts/stats/history.js's leaderboard) -- no extra sort needed here.
+  // Only the 12 current managers are "who's viewing" choices -- buildCareerCards() also returns
+  // departed managers from the all-time leaderboard. Already ordered titles, then avg rank, then win %.
   const careerCards = buildCareerCards(data.history).filter((c) => managers.all.some((m) => m.personKey === c.managerKey));
-  const reigningChampionKey = data.history?.reigningChampionKey ?? null;
-  const reigningChampionCard = careerCards.find((c) => c.managerKey === reigningChampionKey) ?? null;
+  const reigningKey = data.history?.reigningChampionKey ?? null;
+  const champCard = careerCards.find((c) => c.managerKey === reigningKey) ?? null;
+  const season = data.history?.seasons?.find((s) => s.isCurrent)?.year ?? "";
 
-  const cardsHtml = careerCards
-    .map((card) => {
-      const isYou = card.managerKey === me;
-      const isReigningChampion = card.managerKey === reigningChampionKey;
-      return `
-        <div class="career-card-slot picker-slot">
-          <button type="button" class="picker-card-btn ${isYou ? "is-you" : ""}" data-manager-key="${card.managerKey}">
-            ${memberTileHtml(card, managers, { isReigningChampion })}
-            <span class="picker-card-cta">${isYou ? "Continue as You →" : "Play as this manager →"}</span>
-          </button>
-        </div>`;
-    })
-    .join("");
-
-  // Real league members (post-draft, or new joiners with no completed
-  // season yet) have no career-leaderboard row until their first season's
-  // standings exist -- give them the same "Rookie" treatment as an explicit
-  // upcoming-managers.json entry so they still have a card to pick.
+  // Real members with no completed season yet, and explicit upcoming managers, get the Rookie tile.
   const careerKeys = new Set(careerCards.map((c) => c.managerKey));
-  const newRealManagers = managers.all
-    .filter((m) => !careerKeys.has(m.personKey))
-    .map((m) => ({
-      personKey: m.personKey,
-      displayName: m.playerName ?? m.name,
-      color: m.color ?? "#5a6472",
-      abbreviation: m.abbreviation ?? m.shortName ?? "???",
-    }));
+  const rookies = [
+    ...managers.all.filter((m) => !careerKeys.has(m.personKey)).map((m) => ({
+      personKey: m.personKey, displayName: m.playerName ?? m.name, color: m.color ?? "#5a6472", abbreviation: m.abbreviation ?? m.shortName ?? "???",
+    })),
+    ...(data.upcomingManagers?.upcoming ?? []),
+  ];
+  const tiles = [
+    ...careerCards.map((c, i) => tileHtml(c, i, managers, me, c.managerKey === reigningKey)),
+    ...rookies.map((p, i) => rookieTileHtml({ ...p, theme: managers.themeForPersonKey?.(p.personKey) ?? null }, careerCards.length + i)),
+  ].join("");
 
-  const rookiesHtml = [...newRealManagers, ...(data.upcomingManagers?.upcoming ?? [])]
-    .map((person) => {
-      const isYou = person.personKey === me;
-      return `
-        <div class="career-card-slot picker-slot">
-          <button type="button" class="picker-card-btn ${isYou ? "is-you" : ""}" data-manager-key="${person.personKey}">
-            ${rookieTileHtml(person)}
-            <span class="picker-card-cta">${isYou ? "Continue as You →" : "Play as this manager →"}</span>
-          </button>
-        </div>`;
-    })
-    .join("");
+  const lineups = lineupSection(data, managers, me, reigningKey);
 
   container.innerHTML = `
-    <div class="schedule-luxury landing-hero">
-      <div class="hero-block">
-        <div class="giant-mark" aria-hidden="true">X</div>
-        <div class="hero-content">
-          <span class="eyebrow">Who's Watching?</span>
-          <span class="title-line-2">The Business</span>
-          <span class="est-line">Est. 2017 · Tenth Anniversary Season</span>
-          <div class="hero-rule"><span></span><span class="dot"></span><span></span></div>
-        </div>
-        <canvas id="landingPassNetwork" class="sl-pass-canvas"></canvas>
-      </div>
-    </div>
+    <div class="hm">
+      <canvas class="hm-net" aria-hidden="true"></canvas>
+      <header class="hm-hero" id="hm-hero">
+        <div class="hm-giant" aria-hidden="true">X</div>
+        <p class="hm-eyebrow">Who's watching?</p>
+        <h1 class="hm-title">The Business</h1>
+        <p class="hm-est">Est. 2017${season ? ` · Season ${escapeHtml(String(season))}` : ""}</p>
+        <div class="hm-rule"><i></i><b></b><i></i></div>
+        <div class="hm-cue">Choose your manager</div>
+      </header>
+      ${champCard ? championHtml(champCard, managers) : ""}
+      <section class="hm-roster" id="hm-roster">${tiles}</section>
+      ${lineups ? lineups.html : ""}
+    </div>`;
 
-    <div class="cards-theme">
-      ${reigningChampionCard ? championSpotlightHtml(reigningChampionCard, managers) : ""}
-      <div class="grid career-grid picker-grid" id="landing-picker-grid">
-        ${cardsHtml}
-        ${rookiesHtml}
-      </div>
-    </div>
-  `;
+  const root = container.querySelector(".hm");
+  startConstellation(root.querySelector(".hm-net"), { nodeCount: 18 });
 
-  const heroBlock = container.querySelector(".landing-hero .hero-block");
-  const canvas = container.querySelector("#landingPassNetwork");
-  if (canvas && heroBlock) initPassNetwork(canvas, heroBlock);
+  // the giant X drifts slightly against the pointer
+  const giant = root.querySelector(".hm-giant");
+  const onMove = (e) => {
+    if (!giant.isConnected) { window.removeEventListener("pointermove", onMove); return; }
+    giant.style.setProperty("--px", `${(e.clientX / window.innerWidth - 0.5) * -30}px`);
+    giant.style.setProperty("--py", `${(e.clientY / window.innerHeight - 0.5) * -18}px`);
+  };
+  if (!reduced()) window.addEventListener("pointermove", onMove);
 
-  const grid = container.querySelector("#landing-picker-grid");
-  grid.addEventListener("click", (e) => {
-    const btn = e.target.closest(".picker-card-btn");
+  revealOnScroll(root);
+  attachTilt(root.querySelector("#hm-roster"));
+  lineups?.mount(root.querySelector("#hm-lineups"));
+
+  const roster = root.querySelector("#hm-roster");
+  roster.addEventListener("click", (e) => {
+    const btn = e.target.closest(".hm-tile");
     if (!btn) return;
-
     const key = btn.dataset.managerKey;
-
     function navigate() {
-      // Order matters: location.hash updates synchronously (the hashchange
-      // *event* fires later, async), so setting it first means that by the
-      // time setIdentity()'s synchronous dispatch triggers app.js's
-      // onIdentityChange(draw), currentRoute() already resolves to
-      // "my-season" and getIdentity() already returns the new key -- one
-      // clean render straight to the personalized page. Reversing this order
-      // would re-render the landing page itself first (a visible flash)
-      // before the async hashchange catches up.
+      // Order matters: location.hash updates synchronously (the hashchange *event* fires later),
+      // so setting it first means setIdentity()'s synchronous dispatch re-renders straight into
+      // the personalised page -- one clean render, no flash of the landing page.
       location.hash = "#my-season";
       setIdentity(key);
     }
-
-    if (reduceMotion) {
-      navigate();
-      return;
-    }
-
+    if (reduced()) { navigate(); return; }
     btn.classList.add("selecting");
-    grid.querySelectorAll(".picker-card-btn").forEach((other) => {
-      if (other !== btn) other.classList.add("dimmed");
-    });
+    roster.querySelectorAll(".hm-tile").forEach((other) => { if (other !== btn) other.classList.add("dimmed"); });
     setTimeout(navigate, SELECT_ANIMATION_MS);
   });
+
+  root.querySelector(".hm-cue")?.addEventListener("click", () => root.querySelector("#hm-roster")?.scrollIntoView({ behavior: reduced() ? "auto" : "smooth" }));
 }

@@ -31,7 +31,7 @@ import { computeWaiverHitRate } from "./stats/waiverHitRate.js";
 import { computeFormGuide } from "./stats/formGuide.js";
 import { computeHistory } from "./stats/history.js";
 import { computeSchedule } from "./stats/schedule.js";
-import { computeMatchupOdds, attachOdds } from "./stats/matchupOdds.js";
+import { computeMatchupOdds, attachOdds, predictLineups } from "./stats/matchupOdds.js";
 import { gatherOddsInputs } from "./fetch/oddsInputs.js";
 import { buildNarrativeLayer } from "./narrative/index.js";
 import { writeRecapArchive } from "./narrative/archive.js";
@@ -177,6 +177,8 @@ async function main() {
       const started = context.matches.some((m) => m.event === schedule.gw && m.started);
       const inputs = await gatherOddsInputs(context, { leagueId: config.LEAGUE_ID, gw: schedule.gw, started });
       attachOdds(schedule, computeMatchupOdds(context, inputs));
+      schedule.lineups = predictLineups(context, inputs);
+      schedule.lineupsMeta = { gw: schedule.gw, source: inputs.source };
     } catch (err) {
       console.warn(`Matchup odds skipped: ${err.message}`);
     }
