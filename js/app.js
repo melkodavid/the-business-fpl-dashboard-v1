@@ -98,7 +98,7 @@ function main(data, managers) {
     const route = currentRoute();
     setActiveNav(route);
     ROUTES[route](app, data, managers);
-    // The Cup page is its own untouched theme -- no site-wide motion pass there.
+    // The Cup page runs its own motion choreography (see render/cup.js), so it skips the site-wide pass.
     if (route !== "cup") {
       initScrollReveal();
       // Restart the CSS fade-in animation on every route change by removing
