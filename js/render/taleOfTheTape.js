@@ -48,15 +48,6 @@ function positionalEdge(homeId, awayId, positionalStrength) {
   return notes;
 }
 
-function formStripHtml(results) {
-  return results
-    .map((r) => {
-      const cls = r.result === "W" ? "win" : r.result === "L" ? "loss" : "draw";
-      return `<span class="form-box ${cls}" title="GW${r.gw}: ${r.result} (${r.points} pts)">${r.result}</span>`;
-    })
-    .join("");
-}
-
 function loreHook(homeKey, awayKey, lore) {
   const relation = lore.familyRelation(homeKey, awayKey);
   if (relation === "brother") return { label: "Family", text: "Brothers, for now." };
@@ -81,25 +72,11 @@ function gauntletHook(homeId, awayId, seasonArcs) {
   return { label: "Gauntlet Watch", text: `Leg ${played + 1} of ${length} against the family.` };
 }
 
-// Three-way win / draw / win bar with the projected XI totals underneath. In a
-// live gameweek the totals also show what's actually been scored so far.
-function oddsHtml(odds, meta) {
-  const live = meta?.basis === "live";
-  const sub = live
-    ? `Live &middot; scored ${odds.homeSoFar}&ndash;${odds.awaySoFar} &middot; projected finish ${odds.homeExpected}&ndash;${odds.awayExpected}`
-    : `Projected XI ${odds.homeExpected}&ndash;${odds.awayExpected}`;
-  return `
-      <div class="tale-win-prob tale-odds" title="${meta?.source ?? "FPL expected points"} -- a for-fun estimate, not a bookmaker's price">
-        <span class="tale-win-prob-label">${live ? "Live odds" : "Win odds"}</span>
-        <div class="tale-odds-bar">
-          <span class="odds-home" style="width:${odds.homeWinPct}%"></span><span class="odds-draw" style="width:${odds.drawPct}%"></span><span class="odds-away" style="width:${odds.awayWinPct}%"></span>
-        </div>
-        <span class="tale-win-prob-split">${odds.homeWinPct}% &middot; ${odds.drawPct}% &middot; ${odds.awayWinPct}%</span>
-      </div>
-      <div class="tale-odds-sub">${sub}</div>`;
-}
 
-export function buildTaleOfTheTapeCard(fixture, data, managers, lore) {
+// Everything the match-centre panel needs for one fixture, as plain data (the
+// This Week page owns the markup): head-to-head this season, last meeting,
+// each side's form and luck, positional edges, and any family/rivalry hook.
+export function taleDetails(fixture, data, managers, lore) {
   const { homeManagerId: homeId, awayManagerId: awayId } = fixture;
   const homeKey = personKeyOf(homeId, managers);
   const awayKey = personKeyOf(awayId, managers);
@@ -107,71 +84,27 @@ export function buildTaleOfTheTapeCard(fixture, data, managers, lore) {
   const h2h = h2hCellFor(homeId, awayId, data.h2hGrid);
   const homeForm = formRowFor(homeId, data.formGuide);
   const awayForm = formRowFor(awayId, data.formGuide);
-  const homeLuck = luckScoreFor(homeId, data.allPlay);
-  const awayLuck = luckScoreFor(awayId, data.allPlay);
-  const edges = positionalEdge(homeId, awayId, data.positionalStrength);
-  const hook = gauntletHook(homeId, awayId, data.seasonArcs) ?? loreHook(homeKey, awayKey, lore);
 
   const homePct = last5WinPct(homeId, data.allPlay);
   const awayPct = last5WinPct(awayId, data.allPlay);
   const total = homePct + awayPct || 1;
   const homeShare = Math.round((homePct / total) * 100);
-  const awayShare = 100 - homeShare;
 
-  // Official-FPL-expected-points odds when the build produced them; otherwise
-  // the older form-based split so the card never goes without a bar.
-  const winProbHtml = fixture.odds
-    ? oddsHtml(fixture.odds, data.schedule?.oddsMeta)
-    : `<div class="tale-win-prob">
-        <span class="tale-win-prob-label">Form says</span>
-        <div class="tale-win-prob-bar"><span style="width:${homeShare}%"></span></div>
-        <span class="tale-win-prob-split">${homeShare}/${awayShare}</span>
-      </div>`;
-
-  const rivalryLine = h2h
-    ? `${h2h.wins}-${h2h.draws}-${h2h.losses} this season${h2h.streak.count > 1 ? ` &middot; ${h2h.streak.type === "W" ? managers.name(homeId) : managers.name(awayId)} on a ${h2h.streak.count}-game run` : ""}`
-    : "First meeting this season";
-  const lastMeetingLine = h2h
-    ? `Last time: GW${h2h.lastMeeting.gw}, ${h2h.lastMeeting.pointsFor}-${h2h.lastMeeting.pointsAgainst}`
-    : "";
-
-  return `
-    <div class="tale-card">
-      <div class="fixture-tag">${fixture.tag}</div>
-      <div class="tale-heads">
-        <div class="tale-side">
-          ${managers.avatarHtml(homeId)}
-          <span class="fixture-name">${managers.clubHtml(homeId)}</span>
-          <span class="fixture-rank">#${fixture.homeRank}</span>
-        </div>
-        <div class="tale-vs">vs</div>
-        <div class="tale-side away">
-          <span class="fixture-name">${managers.clubHtml(awayId)}</span>
-          <span class="fixture-rank">#${fixture.awayRank}</span>
-          ${managers.avatarHtml(awayId)}
-        </div>
-      </div>
-
-      <div class="tale-rivalry">
-        <span>${rivalryLine}</span>
-        ${lastMeetingLine ? `<span class="tale-dim">${lastMeetingLine}</span>` : ""}
-      </div>
-
-      <div class="tale-forms">
-        <div class="tale-form-side">
-          <div class="form-strip">${homeForm ? formStripHtml(homeForm.results) : ""}</div>
-          <span class="tale-dim">Luck ${homeLuck >= 0 ? "+" : ""}${homeLuck.toFixed(1)}</span>
-        </div>
-        <div class="tale-form-side away">
-          <div class="form-strip">${awayForm ? formStripHtml(awayForm.results) : ""}</div>
-          <span class="tale-dim">Luck ${awayLuck >= 0 ? "+" : ""}${awayLuck.toFixed(1)}</span>
-        </div>
-      </div>
-
-      ${winProbHtml}
-
-      ${edges.length ? `<div class="tale-edges">${edges.map((e) => `<span class="tale-edge">${e}</span>`).join("")}</div>` : ""}
-
-      ${hook ? `<div class="tale-hook"><span class="tale-hook-label">${hook.label}</span>${hook.text}</div>` : ""}
-    </div>`;
+  return {
+    h2h,
+    rivalryLine: h2h
+      ? `${h2h.wins}-${h2h.draws}-${h2h.losses} this season${h2h.streak.count > 1 ? ` &middot; ${h2h.streak.type === "W" ? managers.name(homeId) : managers.name(awayId)} on a ${h2h.streak.count}-game run` : ""}`
+      : "First meeting this season",
+    lastMeetingLine: h2h ? `GW${h2h.lastMeeting.gw}, ${h2h.lastMeeting.pointsFor}-${h2h.lastMeeting.pointsAgainst}` : "",
+    homeForm: homeForm?.results ?? [],
+    awayForm: awayForm?.results ?? [],
+    homeFormAvg: homeForm?.avgPoints ?? null,
+    awayFormAvg: awayForm?.avgPoints ?? null,
+    homeLuck: luckScoreFor(homeId, data.allPlay),
+    awayLuck: luckScoreFor(awayId, data.allPlay),
+    edges: positionalEdge(homeId, awayId, data.positionalStrength),
+    hook: gauntletHook(homeId, awayId, data.seasonArcs) ?? loreHook(homeKey, awayKey, lore),
+    // fallback split for fixtures with no expected-points odds
+    formShare: { home: homeShare, away: 100 - homeShare },
+  };
 }

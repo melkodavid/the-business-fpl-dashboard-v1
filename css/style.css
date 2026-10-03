@@ -2027,3 +2027,200 @@ tfoot td { border-top: 2px solid var(--edge-bright); border-bottom: 0; }
 /* Custom crest images are detailed -- give them a larger, square box than the compact generated shield. */
 .club-badge:has(.club-badge-img) { width: 1.95em; height: 1.95em; }
 .podium-name .club-badge:has(.club-badge-img) { width: 2.4em; height: 2.4em; }
+
+/* =========================================================================
+   This Week -- the Matchday page. Generated from the animated mockup
+   (design-samples/matchup-a2-matchday-animated.html): every rule is scoped
+   under .matchday and every class/keyframe is md- prefixed.
+   ========================================================================= */
+.matchday {
+    --ink: #0e0420; --plum: #230a47; --violet: #6a2be0; --pink: #ff2e93;
+    --citrus: #d4ff3a; --ice: #7df3ff; --text: #f6f1ff; --muted: #a994d6;
+    --panel: rgba(255,255,255,0.06); --line: rgba(255,255,255,0.12);
+  }
+.matchday .md-hero { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding: 24px 0 34px; }
+.matchday .md-kicker { font: 700 15px "Barlow Condensed"; letter-spacing: 0.34em; text-transform: uppercase; color: var(--citrus); }
+.matchday .md-big { font: 900 clamp(90px, 18vw, 190px)/0.82 "Barlow Condensed"; letter-spacing: -0.02em; margin: 6px 0 0; text-transform: uppercase; }
+.matchday .md-big .md-word { font-size: 0.5em; letter-spacing: 0.02em; }
+.matchday .md-big .md-num { color: transparent; -webkit-text-stroke: 3px var(--citrus); }
+.matchday .md-lock { text-align: right; }
+.matchday .md-lock small { display: block; font: 700 13px "Barlow Condensed"; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+.matchday .md-clock { display: flex; gap: 8px; justify-content: flex-end; }
+.matchday .md-clock div { min-width: 70px; padding: 10px 8px 8px; text-align: center; background: var(--panel); border: 1px solid var(--line); clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px)); }
+.matchday .md-clock b { display: block; font: 800 38px/1 "Barlow Condensed"; }
+.matchday .md-clock span { font: 600 11px "Barlow Condensed"; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
+.matchday .md-crest { position: relative; display: inline-grid; place-items: center; width: var(--s, 56px); height: var(--s, 56px); flex-shrink: 0; border-radius: 50%;
+    background: radial-gradient(circle at 30% 25%, color-mix(in srgb, var(--c) 70%, #fff 30%), var(--c) 55%, color-mix(in srgb, var(--c) 55%, #000)); box-shadow: 0 6px 18px -6px var(--c), inset 0 0 0 2px rgba(255,255,255,0.35); }
+.matchday .md-crest b { font: 900 calc(var(--s, 56px) * 0.3)/1 "Barlow Condensed"; letter-spacing: 0.04em; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+.matchday .md-crest img { position: absolute; inset: -6%; width: 112%; height: 112%; object-fit: contain; border-radius: 14%; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5)); }
+.matchday .md-crest:has(img) { background: none; box-shadow: none; }
+.matchday .md-crest:has(img) b { display: none; }
+.matchday .md-crest.md-xl { --s: 132px; }
+.matchday .md-crest.md-lg { --s: 84px; }
+.matchday .md-f { display: inline-grid; place-items: center; width: 20px; height: 20px; margin-right: 3px; font: 800 11px "Barlow Condensed"; font-style: normal; border-radius: 3px; color: #10041f; }
+.matchday .md-f-W { background: var(--citrus); }
+.matchday .md-f-L { background: var(--pink); color: #fff; }
+.matchday .md-f-D { background: #b9a9e6; }
+.matchday .md-odds { display: grid; gap: 6px; width: 100%; max-width: 270px; margin: 0 auto; }
+.matchday .md-odds .md-nums { display: flex; justify-content: space-between; font: 800 26px/1 "Barlow Condensed"; }
+.matchday .md-odds .md-nums .md-d { color: var(--muted); font-size: 18px; align-self: end; }
+.matchday .md-odds .md-home { color: var(--citrus); }
+.matchday .md-odds .md-away { color: var(--pink); }
+.matchday .md-track { display: flex; height: 8px; border-radius: 99px; overflow: hidden; background: rgba(255,255,255,0.1); }
+.matchday .md-track i { display: block; height: 100%; }
+.matchday .md-track .md-h { background: var(--citrus); }
+.matchday .md-track .md-dr { background: #ffffff66; }
+.matchday .md-track .md-a { background: var(--pink); }
+.matchday .md-odds small { text-align: center; font: 600 11px "Barlow Condensed"; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
+.matchday .md-feature { position: relative; margin-bottom: 26px; padding: 30px 26px 26px; overflow: hidden;
+    background: linear-gradient(120deg, rgba(106,43,224,0.55), rgba(255,46,147,0.35)); border: 1px solid var(--line);
+    clip-path: polygon(0 0, calc(100% - 34px) 0, 100% 34px, 100% 100%, 34px 100%, 0 calc(100% - 34px)); }
+.matchday .md-feature::after { content: "VS"; position: absolute; left: 50%; top: 14px; transform: translateX(-50%); font: 900 240px/1 "Barlow Condensed"; color: rgba(255,255,255,0.05); pointer-events: none; }
+.matchday .md-ribbon { display: inline-block; font: 800 13px "Barlow Condensed"; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink); background: var(--citrus); padding: 5px 14px 4px; transform: skewX(-12deg); }
+.matchday .md-feature-grid { display: grid; grid-template-columns: 1fr minmax(240px, 300px) 1fr; align-items: center; gap: 18px; margin-top: 18px; position: relative; z-index: 1; }
+.matchday .md-fside { display: grid; justify-items: center; text-align: center; gap: 8px; }
+.matchday .md-fside h3 { margin: 6px 0 0; font: 900 38px/0.95 "Barlow Condensed"; text-transform: uppercase; }
+.matchday .md-fside p { margin: 0; color: var(--muted); font-size: 14px; }
+.matchday .md-fside .md-meta { font: 700 13px "Barlow Condensed"; letter-spacing: 0.14em; text-transform: uppercase; color: var(--citrus); }
+.matchday .md-cmp { margin-top: 20px; display: grid; grid-template-columns: 1fr; gap: 8px; max-width: 640px; margin-left: auto; margin-right: auto; position: relative; z-index: 1; }
+.matchday .md-cmp div { display: grid; grid-template-columns: 1fr 140px 1fr; align-items: center; gap: 12px; font: 800 22px "Barlow Condensed"; }
+.matchday .md-cmp span:first-child { text-align: right; }
+.matchday .md-cmp em { font-style: normal; text-align: center; color: var(--muted); letter-spacing: 0.18em; font-size: 11px; text-transform: uppercase; }
+.matchday .md-cmp .md-lead { color: var(--citrus); }
+.matchday .md-strip { position: relative; margin-bottom: 12px; cursor: pointer; background: var(--panel); border: 1px solid var(--line);
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px)); transition: background .2s, transform .2s; }
+.matchday .md-strip:hover { background: rgba(255,255,255,0.1); transform: translateX(3px); }
+.matchday .md-strip .md-tag { position: absolute; left: 0; top: 0; font: 800 11px "Barlow Condensed"; letter-spacing: 0.18em; text-transform: uppercase; padding: 3px 12px 2px; background: var(--pink); color: #fff; }
+.matchday .md-row { display: grid; grid-template-columns: 1fr 290px 1fr; align-items: center; gap: 16px; padding: 30px 26px 18px; }
+.matchday .md-team { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.matchday .md-team.md-r { flex-direction: row-reverse; text-align: right; }
+.matchday .md-team h4 { margin: 0; font: 800 26px/1 "Barlow Condensed"; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.matchday .md-team p { margin: 3px 0 6px; font-size: 13px; color: var(--muted); }
+.matchday .md-team .md-rk { color: var(--citrus); font-weight: 600; }
+.matchday .md-detail { display: none; padding: 4px 26px 20px; border-top: 1px solid var(--line); }
+.matchday .md-strip.md-open .md-detail { display: grid; gap: 14px; grid-template-columns: 1fr 1fr 1fr; padding-top: 16px; }
+.matchday .md-strip.md-open .md-chev { transform: rotate(180deg); }
+.matchday .md-box { background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3px solid var(--violet); }
+.matchday .md-box small { display: block; font: 700 11px "Barlow Condensed"; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+.matchday .md-box b { font: 800 22px "Barlow Condensed"; }
+.matchday .md-foot { margin-top: 30px; color: var(--muted); font-size: 12px; text-align: center; font-style: italic; }
+.matchday .md-aurora { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.matchday .md-aurora i { position: absolute; width: 60vmax; height: 60vmax; border-radius: 50%; filter: blur(90px); opacity: 0.5; }
+.matchday .md-aurora i:nth-child(1) { background: #6a2be0; left: -15vmax; top: -20vmax; animation: md-drift1 22s ease-in-out infinite alternate; }
+.matchday .md-aurora i:nth-child(2) { background: #ff2e93; right: -20vmax; top: 10vmax; opacity: 0.32; animation: md-drift2 28s ease-in-out infinite alternate; }
+.matchday .md-aurora i:nth-child(3) { background: #2b6bff; left: 25vmax; bottom: -30vmax; opacity: 0.28; animation: md-drift3 34s ease-in-out infinite alternate; }
+@keyframes md-drift1 { to { transform: translate(18vmax, 12vmax) scale(1.15); } }
+@keyframes md-drift2 { to { transform: translate(-16vmax, 14vmax) scale(0.9); } }
+@keyframes md-drift3 { to { transform: translate(-12vmax, -16vmax) scale(1.2); } }
+.matchday .md-news { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; display: flex; align-items: stretch; height: 46px;
+    background: linear-gradient(90deg, #12052a, #1d0a3f); border-top: 2px solid var(--citrus); box-shadow: 0 -10px 40px -10px rgba(0,0,0,0.7); }
+.matchday .md-news .md-lab { flex-shrink: 0; display: flex; align-items: center; gap: 10px; padding: 0 34px 0 18px; background: var(--citrus); color: var(--ink);
+    font: 900 17px "Barlow Condensed"; letter-spacing: 0.14em; text-transform: uppercase; clip-path: polygon(0 0, 100% 0, calc(100% - 20px) 100%, 0 100%); position: relative; z-index: 2; }
+.matchday .md-news .md-lab::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--pink); animation: md-blip 1.4s infinite; }
+@keyframes md-blip { 50% { opacity: 0.2; transform: scale(0.7); } }
+.matchday .md-news .md-viewport { flex: 1; overflow: hidden; position: relative; display: flex; align-items: center;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 40px, #000 calc(100% - 60px), transparent); mask-image: linear-gradient(90deg, transparent, #000 40px, #000 calc(100% - 60px), transparent); }
+.matchday .md-news .md-reel { display: inline-flex; white-space: nowrap; animation: md-reel var(--reel, 60s) linear infinite; will-change: transform; }
+.matchday .md-news:hover .md-reel { animation-play-state: paused; }
+.matchday .md-news .md-reel span { font: 700 18px "Barlow Condensed"; letter-spacing: 0.06em; text-transform: uppercase; padding: 0 22px; color: #efe7ff; }
+.matchday .md-news .md-reel span::after { content: "◆"; color: var(--pink); margin-left: 44px; font-size: 11px; vertical-align: middle; }
+.matchday .md-news .md-reel span b { color: var(--citrus); font-weight: 800; }
+@keyframes md-reel { to { transform: translateX(-50%); } }
+.matchday .md-big .md-word { display: inline-block; animation: md-wordIn 1s cubic-bezier(.2,.9,.2,1) both; }
+@keyframes md-wordIn { from { clip-path: inset(0 100% 0 0); transform: translateX(-30px); } to { clip-path: inset(0 0 0 0); transform: none; } }
+.matchday .md-big .md-num { display: inline-block; position: relative; animation: md-numIn 1s .25s cubic-bezier(.2,.9,.2,1) both, md-float 6s 1.3s ease-in-out infinite; }
+.matchday .md-big .md-num::after { content: attr(data-n); position: absolute; left: 0; top: 0; color: transparent; -webkit-text-stroke: 0;
+    background: linear-gradient(100deg, transparent 35%, rgba(212,255,58,0.85) 50%, transparent 65%) 0 0 / 250% 100%;
+    -webkit-background-clip: text; background-clip: text; animation: md-shimmer 3.6s 1.4s ease-in-out infinite; }
+@keyframes md-numIn { from { opacity: 0; transform: translateY(40px) scale(0.9); } to { opacity: 1; transform: none; } }
+@keyframes md-float { 50% { transform: translateY(-8px); } }
+@keyframes md-shimmer { from { background-position: 150% 0; } to { background-position: -50% 0; } }
+.matchday .md-kicker, .matchday .md-lock { animation: md-fadeUp .8s .1s both; }
+@keyframes md-fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.matchday .md-clock b.md-pop { animation: md-pop .35s ease; }
+@keyframes md-pop { 40% { transform: translateY(-4px) scale(1.12); color: var(--citrus); } }
+.matchday .md-feature, .matchday .md-strip { opacity: 0; transform: translateY(34px); }
+.matchday .md-feature.md-in, .matchday .md-strip.md-in { opacity: 1; transform: none; transition: opacity .7s ease, transform .8s cubic-bezier(.2,.9,.2,1); transition-delay: calc(var(--i, 0) * 90ms); }
+.matchday .md-strip.md-in:hover { transform: translateX(4px); transition-delay: 0s; transition-duration: .2s; }
+.matchday .md-track i { width: 0; transition: width 1.1s cubic-bezier(.2,.9,.2,1); transition-delay: calc(var(--i, 0) * 90ms + .35s); }
+.matchday .md-in .md-track .md-h { width: var(--w); }
+.matchday .md-in .md-track .md-dr { width: var(--w); }
+.matchday .md-in .md-track .md-a { width: var(--w); }
+.matchday .md-crest { transition: transform .35s cubic-bezier(.2,.9,.2,1); }
+.matchday .md-in .md-crest { animation: md-crestPop .7s cubic-bezier(.2,1.4,.4,1) both; animation-delay: calc(var(--i, 0) * 90ms + .2s); }
+@keyframes md-crestPop { from { transform: scale(0.4) rotate(-12deg); opacity: 0; } to { transform: none; opacity: 1; } }
+.matchday .md-strip:hover .md-crest { transform: translateY(-4px) scale(1.07); }
+.matchday .md-in .md-f { animation: md-dot .4s ease both; }
+.matchday .md-in .md-f:nth-child(1) { animation-delay: .5s; }
+.matchday .md-in .md-f:nth-child(2) { animation-delay: .58s; }
+.matchday .md-in .md-f:nth-child(3) { animation-delay: .66s; }
+.matchday .md-in .md-f:nth-child(4) { animation-delay: .74s; }
+.matchday .md-in .md-f:nth-child(5) { animation-delay: .82s; }
+@keyframes md-dot { from { transform: scale(0); } to { transform: scale(1); } }
+.matchday .md-strip::after, .matchday .md-feature::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(105deg, transparent 38%, rgba(255,255,255,0.16) 50%, transparent 62%); transform: translateX(-120%); }
+.matchday .md-strip:hover::after { transform: translateX(120%); transition: transform .8s ease; }
+.matchday .md-feature::before { animation: md-sheen 6s 2s ease-in-out infinite; }
+@keyframes md-sheen { 0% { transform: translateX(-120%); } 40%, 100% { transform: translateX(120%); } }
+.matchday .md-feature .md-crest.md-xl { animation: md-crestPop .9s .4s cubic-bezier(.2,1.4,.4,1) both, md-bob 5s 1.4s ease-in-out infinite; }
+.matchday .md-feature .md-fside:nth-child(3) .md-crest.md-xl { animation-delay: .6s, 1.9s; }
+@keyframes md-bob { 50% { transform: translateY(-9px); } }
+.matchday .md-feature::after { transition: transform .2s ease-out; transform: translateX(calc(-50% + var(--px, 0px))) translateY(var(--py, 0px)); }
+.matchday .md-ribbon { position: relative; overflow: hidden; }
+.matchday .md-ribbon::after { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, transparent 30%, rgba(255,255,255,0.7) 50%, transparent 70%); transform: translateX(-130%); animation: md-ribbonShine 4s 1.5s infinite; }
+@keyframes md-ribbonShine { 30%, 100% { transform: translateX(130%); } }
+.matchday .md-odds .md-home, .matchday .md-odds .md-away { font-variant-numeric: tabular-nums; }
+.matchday .md-odds.md-lead-home .md-home, .matchday .md-odds.md-lead-away .md-away { text-shadow: 0 0 14px currentColor; }
+@media (prefers-reduced-motion: reduce) {
+.matchday *, .matchday *::before, .matchday *::after { animation: none !important; transition: none !important; }
+.matchday .md-feature, .matchday .md-strip { opacity: 1; transform: none; }
+.matchday .md-track .md-h, .matchday .md-track .md-dr, .matchday .md-track .md-a { width: var(--w); }
+.matchday .md-news .md-reel { transform: none; }
+}
+@media (max-width: 760px) {
+.matchday .md-news .md-lab { padding-right: 26px; font-size: 14px; }
+.matchday .md-news .md-reel span { font-size: 15px; }
+}
+@media (max-width: 760px) {
+.matchday .md-feature-grid, .matchday .md-row { grid-template-columns: 1fr; }
+.matchday .md-team.md-r { flex-direction: row; text-align: left; }
+.matchday .md-lock { text-align: left; }
+.matchday .md-clock { justify-content: flex-start; }
+.matchday .md-strip.md-open .md-detail { grid-template-columns: 1fr; }
+.matchday .md-cmp div { grid-template-columns: 1fr 70px 1fr; }
+}
+/* ---- Matchday page: pieces beyond the base mockup ---- */
+.matchday { position: relative; color: var(--text); font-family: "Barlow", "Archivo", sans-serif; padding: 0 0 64px; }
+.matchday .md-score { display: grid; justify-items: center; gap: 8px; text-align: center; }
+.matchday .md-scoreline { display: flex; align-items: center; gap: 14px; font: 900 64px/1 "Barlow Condensed", sans-serif; font-variant-numeric: tabular-nums; }
+.matchday .md-scoreline i { font-style: normal; color: var(--muted); font-size: 40px; }
+.matchday .md-score small { font: 600 11px "Barlow Condensed", sans-serif; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+.matchday .md-status { font: 800 13px "Barlow Condensed", sans-serif; letter-spacing: 0.2em; text-transform: uppercase; padding: 3px 14px 2px; transform: skewX(-12deg); }
+.matchday .md-status.md-ft { background: rgba(255,255,255,0.14); }
+.matchday .md-status.md-live { background: var(--pink); color: #fff; animation: md-blip 1.4s infinite; }
+.matchday .md-dim { display: block; margin-top: 4px; font-size: 12px; color: var(--muted); }
+.matchday .md-notes { grid-column: 1 / -1; display: grid; gap: 6px; position: relative; z-index: 1; margin-top: 4px; }
+.matchday .md-notes span { padding: 6px 12px; font-size: 13px; color: #d9cdf5; background: rgba(0,0,0,0.22); border-left: 3px solid var(--pink); }
+.matchday .md-notes b { color: var(--citrus); font-weight: 600; }
+.matchday .md-feature > .md-notes { max-width: 640px; margin: 14px auto 0; }
+.matchday .md-arcs { margin: 0 0 22px; }
+.matchday .md-arcs .season-arc-widgets { justify-content: flex-start; }
+.matchday .md-empty { margin: 0 0 22px; padding: 16px 20px; color: var(--muted); background: var(--panel); border-left: 3px solid var(--citrus); }
+.matchday .md-story { position: relative; margin: 34px 0 0; padding: 26px 28px; background: linear-gradient(120deg, rgba(106,43,224,0.35), rgba(255,46,147,0.18)); border: 1px solid var(--line);
+  clip-path: polygon(0 0, calc(100% - 26px) 0, 100% 26px, 100% 100%, 26px 100%, 0 calc(100% - 26px)); opacity: 0; transform: translateY(30px); }
+.matchday .md-story.md-in { opacity: 1; transform: none; transition: opacity .7s ease, transform .8s cubic-bezier(.2,.9,.2,1); }
+.matchday .md-story h2 { margin: 8px 0 12px; font: 900 clamp(30px, 5vw, 46px)/1 "Barlow Condensed", sans-serif; text-transform: uppercase; }
+.matchday .md-story ul { margin: 0 0 14px; padding-left: 18px; color: #d9cdf5; line-height: 1.55; }
+.matchday .md-story a { color: var(--citrus); font: 800 14px "Barlow Condensed", sans-serif; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; }
+.matchday .md-foot { margin: 28px 0 0; color: var(--muted); font-size: 12px; text-align: center; font-style: italic; }
+.matchday .md-team .md-rk { color: var(--citrus); font-weight: 600; }
+.matchday .md-team h4 .title-stars { color: var(--citrus); font-size: 0.6em; margin-left: 4px; letter-spacing: 0; }
+.matchday .md-fside h3 .title-stars { color: var(--citrus); font-size: 0.5em; margin-left: 6px; letter-spacing: 0; vertical-align: middle; }
+.matchday .md-crest b { display: block; }
+@media (prefers-reduced-motion: reduce) { .matchday .md-story { opacity: 1; transform: none; } }
+@media (max-width: 760px) { .matchday .md-scoreline { font-size: 52px; } }
+
+/* Matchday tuning on the live site */
+.matchday .md-arcs .season-arc-widgets { margin: 0; max-width: none; justify-content: flex-start; padding: 0; }
+.matchday .md-aurora i:nth-child(1) { opacity: 0.4; }
+.matchday .md-aurora i:nth-child(2) { opacity: 0.24; }
+.matchday .md-aurora i:nth-child(3) { opacity: 0.2; }
