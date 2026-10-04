@@ -103,11 +103,11 @@
       "importance": 2.2,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 24,
+        "homeWinPct": 27,
         "drawPct": 2,
-        "awayWinPct": 74,
+        "awayWinPct": 71,
         "homeExpected": 41.9,
-        "awayExpected": 51.4,
+        "awayExpected": 50.1,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -534,7 +534,7 @@
     },
     "1501": {
       "formation": "5-4-1",
-      "expected": 51.4,
+      "expected": 50.1,
       "captainId": 229,
       "locked": false,
       "xi": [
@@ -563,20 +563,20 @@
           "ep": 5.7
         },
         {
-          "id": 588,
-          "name": "Khalaili",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Crystal Palace",
-          "ep": 5.3
-        },
-        {
           "id": 332,
           "name": "Justin",
           "pos": "DEF",
           "type": 2,
           "team": "Leeds",
           "ep": 4.7
+        },
+        {
+          "id": 588,
+          "name": "Khalaili",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Crystal Palace",
+          "ep": 4
         },
         {
           "id": 389,
