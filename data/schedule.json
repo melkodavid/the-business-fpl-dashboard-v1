@@ -15,11 +15,11 @@
       "importance": 3,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 32,
-        "drawPct": 3,
-        "awayWinPct": 65,
-        "homeExpected": 53.2,
-        "awayExpected": 59.2,
+        "homeWinPct": 28,
+        "drawPct": 2,
+        "awayWinPct": 70,
+        "homeExpected": 53.9,
+        "awayExpected": 61.7,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -37,11 +37,11 @@
       "importance": 2.32,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 24,
+        "homeWinPct": 25,
         "drawPct": 2,
-        "awayWinPct": 74,
+        "awayWinPct": 73,
         "homeExpected": 34.6,
-        "awayExpected": 44.2,
+        "awayExpected": 44,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -59,10 +59,10 @@
       "importance": 2.27,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 10,
+        "homeWinPct": 13,
         "drawPct": 1,
-        "awayWinPct": 89,
-        "homeExpected": 29.9,
+        "awayWinPct": 86,
+        "homeExpected": 32.2,
         "awayExpected": 48.2,
         "homeSoFar": null,
         "awaySoFar": null
@@ -81,10 +81,10 @@
       "importance": 2.21,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 31,
-        "drawPct": 3,
-        "awayWinPct": 66,
-        "homeExpected": 49.4,
+        "homeWinPct": 33,
+        "drawPct": 2,
+        "awayWinPct": 65,
+        "homeExpected": 50.1,
         "awayExpected": 56,
         "homeSoFar": null,
         "awaySoFar": null
@@ -103,11 +103,11 @@
       "importance": 2.2,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 21,
+        "homeWinPct": 24,
         "drawPct": 2,
-        "awayWinPct": 77,
-        "homeExpected": 40.7,
-        "awayExpected": 51.6,
+        "awayWinPct": 74,
+        "homeExpected": 41.9,
+        "awayExpected": 51.4,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -125,11 +125,11 @@
       "importance": 1.33,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 40,
+        "homeWinPct": 39,
         "drawPct": 3,
-        "awayWinPct": 57,
-        "homeExpected": 39.4,
-        "awayExpected": 42.6,
+        "awayWinPct": 58,
+        "homeExpected": 36.9,
+        "awayExpected": 40.5,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -144,7 +144,7 @@
   "lineups": {
     "1377": {
       "formation": "4-3-3",
-      "expected": 40.7,
+      "expected": 41.9,
       "captainId": 391,
       "locked": false,
       "xi": [
@@ -210,7 +210,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Liverpool",
-          "ep": 2.3
+          "ep": 3
         },
         {
           "id": 491,
@@ -234,7 +234,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Ipswich Town",
-          "ep": 2
+          "ep": 2.5
         }
       ],
       "bench": [
@@ -274,7 +274,7 @@
     },
     "1425": {
       "formation": "4-4-2",
-      "expected": 59.2,
+      "expected": 61.7,
       "captainId": 330,
       "locked": false,
       "xi": [
@@ -300,7 +300,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Liverpool",
-          "ep": 6.7
+          "ep": 7.5
         },
         {
           "id": 388,
@@ -356,7 +356,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Ipswich Town",
-          "ep": 5.3
+          "ep": 7
         },
         {
           "id": 165,
@@ -534,7 +534,7 @@
     },
     "1501": {
       "formation": "5-4-1",
-      "expected": 51.6,
+      "expected": 51.4,
       "captainId": 229,
       "locked": false,
       "xi": [
@@ -616,7 +616,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Liverpool",
-          "ep": 2.7
+          "ep": 2.5
         },
         {
           "id": 79,
@@ -664,8 +664,8 @@
     },
     "1530": {
       "formation": "5-3-2",
-      "expected": 29.9,
-      "captainId": 637,
+      "expected": 32.2,
+      "captainId": 305,
       "locked": false,
       "xi": [
         {
@@ -677,20 +677,20 @@
           "ep": 4.3
         },
         {
+          "id": 305,
+          "name": "Davis",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Ipswich Town",
+          "ep": 8
+        },
+        {
           "id": 637,
           "name": "Maitland-Niles",
           "pos": "DEF",
           "type": 2,
           "team": "Everton",
           "ep": 7
-        },
-        {
-          "id": 305,
-          "name": "Davis",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Ipswich Town",
-          "ep": 5.7
         },
         {
           "id": 201,
@@ -764,7 +764,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Ipswich Town",
-          "ep": 1
+          "ep": 0.5
         },
         {
           "id": 260,
@@ -794,7 +794,7 @@
     },
     "1857": {
       "formation": "4-4-2",
-      "expected": 53.2,
+      "expected": 53.9,
       "captainId": 350,
       "locked": false,
       "xi": [
@@ -804,7 +804,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Liverpool",
-          "ep": 8.3
+          "ep": 8.5
         },
         {
           "id": 334,
@@ -860,7 +860,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Liverpool",
-          "ep": 4
+          "ep": 4.5
         },
         {
           "id": 481,
@@ -924,7 +924,7 @@
     },
     "1947": {
       "formation": "5-4-1",
-      "expected": 49.4,
+      "expected": 50.1,
       "captainId": 124,
       "locked": false,
       "xi": [
@@ -942,7 +942,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Liverpool",
-          "ep": 7.3
+          "ep": 8
         },
         {
           "id": 472,
@@ -1184,8 +1184,8 @@
     },
     "10375": {
       "formation": "3-4-3",
-      "expected": 39.4,
-      "captainId": 379,
+      "expected": 36.9,
+      "captainId": 112,
       "locked": false,
       "xi": [
         {
@@ -1210,7 +1210,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Liverpool",
-          "ep": 4
+          "ep": 3.5
         },
         {
           "id": 447,
@@ -1253,20 +1253,20 @@
           "ep": 2
         },
         {
-          "id": 379,
-          "name": "Isak",
-          "pos": "FWD",
-          "type": 4,
-          "team": "Liverpool",
-          "ep": 5.8
-        },
-        {
           "id": 346,
           "name": "Calvert-Lewin",
           "pos": "FWD",
           "type": 4,
           "team": "Leeds",
           "ep": 4.3
+        },
+        {
+          "id": 379,
+          "name": "Isak",
+          "pos": "FWD",
+          "type": 4,
+          "team": "Liverpool",
+          "ep": 3.8
         },
         {
           "id": 295,
@@ -1313,8 +1313,8 @@
       ]
     },
     "26227": {
-      "formation": "3-5-2",
-      "expected": 42.6,
+      "formation": "4-4-2",
+      "expected": 40.5,
       "captainId": 230,
       "locked": false,
       "xi": [
@@ -1351,6 +1351,14 @@
           "ep": 4
         },
         {
+          "id": 393,
+          "name": "Khusanov",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Man City",
+          "ep": 1.7
+        },
+        {
           "id": 336,
           "name": "Okafor",
           "pos": "MID",
@@ -1373,14 +1381,6 @@
           "type": 3,
           "team": "Man City",
           "ep": 4
-        },
-        {
-          "id": 367,
-          "name": "Gakpo",
-          "pos": "MID",
-          "type": 3,
-          "team": "Liverpool",
-          "ep": 3.8
         },
         {
           "id": 156,
@@ -1417,20 +1417,20 @@
           "ep": 0
         },
         {
-          "id": 393,
-          "name": "Khusanov",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Man City",
-          "ep": 1.7
-        },
-        {
           "id": 473,
           "name": "Aina",
           "pos": "DEF",
           "type": 2,
           "team": "Nott'm Forest",
           "ep": 1
+        },
+        {
+          "id": 367,
+          "name": "Gakpo",
+          "pos": "MID",
+          "type": 3,
+          "team": "Liverpool",
+          "ep": 1.5
         },
         {
           "id": 380,
@@ -1444,7 +1444,7 @@
     },
     "29975": {
       "formation": "5-4-1",
-      "expected": 44.2,
+      "expected": 44,
       "captainId": 580,
       "locked": false,
       "xi": [
@@ -1462,7 +1462,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Liverpool",
-          "ep": 7
+          "ep": 6.5
         },
         {
           "id": 390,
@@ -1521,12 +1521,12 @@
           "ep": 3.7
         },
         {
-          "id": 377,
-          "name": "Munoz",
+          "id": 591,
+          "name": "Enciso",
           "pos": "MID",
           "type": 3,
-          "team": "Liverpool",
-          "ep": 1.7
+          "team": "Ipswich Town",
+          "ep": 2
         },
         {
           "id": 26,
@@ -1547,12 +1547,12 @@
           "ep": 0
         },
         {
-          "id": 591,
-          "name": "Enciso",
+          "id": 377,
+          "name": "Munoz",
           "pos": "MID",
           "type": 3,
-          "team": "Ipswich Town",
-          "ep": 1.7
+          "team": "Liverpool",
+          "ep": 1
         },
         {
           "id": 649,
