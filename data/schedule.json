@@ -15,11 +15,11 @@
       "importance": 3,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 30,
-        "drawPct": 2,
-        "awayWinPct": 68,
+        "homeWinPct": 34,
+        "drawPct": 3,
+        "awayWinPct": 63,
         "homeExpected": 48.6,
-        "awayExpected": 55.7,
+        "awayExpected": 53.8,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -274,7 +274,7 @@
     },
     "1425": {
       "formation": "4-4-2",
-      "expected": 55.7,
+      "expected": 53.8,
       "captainId": 330,
       "locked": false,
       "xi": [
@@ -300,7 +300,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Liverpool",
-          "ep": 7.5
+          "ep": 5.6
         },
         {
           "id": 388,
