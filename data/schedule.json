@@ -15,10 +15,10 @@
       "importance": 3,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 35,
-        "drawPct": 3,
-        "awayWinPct": 62,
-        "homeExpected": 51,
+        "homeWinPct": 21,
+        "drawPct": 2,
+        "awayWinPct": 77,
+        "homeExpected": 44.8,
         "awayExpected": 56.1,
         "homeSoFar": null,
         "awaySoFar": null
@@ -37,10 +37,10 @@
       "importance": 2.32,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 27,
-        "drawPct": 2,
-        "awayWinPct": 71,
-        "homeExpected": 31.8,
+        "homeWinPct": 43,
+        "drawPct": 3,
+        "awayWinPct": 54,
+        "homeExpected": 38,
         "awayExpected": 40,
         "homeSoFar": null,
         "awaySoFar": null
@@ -794,7 +794,7 @@
     },
     "1857": {
       "formation": "3-4-3",
-      "expected": 51,
+      "expected": 44.8,
       "captainId": 350,
       "locked": false,
       "xi": [
@@ -815,20 +815,20 @@
           "ep": 6.5
         },
         {
-          "id": 233,
-          "name": "Mykolenko",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Everton",
-          "ep": 6
-        },
-        {
           "id": 254,
           "name": "Robinson",
           "pos": "DEF",
           "type": 2,
           "team": "Fulham",
           "ep": 4
+        },
+        {
+          "id": 387,
+          "name": "O'Reilly",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Man City",
+          "ep": 0.8
         },
         {
           "id": 366,
@@ -855,12 +855,12 @@
           "ep": 2.5
         },
         {
-          "id": 556,
-          "name": "M.Sangaré",
+          "id": 161,
+          "name": "Lavia",
           "pos": "MID",
           "type": 3,
-          "team": "Brentford",
-          "ep": 2
+          "team": "Chelsea",
+          "ep": 1
         },
         {
           "id": 411,
@@ -1054,7 +1054,7 @@
     },
     "10210": {
       "formation": "4-5-1",
-      "expected": 31.8,
+      "expected": 38,
       "captainId": 1,
       "locked": false,
       "xi": [
@@ -1065,6 +1065,14 @@
           "type": 1,
           "team": "Arsenal",
           "ep": 7.5
+        },
+        {
+          "id": 233,
+          "name": "Mykolenko",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Everton",
+          "ep": 6
         },
         {
           "id": 87,
@@ -1091,14 +1099,6 @@
           "ep": 1.5
         },
         {
-          "id": 387,
-          "name": "O'Reilly",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Man City",
-          "ep": 0.8
-        },
-        {
           "id": 397,
           "name": "Semenyo",
           "pos": "MID",
@@ -1123,20 +1123,20 @@
           "ep": 2
         },
         {
+          "id": 556,
+          "name": "M.Sangaré",
+          "pos": "MID",
+          "type": 3,
+          "team": "Brentford",
+          "ep": 2
+        },
+        {
           "id": 242,
           "name": "George",
           "pos": "MID",
           "type": 3,
           "team": "Everton",
           "ep": 2
-        },
-        {
-          "id": 161,
-          "name": "Lavia",
-          "pos": "MID",
-          "type": 3,
-          "team": "Chelsea",
-          "ep": 1
         },
         {
           "id": 464,

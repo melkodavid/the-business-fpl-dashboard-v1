@@ -961,6 +961,78 @@
           "resultImpact": []
         }
       ]
+    },
+    {
+      "tradeId": 324494,
+      "gw": 6,
+      "sides": [
+        {
+          "managerId": 1857,
+          "received": [
+            {
+              "elementId": 387,
+              "playerName": "O'Reilly",
+              "points": 0
+            },
+            {
+              "elementId": 161,
+              "playerName": "Lavia",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 233,
+              "playerName": "Mykolenko",
+              "points": 0,
+              "positionRipple": null
+            },
+            {
+              "elementId": 556,
+              "playerName": "M.Sangaré",
+              "points": 0,
+              "positionRipple": null
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0,
+          "resultImpact": []
+        },
+        {
+          "managerId": 10210,
+          "received": [
+            {
+              "elementId": 233,
+              "playerName": "Mykolenko",
+              "points": 0
+            },
+            {
+              "elementId": 556,
+              "playerName": "M.Sangaré",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 387,
+              "playerName": "O'Reilly",
+              "points": 0,
+              "positionRipple": null
+            },
+            {
+              "elementId": 161,
+              "playerName": "Lavia",
+              "points": 0,
+              "positionRipple": null
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0,
+          "resultImpact": []
+        }
+      ]
     }
   ],
   "leaderboard": [
@@ -1029,7 +1101,7 @@
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "tradeCount": 2,
+      "tradeCount": 3,
       "actual": {
         "w": 4,
         "d": 0,
@@ -1103,6 +1175,25 @@
       "flips": []
     },
     {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "tradeCount": 1,
+      "actual": {
+        "w": 2,
+        "d": 0,
+        "l": 3
+      },
+      "withoutTrades": {
+        "w": 2,
+        "d": 0,
+        "l": 3
+      },
+      "winsDelta": 0,
+      "lossesDelta": 0,
+      "pointsDelta": 0,
+      "flips": []
+    },
+    {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
       "tradeCount": 0,
@@ -1115,25 +1206,6 @@
         "w": 4,
         "d": 0,
         "l": 1
-      },
-      "winsDelta": 0,
-      "lossesDelta": 0,
-      "pointsDelta": 0,
-      "flips": []
-    },
-    {
-      "managerId": 10210,
-      "managerName": "Syria FC**",
-      "tradeCount": 0,
-      "actual": {
-        "w": 2,
-        "d": 0,
-        "l": 3
-      },
-      "withoutTrades": {
-        "w": 2,
-        "d": 0,
-        "l": 3
       },
       "winsDelta": 0,
       "lossesDelta": 0,
