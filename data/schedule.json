@@ -125,11 +125,11 @@
       "importance": 1.33,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 35,
+        "homeWinPct": 50,
         "drawPct": 3,
-        "awayWinPct": 62,
+        "awayWinPct": 47,
         "homeExpected": 42.5,
-        "awayExpected": 47.5,
+        "awayExpected": 42,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -1314,7 +1314,7 @@
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 47.5,
+      "expected": 42,
       "captainId": 230,
       "locked": false,
       "xi": [
@@ -1359,14 +1359,6 @@
           "ep": 4
         },
         {
-          "id": 336,
-          "name": "Okafor",
-          "pos": "MID",
-          "type": 3,
-          "team": "Leeds",
-          "ep": 6
-        },
-        {
           "id": 12,
           "name": "Saka",
           "pos": "MID",
@@ -1389,6 +1381,14 @@
           "type": 3,
           "team": "Chelsea",
           "ep": 2
+        },
+        {
+          "id": 457,
+          "name": "J.Murphy",
+          "pos": "MID",
+          "type": 3,
+          "team": "Newcastle",
+          "ep": 0.5
         },
         {
           "id": 166,
