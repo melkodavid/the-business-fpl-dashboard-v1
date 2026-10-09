@@ -212,7 +212,14 @@
               "elementId": 455,
               "playerName": "Tonali",
               "points": 14,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 53,
+                "playerName": "Manzambi",
+                "position": "MID",
+                "acquiredGw": 6,
+                "gwsStarted": 0,
+                "points": 0
+              }
             }
           ],
           "gained": 14,
@@ -771,7 +778,14 @@
               "elementId": 9,
               "playerName": "Hincapie",
               "points": 0,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 200,
+                "playerName": "Lacroix",
+                "position": "DEF",
+                "acquiredGw": 6,
+                "gwsStarted": 0,
+                "points": 0
+              }
             },
             {
               "elementId": 426,
@@ -913,13 +927,27 @@
               "elementId": 201,
               "playerName": "Muñoz",
               "points": 0,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 200,
+                "playerName": "Lacroix",
+                "position": "DEF",
+                "acquiredGw": 6,
+                "gwsStarted": 0,
+                "points": 0
+              }
             },
             {
               "elementId": 429,
               "playerName": "Rashford",
               "points": 0,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 123,
+                "playerName": "Hinshelwood",
+                "position": "MID",
+                "acquiredGw": 6,
+                "gwsStarted": 0,
+                "points": 0
+              }
             }
           ],
           "gained": 0,
@@ -946,13 +974,27 @@
               "elementId": 580,
               "playerName": "Araujo",
               "points": 0,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 93,
+                "playerName": "Schuster",
+                "position": "DEF",
+                "acquiredGw": 6,
+                "gwsStarted": 0,
+                "points": 0
+              }
             },
             {
               "elementId": 432,
               "playerName": "Mainoo",
               "points": 0,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 127,
+                "playerName": "Gomez",
+                "position": "MID",
+                "acquiredGw": 6,
+                "gwsStarted": 0,
+                "points": 0
+              }
             }
           ],
           "gained": 0,
@@ -985,13 +1027,27 @@
               "elementId": 233,
               "playerName": "Mykolenko",
               "points": 0,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 173,
+                "playerName": "Thomas",
+                "position": "DEF",
+                "acquiredGw": 6,
+                "gwsStarted": 0,
+                "points": 0
+              }
             },
             {
               "elementId": 556,
               "playerName": "M.Sangaré",
               "points": 0,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 78,
+                "playerName": "Kroupi.Jr",
+                "position": "MID",
+                "acquiredGw": 6,
+                "gwsStarted": 0,
+                "points": 0
+              }
             }
           ],
           "gained": 0,
@@ -1018,13 +1074,27 @@
               "elementId": 387,
               "playerName": "O'Reilly",
               "points": 0,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 204,
+                "playerName": "Mitchell",
+                "position": "DEF",
+                "acquiredGw": 6,
+                "gwsStarted": 0,
+                "points": 0
+              }
             },
             {
               "elementId": 161,
               "playerName": "Lavia",
               "points": 0,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 41,
+                "playerName": "Buendía",
+                "position": "MID",
+                "acquiredGw": 6,
+                "gwsStarted": 0,
+                "points": 0
+              }
             }
           ],
           "gained": 0,
