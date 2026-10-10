@@ -8,8 +8,8 @@
       "awayManagerId": 1425,
       "homeRank": 2,
       "awayRank": 1,
-      "homePoints": 0,
-      "awayPoints": 0,
+      "homePoints": 11,
+      "awayPoints": 41,
       "started": true,
       "finished": false,
       "importance": 3,
@@ -19,9 +19,9 @@
         "drawPct": 0,
         "awayWinPct": 99,
         "homeExpected": 28.6,
-        "awayExpected": 49.3,
+        "awayExpected": 50.3,
         "homeSoFar": 11,
-        "awaySoFar": 41
+        "awaySoFar": 42
       }
     },
     {
@@ -30,8 +30,8 @@
       "awayManagerId": 29975,
       "homeRank": 9,
       "awayRank": 12,
-      "homePoints": 0,
-      "awayPoints": 0,
+      "homePoints": 18,
+      "awayPoints": 24,
       "started": true,
       "finished": false,
       "importance": 2.32,
@@ -52,8 +52,8 @@
       "awayManagerId": 1471,
       "homeRank": 10,
       "awayRank": 6,
-      "homePoints": 0,
-      "awayPoints": 0,
+      "homePoints": 13,
+      "awayPoints": 37,
       "started": true,
       "finished": false,
       "importance": 2.27,
@@ -74,8 +74,8 @@
       "awayManagerId": 99786,
       "homeRank": 2,
       "awayRank": 8,
-      "homePoints": 0,
-      "awayPoints": 0,
+      "homePoints": 13,
+      "awayPoints": 31,
       "started": true,
       "finished": false,
       "importance": 2.21,
@@ -96,8 +96,8 @@
       "awayManagerId": 1501,
       "homeRank": 11,
       "awayRank": 4,
-      "homePoints": 0,
-      "awayPoints": 0,
+      "homePoints": 13,
+      "awayPoints": 14,
       "started": true,
       "finished": false,
       "importance": 2.2,
@@ -118,19 +118,19 @@
       "awayManagerId": 26227,
       "homeRank": 7,
       "awayRank": 5,
-      "homePoints": 0,
-      "awayPoints": 0,
+      "homePoints": 31,
+      "awayPoints": 25,
       "started": true,
       "finished": false,
       "importance": 1.33,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 51,
-        "drawPct": 6,
-        "awayWinPct": 43,
-        "homeExpected": 36.4,
+        "homeWinPct": 63,
+        "drawPct": 5,
+        "awayWinPct": 32,
+        "homeExpected": 38.4,
         "awayExpected": 35.7,
-        "homeSoFar": 31,
+        "homeSoFar": 33,
         "awaySoFar": 25
       }
     }
@@ -274,7 +274,7 @@
     },
     "1425": {
       "formation": "3-5-2",
-      "expected": 52.9,
+      "expected": 53.2,
       "captainId": 165,
       "locked": true,
       "xi": [
@@ -311,20 +311,20 @@
           "ep": 3.3
         },
         {
+          "id": 45,
+          "name": "McGinn",
+          "pos": "MID",
+          "type": 3,
+          "team": "Aston Villa",
+          "ep": 7.3
+        },
+        {
           "id": 428,
           "name": "Cunha",
           "pos": "MID",
           "type": 3,
           "team": "Man Utd",
           "ep": 7.3
-        },
-        {
-          "id": 45,
-          "name": "McGinn",
-          "pos": "MID",
-          "type": 3,
-          "team": "Aston Villa",
-          "ep": 7
         },
         {
           "id": 261,
@@ -1184,7 +1184,7 @@
     },
     "10375": {
       "formation": "5-3-2",
-      "expected": 34.5,
+      "expected": 35.2,
       "captainId": 113,
       "locked": true,
       "xi": [
@@ -1210,7 +1210,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Spurs",
-          "ep": 5
+          "ep": 5.7
         },
         {
           "id": 447,

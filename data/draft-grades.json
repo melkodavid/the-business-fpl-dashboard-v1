@@ -58,7 +58,7 @@
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "draftTeamPoints": 185
+      "draftTeamPoints": 187
     }
   ],
   "scatter": [
@@ -575,7 +575,7 @@
     {
       "pickNumber": 52,
       "round": 5,
-      "seasonPoints": 25,
+      "seasonPoints": 27,
       "managerId": 1530,
       "elementId": 112,
       "playerName": "Van Hecke",
