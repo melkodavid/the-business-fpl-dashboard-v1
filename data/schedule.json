@@ -103,11 +103,11 @@
       "importance": 2.2,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 20,
+        "homeWinPct": 19,
         "drawPct": 2,
-        "awayWinPct": 78,
+        "awayWinPct": 79,
         "homeExpected": 50.6,
-        "awayExpected": 62,
+        "awayExpected": 62.5,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -534,7 +534,7 @@
     },
     "1501": {
       "formation": "5-4-1",
-      "expected": 62,
+      "expected": 62.5,
       "captainId": 229,
       "locked": false,
       "xi": [
@@ -611,12 +611,12 @@
           "ep": 4
         },
         {
-          "id": 368,
-          "name": "Szoboszlai",
+          "id": 264,
+          "name": "Bobb",
           "pos": "MID",
           "type": 3,
-          "team": "Liverpool",
-          "ep": 2.5
+          "team": "Fulham",
+          "ep": 3
         },
         {
           "id": 79,
@@ -637,12 +637,12 @@
           "ep": 1.5
         },
         {
-          "id": 70,
-          "name": "Kluivert",
+          "id": 368,
+          "name": "Szoboszlai",
           "pos": "MID",
           "type": 3,
-          "team": "Bournemouth",
-          "ep": 0
+          "team": "Liverpool",
+          "ep": 2.5
         },
         {
           "id": 642,
