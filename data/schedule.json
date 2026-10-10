@@ -125,10 +125,10 @@
       "importance": 1.33,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 50,
+        "homeWinPct": 43,
         "drawPct": 3,
-        "awayWinPct": 47,
-        "homeExpected": 42.5,
+        "awayWinPct": 54,
+        "homeExpected": 40,
         "awayExpected": 42,
         "homeSoFar": null,
         "awaySoFar": null
@@ -1184,7 +1184,7 @@
     },
     "10375": {
       "formation": "4-4-2",
-      "expected": 42.5,
+      "expected": 40,
       "captainId": 112,
       "locked": false,
       "xi": [
@@ -1213,20 +1213,20 @@
           "ep": 5.5
         },
         {
-          "id": 358,
-          "name": "Kerkez",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Liverpool",
-          "ep": 3.5
-        },
-        {
           "id": 447,
           "name": "Botman",
           "pos": "DEF",
           "type": 2,
           "team": "Newcastle",
           "ep": 3
+        },
+        {
+          "id": 37,
+          "name": "Lindelöf",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Aston Villa",
+          "ep": 1
         },
         {
           "id": 452,
