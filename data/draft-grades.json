@@ -13,7 +13,7 @@
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 282
+      "draftTeamPoints": 281
     },
     {
       "managerId": 1471,
@@ -38,7 +38,7 @@
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "draftTeamPoints": 250
+      "draftTeamPoints": 249
     },
     {
       "managerId": 29975,
@@ -365,7 +365,7 @@
     {
       "pickNumber": 31,
       "round": 3,
-      "seasonPoints": 26,
+      "seasonPoints": 25,
       "managerId": 1947,
       "elementId": 356,
       "playerName": "Virgil",
@@ -565,7 +565,7 @@
     {
       "pickNumber": 51,
       "round": 5,
-      "seasonPoints": 29,
+      "seasonPoints": 28,
       "managerId": 10375,
       "elementId": 384,
       "playerName": "Donnarumma",

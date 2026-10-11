@@ -8,8 +8,8 @@
       "awayManagerId": 1425,
       "homeRank": 2,
       "awayRank": 1,
-      "homePoints": 11,
-      "awayPoints": 41,
+      "homePoints": 31,
+      "awayPoints": 51,
       "started": true,
       "finished": false,
       "importance": 3,
@@ -18,8 +18,8 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 35.5,
-        "awayExpected": 51.1,
+        "homeExpected": 35.3,
+        "awayExpected": 51,
         "homeSoFar": 31,
         "awaySoFar": 51
       }
@@ -30,8 +30,8 @@
       "awayManagerId": 29975,
       "homeRank": 9,
       "awayRank": 12,
-      "homePoints": 18,
-      "awayPoints": 24,
+      "homePoints": 25,
+      "awayPoints": 32,
       "started": true,
       "finished": false,
       "importance": 2.32,
@@ -40,8 +40,8 @@
         "homeWinPct": 3,
         "drawPct": 2,
         "awayWinPct": 95,
-        "homeExpected": 25.8,
-        "awayExpected": 33.1,
+        "homeExpected": 25.7,
+        "awayExpected": 33,
         "homeSoFar": 25,
         "awaySoFar": 32
       }
@@ -52,8 +52,8 @@
       "awayManagerId": 1471,
       "homeRank": 10,
       "awayRank": 6,
-      "homePoints": 13,
-      "awayPoints": 37,
+      "homePoints": 20,
+      "awayPoints": 41,
       "started": true,
       "finished": false,
       "importance": 2.27,
@@ -74,8 +74,8 @@
       "awayManagerId": 99786,
       "homeRank": 2,
       "awayRank": 8,
-      "homePoints": 13,
-      "awayPoints": 31,
+      "homePoints": 35,
+      "awayPoints": 46,
       "started": true,
       "finished": false,
       "importance": 2.21,
@@ -84,9 +84,9 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 36.1,
+        "homeExpected": 35,
         "awayExpected": 49.7,
-        "homeSoFar": 36,
+        "homeSoFar": 35,
         "awaySoFar": 46
       }
     },
@@ -96,8 +96,8 @@
       "awayManagerId": 1501,
       "homeRank": 11,
       "awayRank": 4,
-      "homePoints": 13,
-      "awayPoints": 14,
+      "homePoints": 26,
+      "awayPoints": 33,
       "started": true,
       "finished": false,
       "importance": 2.2,
@@ -106,8 +106,8 @@
         "homeWinPct": 1,
         "drawPct": 1,
         "awayWinPct": 98,
-        "homeExpected": 28.2,
-        "awayExpected": 37.4,
+        "homeExpected": 28,
+        "awayExpected": 37.3,
         "homeSoFar": 26,
         "awaySoFar": 33
       }
@@ -118,18 +118,18 @@
       "awayManagerId": 26227,
       "homeRank": 7,
       "awayRank": 5,
-      "homePoints": 31,
-      "awayPoints": 25,
+      "homePoints": 36,
+      "awayPoints": 42,
       "started": true,
       "finished": false,
       "importance": 1.33,
       "tag": "Midtable Clash",
       "odds": {
         "homeWinPct": 12,
-        "drawPct": 5,
-        "awayWinPct": 83,
+        "drawPct": 6,
+        "awayWinPct": 82,
         "homeExpected": 38,
-        "awayExpected": 42.4,
+        "awayExpected": 42.3,
         "homeSoFar": 36,
         "awaySoFar": 42
       }
@@ -794,7 +794,7 @@
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 37.6,
+      "expected": 37.3,
       "captainId": 411,
       "locked": true,
       "xi": [
@@ -868,7 +868,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Man City",
-          "ep": 7.3
+          "ep": 7
         },
         {
           "id": 249,
@@ -924,7 +924,7 @@
     },
     "1947": {
       "formation": "4-5-1",
-      "expected": 43.7,
+      "expected": 43.3,
       "captainId": 124,
       "locked": true,
       "xi": [
@@ -942,7 +942,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Liverpool",
-          "ep": 5.7
+          "ep": 5.3
         },
         {
           "id": 472,
@@ -1284,7 +1284,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Man City",
-          "ep": 5.7
+          "ep": 6
         },
         {
           "id": 512,
