@@ -26,14 +26,14 @@
       "draftTeamPoints": 261
     },
     {
-      "managerId": 99786,
-      "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 256
-    },
-    {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "draftTeamPoints": 252
+      "draftTeamPoints": 258
+    },
+    {
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
+      "draftTeamPoints": 258
     },
     {
       "managerId": 10375,
@@ -53,12 +53,12 @@
     {
       "managerId": 10210,
       "managerName": "Syria FC**",
-      "draftTeamPoints": 211
+      "draftTeamPoints": 213
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "draftTeamPoints": 197
+      "draftTeamPoints": 198
     }
   ],
   "scatter": [
@@ -745,7 +745,7 @@
     {
       "pickNumber": 69,
       "round": 6,
-      "seasonPoints": 4,
+      "seasonPoints": 5,
       "managerId": 1530,
       "elementId": 465,
       "playerName": "Osula",
@@ -865,7 +865,7 @@
     {
       "pickNumber": 81,
       "round": 7,
-      "seasonPoints": 15,
+      "seasonPoints": 17,
       "managerId": 10210,
       "elementId": 464,
       "playerName": "Wissa",
@@ -915,7 +915,7 @@
     {
       "pickNumber": 86,
       "round": 8,
-      "seasonPoints": 28,
+      "seasonPoints": 30,
       "managerId": 99786,
       "elementId": 453,
       "playerName": "Barnes",
@@ -1815,7 +1815,7 @@
     {
       "pickNumber": 176,
       "round": 15,
-      "seasonPoints": 4,
+      "seasonPoints": 10,
       "managerId": 1501,
       "elementId": 195,
       "playerName": "Simms",

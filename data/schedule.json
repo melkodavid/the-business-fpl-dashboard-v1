@@ -8,7 +8,7 @@
       "awayManagerId": 1425,
       "homeRank": 2,
       "awayRank": 1,
-      "homePoints": 31,
+      "homePoints": 35,
       "awayPoints": 51,
       "started": true,
       "finished": false,
@@ -18,9 +18,9 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 35.3,
+        "homeExpected": 35,
         "awayExpected": 51,
-        "homeSoFar": 31,
+        "homeSoFar": 35,
         "awaySoFar": 51
       }
     },
@@ -30,8 +30,8 @@
       "awayManagerId": 29975,
       "homeRank": 9,
       "awayRank": 12,
-      "homePoints": 25,
-      "awayPoints": 32,
+      "homePoints": 27,
+      "awayPoints": 34,
       "started": true,
       "finished": false,
       "importance": 2.32,
@@ -40,10 +40,10 @@
         "homeWinPct": 3,
         "drawPct": 2,
         "awayWinPct": 95,
-        "homeExpected": 25.7,
-        "awayExpected": 33,
-        "homeSoFar": 25,
-        "awaySoFar": 32
+        "homeExpected": 27,
+        "awayExpected": 34,
+        "homeSoFar": 27,
+        "awaySoFar": 34
       }
     },
     {
@@ -52,7 +52,7 @@
       "awayManagerId": 1471,
       "homeRank": 10,
       "awayRank": 6,
-      "homePoints": 20,
+      "homePoints": 23,
       "awayPoints": 41,
       "started": true,
       "finished": false,
@@ -62,9 +62,9 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 23.7,
+        "homeExpected": 23,
         "awayExpected": 41,
-        "homeSoFar": 20,
+        "homeSoFar": 23,
         "awaySoFar": 41
       }
     },
@@ -75,7 +75,7 @@
       "homeRank": 2,
       "awayRank": 8,
       "homePoints": 35,
-      "awayPoints": 46,
+      "awayPoints": 48,
       "started": true,
       "finished": false,
       "importance": 2.21,
@@ -85,9 +85,9 @@
         "drawPct": 0,
         "awayWinPct": 100,
         "homeExpected": 35,
-        "awayExpected": 49.7,
+        "awayExpected": 48,
         "homeSoFar": 35,
-        "awaySoFar": 46
+        "awaySoFar": 48
       }
     },
     {
@@ -103,11 +103,11 @@
       "importance": 2.2,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 1,
-        "drawPct": 1,
-        "awayWinPct": 98,
-        "homeExpected": 28,
-        "awayExpected": 37.3,
+        "homeWinPct": 3,
+        "drawPct": 2,
+        "awayWinPct": 95,
+        "homeExpected": 26,
+        "awayExpected": 33,
         "homeSoFar": 26,
         "awaySoFar": 33
       }
@@ -118,20 +118,20 @@
       "awayManagerId": 26227,
       "homeRank": 7,
       "awayRank": 5,
-      "homePoints": 36,
-      "awayPoints": 42,
+      "homePoints": 44,
+      "awayPoints": 43,
       "started": true,
       "finished": false,
       "importance": 1.33,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 12,
-        "drawPct": 6,
-        "awayWinPct": 82,
-        "homeExpected": 38,
-        "awayExpected": 42.3,
-        "homeSoFar": 36,
-        "awaySoFar": 42
+        "homeWinPct": 55,
+        "drawPct": 9,
+        "awayWinPct": 36,
+        "homeExpected": 44,
+        "awayExpected": 43,
+        "homeSoFar": 44,
+        "awaySoFar": 43
       }
     }
   ],
@@ -144,7 +144,7 @@
   "lineups": {
     "1377": {
       "formation": "4-5-1",
-      "expected": 37.9,
+      "expected": 34.5,
       "captainId": 53,
       "locked": true,
       "xi": [
@@ -165,12 +165,12 @@
           "ep": 6.3
         },
         {
-          "id": 4,
-          "name": "Gabriel",
+          "id": 445,
+          "name": "Thiaw",
           "pos": "DEF",
           "type": 2,
-          "team": "Arsenal",
-          "ep": 4
+          "team": "Newcastle",
+          "ep": 2
         },
         {
           "id": 31,
@@ -178,15 +178,15 @@
           "pos": "DEF",
           "type": 2,
           "team": "Arsenal",
-          "ep": 2.8
+          "ep": 1.9
         },
         {
-          "id": 445,
-          "name": "Thiaw",
+          "id": 4,
+          "name": "Gabriel",
           "pos": "DEF",
           "type": 2,
-          "team": "Newcastle",
-          "ep": 2
+          "team": "Arsenal",
+          "ep": 1.5
         },
         {
           "id": 53,
@@ -244,7 +244,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Sunderland",
-          "ep": 1
+          "ep": 0.5
         },
         {
           "id": 640,
@@ -398,13 +398,13 @@
           "pos": "FWD",
           "type": 4,
           "team": "Coventry City",
-          "ep": 1.7
+          "ep": 3.3
         }
       ]
     },
     "1471": {
       "formation": "3-5-2",
-      "expected": 41.6,
+      "expected": 42.8,
       "captainId": 504,
       "locked": true,
       "xi": [
@@ -438,7 +438,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Arsenal",
-          "ep": 0.7
+          "ep": 0.5
         },
         {
           "id": 40,
@@ -478,7 +478,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Sunderland",
-          "ep": 2.3
+          "ep": 3.5
         },
         {
           "id": 569,
@@ -494,7 +494,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Sunderland",
-          "ep": 1.3
+          "ep": 1.5
         }
       ],
       "bench": [
@@ -664,7 +664,7 @@
     },
     "1530": {
       "formation": "5-4-1",
-      "expected": 33.5,
+      "expected": 35,
       "captainId": 93,
       "locked": true,
       "xi": [
@@ -674,7 +674,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Coventry City",
-          "ep": 3.7
+          "ep": 4.7
         },
         {
           "id": 93,
@@ -693,6 +693,14 @@
           "ep": 6
         },
         {
+          "id": 533,
+          "name": "Mukiele",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Sunderland",
+          "ep": 1.5
+        },
+        {
           "id": 201,
           "name": "Muñoz",
           "pos": "DEF",
@@ -707,14 +715,6 @@
           "type": 2,
           "team": "Ipswich Town",
           "ep": 1.5
-        },
-        {
-          "id": 533,
-          "name": "Mukiele",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Sunderland",
-          "ep": 1
         },
         {
           "id": 127,
@@ -788,13 +788,13 @@
           "pos": "FWD",
           "type": 4,
           "team": "Newcastle",
-          "ep": 0
+          "ep": 0.1
         }
       ]
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 38.4,
+      "expected": 39.7,
       "captainId": 411,
       "locked": true,
       "xi": [
@@ -820,7 +820,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Coventry City",
-          "ep": 3
+          "ep": 4.3
         },
         {
           "id": 254,
@@ -1054,7 +1054,7 @@
     },
     "10210": {
       "formation": "3-5-2",
-      "expected": 40.1,
+      "expected": 36.5,
       "captainId": 41,
       "locked": true,
       "xi": [
@@ -1064,7 +1064,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Arsenal",
-          "ep": 6
+          "ep": 2
         },
         {
           "id": 87,
@@ -1120,7 +1120,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Arsenal",
-          "ep": 2
+          "ep": 1.5
         },
         {
           "id": 556,
@@ -1131,20 +1131,20 @@
           "ep": 0.5
         },
         {
-          "id": 25,
-          "name": "Gyökeres",
-          "pos": "FWD",
-          "type": 4,
-          "team": "Arsenal",
-          "ep": 0.7
-        },
-        {
           "id": 464,
           "name": "Wissa",
           "pos": "FWD",
           "type": 4,
           "team": "Newcastle",
-          "ep": 0.7
+          "ep": 1.3
+        },
+        {
+          "id": 25,
+          "name": "Gyökeres",
+          "pos": "FWD",
+          "type": 4,
+          "team": "Arsenal",
+          "ep": 1
         }
       ],
       "bench": [
@@ -1184,7 +1184,7 @@
     },
     "10375": {
       "formation": "5-3-2",
-      "expected": 34.3,
+      "expected": 36.6,
       "captainId": 113,
       "locked": true,
       "xi": [
@@ -1205,6 +1205,14 @@
           "ep": 6.7
         },
         {
+          "id": 447,
+          "name": "Botman",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Newcastle",
+          "ep": 4.7
+        },
+        {
           "id": 112,
           "name": "Van Hecke",
           "pos": "DEF",
@@ -1221,14 +1229,6 @@
           "ep": 2
         },
         {
-          "id": 447,
-          "name": "Botman",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Newcastle",
-          "ep": 2
-        },
-        {
           "id": 149,
           "name": "Colwill",
           "pos": "DEF",
@@ -1242,7 +1242,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Arsenal",
-          "ep": 5.7
+          "ep": 5
         },
         {
           "id": 567,
@@ -1258,7 +1258,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Sunderland",
-          "ep": 1.7
+          "ep": 2
         },
         {
           "id": 346,
@@ -1314,7 +1314,7 @@
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 46.6,
+      "expected": 45,
       "captainId": 166,
       "locked": true,
       "xi": [
@@ -1367,14 +1367,6 @@
           "ep": 6.3
         },
         {
-          "id": 12,
-          "name": "Saka",
-          "pos": "MID",
-          "type": 3,
-          "team": "Arsenal",
-          "ep": 4
-        },
-        {
           "id": 156,
           "name": "Neto",
           "pos": "MID",
@@ -1383,12 +1375,20 @@
           "ep": 3.5
         },
         {
+          "id": 12,
+          "name": "Saka",
+          "pos": "MID",
+          "type": 3,
+          "team": "Arsenal",
+          "ep": 2
+        },
+        {
           "id": 457,
           "name": "J.Murphy",
           "pos": "MID",
           "type": 3,
           "team": "Newcastle",
-          "ep": 0.3
+          "ep": 0.7
         },
         {
           "id": 166,
@@ -1444,7 +1444,7 @@
     },
     "29975": {
       "formation": "5-4-1",
-      "expected": 32.6,
+      "expected": 33,
       "captainId": 109,
       "locked": true,
       "xi": [
@@ -1462,7 +1462,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Arsenal",
-          "ep": 5.3
+          "ep": 5
         },
         {
           "id": 390,
@@ -1534,7 +1534,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Newcastle",
-          "ep": 1
+          "ep": 1.7
         }
       ],
       "bench": [
@@ -1560,7 +1560,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Arsenal",
-          "ep": 1.3
+          "ep": 1.5
         },
         {
           "id": 223,
@@ -1574,7 +1574,7 @@
     },
     "99786": {
       "formation": "3-5-2",
-      "expected": 47.1,
+      "expected": 47,
       "captainId": 115,
       "locked": true,
       "xi": [
@@ -1619,6 +1619,14 @@
           "ep": 5.5
         },
         {
+          "id": 453,
+          "name": "Barnes",
+          "pos": "MID",
+          "type": 3,
+          "team": "Newcastle",
+          "ep": 4.3
+        },
+        {
           "id": 427,
           "name": "Mbeumo",
           "pos": "MID",
@@ -1627,20 +1635,12 @@
           "ep": 4
         },
         {
-          "id": 453,
-          "name": "Barnes",
-          "pos": "MID",
-          "type": 3,
-          "team": "Newcastle",
-          "ep": 3.7
-        },
-        {
           "id": 13,
           "name": "Rice",
           "pos": "MID",
           "type": 3,
           "team": "Arsenal",
-          "ep": 3.5
+          "ep": 3
         },
         {
           "id": 14,
@@ -1648,7 +1648,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Arsenal",
-          "ep": 0.7
+          "ep": 0.5
         },
         {
           "id": 138,
