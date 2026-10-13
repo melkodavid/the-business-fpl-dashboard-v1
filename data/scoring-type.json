@@ -4,121 +4,121 @@
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
       "goals": 13,
-      "assists": 15,
-      "cleanSheets": 38,
-      "defensiveContribution": 22,
+      "assists": 21,
+      "cleanSheets": 39,
+      "defensiveContribution": 24,
       "bonus": 10,
       "cardsLost": -7
     },
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "goals": 60,
-      "assists": 21,
-      "cleanSheets": 46,
-      "defensiveContribution": 6,
-      "bonus": 37,
-      "cardsLost": -9
+      "goals": 73,
+      "assists": 24,
+      "cleanSheets": 51,
+      "defensiveContribution": 10,
+      "bonus": 46,
+      "cardsLost": -10
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "goals": 55,
-      "assists": 21,
-      "cleanSheets": 29,
-      "defensiveContribution": 12,
+      "goals": 60,
+      "assists": 27,
+      "cleanSheets": 33,
+      "defensiveContribution": 20,
       "bonus": 21,
-      "cardsLost": -8
+      "cardsLost": -9
     },
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "goals": 38,
+      "goals": 53,
       "assists": 24,
-      "cleanSheets": 58,
-      "defensiveContribution": 24,
-      "bonus": 29,
-      "cardsLost": -4
+      "cleanSheets": 63,
+      "defensiveContribution": 26,
+      "bonus": 30,
+      "cardsLost": -5
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
       "goals": 4,
-      "assists": 24,
-      "cleanSheets": 48,
-      "defensiveContribution": 10,
+      "assists": 27,
+      "cleanSheets": 49,
+      "defensiveContribution": 14,
       "bonus": 13,
-      "cardsLost": -8
+      "cardsLost": -10
     },
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "goals": 38,
-      "assists": 21,
-      "cleanSheets": 30,
-      "defensiveContribution": 18,
-      "bonus": 23,
-      "cardsLost": -9
+      "goals": 50,
+      "assists": 24,
+      "cleanSheets": 36,
+      "defensiveContribution": 22,
+      "bonus": 24,
+      "cardsLost": -12
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "goals": 30,
-      "assists": 27,
-      "cleanSheets": 40,
-      "defensiveContribution": 26,
-      "bonus": 15,
-      "cardsLost": -10
-    },
-    {
-      "managerId": 10210,
-      "managerName": "Syria FC**",
-      "goals": 34,
-      "assists": 18,
-      "cleanSheets": 32,
-      "defensiveContribution": 6,
-      "bonus": 17,
-      "cardsLost": -9
-    },
-    {
-      "managerId": 10375,
-      "managerName": "NEEN FC",
-      "goals": 30,
-      "assists": 15,
-      "cleanSheets": 31,
-      "defensiveContribution": 12,
+      "goals": 35,
+      "assists": 36,
+      "cleanSheets": 41,
+      "defensiveContribution": 30,
       "bonus": 18,
       "cardsLost": -14
     },
     {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "goals": 40,
+      "assists": 21,
+      "cleanSheets": 33,
+      "defensiveContribution": 8,
+      "bonus": 17,
+      "cardsLost": -12
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "goals": 41,
+      "assists": 15,
+      "cleanSheets": 35,
+      "defensiveContribution": 20,
+      "bonus": 22,
+      "cardsLost": -16
+    },
+    {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
-      "goals": 50,
-      "assists": 18,
-      "cleanSheets": 48,
-      "defensiveContribution": 10,
-      "bonus": 19,
-      "cardsLost": -4
+      "goals": 59,
+      "assists": 21,
+      "cleanSheets": 53,
+      "defensiveContribution": 14,
+      "bonus": 24,
+      "cardsLost": -5
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "goals": 15,
+      "goals": 21,
       "assists": 15,
-      "cleanSheets": 28,
-      "defensiveContribution": 6,
-      "bonus": 6,
-      "cardsLost": -5
+      "cleanSheets": 36,
+      "defensiveContribution": 10,
+      "bonus": 9,
+      "cardsLost": -7
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "goals": 33,
-      "assists": 33,
-      "cleanSheets": 40,
+      "goals": 49,
+      "assists": 39,
+      "cleanSheets": 44,
       "defensiveContribution": 2,
-      "bonus": 17,
-      "cardsLost": -9
+      "bonus": 24,
+      "cardsLost": -11
     }
   ]
 }

@@ -1,0 +1,82 @@
+{
+  "gw": 6,
+  "headline": {
+    "type": "record-closest",
+    "personKeys": [
+      "anthony",
+      "pat"
+    ],
+    "text": "1 points. That's how close Anthony Palladino vs. Pat Takala was.",
+    "facts": {
+      "winnerId": 10375,
+      "loserId": 26227,
+      "margin": 1
+    },
+    "gw": 6
+  },
+  "secondaries": [
+    {
+      "type": "table-enter-top4",
+      "personKeys": [
+        "marshall"
+      ],
+      "text": "Up they go: Marshall Curtin-Dudzic moves to 3 and into the top 4.",
+      "facts": {
+        "managerId": 1471,
+        "rank": 3
+      },
+      "gw": 6
+    },
+    {
+      "type": "streak-break",
+      "personKeys": [
+        "zac"
+      ],
+      "text": "Zac Collins stops the rot: the 5-game losing run ends here.",
+      "facts": {
+        "managerId": 29975,
+        "brokenLength": 5
+      },
+      "gw": 6
+    },
+    {
+      "type": "table-exit-top4",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "Out of the top 4 goes Mitch Grice, now sitting 5.",
+      "facts": {
+        "managerId": 1947,
+        "rank": 5
+      },
+      "gw": 6
+    },
+    {
+      "type": "trade-value-flip",
+      "personKeys": [
+        "david"
+      ],
+      "text": "After a run one way, David Melko's trades just went the other direction.",
+      "facts": {
+        "managerId": 1857,
+        "tradeId": 324494,
+        "netValue": 5
+      },
+      "gw": 6
+    },
+    {
+      "type": "belt-in-danger",
+      "personKeys": [
+        "lu",
+        "noah"
+      ],
+      "text": "The Belt is in danger. Noah Palladino has passed Lu at the top.",
+      "facts": {
+        "beltHolderKey": "lu",
+        "currentLeaderKey": "noah",
+        "gw": 6
+      },
+      "gw": 6
+    }
+  ]
+}

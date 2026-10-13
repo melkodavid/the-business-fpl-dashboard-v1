@@ -27,6 +27,13 @@
       "elementId": 452,
       "playerName": "Bruno G.",
       "fixtureId": 42
+    },
+    {
+      "gw": 6,
+      "managerId": 99786,
+      "elementId": 138,
+      "playerName": "Kostoulas",
+      "fixtureId": 60
     }
   ],
   "seasonTotals": [
@@ -76,7 +83,7 @@
     },
     {
       "managerId": 99786,
-      "count": 0
+      "count": 1
     }
   ]
 }

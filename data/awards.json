@@ -169,13 +169,49 @@
           "fixtureId": 42
         }
       ]
+    },
+    {
+      "gw": 6,
+      "topScore": {
+        "managerIds": [
+          1425
+        ],
+        "score": 54
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          1530
+        ],
+        "score": 23
+      },
+      "blowout": {
+        "title": "🥶CPR🥶 took Muks Militia behind the bushes",
+        "winnerId": 1471,
+        "loserId": 1530,
+        "margin": 18
+      },
+      "worstLineup": {
+        "managerIds": [
+          10375
+        ],
+        "benchPoints": 12
+      },
+      "fiftyNineClubInstances": [
+        {
+          "gw": 6,
+          "managerId": 99786,
+          "elementId": 138,
+          "playerName": "Kostoulas",
+          "fixtureId": 60
+        }
+      ]
     }
   ],
   "hallOfFame": {
     "topScore": [
       {
         "managerId": 1425,
-        "count": 2
+        "count": 3
       },
       {
         "managerId": 1501,
@@ -192,15 +228,15 @@
         "count": 2
       },
       {
+        "managerId": 1530,
+        "count": 2
+      },
+      {
         "managerId": 10375,
         "count": 1
       },
       {
         "managerId": 1377,
-        "count": 1
-      },
-      {
-        "managerId": 1530,
         "count": 1
       }
     ],
@@ -220,6 +256,10 @@
       {
         "managerId": 99786,
         "count": 1
+      },
+      {
+        "managerId": 1471,
+        "count": 1
       }
     ],
     "worstLineup": [
@@ -228,11 +268,11 @@
         "count": 3
       },
       {
-        "managerId": 1857,
-        "count": 1
+        "managerId": 10375,
+        "count": 2
       },
       {
-        "managerId": 10375,
+        "managerId": 1857,
         "count": 1
       }
     ]

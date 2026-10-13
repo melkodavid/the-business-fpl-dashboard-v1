@@ -69,69 +69,83 @@
       "26227": 0,
       "29975": 3,
       "99786": 32
+    },
+    "6": {
+      "1377": 5,
+      "1425": 9,
+      "1471": 2,
+      "1501": 2,
+      "1530": 2,
+      "1857": 1,
+      "1947": 6,
+      "10210": 0,
+      "10375": 12,
+      "26227": 0,
+      "29975": 0,
+      "99786": 3
     }
   },
   "perManager": [
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "benchPointsWasted": 23,
+      "benchPointsWasted": 28,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 4
+      "eligibleLossesOrDraws": 5
     },
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "benchPointsWasted": 36,
+      "benchPointsWasted": 45,
       "couldHaveWonCount": 0,
       "eligibleLossesOrDraws": 1
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "benchPointsWasted": 14,
+      "benchPointsWasted": 16,
       "couldHaveWonCount": 0,
       "eligibleLossesOrDraws": 2
     },
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "benchPointsWasted": 18,
+      "benchPointsWasted": 20,
       "couldHaveWonCount": 0,
       "eligibleLossesOrDraws": 2
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "benchPointsWasted": 3,
+      "benchPointsWasted": 5,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 4
+      "eligibleLossesOrDraws": 5
     },
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "benchPointsWasted": 53,
+      "benchPointsWasted": 54,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 1
+      "eligibleLossesOrDraws": 2
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "benchPointsWasted": 32,
+      "benchPointsWasted": 38,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 1
+      "eligibleLossesOrDraws": 2
     },
     {
       "managerId": 10210,
       "managerName": "Syria FC**",
       "benchPointsWasted": 1,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 3
+      "eligibleLossesOrDraws": 4
     },
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "benchPointsWasted": 33,
+      "benchPointsWasted": 45,
       "couldHaveWonCount": 0,
       "eligibleLossesOrDraws": 2
     },
@@ -140,7 +154,7 @@
       "managerName": "Mourinho’s Ego FT",
       "benchPointsWasted": 20,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 2
+      "eligibleLossesOrDraws": 3
     },
     {
       "managerId": 29975,
@@ -152,7 +166,7 @@
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "benchPointsWasted": 65,
+      "benchPointsWasted": 68,
       "couldHaveWonCount": 1,
       "eligibleLossesOrDraws": 3
     }
@@ -535,6 +549,50 @@
       "couldHaveWon": false
     },
     {
+      "gw": 6,
+      "managerId": 10375,
+      "benchPoints": 12,
+      "players": [
+        {
+          "elementId": 384,
+          "playerName": "Donnarumma",
+          "position": "GKP",
+          "points": 9,
+          "scoring": [
+            {
+              "text": "clean sheet",
+              "points": 4
+            },
+            {
+              "text": "6 saves",
+              "points": 2
+            },
+            {
+              "text": "1 bonus",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "elementId": 512,
+          "playerName": "Kudus",
+          "position": "MID",
+          "points": 3,
+          "scoring": [
+            {
+              "text": "clean sheet",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "opponentId": 26227,
+      "ownScore": 44,
+      "opponentScore": 43,
+      "result": "W",
+      "couldHaveWon": false
+    },
+    {
       "gw": 5,
       "managerId": 1857,
       "benchPoints": 12,
@@ -622,82 +680,6 @@
       "opponentScore": 53,
       "result": "L",
       "couldHaveWon": true
-    },
-    {
-      "gw": 1,
-      "managerId": 1857,
-      "benchPoints": 12,
-      "players": [
-        {
-          "elementId": 249,
-          "playerName": "Barry",
-          "position": "FWD",
-          "points": 8,
-          "scoring": [
-            {
-              "text": "goal",
-              "points": 4
-            },
-            {
-              "text": "2 bonus",
-              "points": 2
-            }
-          ]
-        },
-        {
-          "elementId": 129,
-          "playerName": "Ayari",
-          "position": "MID",
-          "points": 2,
-          "scoring": [
-            {
-              "text": "clean sheet",
-              "points": 1
-            },
-            {
-              "text": "yellow card",
-              "points": -1
-            }
-          ]
-        },
-        {
-          "elementId": 566,
-          "playerName": "Horníček",
-          "position": "GKP",
-          "points": 1,
-          "scoring": [
-            {
-              "text": "5 saves",
-              "points": 1
-            },
-            {
-              "text": "2 goals conceded",
-              "points": -1
-            },
-            {
-              "text": "yellow card",
-              "points": -1
-            }
-          ]
-        },
-        {
-          "elementId": 203,
-          "playerName": "Canvot",
-          "position": "DEF",
-          "points": 1,
-          "scoring": [
-            {
-              "text": "2 goals conceded",
-              "points": -1
-            }
-          ]
-        }
-      ],
-      "opponentId": 26227,
-      "ownScore": 40,
-      "opponentScore": 38,
-      "result": "W",
-      "couldHaveWon": false
     }
   ]
 }
