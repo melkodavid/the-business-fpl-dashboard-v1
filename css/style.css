@@ -2509,3 +2509,10 @@ tfoot td { border-top: 2px solid var(--edge-bright); border-bottom: 0; }
   .hm *, .hm *::before, .hm *::after { animation: none !important; transition: none !important; }
   .hm-rv { opacity: 1 !important; translate: none !important; } .lp-pl { opacity: 1 !important; }
 }
+
+/* "New data is in" nudge (js/lib/freshness.js) */
+#fresh-toast { position: fixed; left: 50%; bottom: 62px; transform: translateX(-50%); z-index: 200; display: flex; align-items: center; gap: 12px; max-width: calc(100vw - 24px); padding: 10px 12px 10px 16px; border-radius: 999px;
+  background: linear-gradient(160deg, #1a1d2b, #10121b); border: 1px solid var(--gold); color: var(--text); font-size: 0.85rem; box-shadow: 0 16px 40px -10px rgba(0,0,0,0.9); animation: hm-fade .5s both; }
+#fresh-toast b { color: var(--gold-bright); }
+#fresh-toast button { cursor: pointer; border: 0; border-radius: 999px; padding: 6px 14px; font: 800 0.72rem "Archivo", sans-serif; letter-spacing: 0.12em; text-transform: uppercase; color: #1b1405; background: linear-gradient(135deg, var(--gold-bright), var(--gold)); }
+#fresh-toast .fresh-x { padding: 4px 9px; font-size: 1rem; letter-spacing: 0; color: var(--text-muted); background: none; }

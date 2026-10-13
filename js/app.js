@@ -1,4 +1,5 @@
 import { loadAllData, managerLookup } from "./data.js";
+import { footerText, watchForNewData } from "./lib/freshness.js";
 import { onIdentityChange } from "./identity.js";
 import { mountIdentitySwitcher } from "./identitySwitcher.js";
 import { render as renderLanding } from "./render/landing.js";
@@ -135,10 +136,9 @@ async function init() {
     }
 
     if (data.meta?.lastUpdated) {
-      const date = new Date(data.meta.lastUpdated);
-      document.getElementById("last-updated").textContent =
-        `Last updated ${date.toLocaleString()} · through GW${data.meta.finishedThroughGw ?? "?"}` +
-        (data.meta.mock ? " · mock data" : "");
+      const footerEl = document.getElementById("last-updated");
+      footerEl.textContent = footerText(data.meta);
+      watchForNewData(data.meta, footerEl);
     }
 
     main(data, managers);

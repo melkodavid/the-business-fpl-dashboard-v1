@@ -27,7 +27,7 @@ const FILES = {
 export async function loadAllData() {
   const entries = await Promise.all(
     Object.entries(FILES).map(async ([key, file]) => {
-      const res = await fetch(`data/${file}`);
+      const res = await fetch(`data/${file}`, { cache: "no-cache" });
       if (!res.ok) throw new Error(`Failed to load data/${file}: ${res.status}`);
       return [key, await res.json()];
     })
@@ -40,7 +40,7 @@ export async function loadAllData() {
   const recaps = data.recapsIndex?.recaps ?? [];
   const latestGw = recaps[recaps.length - 1]?.gw;
   data.latestRecap = latestGw
-    ? await fetch(`data/recaps/gw${latestGw}.json`).then((r) => r.json())
+    ? await fetch(`data/recaps/gw${latestGw}.json`, { cache: "no-cache" }).then((r) => r.json())
     : null;
 
   return data;

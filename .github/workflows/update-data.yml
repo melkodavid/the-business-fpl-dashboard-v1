@@ -2,9 +2,15 @@ name: Update league data
 
 on:
   schedule:
-    # Hourly. Adjust to taste -- e.g. tighter around your league's waiver
-    # processing day, looser out of season.
-    - cron: "0 * * * *"
+    # GitHub throttles scheduled runs hardest on the top of the hour and often
+    # drops them (a single "0 * * * *" was only firing every 4-7 hours), so ask
+    # four times an hour at off-peak minutes. The concurrency group below keeps
+    # overlapping runs from stepping on each other, and a run that finds nothing
+    # new commits nothing.
+    - cron: "7 * * * *"
+    - cron: "22 * * * *"
+    - cron: "37 * * * *"
+    - cron: "52 * * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -17,6 +23,7 @@ concurrency:
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,5 +45,7 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "Update league data"
+            # main may have moved (code pushes) while this run was building
+            git pull --rebase --autostash origin main
             git push
           fi
