@@ -81,10 +81,10 @@
       "importance": 2.21,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 79,
+        "homeWinPct": 77,
         "drawPct": 2,
-        "awayWinPct": 19,
-        "homeExpected": 45.8,
+        "awayWinPct": 21,
+        "homeExpected": 45.1,
         "awayExpected": 34.4,
         "homeSoFar": null,
         "awaySoFar": null
@@ -125,10 +125,10 @@
       "importance": 1.5,
       "tag": "Six-Pointer",
       "odds": {
-        "homeWinPct": 63,
-        "drawPct": 3,
-        "awayWinPct": 34,
-        "homeExpected": 49,
+        "homeWinPct": 81,
+        "drawPct": 2,
+        "awayWinPct": 17,
+        "homeExpected": 56.5,
         "awayExpected": 44,
         "homeSoFar": null,
         "awaySoFar": null
@@ -404,7 +404,7 @@
     },
     "1471": {
       "formation": "3-5-2",
-      "expected": 45.8,
+      "expected": 45.1,
       "captainId": 504,
       "locked": false,
       "xi": [
@@ -494,7 +494,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Sunderland",
-          "ep": 1.5
+          "ep": 0.8
         }
       ],
       "bench": [
@@ -1573,8 +1573,8 @@
       ]
     },
     "99786": {
-      "formation": "4-4-2",
-      "expected": 49,
+      "formation": "3-4-3",
+      "expected": 56.5,
       "captainId": 115,
       "locked": false,
       "xi": [
@@ -1611,14 +1611,6 @@
           "ep": 1
         },
         {
-          "id": 503,
-          "name": "Van de Ven",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Spurs",
-          "ep": 1
-        },
-        {
           "id": 453,
           "name": "Barnes",
           "pos": "MID",
@@ -1651,6 +1643,14 @@
           "ep": 4
         },
         {
+          "id": 552,
+          "name": "Brobbey",
+          "pos": "FWD",
+          "type": 4,
+          "team": "Sunderland",
+          "ep": 8.5
+        },
+        {
           "id": 138,
           "name": "Kostoulas",
           "pos": "FWD",
@@ -1677,6 +1677,14 @@
           "ep": 4
         },
         {
+          "id": 503,
+          "name": "Van de Ven",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Spurs",
+          "ep": 1
+        },
+        {
           "id": 61,
           "name": "Truffert",
           "pos": "DEF",
@@ -1691,14 +1699,6 @@
           "type": 3,
           "team": "Arsenal",
           "ep": 0.5
-        },
-        {
-          "id": 552,
-          "name": "Brobbey",
-          "pos": "FWD",
-          "type": 4,
-          "team": "Sunderland",
-          "ep": 0
         }
       ]
     }
