@@ -22,6 +22,7 @@ import { render as renderWaivers } from "./render/waiverHitRate.js";
 import { render as renderForm } from "./render/formGuide.js";
 import { render as renderHistory } from "./render/history.js";
 import { render as renderCup } from "./render/cup.js";
+import { render as renderPredictions } from "./render/predictions.js";
 
 const ROUTES = {
   landing: renderLanding,
@@ -44,6 +45,7 @@ const ROUTES = {
   form: renderForm,
   history: renderHistory,
   cup: renderCup,
+  predictions: renderPredictions,
 };
 const DEFAULT_ROUTE = "landing";
 

@@ -22,6 +22,8 @@ const FILES = {
   seasonArcs: "season-arcs.json",
   recapsIndex: "recaps/index.json",
   upcomingManagers: "upcoming-managers.json",
+  predictions: "predictions.json",
+  predictionsConfig: "predictions-config.json",
 };
 
 export async function loadAllData() {

@@ -33,6 +33,8 @@ import { computeHistory } from "./stats/history.js";
 import { computeSchedule } from "./stats/schedule.js";
 import { computeMatchupOdds, attachOdds, predictLineups } from "./stats/matchupOdds.js";
 import { gatherOddsInputs } from "./fetch/oddsInputs.js";
+import { fetchRevealedPicks } from "./fetch/predictions.js";
+import { computePredictions } from "./stats/predictions.js";
 import { buildNarrativeLayer } from "./narrative/index.js";
 import { writeRecapArchive } from "./narrative/archive.js";
 
@@ -184,6 +186,19 @@ async function main() {
     }
   }
   writeData("schedule.json", schedule);
+
+  // Weekly predictions: the shared sheet only releases a week's picks after its deadline.
+  // If it can't be reached, the previous predictions.json is left exactly as it was.
+  const predictionsEndpoint = readJson(join(ROOT, "data", "predictions-config.json")).endpoint;
+  if (!predictionsEndpoint) {
+    writeData("predictions.json", { enabled: false, weeks: [], table: [] });
+  } else if (!MOCK) {
+    const picks = await fetchRevealedPicks(predictionsEndpoint);
+    if (picks) {
+      const people = context.managers.list.map((m) => ({ personKey: m.personKey, managerId: m.id }));
+      writeData("predictions.json", { enabled: true, ...computePredictions(context.matches, picks, people) });
+    }
+  }
   writeData("cup.json", cup);
 
   const loreRaw = readJson(join(ROOT, "data", "league-lore.json"));

@@ -1,16 +1,15 @@
 {
   "gauntletWatch": null,
   "lifeAfterMark": {
-    "type": "lu-post-mark-tracker",
+    "type": "lu-post-mark-trade-scrutiny",
     "personKeys": [
       "lu"
     ],
     "facts": {
-      "managerId": 1377,
-      "rank": 10,
-      "total": 3
+      "tradeId": 338369,
+      "netValue": 0
     },
-    "gw": 6
+    "gw": 7
   },
   "generationWar": {
     "matrix": {
