@@ -1157,13 +1157,27 @@
               "elementId": 4,
               "playerName": "Gabriel",
               "points": 0,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 10,
+                "playerName": "White",
+                "position": "DEF",
+                "acquiredGw": 7,
+                "gwsStarted": 0,
+                "points": 0
+              }
             },
             {
               "elementId": 445,
               "playerName": "Thiaw",
               "points": 0,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 358,
+                "playerName": "Kerkez",
+                "position": "DEF",
+                "acquiredGw": 7,
+                "gwsStarted": 0,
+                "points": 0
+              }
             },
             {
               "elementId": 628,
