@@ -37,10 +37,10 @@
       "importance": 2.75,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 60,
+        "homeWinPct": 59,
         "drawPct": 3,
-        "awayWinPct": 37,
-        "homeExpected": 51.5,
+        "awayWinPct": 38,
+        "homeExpected": 51,
         "awayExpected": 47.5,
         "homeSoFar": null,
         "awaySoFar": null
@@ -125,11 +125,11 @@
       "importance": 1.5,
       "tag": "Six-Pointer",
       "odds": {
-        "homeWinPct": 94,
+        "homeWinPct": 91,
         "drawPct": 1,
-        "awayWinPct": 5,
+        "awayWinPct": 8,
         "homeExpected": 60.5,
-        "awayExpected": 39.1,
+        "awayExpected": 41.6,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -534,7 +534,7 @@
     },
     "1501": {
       "formation": "5-4-1",
-      "expected": 51.5,
+      "expected": 51,
       "captainId": 229,
       "locked": false,
       "xi": [
@@ -616,7 +616,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Nott'm Forest",
-          "ep": 2
+          "ep": 1.5
         },
         {
           "id": 79,
@@ -1314,7 +1314,7 @@
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 39.1,
+      "expected": 41.6,
       "captainId": 399,
       "locked": false,
       "xi": [
@@ -1343,20 +1343,20 @@
           "ep": 4.1
         },
         {
+          "id": 583,
+          "name": "Chavarria",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Chelsea",
+          "ep": 3
+        },
+        {
           "id": 506,
           "name": "Udogie",
           "pos": "DEF",
           "type": 2,
           "team": "Spurs",
           "ep": 1
-        },
-        {
-          "id": 116,
-          "name": "Dunk",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Brighton",
-          "ep": 0.5
         },
         {
           "id": 399,
@@ -1417,12 +1417,12 @@
           "ep": 0
         },
         {
-          "id": 393,
-          "name": "Khusanov",
+          "id": 116,
+          "name": "Dunk",
           "pos": "DEF",
           "type": 2,
-          "team": "Man City",
-          "ep": 0
+          "team": "Brighton",
+          "ep": 0.5
         },
         {
           "id": 367,
