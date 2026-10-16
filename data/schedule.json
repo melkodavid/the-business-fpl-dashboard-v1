@@ -37,11 +37,11 @@
       "importance": 2.75,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 54,
+        "homeWinPct": 60,
         "drawPct": 3,
-        "awayWinPct": 43,
+        "awayWinPct": 37,
         "homeExpected": 51.5,
-        "awayExpected": 49.5,
+        "awayExpected": 47.5,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -81,11 +81,11 @@
       "importance": 2.21,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 72,
+        "homeWinPct": 74,
         "drawPct": 2,
-        "awayWinPct": 26,
+        "awayWinPct": 24,
         "homeExpected": 47.8,
-        "awayExpected": 39.4,
+        "awayExpected": 38.7,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -125,11 +125,11 @@
       "importance": 1.5,
       "tag": "Six-Pointer",
       "odds": {
-        "homeWinPct": 92,
+        "homeWinPct": 94,
         "drawPct": 1,
-        "awayWinPct": 7,
+        "awayWinPct": 5,
         "homeExpected": 60.5,
-        "awayExpected": 40.5,
+        "awayExpected": 39.1,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -923,8 +923,8 @@
       ]
     },
     "1947": {
-      "formation": "3-5-2",
-      "expected": 49.5,
+      "formation": "4-4-2",
+      "expected": 47.5,
       "captainId": 124,
       "locked": false,
       "xi": [
@@ -961,6 +961,14 @@
           "ep": 3
         },
         {
+          "id": 469,
+          "name": "N.Williams",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Nott'm Forest",
+          "ep": 1.5
+        },
+        {
           "id": 124,
           "name": "Groß",
           "pos": "MID",
@@ -975,14 +983,6 @@
           "type": 3,
           "team": "Everton",
           "ep": 8
-        },
-        {
-          "id": 43,
-          "name": "Tielemans",
-          "pos": "MID",
-          "type": 3,
-          "team": "Man Utd",
-          "ep": 3.5
         },
         {
           "id": 338,
@@ -1027,20 +1027,20 @@
           "ep": 2
         },
         {
-          "id": 469,
-          "name": "N.Williams",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Nott'm Forest",
-          "ep": 1.5
-        },
-        {
           "id": 555,
           "name": "Silva",
           "pos": "DEF",
           "type": 2,
           "team": "Bournemouth",
           "ep": 1.5
+        },
+        {
+          "id": 70,
+          "name": "Kluivert",
+          "pos": "MID",
+          "type": 3,
+          "team": "Bournemouth",
+          "ep": 0
         },
         {
           "id": 439,
@@ -1054,7 +1054,7 @@
     },
     "10210": {
       "formation": "5-3-2",
-      "expected": 39.4,
+      "expected": 38.7,
       "captainId": 41,
       "locked": false,
       "xi": [
@@ -1091,20 +1091,20 @@
           "ep": 2
         },
         {
-          "id": 233,
-          "name": "Mykolenko",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Everton",
-          "ep": 1.9
-        },
-        {
           "id": 4,
           "name": "Gabriel",
           "pos": "DEF",
           "type": 2,
           "team": "Arsenal",
           "ep": 1.5
+        },
+        {
+          "id": 233,
+          "name": "Mykolenko",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Everton",
+          "ep": 1.2
         },
         {
           "id": 41,
@@ -1314,7 +1314,7 @@
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 40.5,
+      "expected": 39.1,
       "captainId": 399,
       "locked": false,
       "xi": [
@@ -1340,7 +1340,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Everton",
-          "ep": 5.5
+          "ep": 4.1
         },
         {
           "id": 506,
