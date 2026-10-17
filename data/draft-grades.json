@@ -3,32 +3,32 @@
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 334
+      "draftTeamPoints": 335
     },
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "draftTeamPoints": 313
+      "draftTeamPoints": 314
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 292
+      "draftTeamPoints": 300
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 285
+      "draftTeamPoints": 286
     },
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 265
+      "draftTeamPoints": 270
     },
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "draftTeamPoints": 265
+      "draftTeamPoints": 266
     },
     {
       "managerId": 1501,
@@ -38,7 +38,7 @@
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 261
+      "draftTeamPoints": 262
     },
     {
       "managerId": 26227,
@@ -355,7 +355,7 @@
     {
       "pickNumber": 30,
       "round": 3,
-      "seasonPoints": 37,
+      "seasonPoints": 38,
       "managerId": 1425,
       "elementId": 388,
       "playerName": "Guéhi",
@@ -365,7 +365,7 @@
     {
       "pickNumber": 31,
       "round": 3,
-      "seasonPoints": 26,
+      "seasonPoints": 27,
       "managerId": 1947,
       "elementId": 356,
       "playerName": "Virgil",
@@ -395,7 +395,7 @@
     {
       "pickNumber": 34,
       "round": 3,
-      "seasonPoints": 10,
+      "seasonPoints": 18,
       "managerId": 1471,
       "elementId": 398,
       "playerName": "Foden",
@@ -415,7 +415,7 @@
     {
       "pickNumber": 36,
       "round": 3,
-      "seasonPoints": 14,
+      "seasonPoints": 19,
       "managerId": 1377,
       "elementId": 400,
       "playerName": "Doku",
@@ -545,7 +545,7 @@
     {
       "pickNumber": 49,
       "round": 5,
-      "seasonPoints": 24,
+      "seasonPoints": 25,
       "managerId": 1857,
       "elementId": 390,
       "playerName": "Rúben",
@@ -805,7 +805,7 @@
     {
       "pickNumber": 75,
       "round": 7,
-      "seasonPoints": 15,
+      "seasonPoints": 16,
       "managerId": 10375,
       "elementId": 358,
       "playerName": "Kerkez",
@@ -1605,7 +1605,7 @@
     {
       "pickNumber": 155,
       "round": 13,
-      "seasonPoints": 24,
+      "seasonPoints": 25,
       "managerId": 99786,
       "elementId": 88,
       "playerName": "Kayode",
