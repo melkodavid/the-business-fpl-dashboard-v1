@@ -8,7 +8,7 @@
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "draftTeamPoints": 329
+      "draftTeamPoints": 330
     },
     {
       "managerId": 1471,
@@ -23,12 +23,12 @@
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 285
+      "draftTeamPoints": 287
     },
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "draftTeamPoints": 277
+      "draftTeamPoints": 284
     },
     {
       "managerId": 1501,
@@ -38,12 +38,12 @@
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 262
+      "draftTeamPoints": 263
     },
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
-      "draftTeamPoints": 232
+      "draftTeamPoints": 233
     },
     {
       "managerId": 10210,
@@ -53,7 +53,7 @@
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "draftTeamPoints": 219
+      "draftTeamPoints": 221
     },
     {
       "managerId": 1530,
@@ -655,7 +655,7 @@
     {
       "pickNumber": 60,
       "round": 5,
-      "seasonPoints": 26,
+      "seasonPoints": 28,
       "managerId": 1377,
       "elementId": 41,
       "playerName": "Buendía",
@@ -915,7 +915,7 @@
     {
       "pickNumber": 86,
       "round": 8,
-      "seasonPoints": 31,
+      "seasonPoints": 32,
       "managerId": 99786,
       "elementId": 453,
       "playerName": "Barnes",
@@ -1065,7 +1065,7 @@
     {
       "pickNumber": 101,
       "round": 9,
-      "seasonPoints": 20,
+      "seasonPoints": 21,
       "managerId": 26227,
       "elementId": 166,
       "playerName": "N.Jackson",
@@ -1285,7 +1285,7 @@
     {
       "pickNumber": 123,
       "round": 11,
-      "seasonPoints": 7,
+      "seasonPoints": 14,
       "managerId": 10375,
       "elementId": 32,
       "playerName": "Cash",
@@ -1495,7 +1495,7 @@
     {
       "pickNumber": 144,
       "round": 12,
-      "seasonPoints": 15,
+      "seasonPoints": 16,
       "managerId": 1857,
       "elementId": 566,
       "playerName": "Horníček",
@@ -1515,7 +1515,7 @@
     {
       "pickNumber": 146,
       "round": 13,
-      "seasonPoints": 33,
+      "seasonPoints": 35,
       "managerId": 29975,
       "elementId": 449,
       "playerName": "Hall",

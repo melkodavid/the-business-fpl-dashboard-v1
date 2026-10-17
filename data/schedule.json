@@ -15,13 +15,13 @@
       "importance": 2.83,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 23,
-        "drawPct": 4,
-        "awayWinPct": 73,
-        "homeExpected": 28.5,
-        "awayExpected": 33.9,
+        "homeWinPct": 27,
+        "drawPct": 5,
+        "awayWinPct": 68,
+        "homeExpected": 27.6,
+        "awayExpected": 31.4,
         "homeSoFar": 16,
-        "awaySoFar": 24
+        "awaySoFar": 26
       }
     },
     {
@@ -37,12 +37,12 @@
       "importance": 2.75,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 29,
-        "drawPct": 4,
-        "awayWinPct": 67,
-        "homeExpected": 24.2,
+        "homeWinPct": 27,
+        "drawPct": 3,
+        "awayWinPct": 70,
+        "homeExpected": 23.7,
         "awayExpected": 29,
-        "homeSoFar": 10,
+        "homeSoFar": 12,
         "awaySoFar": 10
       }
     },
@@ -59,13 +59,13 @@
       "importance": 2.39,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 77,
-        "drawPct": 3,
-        "awayWinPct": 20,
-        "homeExpected": 35.4,
-        "awayExpected": 27.9,
+        "homeWinPct": 65,
+        "drawPct": 4,
+        "awayWinPct": 31,
+        "homeExpected": 32.7,
+        "awayExpected": 28.9,
         "homeSoFar": 20,
-        "awaySoFar": 10
+        "awaySoFar": 13
       }
     },
     {
@@ -81,13 +81,13 @@
       "importance": 2.21,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 54,
-        "drawPct": 4,
-        "awayWinPct": 42,
+        "homeWinPct": 64,
+        "drawPct": 5,
+        "awayWinPct": 31,
         "homeExpected": 32.2,
-        "awayExpected": 30.9,
+        "awayExpected": 28.7,
         "homeSoFar": 16,
-        "awaySoFar": 20
+        "awaySoFar": 22
       }
     },
     {
@@ -106,7 +106,7 @@
         "homeWinPct": 1,
         "drawPct": 0,
         "awayWinPct": 99,
-        "homeExpected": 23.2,
+        "homeExpected": 23,
         "awayExpected": 42,
         "homeSoFar": 10,
         "awaySoFar": 32
@@ -125,13 +125,13 @@
       "importance": 1.5,
       "tag": "Six-Pointer",
       "odds": {
-        "homeWinPct": 63,
+        "homeWinPct": 42,
         "drawPct": 4,
-        "awayWinPct": 33,
-        "homeExpected": 33.3,
-        "awayExpected": 29.2,
-        "homeSoFar": 5,
-        "awaySoFar": 17
+        "awayWinPct": 54,
+        "homeExpected": 32.3,
+        "awayExpected": 33.7,
+        "homeSoFar": 6,
+        "awaySoFar": 25
       }
     }
   ],
@@ -144,7 +144,7 @@
   "lineups": {
     "1377": {
       "formation": "4-5-1",
-      "expected": 38.2,
+      "expected": 38.9,
       "captainId": 53,
       "locked": true,
       "xi": [
@@ -194,7 +194,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Aston Villa",
-          "ep": 9
+          "ep": 9.7
         },
         {
           "id": 397,
@@ -274,7 +274,7 @@
     },
     "1425": {
       "formation": "3-5-2",
-      "expected": 39.1,
+      "expected": 39.5,
       "captainId": 261,
       "locked": true,
       "xi": [
@@ -332,7 +332,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Aston Villa",
-          "ep": 5.3
+          "ep": 5.7
         },
         {
           "id": 403,
@@ -534,7 +534,7 @@
     },
     "1501": {
       "formation": "4-5-1",
-      "expected": 32.6,
+      "expected": 33.3,
       "captainId": 229,
       "locked": true,
       "xi": [
@@ -560,7 +560,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Newcastle",
-          "ep": 5
+          "ep": 5.7
         },
         {
           "id": 332,
@@ -894,7 +894,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Newcastle",
-          "ep": 1.3
+          "ep": 1.7
         },
         {
           "id": 277,
@@ -1054,7 +1054,7 @@
     },
     "10210": {
       "formation": "4-5-1",
-      "expected": 28.8,
+      "expected": 29.4,
       "captainId": 41,
       "locked": true,
       "xi": [
@@ -1104,7 +1104,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Aston Villa",
-          "ep": 5.7
+          "ep": 6.3
         },
         {
           "id": 86,
@@ -1184,8 +1184,8 @@
     },
     "10375": {
       "formation": "4-4-2",
-      "expected": 30.9,
-      "captainId": 113,
+      "expected": 31.9,
+      "captainId": 447,
       "locked": true,
       "xi": [
         {
@@ -1197,20 +1197,20 @@
           "ep": 4
         },
         {
+          "id": 447,
+          "name": "Botman",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Newcastle",
+          "ep": 5
+        },
+        {
           "id": 113,
           "name": "F.Kadıoğlu",
           "pos": "DEF",
           "type": 2,
           "team": "Brighton",
           "ep": 4.7
-        },
-        {
-          "id": 447,
-          "name": "Botman",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Newcastle",
-          "ep": 4
         },
         {
           "id": 112,
@@ -1292,7 +1292,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Aston Villa",
-          "ep": 1.7
+          "ep": 4.7
         },
         {
           "id": 554,
@@ -1314,7 +1314,7 @@
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 31,
+      "expected": 33.7,
       "captainId": 156,
       "locked": true,
       "xi": [
@@ -1324,7 +1324,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Aston Villa",
-          "ep": 1.7
+          "ep": 4
         },
         {
           "id": 114,
@@ -1396,7 +1396,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Aston Villa",
-          "ep": 5.3
+          "ep": 5.7
         },
         {
           "id": 401,
@@ -1574,7 +1574,7 @@
     },
     "99786": {
       "formation": "3-5-2",
-      "expected": 36.3,
+      "expected": 36.6,
       "captainId": 115,
       "locked": true,
       "xi": [
@@ -1616,7 +1616,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Newcastle",
-          "ep": 4
+          "ep": 4.3
         },
         {
           "id": 214,
