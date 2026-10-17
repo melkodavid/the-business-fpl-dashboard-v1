@@ -37,13 +37,13 @@
       "importance": 2.75,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 47,
+        "homeWinPct": 39,
         "drawPct": 3,
-        "awayWinPct": 50,
-        "homeExpected": 29.5,
-        "awayExpected": 30,
+        "awayWinPct": 58,
+        "homeExpected": 23.8,
+        "awayExpected": 26.7,
         "homeSoFar": 0,
-        "awaySoFar": 0
+        "awaySoFar": 2
       }
     },
     {
@@ -59,13 +59,13 @@
       "importance": 2.39,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 63,
+        "homeWinPct": 42,
         "drawPct": 3,
-        "awayWinPct": 34,
-        "homeExpected": 32.6,
-        "awayExpected": 27.6,
-        "homeSoFar": 0,
-        "awaySoFar": 0
+        "awayWinPct": 55,
+        "homeExpected": 30.6,
+        "awayExpected": 32.6,
+        "homeSoFar": 2,
+        "awaySoFar": 6
       }
     },
     {
@@ -81,12 +81,12 @@
       "importance": 2.21,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 69,
+        "homeWinPct": 62,
         "drawPct": 3,
-        "awayWinPct": 28,
-        "homeExpected": 29.5,
+        "awayWinPct": 35,
+        "homeExpected": 26.2,
         "awayExpected": 22,
-        "homeSoFar": 0,
+        "homeSoFar": 6,
         "awaySoFar": 0
       }
     },
@@ -103,13 +103,13 @@
       "importance": 2.1,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 38,
+        "homeWinPct": 27,
         "drawPct": 3,
-        "awayWinPct": 59,
-        "homeExpected": 24.6,
-        "awayExpected": 28.2,
-        "homeSoFar": 0,
-        "awaySoFar": 0
+        "awayWinPct": 70,
+        "homeExpected": 21.6,
+        "awayExpected": 28.5,
+        "homeSoFar": 1,
+        "awaySoFar": 5
       }
     },
     {
@@ -125,13 +125,13 @@
       "importance": 1.5,
       "tag": "Six-Pointer",
       "odds": {
-        "homeWinPct": 74,
-        "drawPct": 2,
-        "awayWinPct": 24,
+        "homeWinPct": 44,
+        "drawPct": 3,
+        "awayWinPct": 53,
         "homeExpected": 34.7,
-        "awayExpected": 25.3,
+        "awayExpected": 36,
         "homeSoFar": 0,
-        "awaySoFar": 0
+        "awaySoFar": 15
       }
     }
   ],
@@ -274,7 +274,7 @@
     },
     "1425": {
       "formation": "3-5-2",
-      "expected": 32.6,
+      "expected": 33.3,
       "captainId": 428,
       "locked": true,
       "xi": [
@@ -356,7 +356,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Chelsea",
-          "ep": 4
+          "ep": 4.7
         },
         {
           "id": 316,
@@ -404,7 +404,7 @@
     },
     "1471": {
       "formation": "5-4-1",
-      "expected": 29.5,
+      "expected": 31.5,
       "captainId": 504,
       "locked": true,
       "xi": [
@@ -462,7 +462,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Chelsea",
-          "ep": 3.7
+          "ep": 4.3
         },
         {
           "id": 154,
@@ -470,7 +470,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Chelsea",
-          "ep": 3.3
+          "ep": 4
         },
         {
           "id": 239,
@@ -478,7 +478,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Everton",
-          "ep": 2.3
+          "ep": 3
         },
         {
           "id": 542,
@@ -664,7 +664,7 @@
     },
     "1530": {
       "formation": "4-5-1",
-      "expected": 24.6,
+      "expected": 24.9,
       "captainId": 105,
       "locked": true,
       "xi": [
@@ -682,7 +682,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Everton",
-          "ep": 4
+          "ep": 4.3
         },
         {
           "id": 269,
@@ -780,7 +780,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Chelsea",
-          "ep": 1
+          "ep": 1.3
         },
         {
           "id": 224,
@@ -794,8 +794,8 @@
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 28.2,
-      "captainId": 173,
+      "expected": 29.9,
+      "captainId": 249,
       "locked": true,
       "xi": [
         {
@@ -847,6 +847,14 @@
           "ep": 2.7
         },
         {
+          "id": 159,
+          "name": "Caicedo",
+          "pos": "MID",
+          "type": 3,
+          "team": "Chelsea",
+          "ep": 1.7
+        },
+        {
           "id": 268,
           "name": "King",
           "pos": "MID",
@@ -855,20 +863,12 @@
           "ep": 1.3
         },
         {
-          "id": 159,
-          "name": "Caicedo",
-          "pos": "MID",
-          "type": 3,
-          "team": "Chelsea",
-          "ep": 0.7
-        },
-        {
           "id": 249,
           "name": "Barry",
           "pos": "FWD",
           "type": 4,
           "team": "Everton",
-          "ep": 4
+          "ep": 4.7
         },
         {
           "id": 411,
@@ -924,7 +924,7 @@
     },
     "1947": {
       "formation": "4-5-1",
-      "expected": 30,
+      "expected": 30.7,
       "captainId": 124,
       "locked": true,
       "xi": [
@@ -982,7 +982,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Everton",
-          "ep": 5.3
+          "ep": 6
         },
         {
           "id": 338,
@@ -1162,7 +1162,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Everton",
-          "ep": 0.8
+          "ep": 1
         },
         {
           "id": 598,
@@ -1184,7 +1184,7 @@
     },
     "10375": {
       "formation": "4-4-2",
-      "expected": 27.6,
+      "expected": 29.6,
       "captainId": 113,
       "locked": true,
       "xi": [
@@ -1226,7 +1226,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Chelsea",
-          "ep": 1
+          "ep": 3
         },
         {
           "id": 452,
@@ -1284,7 +1284,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Chelsea",
-          "ep": 1.7
+          "ep": 4.3
         },
         {
           "id": 37,
@@ -1314,8 +1314,8 @@
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 25.3,
-      "captainId": 399,
+      "expected": 30.3,
+      "captainId": 156,
       "locked": true,
       "xi": [
         {
@@ -1359,20 +1359,20 @@
           "ep": 0.3
         },
         {
+          "id": 156,
+          "name": "Neto",
+          "pos": "MID",
+          "type": 3,
+          "team": "Chelsea",
+          "ep": 7.3
+        },
+        {
           "id": 399,
           "name": "Cherki",
           "pos": "MID",
           "type": 3,
           "team": "Man City",
           "ep": 6
-        },
-        {
-          "id": 156,
-          "name": "Neto",
-          "pos": "MID",
-          "type": 3,
-          "team": "Chelsea",
-          "ep": 2.3
         },
         {
           "id": 336,
@@ -1422,7 +1422,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Everton",
-          "ep": 2.8
+          "ep": 3
         },
         {
           "id": 367,
@@ -1552,7 +1552,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Chelsea",
-          "ep": 1.7
+          "ep": 3.7
         },
         {
           "id": 377,
@@ -1674,7 +1674,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Everton",
-          "ep": 3
+          "ep": 3.7
         },
         {
           "id": 503,
