@@ -59,12 +59,12 @@
       "importance": 2.39,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 73,
+        "homeWinPct": 77,
         "drawPct": 3,
-        "awayWinPct": 24,
-        "homeExpected": 34.4,
+        "awayWinPct": 20,
+        "homeExpected": 35.4,
         "awayExpected": 27.9,
-        "homeSoFar": 19,
+        "homeSoFar": 20,
         "awaySoFar": 10
       }
     },
