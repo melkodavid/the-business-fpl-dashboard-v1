@@ -8,7 +8,7 @@
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "draftTeamPoints": 330
+      "draftTeamPoints": 329
     },
     {
       "managerId": 1471,
@@ -53,7 +53,7 @@
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "draftTeamPoints": 221
+      "draftTeamPoints": 219
     },
     {
       "managerId": 1530,
@@ -1495,7 +1495,7 @@
     {
       "pickNumber": 144,
       "round": 12,
-      "seasonPoints": 16,
+      "seasonPoints": 15,
       "managerId": 1857,
       "elementId": 566,
       "playerName": "Horníček",
@@ -1515,7 +1515,7 @@
     {
       "pickNumber": 146,
       "round": 13,
-      "seasonPoints": 35,
+      "seasonPoints": 33,
       "managerId": 29975,
       "elementId": 449,
       "playerName": "Hall",

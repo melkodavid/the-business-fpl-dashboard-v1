@@ -15,13 +15,13 @@
       "importance": 2.83,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 50,
-        "drawPct": 5,
-        "awayWinPct": 45,
-        "homeExpected": 28.8,
-        "awayExpected": 28.1,
+        "homeWinPct": 22,
+        "drawPct": 4,
+        "awayWinPct": 74,
+        "homeExpected": 28.5,
+        "awayExpected": 34.2,
         "homeSoFar": 16,
-        "awaySoFar": 18
+        "awaySoFar": 24
       }
     },
     {
@@ -37,12 +37,12 @@
       "importance": 2.75,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 42,
+        "homeWinPct": 30,
         "drawPct": 4,
-        "awayWinPct": 54,
-        "homeExpected": 27.6,
+        "awayWinPct": 66,
+        "homeExpected": 24.4,
         "awayExpected": 29,
-        "homeSoFar": 12,
+        "homeSoFar": 10,
         "awaySoFar": 10
       }
     },
@@ -59,11 +59,11 @@
       "importance": 2.39,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 74,
+        "homeWinPct": 73,
         "drawPct": 3,
-        "awayWinPct": 23,
-        "homeExpected": 35.3,
-        "awayExpected": 28.6,
+        "awayWinPct": 24,
+        "homeExpected": 34.5,
+        "awayExpected": 28,
         "homeSoFar": 19,
         "awaySoFar": 10
       }
@@ -81,11 +81,11 @@
       "importance": 2.21,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 47,
-        "drawPct": 4,
-        "awayWinPct": 49,
+        "homeWinPct": 52,
+        "drawPct": 5,
+        "awayWinPct": 43,
         "homeExpected": 32.2,
-        "awayExpected": 32.4,
+        "awayExpected": 31.2,
         "homeSoFar": 16,
         "awaySoFar": 20
       }
@@ -125,11 +125,11 @@
       "importance": 1.5,
       "tag": "Six-Pointer",
       "odds": {
-        "homeWinPct": 61,
-        "drawPct": 4,
-        "awayWinPct": 35,
-        "homeExpected": 34,
-        "awayExpected": 30.4,
+        "homeWinPct": 63,
+        "drawPct": 3,
+        "awayWinPct": 34,
+        "homeExpected": 33.4,
+        "awayExpected": 29.4,
         "homeSoFar": 5,
         "awaySoFar": 17
       }
@@ -144,7 +144,7 @@
   "lineups": {
     "1377": {
       "formation": "4-5-1",
-      "expected": 36.2,
+      "expected": 38.2,
       "captainId": 53,
       "locked": true,
       "xi": [
@@ -194,7 +194,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Aston Villa",
-          "ep": 7
+          "ep": 9
         },
         {
           "id": 397,
@@ -534,7 +534,7 @@
     },
     "1501": {
       "formation": "4-5-1",
-      "expected": 33.3,
+      "expected": 32.6,
       "captainId": 229,
       "locked": true,
       "xi": [
@@ -560,7 +560,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Newcastle",
-          "ep": 5.7
+          "ep": 5
         },
         {
           "id": 332,
@@ -894,7 +894,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Newcastle",
-          "ep": 2
+          "ep": 1.3
         },
         {
           "id": 277,
