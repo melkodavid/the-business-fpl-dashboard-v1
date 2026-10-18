@@ -125,12 +125,12 @@
       "importance": 1.5,
       "tag": "Six-Pointer",
       "odds": {
-        "homeWinPct": 14,
-        "drawPct": 7,
-        "awayWinPct": 79,
-        "homeExpected": 44,
+        "homeWinPct": 29,
+        "drawPct": 9,
+        "awayWinPct": 62,
+        "homeExpected": 46,
         "awayExpected": 47.7,
-        "homeSoFar": 44,
+        "homeSoFar": 46,
         "awaySoFar": 46
       }
     }
@@ -1574,7 +1574,7 @@
     },
     "99786": {
       "formation": "3-5-2",
-      "expected": 47.6,
+      "expected": 48.3,
       "captainId": 115,
       "locked": true,
       "xi": [
@@ -1624,7 +1624,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Arsenal",
-          "ep": 5
+          "ep": 5.7
         },
         {
           "id": 453,
