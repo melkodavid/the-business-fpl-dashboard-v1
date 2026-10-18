@@ -15,13 +15,13 @@
       "importance": 2.83,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 27,
-        "drawPct": 8,
-        "awayWinPct": 65,
-        "homeExpected": 33.3,
-        "awayExpected": 35.5,
-        "homeSoFar": 30,
-        "awaySoFar": 31
+        "homeWinPct": 0,
+        "drawPct": 1,
+        "awayWinPct": 99,
+        "homeExpected": 36,
+        "awayExpected": 46,
+        "homeSoFar": 36,
+        "awaySoFar": 46
       }
     },
     {
@@ -37,13 +37,13 @@
       "importance": 2.75,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 37,
+        "homeWinPct": 35,
         "drawPct": 10,
-        "awayWinPct": 53,
-        "homeExpected": 34.6,
-        "awayExpected": 35.4,
+        "awayWinPct": 55,
+        "homeExpected": 34,
+        "awayExpected": 35,
         "homeSoFar": 34,
-        "awaySoFar": 34
+        "awaySoFar": 35
       }
     },
     {
@@ -59,13 +59,13 @@
       "importance": 2.39,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 10,
-        "drawPct": 4,
-        "awayWinPct": 86,
+        "homeWinPct": 27,
+        "drawPct": 8,
+        "awayWinPct": 65,
         "homeExpected": 36,
-        "awayExpected": 42.2,
+        "awayExpected": 38.3,
         "homeSoFar": 33,
-        "awaySoFar": 34
+        "awaySoFar": 33
       }
     },
     {
@@ -81,13 +81,13 @@
       "importance": 2.21,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 100,
-        "drawPct": 0,
-        "awayWinPct": 0,
-        "homeExpected": 40.2,
-        "awayExpected": 29.3,
-        "homeSoFar": 40,
-        "awaySoFar": 27
+        "homeWinPct": 65,
+        "drawPct": 9,
+        "awayWinPct": 26,
+        "homeExpected": 41,
+        "awayExpected": 39,
+        "homeSoFar": 41,
+        "awaySoFar": 39
       }
     },
     {
@@ -106,9 +106,9 @@
         "homeWinPct": 1,
         "drawPct": 0,
         "awayWinPct": 99,
-        "homeExpected": 30.5,
+        "homeExpected": 30.7,
         "awayExpected": 44.3,
-        "homeSoFar": 25,
+        "homeSoFar": 26,
         "awaySoFar": 37
       }
     },
@@ -125,13 +125,13 @@
       "importance": 1.5,
       "tag": "Six-Pointer",
       "odds": {
-        "homeWinPct": 2,
-        "drawPct": 2,
-        "awayWinPct": 96,
-        "homeExpected": 40.3,
-        "awayExpected": 47.7,
-        "homeSoFar": 38,
-        "awaySoFar": 45
+        "homeWinPct": 9,
+        "drawPct": 5,
+        "awayWinPct": 86,
+        "homeExpected": 44,
+        "awayExpected": 48.7,
+        "homeSoFar": 44,
+        "awaySoFar": 47
       }
     }
   ],
@@ -144,7 +144,7 @@
   "lineups": {
     "1377": {
       "formation": "4-5-1",
-      "expected": 40.8,
+      "expected": 45.6,
       "captainId": 53,
       "locked": true,
       "xi": [
@@ -154,6 +154,22 @@
           "pos": "GKP",
           "type": 1,
           "team": "Fulham",
+          "ep": 3.7
+        },
+        {
+          "id": 31,
+          "name": "Konsa",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Arsenal",
+          "ep": 4.7
+        },
+        {
+          "id": 10,
+          "name": "White",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Arsenal",
           "ep": 3.7
         },
         {
@@ -171,22 +187,6 @@
           "type": 2,
           "team": "Man City",
           "ep": 2.7
-        },
-        {
-          "id": 31,
-          "name": "Konsa",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Arsenal",
-          "ep": 2.7
-        },
-        {
-          "id": 10,
-          "name": "White",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Arsenal",
-          "ep": 2
         },
         {
           "id": 53,
@@ -226,7 +226,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Arsenal",
-          "ep": 1.3
+          "ep": 2
         },
         {
           "id": 167,
@@ -234,7 +234,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Nott'm Forest",
-          "ep": 1.3
+          "ep": 1.7
         }
       ],
       "bench": [
@@ -382,7 +382,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Nott'm Forest",
-          "ep": 1.3
+          "ep": 1.7
         },
         {
           "id": 501,
@@ -404,7 +404,7 @@
     },
     "1471": {
       "formation": "5-4-1",
-      "expected": 42.9,
+      "expected": 43.3,
       "captainId": 504,
       "locked": true,
       "xi": [
@@ -454,7 +454,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Arsenal",
-          "ep": 0.3
+          "ep": 0.7
         },
         {
           "id": 40,
@@ -664,7 +664,7 @@
     },
     "1530": {
       "formation": "4-5-1",
-      "expected": 33,
+      "expected": 33.4,
       "captainId": 127,
       "locked": true,
       "xi": [
@@ -693,20 +693,20 @@
           "ep": 2
         },
         {
+          "id": 201,
+          "name": "Muñoz",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Nott'm Forest",
+          "ep": 1.7
+        },
+        {
           "id": 269,
           "name": "Sessegnon",
           "pos": "DEF",
           "type": 2,
           "team": "Fulham",
           "ep": 1.7
-        },
-        {
-          "id": 201,
-          "name": "Muñoz",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Nott'm Forest",
-          "ep": 1.3
         },
         {
           "id": 127,
@@ -924,7 +924,7 @@
     },
     "1947": {
       "formation": "4-5-1",
-      "expected": 41.2,
+      "expected": 41.6,
       "captainId": 124,
       "locked": true,
       "xi": [
@@ -966,7 +966,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Nott'm Forest",
-          "ep": 2.3
+          "ep": 2.7
         },
         {
           "id": 124,
@@ -1024,7 +1024,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Nott'm Forest",
-          "ep": 1.7
+          "ep": 2
         },
         {
           "id": 469,
@@ -1032,7 +1032,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Nott'm Forest",
-          "ep": 1
+          "ep": 2
         },
         {
           "id": 125,
@@ -1054,7 +1054,7 @@
     },
     "10210": {
       "formation": "4-5-1",
-      "expected": 30.8,
+      "expected": 35.1,
       "captainId": 41,
       "locked": true,
       "xi": [
@@ -1064,7 +1064,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Arsenal",
-          "ep": 1.7
+          "ep": 4.3
         },
         {
           "id": 87,
@@ -1075,20 +1075,20 @@
           "ep": 5.3
         },
         {
+          "id": 4,
+          "name": "Gabriel",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Arsenal",
+          "ep": 3.7
+        },
+        {
           "id": 204,
           "name": "Mitchell",
           "pos": "DEF",
           "type": 2,
           "team": "Crystal Palace",
           "ep": 3.7
-        },
-        {
-          "id": 4,
-          "name": "Gabriel",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Arsenal",
-          "ep": 2
         },
         {
           "id": 445,
@@ -1178,13 +1178,13 @@
           "pos": "FWD",
           "type": 4,
           "team": "Arsenal",
-          "ep": 0.7
+          "ep": 1
         }
       ]
     },
     "10375": {
       "formation": "4-4-2",
-      "expected": 39,
+      "expected": 38.6,
       "captainId": 113,
       "locked": true,
       "xi": [
@@ -1234,7 +1234,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Arsenal",
-          "ep": 4.7
+          "ep": 4.3
         },
         {
           "id": 372,
@@ -1314,7 +1314,7 @@
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 40.3,
+      "expected": 40.9,
       "captainId": 114,
       "locked": true,
       "xi": [
@@ -1375,20 +1375,20 @@
           "ep": 6
         },
         {
+          "id": 12,
+          "name": "Saka",
+          "pos": "MID",
+          "type": 3,
+          "team": "Arsenal",
+          "ep": 2.3
+        },
+        {
           "id": 336,
           "name": "Okafor",
           "pos": "MID",
           "type": 3,
           "team": "Leeds",
           "ep": 2.3
-        },
-        {
-          "id": 12,
-          "name": "Saka",
-          "pos": "MID",
-          "type": 3,
-          "team": "Arsenal",
-          "ep": 1.7
         },
         {
           "id": 166,
@@ -1444,7 +1444,7 @@
     },
     "29975": {
       "formation": "4-4-2",
-      "expected": 34.5,
+      "expected": 36.4,
       "captainId": 109,
       "locked": true,
       "xi": [
@@ -1462,7 +1462,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Arsenal",
-          "ep": 3.7
+          "ep": 5.3
         },
         {
           "id": 258,
@@ -1526,7 +1526,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Arsenal",
-          "ep": 1.7
+          "ep": 2
         },
         {
           "id": 649,
@@ -1574,7 +1574,7 @@
     },
     "99786": {
       "formation": "3-5-2",
-      "expected": 47.4,
+      "expected": 49.4,
       "captainId": 115,
       "locked": true,
       "xi": [
@@ -1619,6 +1619,14 @@
           "ep": 6
         },
         {
+          "id": 13,
+          "name": "Rice",
+          "pos": "MID",
+          "type": 3,
+          "team": "Arsenal",
+          "ep": 5
+        },
+        {
           "id": 453,
           "name": "Barnes",
           "pos": "MID",
@@ -1633,14 +1641,6 @@
           "type": 3,
           "team": "Crystal Palace",
           "ep": 4
-        },
-        {
-          "id": 13,
-          "name": "Rice",
-          "pos": "MID",
-          "type": 3,
-          "team": "Arsenal",
-          "ep": 3
         },
         {
           "id": 14,
