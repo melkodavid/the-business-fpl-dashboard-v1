@@ -15,12 +15,12 @@
       "importance": 2.83,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 30,
-        "drawPct": 7,
-        "awayWinPct": 63,
-        "homeExpected": 29,
+        "homeWinPct": 55,
+        "drawPct": 8,
+        "awayWinPct": 37,
+        "homeExpected": 32.6,
         "awayExpected": 31.4,
-        "homeSoFar": 23,
+        "homeSoFar": 28,
         "awaySoFar": 26
       }
     },
@@ -37,13 +37,13 @@
       "importance": 2.75,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 57,
-        "drawPct": 8,
-        "awayWinPct": 35,
-        "homeExpected": 38.2,
-        "awayExpected": 36.9,
+        "homeWinPct": 45,
+        "drawPct": 10,
+        "awayWinPct": 45,
+        "homeExpected": 35,
+        "awayExpected": 35,
         "homeSoFar": 34,
-        "awaySoFar": 31
+        "awaySoFar": 33
       }
     },
     {
@@ -59,12 +59,12 @@
       "importance": 2.39,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 26,
-        "drawPct": 6,
-        "awayWinPct": 68,
-        "homeExpected": 37.3,
-        "awayExpected": 40.7,
-        "homeSoFar": 32,
+        "homeWinPct": 28,
+        "drawPct": 7,
+        "awayWinPct": 65,
+        "homeExpected": 36,
+        "awayExpected": 38.6,
+        "homeSoFar": 33,
         "awaySoFar": 30
       }
     },
@@ -84,9 +84,9 @@
         "homeWinPct": 100,
         "drawPct": 0,
         "awayWinPct": 0,
-        "homeExpected": 41.2,
-        "awayExpected": 25,
-        "homeSoFar": 37,
+        "homeExpected": 39.3,
+        "awayExpected": 24.3,
+        "homeSoFar": 39,
         "awaySoFar": 22
       }
     },
@@ -104,10 +104,10 @@
       "tag": "Wooden Spoon Battle",
       "odds": {
         "homeWinPct": 1,
-        "drawPct": 1,
-        "awayWinPct": 98,
-        "homeExpected": 31.7,
-        "awayExpected": 45,
+        "drawPct": 0,
+        "awayWinPct": 99,
+        "homeExpected": 29.7,
+        "awayExpected": 44.3,
         "homeSoFar": 24,
         "awaySoFar": 37
       }
@@ -125,11 +125,11 @@
       "importance": 1.5,
       "tag": "Six-Pointer",
       "odds": {
-        "homeWinPct": 17,
-        "drawPct": 5,
-        "awayWinPct": 78,
-        "homeExpected": 44.2,
-        "awayExpected": 48.9,
+        "homeWinPct": 2,
+        "drawPct": 1,
+        "awayWinPct": 97,
+        "homeExpected": 39,
+        "awayExpected": 47,
         "homeSoFar": 36,
         "awaySoFar": 44
       }
@@ -274,8 +274,8 @@
     },
     "1425": {
       "formation": "3-5-2",
-      "expected": 43.5,
-      "captainId": 261,
+      "expected": 43.8,
+      "captainId": 428,
       "locked": true,
       "xi": [
         {
@@ -311,19 +311,19 @@
           "ep": 2.7
         },
         {
-          "id": 261,
-          "name": "Iwobi",
-          "pos": "MID",
-          "type": 3,
-          "team": "Fulham",
-          "ep": 6.7
-        },
-        {
           "id": 428,
           "name": "Cunha",
           "pos": "MID",
           "type": 3,
           "team": "Man Utd",
+          "ep": 7
+        },
+        {
+          "id": 261,
+          "name": "Iwobi",
+          "pos": "MID",
+          "type": 3,
+          "team": "Fulham",
           "ep": 6.7
         },
         {
@@ -404,7 +404,7 @@
     },
     "1471": {
       "formation": "5-4-1",
-      "expected": 41.9,
+      "expected": 42.6,
       "captainId": 504,
       "locked": true,
       "xi": [
@@ -422,7 +422,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Brighton",
-          "ep": 8
+          "ep": 9
         },
         {
           "id": 257,
@@ -438,7 +438,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Bournemouth",
-          "ep": 4.3
+          "ep": 4
         },
         {
           "id": 599,
@@ -924,7 +924,7 @@
     },
     "1947": {
       "formation": "4-5-1",
-      "expected": 39.6,
+      "expected": 41.3,
       "captainId": 124,
       "locked": true,
       "xi": [
@@ -937,6 +937,14 @@
           "ep": 3
         },
         {
+          "id": 202,
+          "name": "Richards",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Crystal Palace",
+          "ep": 4.7
+        },
+        {
           "id": 356,
           "name": "Virgil",
           "pos": "DEF",
@@ -945,20 +953,12 @@
           "ep": 4
         },
         {
-          "id": 202,
-          "name": "Richards",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Crystal Palace",
-          "ep": 4
-        },
-        {
           "id": 555,
           "name": "Silva",
           "pos": "DEF",
           "type": 2,
           "team": "Bournemouth",
-          "ep": 2.7
+          "ep": 3.7
         },
         {
           "id": 472,
@@ -1444,7 +1444,7 @@
     },
     "29975": {
       "formation": "4-4-2",
-      "expected": 32,
+      "expected": 33.7,
       "captainId": 109,
       "locked": true,
       "xi": [
@@ -1505,20 +1505,20 @@
           "ep": 2
         },
         {
+          "id": 123,
+          "name": "Hinshelwood",
+          "pos": "MID",
+          "type": 3,
+          "team": "Brighton",
+          "ep": 2
+        },
+        {
           "id": 98,
           "name": "Janelt",
           "pos": "MID",
           "type": 3,
           "team": "Brentford",
           "ep": 1.7
-        },
-        {
-          "id": 123,
-          "name": "Hinshelwood",
-          "pos": "MID",
-          "type": 3,
-          "team": "Brighton",
-          "ep": 0.3
         },
         {
           "id": 649,

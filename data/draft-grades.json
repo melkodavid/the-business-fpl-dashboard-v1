@@ -3,7 +3,7 @@
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 349
+      "draftTeamPoints": 350
     },
     {
       "managerId": 1857,
@@ -13,12 +13,12 @@
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 320
+      "draftTeamPoints": 322
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 305
+      "draftTeamPoints": 307
     },
     {
       "managerId": 10375,
@@ -26,19 +26,24 @@
       "draftTeamPoints": 295
     },
     {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "draftTeamPoints": 292
+    },
+    {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
       "draftTeamPoints": 292
     },
     {
-      "managerId": 1377,
-      "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 290
-    },
-    {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
       "draftTeamPoints": 285
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "draftTeamPoints": 236
     },
     {
       "managerId": 26227,
@@ -49,11 +54,6 @@
       "managerId": 29975,
       "managerName": "Zacharias United",
       "draftTeamPoints": 235
-    },
-    {
-      "managerId": 10210,
-      "managerName": "Syria FC**",
-      "draftTeamPoints": 234
     },
     {
       "managerId": 1530,
@@ -245,7 +245,7 @@
     {
       "pickNumber": 19,
       "round": 2,
-      "seasonPoints": 36,
+      "seasonPoints": 37,
       "managerId": 1425,
       "elementId": 428,
       "playerName": "Cunha",
@@ -635,7 +635,7 @@
     {
       "pickNumber": 58,
       "round": 5,
-      "seasonPoints": 21,
+      "seasonPoints": 20,
       "managerId": 1471,
       "elementId": 60,
       "playerName": "Hill",
@@ -1145,7 +1145,7 @@
     {
       "pickNumber": 109,
       "round": 10,
-      "seasonPoints": 18,
+      "seasonPoints": 20,
       "managerId": 1377,
       "elementId": 202,
       "playerName": "Richards",
@@ -1165,7 +1165,7 @@
     {
       "pickNumber": 111,
       "round": 10,
-      "seasonPoints": 48,
+      "seasonPoints": 51,
       "managerId": 1471,
       "elementId": 504,
       "playerName": "Vuskovic",
@@ -1415,7 +1415,7 @@
     {
       "pickNumber": 136,
       "round": 12,
-      "seasonPoints": 10,
+      "seasonPoints": 12,
       "managerId": 10210,
       "elementId": 417,
       "playerName": "Dalot",
@@ -1565,7 +1565,7 @@
     {
       "pickNumber": 151,
       "round": 13,
-      "seasonPoints": 14,
+      "seasonPoints": 16,
       "managerId": 1947,
       "elementId": 418,
       "playerName": "Maguire",
