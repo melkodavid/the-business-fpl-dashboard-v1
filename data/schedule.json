@@ -15,12 +15,12 @@
       "importance": 2.83,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 29,
-        "drawPct": 6,
-        "awayWinPct": 65,
-        "homeExpected": 28.7,
+        "homeWinPct": 30,
+        "drawPct": 7,
+        "awayWinPct": 63,
+        "homeExpected": 29,
         "awayExpected": 31.4,
-        "homeSoFar": 22,
+        "homeSoFar": 23,
         "awaySoFar": 26
       }
     },
@@ -37,13 +37,13 @@
       "importance": 2.75,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 67,
-        "drawPct": 6,
-        "awayWinPct": 27,
-        "homeExpected": 39.5,
-        "awayExpected": 36.5,
+        "homeWinPct": 57,
+        "drawPct": 8,
+        "awayWinPct": 35,
+        "homeExpected": 38.2,
+        "awayExpected": 36.9,
         "homeSoFar": 34,
-        "awaySoFar": 29
+        "awaySoFar": 31
       }
     },
     {
@@ -59,11 +59,11 @@
       "importance": 2.39,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 28,
-        "drawPct": 5,
-        "awayWinPct": 67,
-        "homeExpected": 38.3,
-        "awayExpected": 41.7,
+        "homeWinPct": 26,
+        "drawPct": 6,
+        "awayWinPct": 68,
+        "homeExpected": 37.3,
+        "awayExpected": 40.7,
         "homeSoFar": 32,
         "awaySoFar": 30
       }
@@ -84,8 +84,8 @@
         "homeWinPct": 100,
         "drawPct": 0,
         "awayWinPct": 0,
-        "homeExpected": 42.9,
-        "awayExpected": 25.3,
+        "homeExpected": 41.2,
+        "awayExpected": 25,
         "homeSoFar": 37,
         "awaySoFar": 22
       }
@@ -103,11 +103,11 @@
       "importance": 2.1,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 2,
+        "homeWinPct": 1,
         "drawPct": 1,
-        "awayWinPct": 97,
-        "homeExpected": 32.6,
-        "awayExpected": 45.3,
+        "awayWinPct": 98,
+        "homeExpected": 31.7,
+        "awayExpected": 45,
         "homeSoFar": 24,
         "awaySoFar": 37
       }
@@ -125,13 +125,13 @@
       "importance": 1.5,
       "tag": "Six-Pointer",
       "odds": {
-        "homeWinPct": 34,
-        "drawPct": 6,
-        "awayWinPct": 60,
-        "homeExpected": 46.8,
-        "awayExpected": 48.7,
+        "homeWinPct": 17,
+        "drawPct": 5,
+        "awayWinPct": 78,
+        "homeExpected": 44.2,
+        "awayExpected": 48.9,
         "homeSoFar": 36,
-        "awaySoFar": 43
+        "awaySoFar": 44
       }
     }
   ],
@@ -924,7 +924,7 @@
     },
     "1947": {
       "formation": "4-5-1",
-      "expected": 39.3,
+      "expected": 39.6,
       "captainId": 124,
       "locked": true,
       "xi": [
@@ -1006,7 +1006,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Bournemouth",
-          "ep": 0
+          "ep": 0.3
         },
         {
           "id": 106,
@@ -1040,7 +1040,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Brighton",
-          "ep": 1.7
+          "ep": 2
         },
         {
           "id": 439,
@@ -1314,8 +1314,8 @@
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 39.6,
-      "captainId": 156,
+      "expected": 39.9,
+      "captainId": 114,
       "locked": true,
       "xi": [
         {
@@ -1332,7 +1332,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Brighton",
-          "ep": 7
+          "ep": 7.3
         },
         {
           "id": 116,
@@ -1444,7 +1444,7 @@
     },
     "29975": {
       "formation": "4-4-2",
-      "expected": 31.7,
+      "expected": 32,
       "captainId": 109,
       "locked": true,
       "xi": [
@@ -1518,7 +1518,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Brighton",
-          "ep": 0
+          "ep": 0.3
         },
         {
           "id": 649,

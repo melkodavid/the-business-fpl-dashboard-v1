@@ -33,7 +33,7 @@
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 289
+      "draftTeamPoints": 290
     },
     {
       "managerId": 99786,
@@ -46,13 +46,13 @@
       "draftTeamPoints": 236
     },
     {
-      "managerId": 10210,
-      "managerName": "Syria FC**",
-      "draftTeamPoints": 234
-    },
-    {
       "managerId": 29975,
       "managerName": "Zacharias United",
+      "draftTeamPoints": 235
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
       "draftTeamPoints": 234
     },
     {
@@ -895,7 +895,7 @@
     {
       "pickNumber": 84,
       "round": 7,
-      "seasonPoints": 10,
+      "seasonPoints": 11,
       "managerId": 1377,
       "elementId": 125,
       "playerName": "Georginio",
@@ -1485,7 +1485,7 @@
     {
       "pickNumber": 143,
       "round": 12,
-      "seasonPoints": 8,
+      "seasonPoints": 9,
       "managerId": 29975,
       "elementId": 347,
       "playerName": "Nmecha",
