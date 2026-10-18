@@ -125,13 +125,13 @@
       "importance": 1.5,
       "tag": "Six-Pointer",
       "odds": {
-        "homeWinPct": 9,
-        "drawPct": 5,
-        "awayWinPct": 86,
+        "homeWinPct": 14,
+        "drawPct": 7,
+        "awayWinPct": 79,
         "homeExpected": 44,
-        "awayExpected": 48.7,
+        "awayExpected": 47.7,
         "homeSoFar": 44,
-        "awaySoFar": 47
+        "awaySoFar": 46
       }
     }
   ],
@@ -274,7 +274,7 @@
     },
     "1425": {
       "formation": "3-5-2",
-      "expected": 43.8,
+      "expected": 46.1,
       "captainId": 428,
       "locked": true,
       "xi": [
@@ -356,7 +356,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Chelsea",
-          "ep": 4.7
+          "ep": 7
         },
         {
           "id": 316,
@@ -404,7 +404,7 @@
     },
     "1471": {
       "formation": "5-4-1",
-      "expected": 44,
+      "expected": 46.2,
       "captainId": 504,
       "locked": true,
       "xi": [
@@ -462,7 +462,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Chelsea",
-          "ep": 4.3
+          "ep": 5.5
         },
         {
           "id": 154,
@@ -470,7 +470,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Chelsea",
-          "ep": 4
+          "ep": 5
         },
         {
           "id": 542,
@@ -512,7 +512,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Brentford",
-          "ep": 2.5
+          "ep": 0.4
         },
         {
           "id": 553,
@@ -634,7 +634,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Brentford",
-          "ep": 3.3
+          "ep": 2
         },
         {
           "id": 588,
@@ -664,7 +664,7 @@
     },
     "1530": {
       "formation": "4-5-1",
-      "expected": 33.4,
+      "expected": 31.2,
       "captainId": 127,
       "locked": true,
       "xi": [
@@ -722,7 +722,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Brentford",
-          "ep": 5.7
+          "ep": 3.5
         },
         {
           "id": 398,
@@ -780,7 +780,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Chelsea",
-          "ep": 1.3
+          "ep": 1
         },
         {
           "id": 224,
@@ -794,7 +794,7 @@
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 39.9,
+      "expected": 40.7,
       "captainId": 411,
       "locked": true,
       "xi": [
@@ -847,20 +847,20 @@
           "ep": 3
         },
         {
+          "id": 159,
+          "name": "Caicedo",
+          "pos": "MID",
+          "type": 3,
+          "team": "Chelsea",
+          "ep": 2.5
+        },
+        {
           "id": 268,
           "name": "King",
           "pos": "MID",
           "type": 3,
           "team": "Fulham",
           "ep": 2
-        },
-        {
-          "id": 159,
-          "name": "Caicedo",
-          "pos": "MID",
-          "type": 3,
-          "team": "Chelsea",
-          "ep": 1.7
         },
         {
           "id": 411,
@@ -924,7 +924,7 @@
     },
     "1947": {
       "formation": "4-5-1",
-      "expected": 41.6,
+      "expected": 41.3,
       "captainId": 124,
       "locked": true,
       "xi": [
@@ -1014,7 +1014,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Brentford",
-          "ep": 4.3
+          "ep": 4
         }
       ],
       "bench": [
@@ -1054,7 +1054,7 @@
     },
     "10210": {
       "formation": "4-5-1",
-      "expected": 35.1,
+      "expected": 35.4,
       "captainId": 41,
       "locked": true,
       "xi": [
@@ -1072,7 +1072,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Brentford",
-          "ep": 5.3
+          "ep": 4.5
         },
         {
           "id": 4,
@@ -1112,7 +1112,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Brentford",
-          "ep": 4.7
+          "ep": 5.5
         },
         {
           "id": 628,
@@ -1123,19 +1123,19 @@
           "ep": 3
         },
         {
-          "id": 208,
-          "name": "Sarr",
-          "pos": "MID",
-          "type": 3,
-          "team": "Crystal Palace",
-          "ep": 0.7
-        },
-        {
           "id": 556,
           "name": "M.Sangaré",
           "pos": "MID",
           "type": 3,
           "team": "Brentford",
+          "ep": 1
+        },
+        {
+          "id": 208,
+          "name": "Sarr",
+          "pos": "MID",
+          "type": 3,
+          "team": "Crystal Palace",
           "ep": 0.7
         },
         {
@@ -1184,7 +1184,7 @@
     },
     "10375": {
       "formation": "4-4-2",
-      "expected": 38.6,
+      "expected": 39.6,
       "captainId": 113,
       "locked": true,
       "xi": [
@@ -1213,19 +1213,19 @@
           "ep": 5
         },
         {
-          "id": 112,
-          "name": "Van Hecke",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Spurs",
-          "ep": 3
-        },
-        {
           "id": 149,
           "name": "Colwill",
           "pos": "DEF",
           "type": 2,
           "team": "Chelsea",
+          "ep": 4
+        },
+        {
+          "id": 112,
+          "name": "Van Hecke",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Spurs",
           "ep": 3
         },
         {
@@ -1284,7 +1284,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Chelsea",
-          "ep": 4.3
+          "ep": 5.5
         },
         {
           "id": 37,
@@ -1314,8 +1314,8 @@
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 40.9,
-      "captainId": 114,
+      "expected": 43.8,
+      "captainId": 156,
       "locked": true,
       "xi": [
         {
@@ -1332,7 +1332,15 @@
           "pos": "DEF",
           "type": 2,
           "team": "Brighton",
-          "ep": 7.3
+          "ep": 7
+        },
+        {
+          "id": 583,
+          "name": "Chavarria",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Chelsea",
+          "ep": 2.5
         },
         {
           "id": 116,
@@ -1341,14 +1349,6 @@
           "type": 2,
           "team": "Brighton",
           "ep": 2.3
-        },
-        {
-          "id": 583,
-          "name": "Chavarria",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Chelsea",
-          "ep": 2
         },
         {
           "id": 506,
@@ -1364,7 +1364,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Chelsea",
-          "ep": 7.3
+          "ep": 10
         },
         {
           "id": 399,
@@ -1444,7 +1444,7 @@
     },
     "29975": {
       "formation": "4-4-2",
-      "expected": 36.4,
+      "expected": 35.7,
       "captainId": 109,
       "locked": true,
       "xi": [
@@ -1518,7 +1518,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Brentford",
-          "ep": 1.7
+          "ep": 1
         },
         {
           "id": 26,
@@ -1552,7 +1552,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Chelsea",
-          "ep": 3.7
+          "ep": 4
         },
         {
           "id": 377,
@@ -1574,7 +1574,7 @@
     },
     "99786": {
       "formation": "3-5-2",
-      "expected": 49.4,
+      "expected": 47.6,
       "captainId": 115,
       "locked": true,
       "xi": [
@@ -1608,7 +1608,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Brentford",
-          "ep": 2.3
+          "ep": 0.5
         },
         {
           "id": 427,
