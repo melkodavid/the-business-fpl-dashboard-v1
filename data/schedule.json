@@ -81,12 +81,12 @@
       "importance": 2.21,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 65,
-        "drawPct": 9,
-        "awayWinPct": 26,
-        "homeExpected": 41,
+        "homeWinPct": 82,
+        "drawPct": 6,
+        "awayWinPct": 12,
+        "homeExpected": 43,
         "awayExpected": 39,
-        "homeSoFar": 41,
+        "homeSoFar": 43,
         "awaySoFar": 39
       }
     },
@@ -404,7 +404,7 @@
     },
     "1471": {
       "formation": "5-4-1",
-      "expected": 43.3,
+      "expected": 44,
       "captainId": 504,
       "locked": true,
       "xi": [
@@ -473,19 +473,19 @@
           "ep": 4
         },
         {
-          "id": 239,
-          "name": "Garner",
-          "pos": "MID",
-          "type": 3,
-          "team": "Everton",
-          "ep": 3
-        },
-        {
           "id": 542,
           "name": "E.Le Fée",
           "pos": "MID",
           "type": 3,
           "team": "Sunderland",
+          "ep": 3.7
+        },
+        {
+          "id": 239,
+          "name": "Garner",
+          "pos": "MID",
+          "type": 3,
+          "team": "Everton",
           "ep": 3
         },
         {
