@@ -103,11 +103,11 @@
       "importance": 2.1,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 1,
+        "homeWinPct": 0,
         "drawPct": 0,
-        "awayWinPct": 99,
-        "homeExpected": 30.7,
-        "awayExpected": 44.8,
+        "awayWinPct": 100,
+        "homeExpected": 27.5,
+        "awayExpected": 42.5,
         "homeSoFar": 26,
         "awaySoFar": 37
       }
@@ -144,7 +144,7 @@
   "lineups": {
     "1377": {
       "formation": "4-5-1",
-      "expected": 47.5,
+      "expected": 47.8,
       "captainId": 53,
       "locked": true,
       "xi": [
@@ -234,7 +234,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Nott'm Forest",
-          "ep": 1.7
+          "ep": 2
         }
       ],
       "bench": [
@@ -382,7 +382,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Nott'm Forest",
-          "ep": 1.7
+          "ep": 1.5
         },
         {
           "id": 501,
@@ -398,7 +398,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Coventry City",
-          "ep": 3
+          "ep": 2.5
         }
       ]
     },
@@ -534,7 +534,7 @@
     },
     "1501": {
       "formation": "4-5-1",
-      "expected": 32.7,
+      "expected": 32.5,
       "captainId": 79,
       "locked": true,
       "xi": [
@@ -608,7 +608,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Nott'm Forest",
-          "ep": 1
+          "ep": 0.8
         },
         {
           "id": 368,
@@ -664,7 +664,7 @@
     },
     "1530": {
       "formation": "4-5-1",
-      "expected": 29.1,
+      "expected": 25.7,
       "captainId": 127,
       "locked": true,
       "xi": [
@@ -674,7 +674,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Coventry City",
-          "ep": 4.7
+          "ep": 1.5
         },
         {
           "id": 637,
@@ -693,20 +693,20 @@
           "ep": 2
         },
         {
-          "id": 201,
-          "name": "Muñoz",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Nott'm Forest",
-          "ep": 1.7
-        },
-        {
           "id": 269,
           "name": "Sessegnon",
           "pos": "DEF",
           "type": 2,
           "team": "Fulham",
           "ep": 1.7
+        },
+        {
+          "id": 201,
+          "name": "Muñoz",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Nott'm Forest",
+          "ep": 1.5
         },
         {
           "id": 127,
@@ -794,7 +794,7 @@
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 40.5,
+      "expected": 38.2,
       "captainId": 411,
       "locked": true,
       "xi": [
@@ -815,14 +815,6 @@
           "ep": 4.3
         },
         {
-          "id": 173,
-          "name": "Thomas",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Coventry City",
-          "ep": 4.3
-        },
-        {
           "id": 387,
           "name": "O'Reilly",
           "pos": "DEF",
@@ -837,6 +829,14 @@
           "type": 2,
           "team": "Fulham",
           "ep": 2.2
+        },
+        {
+          "id": 173,
+          "name": "Thomas",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Coventry City",
+          "ep": 2
         },
         {
           "id": 481,
@@ -924,7 +924,7 @@
     },
     "1947": {
       "formation": "4-5-1",
-      "expected": 40,
+      "expected": 39.3,
       "captainId": 236,
       "locked": true,
       "xi": [
@@ -966,7 +966,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Nott'm Forest",
-          "ep": 2.7
+          "ep": 2
         },
         {
           "id": 236,
@@ -1170,7 +1170,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Coventry City",
-          "ep": 4
+          "ep": 6
         },
         {
           "id": 25,
