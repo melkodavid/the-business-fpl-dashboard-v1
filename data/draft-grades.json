@@ -16,14 +16,19 @@
       "draftTeamPoints": 331
     },
     {
-      "managerId": 1377,
-      "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 313
-    },
-    {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 311
+      "draftTeamPoints": 316
+    },
+    {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "draftTeamPoints": 314
+    },
+    {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "draftTeamPoints": 301
     },
     {
       "managerId": 10375,
@@ -34,11 +39,6 @@
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
       "draftTeamPoints": 297
-    },
-    {
-      "managerId": 1501,
-      "managerName": "Set Piece Fc",
-      "draftTeamPoints": 293
     },
     {
       "managerId": 10210,
@@ -53,7 +53,7 @@
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "draftTeamPoints": 240
+      "draftTeamPoints": 239
     },
     {
       "managerId": 1530,
@@ -615,7 +615,7 @@
     {
       "pickNumber": 56,
       "round": 5,
-      "seasonPoints": 5,
+      "seasonPoints": 13,
       "managerId": 1501,
       "elementId": 515,
       "playerName": "Maddison",
@@ -765,7 +765,7 @@
     {
       "pickNumber": 71,
       "round": 6,
-      "seasonPoints": 15,
+      "seasonPoints": 14,
       "managerId": 29975,
       "elementId": 526,
       "playerName": "Solanke",
@@ -955,7 +955,7 @@
     {
       "pickNumber": 90,
       "round": 8,
-      "seasonPoints": 11,
+      "seasonPoints": 16,
       "managerId": 1947,
       "elementId": 512,
       "playerName": "Kudus",
@@ -1855,7 +1855,7 @@
     {
       "pickNumber": 180,
       "round": 15,
-      "seasonPoints": 22,
+      "seasonPoints": 23,
       "managerId": 1377,
       "elementId": 455,
       "playerName": "Tonali",

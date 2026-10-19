@@ -59,13 +59,13 @@
       "importance": 2.39,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 27,
-        "drawPct": 9,
-        "awayWinPct": 64,
-        "homeExpected": 36.6,
-        "awayExpected": 38.5,
+        "homeWinPct": 2,
+        "drawPct": 1,
+        "awayWinPct": 97,
+        "homeExpected": 35.5,
+        "awayExpected": 43.3,
         "homeSoFar": 34,
-        "awaySoFar": 35
+        "awaySoFar": 40
       }
     },
     {
@@ -106,10 +106,10 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 28.7,
-        "awayExpected": 44.6,
+        "homeExpected": 28,
+        "awayExpected": 41,
         "homeSoFar": 27,
-        "awaySoFar": 39
+        "awaySoFar": 38
       }
     },
     {
@@ -125,11 +125,11 @@
       "importance": 1.5,
       "tag": "Six-Pointer",
       "odds": {
-        "homeWinPct": 20,
-        "drawPct": 8,
-        "awayWinPct": 72,
+        "homeWinPct": 26,
+        "drawPct": 9,
+        "awayWinPct": 65,
         "homeExpected": 46,
-        "awayExpected": 48.7,
+        "awayExpected": 48,
         "homeSoFar": 46,
         "awaySoFar": 47
       }
@@ -794,7 +794,7 @@
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 39.2,
+      "expected": 38.7,
       "captainId": 411,
       "locked": true,
       "xi": [
@@ -871,20 +871,20 @@
           "ep": 8.3
         },
         {
-          "id": 526,
-          "name": "Solanke",
-          "pos": "FWD",
-          "type": 4,
-          "team": "Spurs",
-          "ep": 4
-        },
-        {
           "id": 249,
           "name": "Barry",
           "pos": "FWD",
           "type": 4,
           "team": "Everton",
           "ep": 4
+        },
+        {
+          "id": 526,
+          "name": "Solanke",
+          "pos": "FWD",
+          "type": 4,
+          "team": "Spurs",
+          "ep": 3.5
         }
       ],
       "bench": [
@@ -1184,7 +1184,7 @@
     },
     "10375": {
       "formation": "4-4-2",
-      "expected": 41.5,
+      "expected": 44,
       "captainId": 113,
       "locked": true,
       "xi": [
@@ -1237,20 +1237,20 @@
           "ep": 6
         },
         {
+          "id": 512,
+          "name": "Kudus",
+          "pos": "MID",
+          "type": 3,
+          "team": "Spurs",
+          "ep": 4.5
+        },
+        {
           "id": 372,
           "name": "Mac Allister",
           "pos": "MID",
           "type": 3,
           "team": "Liverpool",
           "ep": 2.7
-        },
-        {
-          "id": 512,
-          "name": "Kudus",
-          "pos": "MID",
-          "type": 3,
-          "team": "Spurs",
-          "ep": 2
         },
         {
           "id": 544,
