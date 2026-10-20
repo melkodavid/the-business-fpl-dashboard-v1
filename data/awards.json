@@ -205,6 +205,34 @@
           "fixtureId": 60
         }
       ]
+    },
+    {
+      "gw": 7,
+      "topScore": {
+        "managerIds": [
+          26227
+        ],
+        "score": 56
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          1530
+        ],
+        "score": 27
+      },
+      "blowout": {
+        "title": "i can fix him* took Muks Militia behind the bushes",
+        "winnerId": 1857,
+        "loserId": 1530,
+        "margin": 17
+      },
+      "worstLineup": {
+        "managerIds": [
+          10375
+        ],
+        "benchPoints": 26
+      },
+      "fiftyNineClubInstances": []
     }
   ],
   "hallOfFame": {
@@ -220,15 +248,19 @@
       {
         "managerId": 1857,
         "count": 1
+      },
+      {
+        "managerId": 26227,
+        "count": 1
       }
     ],
     "markOfTheWeek": [
       {
-        "managerId": 29975,
-        "count": 2
+        "managerId": 1530,
+        "count": 3
       },
       {
-        "managerId": 1530,
+        "managerId": 29975,
         "count": 2
       },
       {
@@ -260,6 +292,10 @@
       {
         "managerId": 1471,
         "count": 1
+      },
+      {
+        "managerId": 1857,
+        "count": 1
       }
     ],
     "worstLineup": [
@@ -269,7 +305,7 @@
       },
       {
         "managerId": 10375,
-        "count": 2
+        "count": 3
       },
       {
         "managerId": 1857,

@@ -1,0 +1,91 @@
+{
+  "gw": 7,
+  "headline": {
+    "type": "lineup-could-have-won",
+    "personKeys": [
+      "zac"
+    ],
+    "text": "Zac Collins could have won this one -- the optimal lineup scores 52.",
+    "facts": {
+      "gw": 7,
+      "managerId": 29975,
+      "opponentId": 1377,
+      "actualScore": 45,
+      "optimalScore": 52,
+      "opponentScore": 46
+    },
+    "gw": 7
+  },
+  "secondaries": [
+    {
+      "type": "family-brother-derby",
+      "personKeys": [
+        "noah",
+        "anthony"
+      ],
+      "text": "Brother Derby: Noah Palladino vs. Neen, let's find out who's the chud.",
+      "facts": {
+        "homeManagerId": 1425,
+        "awayManagerId": 10375,
+        "homePoints": 37,
+        "awayPoints": 43,
+        "relation": "brother"
+      },
+      "gw": 7
+    },
+    {
+      "type": "luck-snakebit",
+      "personKeys": [
+        "ostap"
+      ],
+      "text": "Top-3 score, no points. Ostap Tsymbalista met the wrong opponent at the wrong time.",
+      "facts": {
+        "managerId": 99786,
+        "opponentId": 26227
+      },
+      "gw": 7
+    },
+    {
+      "type": "gauntlet-watch",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "Coming up for Mitch Grice: 3 consecutive fixtures against the family. All of it.",
+      "facts": {
+        "managerId": 1947,
+        "startGw": 10,
+        "length": 3,
+        "opponentIds": [
+          1530,
+          1377,
+          10375
+        ]
+      },
+      "gw": 7
+    },
+    {
+      "type": "luck-robbery",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "Mitch Grice snuck out a win with a bottom-3 score. Daylight robbery.",
+      "facts": {
+        "managerId": 1947,
+        "opponentId": 1501
+      },
+      "gw": 7
+    },
+    {
+      "type": "lu-post-mark-trade-scrutiny",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "A trade from Lu Palladino, under new scrutiny now that Mark's gone.",
+      "facts": {
+        "tradeId": 338369,
+        "netValue": -1
+      },
+      "gw": 7
+    }
+  ]
+}

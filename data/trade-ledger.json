@@ -15,7 +15,7 @@
             {
               "elementId": 398,
               "playerName": "Foden",
-              "points": 9
+              "points": 18
             },
             {
               "elementId": 55,
@@ -40,7 +40,7 @@
             {
               "elementId": 154,
               "playerName": "Palmer",
-              "points": 36,
+              "points": 38,
               "positionRipple": {
                 "elementId": 268,
                 "playerName": "King",
@@ -64,9 +64,9 @@
               }
             }
           ],
-          "gained": 31,
-          "givenUp": 42,
-          "netValue": -11,
+          "gained": 40,
+          "givenUp": 44,
+          "netValue": -4,
           "resultImpact": []
         },
         {
@@ -80,7 +80,7 @@
             {
               "elementId": 154,
               "playerName": "Palmer",
-              "points": 36
+              "points": 38
             },
             {
               "elementId": 463,
@@ -105,7 +105,7 @@
             {
               "elementId": 398,
               "playerName": "Foden",
-              "points": 9,
+              "points": 18,
               "positionRipple": null
             },
             {
@@ -122,9 +122,9 @@
               }
             }
           ],
-          "gained": 42,
-          "givenUp": 31,
-          "netValue": 11,
+          "gained": 44,
+          "givenUp": 40,
+          "netValue": 4,
           "resultImpact": []
         }
       ]
@@ -139,19 +139,19 @@
             {
               "elementId": 366,
               "playerName": "Wirtz",
-              "points": 20
+              "points": 25
             },
             {
               "elementId": 455,
               "playerName": "Tonali",
-              "points": 21
+              "points": 25
             }
           ],
           "given": [
             {
               "elementId": 155,
               "playerName": "Enzo",
-              "points": 16,
+              "points": 17,
               "positionRipple": {
                 "elementId": 129,
                 "playerName": "Ayari",
@@ -175,9 +175,9 @@
               }
             }
           ],
-          "gained": 41,
-          "givenUp": 18,
-          "netValue": 23,
+          "gained": 50,
+          "givenUp": 19,
+          "netValue": 31,
           "resultImpact": []
         },
         {
@@ -186,7 +186,7 @@
             {
               "elementId": 155,
               "playerName": "Enzo",
-              "points": 16
+              "points": 17
             },
             {
               "elementId": 208,
@@ -198,7 +198,7 @@
             {
               "elementId": 366,
               "playerName": "Wirtz",
-              "points": 20,
+              "points": 25,
               "positionRipple": {
                 "elementId": 628,
                 "playerName": "Barcola",
@@ -211,20 +211,20 @@
             {
               "elementId": 455,
               "playerName": "Tonali",
-              "points": 21,
+              "points": 25,
               "positionRipple": {
                 "elementId": 53,
                 "playerName": "Manzambi",
                 "position": "MID",
                 "acquiredGw": 6,
-                "gwsStarted": 1,
-                "points": 5
+                "gwsStarted": 2,
+                "points": 16
               }
             }
           ],
-          "gained": 18,
-          "givenUp": 41,
-          "netValue": -23,
+          "gained": 19,
+          "givenUp": 50,
+          "netValue": -31,
           "resultImpact": [
             {
               "gw": 2,
@@ -261,14 +261,14 @@
             {
               "elementId": 449,
               "playerName": "Hall",
-              "points": 31,
+              "points": 35,
               "positionRipple": {
                 "elementId": 258,
                 "playerName": "Castagne",
                 "position": "DEF",
                 "acquiredGw": 3,
-                "gwsStarted": 2,
-                "points": 2
+                "gwsStarted": 3,
+                "points": 10
               }
             },
             {
@@ -286,9 +286,19 @@
             }
           ],
           "gained": 3,
-          "givenUp": 46,
-          "netValue": -43,
-          "resultImpact": []
+          "givenUp": 50,
+          "netValue": -47,
+          "resultImpact": [
+            {
+              "gw": 7,
+              "opponentId": 1377,
+              "actualScore": 45,
+              "actualResult": "L",
+              "counterfactualScore": 50,
+              "counterfactualResult": "W",
+              "opponentScore": 46
+            }
+          ]
         },
         {
           "managerId": 1501,
@@ -296,7 +306,7 @@
             {
               "elementId": 449,
               "playerName": "Hall",
-              "points": 31
+              "points": 35
             },
             {
               "elementId": 70,
@@ -332,10 +342,20 @@
               }
             }
           ],
-          "gained": 46,
+          "gained": 50,
           "givenUp": 3,
-          "netValue": 43,
-          "resultImpact": []
+          "netValue": 47,
+          "resultImpact": [
+            {
+              "gw": 7,
+              "opponentId": 1947,
+              "actualScore": 34,
+              "actualResult": "L",
+              "counterfactualScore": 38,
+              "counterfactualResult": "W",
+              "opponentScore": 35
+            }
+          ]
         }
       ]
     },
@@ -349,7 +369,7 @@
             {
               "elementId": 67,
               "playerName": "Rayan",
-              "points": 8
+              "points": 11
             }
           ],
           "given": [
@@ -367,9 +387,9 @@
               }
             }
           ],
-          "gained": 8,
+          "gained": 11,
           "givenUp": 3,
-          "netValue": 5,
+          "netValue": 8,
           "resultImpact": []
         },
         {
@@ -385,21 +405,31 @@
             {
               "elementId": 67,
               "playerName": "Rayan",
-              "points": 8,
+              "points": 11,
               "positionRipple": {
                 "elementId": 98,
                 "playerName": "Janelt",
                 "position": "MID",
                 "acquiredGw": 4,
-                "gwsStarted": 3,
-                "points": 10
+                "gwsStarted": 4,
+                "points": 9
               }
             }
           ],
           "gained": 3,
-          "givenUp": 8,
-          "netValue": -5,
-          "resultImpact": []
+          "givenUp": 11,
+          "netValue": -8,
+          "resultImpact": [
+            {
+              "gw": 7,
+              "opponentId": 1377,
+              "actualScore": 45,
+              "actualResult": "L",
+              "counterfactualScore": 48,
+              "counterfactualResult": "W",
+              "opponentScore": 46
+            }
+          ]
         }
       ]
     },
@@ -418,7 +448,7 @@
             {
               "elementId": 244,
               "playerName": "Armstrong",
-              "points": 8
+              "points": 9
             },
             {
               "elementId": 527,
@@ -430,7 +460,7 @@
             {
               "elementId": 472,
               "playerName": "Murillo",
-              "points": 20,
+              "points": 22,
               "positionRipple": {
                 "elementId": 620,
                 "playerName": "Diouf",
@@ -443,7 +473,7 @@
             {
               "elementId": 67,
               "playerName": "Rayan",
-              "points": 8,
+              "points": 11,
               "positionRipple": {
                 "elementId": 628,
                 "playerName": "Barcola",
@@ -456,7 +486,7 @@
             {
               "elementId": 125,
               "playerName": "Georginio",
-              "points": 5,
+              "points": 6,
               "positionRipple": {
                 "elementId": 81,
                 "playerName": "Rodríguez",
@@ -467,9 +497,9 @@
               }
             }
           ],
-          "gained": 35,
-          "givenUp": 33,
-          "netValue": 2,
+          "gained": 36,
+          "givenUp": 39,
+          "netValue": -3,
           "resultImpact": []
         },
         {
@@ -478,17 +508,17 @@
             {
               "elementId": 472,
               "playerName": "Murillo",
-              "points": 20
+              "points": 22
             },
             {
               "elementId": 67,
               "playerName": "Rayan",
-              "points": 8
+              "points": 11
             },
             {
               "elementId": 125,
               "playerName": "Georginio",
-              "points": 5
+              "points": 6
             }
           ],
           "given": [
@@ -501,14 +531,14 @@
                 "playerName": "Silva",
                 "position": "DEF",
                 "acquiredGw": 3,
-                "gwsStarted": 4,
-                "points": 7
+                "gwsStarted": 5,
+                "points": 15
               }
             },
             {
               "elementId": 244,
               "playerName": "Armstrong",
-              "points": 8,
+              "points": 9,
               "positionRipple": {
                 "elementId": 486,
                 "playerName": "McAtee",
@@ -525,10 +555,20 @@
               "positionRipple": null
             }
           ],
-          "gained": 33,
-          "givenUp": 35,
-          "netValue": -2,
-          "resultImpact": []
+          "gained": 39,
+          "givenUp": 36,
+          "netValue": 3,
+          "resultImpact": [
+            {
+              "gw": 7,
+              "opponentId": 1501,
+              "actualScore": 35,
+              "actualResult": "W",
+              "counterfactualScore": 31,
+              "counterfactualResult": "L",
+              "opponentScore": 34
+            }
+          ]
         }
       ]
     },
@@ -555,15 +595,25 @@
                 "playerName": "Castagne",
                 "position": "DEF",
                 "acquiredGw": 3,
-                "gwsStarted": 2,
-                "points": 2
+                "gwsStarted": 3,
+                "points": 10
               }
             }
           ],
           "gained": 4,
           "givenUp": 0,
           "netValue": 4,
-          "resultImpact": []
+          "resultImpact": [
+            {
+              "gw": 7,
+              "opponentId": 1377,
+              "actualScore": 45,
+              "actualResult": "L",
+              "counterfactualScore": 46,
+              "counterfactualResult": "D",
+              "opponentScore": 46
+            }
+          ]
         },
         {
           "managerId": 1530,
@@ -611,7 +661,7 @@
             {
               "elementId": 210,
               "playerName": "Wharton",
-              "points": 13
+              "points": 15
             },
             {
               "elementId": 26,
@@ -636,7 +686,7 @@
             {
               "elementId": 481,
               "playerName": "Anderson",
-              "points": 16,
+              "points": 17,
               "positionRipple": {
                 "elementId": 377,
                 "playerName": "Munoz",
@@ -660,9 +710,9 @@
               }
             }
           ],
-          "gained": 27,
-          "givenUp": 19,
-          "netValue": 8,
+          "gained": 29,
+          "givenUp": 20,
+          "netValue": 9,
           "resultImpact": []
         },
         {
@@ -676,7 +726,7 @@
             {
               "elementId": 481,
               "playerName": "Anderson",
-              "points": 16
+              "points": 17
             },
             {
               "elementId": 55,
@@ -701,14 +751,14 @@
             {
               "elementId": 210,
               "playerName": "Wharton",
-              "points": 13,
+              "points": 15,
               "positionRipple": {
                 "elementId": 268,
                 "playerName": "King",
                 "position": "MID",
                 "acquiredGw": 3,
-                "gwsStarted": 4,
-                "points": 17
+                "gwsStarted": 5,
+                "points": 19
               }
             },
             {
@@ -725,9 +775,9 @@
               }
             }
           ],
-          "gained": 19,
-          "givenUp": 27,
-          "netValue": -8,
+          "gained": 20,
+          "givenUp": 29,
+          "netValue": -9,
           "resultImpact": []
         }
       ]
@@ -742,22 +792,22 @@
             {
               "elementId": 8,
               "playerName": "Calafiori",
-              "points": 16
+              "points": 22
             },
             {
               "elementId": 390,
               "playerName": "Rúben",
-              "points": 13
+              "points": 14
             },
             {
               "elementId": 377,
               "playerName": "Munoz",
-              "points": 4
+              "points": 13
             },
             {
               "elementId": 26,
               "playerName": "Havertz",
-              "points": 5
+              "points": 7
             }
           ],
           "given": [
@@ -790,33 +840,33 @@
             {
               "elementId": 426,
               "playerName": "B.Fernandes",
-              "points": 5,
+              "points": 6,
               "positionRipple": {
                 "elementId": 98,
                 "playerName": "Janelt",
                 "position": "MID",
                 "acquiredGw": 4,
-                "gwsStarted": 3,
-                "points": 10
+                "gwsStarted": 4,
+                "points": 9
               }
             },
             {
               "elementId": 347,
               "playerName": "Nmecha",
-              "points": 3,
+              "points": 4,
               "positionRipple": {
                 "elementId": 649,
                 "playerName": "Fernandez-Pardo",
                 "position": "FWD",
                 "acquiredGw": 4,
-                "gwsStarted": 2,
-                "points": 3
+                "gwsStarted": 3,
+                "points": 4
               }
             }
           ],
-          "gained": 38,
-          "givenUp": 11,
-          "netValue": 27,
+          "gained": 56,
+          "givenUp": 13,
+          "netValue": 43,
           "resultImpact": [
             {
               "gw": 6,
@@ -845,19 +895,19 @@
             {
               "elementId": 426,
               "playerName": "B.Fernandes",
-              "points": 5
+              "points": 6
             },
             {
               "elementId": 347,
               "playerName": "Nmecha",
-              "points": 3
+              "points": 4
             }
           ],
           "given": [
             {
               "elementId": 8,
               "playerName": "Calafiori",
-              "points": 16,
+              "points": 22,
               "positionRipple": {
                 "elementId": 580,
                 "playerName": "Araujo",
@@ -870,7 +920,7 @@
             {
               "elementId": 390,
               "playerName": "Rúben",
-              "points": 13,
+              "points": 14,
               "positionRipple": {
                 "elementId": 204,
                 "playerName": "Mitchell",
@@ -883,7 +933,7 @@
             {
               "elementId": 377,
               "playerName": "Munoz",
-              "points": 4,
+              "points": 13,
               "positionRipple": {
                 "elementId": 432,
                 "playerName": "Mainoo",
@@ -896,7 +946,7 @@
             {
               "elementId": 26,
               "playerName": "Havertz",
-              "points": 5,
+              "points": 7,
               "positionRipple": {
                 "elementId": 136,
                 "playerName": "Welbeck",
@@ -907,9 +957,9 @@
               }
             }
           ],
-          "gained": 11,
-          "givenUp": 38,
-          "netValue": -27,
+          "gained": 13,
+          "givenUp": 56,
+          "netValue": -43,
           "resultImpact": [
             {
               "gw": 6,
@@ -919,6 +969,15 @@
               "counterfactualScore": 41,
               "counterfactualResult": "D",
               "opponentScore": 41
+            },
+            {
+              "gw": 7,
+              "opponentId": 1857,
+              "actualScore": 27,
+              "actualResult": "L",
+              "counterfactualScore": 44,
+              "counterfactualResult": "D",
+              "opponentScore": 44
             }
           ]
         }
@@ -934,7 +993,7 @@
             {
               "elementId": 580,
               "playerName": "Araujo",
-              "points": 0
+              "points": 1
             },
             {
               "elementId": 432,
@@ -946,7 +1005,7 @@
             {
               "elementId": 201,
               "playerName": "Muñoz",
-              "points": 1,
+              "points": 3,
               "positionRipple": {
                 "elementId": 200,
                 "playerName": "Lacroix",
@@ -965,15 +1024,25 @@
                 "playerName": "Hinshelwood",
                 "position": "MID",
                 "acquiredGw": 6,
-                "gwsStarted": 0,
-                "points": 0
+                "gwsStarted": 1,
+                "points": 6
               }
             }
           ],
-          "gained": 4,
-          "givenUp": 2,
-          "netValue": 2,
-          "resultImpact": []
+          "gained": 5,
+          "givenUp": 4,
+          "netValue": 1,
+          "resultImpact": [
+            {
+              "gw": 7,
+              "opponentId": 1377,
+              "actualScore": 45,
+              "actualResult": "L",
+              "counterfactualScore": 46,
+              "counterfactualResult": "D",
+              "opponentScore": 46
+            }
+          ]
         },
         {
           "managerId": 1530,
@@ -981,7 +1050,7 @@
             {
               "elementId": 201,
               "playerName": "Muñoz",
-              "points": 1
+              "points": 3
             },
             {
               "elementId": 429,
@@ -993,7 +1062,7 @@
             {
               "elementId": 580,
               "playerName": "Araujo",
-              "points": 0,
+              "points": 1,
               "positionRipple": {
                 "elementId": 93,
                 "playerName": "Schuster",
@@ -1012,14 +1081,14 @@
                 "playerName": "Gomez",
                 "position": "MID",
                 "acquiredGw": 6,
-                "gwsStarted": 1,
-                "points": 5
+                "gwsStarted": 2,
+                "points": 13
               }
             }
           ],
-          "gained": 2,
-          "givenUp": 4,
-          "netValue": -2,
+          "gained": 4,
+          "givenUp": 5,
+          "netValue": -1,
           "resultImpact": []
         }
       ]
@@ -1034,32 +1103,32 @@
             {
               "elementId": 387,
               "playerName": "O'Reilly",
-              "points": 5
+              "points": 7
             },
             {
               "elementId": 161,
               "playerName": "Lavia",
-              "points": 1
+              "points": 2
             }
           ],
           "given": [
             {
               "elementId": 233,
               "playerName": "Mykolenko",
-              "points": 0,
+              "points": 1,
               "positionRipple": {
                 "elementId": 173,
                 "playerName": "Thomas",
                 "position": "DEF",
                 "acquiredGw": 6,
-                "gwsStarted": 1,
-                "points": 4
+                "gwsStarted": 2,
+                "points": 7
               }
             },
             {
               "elementId": 556,
               "playerName": "M.Sangaré",
-              "points": 1,
+              "points": 2,
               "positionRipple": {
                 "elementId": 78,
                 "playerName": "Kroupi.Jr",
@@ -1070,9 +1139,9 @@
               }
             }
           ],
-          "gained": 6,
-          "givenUp": 1,
-          "netValue": 5,
+          "gained": 9,
+          "givenUp": 3,
+          "netValue": 6,
           "resultImpact": []
         },
         {
@@ -1081,45 +1150,45 @@
             {
               "elementId": 233,
               "playerName": "Mykolenko",
-              "points": 0
+              "points": 1
             },
             {
               "elementId": 556,
               "playerName": "M.Sangaré",
-              "points": 1
+              "points": 2
             }
           ],
           "given": [
             {
               "elementId": 387,
               "playerName": "O'Reilly",
-              "points": 5,
+              "points": 7,
               "positionRipple": {
                 "elementId": 204,
                 "playerName": "Mitchell",
                 "position": "DEF",
                 "acquiredGw": 6,
-                "gwsStarted": 1,
+                "gwsStarted": 2,
                 "points": 4
               }
             },
             {
               "elementId": 161,
               "playerName": "Lavia",
-              "points": 1,
+              "points": 2,
               "positionRipple": {
                 "elementId": 41,
                 "playerName": "Buendía",
                 "position": "MID",
                 "acquiredGw": 6,
-                "gwsStarted": 1,
-                "points": 4
+                "gwsStarted": 2,
+                "points": 7
               }
             }
           ],
-          "gained": 1,
-          "givenUp": 6,
-          "netValue": -5,
+          "gained": 3,
+          "givenUp": 9,
+          "netValue": -6,
           "resultImpact": []
         }
       ]
@@ -1134,55 +1203,55 @@
             {
               "elementId": 417,
               "playerName": "Dalot",
-              "points": 0
+              "points": 4
             },
             {
               "elementId": 418,
               "playerName": "Maguire",
-              "points": 0
+              "points": 4
             },
             {
               "elementId": 15,
               "playerName": "Ødegaard",
-              "points": 0
+              "points": 3
             },
             {
               "elementId": 397,
               "playerName": "Semenyo",
-              "points": 0
+              "points": 1
             }
           ],
           "given": [
             {
               "elementId": 4,
               "playerName": "Gabriel",
-              "points": 0,
+              "points": 8,
               "positionRipple": {
                 "elementId": 10,
                 "playerName": "White",
                 "position": "DEF",
                 "acquiredGw": 7,
-                "gwsStarted": 0,
-                "points": 0
+                "gwsStarted": 1,
+                "points": 6
               }
             },
             {
               "elementId": 445,
               "playerName": "Thiaw",
-              "points": 0,
+              "points": 1,
               "positionRipple": {
                 "elementId": 358,
                 "playerName": "Kerkez",
                 "position": "DEF",
                 "acquiredGw": 7,
-                "gwsStarted": 0,
-                "points": 0
+                "gwsStarted": 1,
+                "points": 2
               }
             },
             {
               "elementId": 628,
               "playerName": "Barcola",
-              "points": 0,
+              "points": 4,
               "positionRipple": null
             },
             {
@@ -1192,9 +1261,9 @@
               "positionRipple": null
             }
           ],
-          "gained": 0,
-          "givenUp": 0,
-          "netValue": 0,
+          "gained": 12,
+          "givenUp": 13,
+          "netValue": -1,
           "resultImpact": []
         },
         {
@@ -1203,17 +1272,17 @@
             {
               "elementId": 4,
               "playerName": "Gabriel",
-              "points": 0
+              "points": 8
             },
             {
               "elementId": 445,
               "playerName": "Thiaw",
-              "points": 0
+              "points": 1
             },
             {
               "elementId": 628,
               "playerName": "Barcola",
-              "points": 0
+              "points": 4
             },
             {
               "elementId": 208,
@@ -1225,31 +1294,31 @@
             {
               "elementId": 417,
               "playerName": "Dalot",
-              "points": 0,
+              "points": 4,
               "positionRipple": null
             },
             {
               "elementId": 418,
               "playerName": "Maguire",
-              "points": 0,
+              "points": 4,
               "positionRipple": null
             },
             {
               "elementId": 15,
               "playerName": "Ødegaard",
-              "points": 0,
+              "points": 3,
               "positionRipple": null
             },
             {
               "elementId": 397,
               "playerName": "Semenyo",
-              "points": 0,
+              "points": 1,
               "positionRipple": null
             }
           ],
-          "gained": 0,
-          "givenUp": 0,
-          "netValue": 0,
+          "gained": 13,
+          "givenUp": 12,
+          "netValue": 1,
           "resultImpact": []
         }
       ]
@@ -1259,17 +1328,22 @@
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "netTradeValue": 43
+      "netTradeValue": 47
     },
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "netTradeValue": 20
+      "netTradeValue": 28
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "netTradeValue": 11
+      "netTradeValue": 4
+    },
+    {
+      "managerId": 1947,
+      "managerName": "FC General",
+      "netTradeValue": 3
     },
     {
       "managerId": 1425,
@@ -1292,11 +1366,6 @@
       "netTradeValue": 0
     },
     {
-      "managerId": 1947,
-      "managerName": "FC General",
-      "netTradeValue": -2
-    },
-    {
       "managerId": 10210,
       "managerName": "Syria FC**",
       "netTradeValue": -5
@@ -1304,20 +1373,52 @@
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "netTradeValue": -15
+      "netTradeValue": -7
     },
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "netTradeValue": -16
+      "netTradeValue": -27
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "netTradeValue": -36
+      "netTradeValue": -43
     }
   ],
   "seasonImpact": [
+    {
+      "managerId": 1947,
+      "managerName": "FC General",
+      "tradeCount": 1,
+      "actual": {
+        "w": 5,
+        "d": 0,
+        "l": 2
+      },
+      "withoutTrades": {
+        "w": 4,
+        "d": 0,
+        "l": 3
+      },
+      "winsDelta": 1,
+      "lossesDelta": -1,
+      "pointsDelta": 3,
+      "flips": [
+        {
+          "gw": 7,
+          "opponentId": 1501,
+          "actualResult": "W",
+          "actualScore": 35,
+          "counterfactualResult": "L",
+          "counterfactualScore": 31,
+          "opponentScore": 34,
+          "tradeIds": [
+            155857
+          ]
+        }
+      ]
+    },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
@@ -1325,12 +1426,12 @@
       "actual": {
         "w": 1,
         "d": 0,
-        "l": 5
+        "l": 6
       },
       "withoutTrades": {
         "w": 1,
         "d": 0,
-        "l": 5
+        "l": 6
       },
       "winsDelta": 0,
       "lossesDelta": 0,
@@ -1374,12 +1475,12 @@
       "managerName": "i can fix him*",
       "tradeCount": 3,
       "actual": {
-        "w": 4,
+        "w": 5,
         "d": 0,
         "l": 2
       },
       "withoutTrades": {
-        "w": 4,
+        "w": 5,
         "d": 0,
         "l": 2
       },
@@ -1395,12 +1496,12 @@
       "actual": {
         "w": 2,
         "d": 0,
-        "l": 4
+        "l": 5
       },
       "withoutTrades": {
         "w": 2,
         "d": 0,
-        "l": 4
+        "l": 5
       },
       "winsDelta": 0,
       "lossesDelta": 0,
@@ -1412,50 +1513,12 @@
       "managerName": "🥶CPR🥶",
       "tradeCount": 1,
       "actual": {
-        "w": 4,
+        "w": 5,
         "d": 0,
         "l": 2
       },
       "withoutTrades": {
-        "w": 4,
-        "d": 0,
-        "l": 2
-      },
-      "winsDelta": 0,
-      "lossesDelta": 0,
-      "pointsDelta": 0,
-      "flips": []
-    },
-    {
-      "managerId": 1501,
-      "managerName": "Set Piece Fc",
-      "tradeCount": 1,
-      "actual": {
-        "w": 4,
-        "d": 0,
-        "l": 2
-      },
-      "withoutTrades": {
-        "w": 4,
-        "d": 0,
-        "l": 2
-      },
-      "winsDelta": 0,
-      "lossesDelta": 0,
-      "pointsDelta": 0,
-      "flips": []
-    },
-    {
-      "managerId": 1947,
-      "managerName": "FC General",
-      "tradeCount": 1,
-      "actual": {
-        "w": 4,
-        "d": 0,
-        "l": 2
-      },
-      "withoutTrades": {
-        "w": 4,
+        "w": 5,
         "d": 0,
         "l": 2
       },
@@ -1471,12 +1534,12 @@
       "actual": {
         "w": 5,
         "d": 0,
-        "l": 1
+        "l": 2
       },
       "withoutTrades": {
         "w": 5,
         "d": 0,
-        "l": 1
+        "l": 2
       },
       "winsDelta": 0,
       "lossesDelta": 0,
@@ -1488,12 +1551,12 @@
       "managerName": "NEEN FC",
       "tradeCount": 0,
       "actual": {
-        "w": 4,
+        "w": 5,
         "d": 0,
         "l": 2
       },
       "withoutTrades": {
-        "w": 4,
+        "w": 5,
         "d": 0,
         "l": 2
       },
@@ -1507,12 +1570,12 @@
       "managerName": "Mourinho’s Ego FT",
       "tradeCount": 0,
       "actual": {
-        "w": 3,
+        "w": 4,
         "d": 0,
         "l": 3
       },
       "withoutTrades": {
-        "w": 3,
+        "w": 4,
         "d": 0,
         "l": 3
       },
@@ -1528,17 +1591,49 @@
       "actual": {
         "w": 3,
         "d": 0,
-        "l": 3
+        "l": 4
       },
       "withoutTrades": {
         "w": 3,
         "d": 0,
-        "l": 3
+        "l": 4
       },
       "winsDelta": 0,
       "lossesDelta": 0,
       "pointsDelta": 0,
       "flips": []
+    },
+    {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "tradeCount": 1,
+      "actual": {
+        "w": 4,
+        "d": 0,
+        "l": 3
+      },
+      "withoutTrades": {
+        "w": 5,
+        "d": 0,
+        "l": 2
+      },
+      "winsDelta": -1,
+      "lossesDelta": 1,
+      "pointsDelta": -3,
+      "flips": [
+        {
+          "gw": 7,
+          "opponentId": 1947,
+          "actualResult": "L",
+          "actualScore": 34,
+          "counterfactualResult": "W",
+          "counterfactualScore": 38,
+          "opponentScore": 35,
+          "tradeIds": [
+            48518
+          ]
+        }
+      ]
     },
     {
       "managerId": 1530,
@@ -1547,16 +1642,16 @@
       "actual": {
         "w": 1,
         "d": 0,
-        "l": 5
+        "l": 6
       },
       "withoutTrades": {
-        "w": 2,
+        "w": 3,
         "d": 1,
         "l": 3
       },
-      "winsDelta": -1,
-      "lossesDelta": 2,
-      "pointsDelta": -4,
+      "winsDelta": -2,
+      "lossesDelta": 3,
+      "pointsDelta": -7,
       "flips": [
         {
           "gw": 4,
@@ -1588,6 +1683,22 @@
             232186,
             293087
           ]
+        },
+        {
+          "gw": 7,
+          "opponentId": 1857,
+          "actualResult": "L",
+          "actualScore": 27,
+          "counterfactualResult": "W",
+          "counterfactualScore": 47,
+          "opponentScore": 44,
+          "tradeIds": [
+            36281,
+            167473,
+            175698,
+            232186,
+            293087
+          ]
         }
       ]
     },
@@ -1596,12 +1707,12 @@
       "managerName": "Lu’s Rules FC ****",
       "tradeCount": 4,
       "actual": {
-        "w": 1,
+        "w": 2,
         "d": 0,
         "l": 5
       },
       "withoutTrades": {
-        "w": 3,
+        "w": 4,
         "d": 1,
         "l": 2
       },

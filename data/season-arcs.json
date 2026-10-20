@@ -1,13 +1,30 @@
 {
-  "gauntletWatch": null,
+  "gauntletWatch": {
+    "type": "gauntlet-watch",
+    "personKeys": [
+      "mitch"
+    ],
+    "facts": {
+      "managerId": 1947,
+      "startGw": 10,
+      "length": 3,
+      "opponentIds": [
+        1530,
+        1377,
+        10375
+      ]
+    },
+    "gw": 7
+  },
   "lifeAfterMark": {
-    "type": "lu-post-mark-trade-scrutiny",
+    "type": "lu-post-mark-tracker",
     "personKeys": [
       "lu"
     ],
     "facts": {
-      "tradeId": 338369,
-      "netValue": 0
+      "managerId": 1377,
+      "rank": 10,
+      "total": 6
     },
     "gw": 7
   },
@@ -54,14 +71,14 @@
         "losses": 0
       },
       "2000s|97s": {
-        "wins": 2,
+        "wins": 3,
         "draws": 0,
-        "losses": 0
+        "losses": 1
       },
       "97s|2000s": {
-        "wins": 0,
+        "wins": 1,
         "draws": 0,
-        "losses": 2
+        "losses": 3
       },
       "ancient|97s": {
         "wins": 2,
