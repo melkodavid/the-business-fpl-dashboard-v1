@@ -81,11 +81,11 @@
       "importance": 2.17,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 52,
+        "homeWinPct": 55,
         "drawPct": 3,
-        "awayWinPct": 45,
+        "awayWinPct": 42,
         "homeExpected": 48.7,
-        "awayExpected": 47.6,
+        "awayExpected": 46.6,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -1443,8 +1443,8 @@
       ]
     },
     "29975": {
-      "formation": "4-4-2",
-      "expected": 47.6,
+      "formation": "4-3-3",
+      "expected": 46.6,
       "captainId": 400,
       "locked": false,
       "xi": [
@@ -1513,14 +1513,6 @@
           "ep": 3
         },
         {
-          "id": 432,
-          "name": "Mainoo",
-          "pos": "MID",
-          "type": 3,
-          "team": "Man Utd",
-          "ep": 1.5
-        },
-        {
           "id": 26,
           "name": "Havertz",
           "pos": "FWD",
@@ -1535,6 +1527,14 @@
           "type": 4,
           "team": "Newcastle",
           "ep": 1.5
+        },
+        {
+          "id": 223,
+          "name": "Mateta",
+          "pos": "FWD",
+          "type": 4,
+          "team": "Crystal Palace",
+          "ep": 0.5
         }
       ],
       "bench": [
@@ -1563,12 +1563,12 @@
           "ep": 0
         },
         {
-          "id": 223,
-          "name": "Mateta",
-          "pos": "FWD",
-          "type": 4,
-          "team": "Crystal Palace",
-          "ep": 0.5
+          "id": 432,
+          "name": "Mainoo",
+          "pos": "MID",
+          "type": 3,
+          "team": "Man Utd",
+          "ep": 0
         }
       ]
     },
