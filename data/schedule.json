@@ -15,11 +15,11 @@
       "importance": 2.83,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 36,
+        "homeWinPct": 35,
         "drawPct": 3,
-        "awayWinPct": 61,
-        "homeExpected": 38,
-        "awayExpected": 42.3,
+        "awayWinPct": 62,
+        "homeExpected": 37.5,
+        "awayExpected": 42,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -40,8 +40,8 @@
         "homeWinPct": 79,
         "drawPct": 2,
         "awayWinPct": 19,
-        "homeExpected": 40,
-        "awayExpected": 28.5,
+        "homeExpected": 40.5,
+        "awayExpected": 29,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -59,10 +59,10 @@
       "importance": 2.48,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 67,
+        "homeWinPct": 68,
         "drawPct": 3,
-        "awayWinPct": 30,
-        "homeExpected": 40.2,
+        "awayWinPct": 29,
+        "homeExpected": 40.7,
         "awayExpected": 33.8,
         "homeSoFar": null,
         "awaySoFar": null
@@ -81,11 +81,11 @@
       "importance": 2.17,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 49,
+        "homeWinPct": 48,
         "drawPct": 3,
-        "awayWinPct": 48,
+        "awayWinPct": 49,
         "homeExpected": 48.7,
-        "awayExpected": 48.5,
+        "awayExpected": 49,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -103,11 +103,11 @@
       "importance": 2.08,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 23,
+        "homeWinPct": 24,
         "drawPct": 2,
-        "awayWinPct": 75,
+        "awayWinPct": 74,
         "homeExpected": 39.5,
-        "awayExpected": 49.2,
+        "awayExpected": 48.5,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -125,11 +125,11 @@
       "importance": 0.82,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 60,
+        "homeWinPct": 54,
         "drawPct": 3,
-        "awayWinPct": 37,
+        "awayWinPct": 43,
         "homeExpected": 54,
-        "awayExpected": 50,
+        "awayExpected": 52,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -144,7 +144,7 @@
   "lineups": {
     "1377": {
       "formation": "4-4-2",
-      "expected": 40,
+      "expected": 40.5,
       "captainId": 31,
       "locked": false,
       "xi": [
@@ -154,7 +154,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Fulham",
-          "ep": 3.7
+          "ep": 4
         },
         {
           "id": 31,
@@ -178,7 +178,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Fulham",
-          "ep": 4.3
+          "ep": 4.5
         },
         {
           "id": 391,
@@ -274,8 +274,8 @@
     },
     "1425": {
       "formation": "3-4-3",
-      "expected": 49.2,
-      "captainId": 428,
+      "expected": 48.5,
+      "captainId": 261,
       "locked": false,
       "xi": [
         {
@@ -311,20 +311,12 @@
           "ep": 1.5
         },
         {
-          "id": 428,
-          "name": "Cunha",
-          "pos": "MID",
-          "type": 3,
-          "team": "Man Utd",
-          "ep": 7
-        },
-        {
           "id": 261,
           "name": "Iwobi",
           "pos": "MID",
           "type": 3,
           "team": "Fulham",
-          "ep": 6.7
+          "ep": 7.5
         },
         {
           "id": 45,
@@ -340,6 +332,14 @@
           "pos": "MID",
           "type": 3,
           "team": "Bournemouth",
+          "ep": 5.5
+        },
+        {
+          "id": 428,
+          "name": "Cunha",
+          "pos": "MID",
+          "type": 3,
+          "team": "Man Utd",
           "ep": 5.5
         },
         {
@@ -404,7 +404,7 @@
     },
     "1471": {
       "formation": "5-4-1",
-      "expected": 42.3,
+      "expected": 42,
       "captainId": 504,
       "locked": false,
       "xi": [
@@ -430,7 +430,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Fulham",
-          "ep": 5.3
+          "ep": 5
         },
         {
           "id": 60,
@@ -645,26 +645,26 @@
           "ep": 0
         },
         {
+          "id": 271,
+          "name": "Muniz",
+          "pos": "FWD",
+          "type": 4,
+          "team": "Fulham",
+          "ep": 0.5
+        },
+        {
           "id": 642,
           "name": "Vaz",
           "pos": "FWD",
           "type": 4,
           "team": "Hull City",
           "ep": 0.5
-        },
-        {
-          "id": 271,
-          "name": "Muniz",
-          "pos": "FWD",
-          "type": 4,
-          "team": "Fulham",
-          "ep": 0.3
         }
       ]
     },
     "1530": {
       "formation": "3-5-2",
-      "expected": 28.5,
+      "expected": 29,
       "captainId": 127,
       "locked": false,
       "xi": [
@@ -730,7 +730,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Man Utd",
-          "ep": 1.7
+          "ep": 2.5
         },
         {
           "id": 426,
@@ -738,7 +738,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Man Utd",
-          "ep": 1.3
+          "ep": 1
         },
         {
           "id": 136,
@@ -794,7 +794,7 @@
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 40.2,
+      "expected": 40.7,
       "captainId": 411,
       "locked": false,
       "xi": [
@@ -805,6 +805,14 @@
           "type": 1,
           "team": "Liverpool",
           "ep": 1.5
+        },
+        {
+          "id": 254,
+          "name": "Robinson",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Fulham",
+          "ep": 3.5
         },
         {
           "id": 173,
@@ -821,14 +829,6 @@
           "type": 2,
           "team": "Leeds",
           "ep": 3.5
-        },
-        {
-          "id": 254,
-          "name": "Robinson",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Fulham",
-          "ep": 3
         },
         {
           "id": 387,
@@ -924,7 +924,7 @@
     },
     "1947": {
       "formation": "5-3-2",
-      "expected": 38,
+      "expected": 37.5,
       "captainId": 236,
       "locked": false,
       "xi": [
@@ -934,7 +934,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Man Utd",
-          "ep": 3
+          "ep": 2.5
         },
         {
           "id": 555,
@@ -1444,7 +1444,7 @@
     },
     "29975": {
       "formation": "4-4-2",
-      "expected": 48.5,
+      "expected": 49,
       "captainId": 400,
       "locked": false,
       "xi": [
@@ -1465,6 +1465,14 @@
           "ep": 7.5
         },
         {
+          "id": 258,
+          "name": "Castagne",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Fulham",
+          "ep": 4
+        },
+        {
           "id": 200,
           "name": "Lacroix",
           "pos": "DEF",
@@ -1479,14 +1487,6 @@
           "type": 2,
           "team": "Man City",
           "ep": 3.5
-        },
-        {
-          "id": 258,
-          "name": "Castagne",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Fulham",
-          "ep": 3
         },
         {
           "id": 400,
@@ -1518,7 +1518,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Man Utd",
-          "ep": 2
+          "ep": 1.5
         },
         {
           "id": 26,
@@ -1574,7 +1574,7 @@
     },
     "99786": {
       "formation": "4-4-2",
-      "expected": 50,
+      "expected": 52,
       "captainId": 115,
       "locked": false,
       "xi": [
@@ -1632,7 +1632,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Man Utd",
-          "ep": 6
+          "ep": 8
         },
         {
           "id": 214,
