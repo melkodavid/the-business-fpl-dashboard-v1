@@ -81,10 +81,10 @@
       "importance": 2.17,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 53,
+        "homeWinPct": 51,
         "drawPct": 3,
-        "awayWinPct": 44,
-        "homeExpected": 48.1,
+        "awayWinPct": 46,
+        "homeExpected": 47.4,
         "awayExpected": 46.6,
         "homeSoFar": null,
         "awaySoFar": null
@@ -1314,7 +1314,7 @@
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 48.1,
+      "expected": 47.4,
       "captainId": 156,
       "locked": false,
       "xi": [
@@ -1388,7 +1388,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Arsenal",
-          "ep": 1.9
+          "ep": 1.2
         },
         {
           "id": 166,
