@@ -11522,6 +11522,7 @@
       }
     }
   },
+  "leagueAvgScore": 41.4,
   "schedules": [
     {
       "managerId": 10375,
@@ -11533,21 +11534,21 @@
       "easeRank": 1
     },
     {
-      "managerId": 10210,
-      "avgPtsForOthers": 12.2,
-      "oppAvgScore": 40.6,
-      "actualPts": 6,
-      "avgPtsOnAnySchedule": 7.4,
-      "scheduleLuck": -1.4,
-      "easeRank": 2
-    },
-    {
       "managerId": 1947,
       "avgPtsForOthers": 12.1,
       "oppAvgScore": 38.3,
       "actualPts": 15,
       "avgPtsOnAnySchedule": 10.7,
       "scheduleLuck": 4.3,
+      "easeRank": 2
+    },
+    {
+      "managerId": 1857,
+      "avgPtsForOthers": 10.9,
+      "oppAvgScore": 39.4,
+      "actualPts": 15,
+      "avgPtsOnAnySchedule": 13.1,
+      "scheduleLuck": 1.9,
       "easeRank": 3
     },
     {
@@ -11560,12 +11561,12 @@
       "easeRank": 4
     },
     {
-      "managerId": 29975,
-      "avgPtsForOthers": 11.3,
-      "oppAvgScore": 44.4,
-      "actualPts": 3,
-      "avgPtsOnAnySchedule": 7.3,
-      "scheduleLuck": -4.3,
+      "managerId": 10210,
+      "avgPtsForOthers": 12.2,
+      "oppAvgScore": 40.6,
+      "actualPts": 6,
+      "avgPtsOnAnySchedule": 7.4,
+      "scheduleLuck": -1.4,
       "easeRank": 5
     },
     {
@@ -11578,40 +11579,13 @@
       "easeRank": 6
     },
     {
-      "managerId": 1857,
-      "avgPtsForOthers": 10.9,
-      "oppAvgScore": 39.4,
-      "actualPts": 15,
-      "avgPtsOnAnySchedule": 13.1,
-      "scheduleLuck": 1.9,
-      "easeRank": 7
-    },
-    {
-      "managerId": 1377,
-      "avgPtsForOthers": 9.5,
-      "oppAvgScore": 43.3,
-      "actualPts": 6,
-      "avgPtsOnAnySchedule": 5.5,
-      "scheduleLuck": 0.5,
-      "easeRank": 8
-    },
-    {
       "managerId": 26227,
       "avgPtsForOthers": 8.6,
       "oppAvgScore": 42.6,
       "actualPts": 12,
       "avgPtsOnAnySchedule": 15.5,
       "scheduleLuck": -3.5,
-      "easeRank": 9
-    },
-    {
-      "managerId": 99786,
-      "avgPtsForOthers": 8.5,
-      "oppAvgScore": 43.1,
-      "actualPts": 9,
-      "avgPtsOnAnySchedule": 12.8,
-      "scheduleLuck": -3.8,
-      "easeRank": 10
+      "easeRank": 7
     },
     {
       "managerId": 1425,
@@ -11620,6 +11594,33 @@
       "actualPts": 15,
       "avgPtsOnAnySchedule": 13.8,
       "scheduleLuck": 1.2,
+      "easeRank": 8
+    },
+    {
+      "managerId": 99786,
+      "avgPtsForOthers": 8.5,
+      "oppAvgScore": 43.1,
+      "actualPts": 9,
+      "avgPtsOnAnySchedule": 12.8,
+      "scheduleLuck": -3.8,
+      "easeRank": 9
+    },
+    {
+      "managerId": 1377,
+      "avgPtsForOthers": 9.5,
+      "oppAvgScore": 43.3,
+      "actualPts": 6,
+      "avgPtsOnAnySchedule": 5.5,
+      "scheduleLuck": 0.5,
+      "easeRank": 10
+    },
+    {
+      "managerId": 29975,
+      "avgPtsForOthers": 11.3,
+      "oppAvgScore": 44.4,
+      "actualPts": 3,
+      "avgPtsOnAnySchedule": 7.3,
+      "scheduleLuck": -4.3,
       "easeRank": 11
     },
     {

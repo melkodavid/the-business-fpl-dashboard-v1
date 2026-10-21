@@ -33,10 +33,11 @@ test("a strong manager on any schedule never does worse than a weak one, and ran
   assert.ok(Object.values(out.actual).every((a) => a.rank >= 1 && a.rank <= 4));
 });
 
-test("schedule ranking: easiest gives others the most points, hardest the fewest", () => {
+test("schedule ranking: easiest faces the weakest opponents, hardest the strongest", () => {
   const easiest = out.schedules.find((s) => s.managerId === out.easiestId);
   const hardest = out.schedules.find((s) => s.managerId === out.hardestId);
-  assert.ok(easiest.avgPtsForOthers >= hardest.avgPtsForOthers);
+  assert.ok(easiest.oppAvgScore <= hardest.oppAvgScore);
+  assert.ok(out.leagueAvgScore >= easiest.oppAvgScore && out.leagueAvgScore <= hardest.oppAvgScore);
   assert.equal(easiest.easeRank, 1);
   assert.equal(hardest.easeRank, 4);
   // schedule luck sums to roughly zero across the league isn't guaranteed, but is finite

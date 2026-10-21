@@ -6,10 +6,10 @@
 // it really is, so a swapped rank is an estimate -- it places A's new points
 // among the real table.
 //
-// Also ranks the schedules themselves: the one that would hand the rest of the
-// league the most points is the easiest, the one that would hand them the fewest
-// is the hardest, and each manager's "schedule luck" is their real points minus
-// the average they'd have earned over every other schedule.
+// Also ranks the schedules themselves by the plain measure everyone understands:
+// the average score of the opponents faced (lower = easier). Each manager's
+// "schedule luck" is their real points minus the average they'd have earned with
+// the same scores on every other schedule.
 
 const WIN = 3;
 const DRAW = 1;
@@ -87,7 +87,7 @@ export function computeScheduleSwap(context) {
       scheduleLuck: round1(actual[b].pts - avgPtsOverOthers),
     };
   });
-  const byEase = [...schedules].sort((x, y) => y.avgPtsForOthers - x.avgPtsForOthers || (y.oppAvgScore === null ? 0 : x.oppAvgScore - y.oppAvgScore));
+  const byEase = [...schedules].sort((x, y) => (x.oppAvgScore ?? Infinity) - (y.oppAvgScore ?? Infinity) || y.avgPtsForOthers - x.avgPtsForOthers);
   byEase.forEach((s, i) => { s.easeRank = i + 1; });
 
   return {
@@ -95,6 +95,7 @@ export function computeScheduleSwap(context) {
     managerIds: ids,
     actual,
     matrix,
+    leagueAvgScore: round1(schedules.reduce((a, x) => a + (x.oppAvgScore ?? 0), 0) / (schedules.length || 1)),
     schedules: byEase,
     easiestId: byEase[0]?.managerId ?? null,
     hardestId: byEase.at(-1)?.managerId ?? null,

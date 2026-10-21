@@ -2600,3 +2600,28 @@ tfoot td { border-top: 2px solid var(--edge-bright); border-bottom: 0; }
 tr.sw-flip td { background: rgba(236,217,163,0.07); }
 .sw-luck { font-weight: 800; }
 @media (max-width: 720px) { .sw-with { padding: 0; } .sw-arrow { transform: rotate(90deg); } }
+
+/* Schedule Swap -- kindest/cruelest callouts and the luck bars */
+.sw-callouts { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+.sw-callout { display: grid; gap: 0.35rem; padding: 1.1rem 1.3rem; border-radius: var(--radius); border: 1px solid var(--edge-bright); background: var(--surface); }
+.sw-callout small { font: 800 0.7rem "Archivo", sans-serif; letter-spacing: 0.2em; text-transform: uppercase; }
+.sw-callout-name { font-weight: 800; font-size: 1.1rem; }
+.sw-callout b { font: 400 2.6rem/1 "Bebas Neue", sans-serif; letter-spacing: 0.03em; } .sw-callout b i { font: 600 0.8rem "Archivo", sans-serif; font-style: normal; color: var(--text-muted); letter-spacing: 0.1em; }
+.sw-callout span { font-size: 0.85rem; color: var(--text-muted); line-height: 1.45; }
+.sw-callout.kind { border-color: rgba(62,203,119,0.5); background: linear-gradient(135deg, rgba(62,203,119,0.1), transparent 60%), var(--surface); } .sw-callout.kind small, .sw-callout.kind b { color: var(--win); }
+.sw-callout.cruel { border-color: rgba(239,97,97,0.5); background: linear-gradient(135deg, rgba(239,97,97,0.1), transparent 60%), var(--surface); } .sw-callout.cruel small, .sw-callout.cruel b { color: var(--loss); }
+
+.sw-bars { padding: 1.1rem 1.3rem 0.8rem; }
+.sw-bars-lead { margin: 0 0 1rem; font-size: 0.86rem; color: var(--text-muted); line-height: 1.5; } .sw-bars-lead b { color: var(--text); }
+.sw-bar-row { display: grid; grid-template-columns: minmax(130px, 220px) 1fr 84px; align-items: center; gap: 0.9rem; padding: 0.4rem 0; border-top: 1px solid var(--border); }
+.sw-bar-name { min-width: 0; font-size: 0.9rem; font-weight: 600; }
+.sw-bar-track { position: relative; height: 22px; }
+.sw-bar-mid { position: absolute; left: 50%; top: -3px; bottom: -3px; width: 1px; background: var(--edge-bright); }
+.sw-bar { position: absolute; top: 3px; bottom: 3px; border-radius: 4px; transform-origin: center left; animation: sw-grow .7s cubic-bezier(.2,.9,.2,1) both; }
+.sw-bar.up { background: linear-gradient(90deg, rgba(62,203,119,0.5), var(--win)); } .sw-bar.down { background: linear-gradient(270deg, rgba(239,97,97,0.5), var(--loss)); transform-origin: center right; } .sw-bar.flat { background: var(--draw); }
+@keyframes sw-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.sw-bar-val { text-align: right; font: 400 1.35rem/1 "Bebas Neue", sans-serif; letter-spacing: 0.03em; }
+.sw-bar-val small { display: block; margin-top: 2px; font: 700 0.6rem "Archivo", sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); }
+.sw-more { margin-top: 1rem; } .sw-more summary { cursor: pointer; color: var(--gold-bright); font-size: 0.85rem; padding: 0.4rem 0; } .sw-more .card { margin-top: 0.6rem; }
+@media (max-width: 640px) { .sw-bar-row { grid-template-columns: 1fr 70px; } .sw-bar-track { grid-column: 1 / -1; grid-row: 2; } .sw-bar-name { grid-column: 1; } .sw-bar-val { grid-column: 2; grid-row: 1; } }
+@media (prefers-reduced-motion: reduce) { .sw-bar { animation: none; } }

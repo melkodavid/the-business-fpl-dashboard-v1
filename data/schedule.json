@@ -81,10 +81,10 @@
       "importance": 2.17,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 55,
+        "homeWinPct": 53,
         "drawPct": 3,
-        "awayWinPct": 42,
-        "homeExpected": 48.7,
+        "awayWinPct": 44,
+        "homeExpected": 48.1,
         "awayExpected": 46.6,
         "homeSoFar": null,
         "awaySoFar": null
@@ -1314,7 +1314,7 @@
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 48.7,
+      "expected": 48.1,
       "captainId": 156,
       "locked": false,
       "xi": [
@@ -1375,20 +1375,20 @@
           "ep": 5
         },
         {
-          "id": 12,
-          "name": "Saka",
-          "pos": "MID",
-          "type": 3,
-          "team": "Arsenal",
-          "ep": 2.5
-        },
-        {
           "id": 336,
           "name": "Okafor",
           "pos": "MID",
           "type": 3,
           "team": "Leeds",
           "ep": 2
+        },
+        {
+          "id": 12,
+          "name": "Saka",
+          "pos": "MID",
+          "type": 3,
+          "team": "Arsenal",
+          "ep": 1.9
         },
         {
           "id": 166,

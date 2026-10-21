@@ -52,23 +52,54 @@ function weeksHtml(a, b, ctx, managers) {
     <p class="sw-note">Only this manager's results change — everyone else's record stays as it really is, so the swapped finish is an estimate. If the other schedule would have had them facing themselves that week, they face the schedule's owner instead. Highlighted rows are results that flip.</p>`;
 }
 
-function strengthHtml(ctx, managers, selA, selB) {
-  const rows = ctx.schedules.map((s) => `
-    <tr class="${s.managerId === selB ? "is-me" : ""}">
-      <td>${s.easeRank}</td>
-      <td class="text-left">${managers.clubHtml(s.managerId)}</td>
-      <td>${s.avgPtsForOthers.toFixed(1)}</td>
-      <td>${s.oppAvgScore ?? "–"}</td>
-      <td>${s.actualPts}</td>
-      <td>${s.avgPtsOnAnySchedule.toFixed(1)}</td>
-      <td><span class="sw-luck ${tone(s.scheduleLuck)}">${signed(s.scheduleLuck)}</span></td>
-    </tr>`).join("");
+function drawHtml(ctx, managers) {
+  const byId = new Map(ctx.schedules.map((s) => [s.managerId, s]));
+  const kind = byId.get(ctx.easiestId);
+  const cruel = byId.get(ctx.hardestId);
+  const card = (cls, title, s, line) => `
+    <div class="sw-callout ${cls}">
+      <small>${title}</small>
+      <div class="sw-callout-name">${managers.clubHtml(s.managerId)}</div>
+      <b>${s.oppAvgScore}<i> pts</i></b>
+      <span>${line}</span>
+    </div>`;
+
+  const max = Math.max(1, ...ctx.schedules.map((s) => Math.abs(s.scheduleLuck)));
+  const ranked = [...ctx.schedules].sort((a, b) => b.scheduleLuck - a.scheduleLuck);
+  const bars = ranked.map((s) => {
+    const pct = (Math.abs(s.scheduleLuck) / max) * 100;
+    const cls = tone(s.scheduleLuck);
+    const word = s.scheduleLuck > 0 ? "lucky" : s.scheduleLuck < 0 ? "unlucky" : "neutral";
+    return `
+      <div class="sw-bar-row" title="${Math.abs(s.scheduleLuck)} points ${s.scheduleLuck >= 0 ? "better" : "worse"} than their scores would earn on an average schedule">
+        <div class="sw-bar-name">${managers.clubHtml(s.managerId)}</div>
+        <div class="sw-bar-track"><i class="sw-bar-mid"></i>
+          <span class="sw-bar ${cls}" style="width:${(pct / 2).toFixed(1)}%;${s.scheduleLuck >= 0 ? "left:50%" : "right:50%"}"></span>
+        </div>
+        <div class="sw-bar-val ${cls}">${signed(s.scheduleLuck)}<small>${word}</small></div>
+      </div>`;
+  }).join("");
+
+  const detail = ctx.schedules.map((s) => `
+    <tr><td class="text-left">${managers.clubHtml(s.managerId)}</td><td>${s.oppAvgScore ?? "–"}</td><td>${s.actualPts}</td><td>${s.avgPtsOnAnySchedule.toFixed(1)}</td></tr>`).join("");
+
   return `
-    <div class="card sw-scroll"><table>
-      <thead><tr><th title="1 = easiest">#</th><th class="text-left">Schedule</th><th title="Points the other 11 managers would average with this schedule">Pts it gives others</th><th title="Average score of the opponents this manager actually faced">Opp. avg score</th><th>Actual pts</th><th title="What this manager would average over all 11 other schedules">Pts on avg schedule</th><th title="Actual points minus points on an average schedule">Schedule luck</th></tr></thead>
-      <tbody>${rows}</tbody>
-    </table></div>
-    <p class="sw-note">Ranked from easiest to hardest. Schedule luck is real points minus what the same scores would have earned on the other 11 schedules, on average: positive means a kinder draw than most.</p>`;
+    <h3 class="sw-h3">Who's had the kindest and cruelest draw?</h3>
+    <div class="sw-callouts">
+      ${card("kind", "Kindest schedule", kind, `Opponents averaged just ${kind.oppAvgScore} a week — the league average is ${ctx.leagueAvgScore}.`)}
+      ${card("cruel", "Cruelest schedule", cruel, `Opponents averaged ${cruel.oppAvgScore} a week — the league average is ${ctx.leagueAvgScore}.`)}
+    </div>
+    <h3 class="sw-h3">Points gained or lost to the schedule</h3>
+    <div class="card sw-bars">
+      <p class="sw-bars-lead">Each manager's real points compared with what the <b>same scores</b> would have earned on an average schedule. Green means the draw helped them; red means it hurt.</p>
+      ${bars}
+    </div>
+    <details class="sw-more"><summary>See the full numbers</summary>
+      <div class="card sw-scroll"><table>
+        <thead><tr><th class="text-left">Manager</th><th title="Average score of the opponents they faced">Opponents' avg score</th><th>Actual points</th><th title="Points the same scores would earn on an average schedule">Points on an average schedule</th></tr></thead>
+        <tbody>${detail}</tbody>
+      </table></div>
+    </details>`;
 }
 
 export function render(container, data, managers) {
@@ -101,8 +132,7 @@ export function render(container, data, managers) {
       </div>
       <div class="card sw-result" id="sw-result"></div>
       <div id="sw-weeks"></div>
-      <h3 class="sw-h3">Who's had the best and worst schedule?</h3>
-      ${strengthHtml(ctx, managers)}
+      ${drawHtml(ctx, managers)}
     </div>`;
 
   const aEl = container.querySelector("#sw-a");
@@ -115,10 +145,6 @@ export function render(container, data, managers) {
     const b = bEl.value === "easy" ? ctx.easiestId : bEl.value === "hard" ? ctx.hardestId : Number(bEl.value);
     container.querySelector("#sw-result").innerHTML = summaryHtml(a, b, ctx, managers);
     container.querySelector("#sw-weeks").innerHTML = a === b ? "" : weeksHtml(a, b, ctx, managers);
-    container.querySelectorAll(".sw-page tbody tr.is-me").forEach((tr) => tr.classList.remove("is-me"));
-    const rows = [...container.querySelectorAll(".sw-page > .card.sw-scroll:last-of-type tbody tr")];
-    const idx = ctx.schedules.findIndex((s) => s.managerId === b);
-    rows[idx]?.classList.add("is-me");
   };
   aEl.addEventListener("change", draw);
   bEl.addEventListener("change", draw);
