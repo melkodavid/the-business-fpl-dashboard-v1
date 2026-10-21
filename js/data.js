@@ -13,6 +13,7 @@ const FILES = {
   draftBoard: "draft-board.json",
   tradeLedger: "trade-ledger.json",
   waiverHitRate: "waiver-hit-rate.json",
+  scheduleSwap: "schedule-swap.json",
   formGuide: "form-guide.json",
   cup: "cup.json",
   history: "history.json",

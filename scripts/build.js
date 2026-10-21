@@ -35,6 +35,7 @@ import { computeMatchupOdds, attachOdds, predictLineups } from "./stats/matchupO
 import { gatherOddsInputs } from "./fetch/oddsInputs.js";
 import { fetchRevealedPicks } from "./fetch/predictions.js";
 import { computePredictions } from "./stats/predictions.js";
+import { computeScheduleSwap } from "./stats/scheduleSwap.js";
 import { buildNarrativeLayer } from "./narrative/index.js";
 import { writeRecapArchive } from "./narrative/archive.js";
 
@@ -167,6 +168,7 @@ async function main() {
   writeData("projected-points.json", computeProjectedPoints(context, projectionsData));
   writeData("trade-ledger.json", tradeLedger);
   writeData("waiver-hit-rate.json", waiverHitRate);
+  writeData("schedule-swap.json", computeScheduleSwap(context));
   writeData("form-guide.json", computeFormGuide(context));
   const schedule = computeSchedule(context);
   // When this gameweek's lineups lock (the FPL deadline) -- for countdowns.

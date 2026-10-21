@@ -1,5 +1,167 @@
 {
   "enabled": true,
-  "weeks": [],
-  "table": []
+  "weeks": [
+    {
+      "gw": 7,
+      "fixtures": [
+        {
+          "key": "29975-1377",
+          "home": 29975,
+          "away": 1377,
+          "result": "A"
+        },
+        {
+          "key": "99786-26227",
+          "home": 99786,
+          "away": 26227,
+          "result": "A"
+        },
+        {
+          "key": "1425-10375",
+          "home": 1425,
+          "away": 10375,
+          "result": "A"
+        },
+        {
+          "key": "1471-10210",
+          "home": 1471,
+          "away": 10210,
+          "result": "H"
+        },
+        {
+          "key": "1501-1947",
+          "home": 1501,
+          "away": 1947,
+          "result": "A"
+        },
+        {
+          "key": "1530-1857",
+          "home": 1530,
+          "away": 1857,
+          "result": "A"
+        }
+      ],
+      "picks": {
+        "david": {
+          "29975-1377": "A",
+          "1501-1947": "A",
+          "1425-10375": "H",
+          "1471-10210": "H",
+          "1530-1857": "A",
+          "99786-26227": "A"
+        },
+        "lu": {
+          "29975-1377": "A",
+          "1501-1947": "H",
+          "1425-10375": "H",
+          "1471-10210": "H",
+          "1530-1857": "A",
+          "99786-26227": "H"
+        },
+        "marshall": {
+          "29975-1377": "H",
+          "1501-1947": "A",
+          "1425-10375": "H",
+          "1471-10210": "H",
+          "1530-1857": "A",
+          "99786-26227": "H"
+        },
+        "anthony": {
+          "29975-1377": "A",
+          "1501-1947": "H",
+          "1425-10375": "A",
+          "1471-10210": "H",
+          "1530-1857": "A",
+          "99786-26227": "H"
+        }
+      },
+      "complete": true
+    }
+  ],
+  "table": [
+    {
+      "personKey": "david",
+      "managerId": 1857,
+      "played": 6,
+      "correct": 5,
+      "weeks": 1,
+      "bestWeek": 5,
+      "perfectWeeks": 0,
+      "streak": 3,
+      "bestStreak": 3,
+      "boldCalls": 1,
+      "boldHits": 1,
+      "byWeek": {
+        "7": {
+          "correct": 5,
+          "total": 6
+        }
+      },
+      "pct": 83.3,
+      "rank": 1
+    },
+    {
+      "personKey": "anthony",
+      "managerId": 10375,
+      "played": 6,
+      "correct": 4,
+      "weeks": 1,
+      "bestWeek": 4,
+      "perfectWeeks": 0,
+      "streak": 1,
+      "bestStreak": 2,
+      "boldCalls": 1,
+      "boldHits": 1,
+      "byWeek": {
+        "7": {
+          "correct": 4,
+          "total": 6
+        }
+      },
+      "pct": 66.7,
+      "rank": 2
+    },
+    {
+      "personKey": "lu",
+      "managerId": 1377,
+      "played": 6,
+      "correct": 3,
+      "weeks": 1,
+      "bestWeek": 3,
+      "perfectWeeks": 0,
+      "streak": 1,
+      "bestStreak": 1,
+      "boldCalls": 0,
+      "boldHits": 0,
+      "byWeek": {
+        "7": {
+          "correct": 3,
+          "total": 6
+        }
+      },
+      "pct": 50,
+      "rank": 3
+    },
+    {
+      "personKey": "marshall",
+      "managerId": 1471,
+      "played": 6,
+      "correct": 3,
+      "weeks": 1,
+      "bestWeek": 3,
+      "perfectWeeks": 0,
+      "streak": 3,
+      "bestStreak": 3,
+      "boldCalls": 1,
+      "boldHits": 0,
+      "byWeek": {
+        "7": {
+          "correct": 3,
+          "total": 6
+        }
+      },
+      "pct": 50,
+      "rank": 3
+    }
+  ]
 }
