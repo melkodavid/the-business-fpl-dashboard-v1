@@ -1346,7 +1346,14 @@
               "elementId": 338,
               "playerName": "Ampadu",
               "points": 0,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 183,
+                "playerName": "Rudoni",
+                "position": "MID",
+                "acquiredGw": 8,
+                "gwsStarted": 0,
+                "points": 0
+              }
             },
             {
               "elementId": 125,
@@ -1379,13 +1386,106 @@
               "elementId": 403,
               "playerName": "Sávio",
               "points": 0,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 483,
+                "playerName": "Ndoye",
+                "position": "MID",
+                "acquiredGw": 8,
+                "gwsStarted": 0,
+                "points": 0
+              }
             },
             {
               "elementId": 194,
               "playerName": "Thomas-Asante",
               "points": 0,
               "positionRipple": null
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0,
+          "resultImpact": []
+        }
+      ]
+    },
+    {
+      "tradeId": 375593,
+      "gw": 8,
+      "sides": [
+        {
+          "managerId": 29975,
+          "received": [
+            {
+              "elementId": 277,
+              "playerName": "Egan",
+              "points": 0
+            },
+            {
+              "elementId": 268,
+              "playerName": "King",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 200,
+              "playerName": "Lacroix",
+              "points": 0,
+              "positionRipple": null
+            },
+            {
+              "elementId": 432,
+              "playerName": "Mainoo",
+              "points": 0,
+              "positionRipple": {
+                "elementId": 16,
+                "playerName": "Madueke",
+                "position": "MID",
+                "acquiredGw": 8,
+                "gwsStarted": 0,
+                "points": 0
+              }
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0,
+          "resultImpact": []
+        },
+        {
+          "managerId": 1857,
+          "received": [
+            {
+              "elementId": 200,
+              "playerName": "Lacroix",
+              "points": 0
+            },
+            {
+              "elementId": 432,
+              "playerName": "Mainoo",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 277,
+              "playerName": "Egan",
+              "points": 0,
+              "positionRipple": null
+            },
+            {
+              "elementId": 268,
+              "playerName": "King",
+              "points": 0,
+              "positionRipple": {
+                "elementId": 69,
+                "playerName": "Scott",
+                "position": "MID",
+                "acquiredGw": 8,
+                "gwsStarted": 0,
+                "points": 0
+              }
             }
           ],
           "gained": 0,
@@ -1494,7 +1594,7 @@
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "tradeCount": 5,
+      "tradeCount": 6,
       "actual": {
         "w": 1,
         "d": 0,
@@ -1545,7 +1645,7 @@
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "tradeCount": 3,
+      "tradeCount": 4,
       "actual": {
         "w": 5,
         "d": 0,
