@@ -15,10 +15,10 @@
       "importance": 2.83,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 35,
+        "homeWinPct": 43,
         "drawPct": 3,
-        "awayWinPct": 62,
-        "homeExpected": 37.5,
+        "awayWinPct": 54,
+        "homeExpected": 40,
         "awayExpected": 42,
         "homeSoFar": null,
         "awaySoFar": null
@@ -103,11 +103,11 @@
       "importance": 2.08,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 24,
-        "drawPct": 2,
-        "awayWinPct": 74,
+        "homeWinPct": 30,
+        "drawPct": 3,
+        "awayWinPct": 67,
         "homeExpected": 39.5,
-        "awayExpected": 48.5,
+        "awayExpected": 46,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -274,7 +274,7 @@
     },
     "1425": {
       "formation": "3-4-3",
-      "expected": 48.5,
+      "expected": 46,
       "captainId": 261,
       "locked": false,
       "xi": [
@@ -351,12 +351,12 @@
           "ep": 7
         },
         {
-          "id": 194,
-          "name": "Thomas-Asante",
+          "id": 125,
+          "name": "Georginio",
           "pos": "FWD",
           "type": 4,
-          "team": "Coventry City",
-          "ep": 5
+          "team": "Brighton",
+          "ep": 2.5
         },
         {
           "id": 316,
@@ -393,12 +393,12 @@
           "ep": 0
         },
         {
-          "id": 403,
-          "name": "Sávio",
+          "id": 338,
+          "name": "Ampadu",
           "pos": "MID",
           "type": 3,
-          "team": "Spurs",
-          "ep": 0
+          "team": "Leeds",
+          "ep": 1
         }
       ]
     },
@@ -924,7 +924,7 @@
     },
     "1947": {
       "formation": "5-3-2",
-      "expected": 37.5,
+      "expected": 40,
       "captainId": 236,
       "locked": false,
       "xi": [
@@ -1001,20 +1001,20 @@
           "ep": 2.5
         },
         {
+          "id": 194,
+          "name": "Thomas-Asante",
+          "pos": "FWD",
+          "type": 4,
+          "team": "Coventry City",
+          "ep": 5
+        },
+        {
           "id": 106,
           "name": "Thiago",
           "pos": "FWD",
           "type": 4,
           "team": "Brentford",
           "ep": 4
-        },
-        {
-          "id": 125,
-          "name": "Georginio",
-          "pos": "FWD",
-          "type": 4,
-          "team": "Brighton",
-          "ep": 2.5
         }
       ],
       "bench": [
@@ -1027,20 +1027,20 @@
           "ep": 2
         },
         {
-          "id": 338,
-          "name": "Ampadu",
-          "pos": "MID",
-          "type": 3,
-          "team": "Leeds",
-          "ep": 1
-        },
-        {
           "id": 70,
           "name": "Kluivert",
           "pos": "MID",
           "type": 3,
           "team": "Bournemouth",
           "ep": 0.5
+        },
+        {
+          "id": 403,
+          "name": "Sávio",
+          "pos": "MID",
+          "type": 3,
+          "team": "Spurs",
+          "ep": 0
         },
         {
           "id": 439,

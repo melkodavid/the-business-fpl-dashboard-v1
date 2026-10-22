@@ -1322,6 +1322,78 @@
           "resultImpact": []
         }
       ]
+    },
+    {
+      "tradeId": 372907,
+      "gw": 8,
+      "sides": [
+        {
+          "managerId": 1947,
+          "received": [
+            {
+              "elementId": 403,
+              "playerName": "Sávio",
+              "points": 0
+            },
+            {
+              "elementId": 194,
+              "playerName": "Thomas-Asante",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 338,
+              "playerName": "Ampadu",
+              "points": 0,
+              "positionRipple": null
+            },
+            {
+              "elementId": 125,
+              "playerName": "Georginio",
+              "points": 0,
+              "positionRipple": null
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0,
+          "resultImpact": []
+        },
+        {
+          "managerId": 1425,
+          "received": [
+            {
+              "elementId": 338,
+              "playerName": "Ampadu",
+              "points": 0
+            },
+            {
+              "elementId": 125,
+              "playerName": "Georginio",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 403,
+              "playerName": "Sávio",
+              "points": 0,
+              "positionRipple": null
+            },
+            {
+              "elementId": 194,
+              "playerName": "Thomas-Asante",
+              "points": 0,
+              "positionRipple": null
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0,
+          "resultImpact": []
+        }
+      ]
     }
   ],
   "leaderboard": [
@@ -1390,7 +1462,7 @@
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "tradeCount": 1,
+      "tradeCount": 2,
       "actual": {
         "w": 5,
         "d": 0,
@@ -1509,8 +1581,8 @@
       "flips": []
     },
     {
-      "managerId": 1471,
-      "managerName": "🥶CPR🥶",
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
       "tradeCount": 1,
       "actual": {
         "w": 5,
@@ -1528,9 +1600,9 @@
       "flips": []
     },
     {
-      "managerId": 1425,
-      "managerName": "Pearl Street Pirates",
-      "tradeCount": 0,
+      "managerId": 1471,
+      "managerName": "🥶CPR🥶",
+      "tradeCount": 1,
       "actual": {
         "w": 5,
         "d": 0,
