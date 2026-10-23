@@ -3,37 +3,37 @@
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 353
+      "draftTeamPoints": 354
     },
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "draftTeamPoints": 338
+      "draftTeamPoints": 340
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 332
-    },
-    {
-      "managerId": 1377,
-      "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 316
+      "draftTeamPoints": 334
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 316
+      "draftTeamPoints": 327
+    },
+    {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "draftTeamPoints": 317
+    },
+    {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "draftTeamPoints": 303
     },
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
       "draftTeamPoints": 303
-    },
-    {
-      "managerId": 1501,
-      "managerName": "Set Piece Fc",
-      "draftTeamPoints": 301
     },
     {
       "managerId": 99786,
@@ -46,14 +46,14 @@
       "draftTeamPoints": 250
     },
     {
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "draftTeamPoints": 250
+    },
+    {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
       "draftTeamPoints": 249
-    },
-    {
-      "managerId": 29975,
-      "managerName": "Zacharias United",
-      "draftTeamPoints": 243
     },
     {
       "managerId": 1530,
@@ -135,7 +135,7 @@
     {
       "pickNumber": 8,
       "round": 1,
-      "seasonPoints": 30,
+      "seasonPoints": 32,
       "managerId": 1501,
       "elementId": 480,
       "playerName": "Gibbs-White",
@@ -525,7 +525,7 @@
     {
       "pickNumber": 47,
       "round": 4,
-      "seasonPoints": 8,
+      "seasonPoints": 15,
       "managerId": 29975,
       "elementId": 201,
       "playerName": "Muñoz",
@@ -845,7 +845,7 @@
     {
       "pickNumber": 79,
       "round": 7,
-      "seasonPoints": 23,
+      "seasonPoints": 32,
       "managerId": 1947,
       "elementId": 469,
       "playerName": "N.Williams",
@@ -1085,7 +1085,7 @@
     {
       "pickNumber": 103,
       "round": 9,
-      "seasonPoints": 18,
+      "seasonPoints": 20,
       "managerId": 1947,
       "elementId": 467,
       "playerName": "Sels",
@@ -1355,7 +1355,7 @@
     {
       "pickNumber": 130,
       "round": 11,
-      "seasonPoints": 12,
+      "seasonPoints": 14,
       "managerId": 1471,
       "elementId": 471,
       "playerName": "Milenković",
@@ -1385,7 +1385,7 @@
     {
       "pickNumber": 133,
       "round": 12,
-      "seasonPoints": 27,
+      "seasonPoints": 28,
       "managerId": 1377,
       "elementId": 472,
       "playerName": "Murillo",
@@ -1445,7 +1445,7 @@
     {
       "pickNumber": 139,
       "round": 12,
-      "seasonPoints": 30,
+      "seasonPoints": 31,
       "managerId": 1425,
       "elementId": 316,
       "playerName": "Emersonn",
@@ -1735,7 +1735,7 @@
     {
       "pickNumber": 168,
       "round": 14,
-      "seasonPoints": 25,
+      "seasonPoints": 27,
       "managerId": 1857,
       "elementId": 483,
       "playerName": "Ndoye",
