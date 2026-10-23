@@ -59,10 +59,10 @@
       "importance": 2.48,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 77,
+        "homeWinPct": 75,
         "drawPct": 2,
-        "awayWinPct": 21,
-        "homeExpected": 44.6,
+        "awayWinPct": 23,
+        "homeExpected": 43.6,
         "awayExpected": 34,
         "homeSoFar": null,
         "awaySoFar": null
@@ -793,8 +793,8 @@
       ]
     },
     "1857": {
-      "formation": "5-2-3",
-      "expected": 44.6,
+      "formation": "4-3-3",
+      "expected": 43.6,
       "captainId": 411,
       "locked": false,
       "xi": [
@@ -813,14 +813,6 @@
           "type": 2,
           "team": "Chelsea",
           "ep": 4
-        },
-        {
-          "id": 254,
-          "name": "Robinson",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Fulham",
-          "ep": 3.5
         },
         {
           "id": 173,
@@ -863,6 +855,14 @@
           "ep": 3.5
         },
         {
+          "id": 159,
+          "name": "Caicedo",
+          "pos": "MID",
+          "type": 3,
+          "team": "Chelsea",
+          "ep": 2.5
+        },
+        {
           "id": 411,
           "name": "Haaland",
           "pos": "FWD",
@@ -897,12 +897,12 @@
           "ep": 1
         },
         {
-          "id": 159,
-          "name": "Caicedo",
-          "pos": "MID",
-          "type": 3,
-          "team": "Chelsea",
-          "ep": 2.5
+          "id": 471,
+          "name": "Milenković",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Nott'm Forest",
+          "ep": 0
         },
         {
           "id": 69,

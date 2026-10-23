@@ -1472,7 +1472,14 @@
               "elementId": 277,
               "playerName": "Egan",
               "points": 0,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 471,
+                "playerName": "Milenković",
+                "position": "DEF",
+                "acquiredGw": 8,
+                "gwsStarted": 0,
+                "points": 0
+              }
             },
             {
               "elementId": 268,
