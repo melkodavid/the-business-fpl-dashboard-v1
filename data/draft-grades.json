@@ -18,12 +18,12 @@
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 327
+      "draftTeamPoints": 326
     },
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 317
+      "draftTeamPoints": 318
     },
     {
       "managerId": 1501,
@@ -845,7 +845,7 @@
     {
       "pickNumber": 79,
       "round": 7,
-      "seasonPoints": 32,
+      "seasonPoints": 31,
       "managerId": 1947,
       "elementId": 469,
       "playerName": "N.Williams",
@@ -1615,7 +1615,7 @@
     {
       "pickNumber": 156,
       "round": 13,
-      "seasonPoints": 6,
+      "seasonPoints": 7,
       "managerId": 1377,
       "elementId": 490,
       "playerName": "Wood",
