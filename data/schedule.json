@@ -59,11 +59,11 @@
       "importance": 2.48,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 75,
+        "homeWinPct": 77,
         "drawPct": 2,
-        "awayWinPct": 23,
+        "awayWinPct": 21,
         "homeExpected": 43.6,
-        "awayExpected": 34,
+        "awayExpected": 33,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -81,10 +81,10 @@
       "importance": 2.17,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 75,
+        "homeWinPct": 77,
         "drawPct": 2,
-        "awayWinPct": 23,
-        "homeExpected": 55.5,
+        "awayWinPct": 21,
+        "homeExpected": 56.5,
         "awayExpected": 46,
         "homeSoFar": null,
         "awaySoFar": null
@@ -125,10 +125,10 @@
       "importance": 0.82,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 38,
+        "homeWinPct": 31,
         "drawPct": 3,
-        "awayWinPct": 59,
-        "homeExpected": 52.5,
+        "awayWinPct": 66,
+        "homeExpected": 49.8,
         "awayExpected": 56,
         "homeSoFar": null,
         "awaySoFar": null
@@ -377,20 +377,20 @@
           "ep": 0
         },
         {
+          "id": 536,
+          "name": "Reinildo",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Sunderland",
+          "ep": 1.5
+        },
+        {
           "id": 581,
           "name": "Diomande",
           "pos": "DEF",
           "type": 2,
           "team": "Nott'm Forest",
           "ep": 1.5
-        },
-        {
-          "id": 501,
-          "name": "Danso",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Sunderland",
-          "ep": 0
         },
         {
           "id": 338,
@@ -534,7 +534,7 @@
     },
     "1501": {
       "formation": "4-4-2",
-      "expected": 34,
+      "expected": 33,
       "captainId": 79,
       "locked": false,
       "xi": [
@@ -595,19 +595,19 @@
           "ep": 3
         },
         {
-          "id": 335,
-          "name": "Stach",
-          "pos": "MID",
-          "type": 3,
-          "team": "Leeds",
-          "ep": 2
-        },
-        {
           "id": 480,
           "name": "Gibbs-White",
           "pos": "MID",
           "type": 3,
           "team": "Nott'm Forest",
+          "ep": 1
+        },
+        {
+          "id": 335,
+          "name": "Stach",
+          "pos": "MID",
+          "type": 3,
+          "team": "Leeds",
           "ep": 1
         },
         {
@@ -1184,7 +1184,7 @@
     },
     "10375": {
       "formation": "4-4-2",
-      "expected": 52.5,
+      "expected": 49.8,
       "captainId": 113,
       "locked": false,
       "xi": [
@@ -1261,20 +1261,20 @@
           "ep": 2
         },
         {
-          "id": 346,
-          "name": "Calvert-Lewin",
-          "pos": "FWD",
-          "type": 4,
-          "team": "Leeds",
-          "ep": 5.5
-        },
-        {
           "id": 379,
           "name": "Isak",
           "pos": "FWD",
           "type": 4,
           "team": "Liverpool",
           "ep": 4.5
+        },
+        {
+          "id": 346,
+          "name": "Calvert-Lewin",
+          "pos": "FWD",
+          "type": 4,
+          "team": "Leeds",
+          "ep": 2.8
         }
       ],
       "bench": [
@@ -1313,8 +1313,8 @@
       ]
     },
     "26227": {
-      "formation": "4-4-2",
-      "expected": 55.5,
+      "formation": "5-3-2",
+      "expected": 56.5,
       "captainId": 156,
       "locked": false,
       "xi": [
@@ -1359,6 +1359,14 @@
           "ep": 2
         },
         {
+          "id": 203,
+          "name": "Canvot",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Crystal Palace",
+          "ep": 1
+        },
+        {
           "id": 156,
           "name": "Neto",
           "pos": "MID",
@@ -1383,14 +1391,6 @@
           "ep": 5
         },
         {
-          "id": 12,
-          "name": "Saka",
-          "pos": "MID",
-          "type": 3,
-          "team": "Arsenal",
-          "ep": 1.2
-        },
-        {
           "id": 166,
           "name": "N.Jackson",
           "pos": "FWD",
@@ -1404,7 +1404,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Spurs",
-          "ep": 3.8
+          "ep": 5
         }
       ],
       "bench": [
@@ -1417,12 +1417,12 @@
           "ep": 0
         },
         {
-          "id": 203,
-          "name": "Canvot",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Crystal Palace",
-          "ep": 1
+          "id": 12,
+          "name": "Saka",
+          "pos": "MID",
+          "type": 3,
+          "team": "Arsenal",
+          "ep": 0
         },
         {
           "id": 367,
