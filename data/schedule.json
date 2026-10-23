@@ -15,12 +15,12 @@
       "importance": 2.83,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 86,
+        "homeWinPct": 83,
         "drawPct": 2,
-        "awayWinPct": 12,
-        "homeExpected": 41.9,
+        "awayWinPct": 15,
+        "homeExpected": 39.8,
         "awayExpected": 27.5,
-        "homeSoFar": 17,
+        "homeSoFar": 16,
         "awaySoFar": 0
       }
     },
@@ -40,8 +40,8 @@
         "homeWinPct": 45,
         "drawPct": 3,
         "awayWinPct": 52,
-        "homeExpected": 27.1,
-        "awayExpected": 28.3,
+        "homeExpected": 26.9,
+        "awayExpected": 27.9,
         "homeSoFar": 2,
         "awaySoFar": 7
       }
@@ -62,8 +62,8 @@
         "homeWinPct": 64,
         "drawPct": 3,
         "awayWinPct": 33,
-        "homeExpected": 28.2,
-        "awayExpected": 23,
+        "homeExpected": 28.1,
+        "awayExpected": 22.9,
         "homeSoFar": 2,
         "awaySoFar": 2
       }
@@ -81,10 +81,10 @@
       "importance": 2.17,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 64,
+        "homeWinPct": 63,
         "drawPct": 3,
-        "awayWinPct": 33,
-        "homeExpected": 35.2,
+        "awayWinPct": 34,
+        "homeExpected": 34.7,
         "awayExpected": 29.9,
         "homeSoFar": 2,
         "awaySoFar": 0
@@ -103,11 +103,11 @@
       "importance": 2.08,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 41,
+        "homeWinPct": 42,
         "drawPct": 3,
-        "awayWinPct": 56,
+        "awayWinPct": 55,
         "homeExpected": 23.9,
-        "awayExpected": 26.4,
+        "awayExpected": 26.2,
         "homeSoFar": 0,
         "awaySoFar": 1
       }
@@ -128,7 +128,7 @@
         "homeWinPct": 52,
         "drawPct": 3,
         "awayWinPct": 45,
-        "homeExpected": 32.9,
+        "homeExpected": 32.8,
         "awayExpected": 31.6,
         "homeSoFar": 2,
         "awaySoFar": 0

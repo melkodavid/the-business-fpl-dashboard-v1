@@ -43,7 +43,7 @@
     {
       "managerId": 10210,
       "managerName": "Syria FC**",
-      "draftTeamPoints": 250
+      "draftTeamPoints": 251
     },
     {
       "managerId": 29975,
@@ -1105,7 +1105,7 @@
     {
       "pickNumber": 105,
       "round": 9,
-      "seasonPoints": 3,
+      "seasonPoints": 4,
       "managerId": 10210,
       "elementId": 482,
       "playerName": "Hudson-Odoi",
