@@ -103,11 +103,11 @@
       "importance": 2.08,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 31,
+        "homeWinPct": 41,
         "drawPct": 3,
-        "awayWinPct": 66,
+        "awayWinPct": 56,
         "homeExpected": 39.5,
-        "awayExpected": 45.5,
+        "awayExpected": 42,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -125,11 +125,11 @@
       "importance": 0.82,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 31,
+        "homeWinPct": 33,
         "drawPct": 3,
-        "awayWinPct": 66,
+        "awayWinPct": 64,
         "homeExpected": 49.8,
-        "awayExpected": 56,
+        "awayExpected": 55.1,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -273,8 +273,8 @@
       ]
     },
     "1425": {
-      "formation": "3-4-3",
-      "expected": 45.5,
+      "formation": "4-3-3",
+      "expected": 42,
       "captainId": 261,
       "locked": false,
       "xi": [
@@ -311,6 +311,14 @@
           "ep": 1.5
         },
         {
+          "id": 536,
+          "name": "Reinildo",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Sunderland",
+          "ep": 1.5
+        },
+        {
           "id": 261,
           "name": "Iwobi",
           "pos": "MID",
@@ -333,14 +341,6 @@
           "type": 3,
           "team": "Man Utd",
           "ep": 5.5
-        },
-        {
-          "id": 483,
-          "name": "Ndoye",
-          "pos": "MID",
-          "type": 3,
-          "team": "Nott'm Forest",
-          "ep": 5
         },
         {
           "id": 165,
@@ -377,14 +377,6 @@
           "ep": 0
         },
         {
-          "id": 536,
-          "name": "Reinildo",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Sunderland",
-          "ep": 1.5
-        },
-        {
           "id": 581,
           "name": "Diomande",
           "pos": "DEF",
@@ -399,6 +391,14 @@
           "type": 3,
           "team": "Leeds",
           "ep": 1
+        },
+        {
+          "id": 454,
+          "name": "Elanga",
+          "pos": "MID",
+          "type": 3,
+          "team": "Newcastle",
+          "ep": 0
         }
       ]
     },
@@ -1574,7 +1574,7 @@
     },
     "99786": {
       "formation": "4-4-2",
-      "expected": 56,
+      "expected": 55.1,
       "captainId": 115,
       "locked": false,
       "xi": [
@@ -1664,7 +1664,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Crystal Palace",
-          "ep": 3.5
+          "ep": 2.6
         }
       ],
       "bench": [
