@@ -37,11 +37,11 @@
       "importance": 2.56,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 67,
+        "homeWinPct": 70,
         "drawPct": 3,
-        "awayWinPct": 30,
+        "awayWinPct": 27,
         "homeExpected": 40.5,
-        "awayExpected": 34,
+        "awayExpected": 32.8,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -81,11 +81,11 @@
       "importance": 2.17,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 77,
+        "homeWinPct": 78,
         "drawPct": 2,
-        "awayWinPct": 21,
+        "awayWinPct": 20,
         "homeExpected": 56.5,
-        "awayExpected": 46,
+        "awayExpected": 45.6,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -664,7 +664,7 @@
     },
     "1530": {
       "formation": "4-4-2",
-      "expected": 34,
+      "expected": 32.8,
       "captainId": 127,
       "locked": false,
       "xi": [
@@ -717,20 +717,20 @@
           "ep": 6.5
         },
         {
-          "id": 515,
-          "name": "Maddison",
-          "pos": "MID",
-          "type": 3,
-          "team": "Spurs",
-          "ep": 5
-        },
-        {
           "id": 398,
           "name": "Foden",
           "pos": "MID",
           "type": 3,
           "team": "Man City",
           "ep": 4.5
+        },
+        {
+          "id": 515,
+          "name": "Maddison",
+          "pos": "MID",
+          "type": 3,
+          "team": "Spurs",
+          "ep": 3.8
         },
         {
           "id": 131,
@@ -1444,7 +1444,7 @@
     },
     "29975": {
       "formation": "4-4-2",
-      "expected": 46,
+      "expected": 45.6,
       "captainId": 400,
       "locked": false,
       "xi": [
@@ -1534,7 +1534,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Newcastle",
-          "ep": 1.5
+          "ep": 1.1
         }
       ],
       "bench": [
