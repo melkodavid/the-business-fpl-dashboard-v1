@@ -15,13 +15,13 @@
       "importance": 2.83,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 83,
-        "drawPct": 2,
-        "awayWinPct": 15,
-        "homeExpected": 41.4,
-        "awayExpected": 29.5,
-        "homeSoFar": 21,
-        "awaySoFar": 3
+        "homeWinPct": 71,
+        "drawPct": 3,
+        "awayWinPct": 26,
+        "homeExpected": 36.8,
+        "awayExpected": 30.1,
+        "homeSoFar": 20,
+        "awaySoFar": 5
       }
     },
     {
@@ -37,12 +37,12 @@
       "importance": 2.56,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 96,
-        "drawPct": 1,
-        "awayWinPct": 3,
-        "homeExpected": 44,
-        "awayExpected": 26,
-        "homeSoFar": 28,
+        "homeWinPct": 86,
+        "drawPct": 2,
+        "awayWinPct": 12,
+        "homeExpected": 35.9,
+        "awayExpected": 25.2,
+        "homeSoFar": 25,
         "awaySoFar": 9
       }
     },
@@ -59,13 +59,13 @@
       "importance": 2.48,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 62,
+        "homeWinPct": 67,
         "drawPct": 3,
-        "awayWinPct": 35,
-        "homeExpected": 27.4,
-        "awayExpected": 23.6,
+        "awayWinPct": 30,
+        "homeExpected": 26.8,
+        "awayExpected": 21.5,
         "homeSoFar": 12,
-        "awaySoFar": 5
+        "awaySoFar": 4
       }
     },
     {
@@ -85,9 +85,9 @@
         "drawPct": 1,
         "awayWinPct": 5,
         "homeExpected": 40.7,
-        "awayExpected": 24.9,
+        "awayExpected": 25.3,
         "homeSoFar": 19,
-        "awaySoFar": 6
+        "awaySoFar": 9
       }
     },
     {
@@ -103,11 +103,11 @@
       "importance": 2.08,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 52,
+        "homeWinPct": 47,
         "drawPct": 3,
-        "awayWinPct": 45,
-        "homeExpected": 24.5,
-        "awayExpected": 23.4,
+        "awayWinPct": 50,
+        "homeExpected": 21.7,
+        "awayExpected": 22.2,
         "homeSoFar": 3,
         "awaySoFar": 2
       }
@@ -125,13 +125,13 @@
       "importance": 0.82,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 45,
+        "homeWinPct": 38,
         "drawPct": 3,
-        "awayWinPct": 52,
-        "homeExpected": 30.2,
-        "awayExpected": 31.4,
+        "awayWinPct": 59,
+        "homeExpected": 29.3,
+        "awayExpected": 32.5,
         "homeSoFar": 7,
-        "awaySoFar": 1
+        "awaySoFar": 3
       }
     }
   ],
@@ -144,7 +144,7 @@
   "lineups": {
     "1377": {
       "formation": "5-4-1",
-      "expected": 35.4,
+      "expected": 34.4,
       "captainId": 31,
       "locked": true,
       "xi": [
@@ -165,20 +165,20 @@
           "ep": 7.7
         },
         {
-          "id": 640,
-          "name": "Affengruber",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Fulham",
-          "ep": 4.3
-        },
-        {
           "id": 10,
           "name": "White",
           "pos": "DEF",
           "type": 2,
           "team": "Arsenal",
           "ep": 4
+        },
+        {
+          "id": 640,
+          "name": "Affengruber",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Fulham",
+          "ep": 3.3
         },
         {
           "id": 391,
@@ -404,7 +404,7 @@
     },
     "1471": {
       "formation": "4-5-1",
-      "expected": 28.6,
+      "expected": 29.2,
       "captainId": 504,
       "locked": true,
       "xi": [
@@ -430,7 +430,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Fulham",
-          "ep": 3.7
+          "ep": 4.3
         },
         {
           "id": 60,
@@ -534,7 +534,7 @@
     },
     "1501": {
       "formation": "5-4-1",
-      "expected": 23,
+      "expected": 22.6,
       "captainId": 79,
       "locked": true,
       "xi": [
@@ -600,7 +600,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Fulham",
-          "ep": 2.7
+          "ep": 2.3
         },
         {
           "id": 480,
@@ -924,8 +924,8 @@
     },
     "1947": {
       "formation": "4-4-2",
-      "expected": 35.1,
-      "captainId": 183,
+      "expected": 34.7,
+      "captainId": 236,
       "locked": true,
       "xi": [
         {
@@ -969,19 +969,19 @@
           "ep": 1.3
         },
         {
-          "id": 183,
-          "name": "Rudoni",
-          "pos": "MID",
-          "type": 3,
-          "team": "Coventry City",
-          "ep": 5.7
-        },
-        {
           "id": 236,
           "name": "Dewsbury-Hall",
           "pos": "MID",
           "type": 3,
           "team": "Everton",
+          "ep": 5.3
+        },
+        {
+          "id": 183,
+          "name": "Rudoni",
+          "pos": "MID",
+          "type": 3,
+          "team": "Coventry City",
           "ep": 5.3
         },
         {
@@ -1162,7 +1162,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Everton",
-          "ep": 0.7
+          "ep": 0.3
         },
         {
           "id": 41,
@@ -1444,7 +1444,7 @@
     },
     "29975": {
       "formation": "4-4-2",
-      "expected": 32.1,
+      "expected": 33.1,
       "captainId": 400,
       "locked": true,
       "xi": [
@@ -1470,7 +1470,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Fulham",
-          "ep": 3
+          "ep": 4
         },
         {
           "id": 390,
@@ -1574,7 +1574,7 @@
     },
     "99786": {
       "formation": "3-4-3",
-      "expected": 32,
+      "expected": 32.6,
       "captainId": 115,
       "locked": true,
       "xi": [
@@ -1616,7 +1616,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Arsenal",
-          "ep": 5.7
+          "ep": 6.3
         },
         {
           "id": 427,
