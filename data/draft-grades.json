@@ -8,7 +8,7 @@
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 367
+      "draftTeamPoints": 369
     },
     {
       "managerId": 1857,
@@ -18,7 +18,7 @@
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 347
+      "draftTeamPoints": 346
     },
     {
       "managerId": 1947,
@@ -205,7 +205,7 @@
     {
       "pickNumber": 15,
       "round": 2,
-      "seasonPoints": 42,
+      "seasonPoints": 41,
       "managerId": 1471,
       "elementId": 40,
       "playerName": "Rogers",
@@ -1855,7 +1855,7 @@
     {
       "pickNumber": 180,
       "round": 15,
-      "seasonPoints": 28,
+      "seasonPoints": 30,
       "managerId": 1377,
       "elementId": 455,
       "playerName": "Tonali",
