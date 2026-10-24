@@ -40,9 +40,9 @@
         "homeWinPct": 100,
         "drawPct": 0,
         "awayWinPct": 0,
-        "homeExpected": 54,
+        "homeExpected": 53,
         "awayExpected": 21,
-        "homeSoFar": 53,
+        "homeSoFar": 52,
         "awaySoFar": 12
       }
     },
@@ -103,12 +103,12 @@
       "importance": 2.08,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 94,
+        "homeWinPct": 95,
         "drawPct": 1,
-        "awayWinPct": 5,
-        "homeExpected": 37.3,
+        "awayWinPct": 4,
+        "homeExpected": 38.3,
         "awayExpected": 24.1,
-        "homeSoFar": 25,
+        "homeSoFar": 26,
         "awaySoFar": 13
       }
     },
@@ -144,7 +144,7 @@
   "lineups": {
     "1377": {
       "formation": "5-4-1",
-      "expected": 43.6,
+      "expected": 43.3,
       "captainId": 31,
       "locked": true,
       "xi": [
@@ -162,7 +162,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Arsenal",
-          "ep": 9.3
+          "ep": 9
         },
         {
           "id": 10,
@@ -1054,7 +1054,7 @@
     },
     "10210": {
       "formation": "4-4-2",
-      "expected": 32.3,
+      "expected": 32.6,
       "captainId": 4,
       "locked": true,
       "xi": [
@@ -1072,7 +1072,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Arsenal",
-          "ep": 8.7
+          "ep": 9
         },
         {
           "id": 87,
