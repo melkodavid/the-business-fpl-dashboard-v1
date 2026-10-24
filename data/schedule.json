@@ -15,13 +15,13 @@
       "importance": 2.83,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 35,
+        "homeWinPct": 66,
         "drawPct": 4,
-        "awayWinPct": 61,
+        "awayWinPct": 30,
         "homeExpected": 30.7,
-        "awayExpected": 33.4,
+        "awayExpected": 26.9,
         "homeSoFar": 21,
-        "awaySoFar": 18
+        "awaySoFar": 13
       }
     },
     {
@@ -41,9 +41,9 @@
         "drawPct": 0,
         "awayWinPct": 0,
         "homeExpected": 54,
-        "awayExpected": 27.4,
+        "awayExpected": 21,
         "homeSoFar": 53,
-        "awaySoFar": 17
+        "awaySoFar": 12
       }
     },
     {
@@ -59,12 +59,12 @@
       "importance": 2.48,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 51,
-        "drawPct": 5,
-        "awayWinPct": 44,
-        "homeExpected": 31.4,
+        "homeWinPct": 17,
+        "drawPct": 3,
+        "awayWinPct": 80,
+        "homeExpected": 23.3,
         "awayExpected": 30.7,
-        "homeSoFar": 24,
+        "homeSoFar": 18,
         "awaySoFar": 15
       }
     },
@@ -81,10 +81,10 @@
       "importance": 2.17,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 85,
-        "drawPct": 3,
-        "awayWinPct": 12,
-        "homeExpected": 37.8,
+        "homeWinPct": 78,
+        "drawPct": 4,
+        "awayWinPct": 18,
+        "homeExpected": 35.7,
         "awayExpected": 30,
         "homeSoFar": 24,
         "awaySoFar": 21
@@ -103,13 +103,13 @@
       "importance": 2.08,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 88,
-        "drawPct": 2,
-        "awayWinPct": 10,
+        "homeWinPct": 94,
+        "drawPct": 1,
+        "awayWinPct": 5,
         "homeExpected": 37.3,
-        "awayExpected": 26.8,
+        "awayExpected": 24.1,
         "homeSoFar": 25,
-        "awaySoFar": 14
+        "awaySoFar": 13
       }
     },
     {
@@ -125,12 +125,12 @@
       "importance": 0.82,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 76,
-        "drawPct": 3,
-        "awayWinPct": 21,
-        "homeExpected": 37.4,
+        "homeWinPct": 45,
+        "drawPct": 4,
+        "awayWinPct": 51,
+        "homeExpected": 28.6,
         "awayExpected": 29.3,
-        "homeSoFar": 21,
+        "homeSoFar": 14,
         "awaySoFar": 3
       }
     }
@@ -274,7 +274,7 @@
     },
     "1425": {
       "formation": "4-4-2",
-      "expected": 31.8,
+      "expected": 31.5,
       "captainId": 261,
       "locked": true,
       "xi": [
@@ -284,7 +284,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Spurs",
-          "ep": 5
+          "ep": 4.7
         },
         {
           "id": 388,
@@ -404,7 +404,7 @@
     },
     "1471": {
       "formation": "4-5-1",
-      "expected": 33.6,
+      "expected": 31.9,
       "captainId": 504,
       "locked": true,
       "xi": [
@@ -454,7 +454,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Chelsea",
-          "ep": 4.7
+          "ep": 4
         },
         {
           "id": 154,
@@ -462,7 +462,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Chelsea",
-          "ep": 4
+          "ep": 3
         },
         {
           "id": 239,
@@ -504,7 +504,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Chelsea",
-          "ep": 2.3
+          "ep": 0.3
         },
         {
           "id": 5,
@@ -664,8 +664,8 @@
     },
     "1530": {
       "formation": "4-5-1",
-      "expected": 27.1,
-      "captainId": 151,
+      "expected": 25.4,
+      "captainId": 127,
       "locked": true,
       "xi": [
         {
@@ -677,19 +677,19 @@
           "ep": 2
         },
         {
-          "id": 151,
-          "name": "Acheampong",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Chelsea",
-          "ep": 5
-        },
-        {
           "id": 201,
           "name": "Muñoz",
           "pos": "DEF",
           "type": 2,
           "team": "Nott'm Forest",
+          "ep": 3.3
+        },
+        {
+          "id": 151,
+          "name": "Acheampong",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Chelsea",
           "ep": 3.3
         },
         {
@@ -780,7 +780,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Chelsea",
-          "ep": 0.7
+          "ep": 1
         },
         {
           "id": 224,
@@ -794,7 +794,7 @@
     },
     "1857": {
       "formation": "5-3-2",
-      "expected": 34.1,
+      "expected": 32.1,
       "captainId": 411,
       "locked": true,
       "xi": [
@@ -812,7 +812,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Chelsea",
-          "ep": 5.3
+          "ep": 3.7
         },
         {
           "id": 173,
@@ -847,20 +847,20 @@
           "ep": 0.7
         },
         {
-          "id": 159,
-          "name": "Caicedo",
-          "pos": "MID",
-          "type": 3,
-          "team": "Chelsea",
-          "ep": 2.7
-        },
-        {
           "id": 481,
           "name": "Anderson",
           "pos": "MID",
           "type": 3,
           "team": "Man City",
           "ep": 2.7
+        },
+        {
+          "id": 159,
+          "name": "Caicedo",
+          "pos": "MID",
+          "type": 3,
+          "team": "Chelsea",
+          "ep": 2.3
         },
         {
           "id": 366,
@@ -1184,8 +1184,8 @@
     },
     "10375": {
       "formation": "4-3-3",
-      "expected": 38.2,
-      "captainId": 149,
+      "expected": 35.9,
+      "captainId": 113,
       "locked": true,
       "xi": [
         {
@@ -1195,14 +1195,6 @@
           "type": 1,
           "team": "Man City",
           "ep": 3.7
-        },
-        {
-          "id": 149,
-          "name": "Colwill",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Chelsea",
-          "ep": 6
         },
         {
           "id": 113,
@@ -1218,6 +1210,14 @@
           "pos": "DEF",
           "type": 2,
           "team": "Newcastle",
+          "ep": 3.7
+        },
+        {
+          "id": 149,
+          "name": "Colwill",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Chelsea",
           "ep": 3.7
         },
         {
@@ -1292,7 +1292,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Spurs",
-          "ep": 5
+          "ep": 4.7
         },
         {
           "id": 544,
