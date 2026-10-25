@@ -3,22 +3,22 @@
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 403
+      "draftTeamPoints": 405
     },
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 380
+      "draftTeamPoints": 381
     },
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "draftTeamPoints": 373
+      "draftTeamPoints": 374
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 360
+      "draftTeamPoints": 365
     },
     {
       "managerId": 1947,
@@ -28,12 +28,12 @@
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "draftTeamPoints": 341
+      "draftTeamPoints": 343
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 335
+      "draftTeamPoints": 336
     },
     {
       "managerId": 1501,
@@ -43,12 +43,12 @@
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "draftTeamPoints": 287
+      "draftTeamPoints": 288
     },
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
-      "draftTeamPoints": 274
+      "draftTeamPoints": 275
     },
     {
       "managerId": 10210,
@@ -58,7 +58,7 @@
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "draftTeamPoints": 243
+      "draftTeamPoints": 247
     }
   ],
   "scatter": [
@@ -325,7 +325,7 @@
     {
       "pickNumber": 27,
       "round": 3,
-      "seasonPoints": 33,
+      "seasonPoints": 34,
       "managerId": 10375,
       "elementId": 346,
       "playerName": "Calvert-Lewin",
@@ -335,7 +335,7 @@
     {
       "pickNumber": 28,
       "round": 3,
-      "seasonPoints": 6,
+      "seasonPoints": 9,
       "managerId": 1530,
       "elementId": 260,
       "playerName": "Wilson",
@@ -435,7 +435,7 @@
     {
       "pickNumber": 38,
       "round": 4,
-      "seasonPoints": 24,
+      "seasonPoints": 25,
       "managerId": 99786,
       "elementId": 552,
       "playerName": "Brobbey",
@@ -555,7 +555,7 @@
     {
       "pickNumber": 50,
       "round": 5,
-      "seasonPoints": 14,
+      "seasonPoints": 15,
       "managerId": 29975,
       "elementId": 534,
       "playerName": "Hume",
@@ -1045,7 +1045,7 @@
     {
       "pickNumber": 99,
       "round": 9,
-      "seasonPoints": 25,
+      "seasonPoints": 26,
       "managerId": 10375,
       "elementId": 544,
       "playerName": "Xhaka",
@@ -1115,7 +1115,7 @@
     {
       "pickNumber": 106,
       "round": 9,
-      "seasonPoints": 24,
+      "seasonPoints": 25,
       "managerId": 1471,
       "elementId": 542,
       "playerName": "E.Le Fée",
@@ -1135,7 +1135,7 @@
     {
       "pickNumber": 108,
       "round": 9,
-      "seasonPoints": 14,
+      "seasonPoints": 15,
       "managerId": 1377,
       "elementId": 529,
       "playerName": "Roefs",
@@ -1265,7 +1265,7 @@
     {
       "pickNumber": 121,
       "round": 11,
-      "seasonPoints": 34,
+      "seasonPoints": 35,
       "managerId": 1857,
       "elementId": 334,
       "playerName": "Muharemović",
@@ -1295,7 +1295,7 @@
     {
       "pickNumber": 124,
       "round": 11,
-      "seasonPoints": 8,
+      "seasonPoints": 9,
       "managerId": 1530,
       "elementId": 337,
       "playerName": "Aaronson",
@@ -1305,7 +1305,7 @@
     {
       "pickNumber": 125,
       "round": 11,
-      "seasonPoints": 19,
+      "seasonPoints": 20,
       "managerId": 26227,
       "elementId": 533,
       "playerName": "Mukiele",
@@ -1405,7 +1405,7 @@
     {
       "pickNumber": 135,
       "round": 12,
-      "seasonPoints": 32,
+      "seasonPoints": 36,
       "managerId": 1471,
       "elementId": 385,
       "playerName": "Trafford",
@@ -1685,7 +1685,7 @@
     {
       "pickNumber": 163,
       "round": 14,
-      "seasonPoints": 45,
+      "seasonPoints": 47,
       "managerId": 1425,
       "elementId": 330,
       "playerName": "Bogle",
