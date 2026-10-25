@@ -3,7 +3,7 @@
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 382
+      "draftTeamPoints": 380
     },
     {
       "managerId": 1377,
@@ -13,7 +13,7 @@
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "draftTeamPoints": 361
+      "draftTeamPoints": 363
     },
     {
       "managerId": 1471,
@@ -725,7 +725,7 @@
     {
       "pickNumber": 67,
       "round": 6,
-      "seasonPoints": 46,
+      "seasonPoints": 44,
       "managerId": 1425,
       "elementId": 68,
       "playerName": "Tavernier",
@@ -1505,7 +1505,7 @@
     {
       "pickNumber": 145,
       "round": 13,
-      "seasonPoints": 13,
+      "seasonPoints": 15,
       "managerId": 1857,
       "elementId": 203,
       "playerName": "Canvot",
