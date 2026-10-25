@@ -3,7 +3,7 @@
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 408
+      "draftTeamPoints": 410
     },
     {
       "managerId": 1377,
@@ -13,7 +13,7 @@
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "draftTeamPoints": 382
+      "draftTeamPoints": 381
     },
     {
       "managerId": 1471,
@@ -1495,7 +1495,7 @@
     {
       "pickNumber": 144,
       "round": 12,
-      "seasonPoints": 25,
+      "seasonPoints": 24,
       "managerId": 1857,
       "elementId": 566,
       "playerName": "Horníček",
@@ -1555,7 +1555,7 @@
     {
       "pickNumber": 150,
       "round": 13,
-      "seasonPoints": 36,
+      "seasonPoints": 38,
       "managerId": 1425,
       "elementId": 362,
       "playerName": "Jacquet",

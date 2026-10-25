@@ -59,12 +59,12 @@
       "importance": 2.48,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 74,
-        "drawPct": 8,
-        "awayWinPct": 18,
-        "homeExpected": 42,
+        "homeWinPct": 65,
+        "drawPct": 9,
+        "awayWinPct": 26,
+        "homeExpected": 41,
         "awayExpected": 39,
-        "homeSoFar": 42,
+        "homeSoFar": 41,
         "awaySoFar": 39
       }
     },
@@ -103,13 +103,13 @@
       "importance": 2.08,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 92,
-        "drawPct": 3,
-        "awayWinPct": 5,
+        "homeWinPct": 82,
+        "drawPct": 6,
+        "awayWinPct": 12,
         "homeExpected": 43,
-        "awayExpected": 37,
+        "awayExpected": 39,
         "homeSoFar": 43,
-        "awaySoFar": 37
+        "awaySoFar": 39
       }
     },
     {
@@ -274,7 +274,7 @@
     },
     "1425": {
       "formation": "4-4-2",
-      "expected": 39.4,
+      "expected": 40.1,
       "captainId": 68,
       "locked": true,
       "xi": [
@@ -292,7 +292,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Liverpool",
-          "ep": 4
+          "ep": 4.7
         },
         {
           "id": 330,
@@ -794,7 +794,7 @@
     },
     "1857": {
       "formation": "5-3-2",
-      "expected": 40.1,
+      "expected": 39.7,
       "captainId": 411,
       "locked": true,
       "xi": [
@@ -804,7 +804,7 @@
           "pos": "GKP",
           "type": 1,
           "team": "Newcastle",
-          "ep": 3.7
+          "ep": 3.3
         },
         {
           "id": 334,
