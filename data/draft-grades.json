@@ -3,17 +3,17 @@
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 411
+      "draftTeamPoints": 408
     },
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 387
+      "draftTeamPoints": 389
     },
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "draftTeamPoints": 379
+      "draftTeamPoints": 382
     },
     {
       "managerId": 1471,
@@ -38,12 +38,12 @@
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "draftTeamPoints": 324
+      "draftTeamPoints": 325
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "draftTeamPoints": 293
+      "draftTeamPoints": 294
     },
     {
       "managerId": 26227,
@@ -1095,7 +1095,7 @@
     {
       "pickNumber": 104,
       "round": 9,
-      "seasonPoints": 31,
+      "seasonPoints": 32,
       "managerId": 1501,
       "elementId": 335,
       "playerName": "Stach",
@@ -1135,7 +1135,7 @@
     {
       "pickNumber": 108,
       "round": 9,
-      "seasonPoints": 21,
+      "seasonPoints": 23,
       "managerId": 1377,
       "elementId": 529,
       "playerName": "Roefs",
@@ -1265,7 +1265,7 @@
     {
       "pickNumber": 121,
       "round": 11,
-      "seasonPoints": 40,
+      "seasonPoints": 43,
       "managerId": 1857,
       "elementId": 334,
       "playerName": "Muharemović",
@@ -1485,7 +1485,7 @@
     {
       "pickNumber": 143,
       "round": 12,
-      "seasonPoints": 9,
+      "seasonPoints": 10,
       "managerId": 29975,
       "elementId": 347,
       "playerName": "Nmecha",
@@ -1685,7 +1685,7 @@
     {
       "pickNumber": 163,
       "round": 14,
-      "seasonPoints": 53,
+      "seasonPoints": 50,
       "managerId": 1425,
       "elementId": 330,
       "playerName": "Bogle",
