@@ -3,62 +3,62 @@
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 380
+      "draftTeamPoints": 403
     },
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 375
+      "draftTeamPoints": 380
     },
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "draftTeamPoints": 363
+      "draftTeamPoints": 373
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 350
+      "draftTeamPoints": 360
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 335
+      "draftTeamPoints": 350
     },
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "draftTeamPoints": 334
-    },
-    {
-      "managerId": 1501,
-      "managerName": "Set Piece Fc",
-      "draftTeamPoints": 313
+      "draftTeamPoints": 341
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 313
+      "draftTeamPoints": 335
     },
     {
-      "managerId": 26227,
-      "managerName": "Mourinho’s Ego FT",
-      "draftTeamPoints": 271
-    },
-    {
-      "managerId": 10210,
-      "managerName": "Syria FC**",
-      "draftTeamPoints": 267
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "draftTeamPoints": 324
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "draftTeamPoints": 256
+      "draftTeamPoints": 287
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "draftTeamPoints": 274
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "draftTeamPoints": 270
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "draftTeamPoints": 235
+      "draftTeamPoints": 243
     }
   ],
   "scatter": [
@@ -85,7 +85,7 @@
     {
       "pickNumber": 3,
       "round": 1,
-      "seasonPoints": 50,
+      "seasonPoints": 51,
       "managerId": 10375,
       "elementId": 379,
       "playerName": "Isak",
@@ -125,7 +125,7 @@
     {
       "pickNumber": 7,
       "round": 1,
-      "seasonPoints": 19,
+      "seasonPoints": 23,
       "managerId": 1947,
       "elementId": 106,
       "playerName": "Thiago",
@@ -165,7 +165,7 @@
     {
       "pickNumber": 11,
       "round": 1,
-      "seasonPoints": 42,
+      "seasonPoints": 43,
       "managerId": 99786,
       "elementId": 427,
       "playerName": "Mbeumo",
@@ -175,7 +175,7 @@
     {
       "pickNumber": 12,
       "round": 1,
-      "seasonPoints": 30,
+      "seasonPoints": 31,
       "managerId": 1377,
       "elementId": 366,
       "playerName": "Wirtz",
@@ -245,7 +245,7 @@
     {
       "pickNumber": 19,
       "round": 2,
-      "seasonPoints": 37,
+      "seasonPoints": 38,
       "managerId": 1425,
       "elementId": 428,
       "playerName": "Cunha",
@@ -285,7 +285,7 @@
     {
       "pickNumber": 23,
       "round": 2,
-      "seasonPoints": 4,
+      "seasonPoints": 5,
       "managerId": 29975,
       "elementId": 223,
       "playerName": "Mateta",
@@ -315,7 +315,7 @@
     {
       "pickNumber": 26,
       "round": 3,
-      "seasonPoints": 16,
+      "seasonPoints": 25,
       "managerId": 29975,
       "elementId": 67,
       "playerName": "Rayan",
@@ -365,7 +365,7 @@
     {
       "pickNumber": 31,
       "round": 3,
-      "seasonPoints": 30,
+      "seasonPoints": 38,
       "managerId": 1947,
       "elementId": 356,
       "playerName": "Virgil",
@@ -375,7 +375,7 @@
     {
       "pickNumber": 32,
       "round": 3,
-      "seasonPoints": 38,
+      "seasonPoints": 43,
       "managerId": 1501,
       "elementId": 79,
       "playerName": "Evanilson",
@@ -405,7 +405,7 @@
     {
       "pickNumber": 35,
       "round": 3,
-      "seasonPoints": 16,
+      "seasonPoints": 25,
       "managerId": 99786,
       "elementId": 61,
       "playerName": "Truffert",
@@ -485,7 +485,7 @@
     {
       "pickNumber": 43,
       "round": 4,
-      "seasonPoints": 10,
+      "seasonPoints": 19,
       "managerId": 1425,
       "elementId": 95,
       "playerName": "O.Dango",
@@ -495,7 +495,7 @@
     {
       "pickNumber": 44,
       "round": 4,
-      "seasonPoints": 0,
+      "seasonPoints": 1,
       "managerId": 26227,
       "elementId": 78,
       "playerName": "Kroupi.Jr",
@@ -585,7 +585,7 @@
     {
       "pickNumber": 53,
       "round": 5,
-      "seasonPoints": 33,
+      "seasonPoints": 35,
       "managerId": 26227,
       "elementId": 367,
       "playerName": "Gakpo",
@@ -635,7 +635,7 @@
     {
       "pickNumber": 58,
       "round": 5,
-      "seasonPoints": 24,
+      "seasonPoints": 32,
       "managerId": 1471,
       "elementId": 60,
       "playerName": "Hill",
@@ -685,7 +685,7 @@
     {
       "pickNumber": 63,
       "round": 6,
-      "seasonPoints": 41,
+      "seasonPoints": 42,
       "managerId": 1471,
       "elementId": 94,
       "playerName": "Schade",
@@ -715,7 +715,7 @@
     {
       "pickNumber": 66,
       "round": 6,
-      "seasonPoints": 57,
+      "seasonPoints": 58,
       "managerId": 1947,
       "elementId": 124,
       "playerName": "Groß",
@@ -725,7 +725,7 @@
     {
       "pickNumber": 67,
       "round": 6,
-      "seasonPoints": 44,
+      "seasonPoints": 52,
       "managerId": 1425,
       "elementId": 68,
       "playerName": "Tavernier",
@@ -745,7 +745,7 @@
     {
       "pickNumber": 69,
       "round": 6,
-      "seasonPoints": 6,
+      "seasonPoints": 14,
       "managerId": 1530,
       "elementId": 465,
       "playerName": "Osula",
@@ -805,7 +805,7 @@
     {
       "pickNumber": 75,
       "round": 7,
-      "seasonPoints": 17,
+      "seasonPoints": 22,
       "managerId": 10375,
       "elementId": 358,
       "playerName": "Kerkez",
@@ -865,7 +865,7 @@
     {
       "pickNumber": 81,
       "round": 7,
-      "seasonPoints": 18,
+      "seasonPoints": 19,
       "managerId": 10210,
       "elementId": 464,
       "playerName": "Wissa",
@@ -895,7 +895,7 @@
     {
       "pickNumber": 84,
       "round": 7,
-      "seasonPoints": 11,
+      "seasonPoints": 12,
       "managerId": 1377,
       "elementId": 125,
       "playerName": "Georginio",
@@ -905,7 +905,7 @@
     {
       "pickNumber": 85,
       "round": 8,
-      "seasonPoints": 15,
+      "seasonPoints": 16,
       "managerId": 1377,
       "elementId": 445,
       "playerName": "Thiaw",
@@ -915,7 +915,7 @@
     {
       "pickNumber": 86,
       "round": 8,
-      "seasonPoints": 33,
+      "seasonPoints": 40,
       "managerId": 99786,
       "elementId": 453,
       "playerName": "Barnes",
@@ -1025,7 +1025,7 @@
     {
       "pickNumber": 97,
       "round": 9,
-      "seasonPoints": 31,
+      "seasonPoints": 36,
       "managerId": 1857,
       "elementId": 350,
       "playerName": "A.Becker",
@@ -1035,7 +1035,7 @@
     {
       "pickNumber": 98,
       "round": 9,
-      "seasonPoints": 38,
+      "seasonPoints": 40,
       "managerId": 29975,
       "elementId": 109,
       "playerName": "Verbruggen",
@@ -1145,7 +1145,7 @@
     {
       "pickNumber": 109,
       "round": 10,
-      "seasonPoints": 21,
+      "seasonPoints": 23,
       "managerId": 1377,
       "elementId": 202,
       "playerName": "Richards",
@@ -1165,7 +1165,7 @@
     {
       "pickNumber": 111,
       "round": 10,
-      "seasonPoints": 51,
+      "seasonPoints": 52,
       "managerId": 1471,
       "elementId": 504,
       "playerName": "Vuskovic",
@@ -1185,7 +1185,7 @@
     {
       "pickNumber": 113,
       "round": 10,
-      "seasonPoints": 25,
+      "seasonPoints": 26,
       "managerId": 1501,
       "elementId": 82,
       "playerName": "Kelleher",
@@ -1245,7 +1245,7 @@
     {
       "pickNumber": 119,
       "round": 10,
-      "seasonPoints": 17,
+      "seasonPoints": 22,
       "managerId": 29975,
       "elementId": 70,
       "playerName": "Kluivert",
@@ -1255,7 +1255,7 @@
     {
       "pickNumber": 120,
       "round": 10,
-      "seasonPoints": 25,
+      "seasonPoints": 28,
       "managerId": 1857,
       "elementId": 556,
       "playerName": "M.Sangaré",
@@ -1275,7 +1275,7 @@
     {
       "pickNumber": 122,
       "round": 11,
-      "seasonPoints": 24,
+      "seasonPoints": 33,
       "managerId": 29975,
       "elementId": 580,
       "playerName": "Araujo",
@@ -1345,7 +1345,7 @@
     {
       "pickNumber": 129,
       "round": 11,
-      "seasonPoints": 18,
+      "seasonPoints": 19,
       "managerId": 10210,
       "elementId": 454,
       "playerName": "Elanga",
@@ -1365,7 +1365,7 @@
     {
       "pickNumber": 131,
       "round": 11,
-      "seasonPoints": 9,
+      "seasonPoints": 11,
       "managerId": 99786,
       "elementId": 371,
       "playerName": "Gravenberch",
@@ -1425,7 +1425,7 @@
     {
       "pickNumber": 137,
       "round": 12,
-      "seasonPoints": 25,
+      "seasonPoints": 24,
       "managerId": 1501,
       "elementId": 43,
       "playerName": "Tielemans",
@@ -1475,7 +1475,7 @@
     {
       "pickNumber": 142,
       "round": 12,
-      "seasonPoints": 6,
+      "seasonPoints": 7,
       "managerId": 10375,
       "elementId": 369,
       "playerName": "Ngumoha",
@@ -1495,7 +1495,7 @@
     {
       "pickNumber": 144,
       "round": 12,
-      "seasonPoints": 20,
+      "seasonPoints": 25,
       "managerId": 1857,
       "elementId": 566,
       "playerName": "Horníček",
@@ -1505,7 +1505,7 @@
     {
       "pickNumber": 145,
       "round": 13,
-      "seasonPoints": 15,
+      "seasonPoints": 12,
       "managerId": 1857,
       "elementId": 203,
       "playerName": "Canvot",
@@ -1515,7 +1515,7 @@
     {
       "pickNumber": 146,
       "round": 13,
-      "seasonPoints": 36,
+      "seasonPoints": 40,
       "managerId": 29975,
       "elementId": 449,
       "playerName": "Hall",
@@ -1555,7 +1555,7 @@
     {
       "pickNumber": 150,
       "round": 13,
-      "seasonPoints": 31,
+      "seasonPoints": 36,
       "managerId": 1425,
       "elementId": 362,
       "playerName": "Jacquet",
@@ -1565,7 +1565,7 @@
     {
       "pickNumber": 151,
       "round": 13,
-      "seasonPoints": 17,
+      "seasonPoints": 16,
       "managerId": 1947,
       "elementId": 418,
       "playerName": "Maguire",
@@ -1605,7 +1605,7 @@
     {
       "pickNumber": 155,
       "round": 13,
-      "seasonPoints": 25,
+      "seasonPoints": 28,
       "managerId": 99786,
       "elementId": 88,
       "playerName": "Kayode",
@@ -1655,7 +1655,7 @@
     {
       "pickNumber": 160,
       "round": 14,
-      "seasonPoints": 29,
+      "seasonPoints": 30,
       "managerId": 10210,
       "elementId": 116,
       "playerName": "Dunk",
@@ -1665,7 +1665,7 @@
     {
       "pickNumber": 161,
       "round": 14,
-      "seasonPoints": 16,
+      "seasonPoints": 22,
       "managerId": 1501,
       "elementId": 57,
       "playerName": "Petrović",
@@ -1725,7 +1725,7 @@
     {
       "pickNumber": 167,
       "round": 14,
-      "seasonPoints": 17,
+      "seasonPoints": 18,
       "managerId": 29975,
       "elementId": 96,
       "playerName": "Damsgaard",
@@ -1805,7 +1805,7 @@
     {
       "pickNumber": 175,
       "round": 15,
-      "seasonPoints": 5,
+      "seasonPoints": 8,
       "managerId": 1947,
       "elementId": 162,
       "playerName": "Andrey Santos",
