@@ -1,54 +1,54 @@
 {
   "rows": [
     {
-      "managerId": 1425,
-      "managerName": "Pearl Street Pirates",
-      "shortName": "NP",
-      "rank": 1,
-      "played": 7,
-      "won": 5,
-      "drawn": 0,
-      "lost": 2,
-      "pointsFor": 345,
-      "pointsAgainst": 298,
-      "total": 15,
-      "streak": {
-        "type": "L",
-        "count": 1
-      }
-    },
-    {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
       "shortName": "MC",
-      "rank": 2,
-      "played": 7,
-      "won": 5,
+      "rank": 1,
+      "played": 8,
+      "won": 6,
       "drawn": 0,
       "lost": 2,
-      "pointsFor": 314,
-      "pointsAgainst": 280,
-      "total": 15,
+      "pointsFor": 355,
+      "pointsAgainst": 318,
+      "total": 18,
       "streak": {
         "type": "W",
-        "count": 3
+        "count": 4
       }
     },
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
       "shortName": "DM",
-      "rank": 3,
-      "played": 7,
-      "won": 5,
+      "rank": 2,
+      "played": 8,
+      "won": 6,
       "drawn": 0,
       "lost": 2,
-      "pointsFor": 311,
-      "pointsAgainst": 276,
-      "total": 15,
+      "pointsFor": 354,
+      "pointsAgainst": 316,
+      "total": 18,
       "streak": {
         "type": "W",
-        "count": 1
+        "count": 2
+      }
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "shortName": "NP",
+      "rank": 3,
+      "played": 8,
+      "won": 5,
+      "drawn": 0,
+      "lost": 3,
+      "pointsFor": 390,
+      "pointsAgainst": 346,
+      "total": 15,
+      "streak": {
+        "type": "L",
+        "count": 2
       }
     },
     {
@@ -56,15 +56,15 @@
       "managerName": "FC General",
       "shortName": "MG",
       "rank": 4,
-      "played": 7,
+      "played": 8,
       "won": 5,
       "drawn": 0,
-      "lost": 2,
-      "pointsFor": 297,
-      "pointsAgainst": 268,
+      "lost": 3,
+      "pointsFor": 335,
+      "pointsAgainst": 309,
       "total": 15,
       "streak": {
-        "type": "W",
+        "type": "L",
         "count": 1
       }
     },
@@ -73,16 +73,16 @@
       "managerName": "NEEN FC",
       "shortName": "AP",
       "rank": 5,
-      "played": 7,
+      "played": 8,
       "won": 5,
       "drawn": 0,
-      "lost": 2,
-      "pointsFor": 270,
-      "pointsAgainst": 237,
+      "lost": 3,
+      "pointsFor": 307,
+      "pointsAgainst": 280,
       "total": 15,
       "streak": {
-        "type": "W",
-        "count": 5
+        "type": "L",
+        "count": 1
       }
     },
     {
@@ -90,16 +90,16 @@
       "managerName": "Set Piece Fc",
       "shortName": "CF",
       "rank": 6,
-      "played": 7,
+      "played": 8,
       "won": 4,
       "drawn": 0,
-      "lost": 3,
-      "pointsFor": 342,
-      "pointsAgainst": 294,
+      "lost": 4,
+      "pointsFor": 382,
+      "pointsAgainst": 337,
       "total": 12,
       "streak": {
         "type": "L",
-        "count": 1
+        "count": 2
       }
     },
     {
@@ -107,15 +107,15 @@
       "managerName": "Mourinho’s Ego FT",
       "shortName": "PT",
       "rank": 7,
-      "played": 7,
+      "played": 8,
       "won": 4,
       "drawn": 0,
-      "lost": 3,
-      "pointsFor": 334,
-      "pointsAgainst": 298,
+      "lost": 4,
+      "pointsFor": 362,
+      "pointsAgainst": 328,
       "total": 12,
       "streak": {
-        "type": "W",
+        "type": "L",
         "count": 1
       }
     },
@@ -124,15 +124,15 @@
       "managerName": "Patso Ball Fc",
       "shortName": "OT",
       "rank": 8,
-      "played": 7,
-      "won": 3,
+      "played": 8,
+      "won": 4,
       "drawn": 0,
       "lost": 4,
-      "pointsFor": 304,
-      "pointsAgainst": 302,
-      "total": 9,
+      "pointsFor": 347,
+      "pointsAgainst": 339,
+      "total": 12,
       "streak": {
-        "type": "L",
+        "type": "W",
         "count": 1
       }
     },
@@ -141,16 +141,16 @@
       "managerName": "Syria FC**",
       "shortName": "IA",
       "rank": 9,
-      "played": 7,
-      "won": 2,
+      "played": 8,
+      "won": 3,
       "drawn": 0,
       "lost": 5,
-      "pointsFor": 258,
-      "pointsAgainst": 284,
-      "total": 6,
+      "pointsFor": 306,
+      "pointsAgainst": 329,
+      "total": 9,
       "streak": {
-        "type": "L",
-        "count": 5
+        "type": "W",
+        "count": 1
       }
     },
     {
@@ -158,16 +158,16 @@
       "managerName": "Lu’s Rules FC ****",
       "shortName": "LP",
       "rank": 10,
-      "played": 7,
-      "won": 2,
+      "played": 8,
+      "won": 3,
       "drawn": 0,
       "lost": 5,
-      "pointsFor": 244,
-      "pointsAgainst": 303,
-      "total": 6,
+      "pointsFor": 302,
+      "pointsAgainst": 331,
+      "total": 9,
       "streak": {
         "type": "W",
-        "count": 1
+        "count": 2
       }
     },
     {
@@ -175,15 +175,15 @@
       "managerName": "Zacharias United",
       "shortName": "ZC",
       "rank": 11,
-      "played": 7,
-      "won": 1,
+      "played": 8,
+      "won": 2,
       "drawn": 0,
       "lost": 6,
-      "pointsFor": 238,
-      "pointsAgainst": 311,
-      "total": 3,
+      "pointsFor": 268,
+      "pointsAgainst": 339,
+      "total": 6,
       "streak": {
-        "type": "L",
+        "type": "W",
         "count": 1
       }
     },
@@ -192,16 +192,16 @@
       "managerName": "Muks Militia",
       "shortName": "MP",
       "rank": 12,
-      "played": 7,
+      "played": 8,
       "won": 1,
       "drawn": 0,
-      "lost": 6,
-      "pointsFor": 224,
-      "pointsAgainst": 330,
+      "lost": 7,
+      "pointsFor": 252,
+      "pointsAgainst": 388,
       "total": 3,
       "streak": {
         "type": "L",
-        "count": 6
+        "count": 7
       }
     }
   ]

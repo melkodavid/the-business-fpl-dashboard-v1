@@ -1,5 +1,117 @@
 {
-  "status": "pending",
-  "reason": "Waiting for GW8 to finish before seeding the cup.",
+  "status": "awaiting_draw",
+  "awaitingRound": "round1",
+  "seeds": [
+    {
+      "managerId": 1377,
+      "seed": 1,
+      "basis": "last-season",
+      "lastSeasonRank": 1
+    },
+    {
+      "managerId": 1530,
+      "seed": 2,
+      "basis": "last-season",
+      "lastSeasonRank": 2
+    },
+    {
+      "managerId": 10375,
+      "seed": 3,
+      "basis": "last-season",
+      "lastSeasonRank": 4
+    },
+    {
+      "managerId": 1471,
+      "seed": 4,
+      "basis": "last-season",
+      "lastSeasonRank": 5
+    },
+    {
+      "managerId": 1947,
+      "seed": 5,
+      "basis": "last-season",
+      "lastSeasonRank": 6
+    },
+    {
+      "managerId": 10210,
+      "seed": 6,
+      "basis": "last-season",
+      "lastSeasonRank": 7
+    },
+    {
+      "managerId": 1425,
+      "seed": 7,
+      "basis": "last-season",
+      "lastSeasonRank": 8
+    },
+    {
+      "managerId": 1857,
+      "seed": 8,
+      "basis": "last-season",
+      "lastSeasonRank": 9
+    },
+    {
+      "managerId": 99786,
+      "seed": 9,
+      "basis": "last-season",
+      "lastSeasonRank": 10
+    },
+    {
+      "managerId": 26227,
+      "seed": 10,
+      "basis": "last-season",
+      "lastSeasonRank": 12
+    },
+    {
+      "managerId": 1501,
+      "seed": 11,
+      "basis": "new",
+      "lastSeasonRank": null
+    },
+    {
+      "managerId": 29975,
+      "seed": 12,
+      "basis": "new",
+      "lastSeasonRank": null
+    }
+  ],
+  "seedingSnapshotGw": 8,
+  "seedingBasis": {
+    "type": "last-season",
+    "label": "25/26"
+  },
+  "rounds": {
+    "round1": {
+      "gws": [
+        9
+      ],
+      "draw": null,
+      "results": null
+    },
+    "round2": {
+      "gws": [
+        18,
+        19
+      ],
+      "draw": null,
+      "results": null
+    },
+    "round3": {
+      "gws": [
+        27,
+        28
+      ],
+      "draw": null,
+      "results": null
+    },
+    "round4": {
+      "gws": [
+        36
+      ],
+      "draw": null,
+      "results": null
+    }
+  },
+  "champion": null,
   "_mock": false
 }

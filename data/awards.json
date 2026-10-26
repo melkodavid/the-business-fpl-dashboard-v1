@@ -233,6 +233,50 @@
         "benchPoints": 26
       },
       "fiftyNineClubInstances": []
+    },
+    {
+      "gw": 8,
+      "topScore": {
+        "managerIds": [
+          1377
+        ],
+        "score": 58
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          1530,
+          26227
+        ],
+        "score": 28
+      },
+      "blowout": {
+        "title": "Lu’s Rules FC **** took Muks Militia behind the bushes",
+        "winnerId": 1377,
+        "loserId": 1530,
+        "margin": 30
+      },
+      "worstLineup": {
+        "managerIds": [
+          1947
+        ],
+        "benchPoints": 19
+      },
+      "fiftyNineClubInstances": [
+        {
+          "gw": 8,
+          "managerId": 1425,
+          "elementId": 316,
+          "playerName": "Emersonn",
+          "fixtureId": 77
+        },
+        {
+          "gw": 8,
+          "managerId": 1857,
+          "elementId": 173,
+          "playerName": "Thomas",
+          "fixtureId": 74
+        }
+      ]
     }
   ],
   "hallOfFame": {
@@ -252,12 +296,16 @@
       {
         "managerId": 26227,
         "count": 1
+      },
+      {
+        "managerId": 1377,
+        "count": 1
       }
     ],
     "markOfTheWeek": [
       {
         "managerId": 1530,
-        "count": 3
+        "count": 4
       },
       {
         "managerId": 29975,
@@ -269,6 +317,10 @@
       },
       {
         "managerId": 1377,
+        "count": 1
+      },
+      {
+        "managerId": 26227,
         "count": 1
       }
     ],
@@ -296,6 +348,10 @@
       {
         "managerId": 1857,
         "count": 1
+      },
+      {
+        "managerId": 1377,
+        "count": 1
       }
     ],
     "worstLineup": [
@@ -309,6 +365,10 @@
       },
       {
         "managerId": 1857,
+        "count": 1
+      },
+      {
+        "managerId": 1947,
         "count": 1
       }
     ]

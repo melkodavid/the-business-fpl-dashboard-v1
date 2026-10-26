@@ -34,6 +34,20 @@
       "elementId": 138,
       "playerName": "Kostoulas",
       "fixtureId": 60
+    },
+    {
+      "gw": 8,
+      "managerId": 1425,
+      "elementId": 316,
+      "playerName": "Emersonn",
+      "fixtureId": 77
+    },
+    {
+      "gw": 8,
+      "managerId": 1857,
+      "elementId": 173,
+      "playerName": "Thomas",
+      "fixtureId": 74
     }
   ],
   "seasonTotals": [
@@ -43,7 +57,7 @@
     },
     {
       "managerId": 1425,
-      "count": 0
+      "count": 1
     },
     {
       "managerId": 1471,
@@ -59,7 +73,7 @@
     },
     {
       "managerId": 1857,
-      "count": 0
+      "count": 1
     },
     {
       "managerId": 1947,

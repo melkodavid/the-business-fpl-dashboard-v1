@@ -84,37 +84,37 @@
           "key": "1377-1530",
           "home": 1377,
           "away": 1530,
-          "result": null
+          "result": "H"
         },
         {
           "key": "1857-1501",
           "home": 1857,
           "away": 1501,
-          "result": null
+          "result": "H"
         },
         {
           "key": "1947-1471",
           "home": 1947,
           "away": 1471,
-          "result": null
+          "result": "A"
         },
         {
           "key": "10210-1425",
           "home": 10210,
           "away": 1425,
-          "result": null
+          "result": "H"
         },
         {
           "key": "10375-99786",
           "home": 10375,
           "away": 99786,
-          "result": null
+          "result": "A"
         },
         {
           "key": "26227-29975",
           "home": 26227,
           "away": 29975,
-          "result": null
+          "result": "A"
         }
       ],
       "picks": {
@@ -135,19 +135,19 @@
           "1947-1471": "H"
         }
       },
-      "complete": false
+      "complete": true
     }
   ],
   "table": [
     {
       "personKey": "david",
       "managerId": 1857,
-      "played": 6,
-      "correct": 5,
-      "weeks": 1,
+      "played": 12,
+      "correct": 8,
+      "weeks": 2,
       "bestWeek": 5,
       "perfectWeeks": 0,
-      "streak": 3,
+      "streak": 2,
       "bestStreak": 3,
       "boldCalls": 1,
       "boldHits": 1,
@@ -155,9 +155,13 @@
         "7": {
           "correct": 5,
           "total": 6
+        },
+        "8": {
+          "correct": 3,
+          "total": 6
         }
       },
-      "pct": 83.3,
+      "pct": 66.7,
       "rank": 1
     },
     {
@@ -205,23 +209,27 @@
     {
       "personKey": "marshall",
       "managerId": 1471,
-      "played": 6,
-      "correct": 3,
-      "weeks": 1,
+      "played": 12,
+      "correct": 5,
+      "weeks": 2,
       "bestWeek": 3,
       "perfectWeeks": 0,
-      "streak": 3,
-      "bestStreak": 3,
+      "streak": 0,
+      "bestStreak": 5,
       "boldCalls": 1,
       "boldHits": 0,
       "byWeek": {
         "7": {
           "correct": 3,
           "total": 6
+        },
+        "8": {
+          "correct": 2,
+          "total": 6
         }
       },
-      "pct": 50,
-      "rank": 3
+      "pct": 41.7,
+      "rank": 4
     }
   ]
 }

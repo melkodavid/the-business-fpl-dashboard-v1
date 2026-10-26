@@ -1,0 +1,88 @@
+{
+  "gw": 8,
+  "headline": {
+    "type": "trade-ex-factor",
+    "personKeys": [
+      "muk",
+      "lu"
+    ],
+    "text": "White scores 10 right back at Muk. The Ex Factor strikes again.",
+    "facts": {
+      "oldManagerId": 1530,
+      "opponentId": 1377,
+      "elementId": 10,
+      "playerName": "White",
+      "points": 10
+    },
+    "gw": 8
+  },
+  "secondaries": [
+    {
+      "type": "table-new-leader",
+      "personKeys": [
+        "marshall",
+        "noah"
+      ],
+      "text": "Marshall Curtin-Dudzic takes the lead in the table from Noah Palladino.",
+      "facts": {
+        "newLeaderId": 1471,
+        "previousLeaderId": 1425
+      },
+      "gw": 8
+    },
+    {
+      "type": "record-low-win",
+      "personKeys": [
+        "zac"
+      ],
+      "text": "Lowest winning score of the season: Zac Collins with 30.",
+      "facts": {
+        "managerId": 29975,
+        "score": 30
+      },
+      "gw": 8
+    },
+    {
+      "type": "bridesmaid-leading",
+      "personKeys": [
+        "marshall"
+      ],
+      "text": "Leader Marshall Curtin-Dudzic would like you to forget the previous seasons.",
+      "facts": {
+        "managerId": 1471,
+        "gw": 8
+      },
+      "gw": 8
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "A waiver-wire pickup just out-produced the entire first round: White, 10 points, Lu.",
+      "facts": {
+        "managerId": 1377,
+        "elementId": 10,
+        "playerName": "White",
+        "points": 10,
+        "bestRound1": 9
+      },
+      "gw": 8
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "carmine"
+      ],
+      "text": "Carmine Francella's waiver pickup Bobb (11 pts) outscored every round-1 draft pick this week.",
+      "facts": {
+        "managerId": 1501,
+        "elementId": 264,
+        "playerName": "Bobb",
+        "points": 11,
+        "bestRound1": 9
+      },
+      "gw": 8
+    }
+  ]
+}

@@ -14,7 +14,7 @@
         10375
       ]
     },
-    "gw": 7
+    "gw": 8
   },
   "lifeAfterMark": {
     "type": "lu-post-mark-tracker",
@@ -24,21 +24,21 @@
     "facts": {
       "managerId": 1377,
       "rank": 10,
-      "total": 6
+      "total": 9
     },
-    "gw": 7
+    "gw": 8
   },
   "generationWar": {
     "matrix": {
       "01s|97s": {
-        "wins": 2,
+        "wins": 3,
         "draws": 0,
-        "losses": 6
+        "losses": 7
       },
       "97s|01s": {
-        "wins": 6,
+        "wins": 7,
         "draws": 0,
-        "losses": 2
+        "losses": 3
       },
       "2000s|ancient": {
         "wins": 1,
@@ -63,10 +63,10 @@
       "ancient|01s": {
         "wins": 0,
         "draws": 0,
-        "losses": 1
+        "losses": 2
       },
       "01s|ancient": {
-        "wins": 1,
+        "wins": 2,
         "draws": 0,
         "losses": 0
       },
@@ -92,9 +92,9 @@
       }
     },
     "oneOhOnesVsRest": {
-      "wins": 6,
+      "wins": 8,
       "draws": 0,
-      "losses": 9
+      "losses": 10
     }
   }
 }
