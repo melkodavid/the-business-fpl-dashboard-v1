@@ -25,8 +25,14 @@ function showToast(onRefresh) {
   const toast = document.createElement("div");
   toast.id = "fresh-toast";
   toast.setAttribute("role", "status");
-  toast.innerHTML = `<span><b>New league data is in.</b> Scores, tables and lineups have updated.</span><button type="button">Refresh</button><button type="button" class="fresh-x" aria-label="Dismiss">×</button>`;
-  toast.querySelector("button").addEventListener("click", onRefresh);
+  toast.innerHTML = `
+    <div class="fresh-msg">
+      <span class="fresh-hey">⚠ Hey Lucas! ⚠</span>
+      <span class="fresh-sub">New league data is in! Scores, tables and lineups have updated. Press the big red button!</span>
+    </div>
+    <button type="button" class="fresh-go">REFRESH <span class="fresh-arrows">👉</span></button>
+    <button type="button" class="fresh-x" aria-label="Dismiss">×</button>`;
+  toast.querySelector(".fresh-go").addEventListener("click", onRefresh);
   toast.querySelector(".fresh-x").addEventListener("click", () => toast.remove());
   document.body.appendChild(toast);
 }

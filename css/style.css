@@ -2510,12 +2510,28 @@ tfoot td { border-top: 2px solid var(--edge-bright); border-bottom: 0; }
   .hm-rv { opacity: 1 !important; translate: none !important; } .lp-pl { opacity: 1 !important; }
 }
 
-/* "New data is in" nudge (js/lib/freshness.js) */
-#fresh-toast { position: fixed; left: 50%; bottom: 62px; transform: translateX(-50%); z-index: 200; display: flex; align-items: center; gap: 12px; max-width: calc(100vw - 24px); padding: 10px 12px 10px 16px; border-radius: 999px;
-  background: linear-gradient(160deg, #1a1d2b, #10121b); border: 1px solid var(--gold); color: var(--text); font-size: 0.85rem; box-shadow: 0 16px 40px -10px rgba(0,0,0,0.9); animation: hm-fade .5s both; }
-#fresh-toast b { color: var(--gold-bright); }
-#fresh-toast button { cursor: pointer; border: 0; border-radius: 999px; padding: 6px 14px; font: 800 0.72rem "Archivo", sans-serif; letter-spacing: 0.12em; text-transform: uppercase; color: #1b1405; background: linear-gradient(135deg, var(--gold-bright), var(--gold)); }
-#fresh-toast .fresh-x { padding: 4px 9px; font-size: 1rem; letter-spacing: 0; color: var(--text-muted); background: none; }
+/* "New data is in" nudge (js/lib/freshness.js) -- deliberately impossible to miss, for Lucas */
+#fresh-toast { position: fixed; left: 50%; bottom: 56px; z-index: 300; width: min(980px, calc(100vw - 16px)); transform: translateX(-50%); box-sizing: border-box;
+  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 0.4rem 1.2rem; padding: 1.4rem 1.6rem 1.5rem; border: 6px solid #111; border-radius: 14px; color: #111; text-align: center;
+  background: repeating-linear-gradient(-45deg, #ffe600 0 26px, #111 26px 52px); box-shadow: 0 0 0 4px #ffe600, 0 0 60px 12px rgba(255,230,0,0.75), 0 24px 60px rgba(0,0,0,0.8);
+  animation: fresh-bounce 1.1s ease-in-out infinite, fresh-glow 0.9s ease-in-out infinite alternate; }
+#fresh-toast::before { content: ""; position: absolute; inset: 14px; border-radius: 8px; background: #ffe600; z-index: 0; animation: fresh-flash 0.9s steps(1, end) infinite; }
+#fresh-toast > * { position: relative; z-index: 1; }
+#fresh-toast .fresh-msg { display: grid; gap: 0.25rem; }
+#fresh-toast .fresh-hey { font: 900 clamp(1.5rem, 5vw, 2.8rem)/1 "Archivo", sans-serif; letter-spacing: 0.04em; text-transform: uppercase; color: #d10000; text-shadow: 2px 2px 0 #111; }
+#fresh-toast .fresh-sub { font: 800 clamp(1rem, 2.6vw, 1.5rem)/1.2 "Archivo", sans-serif; text-transform: uppercase; color: #111; }
+#fresh-toast .fresh-go { display: inline-flex; align-items: center; gap: 0.6rem; cursor: pointer; border: 5px solid #111; border-radius: 12px; padding: 0.9rem 1.6rem; font: 900 clamp(1.6rem, 5vw, 3rem)/1 "Archivo", sans-serif; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; background: #e00000;
+  box-shadow: 0 8px 0 #111, 0 0 30px rgba(224,0,0,0.9); animation: fresh-throb 0.6s ease-in-out infinite alternate; }
+#fresh-toast .fresh-go:hover { background: #ff1a1a; } #fresh-toast .fresh-go:active { transform: translateY(6px); box-shadow: 0 2px 0 #111; }
+#fresh-toast .fresh-arrows { display: inline-block; animation: fresh-point 0.5s ease-in-out infinite alternate; }
+#fresh-toast .fresh-x { position: absolute; top: 4px; right: 8px; z-index: 2; cursor: pointer; border: 0; background: #111; color: #ffe600; width: 30px; height: 30px; border-radius: 50%; font: 900 1rem/1 "Archivo", sans-serif; }
+@keyframes fresh-bounce { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-10px); } }
+@keyframes fresh-glow { from { box-shadow: 0 0 0 4px #ffe600, 0 0 30px 4px rgba(255,230,0,0.5), 0 24px 60px rgba(0,0,0,0.8); } to { box-shadow: 0 0 0 4px #ffe600, 0 0 90px 24px rgba(255,230,0,0.95), 0 24px 60px rgba(0,0,0,0.8); } }
+@keyframes fresh-flash { 0%, 100% { background: #ffe600; } 50% { background: #fff6a0; } }
+@keyframes fresh-throb { from { transform: scale(1); } to { transform: scale(1.08); } }
+@keyframes fresh-point { from { transform: translateX(-6px); } to { transform: translateX(8px); } }
+@media (max-width: 640px) { #fresh-toast { grid-template-columns: 1fr; padding: 1.2rem 0.9rem 1.2rem; } #fresh-toast .fresh-go { justify-content: center; } }
+@media (prefers-reduced-motion: reduce) { #fresh-toast, #fresh-toast::before, #fresh-toast .fresh-go, #fresh-toast .fresh-arrows { animation: none !important; } }
 
 /* =========================================================================
    Predictions page (js/render/predictions.js)
