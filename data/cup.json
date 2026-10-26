@@ -1,6 +1,6 @@
 {
-  "status": "awaiting_draw",
-  "awaitingRound": "round1",
+  "status": "in_progress",
+  "awaitingRound": null,
   "seeds": [
     {
       "managerId": 1377,
@@ -85,7 +85,32 @@
       "gws": [
         9
       ],
-      "draw": null,
+      "draw": [
+        {
+          "matchId": "r1-1",
+          "managerAId": 29975,
+          "managerBId": 99786,
+          "method": "manual"
+        },
+        {
+          "matchId": "r1-2",
+          "managerAId": 1501,
+          "managerBId": 1425,
+          "method": "manual"
+        },
+        {
+          "matchId": "r1-3",
+          "managerAId": 1947,
+          "managerBId": 1857,
+          "method": "manual"
+        },
+        {
+          "matchId": "r1-4",
+          "managerAId": 10210,
+          "managerBId": 26227,
+          "method": "manual"
+        }
+      ],
       "results": null
     },
     "round2": {
