@@ -33,6 +33,25 @@ function standingsAsOf(context, throughGw) {
     .map((row, i) => ({ managerId: row.managerId, seed: i + 1 }));
 }
 
+// Cup seeding from last season's final table (the byes go to its top four).
+// Anyone from that table who is no longer in the league is skipped, so the next
+// person down moves up; managers with no record last season (new joiners) are
+// seeded after everyone who has one, in order of the current table.
+function seedsFromPriorSeason(context, throughGw, priorOrder) {
+  const currentStandings = standingsAsOf(context, throughGw);
+  const idByPerson = new Map(context.managers.list.map((m) => [m.personKey, m.id]));
+  const seededIds = priorOrder.map((key) => idByPerson.get(key)).filter((id) => id !== undefined);
+  const seen = new Set(seededIds);
+  const newcomers = currentStandings.map((row) => row.managerId).filter((id) => !seen.has(id));
+  const priorRankById = new Map(priorOrder.map((key, i) => [idByPerson.get(key), i + 1]));
+  return [...seededIds, ...newcomers].map((managerId, i) => ({
+    managerId,
+    seed: i + 1,
+    basis: priorRankById.has(managerId) ? "last-season" : "new",
+    lastSeasonRank: priorRankById.get(managerId) ?? null,
+  }));
+}
+
 function gwScore(context, gws, managerId) {
   return gws.reduce((sum, gw) => sum + (context.gwPicks[gw]?.[managerId]?.totalPoints ?? 0), 0);
 }
@@ -77,14 +96,20 @@ function resolveRound(context, roundConfig, draw, seedByManager) {
  * @param previous the last-written data/cup.json, or null on the first run —
  *   any round already drawn there is carried forward as-is so a re-run never
  *   reshuffles an already-drawn round.
+ * @param seeding  optional { priorOrder: personKey[] (last season's table, best first), label }.
+ *   Without it, seeds come from the league table as it stood at the snapshot GW.
  */
-export function computeCup(context, cupRoundGws, previous) {
+export function computeCup(context, cupRoundGws, previous, seeding = null) {
   const seedingSnapshotGw = cupRoundGws.round1[0] - 1;
   if (!context.finishedGws.includes(seedingSnapshotGw)) {
     return { status: "pending", reason: `Waiting for GW${seedingSnapshotGw} to finish before seeding the cup.` };
   }
 
-  const seeds = previous?.seeds ?? standingsAsOf(context, seedingSnapshotGw);
+  const seeds =
+    previous?.seeds ??
+    (seeding?.priorOrder?.length
+      ? seedsFromPriorSeason(context, seedingSnapshotGw, seeding.priorOrder)
+      : standingsAsOf(context, seedingSnapshotGw));
   const seedByManager = new Map(seeds.map((s) => [s.managerId, s.seed]));
   const byeSeeds = seeds.filter((s) => s.seed <= 4).map((s) => s.managerId);
   const fieldSeeds = seeds.filter((s) => s.seed > 4).map((s) => s.managerId);
@@ -135,6 +160,7 @@ export function computeCup(context, cupRoundGws, previous) {
     status: champion ? "complete" : "in_progress",
     seeds,
     seedingSnapshotGw,
+    seedingBasis: previous?.seedingBasis ?? (seeding?.priorOrder?.length ? { type: "last-season", label: seeding.label ?? null } : { type: "league-table", gw: seedingSnapshotGw }),
     rounds: {
       round1: { gws: cupRoundGws.round1, draw: round1Draw, results: round1Results },
       round2: { gws: cupRoundGws.round2, draw: round2Draw, results: round2Results },

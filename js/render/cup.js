@@ -4,6 +4,14 @@ const ROUND_LABELS = { round1: "Round 1", round2: "Quarterfinal", round3: "Semif
 const FUTURE_MATCH_COUNT = { round1: 4, round2: 4, round3: 2, round4: 1 };
 const REDUCED = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+const ordinalOf = (n) => { const v = n % 100; return v >= 11 && v <= 13 ? `${n}th` : `${n}${{ 1: "st", 2: "nd", 3: "rd" }[n % 10] ?? "th"}`; };
+function seedingLead(cup) {
+  const basis = cup.seedingBasis;
+  if (basis?.type === "last-season") {
+    return `Seeded from last season's final table${basis.label ? ` (${basis.label})` : ""}. The top four still in the league get a Round 1 bye; anyone who has left is skipped, and new managers are seeded after everyone with a record.`;
+  }
+  return "Seeded from the league table. The top four get a Round 1 bye.";
+}
 const clubName = (managers, id) => managers.name(id).replace(/\s*\*+$/, "");
 
 // Club crest: the manager's custom badge if there is one (assets/badges/), else
@@ -348,7 +356,7 @@ export function render(container, data, managers) {
     .join("");
 
   const seedsHtml = cup.seeds
-    .map((s, i) => `<tr class="cup-rv" style="--i:${i}"><td>${s.seed}</td><td class="text-left">${nameHtml(s.managerId, managers)}</td></tr>`)
+    .map((s, i) => `<tr class="cup-rv" style="--i:${i}"><td>${s.seed}</td><td class="text-left">${nameHtml(s.managerId, managers)}</td><td class="text-left cup-seed-note">${s.seed <= 4 ? `<span class="cup-bye">Bye</span> ` : ""}${s.basis === "last-season" ? `${ordinalOf(s.lastSeasonRank)} last season` : s.basis === "new" ? "New this season" : ""}</td></tr>`)
     .join("");
 
   const hasRound1Draw = Boolean(cup.rounds.round1.draw);
@@ -382,9 +390,10 @@ export function render(container, data, managers) {
         </div>
       </div>
 
-      <div class="cup-bracket-wrap" style="margin-top:1.5rem;">
+      <p class="cup-seed-lead">${seedingLead(cup)}</p>
+      <div class="cup-bracket-wrap" style="margin-top:0.5rem;">
         <table class="cup-seeds" style="max-width:420px;margin:0 auto;">
-          <thead><tr><th>Seed</th><th class="text-left">Club</th></tr></thead>
+          <thead><tr><th>Seed</th><th class="text-left">Club</th><th class="text-left">Seeded by</th></tr></thead>
           <tbody>${seedsHtml}</tbody>
         </table>
       </div>

@@ -118,7 +118,11 @@ async function main() {
   const cupPath = join(DATA_DIR, "cup.json");
   const previousCupRaw = existsSync(cupPath) ? readJson(cupPath) : null;
   const previousCup = previousCupRaw?._mock === MOCK ? previousCupRaw : null;
-  const cup = { ...computeCup(context, config.CUP_ROUND_GWS, previousCup), _mock: MOCK };
+  // Cup byes/seeds come from last season's final table (the most recent finished
+  // season in history-seasons.json that has one), not the current standings.
+  const priorSeason = [...readJson(join(ROOT, "data", "history-seasons.json")).seasons].reverse().find((s) => s.table?.length && !s.isCurrent);
+  const cupSeeding = MOCK || !priorSeason ? null : { priorOrder: priorSeason.table.map((row) => row.managerKey), label: priorSeason.year };
+  const cup = { ...computeCup(context, config.CUP_ROUND_GWS, previousCup, cupSeeding), _mock: MOCK };
 
   const profilesData = readJson(join(ROOT, "data", "manager-profiles.json"));
   const profileByKey = new Map(profilesData.profiles.map((p) => [p.personKey, p]));
