@@ -2530,7 +2530,20 @@ tfoot td { border-top: 2px solid var(--edge-bright); border-bottom: 0; }
 @keyframes fresh-flash { 0%, 100% { background: #ffe600; } 50% { background: #fff6a0; } }
 @keyframes fresh-throb { from { transform: scale(1); } to { transform: scale(1.08); } }
 @keyframes fresh-point { from { transform: translateX(-6px); } to { transform: translateX(8px); } }
-@media (max-width: 640px) { #fresh-toast { grid-template-columns: 1fr; padding: 1.2rem 0.9rem 1.2rem; } #fresh-toast .fresh-go { justify-content: center; } }
+@media (max-width: 640px) {
+  #fresh-toast { grid-template-columns: 1fr; padding: 1.2rem 0.9rem 1.2rem; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); text-align: center; -webkit-tap-highlight-color: transparent; }
+  #fresh-toast .fresh-hey { font-size: clamp(1.5rem, 8vw, 2.2rem); }
+  #fresh-toast .fresh-sub { font-size: clamp(0.85rem, 4.2vw, 1.1rem); }
+  #fresh-toast .fresh-go { justify-content: center; min-height: 64px; width: 100%; box-sizing: border-box; touch-action: manipulation; }
+  #fresh-toast .fresh-x { top: 2px; right: 4px; width: 44px; height: 44px; font-size: 1.3rem; }
+}
+/* phone held sideways: keep the banner from swallowing the whole screen */
+@media (max-height: 480px) and (orientation: landscape) {
+  #fresh-toast { grid-template-columns: 1fr auto; bottom: 8px; padding: 0.7rem 1rem; }
+  #fresh-toast::before { inset: 10px; }
+  #fresh-toast .fresh-hey { font-size: 1.3rem; } #fresh-toast .fresh-sub { font-size: 0.8rem; }
+  #fresh-toast .fresh-go { font-size: 1.3rem; padding: 0.5rem 1rem; min-height: 0; width: auto; }
+}
 @media (prefers-reduced-motion: reduce) { #fresh-toast, #fresh-toast::before, #fresh-toast .fresh-go, #fresh-toast .fresh-arrows { animation: none !important; } }
 
 /* =========================================================================
