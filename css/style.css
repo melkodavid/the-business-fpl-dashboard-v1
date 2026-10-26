@@ -2630,3 +2630,8 @@ tr.sw-flip td { background: rgba(236,217,163,0.07); }
 .cup-theme .cup-seed-lead { max-width: 560px; margin: 1.6rem auto 0; text-align: center; font-size: 0.82rem; line-height: 1.5; color: var(--text-muted, #8b95a3); }
 .cup-theme .cup-seed-note { font-size: 0.8rem; color: var(--text-muted, #8b95a3); }
 .cup-theme .cup-bye { display: inline-block; margin-right: 0.35rem; padding: 1px 8px; border-radius: 999px; font: 800 0.62rem "Archivo", sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: #1b1405; background: linear-gradient(135deg, #fff3b8, #d9a53c); }
+
+/* Cup: waiting for a hand-run draw */
+.cup-theme .cup-awaiting { display: grid; gap: 0.2rem; max-width: 560px; margin: 0.8rem auto 0; padding: 0.8rem 1.2rem; text-align: center; border-radius: 10px; border: 1px solid rgba(236,217,163,0.5); background: rgba(0,0,0,0.25); }
+.cup-theme .cup-awaiting b { font: 800 0.78rem "Archivo", sans-serif; letter-spacing: 0.2em; text-transform: uppercase; color: #ecd9a3; }
+.cup-theme .cup-awaiting span { font-size: 0.85rem; color: rgba(255,255,255,0.75); }

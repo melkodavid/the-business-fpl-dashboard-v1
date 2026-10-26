@@ -96,10 +96,15 @@ function resolveRound(context, roundConfig, draw, seedByManager) {
  * @param previous the last-written data/cup.json, or null on the first run —
  *   any round already drawn there is carried forward as-is so a re-run never
  *   reshuffles an already-drawn round.
+ * @param drawControl  optional { hold: roundKey[], manual: { roundKey: [[idA, idB], ...] } } --
+ *   a round in `hold` is not drawn automatically (the cup waits, status "awaiting_draw")
+ *   until its fixtures are supplied in `manual`, e.g. when the league does the draw live.
+ *   A manual draw that doesn't match the eligible managers exactly is ignored (and the
+ *   round stays on hold) rather than breaking the build.
  * @param seeding  optional { priorOrder: personKey[] (last season's table, best first), label }.
  *   Without it, seeds come from the league table as it stood at the snapshot GW.
  */
-export function computeCup(context, cupRoundGws, previous, seeding = null) {
+export function computeCup(context, cupRoundGws, previous, seeding = null, drawControl = {}) {
   const seedingSnapshotGw = cupRoundGws.round1[0] - 1;
   if (!context.finishedGws.includes(seedingSnapshotGw)) {
     return { status: "pending", reason: `Waiting for GW${seedingSnapshotGw} to finish before seeding the cup.` };
@@ -114,36 +119,39 @@ export function computeCup(context, cupRoundGws, previous, seeding = null) {
   const byeSeeds = seeds.filter((s) => s.seed <= 4).map((s) => s.managerId);
   const fieldSeeds = seeds.filter((s) => s.seed > 4).map((s) => s.managerId);
 
-  const round1Draw =
-    previous?.rounds?.round1?.draw ??
-    (() => {
-      const shuffled = shuffle(fieldSeeds);
-      const pairs = [];
-      for (let i = 0; i < shuffled.length; i += 2) {
-        pairs.push({ matchId: `r1-${pairs.length + 1}`, managerAId: shuffled[i], managerBId: shuffled[i + 1] });
-      }
-      return pairs;
-    })();
-  const round1Results = resolveRound(context, { gws: cupRoundGws.round1 }, round1Draw, seedByManager);
+  let awaitingRound = null;
+  const asPairs = (prefix, ids) => {
+    const pairs = [];
+    for (let i = 0; i < ids.length; i += 2) pairs.push({ matchId: `${prefix}-${pairs.length + 1}`, managerAId: ids[i], managerBId: ids[i + 1] });
+    return pairs;
+  };
+  // previous draw -> a supplied (manual) draw -> hold -> random draw
+  const drawRound = (roundKey, prefix, entrants) => {
+    const manual = drawControl.manual?.[roundKey];
+    if (manual) {
+      const flat = manual.flat();
+      const valid = manual.every((p) => p.length === 2) && flat.length === entrants.length && new Set(flat).size === flat.length && flat.every((id) => entrants.includes(id));
+      if (valid) return asPairs(prefix, flat).map((p) => ({ ...p, method: "manual" }));
+      console.warn(`Cup: the supplied ${roundKey} draw doesn't match the eligible managers -- ignoring it.`);
+      awaitingRound ??= roundKey;
+      return null;
+    }
+    if (drawControl.hold?.includes(roundKey)) { awaitingRound ??= roundKey; return null; }
+    return asPairs(prefix, shuffle(entrants));
+  };
+
+  const round1Draw = previous?.rounds?.round1?.draw ?? drawRound("round1", "r1", fieldSeeds);
+  const round1Results = round1Draw ? resolveRound(context, { gws: cupRoundGws.round1 }, round1Draw, seedByManager) : null;
 
   let round2Draw = previous?.rounds?.round2?.draw ?? null;
   if (!round2Draw && round1Results) {
-    const round1Winners = round1Results.map((m) => m.winnerId);
-    const shuffled = shuffle([...byeSeeds, ...round1Winners]);
-    round2Draw = [];
-    for (let i = 0; i < shuffled.length; i += 2) {
-      round2Draw.push({ matchId: `r2-${round2Draw.length + 1}`, managerAId: shuffled[i], managerBId: shuffled[i + 1] });
-    }
+    round2Draw = drawRound("round2", "r2", [...byeSeeds, ...round1Results.map((m) => m.winnerId)]);
   }
   const round2Results = round2Draw ? resolveRound(context, { gws: cupRoundGws.round2 }, round2Draw, seedByManager) : null;
 
   let round3Draw = previous?.rounds?.round3?.draw ?? null;
   if (!round3Draw && round2Results) {
-    const shuffled = shuffle(round2Results.map((m) => m.winnerId));
-    round3Draw = [];
-    for (let i = 0; i < shuffled.length; i += 2) {
-      round3Draw.push({ matchId: `r3-${round3Draw.length + 1}`, managerAId: shuffled[i], managerBId: shuffled[i + 1] });
-    }
+    round3Draw = drawRound("round3", "r3", round2Results.map((m) => m.winnerId));
   }
   const round3Results = round3Draw ? resolveRound(context, { gws: cupRoundGws.round3 }, round3Draw, seedByManager) : null;
 
@@ -157,7 +165,8 @@ export function computeCup(context, cupRoundGws, previous, seeding = null) {
   const champion = round4Results ? round4Results[0].winnerId : null;
 
   return {
-    status: champion ? "complete" : "in_progress",
+    status: champion ? "complete" : awaitingRound ? "awaiting_draw" : "in_progress",
+    awaitingRound,
     seeds,
     seedingSnapshotGw,
     seedingBasis: previous?.seedingBasis ?? (seeding?.priorOrder?.length ? { type: "last-season", label: seeding.label ?? null } : { type: "league-table", gw: seedingSnapshotGw }),

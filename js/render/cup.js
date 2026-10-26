@@ -168,6 +168,7 @@ function newsItems(cup, managers) {
       for (const p of round.draw) items.push(`<b>${ROUND_LABELS[key]} · ${gw}</b> ${clubName(managers, p.managerAId)} v ${clubName(managers, p.managerBId)}`);
     }
   }
+  if (cup.status === "awaiting_draw" && !items.length) return [`<b>${ROUND_LABELS[cup.awaitingRound ?? "round1"]}</b> draw coming soon — the league is doing it live`];
   return items.length ? items : [`<b>${ROUND_LABELS.round1}</b> draw to be made`];
 }
 
@@ -368,6 +369,7 @@ export function render(container, data, managers) {
         <h1 class="cup-title cup-title-only">The Grassroots Cup</h1>
       </div>
       ${championBanner}
+      ${cup.status === "awaiting_draw" ? `<div class="cup-awaiting"><b>${ROUND_LABELS[cup.awaitingRound] ?? "The"} draw is coming up</b><span>The league is doing it live — the fixtures appear here as soon as they're in.</span></div>` : ""}
 
       ${stageHtml()}
       <div class="cup-trophy-shadow"></div>

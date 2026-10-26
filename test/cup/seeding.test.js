@@ -45,3 +45,31 @@ test("without a prior table it falls back to the current league table, and an ex
   assert.deepEqual(again.seeds, first.seeds);
   assert.deepEqual(again.rounds.round1.draw, first.rounds.round1.draw);
 });
+
+test("a round on hold is not drawn: the cup seeds, waits, and later accepts a supplied draw", () => {
+  const seeding = { priorOrder, label: "25/26" };
+  const held = computeCup(context, rounds, null, seeding, { hold: ["round1"] });
+  assert.equal(held.status, "awaiting_draw");
+  assert.equal(held.awaitingRound, "round1");
+  assert.equal(held.rounds.round1.draw, null);
+  assert.equal(held.seeds.length, 12);
+
+  const ids = ["mitch", "ibrahim", "noah", "david", "ostap", "pat", "carmine", "zac"].map(idOf);
+  const manual = [[ids[0], ids[7]], [ids[1], ids[6]], [ids[2], ids[5]], [ids[3], ids[4]]];
+  const drawn = computeCup(context, rounds, held, seeding, { hold: ["round1"], manual: { round1: manual } });
+  assert.equal(drawn.status, "in_progress");
+  assert.deepEqual(drawn.rounds.round1.draw.map((p) => [p.managerAId, p.managerBId]), manual);
+  assert.ok(drawn.rounds.round1.draw.every((p) => p.method === "manual"));
+
+  // it is then locked in: changing the supplied draw later never redraws
+  const again = computeCup(context, rounds, drawn, seeding, { hold: ["round1"], manual: { round1: [[ids[7], ids[0]]] } });
+  assert.deepEqual(again.rounds.round1.draw, drawn.rounds.round1.draw);
+});
+
+test("a supplied draw that doesn't match the eligible managers is ignored (cup stays on hold, build doesn't break)", () => {
+  const seeding = { priorOrder, label: "25/26" };
+  const bad = [[idOf("lu"), idOf("muk")]]; // byes and wrong size
+  const result = computeCup(context, rounds, null, seeding, { hold: ["round1"], manual: { round1: bad } });
+  assert.equal(result.status, "awaiting_draw");
+  assert.equal(result.rounds.round1.draw, null);
+});

@@ -1,0 +1,5 @@
+{
+  "_comment": "Cup draws done by hand (e.g. live in the chat). A round listed in `hold` is NOT drawn automatically: the Cup waits until its fixtures appear under `manual`. Give each pairing as two personKeys (home first), e.g. \"round1\": [[\"carmine\", \"zac\"], [\"ostap\", \"pat\"], ...]. Once a round has been drawn it is saved in cup.json and never redrawn.",
+  "hold": ["round1", "round2", "round3"],
+  "manual": {}
+}

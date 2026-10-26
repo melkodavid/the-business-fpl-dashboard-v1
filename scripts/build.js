@@ -122,7 +122,14 @@ async function main() {
   // season in history-seasons.json that has one), not the current standings.
   const priorSeason = [...readJson(join(ROOT, "data", "history-seasons.json")).seasons].reverse().find((s) => s.table?.length && !s.isCurrent);
   const cupSeeding = MOCK || !priorSeason ? null : { priorOrder: priorSeason.table.map((row) => row.managerKey), label: priorSeason.year };
-  const cup = { ...computeCup(context, config.CUP_ROUND_GWS, previousCup, cupSeeding), _mock: MOCK };
+  // Hand-run draws (see data/cup-draw.json): rounds on hold wait for supplied fixtures.
+  const drawFile = existsSync(join(DATA_DIR, "cup-draw.json")) ? readJson(join(DATA_DIR, "cup-draw.json")) : {};
+  const idByPerson = new Map(context.managers.list.map((m) => [m.personKey, m.id]));
+  const manualDraws = Object.fromEntries(
+    Object.entries(drawFile.manual ?? {}).map(([round, pairs]) => [round, pairs.map((pair) => pair.map((key) => idByPerson.get(String(key).toLowerCase())))]),
+  );
+  const cupDrawControl = MOCK ? {} : { hold: drawFile.hold ?? [], manual: manualDraws };
+  const cup = { ...computeCup(context, config.CUP_ROUND_GWS, previousCup, cupSeeding, cupDrawControl), _mock: MOCK };
 
   const profilesData = readJson(join(ROOT, "data", "manager-profiles.json"));
   const profileByKey = new Map(profilesData.profiles.map((p) => [p.personKey, p]));
