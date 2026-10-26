@@ -3,7 +3,7 @@
   "profiles": [
     { "personKey": "lu", "displayName": "Lu Palladino", "color": "#2f6fed", "abbreviation": "LUC" },
     { "personKey": "ibrahim", "displayName": "Ibrahim Abdulnour", "color": "#e0393f", "abbreviation": "IBR" },
-    { "personKey": "marshall", "displayName": "Marshall Curtin-Dudzic", "color": "#1fa15c", "abbreviation": "MAR" },
+    { "personKey": "marshall", "displayName": "Marshall Curtin-Dudzic", "color": "#1fa15c", "abbreviation": "MAR", "badge": "assets/badges/marshall.webp" },
     { "personKey": "david", "displayName": "David Melko", "color": "#f0a623", "abbreviation": "DAV" },
     { "personKey": "noah", "displayName": "Noah Palladino", "color": "#9b51e0", "abbreviation": "NOA" },
     { "personKey": "muk", "displayName": "Muk P", "color": "#17b8c4", "abbreviation": "MUK" },
