@@ -166,26 +166,7 @@
       ],
       "draw": null,
       "results": null,
-      "planned": [
-        {
-          "matchId": "r3-1",
-          "a": {
-            "winnerOf": "r2-1"
-          },
-          "b": {
-            "winnerOf": "r2-2"
-          }
-        },
-        {
-          "matchId": "r3-2",
-          "a": {
-            "winnerOf": "r2-3"
-          },
-          "b": {
-            "winnerOf": "r2-4"
-          }
-        }
-      ]
+      "planned": null
     },
     "round4": {
       "gws": [

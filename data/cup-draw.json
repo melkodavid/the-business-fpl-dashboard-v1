@@ -49,24 +49,6 @@
           "winnerOf": "r1-4"
         }
       ]
-    ],
-    "round3": [
-      [
-        {
-          "winnerOf": "r2-1"
-        },
-        {
-          "winnerOf": "r2-2"
-        }
-      ],
-      [
-        {
-          "winnerOf": "r2-3"
-        },
-        {
-          "winnerOf": "r2-4"
-        }
-      ]
     ]
   }
 }
