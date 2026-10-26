@@ -73,3 +73,34 @@ test("a supplied draw that doesn't match the eligible managers is ignored (cup s
   assert.equal(result.status, "awaiting_draw");
   assert.equal(result.rounds.round1.draw, null);
 });
+
+test("a fixed bracket (winnerOf slots) fills itself in as rounds finish", () => {
+  const seeding = { priorOrder, label: "25/26" };
+  const id = idOf;
+  // R1: zac v ostap, carmine v noah, mitch v david, ibrahim v pat -- every R1 match is won by its first-named side
+  const r1 = [["zac", "ostap"], ["carmine", "noah"], ["mitch", "david"], ["ibrahim", "pat"]].map(([a, b]) => [id(a), id(b)]);
+  const spec = {
+    round1: r1,
+    round2: [["lu", { winnerOf: "r1-1" }], ["muk", { winnerOf: "r1-2" }], ["anthony", { winnerOf: "r1-3" }], ["marshall", { winnerOf: "r1-4" }]].map(([a, b]) => [id(a), b]),
+    round3: [[{ winnerOf: "r2-1" }, { winnerOf: "r2-2" }], [{ winnerOf: "r2-3" }, { winnerOf: "r2-4" }]],
+  };
+  const control = { hold: ["round1", "round2", "round3"], manual: spec };
+
+  // nothing played yet: R1 drawn, R2 and R3 only "planned"
+  const early = computeCup(context, rounds, null, seeding, control);
+  assert.equal(early.rounds.round1.draw.length, 4);
+  assert.equal(early.rounds.round2.draw, null);
+  assert.deepEqual(early.rounds.round2.planned[0], { matchId: "r2-1", a: { managerId: id("lu") }, b: { winnerOf: "r1-1" } });
+  assert.equal(early.rounds.round3.planned.length, 2);
+
+  // round 1 played (GW9): first-named sides win
+  const played = {
+    ...context,
+    finishedGws: [8, 9],
+    matches: [...context.matches, ...r1.map(([a, b]) => ({ event: 9, homeManagerId: a, awayManagerId: b, homePoints: 70, awayPoints: 50, finished: true }))],
+    gwPicks: { 9: Object.fromEntries(r1.flatMap(([a, b]) => [[a, { totalPoints: 70 }], [b, { totalPoints: 50 }]])) },
+  };
+  const mid = computeCup(played, rounds, early, seeding, control);
+  assert.deepEqual(mid.rounds.round2.draw.map((p) => [p.managerAId, p.managerBId]), [[id("lu"), id("zac")], [id("muk"), id("carmine")], [id("anthony"), id("mitch")], [id("marshall"), id("ibrahim")]]);
+  assert.equal(mid.status, "in_progress");
+});

@@ -1,5 +1,5 @@
 {
-  "_comment": "Cup draws done by hand (e.g. live in the chat). A round listed in `hold` is NOT drawn automatically: the Cup waits until its fixtures appear under `manual`. Give each pairing as two personKeys (home first), e.g. \"round1\": [[\"carmine\", \"zac\"], [\"ostap\", \"pat\"], ...]. Once a round has been drawn it is saved in cup.json and never redrawn.",
+  "_comment": "Cup draws done by hand (e.g. live in the chat). A round listed in `hold` is NOT drawn automatically: the Cup waits until its fixtures appear under `manual`. Give each pairing as two slots (home first): a personKey, or {\"winnerOf\": \"r1-2\"} for the winner of an earlier match (match ids are r1-N, r2-N, r3-N in the order listed), so a fixed bracket can be entered once and fills itself in as results arrive. Once a round has been drawn it is saved in cup.json and never redrawn.",
   "hold": [
     "round1",
     "round2",
@@ -22,6 +22,50 @@
       [
         "ibrahim",
         "pat"
+      ]
+    ],
+    "round2": [
+      [
+        "anthony",
+        {
+          "winnerOf": "r1-1"
+        }
+      ],
+      [
+        "lu",
+        {
+          "winnerOf": "r1-2"
+        }
+      ],
+      [
+        "marshall",
+        {
+          "winnerOf": "r1-3"
+        }
+      ],
+      [
+        "muk",
+        {
+          "winnerOf": "r1-4"
+        }
+      ]
+    ],
+    "round3": [
+      [
+        {
+          "winnerOf": "r2-1"
+        },
+        {
+          "winnerOf": "r2-2"
+        }
+      ],
+      [
+        {
+          "winnerOf": "r2-3"
+        },
+        {
+          "winnerOf": "r2-4"
+        }
       ]
     ]
   }

@@ -65,7 +65,22 @@ function futureMatchHtml(_, idx) {
     </div>`;
 }
 
-function roundColumnHtml(key, round, managers, colIndex) {
+// A bracket slot that is "the winner of an earlier match" -- named by the two sides while they're known.
+const MATCH_OFFSET = { r1: 0, r2: 4, r3: 8 };
+function winnerLabel(matchId, cup, managers) {
+  const [prefix, n] = matchId.split("-");
+  const pairing = ["round1", "round2", "round3"].map((k) => cup.rounds[k].draw).filter(Boolean).flat().find((p) => p.matchId === matchId);
+  if (pairing) return `Winner: ${managers.abbreviation(pairing.managerAId)} / ${managers.abbreviation(pairing.managerBId)}`;
+  return `Winner of M${(MATCH_OFFSET[prefix] ?? 0) + Number(n)}`;
+}
+function plannedMatchHtml(p, cup, managers, idx) {
+  const side = (slot) => (slot.managerId !== undefined
+    ? `<div class="cup-bracket-side" data-mgr="${slot.managerId}">${nameHtml(slot.managerId, managers)}<span class="cup-score">–</span></div>`
+    : `<div class="cup-bracket-side tbd"><span class="cup-name">${winnerLabel(slot.winnerOf, cup, managers)}</span><span class="cup-score">—</span></div>`);
+  return `<div class="cup-bracket-match cup-rv" style="--i:${idx}">${side(p.a)}${side(p.b)}</div>`;
+}
+
+function roundColumnHtml(key, round, managers, colIndex, cup) {
   const isLive = Boolean(round.draw) && !round.results;
   const base = colIndex * 2;
   let matchesHtml;
@@ -73,6 +88,8 @@ function roundColumnHtml(key, round, managers, colIndex) {
     matchesHtml = round.results.map((m, i) => matchHtml(m, key, false, managers, base + i)).join("");
   } else if (round.draw) {
     matchesHtml = round.draw.map((p, i) => drawOnlyMatchHtml(p, managers, base + i)).join("");
+  } else if (round.planned) {
+    matchesHtml = round.planned.map((p, i) => plannedMatchHtml(p, cup, managers, base + i)).join("");
   } else {
     matchesHtml = Array.from({ length: FUTURE_MATCH_COUNT[key] }, (_, i) => futureMatchHtml(_, base + i)).join("");
   }
@@ -353,7 +370,7 @@ export function render(container, data, managers) {
       : "";
 
   const bracketHtml = ["round1", "round2", "round3", "round4"]
-    .map((key, i) => roundColumnHtml(key, cup.rounds[key], managers, i))
+    .map((key, i) => roundColumnHtml(key, cup.rounds[key], managers, i, cup))
     .join("");
 
   const seedsHtml = cup.seeds

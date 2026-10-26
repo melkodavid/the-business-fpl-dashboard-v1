@@ -119,7 +119,45 @@
         19
       ],
       "draw": null,
-      "results": null
+      "results": null,
+      "planned": [
+        {
+          "matchId": "r2-1",
+          "a": {
+            "managerId": 10375
+          },
+          "b": {
+            "winnerOf": "r1-1"
+          }
+        },
+        {
+          "matchId": "r2-2",
+          "a": {
+            "managerId": 1377
+          },
+          "b": {
+            "winnerOf": "r1-2"
+          }
+        },
+        {
+          "matchId": "r2-3",
+          "a": {
+            "managerId": 1471
+          },
+          "b": {
+            "winnerOf": "r1-3"
+          }
+        },
+        {
+          "matchId": "r2-4",
+          "a": {
+            "managerId": 1530
+          },
+          "b": {
+            "winnerOf": "r1-4"
+          }
+        }
+      ]
     },
     "round3": {
       "gws": [
@@ -127,7 +165,27 @@
         28
       ],
       "draw": null,
-      "results": null
+      "results": null,
+      "planned": [
+        {
+          "matchId": "r3-1",
+          "a": {
+            "winnerOf": "r2-1"
+          },
+          "b": {
+            "winnerOf": "r2-2"
+          }
+        },
+        {
+          "matchId": "r3-2",
+          "a": {
+            "winnerOf": "r2-3"
+          },
+          "b": {
+            "winnerOf": "r2-4"
+          }
+        }
+      ]
     },
     "round4": {
       "gws": [

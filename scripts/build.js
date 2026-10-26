@@ -126,7 +126,7 @@ async function main() {
   const drawFile = existsSync(join(DATA_DIR, "cup-draw.json")) ? readJson(join(DATA_DIR, "cup-draw.json")) : {};
   const idByPerson = new Map(context.managers.list.map((m) => [m.personKey, m.id]));
   const manualDraws = Object.fromEntries(
-    Object.entries(drawFile.manual ?? {}).map(([round, pairs]) => [round, pairs.map((pair) => pair.map((key) => idByPerson.get(String(key).toLowerCase())))]),
+    Object.entries(drawFile.manual ?? {}).map(([round, pairs]) => [round, pairs.map((pair) => pair.map((slot) => (slot !== null && typeof slot === "object" ? slot : idByPerson.get(String(slot).toLowerCase()))))]),
   );
   const cupDrawControl = MOCK ? {} : { hold: drawFile.hold ?? [], manual: manualDraws };
   const cup = { ...computeCup(context, config.CUP_ROUND_GWS, previousCup, cupSeeding, cupDrawControl), _mock: MOCK };

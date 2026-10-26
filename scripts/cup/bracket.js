@@ -96,7 +96,10 @@ function resolveRound(context, roundConfig, draw, seedByManager) {
  * @param previous the last-written data/cup.json, or null on the first run —
  *   any round already drawn there is carried forward as-is so a re-run never
  *   reshuffles an already-drawn round.
- * @param drawControl  optional { hold: roundKey[], manual: { roundKey: [[idA, idB], ...] } } --
+ * @param drawControl  optional { hold: roundKey[], manual: { roundKey: [[slot, slot], ...] } } --
+ *   a slot is a manager id, or { winnerOf: "r1-2" } for "the winner of that earlier match"
+ *   (match ids are r1-N / r2-N / r3-N in draw order), so a fixed bracket can be entered once
+ *   and fills itself in as results arrive.
  *   a round in `hold` is not drawn automatically (the cup waits, status "awaiting_draw")
  *   until its fixtures are supplied in `manual`, e.g. when the league does the draw live.
  *   A manual draw that doesn't match the eligible managers exactly is ignored (and the
@@ -120,14 +123,25 @@ export function computeCup(context, cupRoundGws, previous, seeding = null, drawC
   const fieldSeeds = seeds.filter((s) => s.seed > 4).map((s) => s.managerId);
 
   let awaitingRound = null;
+  const winnerOfMatch = new Map(); // matchId -> winner, filled in as rounds finish
+  const noteWinners = (results) => results?.forEach((m) => winnerOfMatch.set(m.matchId, m.winnerId));
+  const resolveSlot = (slot) => (slot !== null && typeof slot === "object" ? winnerOfMatch.get(slot.winnerOf) : slot);
   const asPairs = (prefix, ids) => {
     const pairs = [];
     for (let i = 0; i < ids.length; i += 2) pairs.push({ matchId: `${prefix}-${pairs.length + 1}`, managerAId: ids[i], managerBId: ids[i + 1] });
     return pairs;
   };
+  // what a supplied bracket already says about a round that can't be drawn yet
+  const plannedFor = (roundKey, prefix) =>
+    drawControl.manual?.[roundKey]?.map((pair, i) => ({
+      matchId: `${prefix}-${i + 1}`,
+      a: pair[0] !== null && typeof pair[0] === "object" ? pair[0] : { managerId: pair[0] },
+      b: pair[1] !== null && typeof pair[1] === "object" ? pair[1] : { managerId: pair[1] },
+    })) ?? null;
   // previous draw -> a supplied (manual) draw -> hold -> random draw
   const drawRound = (roundKey, prefix, entrants) => {
-    const manual = drawControl.manual?.[roundKey];
+    const spec = drawControl.manual?.[roundKey];
+    const manual = spec?.map((pair) => pair.map(resolveSlot));
     if (manual) {
       const flat = manual.flat();
       const valid = manual.every((p) => p.length === 2) && flat.length === entrants.length && new Set(flat).size === flat.length && flat.every((id) => entrants.includes(id));
@@ -142,12 +156,14 @@ export function computeCup(context, cupRoundGws, previous, seeding = null, drawC
 
   const round1Draw = previous?.rounds?.round1?.draw ?? drawRound("round1", "r1", fieldSeeds);
   const round1Results = round1Draw ? resolveRound(context, { gws: cupRoundGws.round1 }, round1Draw, seedByManager) : null;
+  noteWinners(round1Results);
 
   let round2Draw = previous?.rounds?.round2?.draw ?? null;
   if (!round2Draw && round1Results) {
     round2Draw = drawRound("round2", "r2", [...byeSeeds, ...round1Results.map((m) => m.winnerId)]);
   }
   const round2Results = round2Draw ? resolveRound(context, { gws: cupRoundGws.round2 }, round2Draw, seedByManager) : null;
+  noteWinners(round2Results);
 
   let round3Draw = previous?.rounds?.round3?.draw ?? null;
   if (!round3Draw && round2Results) {
@@ -172,8 +188,8 @@ export function computeCup(context, cupRoundGws, previous, seeding = null, drawC
     seedingBasis: previous?.seedingBasis ?? (seeding?.priorOrder?.length ? { type: "last-season", label: seeding.label ?? null } : { type: "league-table", gw: seedingSnapshotGw }),
     rounds: {
       round1: { gws: cupRoundGws.round1, draw: round1Draw, results: round1Results },
-      round2: { gws: cupRoundGws.round2, draw: round2Draw, results: round2Results },
-      round3: { gws: cupRoundGws.round3, draw: round3Draw, results: round3Results },
+      round2: { gws: cupRoundGws.round2, draw: round2Draw, results: round2Results, planned: round2Draw ? null : plannedFor("round2", "r2") },
+      round3: { gws: cupRoundGws.round3, draw: round3Draw, results: round3Results, planned: round3Draw ? null : plannedFor("round3", "r3") },
       round4: { gws: cupRoundGws.round4, draw: round4Draw, results: round4Results },
     },
     champion,
