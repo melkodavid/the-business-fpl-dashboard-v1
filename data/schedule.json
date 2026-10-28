@@ -59,10 +59,10 @@
       "importance": 2.56,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 39,
+        "homeWinPct": 37,
         "drawPct": 3,
-        "awayWinPct": 58,
-        "homeExpected": 42.2,
+        "awayWinPct": 60,
+        "homeExpected": 41.3,
         "awayExpected": 45.3,
         "homeSoFar": null,
         "awaySoFar": null
@@ -794,7 +794,7 @@
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 42.2,
+      "expected": 41.3,
       "captainId": 411,
       "locked": false,
       "xi": [
@@ -820,7 +820,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Chelsea",
-          "ep": 3.7
+          "ep": 2.8
         },
         {
           "id": 387,
