@@ -15,11 +15,11 @@
       "importance": 3.58,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 42,
+        "homeWinPct": 44,
         "drawPct": 3,
-        "awayWinPct": 55,
+        "awayWinPct": 53,
         "homeExpected": 39.1,
-        "awayExpected": 41.4,
+        "awayExpected": 40.6,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -37,10 +37,10 @@
       "importance": 2.56,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 60,
+        "homeWinPct": 55,
         "drawPct": 3,
-        "awayWinPct": 37,
-        "homeExpected": 51.1,
+        "awayWinPct": 42,
+        "homeExpected": 49.5,
         "awayExpected": 47.3,
         "homeSoFar": null,
         "awaySoFar": null
@@ -1444,7 +1444,7 @@
     },
     "29975": {
       "formation": "5-4-1",
-      "expected": 41.4,
+      "expected": 40.6,
       "captainId": 400,
       "locked": false,
       "xi": [
@@ -1505,20 +1505,20 @@
           "ep": 6.7
         },
         {
-          "id": 16,
-          "name": "Madueke",
-          "pos": "MID",
-          "type": 3,
-          "team": "Arsenal",
-          "ep": 3.3
-        },
-        {
           "id": 268,
           "name": "King",
           "pos": "MID",
           "type": 3,
           "team": "Fulham",
           "ep": 3.3
+        },
+        {
+          "id": 16,
+          "name": "Madueke",
+          "pos": "MID",
+          "type": 3,
+          "team": "Arsenal",
+          "ep": 2.5
         },
         {
           "id": 123,
@@ -1574,7 +1574,7 @@
     },
     "99786": {
       "formation": "4-4-2",
-      "expected": 51.1,
+      "expected": 49.5,
       "captainId": 115,
       "locked": false,
       "xi": [
@@ -1619,20 +1619,20 @@
           "ep": 3.7
         },
         {
-          "id": 13,
-          "name": "Rice",
-          "pos": "MID",
-          "type": 3,
-          "team": "Arsenal",
-          "ep": 6.3
-        },
-        {
           "id": 427,
           "name": "Mbeumo",
           "pos": "MID",
           "type": 3,
           "team": "Man Utd",
           "ep": 6
+        },
+        {
+          "id": 13,
+          "name": "Rice",
+          "pos": "MID",
+          "type": 3,
+          "team": "Arsenal",
+          "ep": 4.7
         },
         {
           "id": 453,
