@@ -59,10 +59,10 @@
       "importance": 2.56,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 34,
+        "homeWinPct": 32,
         "drawPct": 3,
-        "awayWinPct": 63,
-        "homeExpected": 41.3,
+        "awayWinPct": 65,
+        "homeExpected": 40.7,
         "awayExpected": 46.3,
         "homeSoFar": null,
         "awaySoFar": null
@@ -794,7 +794,7 @@
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 41.3,
+      "expected": 40.7,
       "captainId": 411,
       "locked": false,
       "xi": [
@@ -836,7 +836,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Coventry City",
-          "ep": 2
+          "ep": 1.4
         },
         {
           "id": 366,
