@@ -81,10 +81,10 @@
       "importance": 2.32,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 19,
+        "homeWinPct": 17,
         "drawPct": 2,
-        "awayWinPct": 79,
-        "homeExpected": 30.3,
+        "awayWinPct": 81,
+        "homeExpected": 29.7,
         "awayExpected": 41.9,
         "homeSoFar": null,
         "awaySoFar": null
@@ -664,7 +664,7 @@
     },
     "1530": {
       "formation": "4-4-2",
-      "expected": 30.3,
+      "expected": 29.7,
       "captainId": 127,
       "locked": false,
       "xi": [
@@ -698,7 +698,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Sunderland",
-          "ep": 2.3
+          "ep": 1.7
         },
         {
           "id": 637,
@@ -1170,7 +1170,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Everton",
-          "ep": 0.2
+          "ep": 0.3
         },
         {
           "id": 208,
