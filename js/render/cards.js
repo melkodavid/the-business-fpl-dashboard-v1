@@ -63,13 +63,25 @@ function attachTilt(root) {
 // once (and again if a card later climbs to the next tier).
 const UNLOCK_KEY = "tbc-tier-unlocks";
 const UNLOCK_COLOUR = { celestial: "#a8f0ff", immortal: "#ff9a2a" };
+// Each tier arrives differently: Celestial through a black hole in deep space,
+// Immortal erupting out of a firestorm (animations live in style.css).
+const UNLOCK_FX = {
+  celestial: `<i class="ux-vortex"></i><i class="ux-warp"></i><i class="ux-flash"></i><i class="ux-burst"></i><i class="tcg-shock"></i>`,
+  immortal: `<i class="ux-heat"></i><i class="ux-fire"></i><i class="ux-fire two"></i><i class="ux-embers"></i><i class="ux-embers two"></i><i class="tcg-shock"></i>`,
+};
 
 function readSeenUnlocks() {
   try { return new Set(JSON.parse(localStorage.getItem(UNLOCK_KEY) ?? "[]")); } catch { return new Set(); }
 }
 
+// Turbulence filter that turns the Immortal flame columns into ragged, licking fire.
+const FLAME_FILTER = `<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="ux-flame" x="-20%" y="-30%" width="140%" height="160%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.018 0.06" numOctaves="2" seed="3" result="n"><animate attributeName="baseFrequency" dur="1.3s" values="0.018 0.06;0.024 0.095;0.018 0.06" repeatCount="indefinite"/></feTurbulence>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="80" xChannelSelector="R" yChannelSelector="G"/></filter></svg>`;
+
 function playTierUnlocks(root) {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+  if (!document.getElementById("ux-flame")) document.body.insertAdjacentHTML("beforeend", FLAME_FILTER);
   const seen = readSeenUnlocks();
   const observer = new IntersectionObserver((entries) => {
     for (const entry of entries) {
@@ -81,12 +93,15 @@ function playTierUnlocks(root) {
       if (seen.has(id)) continue;
       seen.add(id);
       try { localStorage.setItem(UNLOCK_KEY, JSON.stringify([...seen])); } catch { /* private mode: it just plays again next visit */ }
-      const shock = document.createElement("i");
-      shock.className = "tcg-shock";
-      shock.style.setProperty("--sc", UNLOCK_COLOUR[card.dataset.rarity]);
-      slot.append(shock);
-      slot.classList.add("tcg-unlocking");
-      setTimeout(() => { slot.classList.remove("tcg-unlocking"); shock.remove(); }, 2400);
+      const tier = card.dataset.rarity;
+      const fx = document.createElement("div");
+      fx.className = "tcg-unlock-fx";
+      fx.setAttribute("aria-hidden", "true");
+      fx.style.setProperty("--sc", UNLOCK_COLOUR[tier]);
+      fx.innerHTML = UNLOCK_FX[tier];
+      slot.append(fx);
+      slot.classList.add("tcg-unlocking", `unlock-${tier}`);
+      setTimeout(() => { slot.classList.remove("tcg-unlocking", `unlock-${tier}`); fx.remove(); }, 3400);
     }
   }, { threshold: 0.6 });
   root.querySelectorAll('.tcg[data-rarity="celestial"], .tcg[data-rarity="immortal"]').forEach((card) => observer.observe(card.closest(".career-card-slot")));
