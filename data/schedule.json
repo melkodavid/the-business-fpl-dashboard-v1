@@ -37,11 +37,11 @@
       "importance": 2.56,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 55,
+        "homeWinPct": 58,
         "drawPct": 3,
-        "awayWinPct": 42,
+        "awayWinPct": 39,
         "homeExpected": 49.5,
-        "awayExpected": 47.3,
+        "awayExpected": 46.1,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -144,7 +144,7 @@
   "lineups": {
     "1377": {
       "formation": "4-4-2",
-      "expected": 47.3,
+      "expected": 46.1,
       "captainId": 31,
       "locked": false,
       "xi": [
@@ -178,7 +178,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Fulham",
-          "ep": 5
+          "ep": 3.8
         },
         {
           "id": 358,
