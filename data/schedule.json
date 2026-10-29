@@ -59,11 +59,11 @@
       "importance": 2.56,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 37,
+        "homeWinPct": 34,
         "drawPct": 3,
-        "awayWinPct": 60,
+        "awayWinPct": 63,
         "homeExpected": 41.3,
-        "awayExpected": 45.3,
+        "awayExpected": 46.3,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -106,7 +106,7 @@
         "homeWinPct": 33,
         "drawPct": 3,
         "awayWinPct": 64,
-        "homeExpected": 40.9,
+        "homeExpected": 41.1,
         "awayExpected": 46.4,
         "homeSoFar": null,
         "awaySoFar": null
@@ -125,10 +125,10 @@
       "importance": 1.23,
       "tag": "Six-Pointer",
       "odds": {
-        "homeWinPct": 24,
+        "homeWinPct": 22,
         "drawPct": 2,
-        "awayWinPct": 74,
-        "homeExpected": 37.4,
+        "awayWinPct": 76,
+        "homeExpected": 36.5,
         "awayExpected": 46.4,
         "homeSoFar": null,
         "awaySoFar": null
@@ -404,7 +404,7 @@
     },
     "1471": {
       "formation": "4-5-1",
-      "expected": 40.9,
+      "expected": 41.1,
       "captainId": 60,
       "locked": false,
       "xi": [
@@ -446,7 +446,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Leeds",
-          "ep": 0.8
+          "ep": 1
         },
         {
           "id": 40,
@@ -534,7 +534,7 @@
     },
     "1501": {
       "formation": "4-4-2",
-      "expected": 37.4,
+      "expected": 36.5,
       "captainId": 79,
       "locked": false,
       "xi": [
@@ -595,20 +595,20 @@
           "ep": 4
         },
         {
-          "id": 335,
-          "name": "Stach",
-          "pos": "MID",
-          "type": 3,
-          "team": "Leeds",
-          "ep": 1.7
-        },
-        {
           "id": 480,
           "name": "Gibbs-White",
           "pos": "MID",
           "type": 3,
           "team": "Nott'm Forest",
           "ep": 1.3
+        },
+        {
+          "id": 335,
+          "name": "Stach",
+          "pos": "MID",
+          "type": 3,
+          "team": "Leeds",
+          "ep": 0.8
         },
         {
           "id": 79,
@@ -924,7 +924,7 @@
     },
     "1947": {
       "formation": "3-5-2",
-      "expected": 45.3,
+      "expected": 46.3,
       "captainId": 236,
       "locked": false,
       "xi": [
@@ -958,7 +958,7 @@
           "pos": "DEF",
           "type": 2,
           "team": "Nott'm Forest",
-          "ep": 3
+          "ep": 4
         },
         {
           "id": 236,
@@ -1178,7 +1178,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Crystal Palace",
-          "ep": 0.2
+          "ep": 0
         }
       ]
     },
