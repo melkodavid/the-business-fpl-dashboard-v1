@@ -58,6 +58,40 @@ function attachTilt(root) {
   });
 }
 
+// The first time a Celestial or Immortal card scrolls into view on this device,
+// it spins in with a shockwave. Remembered per card+tier so it only ever plays
+// once (and again if a card later climbs to the next tier).
+const UNLOCK_KEY = "tbc-tier-unlocks";
+const UNLOCK_COLOUR = { celestial: "#a8f0ff", immortal: "#ff9a2a" };
+
+function readSeenUnlocks() {
+  try { return new Set(JSON.parse(localStorage.getItem(UNLOCK_KEY) ?? "[]")); } catch { return new Set(); }
+}
+
+function playTierUnlocks(root) {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+  const seen = readSeenUnlocks();
+  const observer = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      const slot = entry.target;
+      const card = slot.querySelector(".tcg");
+      const id = `${card.dataset.managerKey}:${card.dataset.rarity}`;
+      observer.unobserve(slot);
+      if (seen.has(id)) continue;
+      seen.add(id);
+      try { localStorage.setItem(UNLOCK_KEY, JSON.stringify([...seen])); } catch { /* private mode: it just plays again next visit */ }
+      const shock = document.createElement("i");
+      shock.className = "tcg-shock";
+      shock.style.setProperty("--sc", UNLOCK_COLOUR[card.dataset.rarity]);
+      slot.append(shock);
+      slot.classList.add("tcg-unlocking");
+      setTimeout(() => { slot.classList.remove("tcg-unlocking"); shock.remove(); }, 2400);
+    }
+  }, { threshold: 0.6 });
+  root.querySelectorAll('.tcg[data-rarity="celestial"], .tcg[data-rarity="immortal"]').forEach((card) => observer.observe(card.closest(".career-card-slot")));
+}
+
 function careerCardHtml(card, managers, seasonsByManager, cardOpts) {
   const binderCards = seasonsByManager.get(card.managerKey) ?? [];
   return `
@@ -162,6 +196,7 @@ export function render(container, data, managers) {
 
   ctaBox.querySelector("#cards-identity-cta-btn").addEventListener("click", openIdentityPanel);
   attachTilt(root);
+  playTierUnlocks(root);
 
   function jumpToMyBinder() {
     const me = getIdentity();

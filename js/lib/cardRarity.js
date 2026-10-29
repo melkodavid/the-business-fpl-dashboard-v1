@@ -9,6 +9,8 @@ export const TITLE_PRESTIGE = 100;
 
 // Highest first. `min` is the prestige needed to reach the tier.
 export const RARITIES = [
+  { id: "immortal", label: "Immortal", min: 1000, blurb: "Cannot be put out" },
+  { id: "celestial", label: "Celestial", min: 750, blurb: "Written in the stars" },
   { id: "mythic", label: "Mythic", min: 500, blurb: "Hall of Fame" },
   { id: "legendary", label: "Legendary", min: 300, blurb: "A league legend" },
   { id: "epic", label: "Epic", min: 200, blurb: "Proven winner" },

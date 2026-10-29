@@ -83,7 +83,15 @@ function decorationsFor(person) {
 
 // Special ribbon text for the top tiers -- the "eccentric" part: the more
 // you win, the more the card shouts about it.
-const RIBBON = { mythic: "Hall of Fame", legendary: "Legend" };
+const RIBBON = { immortal: "Immortal", celestial: "Beyond The Stars", mythic: "Hall of Fame", legendary: "Legend" };
+
+// The two tiers above Mythic carry a layer of animated scenery behind and
+// over the portrait (see "Beyond Mythic" in style.css).
+const TIER_FX = {
+  celestial: `<i class="tcg-fx-stars"></i><i class="tcg-fx-stars two"></i><i class="tcg-fx-shoot"></i><i class="tcg-fx-orbit over"></i><i class="tcg-fx-orbit two over"></i>`,
+  immortal: `<i class="tcg-fx-ember"></i><i class="tcg-fx-ember two"></i><i class="tcg-fx-flames"></i><i class="tcg-fx-flames two"></i>`,
+};
+const tierFxHtml = (id) => (TIER_FX[id] ? `<div class="tcg-fx" aria-hidden="true">${TIER_FX[id]}</div>` : "");
 
 // ---------------------------------------------------------------------------
 // Career card -- the headline trading card on the Cards tab.
@@ -108,6 +116,7 @@ export function careerCardFrontHtml(card, managers, { isReigningChampion = false
       ${flag}
       ${showCrown ? `<span class="tcg-crown" aria-hidden="true">👑</span>` : ""}
       <div class="tcg-face">
+        ${tierFxHtml(rarity.id)}
         <div class="tcg-foil"></div>
         <div class="tcg-stars"></div>
         <div class="tcg-glare"></div>

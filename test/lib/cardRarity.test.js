@@ -18,6 +18,17 @@ test("rarity climbs with prestige, and each boundary lands in the tier it names"
   assert.equal(rarityFor({ titles: 4, w: 185 }).id, "mythic");
 });
 
+test("beyond Mythic: Celestial from 750 prestige, Immortal from 1,000", () => {
+  assert.equal(rarityFor({ titles: 7, w: 49 }).id, "mythic");
+  assert.equal(rarityFor({ titles: 7, w: 50 }).id, "celestial");
+  assert.equal(rarityFor({ titles: 9, w: 99 }).id, "celestial");
+  assert.equal(rarityFor({ titles: 10, w: 0 }).id, "immortal");
+  const top = rarityFor({ titles: 12, w: 300 });
+  assert.equal(top.id, "immortal");
+  assert.equal(top.next, null);
+  assert.equal(rarityFor({ titles: 4, w: 187 }).next.label, "Celestial"); // Lucas today: 587
+});
+
 test("a win never lowers rarity: more wins is always the same tier or higher", () => {
   const order = RARITIES.map((r) => r.id).reverse(); // lowest first
   let previous = 0;
@@ -35,7 +46,7 @@ test("progress and next-tier distance describe the climb to the next rarity", ()
   assert.equal(r.next.needed, 50);
   assert.ok(r.progress > 0 && r.progress < 1);
 
-  const top = rarityFor({ titles: 6, w: 300 });
+  const top = rarityFor({ titles: 12, w: 300 });
   assert.equal(top.next, null);
   assert.equal(top.progress, 1);
 });

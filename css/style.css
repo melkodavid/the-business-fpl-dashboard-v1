@@ -2664,3 +2664,91 @@ tr.sw-flip td { background: rgba(236,217,163,0.07); }
 .cup-theme .cup-awaiting { display: grid; gap: 0.2rem; max-width: 560px; margin: 0.8rem auto 0; padding: 0.8rem 1.2rem; text-align: center; border-radius: 10px; border: 1px solid rgba(236,217,163,0.5); background: rgba(0,0,0,0.25); }
 .cup-theme .cup-awaiting b { font: 800 0.78rem "Archivo", sans-serif; letter-spacing: 0.2em; text-transform: uppercase; color: #ecd9a3; }
 .cup-theme .cup-awaiting span { font-size: 0.85rem; color: rgba(255,255,255,0.75); }
+
+/* =========================================================================
+   Beyond Mythic -- Celestial (750 prestige) and Immortal (1,000 prestige).
+   Cards, Home tiles, the rarity guide strip and the first-view unlock moment.
+   ========================================================================= */
+.rarity-celestial, .hm-r-celestial { --rc: #a8f0ff; --rc2: #2c1d9c; }
+.rarity-immortal, .hm-r-immortal { --rc: #ffae4a; --rc2: #7a0d00; }
+
+.tcg-fx { position: absolute; inset: 0; overflow: hidden; pointer-events: none; border-radius: inherit; }
+.tcg-fx i { position: absolute; display: block; }
+.tcg-fx .over { z-index: 3; }
+.rarity-celestial .tcg-top, .rarity-celestial .tcg-art, .rarity-celestial .tcg-type, .rarity-celestial .tcg-stats, .rarity-celestial .tcg-climb, .rarity-celestial .tcg-foot,
+.rarity-immortal .tcg-top, .rarity-immortal .tcg-art, .rarity-immortal .tcg-type, .rarity-immortal .tcg-stats, .rarity-immortal .tcg-climb, .rarity-immortal .tcg-foot { position: relative; z-index: 2; }
+.rarity-celestial .tcg-ribbon, .rarity-immortal .tcg-ribbon { letter-spacing: 0.3em; }
+
+/* ---- CELESTIAL: a living galaxy, planets orbiting the portrait ---- */
+.tcg.rarity-celestial { --glow: 90px; --foil: 0.55; --glare: 0.9; padding: 7px;
+  --frame: conic-gradient(from var(--spin), #38f2d0, #4c7bff, #b45cff, #ff63c9, #4c7bff, #38f2d0);
+  animation: tcg-spin 6s linear infinite, tcg-float 5s ease-in-out infinite; }
+.rarity-celestial:hover { --foil: 0.8; }
+.rarity-celestial .tcg-face { background:
+    radial-gradient(ellipse at 20% 15%, rgba(255,90,200,0.42), transparent 48%), radial-gradient(ellipse at 85% 30%, rgba(60,140,255,0.42), transparent 50%),
+    radial-gradient(ellipse at 40% 90%, rgba(120,60,255,0.45), transparent 52%), radial-gradient(ellipse at 90% 95%, rgba(40,230,200,0.3), transparent 45%), #05061a; }
+.rarity-celestial .tcg-top { background: linear-gradient(100deg, #1b1f6e, #5b3bd9 50%, #1b1f6e); color: #e8fbff; box-shadow: inset 0 0 0 1px rgba(168,240,255,0.7), 0 0 16px rgba(110,120,255,0.6); animation: none; }
+.rarity-celestial .tcg-art { border-color: #a8f0ff; box-shadow: 0 0 18px rgba(120,200,255,0.6), inset 0 0 30px rgba(0,0,0,0.6); }
+.rarity-celestial .tcg-fx-stars { inset: 0; background-image: radial-gradient(circle, #fff 0 0.8px, transparent 1.6px), radial-gradient(circle, #cfe6ff 0 0.8px, transparent 1.6px), radial-gradient(circle, #ffd9f5 0 1px, transparent 2px);
+  background-size: 37px 41px, 53px 47px, 79px 83px; background-position: 4px 9px, 21px 30px, 12px 50px; animation: tcg-twinkle 2.2s ease-in-out infinite alternate; }
+.rarity-celestial .tcg-fx-stars.two { background-image: radial-gradient(circle, #fff 0 1px, transparent 2px), radial-gradient(circle, #9fd8ff 0 0.8px, transparent 1.8px);
+  background-size: 61px 57px, 43px 39px; background-position: 30px 12px, 8px 22px; animation-duration: 3.1s; animation-direction: alternate-reverse; }
+.rarity-celestial .tcg-fx-orbit { left: 50%; top: 37%; width: 96%; aspect-ratio: 1; border: 3px solid rgba(190,245,255,0.95); border-radius: 50%; translate: -50% -50%;
+  box-shadow: 0 0 16px 2px rgba(120,200,255,0.9), inset 0 0 16px rgba(120,200,255,0.6); animation: tcg-orbit 7s linear infinite; }
+.rarity-celestial .tcg-fx-orbit::after { content: ""; position: absolute; left: 50%; top: -11px; width: 20px; height: 20px; margin-left: -10px; border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #fff, #ffb86b 55%, #a2400c); box-shadow: 0 0 12px #ffb86b; }
+.rarity-celestial .tcg-fx-orbit.two { width: 118%; border-color: rgba(255,140,230,0.95); box-shadow: 0 0 16px 2px rgba(255,100,220,0.8), inset 0 0 16px rgba(255,100,220,0.5); animation: tcg-orbit2 11s linear infinite reverse; }
+.rarity-celestial .tcg-fx-orbit.two::after { background: radial-gradient(circle at 30% 30%, #fff, #79e8ff 55%, #1565a8); box-shadow: 0 0 12px #79e8ff; width: 15px; height: 15px; margin-left: -7px; top: -9px; }
+.rarity-celestial .tcg-fx-shoot { left: -20%; top: 12%; width: 45%; height: 2px; background: linear-gradient(90deg, transparent, #fff); rotate: 28deg; opacity: 0; animation: tcg-shoot 5s ease-in infinite 1s; filter: drop-shadow(0 0 4px #bfe9ff); }
+.rarity-celestial .tcg-gem { background: radial-gradient(circle at 32% 30%, #fff, #7fd7ff 40%, #3a2bd1 100%); border-radius: 50%; clip-path: none; position: relative; overflow: visible; box-shadow: 0 0 10px rgba(120,200,255,0.8); }
+.rarity-celestial .tcg-gem::after { content: ""; position: absolute; left: -45%; right: -45%; top: 38%; height: 24%; border: 1.5px solid #c9f3ff; border-radius: 50%; rotate: -18deg; }
+@keyframes tcg-orbit { from { transform: rotateX(72deg) rotate(0deg); } to { transform: rotateX(72deg) rotate(360deg); } }
+@keyframes tcg-orbit2 { from { transform: rotateX(72deg) rotateY(-24deg) rotate(0deg); } to { transform: rotateX(72deg) rotateY(-24deg) rotate(360deg); } }
+@keyframes tcg-shoot { 0% { transform: translateX(0); opacity: 0; } 4% { opacity: 1; } 22% { transform: translateX(340%); opacity: 0; } 100% { opacity: 0; transform: translateX(340%); } }
+
+/* ---- IMMORTAL: the card is on fire ---- */
+.tcg.rarity-immortal { --glow: 100px; --foil: 0.4; --glare: 0.9; padding: 7px;
+  --frame: conic-gradient(from var(--spin), #fff7c2, #ffcf3a, #ff7a14, #d11a00, #3a0500, #d11a00, #ff7a14, #ffcf3a, #fff7c2);
+  animation: tcg-spin 3.2s linear infinite, tcg-heat 2.4s ease-in-out infinite; }
+.rarity-immortal:hover { --foil: 0.6; }
+.rarity-immortal .tcg-face { background: radial-gradient(ellipse at 50% 112%, rgba(255,110,10,0.78), rgba(200,30,0,0.38) 34%, transparent 62%), radial-gradient(ellipse at 50% -10%, rgba(255,150,40,0.16), transparent 50%), #0d0504; }
+.rarity-immortal .tcg-top { background: linear-gradient(100deg, #fff2a8, #ffb53a 40%, #ff5a10 75%, #c21600); color: #1a0500; box-shadow: inset 0 1px 0 rgba(255,255,255,0.7), 0 0 18px rgba(255,120,20,0.75); animation: tcg-molten 2s ease-in-out infinite alternate; }
+.rarity-immortal .tcg-art { border-color: #ff9a2a; box-shadow: 0 0 22px rgba(255,100,10,0.7), inset 0 0 30px rgba(0,0,0,0.7); }
+.rarity-immortal .tcg-ribbon { color: #ffd27a; text-shadow: 0 0 10px #ff6a00; }
+.rarity-immortal .tcg-fx-flames { left: -10%; right: -10%; bottom: -8%; height: 46%; mix-blend-mode: screen; filter: blur(5px);
+  background: radial-gradient(ellipse 14% 100% at 8% 100%, #ff5a00, transparent), radial-gradient(ellipse 12% 85% at 24% 100%, #ffb000, transparent), radial-gradient(ellipse 15% 105% at 42% 100%, #ff3c00, transparent),
+              radial-gradient(ellipse 12% 80% at 58% 100%, #ffcc33, transparent), radial-gradient(ellipse 14% 100% at 76% 100%, #ff5a00, transparent), radial-gradient(ellipse 13% 90% at 93% 100%, #ffa000, transparent);
+  transform-origin: 50% 100%; animation: tcg-flicker 0.9s ease-in-out infinite alternate; }
+.rarity-immortal .tcg-fx-flames.two { height: 36%; opacity: 0.8; animation-duration: 1.3s; animation-direction: alternate-reverse; filter: blur(8px); }
+.rarity-immortal .tcg-fx-ember { inset: 0; background-image: radial-gradient(circle, #ffd27a 0 1.2px, transparent 2.6px), radial-gradient(circle, #ff8a2a 0 1px, transparent 2.4px); background-size: 47px 90px, 66px 130px; animation: tcg-rise 5s linear infinite; }
+.rarity-immortal .tcg-fx-ember.two { background-size: 83px 150px, 38px 70px; animation-duration: 8s; opacity: 0.8; }
+.rarity-immortal .tcg-gem { background: radial-gradient(circle at 50% 72%, #fff6c8 0 18%, #ffb42a 40%, #d92800 80%); border-radius: 0; clip-path: polygon(50% 0, 66% 22%, 80% 48%, 78% 76%, 62% 98%, 38% 98%, 22% 76%, 20% 48%, 36% 22%); animation: tcg-flicker 0.7s ease-in-out infinite alternate; }
+@keyframes tcg-heat { 0%, 100% { translate: 0 0; } 50% { translate: 0 -4px; } }
+@keyframes tcg-molten { from { filter: brightness(1); } to { filter: brightness(1.25) saturate(1.2); } }
+@keyframes tcg-flicker { 0% { transform: scaleY(0.88) skewX(-2deg); opacity: 0.85; } 50% { transform: scaleY(1.06) skewX(2deg); } 100% { transform: scaleY(0.96) skewX(-1deg); opacity: 1; } }
+@keyframes tcg-rise { from { background-position: 0 0, 10px 0; } to { background-position: 0 -300px, 10px -390px; } }
+
+/* ---- Home roster tiles ---- */
+.hm-tile.hm-r-celestial { background: conic-gradient(from var(--hm-spin), #38f2d0, #4c7bff, #b45cff, #ff63c9, #4c7bff, #38f2d0); padding: 2.5px; animation: hm-spin 6s linear infinite; box-shadow: 0 0 44px -6px rgba(120,120,255,0.85); }
+.hm-tile.hm-r-celestial .hm-tile-in { background: radial-gradient(ellipse at 15% 20%, rgba(255,90,200,0.3), transparent 55%), radial-gradient(ellipse at 92% 85%, rgba(60,140,255,0.32), transparent 55%), #05061a; }
+.hm-tile.hm-r-celestial .hm-tile-in::before { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  background-image: radial-gradient(circle, #fff 0 0.8px, transparent 1.6px), radial-gradient(circle, #cfe6ff 0 0.8px, transparent 1.6px); background-size: 29px 33px, 47px 41px; animation: tcg-twinkle 2.4s ease-in-out infinite alternate; }
+.hm-tile.hm-r-immortal { background: conic-gradient(from var(--hm-spin), #fff7c2, #ffcf3a, #ff7a14, #d11a00, #3a0500, #d11a00, #ff7a14, #ffcf3a, #fff7c2); padding: 2.5px; animation: hm-spin 3.2s linear infinite; box-shadow: 0 0 46px -4px rgba(255,100,10,0.9); }
+.hm-tile.hm-r-immortal .hm-tile-in { background: radial-gradient(ellipse at 50% 135%, rgba(255,110,10,0.75), transparent 65%), #0d0504; }
+.hm-tile.hm-r-immortal .hm-tile-in::before { content: ""; position: absolute; left: -5%; right: -5%; bottom: -10%; height: 70%; pointer-events: none; z-index: 0; mix-blend-mode: screen; filter: blur(4px); transform-origin: 50% 100%;
+  background: radial-gradient(ellipse 12% 100% at 10% 100%, #ff5a00, transparent), radial-gradient(ellipse 10% 80% at 30% 100%, #ffb000, transparent), radial-gradient(ellipse 12% 100% at 52% 100%, #ff3c00, transparent), radial-gradient(ellipse 10% 85% at 72% 100%, #ffcc33, transparent), radial-gradient(ellipse 11% 95% at 92% 100%, #ff5a00, transparent);
+  animation: tcg-flicker 0.9s ease-in-out infinite alternate; }
+.hm-tile.hm-r-celestial .hm-tile-in > :not(.hm-play), .hm-tile.hm-r-immortal .hm-tile-in > :not(.hm-play) { position: relative; z-index: 1; }
+
+/* ---- the unlock moment: plays once per device, the first time a card is seen at the tier ---- */
+.career-card-slot { position: relative; }
+.career-card-slot.tcg-unlocking .tcg { animation: tcg-unlock 1.6s cubic-bezier(.2,.9,.2,1) both; }
+.tcg-shock { position: absolute; left: 50%; top: 40%; width: 42%; aspect-ratio: 1; border-radius: 50%; translate: -50% -50%; pointer-events: none; opacity: 0; z-index: 9;
+  border: 3px solid var(--sc, #fff); box-shadow: 0 0 40px var(--sc, #fff), inset 0 0 30px var(--sc, #fff); animation: tcg-shock 1.5s ease-out 0.55s both; }
+@keyframes tcg-unlock { 0% { transform: perspective(1000px) rotateY(720deg) scale(0.2); opacity: 0; filter: brightness(4) blur(6px); } 55% { opacity: 1; filter: brightness(2.2) blur(0); } 100% { transform: perspective(1000px) rotateY(0) scale(1); filter: none; } }
+@keyframes tcg-shock { 0% { opacity: 0.95; transform: scale(0.4); } 100% { opacity: 0; transform: scale(5.5); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .rarity-celestial, .rarity-celestial *, .rarity-immortal, .rarity-immortal *, .hm-tile.hm-r-celestial, .hm-tile.hm-r-celestial *, .hm-tile.hm-r-immortal, .hm-tile.hm-r-immortal *,
+  .career-card-slot.tcg-unlocking .tcg, .tcg-shock { animation: none !important; }
+}
