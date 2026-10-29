@@ -11,7 +11,8 @@ function rarityGuideHtml() {
     .map((r, i) => {
       const next = tiers[i + 1];
       const range = next ? `${r.min}–${next.min - 1}` : `${r.min}+`;
-      return `<li class="rarity-guide-item rarity-${r.id}"><span class="tcg-gem" aria-hidden="true"></span><b>${r.label}</b><small>${range}</small></li>`;
+      const preview = UNLOCK_FX[r.id] ? `<button type="button" class="rarity-preview" data-preview="${r.id}" title="Preview the ${r.label} unlock animation">▶ Preview</button>` : "";
+      return `<li class="rarity-guide-item rarity-${r.id}"><span class="tcg-gem" aria-hidden="true"></span><b>${r.label}</b><small>${range}</small>${preview}</li>`;
     })
     .join("");
   return `
@@ -79,9 +80,30 @@ const FLAME_FILTER = `<svg width="0" height="0" style="position:absolute" aria-h
   <feTurbulence type="fractalNoise" baseFrequency="0.018 0.06" numOctaves="2" seed="3" result="n"><animate attributeName="baseFrequency" dur="1.3s" values="0.018 0.06;0.024 0.095;0.018 0.06" repeatCount="indefinite"/></feTurbulence>
   <feDisplacementMap in="SourceGraphic" in2="n" scale="80" xChannelSelector="R" yChannelSelector="G"/></filter></svg>`;
 
-function playTierUnlocks(root) {
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+const reducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+// Plays one tier's unlock on a card slot, then tidies up after itself. Calling it
+// again mid-play restarts it (the replay button relies on that).
+const unlockTimers = new WeakMap();
+function startUnlock(slot, tier) {
+  if (reducedMotion()) return;
   if (!document.getElementById("ux-flame")) document.body.insertAdjacentHTML("beforeend", FLAME_FILTER);
+  clearTimeout(unlockTimers.get(slot));
+  slot.querySelector(".tcg-unlock-fx")?.remove();
+  slot.classList.remove("tcg-unlocking", "unlock-celestial", "unlock-immortal");
+  void slot.offsetWidth; // let the browser see the reset so the animations restart
+  const fx = document.createElement("div");
+  fx.className = "tcg-unlock-fx";
+  fx.setAttribute("aria-hidden", "true");
+  fx.style.setProperty("--sc", UNLOCK_COLOUR[tier]);
+  fx.innerHTML = UNLOCK_FX[tier];
+  slot.append(fx);
+  slot.classList.add("tcg-unlocking", `unlock-${tier}`);
+  unlockTimers.set(slot, setTimeout(() => { slot.classList.remove("tcg-unlocking", `unlock-${tier}`); fx.remove(); }, 3400));
+}
+
+function playTierUnlocks(root) {
+  if (reducedMotion() || !("IntersectionObserver" in window)) return;
   const seen = readSeenUnlocks();
   const observer = new IntersectionObserver((entries) => {
     for (const entry of entries) {
@@ -93,18 +115,42 @@ function playTierUnlocks(root) {
       if (seen.has(id)) continue;
       seen.add(id);
       try { localStorage.setItem(UNLOCK_KEY, JSON.stringify([...seen])); } catch { /* private mode: it just plays again next visit */ }
-      const tier = card.dataset.rarity;
-      const fx = document.createElement("div");
-      fx.className = "tcg-unlock-fx";
-      fx.setAttribute("aria-hidden", "true");
-      fx.style.setProperty("--sc", UNLOCK_COLOUR[tier]);
-      fx.innerHTML = UNLOCK_FX[tier];
-      slot.append(fx);
-      slot.classList.add("tcg-unlocking", `unlock-${tier}`);
-      setTimeout(() => { slot.classList.remove("tcg-unlocking", `unlock-${tier}`); fx.remove(); }, 3400);
+      startUnlock(slot, card.dataset.rarity);
     }
   }, { threshold: 0.6 });
   root.querySelectorAll('.tcg[data-rarity="celestial"], .tcg[data-rarity="immortal"]').forEach((card) => observer.observe(card.closest(".career-card-slot")));
+}
+
+// "▶ Preview" on the rarity guide: nobody has reached these tiers yet, so show a
+// stand-in card (the viewer's own, or the top of the ladder) lifted to the tier
+// and play its unlock on demand. Looks real, changes nothing.
+const PREVIEW_TITLES = { celestial: 7, immortal: 10 };
+
+function openTierPreview(root, tier, baseCard, managers, total) {
+  root.querySelector(".tier-preview")?.remove();
+  const demo = { ...baseCard, titles: PREVIEW_TITLES[tier], w: Math.max(baseCard.w ?? 0, 60) };
+  const overlay = document.createElement("div");
+  overlay.className = "tier-preview";
+  overlay.setAttribute("role", "dialog");
+  overlay.setAttribute("aria-label", `${tier} card preview`);
+  overlay.innerHTML = `
+    <div class="tier-preview-stage"><div class="career-card-slot">${careerCardFrontHtml(demo, managers, { ladder: { rank: 1, total } })}</div></div>
+    <p class="tier-preview-note">Preview only — nobody in the league has reached this tier yet.</p>
+    <div class="tier-preview-bar">
+      <button type="button" class="tier-preview-btn" data-act="replay">↻ Replay</button>
+      <button type="button" class="tier-preview-btn" data-act="close">Close</button>
+    </div>`;
+  const slot = overlay.querySelector(".career-card-slot");
+  const close = () => { overlay.remove(); document.removeEventListener("keydown", onKey); };
+  const onKey = (e) => { if (e.key === "Escape") close(); };
+  overlay.addEventListener("click", (e) => {
+    const act = e.target.closest("[data-act]")?.dataset.act;
+    if (act === "replay") startUnlock(slot, tier);
+    else if (act === "close" || e.target === overlay) close();
+  });
+  document.addEventListener("keydown", onKey);
+  root.append(overlay);
+  startUnlock(slot, tier);
 }
 
 function careerCardHtml(card, managers, seasonsByManager, cardOpts) {
@@ -212,6 +258,12 @@ export function render(container, data, managers) {
   ctaBox.querySelector("#cards-identity-cta-btn").addEventListener("click", openIdentityPanel);
   attachTilt(root);
   playTierUnlocks(root);
+  root.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-preview]");
+    if (!btn) return;
+    const base = careerCards.find((c) => c.managerKey === getIdentity()) ?? careerCards[0];
+    openTierPreview(root, btn.dataset.preview, base, managers, careerCards.length);
+  });
 
   function jumpToMyBinder() {
     const me = getIdentity();

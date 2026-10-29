@@ -2809,3 +2809,16 @@ tr.sw-flip td { background: rgba(236,217,163,0.07); }
   .rarity-celestial, .rarity-celestial *, .rarity-immortal, .rarity-immortal *, .hm-tile.hm-r-celestial, .hm-tile.hm-r-celestial *, .hm-tile.hm-r-immortal, .hm-tile.hm-r-immortal *,
   .career-card-slot.unlock-celestial .tcg, .career-card-slot.unlock-immortal .tcg, .tcg-unlock-fx, .tcg-unlock-fx * { animation: none !important; }
 }
+
+/* ---- "▶ Preview" for the tiers nobody has reached yet ---- */
+.rarity-preview { margin-left: 0.2rem; cursor: pointer; border: 1px solid color-mix(in srgb, var(--rc) 60%, transparent); background: color-mix(in srgb, var(--rc) 16%, transparent); color: var(--rc);
+  border-radius: 99px; padding: 0.12rem 0.55rem; font: 800 0.62rem "Archivo", sans-serif; letter-spacing: 0.1em; text-transform: uppercase; }
+.rarity-preview:hover { background: color-mix(in srgb, var(--rc) 32%, transparent); }
+.tier-preview { position: fixed; inset: 0; z-index: 500; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.2rem; padding: 2rem 1rem;
+  background: radial-gradient(circle at 50% 40%, rgba(20,22,40,0.94), rgba(3,4,8,0.97)); overflow: hidden; }
+.tier-preview-stage { width: min(330px, 78vw); }
+.tier-preview .career-card-slot { animation: none; }
+.tier-preview-note { margin: 0; max-width: 34ch; text-align: center; color: rgba(255,255,255,0.6); font-size: 0.85rem; }
+.tier-preview-bar { display: flex; gap: 0.7rem; }
+.tier-preview-btn { cursor: pointer; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.08); color: #fff; border-radius: 8px; padding: 0.7rem 1.4rem; min-height: 44px; font: 800 0.8rem "Archivo", sans-serif; letter-spacing: 0.1em; text-transform: uppercase; }
+.tier-preview-btn:hover { background: rgba(255,255,255,0.18); }
