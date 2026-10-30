@@ -37,10 +37,10 @@
       "importance": 2.56,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 58,
+        "homeWinPct": 54,
         "drawPct": 3,
-        "awayWinPct": 39,
-        "homeExpected": 49.5,
+        "awayWinPct": 43,
+        "homeExpected": 48.1,
         "awayExpected": 46.1,
         "homeSoFar": null,
         "awaySoFar": null
@@ -59,10 +59,10 @@
       "importance": 2.56,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 32,
-        "drawPct": 3,
-        "awayWinPct": 65,
-        "homeExpected": 40.7,
+        "homeWinPct": 29,
+        "drawPct": 2,
+        "awayWinPct": 69,
+        "homeExpected": 39.2,
         "awayExpected": 46.3,
         "homeSoFar": null,
         "awaySoFar": null
@@ -81,10 +81,10 @@
       "importance": 2.32,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 17,
+        "homeWinPct": 16,
         "drawPct": 2,
-        "awayWinPct": 81,
-        "homeExpected": 29.7,
+        "awayWinPct": 82,
+        "homeExpected": 28.9,
         "awayExpected": 41.9,
         "homeSoFar": null,
         "awaySoFar": null
@@ -664,7 +664,7 @@
     },
     "1530": {
       "formation": "4-4-2",
-      "expected": 29.7,
+      "expected": 28.9,
       "captainId": 127,
       "locked": false,
       "xi": [
@@ -746,7 +746,7 @@
           "pos": "FWD",
           "type": 4,
           "team": "Newcastle",
-          "ep": 3.3
+          "ep": 2.5
         },
         {
           "id": 136,
@@ -794,7 +794,7 @@
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 40.7,
+      "expected": 39.2,
       "captainId": 411,
       "locked": false,
       "xi": [
@@ -815,20 +815,20 @@
           "ep": 5.3
         },
         {
-          "id": 200,
-          "name": "Lacroix",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Chelsea",
-          "ep": 2.8
-        },
-        {
           "id": 387,
           "name": "O'Reilly",
           "pos": "DEF",
           "type": 2,
           "team": "Man City",
           "ep": 2.3
+        },
+        {
+          "id": 200,
+          "name": "Lacroix",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Chelsea",
+          "ep": 1.9
         },
         {
           "id": 173,
@@ -860,7 +860,7 @@
           "pos": "MID",
           "type": 3,
           "team": "Chelsea",
-          "ep": 2.3
+          "ep": 1.7
         },
         {
           "id": 411,
@@ -1574,7 +1574,7 @@
     },
     "99786": {
       "formation": "4-4-2",
-      "expected": 49.5,
+      "expected": 48.1,
       "captainId": 115,
       "locked": false,
       "xi": [
@@ -1595,20 +1595,20 @@
           "ep": 7.3
         },
         {
-          "id": 148,
-          "name": "Hato",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Chelsea",
-          "ep": 5.7
-        },
-        {
           "id": 61,
           "name": "Truffert",
           "pos": "DEF",
           "type": 2,
           "team": "Bournemouth",
           "ep": 5
+        },
+        {
+          "id": 148,
+          "name": "Hato",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Chelsea",
+          "ep": 4.3
         },
         {
           "id": 331,
