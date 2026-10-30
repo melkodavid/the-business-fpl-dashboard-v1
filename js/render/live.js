@@ -14,7 +14,7 @@ import { computeLive, liveTable, cupTieLive } from "../lib/liveScoring.js";
 const REFRESH_MS = 60 * 1000;
 // The page's look (css/style.css, .lv-<theme>). A container can ask for another
 // with data-lv-theme -- the theme sampler in design-samples/ does.
-const DEFAULT_THEME = "lv-sunday";
+const DEFAULT_THEME = "lv-house";
 const themeOf = (el) => el?.dataset?.lvTheme ?? DEFAULT_THEME;
 let pollTimer = null;
 let tickTimer = null;
