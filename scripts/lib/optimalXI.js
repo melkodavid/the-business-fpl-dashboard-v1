@@ -3,7 +3,7 @@
 // MID 2-5, FWD 1-3, 10 outfield total.
 //
 // For a *fixed* count of DEF/MID/FWD, the optimal selection at each position is
-// just its top-N scorers — independent of the other positions — so the only
+// just its top-N scorers - independent of the other positions - so the only
 // search needed is over the (small) set of valid (DEF, MID, FWD) count combos.
 
 const DEF_RANGE = [3, 4, 5];

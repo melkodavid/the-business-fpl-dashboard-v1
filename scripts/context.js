@@ -7,7 +7,7 @@
 // this session. league/{id}/details' league_entries/matches/standings field names
 // below are this project's best-documented guess (the Draft API is known to use a
 // dual-ID scheme: a league-scoped `league_entry` id for matches/standings, and a
-// global `entry_id` for everything else — draft choices, transactions, and the
+// global `entry_id` for everything else - draft choices, transactions, and the
 // /entry/{id}/event endpoint). firstDefined() guards every read from that section
 // so a small naming mismatch degrades gracefully instead of throwing; spot-check
 // these against a real league response once LEAGUE_ID is set (see README).
@@ -139,7 +139,7 @@ function buildGwPlayerStats(gw, live) {
   const result = {};
   for (const [elementId, data] of Object.entries(live.elements ?? {})) {
     // defensiveContribution is kept per-fixture (not just summed into the GW
-    // total below) because its scoring bonus is a per-match threshold — summing
+    // total below) because its scoring bonus is a per-match threshold - summing
     // first would mis-score a double-gameweek player who had, say, 6 defensive
     // actions in each of two fixtures (12 combined, over the MID/FWD threshold
     // of 12) despite neither individual fixture actually crossing it.
@@ -206,7 +206,7 @@ export function buildContext(raw) {
   const standings = buildStandings(leagueDetails.standings);
 
   // Every stat module downstream deals with a single "managerId" space (the
-  // league-scoped id matches/standings already use) — draft choices,
+  // league-scoped id matches/standings already use) - draft choices,
   // transactions, trades, and per-GW picks all come from the API keyed by the
   // *global* entry id instead, so that conversion happens once, here.
   const entryIdToManagerId = new Map(managers.list.map((m) => [m.entryId, m.id]));

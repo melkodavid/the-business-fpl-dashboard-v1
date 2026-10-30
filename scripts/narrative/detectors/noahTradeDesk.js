@@ -1,4 +1,4 @@
-// LORE-DRIVEN — fires whenever noah completes a trade, again whenever one of
+// LORE-DRIVEN - fires whenever noah completes a trade, again whenever one of
 // his trades goes negative, and surfaces his running season net trade value
 // whenever that running total itself is negative. Tolerates noah not being
 // personKey-present this season (returns nothing rather than throwing).

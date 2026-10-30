@@ -33,7 +33,7 @@ function buildScatter(scatter, managers) {
       const color = colors.get(d.managerId) ?? "#888";
       const stars = "★".repeat(managers.titles(d.managerId));
       return `<circle class="scatter-dot" data-mgr="${d.managerId}" cx="${x(d.pickNumber).toFixed(1)}" cy="${y(d.seasonPoints).toFixed(1)}" r="4.5" fill="${color}" fill-opacity="0.85">
-        <title>${escapeHtml(d.playerName)} — Pick #${d.pickNumber}, ${d.seasonPoints} pts (${escapeHtml(managers.name(d.managerId))}${stars ? " " + stars : ""})</title>
+        <title>${escapeHtml(d.playerName)} - Pick #${d.pickNumber}, ${d.seasonPoints} pts (${escapeHtml(managers.name(d.managerId))}${stars ? " " + stars : ""})</title>
       </circle>`;
     })
     .join("");
@@ -124,7 +124,7 @@ function projectedPointsCardHtml(projected, managers) {
     )
     .join("");
   const sourceLine = projected.source
-    ? `<p class="section-subtitle">Source: ${escapeHtml(projected.source)}${projected.pulledAt ? ` (pulled ${escapeHtml(projected.pulledAt)})` : ""}. A third-party preseason estimate, not official FPL data — just something to argue about in the group chat until real points start coming in.</p>`
+    ? `<p class="section-subtitle">Source: ${escapeHtml(projected.source)}${projected.pulledAt ? ` (pulled ${escapeHtml(projected.pulledAt)})` : ""}. A third-party preseason estimate, not official FPL data - just something to argue about in the group chat until real points start coming in.</p>`
     : "";
   return `
     <div class="card">
@@ -255,7 +255,7 @@ function projectedVsActualSection(data, managers, selectedId) {
 
   return `
     <div class="card">
-      <h3>Projected vs. Actual — Whole League</h3>
+      <h3>Projected vs. Actual - Whole League</h3>
       <p class="section-subtitle">Projections are full-season totals, so "pace" scales them to the ${played} gameweek${played === 1 ? "" : "s"} played so far for a fair comparison. Pick a team below (or click a row) to see its draft.</p>
       <div id="draft-league-table">${leagueTableHtml(data, managers, selectedId)}</div>
     </div>
@@ -309,7 +309,7 @@ export function render(container, data, managers) {
   const selectedId = myId ?? data.draftGrades.leaderboard[0]?.managerId ?? managers.all[0]?.id ?? null;
 
   container.innerHTML = `
-    <h2 class="section-title">Draft Grades — Pure Draft Team Tracker</h2>
+    <h2 class="section-title">Draft Grades - Pure Draft Team Tracker</h2>
     <p class="section-subtitle">Each manager's originally drafted squad, locked at draft completion and tracked independently of trades or waivers.</p>
     ${projectedPointsCardHtml(data.projectedPoints, managers)}
     <div class="card">

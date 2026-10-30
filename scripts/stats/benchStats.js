@@ -2,8 +2,8 @@ import { benchPointsForGw } from "../lib/benchPoints.js";
 import { computeOptimalXI } from "../lib/optimalXI.js";
 import { describeScoring } from "../lib/scoringBreakdown.js";
 
-// Spec §8 — Bench Stats: points left on the bench, and the "Could Have Won"
-// simplified win/loss counter (flips only, not a point-delta — that fuller
+// Spec §8 - Bench Stats: points left on the bench, and the "Could Have Won"
+// simplified win/loss counter (flips only, not a point-delta - that fuller
 // version is parked for v2 per spec).
 export function computeBenchStats(context) {
   const perGw = {};

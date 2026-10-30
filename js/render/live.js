@@ -159,7 +159,7 @@ function draw(root, data, managers, payload) {
 
   const headline = isLive ? "Live" : payload.finished ? "Final" : live.anyStarted ? "Live" : "Kicks off soon";
   const banner = upcomingGw && data.schedule.deadline
-    ? `<p class="lv-banner">Next up: <b>Gameweek ${upcomingGw}</b> — line-ups lock ${kickoffText(data.schedule.deadline)}. Live scoring starts at the first kick-off.</p>`
+    ? `<p class="lv-banner">Next up: <b>Gameweek ${upcomingGw}</b> - line-ups lock ${kickoffText(data.schedule.deadline)}. Live scoring starts at the first kick-off.</p>`
     : "";
 
   root.innerHTML = `
@@ -193,7 +193,7 @@ export function render(container, data, managers) {
   clearInterval(tickTimer);
   const endpoint = data.predictionsConfig?.endpoint;
   if (!endpoint) {
-    container.innerHTML = errorHtml("Live scores need the league's Apps Script relay — see scripts/predictions/SETUP.md.");
+    container.innerHTML = errorHtml("Live scores need the league's Apps Script relay - see scripts/predictions/SETUP.md.");
     return;
   }
   container.innerHTML = `<div class="lv"><h2 class="section-title">Live scores</h2><div class="card lv-loading"><p>Fetching the latest scores…</p></div></div>`;
@@ -208,7 +208,7 @@ export function render(container, data, managers) {
       const next = await res.json();
       if (!next.ok) throw new Error(next.error || "No data");
       // an older copy of the Apps Script ignores ?action=live and answers with predictions
-      if (!Array.isArray(next.fixtures) || !next.picks || Array.isArray(next.picks)) throw new Error("the league's Apps Script needs its live-scores update — see scripts/predictions/SETUP.md");
+      if (!Array.isArray(next.fixtures) || !next.picks || Array.isArray(next.picks)) throw new Error("the league's Apps Script needs its live-scores update - see scripts/predictions/SETUP.md");
       payload = next;
       const y = window.scrollY;
       draw(container, data, managers, payload);

@@ -1,6 +1,6 @@
 import { pointsBreakdown } from "../lib/scoring.js";
 
-// Spec §6 — Points by Scoring Type. Starting XI only, summed across the season.
+// Spec §6 - Points by Scoring Type. Starting XI only, summed across the season.
 export function computeScoringType(context) {
   const totals = new Map(
     context.managers.list.map((m) => [

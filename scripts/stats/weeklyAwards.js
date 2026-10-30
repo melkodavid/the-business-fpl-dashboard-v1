@@ -1,7 +1,7 @@
 import { benchPointsForGw } from "../lib/benchPoints.js";
 import { computeFiftyNineClub } from "./fiftyNineClub.js";
 
-// Spec §4 — Weekly Awards, computed per completed GW, plus a running
+// Spec §4 - Weekly Awards, computed per completed GW, plus a running
 // season "Hall of Fame" tally per award.
 export function computeWeeklyAwards(context) {
   const { instances: fiftyNineInstances } = computeFiftyNineClub(context);

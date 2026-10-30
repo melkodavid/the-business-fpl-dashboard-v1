@@ -1,6 +1,6 @@
 import { apiGet } from "./client.js";
 
-// { trades: [...] } — raw trade objects, from the API's own /trades endpoint
+// { trades: [...] } - raw trade objects, from the API's own /trades endpoint
 // (confirmed separate from /transactions). Real shape, confirmed against a
 // completed league with actual trade history:
 //   { id, event, offered_entry, received_entry, state,

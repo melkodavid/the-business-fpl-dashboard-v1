@@ -1,4 +1,4 @@
-// "Who's watching?" identity — no password, just a personKey remembered
+// "Who's watching?" identity - no password, just a personKey remembered
 // locally so a manager can tailor the site to themselves. Deliberately keyed
 // by personKey (not managerId): identity is a person concept and should
 // survive team-name/manager-id churn across seasons, same reasoning as

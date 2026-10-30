@@ -1,4 +1,4 @@
-// Layer 2 — scoring & selection. Takes every storyline every detector ever
+// Layer 2 - scoring & selection. Takes every storyline every detector ever
 // emitted (across the whole season) and, walking gw by gw in order, picks
 // one headline + up to 5 secondaries per finished gw. Fully deterministic:
 // no randomness anywhere, and ties are broken with a seeded hash of

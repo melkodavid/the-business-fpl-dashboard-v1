@@ -135,7 +135,7 @@ function openTierPreview(root, tier, baseCard, managers, total) {
   overlay.setAttribute("aria-label", `${tier} card preview`);
   overlay.innerHTML = `
     <div class="tier-preview-stage"><div class="career-card-slot">${careerCardFrontHtml(demo, managers, { ladder: { rank: 1, total } })}</div></div>
-    <p class="tier-preview-note">Preview only — nobody in the league has reached this tier yet.</p>
+    <p class="tier-preview-note">Preview only - nobody in the league has reached this tier yet.</p>
     <div class="tier-preview-bar">
       <button type="button" class="tier-preview-btn" data-act="replay">↻ Replay</button>
       <button type="button" class="tier-preview-btn" data-act="close">Close</button>

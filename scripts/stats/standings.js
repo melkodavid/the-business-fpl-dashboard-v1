@@ -1,6 +1,6 @@
 import { currentStreak } from "../lib/streak.js";
 
-// Spec §1 — core standings straight from the API, plus current streak.
+// Spec §1 - core standings straight from the API, plus current streak.
 // (Luck Score is computed by allPlay.js and joined onto this table client-side.)
 export function computeStandings(context) {
   const finishedMatches = context.matches.filter((m) => m.finished).sort((a, b) => a.event - b.event);

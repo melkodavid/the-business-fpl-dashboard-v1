@@ -1,4 +1,4 @@
-// GENERIC — win/loss streaks reaching 3+ (and each further extension), plus
+// GENERIC - win/loss streaks reaching 3+ (and each further extension), plus
 // a first-win-after-4+-losses relief storyline. Walks the season replay so
 // each threshold crossing is attributed to the exact gw it happened.
 export function detectStreaks(context, replay) {

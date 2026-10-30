@@ -1,4 +1,4 @@
-// Spec (commissioner-requested) — Historical Summary. Combines the hand-recorded
+// Spec (commissioner-requested) - Historical Summary. Combines the hand-recorded
 // past seasons (data/history-seasons.json) with the current live season (derived
 // from context.standings, so it never needs manual re-entry), then computes the
 // season-by-season honors list (with each championship's running star count) and

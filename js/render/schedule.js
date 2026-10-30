@@ -88,7 +88,7 @@ export function render(container, data, managers) {
   // ---- rolling news banner: latest recap lines + a teaser per fixture ----
   const recap = data.latestRecap;
   const teasers = rows.map(({ f, home, away }) =>
-    f.odds && !f.finished ? `<b>${f.tag || "Fixture"}</b> ${cleanClub(home.name)} v ${cleanClub(away.name)} — ${f.odds.homeWinPct}% / ${f.odds.awayWinPct}%` : null
+    f.odds && !f.finished ? `<b>${f.tag || "Fixture"}</b> ${cleanClub(home.name)} v ${cleanClub(away.name)} - ${f.odds.homeWinPct}% / ${f.odds.awayWinPct}%` : null
   ).filter(Boolean);
   const recapLines = recap ? [recap.headline?.text, ...(recap.secondaries ?? []).map((s) => s.text)].filter(Boolean) : [];
   const newsItems = [...(notStarted ? [] : [`<b>Matchday ${pad(gw)}</b> ${seasonComplete ? "final day" : "is here"}`]), ...teasers, ...recapLines];
@@ -157,14 +157,14 @@ export function render(container, data, managers) {
         </div>
         ${showClock ? `<div class="md-lock"><small id="md-locklabel">Lineups lock in</small><div class="md-clock" id="md-clock"></div></div>` : ""}
       </section>
-      ${notStarted ? `<p class="md-empty">The draft hasn't happened yet — check back once fixtures are live.</p>` : ""}
-      ${seasonComplete ? `<p class="md-empty">The season's played out — here's how the final gameweek (GW${gw}) landed. Check back once next season's fixtures are live.</p>` : ""}
+      ${notStarted ? `<p class="md-empty">The draft hasn't happened yet - check back once fixtures are live.</p>` : ""}
+      ${seasonComplete ? `<p class="md-empty">The season's played out - here's how the final gameweek (GW${gw}) landed. Check back once next season's fixtures are live.</p>` : ""}
       ${arcs ? `<div class="md-arcs">${arcs}</div>` : ""}
       <section>${featureHtml}</section>
       <section>${rest.map(stripHtml).join("")}</section>
       ${rows.length === 0 && !notStarted ? `<p class="md-empty">No fixtures to show.</p>` : ""}
       ${recapHtml}
-      <p class="md-foot">${oddsMeta ? `${oddsMeta.basis === "live" ? "Live odds" : "Win odds"} compare each manager's best XI using ${oddsMeta.source} — a for-fun estimate, not a bookmaker's price. ` : ""}Tap a fixture to open it.</p>
+      <p class="md-foot">${oddsMeta ? `${oddsMeta.basis === "live" ? "Live odds" : "Win odds"} compare each manager's best XI using ${oddsMeta.source} - a for-fun estimate, not a bookmaker's price. ` : ""}Tap a fixture to open it.</p>
     </div>`;
 
   const root = container.querySelector(".matchday");

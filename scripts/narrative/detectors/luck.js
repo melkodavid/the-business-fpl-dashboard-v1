@@ -1,4 +1,4 @@
-// GENERIC — "daylight robbery" (won that GW with a bottom-3 all-play score)
+// GENERIC - "daylight robbery" (won that GW with a bottom-3 all-play score)
 // and its mirror (lost with a top-3 score). Reuses allPlay.perGw, which
 // already has every manager's raw score per gw -- ranking those 12 scores
 // gives the bottom-3/top-3 cutoff for that week directly.

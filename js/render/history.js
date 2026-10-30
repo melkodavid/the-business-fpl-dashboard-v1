@@ -62,7 +62,7 @@ export function render(container, data, managers) {
 
   container.innerHTML = `
     <h2 class="section-title">League History</h2>
-    <p class="section-subtitle">Every season on record, tracked by the real people behind the teams — team names change every year, championships don't.</p>
+    <p class="section-subtitle">Every season on record, tracked by the real people behind the teams - team names change every year, championships don't.</p>
 
     <div class="grid-cols two">
       <div class="card">
@@ -109,7 +109,7 @@ export function render(container, data, managers) {
 
     <div class="card">
       <h3>All-Time Table</h3>
-      <p class="section-subtitle">Every person's combined record, added up across every season they've played — click a column to sort.</p>
+      <p class="section-subtitle">Every person's combined record, added up across every season they've played - click a column to sort.</p>
       <table id="history-all-time-table">
         <thead>
           <tr>
@@ -135,7 +135,7 @@ export function render(container, data, managers) {
   function renderYear(year) {
     const season = seasons.find((s) => s.year === year);
     if (!season?.table) {
-      tableHost.innerHTML = `<p class="empty-state">No full table on record for ${year} — champion was ${personDisplay(season?.championKey, season?.championDisplay, managers, titleCounts, season?.championTitleNumber)}.</p>`;
+      tableHost.innerHTML = `<p class="empty-state">No full table on record for ${year} - champion was ${personDisplay(season?.championKey, season?.championDisplay, managers, titleCounts, season?.championTitleNumber)}.</p>`;
       return;
     }
     const rowsHtml = season.table

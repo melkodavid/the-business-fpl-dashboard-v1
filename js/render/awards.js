@@ -36,10 +36,10 @@ export function render(container, data, managers) {
       return `
         <div class="recap">
           <div class="gw-label">Gameweek ${r.gw}</div>
-          <p class="award-line"><strong>Top Score:</strong> ${names(r.topScore.managerIds)} — ${r.topScore.score} pts</p>
-          <p class="award-line"><strong>Mark of the Week:</strong> ${names(r.markOfTheWeek.managerIds)} — ${r.markOfTheWeek.score} pts</p>
+          <p class="award-line"><strong>Top Score:</strong> ${names(r.topScore.managerIds)} - ${r.topScore.score} pts</p>
+          <p class="award-line"><strong>Mark of the Week:</strong> ${names(r.markOfTheWeek.managerIds)} - ${r.markOfTheWeek.score} pts</p>
           ${r.blowout ? `<p class="award-line"><strong>${r.blowout.title}</strong> (margin: ${r.blowout.margin})</p>` : ""}
-          <p class="award-line"><strong>Worst Lineup of the Week:</strong> ${names(r.worstLineup.managerIds)} — ${r.worstLineup.benchPoints} bench pts</p>
+          <p class="award-line"><strong>Worst Lineup of the Week:</strong> ${names(r.worstLineup.managerIds)} - ${r.worstLineup.benchPoints} bench pts</p>
           ${fiftyNine}
         </div>`;
     })

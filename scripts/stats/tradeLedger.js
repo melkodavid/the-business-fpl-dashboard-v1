@@ -95,11 +95,11 @@ function resultImpactForSide(context, managerId, given, received, fromGw, season
   return impacts;
 }
 
-// Spec §10 — Trade Ledger. Every traded player is tracked exactly once: points
+// Spec §10 - Trade Ledger. Every traded player is tracked exactly once: points
 // scored while on their *new* team, from the trade's effective GW until they
 // leave that roster again (or season end). That single number is simultaneously
 // the receiving manager's "points gained" and the sending manager's "points
-// given up" for the same player — matching the spec's worked example, where
+// given up" for the same player - matching the spec's worked example, where
 // Manager B's net value is computed from the same per-player points already
 // shown as Manager A's gain.
 export function computeTradeLedger(context) {

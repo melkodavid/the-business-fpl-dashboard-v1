@@ -1,4 +1,4 @@
-// Spec §7 — the 59 Club. Per fixture, not per GW total: a starter who played
+// Spec §7 - the 59 Club. Per fixture, not per GW total: a starter who played
 // exactly 59 minutes in one of their (possibly two, in a DGW) fixtures counts
 // once for that fixture. Display is occurrence-only (no standing leaderboard
 // per spec), but a season total is still emitted for completeness.

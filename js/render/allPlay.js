@@ -19,7 +19,7 @@ export function render(container, data, managers) {
 
   container.innerHTML = `
     <h2 class="section-title">All-Play Standings</h2>
-    <p class="section-subtitle">Each manager's score compared against all 11 others every gameweek — sorted by Expected Wins. Luck Score = Actual Wins − Expected Wins.</p>
+    <p class="section-subtitle">Each manager's score compared against all 11 others every gameweek - sorted by Expected Wins. Luck Score = Actual Wins − Expected Wins.</p>
     <div class="card">
       <table>
         <thead>

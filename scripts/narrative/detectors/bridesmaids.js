@@ -1,4 +1,4 @@
-// LORE-DRIVEN — bridesmaid storylines: leading the table ("don't get
+// LORE-DRIVEN - bridesmaid storylines: leading the table ("don't get
 // comfortable"), or losing a match whose importance (reusing the same
 // formula This Week's Schedule uses, applied retroactively via the season
 // replay) crosses 2.5. Weight escalates sharply from GW30+ if a bridesmaid

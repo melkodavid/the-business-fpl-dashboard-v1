@@ -60,8 +60,8 @@ function drawOnlyMatchHtml(pairing, managers, idx) {
 function futureMatchHtml(_, idx) {
   return `
     <div class="cup-bracket-match future cup-rv" style="--i:${idx}">
-      <div class="cup-bracket-side tbd"><span class="cup-name">To be drawn</span><span class="cup-score">—</span></div>
-      <div class="cup-bracket-side tbd"><span class="cup-name">To be drawn</span><span class="cup-score">—</span></div>
+      <div class="cup-bracket-side tbd"><span class="cup-name">To be drawn</span><span class="cup-score">-</span></div>
+      <div class="cup-bracket-side tbd"><span class="cup-name">To be drawn</span><span class="cup-score">-</span></div>
     </div>`;
 }
 
@@ -76,7 +76,7 @@ function winnerLabel(matchId, cup, managers) {
 function plannedMatchHtml(p, cup, managers, idx) {
   const side = (slot) => (slot.managerId !== undefined
     ? `<div class="cup-bracket-side" data-mgr="${slot.managerId}">${nameHtml(slot.managerId, managers)}<span class="cup-score">–</span></div>`
-    : `<div class="cup-bracket-side tbd"><span class="cup-name">${winnerLabel(slot.winnerOf, cup, managers)}</span><span class="cup-score">—</span></div>`);
+    : `<div class="cup-bracket-side tbd"><span class="cup-name">${winnerLabel(slot.winnerOf, cup, managers)}</span><span class="cup-score">-</span></div>`);
   return `<div class="cup-bracket-match cup-rv" style="--i:${idx}">${side(p.a)}${side(p.b)}</div>`;
 }
 
@@ -145,13 +145,13 @@ function renderGraveyard(cup, managers) {
             <span class="cup-rip">R.I.P.</span>
             ${crestHtml(e.managerId, managers)}
             <span class="cup-t-name">${clubName(managers, e.managerId)}</span>
-            <span class="cup-epitaph">Eliminated — ${e.roundLabel}<br />${EPITAPHS[i % EPITAPHS.length]}</span>
+            <span class="cup-epitaph">Eliminated - ${e.roundLabel}<br />${EPITAPHS[i % EPITAPHS.length]}</span>
           </div>
           <div class="cup-plot-ground"></div>
         </div>`
         )
         .join("")
-    : '<p class="cup-empty-graveyard">No eliminations yet — check back after Round 1.</p>';
+    : '<p class="cup-empty-graveyard">No eliminations yet - check back after Round 1.</p>';
 
   return `
     <section class="cup-graveyard">
@@ -185,7 +185,7 @@ function newsItems(cup, managers) {
       for (const p of round.draw) items.push(`<b>${ROUND_LABELS[key]} · ${gw}</b> ${clubName(managers, p.managerAId)} v ${clubName(managers, p.managerBId)}`);
     }
   }
-  if (cup.status === "awaiting_draw" && !items.length) return [`<b>${ROUND_LABELS[cup.awaitingRound ?? "round1"]}</b> draw coming soon — the league is doing it live`];
+  if (cup.status === "awaiting_draw" && !items.length) return [`<b>${ROUND_LABELS[cup.awaitingRound ?? "round1"]}</b> draw coming soon - the league is doing it live`];
   return items.length ? items : [`<b>${ROUND_LABELS.round1}</b> draw to be made`];
 }
 
@@ -386,7 +386,7 @@ export function render(container, data, managers) {
         <h1 class="cup-title cup-title-only">The Grassroots Cup</h1>
       </div>
       ${championBanner}
-      ${cup.status === "awaiting_draw" ? `<div class="cup-awaiting"><b>${ROUND_LABELS[cup.awaitingRound] ?? "The"} draw is coming up</b><span>The league is doing it live — the fixtures appear here as soon as they're in.</span></div>` : ""}
+      ${cup.status === "awaiting_draw" ? `<div class="cup-awaiting"><b>${ROUND_LABELS[cup.awaitingRound] ?? "The"} draw is coming up</b><span>The league is doing it live - the fixtures appear here as soon as they're in.</span></div>` : ""}
 
       ${stageHtml()}
       <div class="cup-trophy-shadow"></div>
@@ -396,7 +396,7 @@ export function render(container, data, managers) {
 
       ${hasRound1Draw ? `
         <button class="cup-draw-cta" type="button">Watch the Round 1 Draw</button>
-        <p class="cup-draw-hint">A replay of the actual Round 1 draw — the pairings are real, revealed one at a time for the ceremony.</p>
+        <p class="cup-draw-hint">A replay of the actual Round 1 draw - the pairings are real, revealed one at a time for the ceremony.</p>
       ` : ""}
 
       <div class="cup-draw-overlay" role="dialog" aria-modal="true" aria-label="Round 1 draw">

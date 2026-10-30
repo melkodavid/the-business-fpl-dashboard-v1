@@ -78,7 +78,7 @@ export function render(container, data, managers) {
     </div>
 
     <h3 class="bench-weeks-title">Biggest Bench Blunders</h3>
-    <p class="section-subtitle">The ten single weeks with the most points sitting on a bench &mdash; who was left out, what they scored, and how they got it.</p>
+    <p class="section-subtitle">The ten single weeks with the most points sitting on a bench - who was left out, what they scored, and how they got it.</p>
     ${weeksHtml}
   `;
 }

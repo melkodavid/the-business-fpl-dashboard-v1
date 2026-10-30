@@ -4,7 +4,7 @@ import { pointsWhileStarted } from "../lib/startedPoints.js";
 const HIT_THRESHOLD_PER_GW = 5;
 const MIN_GWS_FOR_EFFICIENCY = 3;
 
-// Spec §11 — Waiver Wire Hit Rate. Every approved "w" (waiver-priority) or "f"
+// Spec §11 - Waiver Wire Hit Rate. Every approved "w" (waiver-priority) or "f"
 // (free agent) pickup counts as an FA pickup; the spec doesn't distinguish the
 // two by kind, only by outcome.
 export function computeWaiverHitRate(context) {

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Beyond Mythic — 1,000 prestige card tier</title>
+<title>Beyond Mythic - 1,000 prestige card tier</title>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Bebas+Neue&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 <style>
@@ -44,7 +44,7 @@
   @keyframes mp-shock { 0% { opacity: 0.95; transform: scale(0.4); } 100% { opacity: 0; transform: scale(5.5); } }
 
   /* =====================================================================
-     1 · ECLIPSE — a black sun with a blazing gold corona
+     1 · ECLIPSE - a black sun with a blazing gold corona
      ===================================================================== */
   .rarity-eclipse { --rc: #ffe3a0; --rc2: #5c3a00; --glow: 90px; --foil: 0.45; --glare: 0.9;
     --frame: conic-gradient(from var(--spin), #0a0a0a 0 38%, #ffcf6b 52%, #ffffff 56%, #ffb02e 60%, #0a0a0a 74% 100%);
@@ -67,7 +67,7 @@
   @keyframes mp-corona { from { scale: 0.96; opacity: 0.8; } to { scale: 1.06; opacity: 1; } }
 
   /* =====================================================================
-     2 · CELESTIAL — a living galaxy; planets orbit the portrait
+     2 · CELESTIAL - a living galaxy; planets orbit the portrait
      ===================================================================== */
   .rarity-celestial { --rc: #a8f0ff; --rc2: #2c1d9c; --glow: 90px; --foil: 0.55; --glare: 0.9;
     --frame: conic-gradient(from var(--spin), #38f2d0, #4c7bff, #b45cff, #ff63c9, #4c7bff, #38f2d0);
@@ -94,7 +94,7 @@
   @keyframes mp-shoot { 0% { transform: translateX(0); opacity: 0; } 4% { opacity: 1; } 22% { transform: translateX(340%); opacity: 0; } 100% { opacity: 0; transform: translateX(340%); } }
 
   /* =====================================================================
-     3 · PRISMATIC — flawless cut diamond that splits light into rainbows
+     3 · PRISMATIC - flawless cut diamond that splits light into rainbows
      ===================================================================== */
   .rarity-prismatic { --rc: #e9f6ff; --rc2: #5a7fb0; --glow: 80px; --foil: 0.7; --glare: 1;
     --frame: conic-gradient(from var(--spin), #ffffff, #bfe6ff, #ffffff, #ffc9f0, #ffffff, #c4ffe6, #ffffff, #fff1b5, #ffffff);
@@ -120,7 +120,7 @@
   @keyframes mp-spark { 0%, 100% { opacity: 0; transform: scale(0.2) rotate(0); } 45% { opacity: 1; transform: scale(1.2) rotate(45deg); } 70% { opacity: 0; } }
 
   /* =====================================================================
-     4 · IMMORTAL — the card is on fire (white-hot plasma frame, rising embers)
+     4 · IMMORTAL - the card is on fire (white-hot plasma frame, rising embers)
      ===================================================================== */
   .rarity-immortal { --rc: #ffae4a; --rc2: #7a0d00; --glow: 100px; --foil: 0.4; --glare: 0.9;
     --frame: conic-gradient(from var(--spin), #fff7c2, #ffcf3a, #ff7a14, #d11a00, #3a0500, #d11a00, #ff7a14, #ffcf3a, #fff7c2);
@@ -143,7 +143,7 @@
   @keyframes mp-rise { from { background-position: 0 0, 10px 0; } to { background-position: 0 -300px, 10px -390px; } }
 
   /* =====================================================================
-     5 · SOVEREIGN — imperial gold, jewels, a wax seal, and a real crown
+     5 · SOVEREIGN - imperial gold, jewels, a wax seal, and a real crown
      ===================================================================== */
   .rarity-sovereign { --rc: #ffd36a; --rc2: #7a4a00; --glow: 80px; --foil: 0.3; --glare: 1;
     --frame: linear-gradient(135deg, #fff1b0 0%, #e0a92e 18%, #8c5a06 34%, #ffe68a 50%, #b97a12 66%, #6f4300 82%, #fff1b0 100%);
@@ -197,8 +197,8 @@
 <body>
 <main>
   <h1>Beyond Mythic</h1>
-  <p class="lead">A new top card tier at <b>1,000 prestige</b> (100 per title + 1 per match win — so roughly ten titles' worth of glory). Five options below, all built on the real card system and fully animated. <b>Hover or drag over a card to tilt it</b>, and press <b>Play the unlock moment</b> to see what happens the first time someone's card ranks up. Everything shown also applies to their Home tile.</p>
-  <p class="lead">For scale: the league's top career prestige today is Lucas on <b>587</b>, which is Mythic. Mythic starts at 500, so 1,000 is a long, long climb — exactly what makes it feel mythical.</p>
+  <p class="lead">A new top card tier at <b>1,000 prestige</b> (100 per title + 1 per match win - so roughly ten titles' worth of glory). Five options below, all built on the real card system and fully animated. <b>Hover or drag over a card to tilt it</b>, and press <b>Play the unlock moment</b> to see what happens the first time someone's card ranks up. Everything shown also applies to their Home tile.</p>
+  <p class="lead">For scale: the league's top career prestige today is Lucas on <b>587</b>, which is Mythic. Mythic starts at 500, so 1,000 is a long, long climb - exactly what makes it feel mythical.</p>
 
   <section class="opt" id="current">
     <div><div class="slot" data-rarity="mythic">__CARD_MYTHIC__</div></div>
@@ -215,16 +215,16 @@
   const OPTS = [
     { id: "eclipse", label: "Eclipse", blurb: "The sun goes dark", ribbon: "Total Eclipse", crown: "", extra: "", fx: '<i class="fx-ember"></i><i class="fx-rays over"></i><i class="fx-ring over"></i>',
       title: "Eclipse", tag: "A black sun with a blazing gold corona.",
-      bullets: ["<b>Look:</b> obsidian-black card with a single, rotating shaft of white-gold light running around the frame — like the diamond-ring moment of a total eclipse.", "<b>Portrait:</b> a corona ring and slowly turning rays burn around the manager's face, pulsing like a solar flare.", "<b>Gem:</b> a black disc with a gold ring (the eclipse itself). Gold embers drift up the card.", "<b>Feel:</b> restrained and menacing — the \"final boss\" tier. Reads as expensive, not loud."] },
+      bullets: ["<b>Look:</b> obsidian-black card with a single, rotating shaft of white-gold light running around the frame - like the diamond-ring moment of a total eclipse.", "<b>Portrait:</b> a corona ring and slowly turning rays burn around the manager's face, pulsing like a solar flare.", "<b>Gem:</b> a black disc with a gold ring (the eclipse itself). Gold embers drift up the card.", "<b>Feel:</b> restrained and menacing - the \"final boss\" tier. Reads as expensive, not loud."] },
     { id: "celestial", label: "Celestial", blurb: "Written in the stars", ribbon: "Beyond The Stars", crown: "", extra: "", fx: '<i class="fx-stars"></i><i class="fx-stars2"></i><i class="fx-shoot"></i><i class="fx-orbit over"></i><i class="fx-orbit two over"></i>',
       title: "Celestial", tag: "A living galaxy. Planets orbit the portrait.",
-      bullets: ["<b>Look:</b> aurora-coloured frame cycling teal → blue → violet → pink around a deep nebula card.", "<b>Portrait:</b> two glowing orbit rings with a little gold planet and a cyan moon circling the manager, plus shooting stars every few seconds.", "<b>Gem:</b> a ringed planet. Two layers of twinkling stars at different speeds.", "<b>Feel:</b> magical and endless — ties in beautifully with the Constellation Home page."] },
+      bullets: ["<b>Look:</b> aurora-coloured frame cycling teal → blue → violet → pink around a deep nebula card.", "<b>Portrait:</b> two glowing orbit rings with a little gold planet and a cyan moon circling the manager, plus shooting stars every few seconds.", "<b>Gem:</b> a ringed planet. Two layers of twinkling stars at different speeds.", "<b>Feel:</b> magical and endless - ties in beautifully with the Constellation Home page."] },
     { id: "prismatic", label: "Prismatic", blurb: "Flawless", ribbon: "Flawless", crown: "", extra: '', fx: '<i class="fx-facet"></i><i class="fx-beam"></i><i class="fx-beam thin"></i><i class="fx-spark s1"></i><i class="fx-spark s2"></i><i class="fx-spark s3"></i>',
       title: "Prismatic", tag: "A flawless diamond splitting light into rainbows.",
-      bullets: ["<b>Look:</b> a white-diamond frame that throws rainbow colour as it turns, over a faceted ice-blue glass card.", "<b>Portrait:</b> rainbow-gradient picture border, facet lines across the art and light beams sweeping through every few seconds, with camera-flash sparkles popping on the card.", "<b>Gem:</b> a brilliant-cut diamond with spinning rainbow facets.", "<b>Feel:</b> bright, pristine, a bit \"holy grail\" — the most eye-catching of the five at a glance."] },
+      bullets: ["<b>Look:</b> a white-diamond frame that throws rainbow colour as it turns, over a faceted ice-blue glass card.", "<b>Portrait:</b> rainbow-gradient picture border, facet lines across the art and light beams sweeping through every few seconds, with camera-flash sparkles popping on the card.", "<b>Gem:</b> a brilliant-cut diamond with spinning rainbow facets.", "<b>Feel:</b> bright, pristine, a bit \"holy grail\" - the most eye-catching of the five at a glance."] },
     { id: "immortal", label: "Immortal", blurb: "Cannot be put out", ribbon: "Immortal", crown: "", extra: "", fx: '<i class="fx-ember"></i><i class="fx-ember two"></i><i class="fx-flames"></i><i class="fx-flames two"></i>',
       title: "Immortal", tag: "The card is on fire. It cannot be put out.",
-      bullets: ["<b>Look:</b> a white-hot plasma frame that races around the border, charcoal-black card, and a heat-haze wobble.", "<b>Portrait:</b> flames lick up from the bottom of the card, flickering in two layers, with embers rising constantly.", "<b>Name plate:</b> glows like molten metal. Gem is a living flame.", "<b>Feel:</b> loud, aggressive, a flex — the most \"you're not catching this one\" tier. Best fit for a ruthless league."] },
+      bullets: ["<b>Look:</b> a white-hot plasma frame that races around the border, charcoal-black card, and a heat-haze wobble.", "<b>Portrait:</b> flames lick up from the bottom of the card, flickering in two layers, with embers rising constantly.", "<b>Name plate:</b> glows like molten metal. Gem is a living flame.", "<b>Feel:</b> loud, aggressive, a flex - the most \"you're not catching this one\" tier. Best fit for a ruthless league."] },
     { id: "sovereign", label: "Sovereign", blurb: "Long may they reign", ribbon: "Sovereign", crown: "crown", extra: "jewels", fx: '<i class="fx-dust"></i>',
       title: "Sovereign", tag: "Imperial gold, real jewels, a wax seal and a crown.",
       bullets: ["<b>Look:</b> a thick polished-gold frame with a moving glint, jewel studs in all four corners (ruby, sapphire, emerald, amethyst) and engraved filigree on a black-velvet face.", "<b>Portrait:</b> a proper jewelled crown sits on top of the card, a red wax seal stamps it, and the name is set in engraved capitals.", "<b>Gem:</b> a mini crown. Gold dust sparkles on the card.", "<b>Feel:</b> regal, the most \"collector's piece\" of the five. Least flashy motion, most prestige."] },

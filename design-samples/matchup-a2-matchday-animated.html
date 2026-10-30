@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Concept A+ — Matchday (animated)</title>
+<title>Concept A+ - Matchday (animated)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
@@ -231,7 +231,7 @@ numEl.textContent = gwText; numEl.dataset.n = gwText;
 
 // ---- rolling news banner: this week's recap lines + a teaser for every fixture ----
 const teasers = [...data.fixtures].sort((a, b) => b.importance - a.importance).map((f) =>
-  `<b>${f.tag || "Fixture"}</b> ${f.home.club} v ${f.away.club} — ${f.home.winPct}% / ${f.away.winPct}%`);
+  `<b>${f.tag || "Fixture"}</b> ${f.home.club} v ${f.away.club} - ${f.home.winPct}% / ${f.away.winPct}%`);
 const items = [`<b>Matchday ${gwText}</b> is here`, ...teasers, ...data.headlines];
 const reel = document.getElementById("reel");
 reel.innerHTML = [...items, ...items].map((t) => `<span>${t}</span>`).join("");
@@ -330,7 +330,7 @@ if (feat && !reduce) {
 }
 
 document.getElementById("foot").textContent = data.oddsMeta
-  ? `Odds use ${data.oddsMeta.source} for each manager's best XI — a for-fun estimate. Tap a fixture to open it.`
+  ? `Odds use ${data.oddsMeta.source} for each manager's best XI - a for-fun estimate. Tap a fixture to open it.`
   : "Tap a fixture to open it.";
 </script>
 </body>

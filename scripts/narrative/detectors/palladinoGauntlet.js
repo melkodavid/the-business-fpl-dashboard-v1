@@ -1,4 +1,4 @@
-// LORE-DRIVEN — any manager whose schedule has 3+ consecutive fixtures all
+// LORE-DRIVEN - any manager whose schedule has 3+ consecutive fixtures all
 // against the Palladino family group. Detected from the fixed round-robin
 // schedule (context.matches includes future, unplayed fixtures with known
 // opponents), so the "watch" fires ahead of the run actually starting;

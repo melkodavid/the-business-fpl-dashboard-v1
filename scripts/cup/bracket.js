@@ -10,7 +10,7 @@ function shuffle(arr) {
 }
 
 // Recomputes the league table as it stood after a specific GW (not "as of
-// now") — needed because seeding is a point-in-time snapshot, and the API's
+// now") - needed because seeding is a point-in-time snapshot, and the API's
 // own standings object only ever reflects the current state.
 function standingsAsOf(context, throughGw) {
   const totals = new Map(
@@ -93,7 +93,7 @@ function resolveRound(context, roundConfig, draw, seedByManager) {
 }
 
 /**
- * @param previous the last-written data/cup.json, or null on the first run —
+ * @param previous the last-written data/cup.json, or null on the first run -
  *   any round already drawn there is carried forward as-is so a re-run never
  *   reshuffles an already-drawn round.
  * @param drawControl  optional { hold: roundKey[], manual: { roundKey: [[slot, slot], ...] } } --

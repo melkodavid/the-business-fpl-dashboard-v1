@@ -1,4 +1,4 @@
-// GENERIC — 1st place changing hands, a manager entering/exiting the top 4,
+// GENERIC - 1st place changing hands, a manager entering/exiting the top 4,
 // and a simplified late-season mathematical elimination from the Belt race
 // (even winning every remaining fixture at 3 league-pts each couldn't catch
 // the current leader's total). Like benchStats' "Could Have Won", this is a

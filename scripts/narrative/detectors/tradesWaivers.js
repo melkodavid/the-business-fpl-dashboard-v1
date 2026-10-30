@@ -1,4 +1,4 @@
-// GENERIC — trade/waiver storylines: a manager's net trade value flipping
+// GENERIC - trade/waiver storylines: a manager's net trade value flipping
 // sign from their previous trade; "the Ex Factor" (a player who left a
 // manager, via trade or waiver drop, scoring 10+ against that old manager
 // while rostered by the actual opponent that gw); a waiver pickup outscoring

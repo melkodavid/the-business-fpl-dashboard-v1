@@ -1,4 +1,4 @@
-// Dev tool (not part of the production build path): generates data/mock/*.json —
+// Dev tool (not part of the production build path): generates data/mock/*.json -
 // a deterministic fake 12-team season, shaped exactly like the raw Draft API
 // responses (see scripts/fetch/*.js), so build.js --mock can run the real
 // fetch-shape-consuming pipeline (context.js, every stats/*.js module) end to end
@@ -139,7 +139,7 @@ const managers = Array.from({ length: NUM_MANAGERS }, (_, i) => ({
 
 // ---------- draft choices (snake, 15 rounds) ----------
 // Greedy pick: each manager takes the best remaining player (by the noisy
-// quality order above) whose position quota they haven't already filled — the
+// quality order above) whose position quota they haven't already filled - the
 // same constraint a real Draft squad enforces (exactly 2 GKP/5 DEF/5 MID/3 FWD).
 const remainingPool = [...draftOrderPool];
 const typeCountByEntry = new Map(managers.map((m) => [m.entryId, { 1: 0, 2: 0, 3: 0, 4: 0 }]));
@@ -252,7 +252,7 @@ applyTransaction({ event: 8, entry: managers[10].entryId, kind: "w" });
 
 // ---------- one multi-for-multi trade ----------
 // A trade must preserve each manager's exact squad quota (2 GKP/5 DEF/5 MID/3
-// FWD), so both sides must swap matching position types — here a 2-for-2:
+// FWD), so both sides must swap matching position types - here a 2-for-2:
 // each side gives one DEF and one MID from their bench, of differing quality.
 const TRADE_GW = 6;
 const tradeManagerA = managers[0];

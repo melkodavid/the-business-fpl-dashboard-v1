@@ -1,4 +1,4 @@
-// Spec §2 — All-Play Luck-Adjusted Standings.
+// Spec §2 - All-Play Luck-Adjusted Standings.
 export function computeAllPlay(context) {
   const managerIds = context.managers.list.map((m) => m.id);
   const perGw = {};

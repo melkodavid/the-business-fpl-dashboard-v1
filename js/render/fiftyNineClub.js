@@ -14,7 +14,7 @@ export function render(container, data, managers) {
 
   container.innerHTML = `
     <h2 class="section-title">The 59 Club</h2>
-    <p class="section-subtitle">A starter subbed off at exactly 59 minutes — one short of the second appearance point. Checked per fixture, so double-gameweek players can trigger it twice.</p>
+    <p class="section-subtitle">A starter subbed off at exactly 59 minutes - one short of the second appearance point. Checked per fixture, so double-gameweek players can trigger it twice.</p>
     <div class="grid-cols two">
       <div class="card">
         <h3>Season Totals</h3>

@@ -1,4 +1,4 @@
-// GENERIC — running season records: high/low individual GW score, biggest
+// GENERIC - running season records: high/low individual GW score, biggest
 // blowout, closest margin, highest losing score, lowest winning score. Each
 // only fires the gameweek a new record is actually set (running max/min
 // tracked chronologically), not a final-season summary.

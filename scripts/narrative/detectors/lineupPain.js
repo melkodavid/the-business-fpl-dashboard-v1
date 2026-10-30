@@ -1,4 +1,4 @@
-// GENERIC — lineup-decision pain: bench outscored the actual starting XI
+// GENERIC - lineup-decision pain: bench outscored the actual starting XI
 // that gw, plus two reuses of already-computed solvers (no re-deriving the
 // optimal-XI math here): benchStats' "Could Have Won" instances (spec §8)
 // and the 59th-minute sub tracker (spec §7).

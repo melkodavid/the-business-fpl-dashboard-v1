@@ -1,4 +1,4 @@
-// The Draft Board — a classic snake-draft grid (round x team). Column order
+// The Draft Board - a classic snake-draft grid (round x team). Column order
 // is fixed to each manager's round-1 slot (their real draft position) rather
 // than the alternating snake order, so a manager's whole draft reads down
 // one column even though picks 2, 4, 6... within a round actually happened

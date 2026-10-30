@@ -25,7 +25,7 @@ function unitHtml(value, label) {
 }
 
 function countdownHtml(parts) {
-  if (parts.done) return `<p class="countdown-done">The draft is starting — good luck.</p>`;
+  if (parts.done) return `<p class="countdown-done">The draft is starting - good luck.</p>`;
   return `
     <div class="countdown">
       ${unitHtml(parts.days, "Days")}
@@ -47,7 +47,7 @@ function placeholderBoardHtml(managerCount) {
   ).join("");
 
   const rowsHtml = Array.from({ length: PLACEHOLDER_ROUNDS }, (_, i) => {
-    const cellsHtml = Array.from({ length: managerCount }, () => `<td class="empty-state">—</td>`).join("");
+    const cellsHtml = Array.from({ length: managerCount }, () => `<td class="empty-state">-</td>`).join("");
     return `<tr><th class="text-left">R${i + 1}</th>${cellsHtml}</tr>`;
   }).join("");
 
@@ -104,7 +104,7 @@ function boardTableHtml(board, managers) {
     .map((r) => {
       const cellsHtml = r.cells
         .map((cell) => {
-          if (!cell) return `<td class="empty-state">—</td>`;
+          if (!cell) return `<td class="empty-state">-</td>`;
           const positionTag = cell.position
             ? `<span class="draft-pick-pos">${escapeHtml(cell.position)}</span>`
             : "";

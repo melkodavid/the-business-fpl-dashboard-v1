@@ -1,4 +1,4 @@
-// LORE-DRIVEN — running inter-generation H2H tally. Only cross-generation
+// LORE-DRIVEN - running inter-generation H2H tally. Only cross-generation
 // matchups count (two 97s playing each other isn't a "war"). Returns the
 // storylines (weekly sweeps -- a genuine dramatic moment) separately from
 // the running matrix (persistent data for the front page's "Generation War

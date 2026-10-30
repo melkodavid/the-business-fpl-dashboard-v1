@@ -1,7 +1,7 @@
 import { getIdentity } from "../identity.js";
 
 function streakText(streak) {
-  return streak ? `${streak.type}${streak.count}` : "—";
+  return streak ? `${streak.type}${streak.count}` : "-";
 }
 
 export function render(container, data, managers) {
@@ -14,7 +14,7 @@ export function render(container, data, managers) {
     .map((rowId) => {
       const cells = ids
         .map((colId) => {
-          if (colId === rowId) return `<td>—</td>`;
+          if (colId === rowId) return `<td>-</td>`;
           const cell = cellByPair.get(`${rowId}:${colId}`);
           if (!cell) return `<td class="empty-state">n/a</td>`;
           const title = `${cell.pointsFor}-${cell.pointsAgainst} pts, streak ${streakText(cell.streak)}`;

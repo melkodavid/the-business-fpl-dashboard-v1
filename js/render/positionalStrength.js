@@ -23,8 +23,8 @@ export function render(container, data, managers) {
         <thead>
           <tr>
             <th class="text-left" rowspan="2">Manager</th>
-            <th colspan="5" class="pos-group pos-for block-start">For &mdash; points scored</th>
-            <th colspan="5" class="pos-group pos-against block-start">Against &mdash; points conceded</th>
+            <th colspan="5" class="pos-group pos-for block-start">For - points scored</th>
+            <th colspan="5" class="pos-group pos-against block-start">Against - points conceded</th>
           </tr>
           <tr>
             <th class="pos-for block-start">GK</th><th class="pos-for">DEF</th><th class="pos-for">MID</th><th class="pos-for">FWD</th><th class="pos-for">Top</th>

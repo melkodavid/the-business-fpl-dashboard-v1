@@ -17,7 +17,7 @@ function summaryHtml(a, b, ctx, managers) {
   const aName = escapeHtml(clean(managers.name(a)));
   const bName = escapeHtml(clean(managers.name(b)));
   const sentence = a === b
-    ? `That's their real schedule — pick someone else's to see what changes.`
+    ? `That's their real schedule - pick someone else's to see what changes.`
     : dPts === 0 && dRank === 0
       ? `<b>${aName}</b> would have ended up exactly where they are. Same points, same place.`
       : `<b>${aName}</b> would have <b class="${tone(dPts)}">${dPts === 0 ? "the same number of" : `${Math.abs(dPts)} ${dPts > 0 ? "more" : "fewer"}`} points</b>${dRank === 0 ? ` and still sit ${ordinal(swap.rank)}` : ` and ${dRank > 0 ? "climb" : "drop"} from <b>${ordinal(real.rank)}</b> to <b class="${tone(dRank)}">${ordinal(swap.rank)}</b>`} with <b>${bName}</b>'s schedule.`;
@@ -49,7 +49,7 @@ function weeksHtml(a, b, ctx, managers) {
       <thead><tr><th>GW</th><th>Score</th><th class="text-left" colspan="2">Actual opponent</th><th class="text-left" colspan="2">Swapped opponent</th></tr></thead>
       <tbody>${rows}</tbody>
     </table></div>
-    <p class="sw-note">Only this manager's results change — everyone else's record stays as it really is, so the swapped finish is an estimate. If the other schedule would have had them facing themselves that week, they face the schedule's owner instead. Highlighted rows are results that flip.</p>`;
+    <p class="sw-note">Only this manager's results change - everyone else's record stays as it really is, so the swapped finish is an estimate. If the other schedule would have had them facing themselves that week, they face the schedule's owner instead. Highlighted rows are results that flip.</p>`;
 }
 
 function drawHtml(ctx, managers) {
@@ -86,8 +86,8 @@ function drawHtml(ctx, managers) {
   return `
     <h3 class="sw-h3">Who's had the kindest and cruelest draw?</h3>
     <div class="sw-callouts">
-      ${card("kind", "Kindest schedule", kind, `Opponents averaged just ${kind.oppAvgScore} a week — the league average is ${ctx.leagueAvgScore}.`)}
-      ${card("cruel", "Cruelest schedule", cruel, `Opponents averaged ${cruel.oppAvgScore} a week — the league average is ${ctx.leagueAvgScore}.`)}
+      ${card("kind", "Kindest schedule", kind, `Opponents averaged just ${kind.oppAvgScore} a week - the league average is ${ctx.leagueAvgScore}.`)}
+      ${card("cruel", "Cruelest schedule", cruel, `Opponents averaged ${cruel.oppAvgScore} a week - the league average is ${ctx.leagueAvgScore}.`)}
     </div>
     <h3 class="sw-h3">Points gained or lost to the schedule</h3>
     <div class="card sw-bars">
@@ -124,7 +124,7 @@ export function render(container, data, managers) {
   container.innerHTML = `
     <div class="sw-page">
       <h2 class="section-title">Schedule Swap</h2>
-      <p class="section-subtitle">Same scores, different opponents. Pick a manager and a schedule to see how their season would have gone — or find out who's had the kindest and cruelest draws.</p>
+      <p class="section-subtitle">Same scores, different opponents. Pick a manager and a schedule to see how their season would have gone - or find out who's had the kindest and cruelest draws.</p>
       <div class="card sw-controls">
         <label>This manager<select id="sw-a">${aOpts}</select></label>
         <span class="sw-with">had the</span>

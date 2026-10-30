@@ -1,4 +1,4 @@
-// Layer 3 — rendering. Fills a storyline's chosen template with names (pulled
+// Layer 3 - rendering. Fills a storyline's chosen template with names (pulled
 // from context + league-lore.json, rotating in a nickname ~30% of the time)
 // and its own facts. Both the nickname roll and the variant choice are
 // seeded from (gw, dedupeKey), so re-running build.js against an already-

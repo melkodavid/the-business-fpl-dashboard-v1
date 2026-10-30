@@ -1,4 +1,4 @@
-// LORE-DRIVEN — SEASON ARC, only active once the lore flag "lu-post-mark-era"
+// LORE-DRIVEN - SEASON ARC, only active once the lore flag "lu-post-mark-era"
 // is set on lu (deliberately unset for now; see the README rollover
 // checklist). Frames lu as the defending champion (4 titles per history.json)
 // attempting to retain without his usual trade partner: tracks his rank/form

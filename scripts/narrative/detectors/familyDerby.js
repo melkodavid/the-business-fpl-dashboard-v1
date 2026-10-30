@@ -1,4 +1,4 @@
-// LORE-DRIVEN — any fixture where both managers share a lore family.group:
+// LORE-DRIVEN - any fixture where both managers share a lore family.group:
 // "Brother Derby" if they're the same sibling pair, "Cousin Clash" if they
 // share the group but not the pair (see lore.familyRelation).
 export function detectFamilyDerby(context, lore) {

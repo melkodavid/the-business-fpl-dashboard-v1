@@ -2,7 +2,7 @@ const POSITIONS = { 1: "GK", 2: "DEF", 3: "MID", 4: "FWD" };
 const emptyTotals = () => ({ GK: 0, DEF: 0, MID: 0, FWD: 0 });
 const topPosition = (totals) => Object.entries(totals).sort((a, b) => b[1] - a[1])[0][0];
 
-// Spec §5 — Positional Strength. Starting XI only, both sides.
+// Spec §5 - Positional Strength. Starting XI only, both sides.
 export function computePositionalStrength(context) {
   const forTotals = new Map(context.managers.list.map((m) => [m.id, emptyTotals()]));
   const againstTotals = new Map(context.managers.list.map((m) => [m.id, emptyTotals()]));

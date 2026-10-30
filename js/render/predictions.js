@@ -104,8 +104,8 @@ function leagueGame(data, managers) {
     open: Boolean(gw && !seasonComplete && deadline && fixtures?.length),
     preds: data.predictions ?? { weeks: [], table: [] },
     storeKey: (person) => `${gw}:${person}`,
-    subtitle: "Call every head-to-head before the deadline — Home, Draw or Away — and climb the running table. One point per correct call.",
-    formNote: "Small figures are the model's win odds — just a guide.",
+    subtitle: "Call every head-to-head before the deadline - Home, Draw or Away - and climb the running table. One point per correct call.",
+    formNote: "Small figures are the model's win odds - just a guide.",
     fixturesHtml: () => fixtures.map((f) => {
       const o = f.odds;
       const pct = (v) => (v != null ? `${v}%` : null);
@@ -141,7 +141,7 @@ function plGame(data) {
     open: Boolean(pl.gw && pl.deadline && pl.fixtures?.length && !data.schedule.seasonComplete),
     preds: pl,
     storeKey: (person) => `pl:${pl.gw}:${person}`,
-    subtitle: "Call every Premier League match of the gameweek — Home, Draw or Away. Picks lock at the FPL deadline. One point per correct call.",
+    subtitle: "Call every Premier League match of the gameweek - Home, Draw or Away. Picks lock at the FPL deadline. One point per correct call.",
     formNote: "",
     fixturesHtml: () => {
       let lastDay = null;
@@ -207,7 +207,7 @@ function renderGame(container, game, data, managers) {
   const lockAt = deadline ? new Date(deadline).getTime() : 0;
 
   const pickCard = !endpoint
-    ? `<div class="card pr-empty"><h3>Predictions aren't switched on yet</h3><p>One quick setup step is needed to store everyone's picks — see <code>scripts/predictions/SETUP.md</code> in the repo. The commissioner can do it in about five minutes.</p></div>`
+    ? `<div class="card pr-empty"><h3>Predictions aren't switched on yet</h3><p>One quick setup step is needed to store everyone's picks - see <code>scripts/predictions/SETUP.md</code> in the repo. The commissioner can do it in about five minutes.</p></div>`
     : !openForPicks
       ? `<div class="card pr-empty"><p>No gameweek is open for predictions right now. Check back when the next one is announced.</p></div>`
       : `
@@ -282,14 +282,14 @@ function renderGame(container, game, data, managers) {
     const names = [...submitted].map((k) => managers.all.find((m) => m.personKey === k)?.playerName?.split(" ")[0] ?? k);
     statusEl.innerHTML = names.length
       ? `<b>${names.length} of ${people.length}</b> locked in: ${escapeHtml(names.join(", "))}`
-      : "Nobody has locked in yet — be the first.";
+      : "Nobody has locked in yet - be the first.";
   };
 
   const loadMine = (keepPicks = false) => {
     const store = readStore();
     if (!keepPicks) picks = { ...(store[game.storeKey(personEl.value)] ?? {}) };
     msgEl.textContent = personEl.value && submitted.has(personEl.value) && !Object.keys(picks).length
-      ? "You've already locked in on another device — picking again will replace those." : "";
+      ? "You've already locked in on another device - picking again will replace those." : "";
     paint();
   };
 
@@ -319,7 +319,7 @@ function renderGame(container, game, data, managers) {
       const res = await fetch(endpoint, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ gw, person, picks, kind: game.id }) });
       const body = await res.json();
       // an older copy of the Apps Script only knows head-to-head fixture keys
-      if (!body.ok && game.id === "pl" && body.error === "Bad picks.") throw new Error("The league's Apps Script needs its Premier League update — see scripts/predictions/SETUP.md.");
+      if (!body.ok && game.id === "pl" && body.error === "Bad picks.") throw new Error("The league's Apps Script needs its Premier League update - see scripts/predictions/SETUP.md.");
       if (!body.ok) throw new Error(body.error || "Couldn't save.");
       const store = readStore(); store[game.storeKey(person)] = { ...picks }; store.lastPerson = person; writeStore(store);
       submitted.add(person);
@@ -328,7 +328,7 @@ function renderGame(container, game, data, managers) {
       msgEl.textContent = `Locked in ${body.saved} pick${body.saved === 1 ? "" : "s"}. You can change them until the deadline.`;
     } catch (err) {
       msgEl.className = "pr-msg bad";
-      msgEl.textContent = err.message === "Failed to fetch" ? "Couldn't reach the prediction box — check your connection and try again." : err.message;
+      msgEl.textContent = err.message === "Failed to fetch" ? "Couldn't reach the prediction box - check your connection and try again." : err.message;
     }
     paint();
   });

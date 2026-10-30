@@ -1,6 +1,6 @@
-// Spec §9 — Draft Grades / Pure Draft Team Tracker. The locked original draft
+// Spec §9 - Draft Grades / Pure Draft Team Tracker. The locked original draft
 // list (context.draftChoices) is never mutated by later trades/waivers, so this
-// module can just read it directly — no roster-timeline logic needed, unlike
+// module can just read it directly - no roster-timeline logic needed, unlike
 // tradeLedger.js and waiverHitRate.js.
 export function computeDraftGrades(context) {
   // Before this season's own GW1 is actually confirmed finished, the FPL

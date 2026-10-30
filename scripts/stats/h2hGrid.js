@@ -1,6 +1,6 @@
 import { currentStreak } from "../lib/streak.js";
 
-// Spec §3 — 12x12 Head-to-Head Rivalry Grid. One cell per ordered manager pair
+// Spec §3 - 12x12 Head-to-Head Rivalry Grid. One cell per ordered manager pair
 // (A,B); B's cell is the mirror of A's, so the frontend can render a symmetric
 // grid without recomputing.
 export function computeH2HGrid(context) {

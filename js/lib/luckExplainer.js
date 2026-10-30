@@ -22,7 +22,7 @@ export function luckExplainerHtml(data, managers, myId) {
     <details class="card luck-explainer">
       <summary>How is Luck calculated?</summary>
       <div class="luck-body">
-        <p>In a head-to-head league you only play <em>one</em> opponent each week, so a great score can still lose to someone who had a monster week &mdash; and a bad score can win against someone who flopped. The Luck column measures how much the schedule has helped or hurt you.</p>
+        <p>In a head-to-head league you only play <em>one</em> opponent each week, so a great score can still lose to someone who had a monster week - and a bad score can win against someone who flopped. The Luck column measures how much the schedule has helped or hurt you.</p>
         <ol>
           <li><strong>All-play:</strong> each week, your score is compared against <em>every</em> other team, not just your opponent. Beat 9 of 11 and you "expected" to win 9/11 &asymp; 0.82 of a match (a tie counts as half).</li>
           <li><strong>Expected wins:</strong> add those weekly fractions across the season.</li>

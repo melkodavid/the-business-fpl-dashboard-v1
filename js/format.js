@@ -12,7 +12,7 @@ export function round1(n) {
 }
 
 export function streakBadge(streak) {
-  if (!streak) return "—";
+  if (!streak) return "-";
   const cls = streak.type === "W" ? "badge-w" : streak.type === "L" ? "badge-l" : "badge-d";
   return `<span class="badge ${cls}">${streak.type}${streak.count}</span>`;
 }

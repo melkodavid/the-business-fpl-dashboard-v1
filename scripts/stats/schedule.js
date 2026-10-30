@@ -1,6 +1,6 @@
 import { matchImportance } from "../lib/matchImportance.js";
 
-// "This Week's Schedule" — the next unplayed (or in-progress) gameweek's H2H
+// "This Week's Schedule" - the next unplayed (or in-progress) gameweek's H2H
 // fixtures, ranked by matchup importance rather than kick-off order, the way a
 // broadcaster's "big match of the week" segment would. Importance is a proxy
 // built from the *current* standings snapshot (closeness in the table, closeness

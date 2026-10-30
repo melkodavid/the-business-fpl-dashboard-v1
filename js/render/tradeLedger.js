@@ -30,8 +30,8 @@ function scorecardHtml(data, managers) {
           <td>${s.tradeCount}</td>
           <td class="${signedClass(net)}">${signed(net)}</td>
           <td>${rec(s.actual)}</td>
-          <td class="trade-without">${s.tradeCount ? rec(s.withoutTrades) : "—"}</td>
-          <td>${s.tradeCount ? scorecardImpactHtml(s) : "—"}</td>
+          <td class="trade-without">${s.tradeCount ? rec(s.withoutTrades) : "-"}</td>
+          <td>${s.tradeCount ? scorecardImpactHtml(s) : "-"}</td>
         </tr>`;
     })
     .join("");
@@ -91,7 +91,7 @@ function flippedWeeksHtml(data, managers) {
 // History: one compact row per trade, click to open the detail.
 // ---------------------------------------------------------------------------
 function playerChips(players) {
-  if (!players.length) return `<span class="trade-none">—</span>`;
+  if (!players.length) return `<span class="trade-none">-</span>`;
   return players
     .map((p) => `<span class="trade-player">${escapeHtml(p.playerName ?? "Unknown")} <b class="${signedClass(p.points)}">${signed(p.points)}</b></span>`)
     .join("");
@@ -116,7 +116,7 @@ function impactHtml(impacts, managers) {
   const lines = impacts
     .map(
       (i) =>
-        `<li>GW${i.gw}: actually ${i.actualResult} (${i.actualScore}&ndash;${i.opponentScore}) vs ${managers.clubHtml(i.opponentId)} &mdash; would've been ${i.counterfactualResult} (${i.counterfactualScore}&ndash;${i.opponentScore}) keeping the original players</li>`
+        `<li>GW${i.gw}: actually ${i.actualResult} (${i.actualScore}&ndash;${i.opponentScore}) vs ${managers.clubHtml(i.opponentId)} - would've been ${i.counterfactualResult} (${i.counterfactualScore}&ndash;${i.opponentScore}) keeping the original players</li>`
     )
     .join("");
   return `<div class="trade-impact"><ul>${lines}</ul></div>`;
@@ -163,7 +163,7 @@ export function render(container, data, managers) {
     ${flippedWeeksHtml(data, managers)}
     <div class="card">
       <h3>Trade History</h3>
-      <p class="section-subtitle">Newest first &mdash; click a trade to open it.</p>
+      <p class="section-subtitle">Newest first - click a trade to open it.</p>
       <div class="trade-list">${history || '<p class="empty-state">No trades yet.</p>'}</div>
     </div>
   `;

@@ -1,10 +1,10 @@
 const FORM_WINDOW = 5;
 
-// Spec §12 — Form Guide: each manager's W/D/L over the last 5 completed
+// Spec §12 - Form Guide: each manager's W/D/L over the last 5 completed
 // gameweeks (for a visual form strip), plus their average points that window
 // compared to the league-wide average over the same gameweeks. Results come
 // from the H2H matches (not entry_history, which the real Draft API leaves
-// empty) — same source already proven correct for standings.js.
+// empty) - same source already proven correct for standings.js.
 export function computeFormGuide(context) {
   const recentGws = context.finishedGws.slice(-FORM_WINDOW);
   const finishedMatches = context.matches.filter((m) => m.finished && recentGws.includes(m.event));

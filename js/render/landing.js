@@ -140,7 +140,7 @@ function lineupSection(data, managers, me, champKey) {
       <div class="hm-lp-head" id="hm-lp-head"></div>
       <div id="hm-lp-pitch"></div>
       <div class="hm-bench" id="hm-lp-bench"></div>
-      <p class="hm-foot">${meta?.source ? `${escapeHtml(meta.source)}. ` : ""}Jersey numbers are expected points for the gameweek — a for-fun forecast, not a promise.</p>
+      <p class="hm-foot">${meta?.source ? `${escapeHtml(meta.source)}. ` : ""}Jersey numbers are expected points for the gameweek - a for-fun forecast, not a promise.</p>
     </section>`;
 
   function mount(root) {

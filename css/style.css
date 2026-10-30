@@ -1,5 +1,5 @@
 /* ============================================================
-   Site-wide theme — the "luxury" dark identity (gold/purple/lime on
+   Site-wide theme - the "luxury" dark identity (gold/purple/lime on
    near-black) originally built for the Schedule/Landing/Cards pages,
    now the ONE theme for every page except the FA Cup, which keeps its
    own fixed emerald/gold world (see .cup-theme below). Deliberately
@@ -570,7 +570,7 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
 }
 
 /* ============================================================
-   THE GRASSROOTS CUP — a deliberately fixed emerald/gold theme,
+   THE GRASSROOTS CUP - a deliberately fixed emerald/gold theme,
    independent of the site's light/dark toggle (same rationale as
    the trophy's own reduced-motion handling: this is one committed
    visual world, not a themeable dashboard page).
@@ -802,7 +802,7 @@ tr.is-me:hover { background: color-mix(in srgb, var(--accent) 20%, transparent) 
 }
 
 /* ============================================================
-   THIS WEEK'S SCHEDULE — the "Pass Network" hero treatment, now feeding
+   THIS WEEK'S SCHEDULE - the "Pass Network" hero treatment, now feeding
    the site-wide luxury theme's --sl-* tokens (kept as their own custom
    properties here since this scope's bespoke hero/pitch/fixture rules
    below reference them throughout -- see the token-forwarding block).

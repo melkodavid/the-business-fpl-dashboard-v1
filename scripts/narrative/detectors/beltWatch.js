@@ -1,4 +1,4 @@
-// LORE-DRIVEN — "the Belt" is the league's title (see templates.json/render.js
+// LORE-DRIVEN - "the Belt" is the league's title (see templates.json/render.js
 // for the presentational vocabulary), and it is held by ONE person all season:
 // whoever won the most recently completed PRIOR season. It does NOT change
 // hands week to week just because the in-progress table has a new leader --
