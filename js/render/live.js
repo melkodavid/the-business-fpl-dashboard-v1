@@ -235,12 +235,12 @@ function draw(root, data, managers, current) {
         <div class="lv-title">${isLive ? `<span class="lv-dot" aria-hidden="true"></span>` : ""}<h2>Gameweek ${payload.gw} <em>${headline}</em></h2></div>
         ${preview
           ? `<p class="lv-status">First kick-off ${kickoffText(firstKick)} · line-ups lock ${kickoffText(data.schedule.deadline)}</p>`
-          : `<p class="lv-status">${live.fixturesDone} of ${live.fixturesTotal} Premier League games finished · updated <span id="lv-ago">${agoText(payload.fetchedAt)}</span>
+          : `<p class="lv-status"><span class="lv-long">${live.fixturesDone} of ${live.fixturesTotal} Premier League games finished</span><span class="lv-short">${live.fixturesDone}/${live.fixturesTotal} PL games done</span> · updated <span id="lv-ago">${agoText(payload.fetchedAt)}</span>
           <button type="button" class="lv-refresh" id="lv-refresh" title="Refresh now">↻</button></p>`}
       </header>
       ${toggle}
       ${banner}
-      <nav class="lv-jump"><a href="#live" data-jump="lv-league">League</a><a href="#live" data-jump="lv-cup">Cup</a><a href="#live" data-jump="lv-pl">Premier League</a><a href="#live" data-jump="lv-table">Table</a></nav>
+      <nav class="lv-jump"><a href="#live" data-jump="lv-league">League</a><a href="#live" data-jump="lv-cup">Cup</a><a href="#live" data-jump="lv-pl"><span class="lv-long">Premier League</span><span class="lv-short">Prem</span></a><a href="#live" data-jump="lv-table">Table</a></nav>
       <section id="lv-league"><h3 class="lv-h3">The league</h3>
         <div class="lv-grid">${matches.map((m) => matchCard(m, managers, myId, preview)).join("")}</div>
       </section>
