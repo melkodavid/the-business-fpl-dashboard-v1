@@ -1,3 +1,4 @@
+import { blazerBadgeHtml } from "./lib/blazer.js";
 const FILES = {
   managers: "managers.json",
   standings: "standings.json",
@@ -112,13 +113,15 @@ function clubBadgeHtml(m) {
   return `<span class="club-badge${emojiClass}" style="--bc:${color}"><span class="club-badge-shape"><span class="club-badge-text">${escapeAttr(label)}</span></span>${imgTag}</span>`;
 }
 
-function clubHtml(m, id, { sub = false } = {}) {
+function clubHtml(m, id, { sub = false, blazer = false } = {}) {
   const name = m?.name ?? `Manager ${id}`;
   const subHtml = sub && m?.playerName ? `<span class="club-sub">${escapeAttr(m.playerName)}</span>` : "";
-  return `<span class="club" title="${escapeAttr(m?.playerName ?? "")}">${clubBadgeHtml(m)}<span class="club-text"><span class="club-name">${name}${starBadges(m?.titles)}</span>${subHtml}</span></span>`;
+  return `<span class="club" title="${escapeAttr(m?.playerName ?? "")}">${clubBadgeHtml(m)}<span class="club-text"><span class="club-name">${name}${starBadges(m?.titles)}${blazer ? blazerBadgeHtml() : ""}</span>${subHtml}</span></span>`;
 }
 
 export function managerLookup(data) {
+  // The Grassroots Cup winner wears the Champion's Blazer next to their name all year.
+  const blazerHolder = data.cup?.status === "complete" ? data.cup.champion : null;
   const byId = new Map(data.managers.list.map((m) => [m.id, m]));
   const byPersonKey = new Map(data.managers.list.map((m) => [m.personKey, m]));
   const themeByPersonKey = new Map(
@@ -130,7 +133,7 @@ export function managerLookup(data) {
     nameHtml: (id) => `${byId.get(id)?.name ?? `Manager ${id}`}${starBadges(byId.get(id)?.titles)}`,
     // Club (team name + badge, manager on hover) for current-season pages;
     // nameHtml stays the plain team name, which the Cup page keeps using.
-    clubHtml: (id, opts) => clubHtml(byId.get(id), id, opts),
+    clubHtml: (id, opts) => clubHtml(byId.get(id), id, { ...opts, blazer: id === blazerHolder }),
     badgeHtml: (id) => clubBadgeHtml(byId.get(id)),
     playerName: (id) => byId.get(id)?.playerName ?? "",
     starsHtml: (id) => starBadges(byId.get(id)?.titles),

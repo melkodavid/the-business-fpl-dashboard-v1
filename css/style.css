@@ -3158,3 +3158,111 @@ section[id^="lv-"] { scroll-margin-top: 8rem; }
   .lv-sum:not(:has(.lv-odds)) { grid-template-areas: "state proj" "home hs" "away as"; }
   .lv-status { flex-wrap: nowrap; white-space: nowrap; }
 }
+
+/* =========================================================================
+   THE GRASSROOTS CUP -- "Augusta Green". Deeper fairway green, championship
+   yellow and cream; a crest over a serif title, azaleas beside the plinth,
+   the bracket as the hand-operated white leaderboard. (The mood of a famous
+   spring golf weekend, none of its marks, names or slogans.)
+   Layered over the original cup styles above, so the trophy, draw ceremony
+   and graveyard keep working as they were.
+   ========================================================================= */
+.cup-theme {
+  --cup-ground: #07402c; --cup-panel: #0b5238; --cup-panel-2: #0f6a49; --cup-panel-3: #13805a; --cup-deep: #032617;
+  --cup-gold: #f2c500; --cup-gold-bright: #fff3b0; --cup-gold-deep: #9b7e00; --cup-paper: #fbf8ec; --cup-muted: #a9cdb8;
+  --cup-cream: #fbf8ec; --cup-board-line: #c9c2a8; --cup-red: #c8102e;
+  background: radial-gradient(ellipse 900px 500px at 50% -5%, rgba(242,197,0,0.14), transparent 60%), linear-gradient(180deg, #08472f, #04301f);
+  border: 3px solid var(--cup-gold);
+  box-shadow: 0 0 0 5px #04301f, 0 0 0 6px rgba(242,197,0,0.5), 0 24px 60px rgba(0,0,0,0.5);
+}
+.cup-theme .cup-aurora { opacity: 0.4; }
+.cup-theme .cup-hero::before {
+  content: ""; display: block; width: 74px; height: 86px; margin: 0 auto 14px;
+  background: center / contain no-repeat url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 74 86'><path d='M37 2 70 12v30c0 22-14 36-33 42C18 78 4 64 4 42V12Z' fill='%2307402c' stroke='%23f2c500' stroke-width='3'/><path d='M37 9 63 17v25c0 18-11 29-26 34C22 71 11 60 11 42V17Z' fill='none' stroke='%23fff3b0' stroke-width='1' opacity='.6'/><path d='M30 22v40' stroke='%23fbf8ec' stroke-width='2.5'/><path d='M30 22l18 7-18 7z' fill='%23f2c500'/><circle cx='42' cy='58' r='7' fill='%23fbf8ec'/><path d='M37 54l5 2 5-2M38 62l4-2 4 2' stroke='%2307402c' stroke-width='1.2' fill='none'/></svg>");
+}
+.cup-theme .cup-title { font-family: "Playfair Display", Georgia, serif; font-weight: 800; letter-spacing: 0.01em; color: var(--cup-cream); }
+.cup-theme .cup-hero::after { content: "Est. 2026  ·  The Business"; display: block; margin-top: 8px; font: italic 600 1.05rem "Cormorant Garamond", Georgia, serif; color: var(--cup-gold); letter-spacing: 0.06em; }
+.cup-theme .cup-eyebrow { font-family: "Playfair Display", Georgia, serif; }
+.cup-theme .cup-plinth { position: relative; font-family: "Playfair Display", Georgia, serif; letter-spacing: 0.3em; background: var(--cup-cream); color: var(--cup-ground); border-color: var(--cup-gold); }
+.cup-theme .cup-plinth::before, .cup-theme .cup-plinth::after {
+  content: ""; position: absolute; top: 50%; width: 90px; height: 36px; transform: translateY(-50%); pointer-events: none;
+  background: radial-gradient(circle at 10px 18px, #ff5fa2 0 7px, transparent 8px), radial-gradient(circle at 24px 10px, #ff86b9 0 7px, transparent 8px), radial-gradient(circle at 26px 26px, #e8327d 0 6px, transparent 7px), radial-gradient(circle at 42px 16px, #ff5fa2 0 8px, transparent 9px), radial-gradient(circle at 58px 22px, #ff86b9 0 6px, transparent 7px), radial-gradient(circle at 72px 12px, #e8327d 0 7px, transparent 8px), radial-gradient(ellipse at 45px 32px, #0f6a49 0 30px, transparent 31px);
+}
+.cup-theme .cup-plinth::before { right: 100%; margin-right: 10px; }
+.cup-theme .cup-plinth::after { left: 100%; margin-left: 10px; transform: translateY(-50%) scaleX(-1); }
+
+/* bracket: the hand-operated white leaderboard */
+.cup-theme .cup-bracket-col-head { background: var(--cup-ground); color: var(--cup-cream); border: 2px solid var(--cup-cream); padding: 8px 4px; font: 700 0.95rem "Playfair Display", Georgia, serif; letter-spacing: 0.12em; text-transform: uppercase; }
+.cup-theme .cup-bracket-col-sub { color: var(--cup-gold); }
+.cup-theme .cup-bracket-match { background: var(--cup-cream); border: 2px solid var(--cup-cream); border-radius: 0; box-shadow: inset 0 0 0 1px var(--cup-board-line), 0 6px 16px rgba(0,0,0,0.35); }
+.cup-theme .cup-bracket-match::after { background: var(--cup-cream); opacity: 0.6; }
+.cup-theme .cup-bracket-side { color: #1b1b1b; font: 600 0.86rem "Oswald", "Arial Narrow", sans-serif; text-transform: uppercase; letter-spacing: 0.06em; }
+.cup-theme .cup-bracket-side + .cup-bracket-side { border-top: 1px solid var(--cup-board-line); }
+.cup-theme .cup-bracket-side .cup-score { min-width: 2.2ch; text-align: center; padding: 1px 4px; background: #fff; border: 1px solid var(--cup-board-line); color: var(--cup-ground); font-weight: 700; }
+.cup-theme .cup-bracket-side.winner { color: var(--cup-ground); }
+.cup-theme .cup-bracket-side.winner .cup-score { color: var(--cup-red); }
+.cup-theme .cup-bracket-side.tbd { color: #8a8470; }
+.cup-theme .cup-bracket-side.path-highlight { background: #fff6cc; }
+.cup-theme .cup-bracket-match.future { background: rgba(251,248,236,0.12); border: 2px dashed rgba(251,248,236,0.4); box-shadow: none; }
+.cup-theme .cup-bracket-match.future .cup-bracket-side { color: var(--cup-muted); }
+.cup-theme .cup-bracket-match.future .cup-score { background: transparent; border-color: rgba(251,248,236,0.3); color: var(--cup-muted); }
+.cup-theme .cup-champion-slot .cup-champ-name { font-family: "Playfair Display", Georgia, serif; color: var(--cup-gold); }
+.cup-theme .cup-news { background: var(--cup-cream); color: var(--cup-ground); }
+.cup-theme .cup-news-lab { background: var(--cup-ground); color: var(--cup-gold); }
+.cup-theme .cup-news-reel, .cup-theme .cup-news-reel b { color: var(--cup-ground); }
+.cup-theme .cup-draw-cta { background: var(--cup-gold); color: var(--cup-ground); font-family: "Playfair Display", Georgia, serif; letter-spacing: 0.04em; }
+
+/* ---- the Hand-Turned Leaderboard (live cup scores) ---- */
+.cup-board { position: relative; z-index: 1; max-width: 560px; margin: 2rem auto 1rem; padding: 0 1rem; }
+.cb-frame { background: var(--cup-ground); padding: 12px 12px 10px; border: 3px solid var(--cup-cream); box-shadow: 0 0 0 1px #04301f, 0 16px 34px rgba(0,0,0,0.45); }
+.cb-title { margin: 0; text-align: center; font: 700 clamp(1.2rem, 4vw, 1.5rem)/1.2 "Playfair Display", Georgia, serif; letter-spacing: 0.32em; text-transform: uppercase; color: var(--cup-cream); }
+.cb-sub { margin: 2px 0 10px; text-align: center; font: italic 600 0.95rem "Cormorant Garamond", Georgia, serif; color: var(--cup-gold); }
+.cb-tie { padding: 6px 0 4px; border-top: 1px solid rgba(251,248,236,0.18); }
+.cb-tie-h { margin: 0 0 4px; font: 600 0.6rem "Oswald", sans-serif; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cup-gold); }
+.cb-tie-h span { color: var(--cup-muted); letter-spacing: 0.08em; }
+.cb-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 3px; }
+.cb-name, .cb-score { display: flex; gap: 2px; min-width: 0; }
+.cb-name { overflow: hidden; }
+.cb-name i, .cb-score i {
+  --t: clamp(12px, 3.6vw, 19px);
+  display: inline-grid; place-items: center; flex-shrink: 0; width: var(--t); height: calc(var(--t) * 1.4);
+  background: var(--cup-cream); color: #1b1b1b; font: 600 calc(var(--t) * 0.68) "Oswald", sans-serif; font-style: normal;
+  box-shadow: inset 0 -2px 0 var(--cup-board-line), inset 0 1px 0 #fff;
+}
+.cb-name i.sp { width: calc(var(--t) * 0.35); background: transparent; box-shadow: none; }
+.cb-score i { color: var(--cup-ground); font-weight: 700; }
+.cb-row.lead .cb-score i { color: var(--cup-red); }
+.cb-score i.flip { animation: cb-flip 0.6s ease-in-out both; }
+.cb-score i.flip:nth-child(2) { animation-delay: 0.08s; }
+.cb-score i.flip:nth-child(3) { animation-delay: 0.16s; }
+@keyframes cb-flip { 0% { transform: rotateX(0); } 45% { transform: rotateX(90deg); background: #e9e3cc; } 55% { transform: rotateX(90deg); } 100% { transform: rotateX(0); } }
+.cb-foot { margin: 8px 0 0; text-align: center; font: italic 500 0.88rem "Cormorant Garamond", Georgia, serif; color: var(--cup-muted); }
+
+/* ---- the Champion's Blazer ---- */
+.cup-blazer { position: relative; z-index: 1; display: grid; grid-template-columns: 220px 1fr; align-items: center; gap: 1.5rem; max-width: 760px; margin: 2.5rem auto 1rem; padding: 1.5rem; border-top: 1px solid rgba(242,197,0,0.35); border-bottom: 1px solid rgba(242,197,0,0.35); }
+.cbz-art { display: grid; place-items: center; padding: 1rem 0; background: radial-gradient(circle at 50% 45%, rgba(242,197,0,0.2), transparent 65%); }
+.cbz-svg { width: 190px; height: auto; filter: drop-shadow(0 14px 22px rgba(0,0,0,0.55)); animation: cbz-sway 6s ease-in-out infinite; transform-origin: 50% 0; }
+@keyframes cbz-sway { 50% { transform: rotate(1.2deg); } }
+.cbz-title { margin: 0 0 0.6rem; font: 800 clamp(1.5rem, 4vw, 2rem)/1.15 "Playfair Display", Georgia, serif; color: var(--cup-cream); }
+.cbz-text { margin: 0 0 0.9rem; color: var(--cup-muted); line-height: 1.6; font-size: 0.92rem; }
+.cbz-holder { margin: 0; font: italic 600 1.15rem "Cormorant Garamond", Georgia, serif; color: var(--cup-gold); }
+.cbz-holder b { font-style: normal; color: var(--cup-cream); }
+
+/* the holder's badge beside their club name, site-wide */
+.blazer-badge { display: inline-block; width: 1.05em; height: 1.05em; margin-left: 0.3em; vertical-align: -0.15em; }
+.blazer-badge svg { width: 100%; height: 100%; }
+
+@media (max-width: 640px) {
+  .cup-theme .cup-plinth::before, .cup-theme .cup-plinth::after { width: 54px; height: 30px; background-size: 60% 80%; opacity: 0.9; }
+  .cup-blazer { grid-template-columns: 1fr; text-align: center; padding: 1.25rem 1rem; gap: 0.5rem; }
+  .cbz-svg { width: 150px; }
+  .cb-frame { padding: 10px 8px 8px; }
+}
+@media (max-width: 420px) { .cup-theme .cup-plinth::before, .cup-theme .cup-plinth::after { display: none; } }
+@media (prefers-reduced-motion: reduce) { .cbz-svg, .cb-score i.flip { animation: none; } }
+@media (max-width: 520px) {
+  .cup-board { padding: 0 0.2rem; margin-top: 1.5rem; }
+  .cb-frame { padding: 10px 6px 8px; }
+  .cb-name, .cb-score { gap: 1px; }
+  .cb-name i, .cb-score i { --t: clamp(10px, 3.25vw, 19px); }
+}

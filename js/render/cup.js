@@ -1,4 +1,5 @@
 import { buildTrophy } from "../trophy.js";
+import { leaderboardHtml, runLeaderboard, blazerSectionHtml } from "./cupTraditions.js";
 
 const ROUND_LABELS = { round1: "Round 1", round2: "Quarterfinal", round3: "Semifinal", round4: "Final" };
 const FUTURE_MATCH_COUNT = { round1: 4, round2: 4, round3: 2, round4: 1 };
@@ -392,6 +393,8 @@ export function render(container, data, managers) {
       <div class="cup-trophy-shadow"></div>
       <div class="cup-plinth">THE GRASSROOTS CUP</div>
 
+      ${leaderboardHtml(cup)}
+
       <div class="cup-bracket-wrap"><div class="cup-bracket">${bracketHtml}</div></div>
 
       ${hasRound1Draw ? `
@@ -417,6 +420,8 @@ export function render(container, data, managers) {
         </table>
       </div>
 
+      ${blazerSectionHtml(cup, managers)}
+
       ${renderGraveyard(cup, managers)}
     </div>
   `;
@@ -426,4 +431,5 @@ export function render(container, data, managers) {
   setupHoverHighlight(root);
   if (hasRound1Draw) setupDrawCeremony(root, cup.rounds.round1.draw, managers);
   choreograph(root);
+  runLeaderboard(root, data, managers);
 }
