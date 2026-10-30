@@ -47,3 +47,16 @@ Until that's done, the Live page says the script "needs its live-scores update".
 
 To check it's working, open your `/exec` URL with `?action=live` on the end.
 You should see a page of JSON starting with `{"ok":true,"gw":…`.
+
+## Premier League results (same script)
+
+The Predictions page has a second tab where everyone calls Home / Draw / Away
+on the real Premier League fixtures. Those picks go into the same sheet, with
+fixtures named `pl123` (the official fixture id), and lock at the same
+gameweek deadline. Nothing new to set up — just redeploy after pasting in the
+newer `Code.gs`:
+
+**Deploy → Manage deployments → ✏️ (edit) → Version: New version → Deploy.**
+
+Until that's done, saving Premier League picks says the script "needs its
+Premier League update". League picks keep working either way.

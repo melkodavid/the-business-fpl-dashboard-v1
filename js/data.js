@@ -25,6 +25,7 @@ const FILES = {
   upcomingManagers: "upcoming-managers.json",
   predictions: "predictions.json",
   predictionsConfig: "predictions-config.json",
+  plPredictions: "pl-predictions.json",
 };
 
 export async function loadAllData() {

@@ -34,7 +34,7 @@ import { computeSchedule } from "./stats/schedule.js";
 import { computeMatchupOdds, attachOdds, predictLineups } from "./stats/matchupOdds.js";
 import { gatherOddsInputs } from "./fetch/oddsInputs.js";
 import { fetchRevealedPicks } from "./fetch/predictions.js";
-import { computePredictions } from "./stats/predictions.js";
+import { computePredictions, computePlPredictions, plFixtureKey, plFixturesFor } from "./stats/predictions.js";
 import { computeScheduleSwap } from "./stats/scheduleSwap.js";
 import { buildNarrativeLayer } from "./narrative/index.js";
 import { writeRecapArchive } from "./narrative/archive.js";
@@ -209,15 +209,36 @@ async function main() {
   // Weekly predictions: the shared sheet only releases a week's picks after its deadline.
   // If it can't be reached, the previous predictions.json is left exactly as it was.
   const predictionsEndpoint = readJson(join(ROOT, "data", "predictions-config.json")).endpoint;
+  // Premier League results game: this gameweek's real fixtures to pick from, plus
+  // the running table. Results come from each gameweek's live data; upcoming
+  // fixtures from bootstrap-static (the Draft API keys those by gameweek).
+  const plFixtures = new Map();
+  for (const f of Object.values(raw.bootstrap?.fixtures ?? {}).flat()) plFixtures.set(f.id, f);
+  for (const event of Object.values(raw.events ?? {})) for (const f of event.live?.fixtures ?? []) plFixtures.set(f.id, f);
+  const plPath = join(DATA_DIR, "pl-predictions.json");
+  const previousPl = existsSync(plPath) ? readJson(plPath) : {};
+  const plGame = {
+    enabled: Boolean(predictionsEndpoint),
+    gw: schedule.gw,
+    deadline: schedule.deadline,
+    teams: Object.fromEntries((raw.bootstrap?.teams ?? []).map((t) => [t.id, { name: t.name, short: t.short_name, code: t.code }])),
+    fixtures: schedule.gw == null ? [] : plFixturesFor([...plFixtures.values()], schedule.gw)
+      .map((f) => ({ key: plFixtureKey(f), home: f.team_h, away: f.team_a, kickoff: f.kickoff_time })),
+    weeks: previousPl.weeks ?? [],
+    table: previousPl.table ?? [],
+  };
   if (!predictionsEndpoint) {
     writeData("predictions.json", { enabled: false, weeks: [], table: [] });
+    Object.assign(plGame, { weeks: [], table: [] });
   } else if (!MOCK) {
     const picks = await fetchRevealedPicks(predictionsEndpoint);
     if (picks) {
       const people = context.managers.list.map((m) => ({ personKey: m.personKey, managerId: m.id }));
       writeData("predictions.json", { enabled: true, ...computePredictions(context.matches, picks, people) });
+      Object.assign(plGame, computePlPredictions([...plFixtures.values()], picks, people));
     }
   }
+  writeData("pl-predictions.json", plGame);
   writeData("cup.json", cup);
 
   const loreRaw = readJson(join(ROOT, "data", "league-lore.json"));

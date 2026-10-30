@@ -32,21 +32,62 @@ const MIN_CROWD = 4; // need at least this many callers for a crowd to disagree 
  * @param people   [{ personKey, managerId }] -- everyone who can play
  */
 export function computePredictions(matches, picks, people) {
-  const gws = [...new Set(picks.map((p) => p.gw))].sort((a, b) => a - b);
-  const personIds = new Map(people.map((p) => [p.personKey, p.managerId]));
+  const leaguePicks = picks.filter((p) => !isPlKey(p.fixture));
+  const gws = [...new Set(leaguePicks.map((p) => p.gw))].sort((a, b) => a - b);
+  const weeks = gws.map((gw) => weekOf(gw, matches
+    .filter((m) => m.event === gw)
+    .map((m) => ({ key: fixtureKey(m), home: m.homeManagerId, away: m.awayManagerId, result: resultOf(m) })), leaguePicks, people));
+  return { weeks, table: scoreWeeks(weeks, people) };
+}
 
-  const weeks = gws.map((gw) => {
-    const fixtures = matches
-      .filter((m) => m.event === gw)
-      .map((m) => ({ key: fixtureKey(m), home: m.homeManagerId, away: m.awayManagerId, result: resultOf(m) }));
-    const byPerson = {};
-    for (const p of picks.filter((x) => x.gw === gw)) {
-      if (!personIds.has(p.person) || !fixtures.some((f) => f.key === p.fixture)) continue;
-      (byPerson[p.person] ??= {})[p.fixture] = p.pick;
-    }
-    return { gw, fixtures, picks: byPerson, complete: fixtures.length > 0 && fixtures.every((f) => f.result) };
-  });
+// ---------------------------------------------------------------------------
+// Premier League results: the same game played on the real fixtures. Picks
+// share the sheet with the league game, told apart by their "pl{fixtureId}" key.
+// ---------------------------------------------------------------------------
+export const plFixtureKey = (f) => `pl${f.id}`;
+export const isPlKey = (key) => /^pl\d+$/.test(key);
 
+export function plResultOf(f) {
+  if (!(f.finished || f.finished_provisional) || f.team_h_score == null || f.team_a_score == null) return null;
+  return f.team_h_score > f.team_a_score ? "H" : f.team_h_score < f.team_a_score ? "A" : "D";
+}
+
+/**
+ * @param fixtures  Premier League fixtures in the FPL API shape
+ *                  ({ id, event, team_h, team_a, team_h_score, team_a_score, kickoff_time, finished })
+ * @param picks     revealed picks -- only the "pl…" ones are used
+ * @param people    [{ personKey, managerId }]
+ */
+export function computePlPredictions(fixtures, picks, people) {
+  const plPicks = picks.filter((p) => isPlKey(p.fixture));
+  const gws = [...new Set(plPicks.map((p) => p.gw))].sort((a, b) => a - b);
+  const weeks = gws.map((gw) => weekOf(gw, plFixturesFor(fixtures, gw).map((f) => ({
+    key: plFixtureKey(f), home: f.team_h, away: f.team_a,
+    score: plResultOf(f) ? [f.team_h_score, f.team_a_score] : null, result: plResultOf(f),
+  })), plPicks, people));
+  return { weeks, table: scoreWeeks(weeks, people) };
+}
+
+// One gameweek's Premier League fixtures in kickoff order.
+export function plFixturesFor(fixtures, gw) {
+  return fixtures
+    .filter((f) => f.event === gw)
+    .sort((a, b) => String(a.kickoff_time).localeCompare(String(b.kickoff_time)) || a.id - b.id);
+}
+
+function weekOf(gw, fixtures, picks, people) {
+  const known = new Set(people.map((p) => p.personKey));
+  const byPerson = {};
+  for (const p of picks.filter((x) => x.gw === gw)) {
+    if (!known.has(p.person) || !fixtures.some((f) => f.key === p.fixture)) continue;
+    (byPerson[p.person] ??= {})[p.fixture] = p.pick;
+  }
+  return { gw, fixtures, picks: byPerson, complete: fixtures.length > 0 && fixtures.every((f) => f.result) };
+}
+
+// Weeks of { fixtures: [{ key, result }], picks: { person: { key: pick } } } ->
+// the running table. Shared by both games.
+function scoreWeeks(weeks, people) {
   const stats = new Map(people.map((p) => [p.personKey, {
     personKey: p.personKey, managerId: p.managerId, played: 0, correct: 0, weeks: 0, bestWeek: 0, perfectWeeks: 0,
     streak: 0, bestStreak: 0, boldCalls: 0, boldHits: 0, byWeek: {},
@@ -97,5 +138,5 @@ export function computePredictions(matches, picks, people) {
     lastRank = row.rank;
   });
 
-  return { weeks, table };
+  return table;
 }

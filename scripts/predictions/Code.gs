@@ -3,7 +3,9 @@
  *
  * A static website can't store anything, so this tiny script is the shared
  * "ballot box": it lives in a Google Sheet, takes picks from the site, and
- * hands them back. Setup steps are in SETUP.md next to this file.
+ * hands them back. Setup steps are in SETUP.md next to this file. It holds two
+ * games side by side: the league's own head-to-heads, and real Premier League
+ * results.
  *
  * Rules it enforces on the server, so nobody can tinker from their browser:
  *   - picks are only accepted before that gameweek's deadline (read live from
@@ -55,6 +57,11 @@ function deadlines_() {
   return null;
 }
 
+// Two games share the sheet: "league" (the head-to-heads, fixture "{homeId}-{awayId}")
+// and "pl" (real Premier League matches, fixture "pl{fixtureId}").
+function kindOf_(value) { return value === "pl" ? "pl" : "league"; }
+function rowKind_(row) { return /^pl\d+$/.test(String(row[2])) ? "pl" : "league"; }
+
 function doPost(e) {
   var lock = LockService.getScriptLock();
   lock.waitLock(20000);
@@ -64,12 +71,14 @@ function doPost(e) {
     var person = String(body.person || "");
     var picks = body.picks || {};
     var fixtures = Object.keys(picks);
+    var kind = kindOf_(body.kind);
+    var keyPattern = kind === "pl" ? /^pl\d+$/ : /^\d+-\d+$/;
 
     if (!gw || gw < 1 || gw > 60) return json_({ ok: false, error: "Bad gameweek." });
     if (!/^[a-z][a-z-]{1,30}$/.test(person)) return json_({ ok: false, error: "Bad name." });
     if (!fixtures.length || fixtures.length > MAX_FIXTURES) return json_({ ok: false, error: "Bad picks." });
     for (var i = 0; i < fixtures.length; i++) {
-      if (!/^\d+-\d+$/.test(fixtures[i]) || ["H", "D", "A"].indexOf(picks[fixtures[i]]) === -1) {
+      if (!keyPattern.test(fixtures[i]) || ["H", "D", "A"].indexOf(picks[fixtures[i]]) === -1) {
         return json_({ ok: false, error: "Bad picks." });
       }
     }
@@ -80,8 +89,8 @@ function doPost(e) {
 
     var sh = sheet_();
     var rows = sh.getDataRange().getValues();
-    for (var r = rows.length - 1; r >= 1; r--) {            // replace this person's earlier picks
-      if (Number(rows[r][0]) === gw && rows[r][1] === person) sh.deleteRow(r + 1);
+    for (var r = rows.length - 1; r >= 1; r--) {            // replace this person's earlier picks (in this game only)
+      if (Number(rows[r][0]) === gw && rows[r][1] === person && rowKind_(rows[r]) === kind) sh.deleteRow(r + 1);
     }
     var now = new Date().toISOString();
     var out = fixtures.map(function (f) { return [gw, person, f, picks[f], now]; });
@@ -196,9 +205,10 @@ function doGet(e) {
 
   if (action === "status") {          // who has submitted for a gameweek (names only, never picks)
     var gw = Number(e.parameter.gw);
+    var kind = kindOf_(e.parameter.kind);
     var seen = {};
-    rows.forEach(function (r) { if (Number(r[0]) === gw) seen[r[1]] = true; });
-    return json_({ ok: true, gw: gw, deadline: deadlines[gw] || null, submitted: Object.keys(seen) });
+    rows.forEach(function (r) { if (Number(r[0]) === gw && rowKind_(r) === kind) seen[r[1]] = true; });
+    return json_({ ok: true, gw: gw, kind: kind, deadline: deadlines[gw] || null, submitted: Object.keys(seen) });
   }
 
   // everything from gameweeks whose deadline has passed

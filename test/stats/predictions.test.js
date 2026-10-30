@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { computePredictions, resultOf } from "../../scripts/stats/predictions.js";
+import { computePredictions, computePlPredictions, plResultOf, resultOf } from "../../scripts/stats/predictions.js";
 
 const m = (event, home, away, hp, ap, finished = true) => ({ event, homeManagerId: home, awayManagerId: away, homePoints: hp, awayPoints: ap, finished });
 const people = ["a", "b", "c", "d", "e"].map((personKey, i) => ({ personKey, managerId: i + 1 }));
@@ -50,4 +50,41 @@ test("ties share a rank", () => {
   const picks = [{ gw: 1, person: "a", fixture: "1-2", pick: "H" }, { gw: 1, person: "b", fixture: "1-2", pick: "H" }, { gw: 1, person: "c", fixture: "1-2", pick: "A" }];
   const { table } = computePredictions(matches, picks, people);
   assert.deepEqual(table.map((r) => r.rank), [1, 1, 3]);
+});
+
+const pl = (id, event, h, a, hs, as, finished = true, kickoff = "2026-10-31T15:00:00Z") =>
+  ({ id, event, team_h: h, team_a: a, team_h_score: hs, team_a_score: as, finished, finished_provisional: finished, kickoff_time: kickoff });
+
+test("plResultOf: home, away, draw, and null until finished", () => {
+  assert.equal(plResultOf(pl(1, 1, 1, 2, 2, 0)), "H");
+  assert.equal(plResultOf(pl(1, 1, 1, 2, 0, 3)), "A");
+  assert.equal(plResultOf(pl(1, 1, 1, 2, 1, 1)), "D");
+  assert.equal(plResultOf(pl(1, 1, 1, 2, 1, 0, false)), null);
+  assert.equal(plResultOf(pl(1, 1, 1, 2, null, null, false)), null);
+});
+
+test("Premier League game: scored apart from the league game, fixtures in kickoff order", () => {
+  const fixtures = [pl(11, 1, 5, 6, 0, 1, true, "2026-10-31T17:30:00Z"), pl(10, 1, 3, 4, 2, 2, true, "2026-10-31T12:30:00Z")];
+  const matches = [m(1, 1, 2, 50, 40)];
+  const picks = [
+    { gw: 1, person: "a", fixture: "1-2", pick: "H" },
+    { gw: 1, person: "a", fixture: "pl10", pick: "D" }, { gw: 1, person: "a", fixture: "pl11", pick: "H" },
+    { gw: 1, person: "b", fixture: "pl10", pick: "H" },
+    { gw: 1, person: "b", fixture: "pl99", pick: "H" }, // not a fixture that week
+  ];
+  const plOut = computePlPredictions(fixtures, picks, people);
+  assert.deepEqual(plOut.weeks[0].fixtures.map((f) => f.key), ["pl10", "pl11"]);
+  assert.deepEqual(plOut.weeks[0].fixtures[0].score, [2, 2]);
+  const a = plOut.table.find((r) => r.personKey === "a");
+  assert.deepEqual([a.correct, a.played], [1, 2]);
+  assert.deepEqual(Object.keys(plOut.weeks[0].picks).sort(), ["a", "b"]);
+
+  const league = computePredictions(matches, picks, people);
+  assert.equal(league.table.length, 1);
+  assert.deepEqual([league.table[0].correct, league.table[0].played], [1, 1]);
+});
+
+test("league game ignores weeks that only have Premier League picks", () => {
+  const { weeks } = computePredictions([m(2, 1, 2, 50, 40)], [{ gw: 2, person: "a", fixture: "pl10", pick: "H" }], people);
+  assert.equal(weeks.length, 0);
 });

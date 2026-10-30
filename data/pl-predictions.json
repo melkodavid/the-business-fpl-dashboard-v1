@@ -1,0 +1,171 @@
+{
+  "enabled": true,
+  "gw": 9,
+  "deadline": "2026-10-31T11:00:00Z",
+  "teams": {
+    "1": {
+      "name": "Arsenal",
+      "short": "ARS",
+      "code": 3
+    },
+    "2": {
+      "name": "Aston Villa",
+      "short": "AVL",
+      "code": 7
+    },
+    "3": {
+      "name": "Bournemouth",
+      "short": "BOU",
+      "code": 91
+    },
+    "4": {
+      "name": "Brentford",
+      "short": "BRE",
+      "code": 94
+    },
+    "5": {
+      "name": "Brighton",
+      "short": "BHA",
+      "code": 36
+    },
+    "6": {
+      "name": "Chelsea",
+      "short": "CHE",
+      "code": 8
+    },
+    "7": {
+      "name": "Coventry City",
+      "short": "COV",
+      "code": 9
+    },
+    "8": {
+      "name": "Crystal Palace",
+      "short": "CRY",
+      "code": 31
+    },
+    "9": {
+      "name": "Everton",
+      "short": "EVE",
+      "code": 11
+    },
+    "10": {
+      "name": "Fulham",
+      "short": "FUL",
+      "code": 54
+    },
+    "11": {
+      "name": "Hull City",
+      "short": "HUL",
+      "code": 88
+    },
+    "12": {
+      "name": "Ipswich Town",
+      "short": "IPS",
+      "code": 40
+    },
+    "13": {
+      "name": "Leeds",
+      "short": "LEE",
+      "code": 2
+    },
+    "14": {
+      "name": "Liverpool",
+      "short": "LIV",
+      "code": 14
+    },
+    "15": {
+      "name": "Man City",
+      "short": "MCI",
+      "code": 43
+    },
+    "16": {
+      "name": "Man Utd",
+      "short": "MUN",
+      "code": 1
+    },
+    "17": {
+      "name": "Newcastle",
+      "short": "NEW",
+      "code": 4
+    },
+    "18": {
+      "name": "Nott'm Forest",
+      "short": "NFO",
+      "code": 17
+    },
+    "19": {
+      "name": "Spurs",
+      "short": "TOT",
+      "code": 6
+    },
+    "20": {
+      "name": "Sunderland",
+      "short": "SUN",
+      "code": 56
+    }
+  },
+  "fixtures": [
+    {
+      "key": "pl84",
+      "home": 6,
+      "away": 16,
+      "kickoff": "2026-10-31T12:30:00Z"
+    },
+    {
+      "key": "pl82",
+      "home": 3,
+      "away": 13,
+      "kickoff": "2026-10-31T15:00:00Z"
+    },
+    {
+      "key": "pl83",
+      "home": 4,
+      "away": 18,
+      "kickoff": "2026-10-31T15:00:00Z"
+    },
+    {
+      "key": "pl85",
+      "home": 7,
+      "away": 20,
+      "kickoff": "2026-10-31T15:00:00Z"
+    },
+    {
+      "key": "pl86",
+      "home": 11,
+      "away": 12,
+      "kickoff": "2026-10-31T15:00:00Z"
+    },
+    {
+      "key": "pl88",
+      "home": 15,
+      "away": 5,
+      "kickoff": "2026-10-31T15:00:00Z"
+    },
+    {
+      "key": "pl90",
+      "home": 19,
+      "away": 8,
+      "kickoff": "2026-10-31T17:30:00Z"
+    },
+    {
+      "key": "pl81",
+      "home": 2,
+      "away": 10,
+      "kickoff": "2026-10-31T20:00:00Z"
+    },
+    {
+      "key": "pl87",
+      "home": 14,
+      "away": 1,
+      "kickoff": "2026-11-01T16:30:00Z"
+    },
+    {
+      "key": "pl89",
+      "home": 17,
+      "away": 9,
+      "kickoff": "2026-11-02T20:00:00Z"
+    }
+  ],
+  "weeks": [],
+  "table": []
+}

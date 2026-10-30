@@ -2592,9 +2592,20 @@ tfoot td { border-top: 2px solid var(--edge-bright); border-bottom: 0; }
 .pr-chip.pend { background: rgba(255,255,255,0.08); color: var(--text); } .pr-chip.none { color: var(--text-muted); }
 .pr-score td { border-top: 2px solid var(--edge-bright); }
 
+.pr-tabs { display: inline-flex; gap: 4px; padding: 4px; margin: 0.2rem 0 1rem; border-radius: 999px; border: 1px solid var(--edge-bright); background: #0d0f17; }
+.pr-tab { cursor: pointer; padding: 0.5rem 1.1rem; border: 0; border-radius: 999px; background: transparent; color: var(--text-muted); font: 800 0.74rem "Archivo", sans-serif; letter-spacing: 0.12em; text-transform: uppercase; white-space: nowrap; transition: background .15s, color .15s; }
+.pr-tab:hover { color: var(--text); }
+.pr-tab[aria-selected="true"] { background: var(--gold); color: #1b1405; }
+.pr-day { margin: 1rem 0 0.2rem; font: 800 0.7rem "Archivo", sans-serif; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); }
+.pr-day + .pr-fixture { border-top: 0; }
+.pr-pl-team { display: inline-flex; align-items: center; gap: 0.55rem; }
+.pr-crest { display: inline-grid; place-items: center; width: 28px; height: 28px; flex: none; } .pr-crest img { width: 28px; height: 28px; object-fit: contain; }
+
 @media (max-width: 720px) {
   .pr-fixture { grid-template-columns: 1fr; gap: 0.5rem; justify-items: center; text-align: center; } .pr-team.home, .pr-team.away { text-align: center; }
   .pr-picks { width: 100%; } .pr-pick { flex: 1; min-width: 0; }
+  .pr-pl .pr-team.home .pr-pl-team { flex-direction: row-reverse; }
+  .pr-tab { padding: 0.5rem 0.8rem; letter-spacing: 0.08em; }
   .pr-lock { justify-items: start; text-align: left; } .pr-who select { min-width: 0; width: 100%; }
 }
 
