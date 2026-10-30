@@ -2985,3 +2985,89 @@ section[id^="lv-"] { scroll-margin-top: 8rem; }
 .lv-plm.is-live .lv-plm-st { color: #ff6b6b; }
 .lv-plm.is-ft { opacity: 0.8; }
 @media (max-width: 520px) { .lv-pl-grid { grid-template-columns: 1fr 1fr; } .lv-plm { padding: 0.6rem 0.5rem 0.5rem; gap: 0.1rem 0.3rem; } .lv-plm-t { font-size: 0.82rem; } .lv-plm-s { font-size: 1.35rem; } }
+
+/* =========================================================================
+   Live page theme: SUNDAY LEAGUE -- the manager's whiteboard, hung on the
+   site's dark wall. Marker-pen scores, a magnet pinning each match, ruled
+   lines, a silver frame and a marker tray. Every colour token is re-set on
+   .lv, so the rules above (cards, tables, line-ups) all pick it up.
+   ========================================================================= */
+.lv {
+  --bg: #f6f4ec; --surface: #ffffff; --text: #1b2a4a; --text-muted: #5c6a86;
+  --border: rgba(27,42,74,0.15); --edge-bright: rgba(27,42,74,0.35);
+  --lime: #d6262f; --lime-contrast: #ffffff; --gold: #1d5fd1; --gold-bright: #d6262f;
+  --accent: #1d5fd1; --radius: 3px;
+  --marker-red: #d6262f; --marker-blue: #1d5fd1; --ink: #1b2a4a;
+  position: relative; color: var(--ink);
+  margin: 10px auto 34px; padding: 24px 20px 46px; border-radius: 6px;
+  background: linear-gradient(rgba(27,42,74,0.05) 1px, transparent 1px) 0 0 / 100% 28px, var(--bg);
+  box-shadow: 0 0 0 8px #c9ced5, 0 0 0 10px #8b94a0, 0 0 0 11px #5b636e, 0 24px 60px rgba(0,0,0,0.65);
+}
+/* the marker tray along the bottom of the board, with three pens resting in it */
+.lv::after {
+  content: ""; position: absolute; left: 6%; right: 6%; bottom: -12px; height: 16px; border-radius: 0 0 6px 6px;
+  background:
+    linear-gradient(90deg, transparent 18%, var(--marker-red) 18% 27%, #222 27% 29%, transparent 29% 41%, var(--marker-blue) 41% 50%, #222 50% 52%, transparent 52% 64%, #222 64% 73%, #555 73% 75%, transparent 75%) 0 3px / 100% 6px no-repeat,
+    linear-gradient(#d6dbe1, #9aa3ad);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.lv-title h2, .lv-h3 { font-family: "Permanent Marker", cursive; text-transform: none; letter-spacing: 0.02em; }
+.lv-title h2 { color: var(--ink); transform: rotate(-1.5deg); }
+.lv-title h2 em { color: var(--marker-red); }
+.lv-h3 { font-size: 1.35rem; color: var(--marker-blue); }
+.lv .section-title { font-family: "Permanent Marker", cursive; color: var(--ink); }
+.lv-status { color: var(--text-muted); }
+.lv-banner { background: rgba(214,38,47,0.06); border: 2px dashed rgba(214,38,47,0.45); color: var(--ink); }
+.lv-jump a { font-family: "Kalam", cursive; font-size: 0.85rem; letter-spacing: 0.02em; text-transform: none; font-weight: 700; border: 2px solid var(--ink); background: #fff; }
+.lv-jump a:hover { border-color: var(--marker-red); color: var(--marker-red); }
+.lv-mode { background: #fff; border: 2px solid var(--ink); }
+.lv-mode button { font-family: "Kalam", cursive; font-size: 0.85rem; letter-spacing: 0.02em; text-transform: none; }
+
+/* match cards: paper pinned with a magnet, every other one a touch skew-whiff */
+.lv-match, .lv-plm { background: #fff; border: 2px solid var(--ink); box-shadow: 3px 4px 0 rgba(27,42,74,0.2); overflow: visible; }
+.lv-match.is-cup { background: #fffdf2; border-color: #b48a1c; }
+.lv-match.is-you { border-color: var(--marker-red); box-shadow: 3px 4px 0 rgba(214,38,47,0.35); }
+.lv-match::before { content: ""; display: block; width: 18px; height: 18px; margin: -10px auto -8px; position: relative; z-index: 1; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #ff8a8a, var(--marker-red)); box-shadow: 0 2px 3px rgba(0,0,0,0.3); }
+.lv-match.is-cup::before { background: radial-gradient(circle at 35% 30%, #ffe08a, #c99a16); }
+.lv-grid > :nth-child(odd), .lv-pl-grid > :nth-child(odd) { transform: rotate(-0.4deg); }
+.lv-grid > :nth-child(even), .lv-pl-grid > :nth-child(even) { transform: rotate(0.3deg); }
+.lv-nums b, .lv-plm-s { font: 700 2.3rem/1 "Kalam", cursive; color: var(--marker-red); }
+.lv-nums i { color: var(--ink); }
+.lv-state { color: var(--marker-blue); }
+.lv .club-name, .lv-nm, .lv-plm-t { font-family: "Kalam", cursive; font-weight: 700; }
+.lv-side:not(.lead) .club-name { color: var(--text-muted); }
+.lv-prog .p-live { color: var(--marker-red); } .lv-prog .p-yet { color: #b07d00; }
+.lv-odds { background: rgba(27,42,74,0.08); color: var(--ink); }
+.lv-odds i { background: repeating-linear-gradient(45deg, var(--marker-blue) 0 4px, #4d86ea 4px 8px); opacity: 0.55; }
+.lv-cupnote b { color: #8a6500; }
+.lv-detail { border-top: 2px dashed var(--border); }
+
+/* line-ups */
+.lv-pl { background: rgba(29,95,209,0.05); }
+.lv-pos { background: rgba(27,42,74,0.08); }
+.lv-pos-GKP { color: #a06a00; } .lv-pos-DEF { color: #1d5fd1; } .lv-pos-MID { color: #13804a; } .lv-pos-FWD { color: #c0186b; }
+.lv-pl.st-live { background: rgba(214,38,47,0.08); box-shadow: inset 3px 0 0 var(--marker-red); }
+.lv-pl.sub-in { box-shadow: inset 3px 0 0 #13804a; }
+.lv-tag { color: #13804a; }
+.lv-pt { font-family: "Kalam", cursive; font-weight: 700; }
+.lv-pt sup { color: #b07d00; }
+
+/* Premier League + table */
+.lv-plm-who b { color: var(--marker-red); }
+.lv-plm.is-live { border-color: var(--marker-red); }
+.lv-plm.is-live .lv-plm-st { color: var(--marker-red); }
+.lv-day { font-family: "Kalam", cursive; font-size: 0.9rem; letter-spacing: 0.04em; color: var(--marker-blue); }
+.lv .card { background: #fff; border: 2px solid var(--ink); box-shadow: 3px 4px 0 rgba(27,42,74,0.2); }
+.lv-table td b { font-family: "Kalam", cursive; font-size: 1.05rem; color: var(--marker-red); }
+.lv-table tr.is-you td { background: rgba(214,38,47,0.07); }
+.lv-res-W { background: rgba(19,128,74,0.14); color: #13804a; } .lv-res-D { background: rgba(92,106,134,0.14); color: #5c6a86; } .lv-res-L { background: rgba(214,38,47,0.12); color: var(--marker-red); }
+.lv-up { color: #13804a; } .lv-down { color: var(--marker-red); }
+.lv-foot { color: var(--text-muted); }
+
+@media (max-width: 520px) {
+  .lv { padding: 18px 12px 40px; box-shadow: 0 0 0 5px #c9ced5, 0 0 0 7px #8b94a0, 0 16px 40px rgba(0,0,0,0.6); }
+}
+.lv-jump { flex-wrap: wrap; }
+.lv-jump a, .lv-mode button { line-height: 1.2; white-space: nowrap; }
+.lv-jump a { padding: 0.35rem 0.8rem; }
