@@ -88,10 +88,17 @@ test("live win chance is a certainty when nobody is left to play", () => {
 
 test("live table adds this week's result unless the stored table already has it", () => {
   const rows = [{ managerId: 1, rank: 1, total: 12, pointsFor: 300 }, { managerId: 2, rank: 2, total: 12, pointsFor: 280 }];
-  const matches = [{ homeId: 2, awayId: 1, home: { points: 60 }, away: { points: 40 } }];
+  const matches = [{ homeId: 2, awayId: 1, home: { points: 60, started: true }, away: { points: 40, started: true } }];
   const t = liveTable(rows, matches);
-  assert.deepEqual(t.map((r) => [r.managerId, r.liveTotal, r.liveRank, r.move]), [[2, 15, 1, 1], [1, 12, 2, -1]]);
-  assert.deepEqual(liveTable(rows, matches, { includesGw: true }).map((r) => r.liveTotal), [12, 12]);
+  assert.deepEqual(t.map((r) => [r.managerId, r.liveTotal, r.liveRank, r.move, r.result]), [[2, 15, 1, 1, "W"], [1, 12, 2, -1, "L"]]);
+  // already counted: no extra points, but the W/L still shows (it used to read "L" for everyone)
+  assert.deepEqual(liveTable(rows, matches, { includesGw: true }).map((r) => [r.liveTotal, r.result]), [[12, "L"], [12, "W"]]);
+});
+
+test("live table shows no result for a match nobody has kicked off in yet", () => {
+  const rows = [{ managerId: 1, rank: 1, total: 12, pointsFor: 300 }, { managerId: 2, rank: 2, total: 9, pointsFor: 280 }];
+  const notYet = [{ homeId: 1, awayId: 2, home: { points: 0, started: false }, away: { points: 0, started: false } }];
+  assert.deepEqual(liveTable(rows, notYet).map((r) => [r.liveTotal, r.result]), [[12, null], [9, null]]);
 });
 
 test("cup tie: earlier legs add up, then bench points, then seed decide who is through", () => {

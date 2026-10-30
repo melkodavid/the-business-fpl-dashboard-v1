@@ -190,6 +190,11 @@ async function main() {
   const schedule = computeSchedule(context);
   // When this gameweek's lineups lock (the FPL deadline) -- for countdowns.
   schedule.deadline = raw.bootstrap?.events?.data?.find((e) => e.id === schedule.gw)?.deadline_time ?? null;
+  // The gameweek's Premier League fixtures and club short names, so the Live page
+  // can preview a gameweek before the deadline (the live relay only serves the
+  // current one). The Draft bootstrap lists upcoming fixtures keyed by gameweek.
+  schedule.plFixtures = (raw.bootstrap?.fixtures?.[schedule.gw] ?? []).map((f) => ({ id: f.id, h: f.team_h, a: f.team_a, k: f.kickoff_time }));
+  schedule.teams = Object.fromEntries((raw.bootstrap?.teams ?? []).map((t) => [t.id, t.short_name]));
   // Win odds are a bonus: any failure here (the classic FPL API being down or
   // changing shape) must never break the hourly data refresh, so the fixtures
   // just go without odds and the site falls back to its form bar.

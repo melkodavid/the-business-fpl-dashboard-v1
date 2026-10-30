@@ -106,6 +106,8 @@ export function managerLive(managerId, payload, { ep = new Map(), states, bonusB
   const projected = points + xi.filter((p) => p.state === "yet").reduce((t, p) => t + (ep.get(p.element) ?? 2), 0);
   return {
     managerId, points, benchPoints: sum(bench), projected: Math.round(projected),
+    // any of their 15 has kicked off (a blank-gameweek team doesn't count)
+    started: lines.some((p) => p.state === "live" || p.state === "done"),
     toPlay, playing, done: xi.length - toPlay - playing,
     xi: xi.map((p) => ({ ...p, subIn: subbedIn.has(p.element) })),
     bench: lines.filter((p) => p.position > 11).map((p) => ({ ...p, subOut: false, usedAsSub: subbedIn.has(p.element) })),
@@ -153,19 +155,24 @@ export function computeLive(payload, { ep = new Map(), sigma } = {}) {
 // The league table as it would stand if every live score held.
 // `rows` are standings rows (managerId, total, pointsFor, rank); the live GW is
 // only added when the stored table doesn't already include it.
+// Each row's `result` (W/D/L) comes from the match itself, so it reads right
+// whether or not the stored table already counts this gameweek; it stays null
+// until at least one player in the match has kicked off.
 export function liveTable(rows, matches, { includesGw = false } = {}) {
   const add = new Map();
-  if (!includesGw) {
-    for (const m of matches) {
-      if (!m.home || !m.away) continue;
-      const h = m.home.points, a = m.away.points;
-      add.set(m.homeId, { pts: h > a ? 3 : h === a ? 1 : 0, pf: h });
-      add.set(m.awayId, { pts: a > h ? 3 : h === a ? 1 : 0, pf: a });
-    }
+  const result = new Map();
+  for (const m of matches) {
+    if (!m.home || !m.away || !(m.home.started || m.away.started)) continue;
+    const h = m.home.points, a = m.away.points;
+    result.set(m.homeId, h > a ? "W" : h === a ? "D" : "L");
+    result.set(m.awayId, a > h ? "W" : h === a ? "D" : "L");
+    if (includesGw) continue;
+    add.set(m.homeId, { pts: h > a ? 3 : h === a ? 1 : 0, pf: h });
+    add.set(m.awayId, { pts: a > h ? 3 : h === a ? 1 : 0, pf: a });
   }
   const live = rows.map((r) => {
     const extra = add.get(r.managerId) ?? { pts: 0, pf: 0 };
-    return { ...r, liveTotal: r.total + extra.pts, livePointsFor: r.pointsFor + extra.pf, gained: extra.pts };
+    return { ...r, liveTotal: r.total + extra.pts, livePointsFor: r.pointsFor + extra.pf, result: result.get(r.managerId) ?? null };
   });
   live.sort((x, y) => y.liveTotal - x.liveTotal || y.livePointsFor - x.livePointsFor);
   return live.map((r, i) => ({ ...r, liveRank: i + 1, move: r.rank - (i + 1) }));

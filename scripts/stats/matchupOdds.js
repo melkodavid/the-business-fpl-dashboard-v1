@@ -167,7 +167,7 @@ export function predictLineups(context, inputs) {
   const lineups = {};
   const card = (id) => {
     const p = context.players.byId.get(id);
-    return p && { id, name: p.webName, pos: p.positionName, type: p.elementType, team: p.teamName, ep: Math.round((ep.get(id) ?? 0) * 10) / 10 };
+    return p && { id, name: p.webName, pos: p.positionName, type: p.elementType, team: p.teamName, teamId: p.teamId, ep: Math.round((ep.get(id) ?? 0) * 10) / 10 };
   };
   for (const manager of context.managers.list) {
     const squad = squads.get(manager.id) ?? [];

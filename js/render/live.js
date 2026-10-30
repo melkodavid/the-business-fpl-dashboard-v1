@@ -17,6 +17,8 @@ let tickTimer = null;
 const open = new Set(); // match cards the viewer has expanded, kept across refreshes
 let clicksBound = false;
 let currentLoad = null;
+let currentRedraw = null;
+let viewMode = "current"; // or "preview": next gameweek before its deadline
 
 const ROUND_NAME = { round1: "Round 1", round2: "Quarter-finals", round3: "Semi-finals", round4: "The Final" };
 const clean = (n) => (n ?? "").replace(/\s*\*+$/, "").trim();
@@ -61,28 +63,29 @@ function playerRow(p, { benched = false } = {}) {
   </li>`;
 }
 
-function lineupHtml(m, managers) {
+function lineupHtml(m, managers, preview) {
   if (!m?.hasPicks) return `<div class="lv-lineup"><p class="lv-empty">Line-up not available yet.</p></div>`;
   const bench = m.bench.filter((p) => !p.usedAsSub);
   return `
     <div class="lv-lineup">
       <h4>${managers.clubHtml(m.managerId)}</h4>
+      ${preview ? `<p class="lv-bench-h">Predicted XI</p>` : ""}
       <ol class="lv-xi">${m.xi.map((p) => playerRow(p)).join("")}</ol>
-      <p class="lv-bench-h">Bench · ${m.benchPoints} pts</p>
+      <p class="lv-bench-h">Bench${preview ? "" : ` · ${m.benchPoints} pts`}</p>
       <ol class="lv-xi lv-bench">${bench.map((p) => playerRow(p)).join("")}${m.subbedOff.map((p) => playerRow(p, { benched: true })).join("")}</ol>
     </div>`;
 }
 
-function matchCard({ key, homeId, awayId, home, away, winPct, cup = null }, managers, myId) {
+function matchCard({ key, homeId, awayId, home, away, winPct, cup = null }, managers, myId, preview = false) {
   const hp = home?.points ?? 0, ap = away?.points ?? 0;
   const homeScore = cup ? cup.scoreA : hp;
   const awayScore = cup ? cup.scoreB : ap;
   const lead = homeScore > awayScore ? "home" : awayScore > homeScore ? "away" : "level";
   const isMine = homeId === myId || awayId === myId;
   const isOpen = open.has(key);
-  const anyPlayed = (home?.done ?? 0) + (home?.playing ?? 0) + (away?.done ?? 0) + (away?.playing ?? 0) > 0;
+  const anyPlayed = Boolean(home?.started || away?.started);
   const allDone = home && away && !home.toPlay && !home.playing && !away.toPlay && !away.playing;
-  const cupNote = cup
+  const cupNote = cup && anyPlayed
     ? `<p class="lv-cupnote">${cup.leaderId ? `${allDone ? "Through" : "Going through"}: <b>${escapeHtml(clean(managers.name(cup.leaderId)))}</b>` : ""}${cup.by === "bench" ? " · level, ahead on bench points" : cup.by === "seed" ? " · level on points and bench, higher seed goes through" : ""}${cup.twoLegs ? " · aggregate over both gameweeks" : ""}</p>`
     : "";
   return `
@@ -90,23 +93,23 @@ function matchCard({ key, homeId, awayId, home, away, winPct, cup = null }, mana
       <button type="button" class="lv-sum" aria-expanded="${isOpen}">
         <div class="lv-side lv-home${lead === "home" ? " lead" : ""}">${managers.clubHtml(homeId)}${progressHtml(home)}</div>
         <div class="lv-score">
-          <span class="lv-state">${allDone ? "Full time" : anyPlayed ? "Live" : "Not started"}</span>
-          <div class="lv-nums"><b>${homeScore}</b><i>–</i><b>${awayScore}</b></div>
+          <span class="lv-state">${allDone && anyPlayed ? "Full time" : anyPlayed ? "Live" : "Not started"}</span>
+          <div class="lv-nums"><b>${anyPlayed ? homeScore : "-"}</b><i>–</i><b>${anyPlayed ? awayScore : "-"}</b></div>
           ${allDone ? "" : `<small>proj ${home?.projected ?? "–"}–${away?.projected ?? "–"}</small>`}
         </div>
         <div class="lv-side lv-away${lead === "away" ? " lead" : ""}">${managers.clubHtml(awayId)}${progressHtml(away)}</div>
-        ${!cup && !allDone ? `<div class="lv-odds" title="Live win chance"><i style="width:${winPct}%"></i><span>${winPct}%</span><span>${100 - winPct}%</span></div>` : ""}
+        ${!cup && !allDone ? `<div class="lv-odds" title="${anyPlayed ? "Live" : "Pre-match"} win chance"><i style="width:${winPct}%"></i><span>${winPct}%</span><span>${100 - winPct}%</span></div>` : ""}
         <span class="lv-chev" aria-hidden="true">▾</span>
       </button>
       ${cupNote}
-      <div class="lv-detail"${isOpen ? "" : " hidden"}>${lineupHtml(home, managers)}${lineupHtml(away, managers)}</div>
+      <div class="lv-detail"${isOpen ? "" : " hidden"}>${lineupHtml(home, managers, preview)}${lineupHtml(away, managers, preview)}</div>
     </article>`;
 }
 
 function tableHtml(rows, managers, myId) {
   const body = rows.map((r) => {
     const move = r.move > 0 ? `<i class="lv-up">▲${r.move}</i>` : r.move < 0 ? `<i class="lv-down">▼${-r.move}</i>` : `<i class="lv-same">–</i>`;
-    const res = r.gained === 3 ? "W" : r.gained === 1 ? "D" : r.gained === 0 ? "L" : "";
+    const res = r.result;
     return `<tr class="${r.managerId === myId ? "is-you" : ""}">
       <td>${r.liveRank} ${move}</td>
       <td class="text-left">${managers.clubHtml(r.managerId)}</td>
@@ -121,7 +124,7 @@ function tableHtml(rows, managers, myId) {
 }
 
 // Cup ties being played in this gameweek, or (before kick-off) the next ones.
-function cupSection(data, live, managers, myId) {
+function cupSection(data, live, managers, myId, preview) {
   const rounds = data.cup?.rounds ?? {};
   const entry = Object.entries(rounds).find(([, r]) => (r.gws ?? []).includes(live.gw) && r.draw?.length);
   if (!entry) {
@@ -134,7 +137,7 @@ function cupSection(data, live, managers, myId) {
   const legNote = round.gws.length > 1 ? ` · leg ${round.gws.indexOf(live.gw) + 1} of ${round.gws.length}` : "";
   return `
     <p class="lv-sub">${ROUND_NAME[key] ?? key} · GW${round.gws.join(" + GW")}${legNote}</p>
-    <div class="lv-grid">${ties.map((t) => matchCard({ key: `cup-${t.matchId}`, homeId: t.managerAId, awayId: t.managerBId, home: t.a, away: t.b, cup: t }, managers, myId)).join("")}</div>`;
+    <div class="lv-grid">${ties.map((t) => matchCard({ key: `cup-${t.matchId}`, homeId: t.managerAId, awayId: t.managerBId, home: t.a, away: t.b, cup: t }, managers, myId, preview)).join("")}</div>`;
 }
 
 // ---------------------------------------------------------------------------
@@ -147,17 +150,51 @@ function epMap(data, gw) {
   return ep;
 }
 
-function draw(root, data, managers, payload) {
+// The next gameweek as a blank scoreboard: Premier League fixtures from the
+// build, the head-to-heads and cup ties, and each side's predicted XI (the real
+// line-ups only exist once the deadline locks them).
+function previewPayload(data) {
+  const s = data.schedule;
+  if (!s?.gw || !s.plFixtures?.length || s.lineupsMeta?.gw !== s.gw) return null;
+  const picks = {}, players = {}, el = {};
+  for (const [id, l] of Object.entries(s.lineups ?? {})) {
+    const xi = [...(l.xi ?? [])].sort((a, b) => a.type - b.type);
+    picks[id] = [...xi, ...(l.bench ?? [])].map((p, i) => {
+      players[p.id] = [p.name, p.type, p.teamId ?? 0];
+      el[p.id] = [0, 0, 0];
+      return [p.id, i + 1];
+    });
+  }
+  return {
+    gw: s.gw, finished: false, preview: true, fetchedAt: new Date().toISOString(),
+    matches: s.fixtures.map((f) => [f.homeManagerId, f.awayManagerId]),
+    picks, players, el, teams: s.teams ?? {},
+    fixtures: s.plFixtures.map((f) => ({ ...f, hs: null, as: null, st: false, fin: false, bon: false, bps: [] })),
+  };
+}
+
+function draw(root, data, managers, current) {
   const myId = managers.idForPersonKey(getIdentity());
+  const nextGw = data.schedule?.gw > current.gw ? data.schedule.gw : null;
+  const previewable = nextGw ? previewPayload(data) : null;
+  const preview = viewMode === "preview" && Boolean(previewable);
+  const payload = preview ? previewable : current;
   const live = computeLive(payload, { ep: epMap(data, payload.gw), sigma: data.schedule?.oddsMeta?.sigma });
   const includesGw = (data.meta?.finishedThroughGw ?? 0) >= payload.gw;
   const isLive = live.anyStarted && !payload.finished;
-  const upcomingGw = data.schedule?.gw > payload.gw ? data.schedule.gw : null;
+  const upcomingGw = preview ? null : nextGw;
 
   const matches = live.matches.map((m) => ({ ...m, key: `lg-${m.homeId}-${m.awayId}` }));
   matches.sort((x, y) => Number(y.homeId === myId || y.awayId === myId) - Number(x.homeId === myId || x.awayId === myId));
 
-  const headline = isLive ? "Live" : payload.finished ? "Final" : live.anyStarted ? "Live" : "Kicks off soon";
+  const headline = preview ? "Preview" : isLive ? "Live" : payload.finished ? "Final" : live.anyStarted ? "Live" : "Kicks off soon";
+  const firstKick = [...payload.fixtures].map((f) => f.k).filter(Boolean).sort()[0];
+  const toggle = previewable
+    ? `<div class="lv-mode" role="group" aria-label="Which gameweek">
+        <button type="button" data-mode="current" aria-pressed="${!preview}">GW${current.gw} ${current.finished ? "Final" : "Live"}</button>
+        <button type="button" data-mode="preview" aria-pressed="${preview}">GW${nextGw} Preview</button>
+      </div>`
+    : "";
   const banner = upcomingGw && data.schedule.deadline
     ? `<p class="lv-banner">Next up: <b>Gameweek ${upcomingGw}</b> - line-ups lock ${kickoffText(data.schedule.deadline)}. Live scoring starts at the first kick-off.</p>`
     : "";
@@ -166,21 +203,24 @@ function draw(root, data, managers, payload) {
     <div class="lv">
       <header class="lv-head">
         <div class="lv-title">${isLive ? `<span class="lv-dot" aria-hidden="true"></span>` : ""}<h2>Gameweek ${payload.gw} <em>${headline}</em></h2></div>
-        <p class="lv-status">${live.fixturesDone} of ${live.fixturesTotal} Premier League games finished · updated <span id="lv-ago">${agoText(payload.fetchedAt)}</span>
-          <button type="button" class="lv-refresh" id="lv-refresh" title="Refresh now">↻</button></p>
+        ${preview
+          ? `<p class="lv-status">First kick-off ${kickoffText(firstKick)} · line-ups lock ${kickoffText(data.schedule.deadline)}</p>`
+          : `<p class="lv-status">${live.fixturesDone} of ${live.fixturesTotal} Premier League games finished · updated <span id="lv-ago">${agoText(payload.fetchedAt)}</span>
+          <button type="button" class="lv-refresh" id="lv-refresh" title="Refresh now">↻</button></p>`}
       </header>
+      ${toggle}
       ${banner}
       ${fixturesStrip(payload)}
       <nav class="lv-jump"><a href="#live" data-jump="lv-league">League</a><a href="#live" data-jump="lv-cup">Cup</a><a href="#live" data-jump="lv-table">Table</a></nav>
       <section id="lv-league"><h3 class="lv-h3">The league</h3>
-        <div class="lv-grid">${matches.map((m) => matchCard(m, managers, myId)).join("")}</div>
+        <div class="lv-grid">${matches.map((m) => matchCard(m, managers, myId, preview)).join("")}</div>
       </section>
-      <section id="lv-cup"><h3 class="lv-h3">🏆 The Grassroots Cup</h3>${cupSection(data, live, managers, myId)}</section>
+      <section id="lv-cup"><h3 class="lv-h3">🏆 The Grassroots Cup</h3>${cupSection(data, live, managers, myId, preview)}</section>
       <section id="lv-table"><h3 class="lv-h3">Live table</h3>
-        <p class="lv-sub">${includesGw ? "Final standings after this gameweek." : "The table if every score stays as it is now."}</p>
+        <p class="lv-sub">${preview ? `Current standings. Results appear here once GW${payload.gw} kicks off.` : includesGw ? "Final standings after this gameweek." : "The table if every score stays as it is now."}</p>
         ${tableHtml(liveTable(data.standings?.rows ?? [], live.matches, { includesGw }), managers, myId)}
       </section>
-      <p class="lv-foot">Scores include provisional bonus (<sup>+n</sup>) and automatic subs, and refresh every minute. Official totals are confirmed by the Draft site after the gameweek.</p>
+      <p class="lv-foot">${preview ? "Preview: the line-ups shown are each team's predicted best XI from the official FPL expected points; the real ones lock at the deadline. " : ""}Scores include provisional bonus (<sup>+n</sup>) and automatic subs, and refresh every minute. Official totals are confirmed by the Draft site after the gameweek.</p>
     </div>`;
 }
 
@@ -210,15 +250,21 @@ export function render(container, data, managers) {
       // an older copy of the Apps Script ignores ?action=live and answers with predictions
       if (!Array.isArray(next.fixtures) || !next.picks || Array.isArray(next.picks)) throw new Error("the league's Apps Script needs its live-scores update - see scripts/predictions/SETUP.md");
       payload = next;
-      const y = window.scrollY;
-      draw(container, data, managers, payload);
-      window.scrollTo(0, y);
+      redraw();
     } catch (err) {
       if (!payload) container.innerHTML = errorHtml(`Couldn't reach the live scores right now (${escapeHtml(err.message)}). Trying again in a minute.`);
     }
   }
 
+  function redraw() {
+    if (!payload) return;
+    const y = window.scrollY;
+    draw(container, data, managers, payload);
+    window.scrollTo(0, y);
+  }
+
   currentLoad = load;
+  currentRedraw = redraw;
   // `container` is the app's shared page root, so bind this once per session.
   if (!clicksBound) {
     clicksBound = true;
@@ -227,6 +273,8 @@ export function render(container, data, managers) {
       const jump = e.target.closest("[data-jump]");
       if (jump) { e.preventDefault(); document.getElementById(jump.dataset.jump)?.scrollIntoView({ behavior: "smooth", block: "start" }); return; }
       if (e.target.closest("#lv-refresh")) { currentLoad?.(); return; }
+      const mode = e.target.closest("[data-mode]");
+      if (mode) { viewMode = mode.dataset.mode; currentRedraw?.(); return; }
       const sum = e.target.closest(".lv-sum");
       if (!sum) return;
       const card = sum.closest(".lv-match");

@@ -2972,3 +2972,8 @@ section[id^="lv-"] { scroll-margin-top: 8rem; }
 }
 @media (prefers-reduced-motion: reduce) { .lv-dot, .site-nav a.nav-live.is-live::before { animation: none; } }
 .lv-table tbody tr { animation: none; } /* the page redraws every minute -- no replaying the row cascade */
+
+/* Live: current gameweek / next-gameweek preview switch */
+.lv-mode { display: inline-flex; margin: 0 0 0.8rem; padding: 3px; border-radius: 99px; background: var(--surface); border: 1px solid var(--edge-bright); }
+.lv-mode button { cursor: pointer; border: 0; border-radius: 99px; padding: 0.45rem 1rem; min-height: 36px; background: none; color: var(--text-muted); font: 800 0.75rem "Archivo", sans-serif; letter-spacing: 0.08em; text-transform: uppercase; }
+.lv-mode button[aria-pressed="true"] { background: var(--lime); color: var(--lime-contrast); }
