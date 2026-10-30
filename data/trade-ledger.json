@@ -1480,7 +1480,14 @@
               "elementId": 200,
               "playerName": "Lacroix",
               "points": 3,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 499,
+                "playerName": "Pedro Porro",
+                "position": "DEF",
+                "acquiredGw": 9,
+                "gwsStarted": 0,
+                "points": 0
+              }
             },
             {
               "elementId": 432,
