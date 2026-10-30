@@ -3160,6 +3160,47 @@ section[id^="lv-"] { scroll-margin-top: 8rem; }
 }
 
 /* =========================================================================
+   THE GRASSROOTS CUP -- "Gilded Emerald". The original emerald and gold,
+   made richer: a gold-foil serif title over a rule-and-diamond, a double
+   gold frame with engraved corner marks, gold-hairline ties with a soft
+   bevel. Layered over the original cup styles above.
+   ========================================================================= */
+.cup-theme {
+  --cup-gold: #d9b45a; --cup-gold-bright: #f7e7b4; --cup-gold-deep: #9c7a2c;
+  background: radial-gradient(ellipse 900px 520px at 50% -8%, rgba(217,180,90,0.2), transparent 60%), linear-gradient(180deg, #0d3a29, #072619);
+  border: 1px solid var(--cup-gold); border-radius: 6px;
+  box-shadow: inset 0 0 0 7px #072619, inset 0 0 0 8px rgba(217,180,90,0.5), 0 24px 60px rgba(0,0,0,0.55);
+}
+/* engraved corner marks inside the frame */
+.cup-theme::after {
+  content: ""; position: absolute; inset: 16px; pointer-events: none; z-index: 2;
+  --g: var(--cup-gold);
+  background:
+    linear-gradient(var(--g), var(--g)) top left / 46px 1px no-repeat, linear-gradient(var(--g), var(--g)) top left / 1px 46px no-repeat,
+    linear-gradient(var(--g), var(--g)) top right / 46px 1px no-repeat, linear-gradient(var(--g), var(--g)) top right / 1px 46px no-repeat,
+    linear-gradient(var(--g), var(--g)) bottom left / 46px 1px no-repeat, linear-gradient(var(--g), var(--g)) bottom left / 1px 46px no-repeat,
+    linear-gradient(var(--g), var(--g)) bottom right / 46px 1px no-repeat, linear-gradient(var(--g), var(--g)) bottom right / 1px 46px no-repeat;
+}
+.cup-theme .cup-title {
+  font-family: "Playfair Display", Georgia, serif; font-weight: 800;
+  background: linear-gradient(180deg, #fff4c9, #d9b45a 55%, #a07d2c); -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 2px 0 rgba(0,0,0,0.35));
+}
+/* gold rule and diamond under the title */
+.cup-theme .cup-hero::after {
+  content: ""; display: block; width: 180px; height: 12px; margin: 14px auto 0;
+  background: center / contain no-repeat url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 12'><path d='M0 6h74M106 6h74' stroke='%23d9b45a' stroke-width='1'/><path d='M90 0l6 6-6 6-6-6Z' fill='%23d9b45a'/><path d='M80 6l2-2 2 2-2 2ZM96 6l2-2 2 2-2 2Z' fill='%23d9b45a' opacity='.7'/></svg>");
+}
+.cup-theme .cup-plinth { font-family: "Playfair Display", Georgia, serif; letter-spacing: 0.32em; background: linear-gradient(180deg, #0f4430, #072619); border: 1px solid var(--cup-gold); box-shadow: 0 0 0 3px #072619, 0 0 0 4px rgba(217,180,90,0.5); }
+.cup-theme .cup-bracket-col-head { font: italic 700 1.05rem "Playfair Display", Georgia, serif; color: var(--cup-gold-bright); }
+.cup-theme .cup-bracket-match { background: linear-gradient(160deg, #0f4430, #082a1c); border: 1px solid rgba(217,180,90,0.45); border-radius: 2px; box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), 0 8px 18px rgba(0,0,0,0.35); }
+.cup-theme .cup-bracket-match.future { background: transparent; box-shadow: none; }
+.cup-theme .cup-bracket-side { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 700; font-size: 0.98rem; }
+.cup-theme .cup-score { font-family: "Playfair Display", Georgia, serif; }
+.cup-theme .cup-champion-slot .cup-champ-name { font-family: "Playfair Display", Georgia, serif; }
+@media (max-width: 560px) { .cup-theme::after { inset: 10px; } }
+
+/* =========================================================================
    THE GRASSROOTS CUP -- the Champion's Blazer (render/cupTraditions.js).
    ========================================================================= */
 /* ---- the Champion's Blazer ---- */

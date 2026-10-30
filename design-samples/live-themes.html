@@ -138,7 +138,7 @@
   }
   picker.innerHTML = THEMES.map(([cls, name]) => `<button type="button" data-theme="${cls}">${name}</button>`).join("");
   picker.addEventListener("click", (e) => { const b = e.target.closest("[data-theme]"); if (b) choose(b.dataset.theme); });
-  choose("lv-house");
+  choose(THEMES.some((t) => t[0] === new URLSearchParams(location.search).get("theme")) ? new URLSearchParams(location.search).get("theme") : "lv-house");
 
   // The real Live page, on the real data and live relay.
   location.hash = "live";

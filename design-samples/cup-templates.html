@@ -199,7 +199,7 @@
   }
   picker.innerHTML = T.map(([, name, lvl]) => `<button type="button">${name}${meter(lvl)}</button>`).join("");
   picker.addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) choose([...picker.children].indexOf(b)); });
-  choose(1);
+  choose(Number(new URLSearchParams(location.search).get("t") ?? 1) || 0);
 
   const data = await loadAllData();
   render(document.getElementById("app"), data, managerLookup(data));
