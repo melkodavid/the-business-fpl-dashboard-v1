@@ -130,6 +130,12 @@ async function main() {
   );
   const cupDrawControl = MOCK ? {} : { hold: drawFile.hold ?? [], manual: manualDraws };
   const cup = { ...computeCup(context, config.CUP_ROUND_GWS, previousCup, cupSeeding, cupDrawControl), _mock: MOCK };
+  // The Live page scores a two-gameweek round as "first leg + live leg": give it
+  // every finished leg's scores ({ gw: { managerId: points } }) while a round is open.
+  for (const round of Object.values(cup.rounds ?? {})) {
+    const finishedLegs = (round.gws ?? []).filter((gw) => context.finishedGws.includes(gw) && context.gwPicks[gw]);
+    round.legs = Object.fromEntries(finishedLegs.map((gw) => [gw, Object.fromEntries(Object.entries(context.gwPicks[gw]).map(([id, row]) => [id, row.totalPoints ?? 0]))]));
+  }
 
   const profilesData = readJson(join(ROOT, "data", "manager-profiles.json"));
   const profileByKey = new Map(profilesData.profiles.map((p) => [p.personKey, p]));

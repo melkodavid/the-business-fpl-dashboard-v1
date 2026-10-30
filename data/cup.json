@@ -111,7 +111,8 @@
           "method": "manual"
         }
       ],
-      "results": null
+      "results": null,
+      "legs": {}
     },
     "round2": {
       "gws": [
@@ -157,7 +158,8 @@
             "winnerOf": "r1-4"
           }
         }
-      ]
+      ],
+      "legs": {}
     },
     "round3": {
       "gws": [
@@ -166,14 +168,16 @@
       ],
       "draw": null,
       "results": null,
-      "planned": null
+      "planned": null,
+      "legs": {}
     },
     "round4": {
       "gws": [
         36
       ],
       "draw": null,
-      "results": null
+      "results": null,
+      "legs": {}
     }
   },
   "champion": null,

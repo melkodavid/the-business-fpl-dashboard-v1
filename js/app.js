@@ -24,6 +24,7 @@ import { render as renderHistory } from "./render/history.js";
 import { render as renderCup } from "./render/cup.js";
 import { render as renderPredictions } from "./render/predictions.js";
 import { render as renderScheduleSwap } from "./render/scheduleSwap.js";
+import { render as renderLive } from "./render/live.js";
 
 const ROUTES = {
   landing: renderLanding,
@@ -48,6 +49,7 @@ const ROUTES = {
   cup: renderCup,
   predictions: renderPredictions,
   "schedule-swap": renderScheduleSwap,
+  live: renderLive,
 };
 const DEFAULT_ROUTE = "landing";
 
@@ -98,7 +100,17 @@ function initScrollReveal() {
   belowFold.forEach((el) => el.classList.remove("reveal-init"));
 }
 
+// A pulsing dot on the Live tab from the deadline until the gameweek is over.
+function markLiveNav(schedule) {
+  const link = nav.querySelector('[data-route="live"]');
+  if (!link || !schedule?.deadline) return;
+  const started = Date.now() >= new Date(schedule.deadline).getTime();
+  const over = (schedule.fixtures ?? []).length > 0 && schedule.fixtures.every((f) => f.finished);
+  link.classList.toggle("is-live", started && !over);
+}
+
 function main(data, managers) {
+  markLiveNav(data.schedule);
   function draw() {
     const route = currentRoute();
     setActiveNav(route);

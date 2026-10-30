@@ -94,8 +94,102 @@ function doPost(e) {
   }
 }
 
+// ---------------------------------------------------------------------------
+// Live scores relay. The official Draft API doesn't let web pages read it
+// directly (no CORS headers), so the site's Live page asks this script instead.
+// It returns one small, compact snapshot of the current gameweek -- the site
+// does all the scoring (auto-subs, bonus, cup ties) itself. Everything is
+// cached so a room full of people refreshing costs the Draft API one call a
+// minute, not one each.
+// ---------------------------------------------------------------------------
+var DRAFT_API = "https://draft.premierleague.com/api";
+var LEAGUE_ID = 628;
+
+function draftGet_(path) {
+  var res = UrlFetchApp.fetch(DRAFT_API + path, { muteHttpExceptions: true, headers: { "User-Agent": "Mozilla/5.0" } });
+  if (res.getResponseCode() !== 200) throw new Error(path + " -> " + res.getResponseCode());
+  return JSON.parse(res.getContentText());
+}
+
+function cached_(key, seconds, build) {
+  var cache = CacheService.getScriptCache();
+  var hit = cache.get(key);
+  if (hit) return JSON.parse(hit);
+  var value = build();
+  var text = JSON.stringify(value);
+  if (text.length < 95000) cache.put(key, text, seconds); // the cache refuses values over 100KB
+  return value;
+}
+
+function live_() {
+  return cached_("live", 50, function () {
+    var game = draftGet_("/game");
+    var gw = game.current_event;
+
+    // who is in the league and this gameweek's head-to-heads (changes rarely)
+    var league = cached_("league:" + gw, 900, function () {
+      var d = draftGet_("/league/" + LEAGUE_ID + "/details");
+      return {
+        entries: d.league_entries.filter(function (x) { return x.entry_id; }).map(function (x) { return [x.id, x.entry_id]; }),
+        matches: d.matches.filter(function (m) { return m.event === gw; }).map(function (m) { return [m.league_entry_1, m.league_entry_2]; })
+      };
+    });
+
+    // everyone's 15 for the gameweek -- locked at the deadline, so cache longer
+    var picks = cached_("picks:" + gw, 900, function () {
+      var reqs = league.entries.map(function (x) {
+        return { url: DRAFT_API + "/entry/" + x[1] + "/event/" + gw, muteHttpExceptions: true, headers: { "User-Agent": "Mozilla/5.0" } };
+      });
+      var out = {};
+      UrlFetchApp.fetchAll(reqs).forEach(function (res, i) {
+        if (res.getResponseCode() !== 200) return;
+        out[league.entries[i][0]] = JSON.parse(res.getContentText()).picks.map(function (p) { return [p.element, p.position]; });
+      });
+      return out;
+    });
+
+    // player names / positions / clubs (all players, compact)
+    var boot = cached_("players", 21600, function () {
+      var b = draftGet_("/bootstrap-static");
+      var el = {}, teams = {};
+      b.elements.forEach(function (x) { el[x.id] = [x.web_name, x.element_type, x.team]; });
+      b.teams.forEach(function (t) { teams[t.id] = t.short_name; });
+      return { el: el, teams: teams };
+    });
+
+    var wanted = {};
+    Object.keys(picks).forEach(function (k) { picks[k].forEach(function (p) { wanted[p[0]] = true; }); });
+
+    var live = draftGet_("/event/" + gw + "/live");
+    var players = {}, el = {};
+    Object.keys(wanted).forEach(function (id) {
+      players[id] = boot.el[id] || ["#" + id, 3, 0];
+      var row = live.elements[id];
+      el[id] = row ? [row.stats.total_points || 0, row.stats.minutes || 0, row.stats.bonus || 0] : [0, 0, 0];
+    });
+    var fixtures = (live.fixtures || []).map(function (f) {
+      var stat = function (name) { return (f.stats || []).filter(function (s) { return s.s === name; })[0]; };
+      var bps = stat("bps"), bonus = stat("bonus");
+      var all = bps ? bps.h.concat(bps.a) : [];
+      all.sort(function (x, y) { return y.value - x.value; });
+      return {
+        id: f.id, h: f.team_h, a: f.team_a, hs: f.team_h_score, as: f.team_a_score, k: f.kickoff_time,
+        st: !!f.started, fin: !!(f.finished || f.finished_provisional),
+        bon: !!(bonus && (bonus.h.length || bonus.a.length)),
+        bps: all.slice(0, 8).map(function (x) { return [x.element, x.value]; })
+      };
+    });
+
+    return { ok: true, gw: gw, finished: !!game.current_event_finished, fetchedAt: new Date().toISOString(),
+      matches: league.matches, picks: picks, players: players, teams: boot.teams, el: el, fixtures: fixtures };
+  });
+}
+
 function doGet(e) {
   var action = (e && e.parameter && e.parameter.action) || "picks";
+  if (action === "live") {
+    try { return json_(live_()); } catch (err) { return json_({ ok: false, error: "Live data unavailable (" + err.message + ")" }); }
+  }
   var deadlines = deadlines_();
   if (!deadlines) return json_({ ok: false, error: "Couldn't confirm deadlines." });
   var rows = sheet_().getDataRange().getValues().slice(1);

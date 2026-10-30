@@ -33,3 +33,17 @@ needs a Google account — only whoever sets this up.
 - There are no passwords: anyone can submit under any name before the deadline.
   It's meant for friends. If it ever gets abused, you can delete rows in the
   sheet by hand.
+
+## Live scores (same script)
+
+The site's **Live** page reads the gameweek through this same script, because
+the official Draft API won't let a web page read it directly. Nothing to set
+up beyond keeping `Code.gs` current. After pasting in a newer `Code.gs`:
+
+**Deploy → Manage deployments → ✏️ (edit) → Version: New version → Deploy.**
+
+The URL stays the same, so `data/predictions-config.json` doesn't change.
+Until that's done, the Live page says the script "needs its live-scores update".
+
+To check it's working, open your `/exec` URL with `?action=live` on the end.
+You should see a page of JSON starting with `{"ok":true,"gw":…`.
