@@ -37,14 +37,44 @@ function agoText(iso) {
 // ---------------------------------------------------------------------------
 // pieces
 // ---------------------------------------------------------------------------
-function fixturesStrip(payload) {
-  const chip = (f) => {
-    const state = f.fin ? "FT" : f.st ? "LIVE" : kickoffText(f.k);
-    const score = f.st ? `${f.hs ?? 0}–${f.as ?? 0}` : "v";
-    return `<li class="lv-fx ${f.fin ? "is-ft" : f.st ? "is-live" : ""}"><span>${payload.teams[f.h] ?? "?"}</span><b>${score}</b><span>${payload.teams[f.a] ?? "?"}</span><small>${state}</small></li>`;
+// The Premier League's real games, grouped by day. Each one notes how many of
+// the league's starting XIs have a player in it (and how many are yours), so
+// you can see which kick-offs actually matter to the scoreboard above.
+function plSection(payload, myId) {
+  const starters = new Map(); // teamId -> { all, mine }
+  for (const [managerId, picks] of Object.entries(payload.picks)) {
+    for (const [element, position] of picks) {
+      if (position > 11) continue;
+      const team = payload.players[element]?.[2];
+      const c = starters.get(team) ?? { all: 0, mine: 0 };
+      c.all++;
+      if (Number(managerId) === myId) c.mine++;
+      starters.set(team, c);
+    }
+  }
+  const involved = (f) => {
+    const h = starters.get(f.h) ?? { all: 0, mine: 0 }, a = starters.get(f.a) ?? { all: 0, mine: 0 };
+    const all = h.all + a.all, mine = h.mine + a.mine;
+    return all ? `${all} of our starters${mine ? ` · <b>${mine} yours</b>` : ""}` : "None of our starters";
   };
-  const sorted = [...payload.fixtures].sort((x, y) => (x.k ?? "").localeCompare(y.k ?? ""));
-  return `<ul class="lv-fixtures" aria-label="Premier League fixtures">${sorted.map(chip).join("")}</ul>`;
+  const card = (f) => {
+    const state = f.fin ? "FT" : f.st ? "Live" : new Date(f.k).toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" });
+    return `
+      <div class="lv-plm ${f.fin ? "is-ft" : f.st ? "is-live" : ""}">
+        <span class="lv-plm-t">${payload.teams[f.h] ?? "?"}</span>
+        <b class="lv-plm-s">${f.st ? `${f.hs ?? 0} - ${f.as ?? 0}` : "v"}</b>
+        <span class="lv-plm-t">${payload.teams[f.a] ?? "?"}</span>
+        <small class="lv-plm-st">${state}</small>
+        <small class="lv-plm-who">${involved(f)}</small>
+      </div>`;
+  };
+  const byDay = new Map();
+  for (const f of [...payload.fixtures].sort((x, y) => (x.k ?? "").localeCompare(y.k ?? ""))) {
+    const day = f.k ? new Date(f.k).toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "short" }) : "Date to be confirmed";
+    if (!byDay.has(day)) byDay.set(day, []);
+    byDay.get(day).push(f);
+  }
+  return [...byDay].map(([day, list]) => `<h4 class="lv-day">${day}</h4><div class="lv-pl-grid">${list.map(card).join("")}</div>`).join("");
 }
 
 function progressHtml(m) {
@@ -210,12 +240,12 @@ function draw(root, data, managers, current) {
       </header>
       ${toggle}
       ${banner}
-      ${fixturesStrip(payload)}
-      <nav class="lv-jump"><a href="#live" data-jump="lv-league">League</a><a href="#live" data-jump="lv-cup">Cup</a><a href="#live" data-jump="lv-table">Table</a></nav>
+      <nav class="lv-jump"><a href="#live" data-jump="lv-league">League</a><a href="#live" data-jump="lv-cup">Cup</a><a href="#live" data-jump="lv-pl">Premier League</a><a href="#live" data-jump="lv-table">Table</a></nav>
       <section id="lv-league"><h3 class="lv-h3">The league</h3>
         <div class="lv-grid">${matches.map((m) => matchCard(m, managers, myId, preview)).join("")}</div>
       </section>
       <section id="lv-cup"><h3 class="lv-h3">🏆 The Grassroots Cup</h3>${cupSection(data, live, managers, myId, preview)}</section>
+      <section id="lv-pl"><h3 class="lv-h3">Premier League</h3>${plSection(payload, myId)}</section>
       <section id="lv-table"><h3 class="lv-h3">Live table</h3>
         <p class="lv-sub">${preview ? `Current standings. Results appear here once GW${payload.gw} kicks off.` : includesGw ? "Final standings after this gameweek." : "The table if every score stays as it is now."}</p>
         ${tableHtml(liveTable(data.standings?.rows ?? [], live.matches, { includesGw }), managers, myId)}
