@@ -6,190 +6,144 @@
 <title>Live page themes</title>
 <!-- Everything below resolves from the site root, so the real Live page code and data load as-is. -->
 <base href="../">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Barlow+Condensed:ital,wght@0,600;0,800;1,800&family=Oswald:wght@500;700&family=VT323&family=DotGothic16&family=Permanent+Marker&family=Kalam:wght@400;700&family=Bungee&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Barlow+Condensed:ital,wght@0,600;0,800;1,800&family=Playfair+Display:ital,wght@0,700;1,700&family=Kalam:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <style>
   body { margin: 0; background: #07080d; }
-  .picker { position: sticky; top: 0; z-index: 50; padding: 12px 16px 10px; background: rgba(7,8,13,0.94); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,0.1); font-family: "Archivo", sans-serif; color: #eef1f4; }
+  .picker { position: sticky; top: 0; z-index: 50; padding: 12px 16px 10px; background: rgba(7,8,13,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,0.1); font-family: "Archivo", sans-serif; color: #eef1f4; }
   .picker h1 { margin: 0 0 8px; font: 400 1.6rem/1 "Bebas Neue", sans-serif; letter-spacing: 0.05em; }
   .picker-row { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; }
   .picker button { flex-shrink: 0; cursor: pointer; border: 1px solid rgba(255,255,255,0.25); background: rgba(255,255,255,0.06); color: #eef1f4; border-radius: 99px; padding: 8px 14px; font: 800 0.72rem "Archivo", sans-serif; letter-spacing: 0.08em; text-transform: uppercase; }
   .picker button[aria-pressed="true"] { background: #00ff85; color: #05231a; border-color: #00ff85; }
-  .picker p { margin: 8px 0 0; font-size: 0.85rem; color: #aab3c0; max-width: 80ch; line-height: 1.45; }
+  .picker p { margin: 8px 0 0; font-size: 0.85rem; color: #aab3c0; max-width: 85ch; line-height: 1.45; }
   .picker p b { color: #eef1f4; }
-  .stage { padding: 22px 16px 60px; min-height: 100vh; transition: background 0.3s; }
-  .stage .lv-mode, .stage .lv-refresh { display: none; } /* the sample freezes on the current gameweek */
+  .stage { max-width: 1140px; margin: 0 auto; padding: 22px 16px 60px; }
+  .stage .lv-refresh { display: none; }
+  /* Theme rules only set families and colours on numbers, never sizes, so the
+     site's phone layout rules keep their say on small screens. */
 
   /* =====================================================================
-     1 · TOP FLIGHT -- a legally distinct "big league" broadcast look:
-     royal purple, electric pink / cyan / green, slanted cuts. No real logos,
-     names or the official typeface.
+     1 · HOUSE -- the site's own look, dressed for matchday: midnight
+     panel with a purple and gold glow, gold italic section titles, glass
+     cards with a purple-to-gold edge, lime for anything live.
      ===================================================================== */
-  .th-topflight { --bg: #26002c; --surface: #3a0a44; --text: #ffffff; --text-muted: #d6b8e0; --border: rgba(255,255,255,0.12); --edge-bright: rgba(255,255,255,0.3); --lime: #00ff87; --lime-contrast: #26002c; --gold: #04f5ff; --gold-bright: #ff2a8a; --radius: 4px;
-    background: radial-gradient(ellipse at 100% 0, rgba(255,42,138,0.35), transparent 45%), radial-gradient(ellipse at 0 100%, rgba(4,245,255,0.25), transparent 45%), linear-gradient(160deg, #3d0047, #1c0021); }
-  .th-topflight .lv-head { position: relative; padding: 18px 20px; margin-bottom: 14px; background: linear-gradient(100deg, #ff2a8a, #7a00ff 55%, #04f5ff); clip-path: polygon(0 0, 100% 0, 97% 100%, 0 100%); }
-  .th-topflight .lv-title h2 { font: italic 800 clamp(2rem, 6vw, 3rem)/1 "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: 0.01em; }
-  .th-topflight .lv-title h2 em { color: #00ff87; }
-  .th-topflight .lv-status { color: rgba(255,255,255,0.85); }
-  .th-topflight .lv-h3 { display: inline-block; padding: 6px 22px 6px 12px; color: #26002c; background: #00ff87; clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%); letter-spacing: 0.18em; }
-  .th-topflight .lv-match, .th-topflight .lv-plm { background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.02)); border: 0; border-left: 4px solid #04f5ff; }
-  .th-topflight .lv-match.is-cup { border-left-color: #ff2a8a; }
-  .th-topflight .lv-nums b, .th-topflight .lv-plm-s { font: 800 2.4rem/1 "Barlow Condensed", sans-serif; }
-  .th-topflight .lv-nums b { color: #fff; text-shadow: 0 0 18px rgba(4,245,255,0.6); }
-  .th-topflight .lv-odds i { background: linear-gradient(90deg, #ff2a8a, #7a00ff); }
-  .th-topflight .lv-jump a { border-radius: 0; clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%); background: rgba(255,255,255,0.1); border: 0; }
+  .lv.lv-house { position: relative; padding: 24px 22px 30px; border-radius: 16px;
+    background: radial-gradient(ellipse 700px 320px at 0 0, rgba(155,92,224,0.2), transparent 60%), radial-gradient(ellipse 600px 320px at 100% 100%, rgba(201,166,96,0.14), transparent 60%), linear-gradient(180deg, #11131d, #0a0b12);
+    border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 30px 70px -30px rgba(0,0,0,0.9), inset 0 1px 0 rgba(255,255,255,0.05); }
+  .lv-house .lv-head::before { content: "Matchday"; display: block; width: 100%; font: 800 0.66rem "Archivo", sans-serif; letter-spacing: 0.34em; text-transform: uppercase; color: var(--gold); }
+  .lv-house .lv-title h2 em { text-shadow: 0 0 22px rgba(0,255,133,0.45); }
+  .lv-house .lv-h3 { display: flex; align-items: center; gap: 12px; font: italic 600 1.45rem "Cormorant Garamond", serif; letter-spacing: 0.01em; text-transform: none; color: var(--gold-bright); }
+  .lv-house .lv-h3::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(201,166,96,0.6), transparent); }
+  .lv-house .lv-match, .lv-house .lv-plm { border: 1px solid transparent; border-radius: 12px;
+    background: linear-gradient(160deg, #161926, #0f111a) padding-box, linear-gradient(135deg, rgba(155,92,224,0.65), rgba(255,255,255,0.05) 45%, rgba(201,166,96,0.5)) border-box; }
+  .lv-house .lv-match.is-cup { background: linear-gradient(160deg, #191a1a, #0f111a) padding-box, linear-gradient(135deg, rgba(201,166,96,0.9), rgba(255,255,255,0.05) 50%, rgba(201,166,96,0.6)) border-box; }
+  .lv-house .lv-match.is-you { box-shadow: 0 0 0 1px var(--lime), 0 0 26px -8px var(--lime); }
+  .lv-house .lv-nums b, .lv-house .lv-plm-s { font-family: "Bebas Neue", sans-serif; color: #fff; }
+  .lv-house .lv-sum:has(.lv-home.lead) .lv-nums b:last-of-type, .lv-house .lv-sum:has(.lv-away.lead) .lv-nums b:first-of-type { opacity: 0.45; }
+  .lv-house .lv-odds i { background: linear-gradient(90deg, #6a2fa8, #9b5ce0 60%, rgba(0,255,133,0.6)); }
+  .lv-house .lv-jump a { border-color: rgba(155,92,224,0.55); }
+  .lv-house .lv-jump a:hover { border-color: var(--lime); }
+  .lv-house .lv-plm.is-live { box-shadow: 0 0 0 1px rgba(255,59,59,0.7), 0 0 20px -8px #ff3b3b; }
+  .lv-house .lv-day { color: var(--gold); }
 
   /* =====================================================================
-     2 · BROADCAST -- Saturday-night TV: navy studio, red "LIVE" flashes,
-     every match card is a scorebug, sections are lower-thirds.
+     2 · BLACK TIE -- the site's gold taken to the front: near-black,
+     gold-foil numbers, serif italics, and every match cut like a
+     premium ticket (notched sides, perforated stub line). Purple only as
+     a faint glow.
      ===================================================================== */
-  .th-broadcast { --bg: #06122e; --surface: #0d1f4d; --text: #ffffff; --text-muted: #9fb3dc; --border: rgba(255,255,255,0.1); --edge-bright: rgba(255,255,255,0.25); --lime: #ffd400; --lime-contrast: #06122e; --gold: #ffffff; --gold-bright: #ffd400; --radius: 2px;
-    background: linear-gradient(180deg, #0a1a44, #040b1f); }
-  .th-broadcast .lv-title h2 { font: 700 clamp(1.8rem, 6vw, 2.6rem)/1 "Oswald", sans-serif; text-transform: uppercase; }
-  .th-broadcast .lv-title h2 em { color: #fff; background: #e10600; padding: 0 10px; margin-left: 4px; animation: th-flash 1.4s steps(1) infinite; }
-  @keyframes th-flash { 50% { background: #9d0400; } }
-  .th-broadcast .lv-h3 { padding: 8px 14px; color: #fff; background: linear-gradient(90deg, #e10600 0 8px, #0d1f4d 8px); border-bottom: 2px solid #ffd400; font-family: "Oswald", sans-serif; letter-spacing: 0.14em; }
-  .th-broadcast .lv-match { background: #fff; color: #06122e; border: 0; box-shadow: 0 6px 0 #e10600, 0 12px 30px rgba(0,0,0,0.5); }
-  .th-broadcast .lv-match .club-name, .th-broadcast .lv-side:not(.lead) .club-name { color: #06122e; font-family: "Oswald", sans-serif; text-transform: uppercase; }
-  .th-broadcast .lv-score { background: #06122e; color: #fff; padding: 6px 12px; }
-  .th-broadcast .lv-nums b { font: 700 2.2rem/1 "Oswald", sans-serif; }
-  .th-broadcast .lv-state { color: #ffd400; }
-  .th-broadcast .lv-prog, .th-broadcast .lv-cupnote { color: #3b4a73; }
-  .th-broadcast .lv-detail { background: #0d1f4d; color: #fff; }
-  .th-broadcast .lv-odds { background: #dfe6f5; color: #06122e; }
-  .th-broadcast .lv-odds i { background: #e10600; opacity: 0.85; }
-  .th-broadcast .lv-plm { background: #fff; color: #06122e; border: 0; border-top: 4px solid #e10600; }
-  .th-broadcast .lv-plm-s { font-family: "Oswald", sans-serif; }
+  .lv.lv-blacktie { --surface: #0e0d0b; --border: rgba(212,176,98,0.22); --edge-bright: rgba(212,176,98,0.45); --text-muted: #a89f8a; --lime: #e8c766; --lime-contrast: #120e05; --gold: #d4b062; --gold-bright: #f6e3a1;
+    padding: 26px 22px 32px; border-radius: 4px;
+    background: radial-gradient(ellipse 800px 300px at 50% 0, rgba(212,176,98,0.12), transparent 60%), radial-gradient(ellipse 500px 300px at 100% 100%, rgba(106,47,168,0.14), transparent 60%), #070605;
+    border: 1px solid rgba(212,176,98,0.45); outline: 1px solid rgba(212,176,98,0.18); outline-offset: 6px; }
+  .lv-blacktie .lv-title h2 { font-family: "Cormorant Garamond", serif; font-weight: 700; font-style: italic; letter-spacing: 0; text-transform: none; color: #f3ead2; }
+  .lv-blacktie .lv-title h2 em { font-style: italic; background: linear-gradient(180deg, #fff1c2, #d4b062 55%, #9a7629); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .lv-blacktie .lv-h3 { display: flex; align-items: center; gap: 14px; justify-content: center; font: 700 0.78rem "Archivo", sans-serif; letter-spacing: 0.38em; color: var(--gold); }
+  .lv-blacktie .lv-h3::before, .lv-blacktie .lv-h3::after { content: ""; flex: 1; max-width: 140px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); }
+  .lv-blacktie .lv-h3::after { transform: scaleX(-1); }
+  .lv-blacktie .lv-match, .lv-blacktie .lv-plm { position: relative; border: 1px solid rgba(212,176,98,0.4); border-radius: 6px; background: linear-gradient(180deg, #14120e, #0b0a08);
+    -webkit-mask: radial-gradient(circle 9px at 0 46px, transparent 98%, #000) left / 51% 100% no-repeat, radial-gradient(circle 9px at 100% 46px, transparent 98%, #000) right / 51% 100% no-repeat;
+            mask: radial-gradient(circle 9px at 0 46px, transparent 98%, #000) left / 51% 100% no-repeat, radial-gradient(circle 9px at 100% 46px, transparent 98%, #000) right / 51% 100% no-repeat; }
+  .lv-blacktie .lv-plm { -webkit-mask: none; mask: none; }
+  .lv-blacktie .lv-match.is-cup { border-color: rgba(246,227,161,0.75); background: linear-gradient(180deg, #1a160d, #0b0a08); }
+  .lv-blacktie .lv-match.is-you { border-color: var(--gold-bright); box-shadow: 0 0 26px -10px var(--gold); }
+  .lv-blacktie .lv-detail { border-top: 1px dashed rgba(212,176,98,0.45); }
+  .lv-blacktie .lv-nums b, .lv-blacktie .lv-plm-s { font-family: "Bebas Neue", sans-serif; background: linear-gradient(180deg, #fff1c2, #d4b062 55%, #9a7629); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .lv-blacktie .lv .club-name, .lv-blacktie .club-name { font-family: "Cormorant Garamond", serif; font-weight: 700; font-size: 1.05em; }
+  .lv-blacktie .lv-odds { background: rgba(212,176,98,0.12); }
+  .lv-blacktie .lv-odds i { background: linear-gradient(90deg, #9a7629, #e8c766); }
+  .lv-blacktie .lv-pl { background: rgba(212,176,98,0.05); }
+  .lv-blacktie .lv-mode button[aria-pressed="true"] { background: linear-gradient(180deg, #f6e3a1, #c9a04a); }
+  .lv-blacktie .lv-jump a { border-color: rgba(212,176,98,0.5); color: #f3ead2; }
 
   /* =====================================================================
-     3 · TELETEXT P302 -- the old TV text page: black screen, chunky
-     primary colours, everything in blocky pixel type.
+     3 · TOP FLIGHT -- the legally distinct "big league" look: royal
+     purple (the site's own), electric pink and cyan, lime for live, and
+     slanted TV-graphics cuts. Mood only: no real logos, names, lion or
+     official typeface.
      ===================================================================== */
-  .th-teletext { --bg: #000; --surface: #000; --text: #ffffff; --text-muted: #00ffff; --border: transparent; --edge-bright: #ffff00; --lime: #00ff00; --lime-contrast: #000; --gold: #ffff00; --gold-bright: #ffff00; --radius: 0;
-    background: #000; font-family: "VT323", monospace; }
-  .th-teletext * { font-family: "VT323", monospace !important; letter-spacing: 0.02em !important; text-shadow: none !important; }
-  .th-teletext .lv::before { content: "P302  THE BUSINESS  302   " attr(data-clock); display: block; margin-bottom: 10px; color: #fff; font-size: 1.3rem; }
-  .th-teletext .lv-head { background: #0000ff; padding: 6px 10px; }
-  .th-teletext .lv-title h2 { font-size: 2.4rem; color: #ffff00; text-transform: uppercase; }
-  .th-teletext .lv-title h2 em { color: #00ff00; }
-  .th-teletext .lv-h3 { font-size: 1.6rem; background: #ff0000; color: #fff; padding: 2px 8px; }
-  .th-teletext .lv-match, .th-teletext .lv-plm { border: 0; border-bottom: 1px dashed #00ffff; box-shadow: none; }
-  .th-teletext .lv-nums b, .th-teletext .lv-plm-s { font-size: 2.2rem; color: #ffff00; }
-  .th-teletext .club-name { color: #fff; font-size: 1.3rem; }
-  .th-teletext .club-badge { display: none; }
-  .th-teletext .lv-odds { border-radius: 0; background: #ff00ff; color: #000; }
-  .th-teletext .lv-odds i { background: #00ff00; }
-  .th-teletext .lv-pl { background: none; }
-  .th-teletext .lv-dot { border-radius: 0; animation: th-blink 1s steps(1) infinite; }
-  @keyframes th-blink { 50% { opacity: 0; } }
+  .lv.lv-topflight { --bg: #26002c; --surface: #3a0a44; --text: #ffffff; --text-muted: #d6b8e0; --border: rgba(255,255,255,0.12); --edge-bright: rgba(255,255,255,0.3); --lime: #00ff87; --lime-contrast: #26002c; --gold: #04f5ff; --gold-bright: #ff2a8a; --radius: 4px;
+    padding: 0 20px 30px; border-radius: 6px; overflow: hidden;
+    background: radial-gradient(ellipse at 100% 0, rgba(255,42,138,0.32), transparent 45%), radial-gradient(ellipse at 0 100%, rgba(4,245,255,0.22), transparent 45%), linear-gradient(160deg, #3d0047, #1c0021); }
+  .lv-topflight .lv-head { margin: 0 -20px 16px; padding: 20px 24px 18px; background: linear-gradient(100deg, #ff2a8a, #7a00ff 55%, #04f5ff); clip-path: polygon(0 0, 100% 0, 100% 78%, 96% 100%, 0 100%); }
+  .lv-topflight .lv-title h2 { font-family: "Barlow Condensed", sans-serif; font-weight: 800; font-style: italic; text-transform: uppercase; letter-spacing: 0.01em; }
+  .lv-topflight .lv-title h2 em { color: #00ff87; }
+  .lv-topflight .lv-status { color: rgba(255,255,255,0.88); }
+  .lv-topflight .lv-h3 { display: inline-block; padding: 6px 24px 6px 12px; color: #26002c; background: #00ff87; clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%); letter-spacing: 0.18em; }
+  .lv-topflight .lv-match, .lv-topflight .lv-plm { background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.02)); border: 0; border-left: 4px solid #04f5ff; border-radius: 4px; }
+  .lv-topflight .lv-match.is-cup { border-left-color: #ff2a8a; }
+  .lv-topflight .lv-match.is-you { box-shadow: 0 0 0 1px #00ff87, 0 0 24px -8px #00ff87; }
+  .lv-topflight .lv-nums b, .lv-topflight .lv-plm-s { font-family: "Barlow Condensed", sans-serif; font-weight: 800; color: #fff; text-shadow: 0 0 18px rgba(4,245,255,0.55); }
+  .lv-topflight .lv-odds i { background: linear-gradient(90deg, #ff2a8a, #7a00ff); }
+  .lv-topflight .lv-jump a { border-radius: 0; clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%); background: rgba(255,255,255,0.1); border: 0; }
+  .lv-topflight .lv-mode { border-radius: 4px; }
+  .lv-topflight .lv-mode button { border-radius: 2px; }
 
-  /* =====================================================================
-     4 · FLOODLIGHTS -- a night match: striped pitch underfoot, floodlight
-     glare overhead, amber LED dot-matrix scoreboards.
-     ===================================================================== */
-  .th-floodlights { --bg: #04120b; --surface: rgba(2,10,6,0.82); --text: #f3f7f1; --text-muted: #8fb79c; --border: rgba(255,255,255,0.08); --edge-bright: rgba(255,255,255,0.2); --lime: #ffb000; --lime-contrast: #120a00; --gold: #ffb000; --gold-bright: #ffd27a; --radius: 6px;
-    background: radial-gradient(ellipse 50% 40% at 0 0, rgba(255,255,230,0.28), transparent 70%), radial-gradient(ellipse 50% 40% at 100% 0, rgba(255,255,230,0.28), transparent 70%), repeating-linear-gradient(90deg, #0b3a20 0 70px, #0e4527 70px 140px); }
-  .th-floodlights .lv-title h2 { font: 400 clamp(1.8rem, 6vw, 2.6rem)/1 "DotGothic16", sans-serif; color: #ffb000; text-shadow: 0 0 10px rgba(255,176,0,0.7); }
-  .th-floodlights .lv-title h2 em { color: #ff5a1f; }
-  .th-floodlights .lv-score { padding: 6px 10px; border-radius: 4px; background: #0a0a0a; box-shadow: inset 0 0 0 2px #222, 0 0 20px rgba(255,176,0,0.25);
-    background-image: radial-gradient(circle, rgba(255,176,0,0.08) 1px, transparent 1.5px); background-size: 5px 5px; }
-  .th-floodlights .lv-nums b, .th-floodlights .lv-plm-s { font: 400 2.2rem/1 "DotGothic16", sans-serif; color: #ffb000; text-shadow: 0 0 8px rgba(255,176,0,0.9); }
-  .th-floodlights .lv-state, .th-floodlights .lv-score small { color: #ff7a3d; }
-  .th-floodlights .lv-match, .th-floodlights .lv-plm { backdrop-filter: blur(3px); }
-  .th-floodlights .lv-h3 { font-family: "DotGothic16", sans-serif; letter-spacing: 0.2em; text-shadow: 0 0 8px rgba(255,176,0,0.6); }
-  .th-floodlights .lv-odds i { background: linear-gradient(90deg, #ff5a1f, #ffb000); }
-
-  /* =====================================================================
-     5 · SUNDAY LEAGUE -- the manager's whiteboard: marker pen, magnets,
-     scribbled scores. The one light theme.
-     ===================================================================== */
-  .th-sunday { --bg: #f4f2ea; --surface: #ffffff; --text: #1b2a4a; --text-muted: #5c6a86; --border: rgba(27,42,74,0.15); --edge-bright: rgba(27,42,74,0.35); --lime: #d6262f; --lime-contrast: #fff; --gold: #1d5fd1; --gold-bright: #d6262f; --radius: 3px;
-    background: linear-gradient(rgba(27,42,74,0.05) 1px, transparent 1px) 0 0 / 100% 28px, #f4f2ea; color: #1b2a4a; }
-  .th-sunday .lv-title h2, .th-sunday .lv-h3 { font-family: "Permanent Marker", cursive; text-transform: none; letter-spacing: 0.02em; }
-  .th-sunday .lv-title h2 { color: #1b2a4a; transform: rotate(-1.5deg); }
-  .th-sunday .lv-h3 { font-size: 1.3rem; color: #1d5fd1; }
-  .th-sunday .lv-match, .th-sunday .lv-plm { background: #fff; border: 2px solid #1b2a4a; box-shadow: 3px 4px 0 rgba(27,42,74,0.2); }
-  .th-sunday .lv-grid > :nth-child(odd) .lv-sum, .th-sunday .lv-pl-grid > :nth-child(odd) { transform: rotate(-0.4deg); }
-  .th-sunday .lv-match::before { content: ""; display: block; width: 18px; height: 18px; margin: -9px auto 0; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #ff8a8a, #d6262f); box-shadow: 0 2px 3px rgba(0,0,0,0.3); }
-  .th-sunday .lv-nums b, .th-sunday .lv-plm-s { font: 700 2.3rem/1 "Kalam", cursive; color: #d6262f; }
-  .th-sunday .club-name, .th-sunday .lv-nm { font-family: "Kalam", cursive; font-weight: 700; }
-  .th-sunday .lv-side:not(.lead) .club-name { color: #5c6a86; }
-  .th-sunday .lv-pl { background: rgba(29,95,209,0.05); }
-  .th-sunday .lv-odds { background: rgba(27,42,74,0.08); }
-  .th-sunday .lv-odds i { background: repeating-linear-gradient(45deg, #1d5fd1 0 4px, #4d86ea 4px 8px); }
-  .th-sunday .card { background: #fff; color: #1b2a4a; border: 2px solid #1b2a4a; }
-  .th-sunday .card th, .th-sunday .card td { color: #1b2a4a; }
-
-  /* =====================================================================
-     6 · 90s KIT -- a loud away shirt: geometric shell-suit pattern, Bungee
-     type, cards framed like sticker-album stickers.
-     ===================================================================== */
-  .th-kit { --bg: #141032; --surface: #1d1747; --text: #ffffff; --text-muted: #c9c2ff; --border: rgba(255,255,255,0.15); --edge-bright: rgba(255,255,255,0.35); --lime: #ffe14d; --lime-contrast: #141032; --gold: #19e3c7; --gold-bright: #ffe14d; --radius: 12px;
-    background:
-      linear-gradient(135deg, rgba(255,58,160,0.55) 25%, transparent 25%) -40px 0 / 80px 80px,
-      linear-gradient(225deg, rgba(25,227,199,0.45) 25%, transparent 25%) -40px 0 / 80px 80px,
-      linear-gradient(315deg, rgba(255,225,77,0.35) 25%, transparent 25%) 0 0 / 80px 80px,
-      linear-gradient(45deg, rgba(122,70,255,0.6) 25%, transparent 25%) 0 0 / 80px 80px, #141032; }
-  .th-kit .lv-title h2, .th-kit .lv-h3 { font-family: "Bungee", sans-serif; }
-  .th-kit .lv-title h2 { color: #ffe14d; text-shadow: 3px 3px 0 #ff3aa0, 6px 6px 0 #19e3c7; }
-  .th-kit .lv-title h2 em { color: #fff; }
-  .th-kit .lv-h3 { display: inline-block; padding: 6px 12px; background: #ffe14d; color: #141032; border-radius: 8px; transform: rotate(-2deg); box-shadow: 4px 4px 0 #ff3aa0; }
-  .th-kit .lv-match, .th-kit .lv-plm { background: #1d1747; border: 5px solid #fff; box-shadow: 0 0 0 3px #141032, 6px 6px 0 3px rgba(0,0,0,0.35); }
-  .th-kit .lv-nums b, .th-kit .lv-plm-s { font: 400 2.1rem/1 "Bungee", sans-serif; color: #ffe14d; text-shadow: 2px 2px 0 #ff3aa0; }
-  .th-kit .lv-odds i { background: repeating-linear-gradient(90deg, #ff3aa0 0 10px, #19e3c7 10px 20px, #ffe14d 20px 30px); }
-  .th-kit .lv-head, .th-kit .lv-sub, .th-kit .lv-foot, .th-kit .lv-day { text-shadow: 0 1px 3px #000; }
+  @media (max-width: 560px) {
+    .lv.lv-house, .lv.lv-blacktie { padding: 18px 12px 28px; }
+    .lv.lv-topflight { padding: 0 12px 26px; }
+    .lv-topflight .lv-head { margin: 0 -12px 14px; padding: 16px 14px; }
+    .lv-blacktie .lv-match { -webkit-mask: none; mask: none; }
+  }
 </style>
 </head>
 <body>
   <div class="picker">
-    <h1>Live page · matchday themes</h1>
+    <h1>Live page · theme options</h1>
     <div class="picker-row" id="picker"></div>
     <p id="about"></p>
   </div>
-  <div class="stage" id="stage"><div id="app"></div></div>
+  <div class="stage"><div id="app"></div></div>
 
 <script type="module">
   import { loadAllData, managerLookup } from "./js/data.js";
   import { render } from "./js/render/live.js";
 
   const THEMES = [
-    ["", "Current", "<b>Today's site look</b> for comparison: dark luxury, lime accents."],
-    ["th-topflight", "Top Flight", "<b>A legally distinct 'big league' look.</b> Royal purple with electric pink, cyan and green, slanted cuts like a TV graphics package. It borrows the mood, not the marks: no real logos, names, lion, or official typeface."],
-    ["th-broadcast", "Broadcast", "<b>Saturday-night TV.</b> Navy studio, a flashing red LIVE tag, every match card styled as an on-screen scorebug and every section as a lower-third caption."],
-    ["th-teletext", "Teletext P302", "<b>The old TV text service.</b> Black screen, chunky primary colours, blocky pixel type and a blinking live light. Peak nostalgia for checking scores."],
-    ["th-floodlights", "Floodlights", "<b>A night game.</b> Mown pitch stripes underfoot, floodlight glare in the corners, and amber LED dot-matrix scoreboards for every score."],
-    ["th-sunday", "Sunday League", "<b>The manager's whiteboard.</b> Marker-pen scores, magnets pinning each match, ruled lines. The only light theme, so it reads well in bright sunlight."],
-    ["th-kit", "90s Kit", "<b>A loud away shirt.</b> Geometric shell-suit pattern, chunky Bungee type with drop shadows, and match cards framed like sticker-album stickers."],
+    ["lv-house", "House", "<b>The site's own look, dressed for matchday.</b> The midnight panel with a soft purple and gold glow, gold italic section titles, glass match cards with a purple-to-gold edge, and lime for anything live. Sits most naturally next to every other page."],
+    ["lv-blacktie", "Black Tie", "<b>The site's gold taken to the front.</b> Near-black, gold-foil scores, serif italics, and every match cut like a premium ticket with notched sides and a perforated line when you open it. Purple stays as a faint glow. The most 'luxury' of the three."],
+    ["lv-topflight", "Top Flight", "<b>The legally distinct 'big league' look.</b> Royal purple (already the site's colour), electric pink and cyan, lime for live, and slanted TV-graphics cuts. It borrows the mood, not the marks: no real logos, names, lion or official typeface."],
+    ["lv-sunday", "Sunday League (current)", "<b>Today's whiteboard</b>, for comparison."],
   ];
 
-  const stage = document.getElementById("stage");
+  const app = document.getElementById("app");
   const picker = document.getElementById("picker");
   const about = document.getElementById("about");
   function choose(cls) {
-    stage.className = `stage ${cls}`;
+    app.dataset.lvTheme = cls;                       // used on the page's next redraw
+    const lv = app.querySelector(".lv");
+    if (lv) lv.className = `lv ${cls}`;              // and applied right away
     picker.querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.theme === cls)));
     about.innerHTML = THEMES.find((t) => t[0] === cls)[2];
-    try { localStorage.setItem("lv-theme-sample", cls); } catch {}
   }
   picker.innerHTML = THEMES.map(([cls, name]) => `<button type="button" data-theme="${cls}">${name}</button>`).join("");
   picker.addEventListener("click", (e) => { const b = e.target.closest("[data-theme]"); if (b) choose(b.dataset.theme); });
-  let saved = null; try { saved = localStorage.getItem("lv-theme-sample"); } catch {}
-  choose(saved !== null && THEMES.some((t) => t[0] === saved) ? saved : "th-topflight");
+  choose("lv-house");
 
-  // The real Live page, running on the real data and live relay.
+  // The real Live page, on the real data and live relay.
   location.hash = "live";
   const data = await loadAllData();
-  const app = document.getElementById("app");
   render(app, data, managerLookup(data));
-  // open the first match so the line-ups show in every theme
-  const opener = setInterval(() => {
-    const sum = app.querySelector(".lv-match .lv-sum");
-    if (!sum) return;
-    clearInterval(opener);
-    if (sum.getAttribute("aria-expanded") !== "true") sum.click();
-    const clock = new Date().toLocaleString(undefined, { weekday: "short", day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" });
-    app.querySelector(".lv")?.setAttribute("data-clock", clock);
-  }, 300);
 </script>
 </body>
 </html>

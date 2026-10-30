@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cup page: gold and green templates</title>
+<!-- Resolve everything from the site root so the real Cup page code and data load as-is. -->
+<base href="../">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&family=Bebas+Neue&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  body { margin: 0; background: #07080d; color: #eef1f4; font-family: "Archivo", sans-serif; }
+  .picker { position: sticky; top: 0; z-index: 80; padding: 12px 16px 10px; background: rgba(7,8,13,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .picker h1 { margin: 0 0 8px; font: 400 1.6rem/1 "Bebas Neue", sans-serif; letter-spacing: 0.05em; }
+  .picker-row { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; }
+  .picker button { flex-shrink: 0; cursor: pointer; border: 1px solid rgba(255,255,255,0.25); background: rgba(255,255,255,0.06); color: #eef1f4; border-radius: 99px; padding: 8px 14px; font: 800 0.72rem "Archivo", sans-serif; letter-spacing: 0.06em; text-transform: uppercase; }
+  .picker button small { display: block; margin-top: 2px; font-size: 0.6rem; letter-spacing: 0.18em; color: #d9b45a; }
+  .picker button[aria-pressed="true"] { background: #d9b45a; color: #0a2a1d; border-color: #d9b45a; }
+  .picker button[aria-pressed="true"] small { color: #0a2a1d; }
+  .picker p { margin: 8px 0 0; font-size: 0.85rem; color: #aab3c0; max-width: 85ch; line-height: 1.45; }
+  .picker p b { color: #eef1f4; }
+  .stage-wrap { max-width: 1100px; margin: 0 auto; padding: 18px 16px 60px; }
+  #app { padding: 0; }
+
+  /* shared ornaments: a gold rule-and-diamond divider under the title */
+  .t-divider .cup-hero::after { content: ""; display: block; width: 180px; height: 12px; margin: 14px auto 0;
+    background: linear-gradient(var(--gold-line), var(--gold-line)) left center / 72px 1px no-repeat, linear-gradient(var(--gold-line), var(--gold-line)) right center / 72px 1px no-repeat,
+      linear-gradient(45deg, transparent 35%, var(--gold-line) 35% 65%, transparent 65%) center / 12px 12px no-repeat; }
+
+  /* =====================================================================
+     1 · GILDED EMERALD -- golf: none. Today's page, made richer: gold-foil
+     serif title, a double gold frame with engraved corner marks, gold
+     hairline cards with a soft bevel. Elegance without any golf at all.
+     ===================================================================== */
+  .t-gilded { --gold-line: #d9b45a; }
+  .t-gilded .cup-theme { --cup-gold: #d9b45a; --cup-gold-bright: #f7e7b4; --cup-gold-deep: #9c7a2c;
+    background: radial-gradient(ellipse 900px 520px at 50% -8%, rgba(217,180,90,0.2), transparent 60%), linear-gradient(180deg, #0d3a29, #072619);
+    border: 1px solid #d9b45a; border-radius: 6px; box-shadow: inset 0 0 0 7px #072619, inset 0 0 0 8px rgba(217,180,90,0.5), 0 24px 60px rgba(0,0,0,0.55); }
+  .t-gilded .cup-theme::after { content: ""; position: absolute; inset: 16px; pointer-events: none; z-index: 2;
+    background:
+      linear-gradient(#d9b45a, #d9b45a) top left / 46px 1px no-repeat, linear-gradient(#d9b45a, #d9b45a) top left / 1px 46px no-repeat,
+      linear-gradient(#d9b45a, #d9b45a) top right / 46px 1px no-repeat, linear-gradient(#d9b45a, #d9b45a) top right / 1px 46px no-repeat,
+      linear-gradient(#d9b45a, #d9b45a) bottom left / 46px 1px no-repeat, linear-gradient(#d9b45a, #d9b45a) bottom left / 1px 46px no-repeat,
+      linear-gradient(#d9b45a, #d9b45a) bottom right / 46px 1px no-repeat, linear-gradient(#d9b45a, #d9b45a) bottom right / 1px 46px no-repeat; }
+  .t-gilded .cup-title { font-family: "Playfair Display", serif; font-weight: 800; background: linear-gradient(180deg, #fff4c9, #d9b45a 55%, #a07d2c); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 2px 0 rgba(0,0,0,0.35)); }
+  .t-gilded .cup-plinth { font-family: "Playfair Display", serif; letter-spacing: 0.32em; background: linear-gradient(180deg, #0f4430, #072619); border: 1px solid #d9b45a; box-shadow: 0 0 0 3px #072619, 0 0 0 4px rgba(217,180,90,0.5); }
+  .t-gilded .cup-bracket-col-head { font: italic 700 1.05rem "Playfair Display", serif; color: #f7e7b4; }
+  .t-gilded .cup-bracket-match { background: linear-gradient(160deg, #0f4430, #082a1c); border: 1px solid rgba(217,180,90,0.45); border-radius: 2px; box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), 0 8px 18px rgba(0,0,0,0.35); }
+  .t-gilded .cup-bracket-side { font-family: "Cormorant Garamond", serif; font-weight: 700; font-size: 0.98rem; }
+  .t-gilded .cup-score { font-family: "Playfair Display", serif; }
+
+  /* =====================================================================
+     2 · THE MEMBERS' CLUB -- golf: a hint. A private-club feel: a laurel
+     crest with a tiny flag, woven linen texture, engraved capitals, gold
+     corner brackets on every tie. You'd only spot the golf in the crest.
+     ===================================================================== */
+  .t-club { --gold-line: #cfae62; }
+  .t-club .cup-theme { --cup-gold: #cfae62; --cup-gold-bright: #f3e2b0; --cup-paper: #f4efe0;
+    background: repeating-linear-gradient(0deg, rgba(255,255,255,0.018) 0 1px, transparent 1px 3px), repeating-linear-gradient(90deg, rgba(255,255,255,0.018) 0 1px, transparent 1px 3px), radial-gradient(ellipse 800px 480px at 50% -5%, rgba(207,174,98,0.16), transparent 60%), #0b3626;
+    border: 2px solid #cfae62; border-radius: 4px; }
+  .t-club .cup-hero::before { content: ""; display: block; width: 120px; height: 92px; margin: 0 auto 12px;
+    background: center / contain no-repeat url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 92'><g fill='none' stroke='%23cfae62' stroke-width='2'><path d='M60 84C30 80 14 58 16 30'/><path d='M60 84c30-4 46-26 44-54'/></g><g fill='%23cfae62'><ellipse cx='18' cy='38' rx='4' ry='8' transform='rotate(-20 18 38)'/><ellipse cx='22' cy='52' rx='4' ry='8' transform='rotate(-40 22 52)'/><ellipse cx='31' cy='65' rx='4' ry='8' transform='rotate(-60 31 65)'/><ellipse cx='43' cy='76' rx='4' ry='8' transform='rotate(-75 43 76)'/><ellipse cx='102' cy='38' rx='4' ry='8' transform='rotate(20 102 38)'/><ellipse cx='98' cy='52' rx='4' ry='8' transform='rotate(40 98 52)'/><ellipse cx='89' cy='65' rx='4' ry='8' transform='rotate(60 89 65)'/><ellipse cx='77' cy='76' rx='4' ry='8' transform='rotate(75 77 76)'/></g><path d='M60 10 82 18v22c0 16-10 26-22 30-12-4-22-14-22-30V18Z' fill='%230b3626' stroke='%23cfae62' stroke-width='2'/><path d='M56 26v28' stroke='%23f4efe0' stroke-width='2'/><path d='M56 26l12 5-12 5z' fill='%23cfae62'/><path d='M50 56h20' stroke='%23cfae62' stroke-width='1.5'/></svg>"); }
+  .t-club .cup-title { font: 600 clamp(1.9rem, 5vw, 2.8rem)/1.1 "Cinzel", serif; letter-spacing: 0.1em; color: #f4efe0; }
+  .t-club .cup-hero::after { content: "Founded MMXXVI"; display: block; margin-top: 10px; font: 500 0.78rem "Cinzel", serif; letter-spacing: 0.42em; color: #cfae62; }
+  .t-club .cup-plinth { background: none; border: 0; border-top: 1px solid #cfae62; border-bottom: 1px solid #cfae62; font-family: "Cinzel", serif; letter-spacing: 0.36em; color: #cfae62; }
+  .t-club .cup-bracket-col-head { font: 600 0.9rem "Cinzel", serif; letter-spacing: 0.14em; color: #f4efe0; }
+  .t-club .cup-bracket-match { background: rgba(4,26,17,0.65); border: 0; border-radius: 0; }
+  .t-club .cup-bracket-match::before { content: ""; position: absolute; inset: 0; pointer-events: none;
+    background:
+      linear-gradient(#cfae62, #cfae62) top left / 14px 1.5px no-repeat, linear-gradient(#cfae62, #cfae62) top left / 1.5px 14px no-repeat,
+      linear-gradient(#cfae62, #cfae62) top right / 14px 1.5px no-repeat, linear-gradient(#cfae62, #cfae62) top right / 1.5px 14px no-repeat,
+      linear-gradient(#cfae62, #cfae62) bottom left / 14px 1.5px no-repeat, linear-gradient(#cfae62, #cfae62) bottom left / 1.5px 14px no-repeat,
+      linear-gradient(#cfae62, #cfae62) bottom right / 14px 1.5px no-repeat, linear-gradient(#cfae62, #cfae62) bottom right / 1.5px 14px no-repeat; }
+  .t-club .cup-bracket-side { font-family: "Cormorant Garamond", serif; font-weight: 700; font-size: 0.98rem; color: #f4efe0; }
+  .t-club .cup-bracket-side.winner { color: #f3e2b0; }
+
+  /* =====================================================================
+     3 · THE FAIRWAY -- golf: noticeable. Mown fairway stripes in the green,
+     a small gold flagstick over the title, and ties written on cream
+     scorecard strips -- the winning score circled, like a birdie.
+     ===================================================================== */
+  .t-fairway { --gold-line: #e1c272; }
+  .t-fairway .cup-theme { --cup-gold: #e1c272; --cup-gold-bright: #fbeec0;
+    background: radial-gradient(ellipse 800px 480px at 50% -5%, rgba(225,194,114,0.18), transparent 60%), repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0 70px, transparent 70px 140px), linear-gradient(180deg, #0f4a33, #08311f);
+    border: 2px solid #e1c272; }
+  .t-fairway .cup-hero::before { content: ""; display: block; width: 46px; height: 64px; margin: 0 auto 10px;
+    background: center / contain no-repeat url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 64'><ellipse cx='23' cy='58' rx='18' ry='4' fill='%23e1c272' opacity='.35'/><path d='M14 58V4' stroke='%23fbeec0' stroke-width='2.5'/><path d='M14 4l24 9-24 9Z' fill='%23e1c272'/><circle cx='24' cy='57' r='2.5' fill='%23fbeec0'/></svg>"); }
+  .t-fairway .cup-title { font: italic 700 clamp(2rem, 5.5vw, 3rem)/1.1 "Playfair Display", serif; color: #fbf8ec; }
+  .t-fairway .cup-hero::after { content: "Contested over thirty-six gameweeks"; display: block; margin-top: 6px; font: italic 600 1.08rem "Cormorant Garamond", serif; color: #e1c272; }
+  .t-fairway .cup-plinth { background: #fbf8ec; color: #0f4a33; font-family: "Playfair Display", serif; letter-spacing: 0.26em; border: 1px solid #e1c272; }
+  .t-fairway .cup-bracket-col-head { font: italic 700 1.05rem "Playfair Display", serif; color: #fbf8ec; }
+  .t-fairway .cup-bracket-match { background: #fbf8ec; border: 1px solid #e1c272; border-radius: 3px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
+  .t-fairway .cup-bracket-match::after { background: #e1c272; }
+  .t-fairway .cup-bracket-side { color: #0f3a28; font-family: "Cormorant Garamond", serif; font-weight: 700; font-size: 1rem; }
+  .t-fairway .cup-bracket-side + .cup-bracket-side { border-top: 1px solid rgba(15,74,51,0.18); }
+  .t-fairway .cup-bracket-side .cup-score { display: inline-grid; place-items: center; min-width: 26px; height: 26px; color: #0f3a28; font-family: "Playfair Display", serif; }
+  .t-fairway .cup-bracket-side.winner, .t-fairway .cup-bracket-side.winner .cup-score { color: #0f3a28; }
+  .t-fairway .cup-bracket-side.winner .cup-score { border: 1.5px solid #b3261e; border-radius: 50%; color: #b3261e; }
+  .t-fairway .cup-bracket-side.tbd { color: #8a8470; }
+  .t-fairway .cup-bracket-match.future { background: rgba(251,248,236,0.1); border-style: dashed; box-shadow: none; }
+  .t-fairway .cup-bracket-match.future .cup-bracket-side { color: rgba(251,248,236,0.6); }
+
+  /* =====================================================================
+     4 · AUGUSTA SPRING -- golf: strong. Fairway green, championship
+     yellow and cream; a flag crest, azaleas either side of the plinth,
+     dark-green ties edged in yellow. The famous spring weekend's mood,
+     none of its marks, names or slogans.
+     ===================================================================== */
+  .t-spring { --gold-line: #f2c500; }
+  .t-spring .cup-theme { --cup-ground: #07402c; --cup-panel: #0b5238; --cup-deep: #032617; --cup-gold: #f2c500; --cup-gold-bright: #fff3b0; --cup-paper: #fbf8ec; --cup-muted: #a9cdb8;
+    background: radial-gradient(ellipse 900px 500px at 50% -5%, rgba(242,197,0,0.14), transparent 60%), linear-gradient(180deg, #08472f, #04301f);
+    border: 3px solid #f2c500; box-shadow: 0 0 0 5px #04301f, 0 0 0 6px rgba(242,197,0,0.45), 0 24px 60px rgba(0,0,0,0.5); }
+  .t-spring .cup-hero::before { content: ""; display: block; width: 70px; height: 82px; margin: 0 auto 12px;
+    background: center / contain no-repeat url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 74 86'><path d='M37 2 70 12v30c0 22-14 36-33 42C18 78 4 64 4 42V12Z' fill='%2307402c' stroke='%23f2c500' stroke-width='3'/><path d='M30 22v40' stroke='%23fbf8ec' stroke-width='2.5'/><path d='M30 22l18 7-18 7z' fill='%23f2c500'/><circle cx='42' cy='58' r='6' fill='%23fbf8ec'/></svg>"); }
+  .t-spring .cup-title { font: 800 clamp(1.9rem, 5vw, 2.8rem)/1.1 "Playfair Display", serif; color: #fbf8ec; }
+  .t-spring .cup-hero::after { content: "Est. 2026  ·  The Business"; display: block; margin-top: 8px; font: italic 600 1.05rem "Cormorant Garamond", serif; color: #f2c500; letter-spacing: 0.05em; }
+  .t-spring .cup-plinth { position: relative; background: #fbf8ec; color: #07402c; font-family: "Playfair Display", serif; letter-spacing: 0.3em; border-color: #f2c500; }
+  .t-spring .cup-plinth::before, .t-spring .cup-plinth::after { content: ""; position: absolute; top: 50%; width: 90px; height: 36px; transform: translateY(-50%);
+    background: radial-gradient(circle at 10px 18px, #ff5fa2 0 7px, transparent 8px), radial-gradient(circle at 24px 10px, #ff86b9 0 7px, transparent 8px), radial-gradient(circle at 26px 26px, #e8327d 0 6px, transparent 7px), radial-gradient(circle at 42px 16px, #ff5fa2 0 8px, transparent 9px), radial-gradient(circle at 58px 22px, #ff86b9 0 6px, transparent 7px), radial-gradient(circle at 72px 12px, #e8327d 0 7px, transparent 8px), radial-gradient(ellipse at 45px 32px, #0f6a49 0 30px, transparent 31px); }
+  .t-spring .cup-plinth::before { right: 100%; margin-right: 10px; }
+  .t-spring .cup-plinth::after { left: 100%; margin-left: 10px; transform: translateY(-50%) scaleX(-1); }
+  .t-spring .cup-bracket-col-head { font: 700 0.95rem "Playfair Display", serif; letter-spacing: 0.1em; text-transform: uppercase; color: #fbf8ec; }
+  .t-spring .cup-bracket-col-sub { color: #f2c500; }
+  .t-spring .cup-bracket-match { background: linear-gradient(160deg, #0b5238, #052f1e); border: 0; border-top: 3px solid #f2c500; border-radius: 2px; box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
+  .t-spring .cup-bracket-side { font-family: "Playfair Display", serif; font-weight: 600; color: #fbf8ec; }
+  .t-spring .cup-bracket-side.winner, .t-spring .cup-bracket-side.winner .cup-score { color: #f2c500; }
+  .t-spring .cup-news { background: #fbf8ec; }
+  .t-spring .cup-news-lab { background: #07402c; color: #f2c500; }
+  .t-spring .cup-news-reel, .t-spring .cup-news-reel b { color: #07402c; }
+
+  /* =====================================================================
+     5 · THE BACK NINE -- golf: full. Evening over the last holes: a pale
+     gold sun behind the trophy, pines along the horizon, a flag on the
+     green, and the bracket kept on a cream scorecard with ruled boxes.
+     ===================================================================== */
+  .t-backnine { --gold-line: #e7c56a; }
+  .t-backnine .cup-theme { --cup-gold: #e7c56a; --cup-gold-bright: #fbeec0; --cup-paper: #fbf8ec;
+    background:
+      radial-gradient(circle at 50% 300px, rgba(251,238,192,0.55) 0 70px, rgba(231,197,106,0.22) 71px, transparent 260px),
+      linear-gradient(180deg, #0c2e24 0, #154533 360px, #0f3b2a 520px, #0a2c1f 100%);
+    border: 2px solid #e7c56a; }
+  .t-backnine .cup-stage::after { content: ""; position: absolute; left: -30%; right: -30%; bottom: -24px; height: 120px; pointer-events: none;
+    background:
+      radial-gradient(ellipse 13px 58px at 4% 100%, #062016 98%, transparent), radial-gradient(ellipse 17px 78px at 10% 100%, #062016 98%, transparent), radial-gradient(ellipse 11px 50px at 16% 100%, #062016 98%, transparent),
+      radial-gradient(ellipse 18px 84px at 84% 100%, #062016 98%, transparent), radial-gradient(ellipse 13px 60px at 90% 100%, #062016 98%, transparent), radial-gradient(ellipse 15px 70px at 96% 100%, #062016 98%, transparent),
+      linear-gradient(transparent 82%, #0a2c1f 82%); }
+  .t-backnine .cup-stage::before { content: ""; position: absolute; right: 12%; bottom: 0; width: 34px; height: 70px; z-index: 1; pointer-events: none;
+    background: center / contain no-repeat url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 70'><path d='M10 68V4' stroke='%23fbf8ec' stroke-width='2'/><path d='M10 4l20 7-20 7Z' fill='%23e7c56a'/><ellipse cx='12' cy='67' rx='12' ry='3' fill='%23123f2d'/></svg>"); }
+  .t-backnine .cup-title { font: italic 700 clamp(2rem, 5.5vw, 3rem)/1.1 "Playfair Display", serif; color: #fbf8ec; }
+  .t-backnine .cup-hero::after { content: "The back nine  ·  where the Cup is won"; display: block; margin-top: 6px; font: italic 600 1.08rem "Cormorant Garamond", serif; color: #fbeec0; }
+  .t-backnine .cup-plinth { background: #fbf8ec; color: #123f2d; font-family: "Playfair Display", serif; letter-spacing: 0.26em; border-color: #e7c56a; }
+  .t-backnine .cup-bracket { background: #fbf8ec; padding: 16px 10px; border: 1px solid #e7c56a; box-shadow: 0 14px 30px rgba(0,0,0,0.45); }
+  .t-backnine .cup-bracket-col-head { color: #123f2d; font: 700 0.85rem "Playfair Display", serif; letter-spacing: 0.12em; text-transform: uppercase; background: #e7c56a; padding: 6px 4px; }
+  .t-backnine .cup-bracket-col-sub { color: #123f2d; opacity: 0.75; }
+  .t-backnine .cup-bracket-match { background: #fff; border: 1px solid #c9c2a8; border-radius: 0; box-shadow: none; }
+  .t-backnine .cup-bracket-match::after { background: #c9c2a8; }
+  .t-backnine .cup-bracket-side { color: #123f2d; font-family: "Cormorant Garamond", serif; font-weight: 700; font-size: 1rem; }
+  .t-backnine .cup-bracket-side + .cup-bracket-side { border-top: 1px solid #e3ddc6; }
+  .t-backnine .cup-bracket-side .cup-score { display: inline-grid; place-items: center; min-width: 26px; height: 24px; border-left: 1px solid #e3ddc6; color: #123f2d; font-family: "Playfair Display", serif; }
+  .t-backnine .cup-bracket-side.winner .cup-score { color: #b3261e; box-shadow: inset 0 0 0 1.5px #b3261e; border-radius: 50%; border-left: 0; }
+  .t-backnine .cup-bracket-side.tbd { color: #8a8470; }
+  .t-backnine .cup-bracket-match.future { background: transparent; border-style: dashed; }
+  .t-backnine .cup-champion-slot .cup-label { color: #6b7a6f; }
+  .t-backnine .cup-champion-slot .cup-champ-name { color: #123f2d; font-family: "Playfair Display", serif; }
+
+  @media (max-width: 560px) { .t-spring .cup-plinth::before, .t-spring .cup-plinth::after { display: none; } .t-gilded .cup-theme::after { inset: 10px; } }
+</style>
+</head>
+<body>
+  <div class="picker">
+    <h1>The Grassroots Cup · gold &amp; green templates</h1>
+    <div class="picker-row" id="picker"></div>
+    <p id="about"></p>
+  </div>
+  <div class="stage-wrap" id="stage"><main id="app"></main></div>
+
+<script type="module">
+  import { loadAllData, managerLookup } from "./js/data.js";
+  import { render } from "./js/render/cup.js";
+
+  // [class, name, golf level 0-4, description]
+  const T = [
+    ["", "Today", null, "<b>The page as it is now</b>, for comparison."],
+    ["t-gilded t-divider", "Gilded Emerald", 0, "<b>No golf at all, just more polish.</b> Today's page made richer: a gold-foil serif title, a gold rule-and-diamond under it, a double gold frame with engraved corner marks, and gold-hairline ties with a soft bevel."],
+    ["t-club", "The Members' Club", 1, "<b>A hint of golf.</b> A private-club feel: a laurel crest with a tiny flag in it, woven linen texture, engraved capitals ('Founded MMXXVI'), and fine gold corner brackets on every tie. The flag in the crest is the only nod to golf."],
+    ["t-fairway t-divider", "The Fairway", 2, "<b>Noticeably golf, still restrained.</b> Mown fairway stripes running through the green, a small gold flagstick over an italic title, and each tie written on a cream scorecard strip, with the winning score circled in red like a birdie."],
+    ["t-spring", "Augusta Spring", 3, "<b>Strongly golf.</b> Fairway green, championship yellow and cream: a flag crest, azaleas either side of the plinth, and dark-green ties edged in yellow. The mood of the famous spring weekend, with none of its marks, names or slogans. No tile scoreboard."],
+    ["t-backnine", "The Back Nine", 4, "<b>Full golf.</b> Evening over the closing holes: a pale gold sun behind the trophy, pines on the horizon and a flag on the green, with the whole bracket kept on a cream scorecard with ruled boxes and circled winning scores."],
+  ];
+  const meter = (n) => n == null ? "" : `<small>Golf ${"●".repeat(n)}${"○".repeat(4 - n)}</small>`;
+
+  const stage = document.getElementById("stage");
+  const picker = document.getElementById("picker");
+  const about = document.getElementById("about");
+  function choose(i) {
+    stage.className = `stage-wrap ${T[i][0]}`;
+    picker.querySelectorAll("button").forEach((b, j) => b.setAttribute("aria-pressed", String(j === i)));
+    about.innerHTML = T[i][3];
+  }
+  picker.innerHTML = T.map(([, name, lvl]) => `<button type="button">${name}${meter(lvl)}</button>`).join("");
+  picker.addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) choose([...picker.children].indexOf(b)); });
+  choose(1);
+
+  const data = await loadAllData();
+  render(document.getElementById("app"), data, managerLookup(data));
+</script>
+</body>
+</html>
