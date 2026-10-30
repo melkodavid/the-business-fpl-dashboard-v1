@@ -2992,7 +2992,7 @@ section[id^="lv-"] { scroll-margin-top: 8rem; }
    lines, a silver frame and a marker tray. Every colour token is re-set on
    .lv, so the rules above (cards, tables, line-ups) all pick it up.
    ========================================================================= */
-.lv {
+.lv.lv-sunday {
   --bg: #f6f4ec; --surface: #ffffff; --text: #1b2a4a; --text-muted: #5c6a86;
   --border: rgba(27,42,74,0.15); --edge-bright: rgba(27,42,74,0.35);
   --lime: #d6262f; --lime-contrast: #ffffff; --gold: #1d5fd1; --gold-bright: #d6262f;
@@ -3004,7 +3004,7 @@ section[id^="lv-"] { scroll-margin-top: 8rem; }
   box-shadow: 0 0 0 8px #c9ced5, 0 0 0 10px #8b94a0, 0 0 0 11px #5b636e, 0 24px 60px rgba(0,0,0,0.65);
 }
 /* the marker tray along the bottom of the board, with three pens resting in it */
-.lv::after {
+.lv.lv-sunday::after {
   content: ""; position: absolute; left: 6%; right: 6%; bottom: -12px; height: 16px; border-radius: 0 0 6px 6px;
   background:
     linear-gradient(90deg, transparent 18%, var(--marker-red) 18% 27%, #222 27% 29%, transparent 29% 41%, var(--marker-blue) 41% 50%, #222 50% 52%, transparent 52% 64%, #222 64% 73%, #555 73% 75%, transparent 75%) 0 3px / 100% 6px no-repeat,
@@ -3012,65 +3012,65 @@ section[id^="lv-"] { scroll-margin-top: 8rem; }
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
-.lv-title h2, .lv-h3 { font-family: "Permanent Marker", cursive; text-transform: none; letter-spacing: 0.02em; }
-.lv-title h2 { color: var(--ink); transform: rotate(-1.5deg); }
-.lv-title h2 em { color: var(--marker-red); }
-.lv-h3 { font-size: 1.35rem; color: var(--marker-blue); }
-.lv .section-title { font-family: "Permanent Marker", cursive; color: var(--ink); }
-.lv-status { color: var(--text-muted); }
-.lv-banner { background: rgba(214,38,47,0.06); border: 2px dashed rgba(214,38,47,0.45); color: var(--ink); }
-.lv-jump a { font-family: "Kalam", cursive; font-size: 0.85rem; letter-spacing: 0.02em; text-transform: none; font-weight: 700; border: 2px solid var(--ink); background: #fff; }
-.lv-jump a:hover { border-color: var(--marker-red); color: var(--marker-red); }
-.lv-mode { background: #fff; border: 2px solid var(--ink); }
-.lv-mode button { font-family: "Kalam", cursive; font-size: 0.85rem; letter-spacing: 0.02em; text-transform: none; }
+.lv-sunday .lv-title h2, .lv-sunday .lv-h3 { font-family: "Permanent Marker", cursive; text-transform: none; letter-spacing: 0.02em; }
+.lv-sunday .lv-title h2 { color: var(--ink); transform: rotate(-1.5deg); }
+.lv-sunday .lv-title h2 em { color: var(--marker-red); }
+.lv-sunday .lv-h3 { font-size: 1.35rem; color: var(--marker-blue); }
+.lv-sunday .lv .section-title { font-family: "Permanent Marker", cursive; color: var(--ink); }
+.lv-sunday .lv-status { color: var(--text-muted); }
+.lv-sunday .lv-banner { background: rgba(214,38,47,0.06); border: 2px dashed rgba(214,38,47,0.45); color: var(--ink); }
+.lv-sunday .lv-jump a { font-family: "Kalam", cursive; font-size: 0.85rem; letter-spacing: 0.02em; text-transform: none; font-weight: 700; border: 2px solid var(--ink); background: #fff; }
+.lv-sunday .lv-jump a:hover { border-color: var(--marker-red); color: var(--marker-red); }
+.lv-sunday .lv-mode { background: #fff; border: 2px solid var(--ink); }
+.lv-sunday .lv-mode button { font-family: "Kalam", cursive; font-size: 0.85rem; letter-spacing: 0.02em; text-transform: none; }
 
 /* match cards: paper pinned with a magnet, every other one a touch skew-whiff */
-.lv-match, .lv-plm { background: #fff; border: 2px solid var(--ink); box-shadow: 3px 4px 0 rgba(27,42,74,0.2); overflow: visible; }
-.lv-match.is-cup { background: #fffdf2; border-color: #b48a1c; }
-.lv-match.is-you { border-color: var(--marker-red); box-shadow: 3px 4px 0 rgba(214,38,47,0.35); }
-.lv-match::before { content: ""; display: block; width: 18px; height: 18px; margin: -10px auto -8px; position: relative; z-index: 1; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #ff8a8a, var(--marker-red)); box-shadow: 0 2px 3px rgba(0,0,0,0.3); }
-.lv-match.is-cup::before { background: radial-gradient(circle at 35% 30%, #ffe08a, #c99a16); }
-.lv-grid > :nth-child(odd), .lv-pl-grid > :nth-child(odd) { transform: rotate(-0.4deg); }
-.lv-grid > :nth-child(even), .lv-pl-grid > :nth-child(even) { transform: rotate(0.3deg); }
-.lv-nums b, .lv-plm-s { font: 700 2.3rem/1 "Kalam", cursive; color: var(--marker-red); }
-.lv-nums i { color: var(--ink); }
-.lv-state { color: var(--marker-blue); }
-.lv .club-name, .lv-nm, .lv-plm-t { font-family: "Kalam", cursive; font-weight: 700; }
-.lv-side:not(.lead) .club-name { color: var(--text-muted); }
-.lv-prog .p-live { color: var(--marker-red); } .lv-prog .p-yet { color: #b07d00; }
-.lv-odds { background: rgba(27,42,74,0.08); color: var(--ink); }
-.lv-odds i { background: repeating-linear-gradient(45deg, var(--marker-blue) 0 4px, #4d86ea 4px 8px); opacity: 0.55; }
-.lv-cupnote b { color: #8a6500; }
-.lv-detail { border-top: 2px dashed var(--border); }
+.lv-sunday .lv-match, .lv-sunday .lv-plm { background: #fff; border: 2px solid var(--ink); box-shadow: 3px 4px 0 rgba(27,42,74,0.2); overflow: visible; }
+.lv-sunday .lv-match.is-cup { background: #fffdf2; border-color: #b48a1c; }
+.lv-sunday .lv-match.is-you { border-color: var(--marker-red); box-shadow: 3px 4px 0 rgba(214,38,47,0.35); }
+.lv-sunday .lv-match::before { content: ""; display: block; width: 18px; height: 18px; margin: -10px auto -8px; position: relative; z-index: 1; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #ff8a8a, var(--marker-red)); box-shadow: 0 2px 3px rgba(0,0,0,0.3); }
+.lv-sunday .lv-match.is-cup::before { background: radial-gradient(circle at 35% 30%, #ffe08a, #c99a16); }
+.lv-sunday .lv-grid > :nth-child(odd), .lv-sunday .lv-pl-grid > :nth-child(odd) { transform: rotate(-0.4deg); }
+.lv-sunday .lv-grid > :nth-child(even), .lv-sunday .lv-pl-grid > :nth-child(even) { transform: rotate(0.3deg); }
+.lv-sunday .lv-nums b, .lv-sunday .lv-plm-s { font: 700 2.3rem/1 "Kalam", cursive; color: var(--marker-red); }
+.lv-sunday .lv-nums i { color: var(--ink); }
+.lv-sunday .lv-state { color: var(--marker-blue); }
+.lv-sunday .lv .club-name, .lv-sunday .lv-nm, .lv-sunday .lv-plm-t { font-family: "Kalam", cursive; font-weight: 700; }
+.lv-sunday .lv-side:not(.lead) .club-name { color: var(--text-muted); }
+.lv-sunday .lv-prog .p-live { color: var(--marker-red); } .lv-sunday .lv-prog .p-yet { color: #b07d00; }
+.lv-sunday .lv-odds { background: rgba(27,42,74,0.08); color: var(--ink); }
+.lv-sunday .lv-odds i { background: repeating-linear-gradient(45deg, var(--marker-blue) 0 4px, #4d86ea 4px 8px); opacity: 0.55; }
+.lv-sunday .lv-cupnote b { color: #8a6500; }
+.lv-sunday .lv-detail { border-top: 2px dashed var(--border); }
 
 /* line-ups */
-.lv-pl { background: rgba(29,95,209,0.05); }
-.lv-pos { background: rgba(27,42,74,0.08); }
-.lv-pos-GKP { color: #a06a00; } .lv-pos-DEF { color: #1d5fd1; } .lv-pos-MID { color: #13804a; } .lv-pos-FWD { color: #c0186b; }
-.lv-pl.st-live { background: rgba(214,38,47,0.08); box-shadow: inset 3px 0 0 var(--marker-red); }
-.lv-pl.sub-in { box-shadow: inset 3px 0 0 #13804a; }
-.lv-tag { color: #13804a; }
-.lv-pt { font-family: "Kalam", cursive; font-weight: 700; }
-.lv-pt sup { color: #b07d00; }
+.lv-sunday .lv-pl { background: rgba(29,95,209,0.05); }
+.lv-sunday .lv-pos { background: rgba(27,42,74,0.08); }
+.lv-sunday .lv-pos-GKP { color: #a06a00; } .lv-sunday .lv-pos-DEF { color: #1d5fd1; } .lv-sunday .lv-pos-MID { color: #13804a; } .lv-sunday .lv-pos-FWD { color: #c0186b; }
+.lv-sunday .lv-pl.st-live { background: rgba(214,38,47,0.08); box-shadow: inset 3px 0 0 var(--marker-red); }
+.lv-sunday .lv-pl.sub-in { box-shadow: inset 3px 0 0 #13804a; }
+.lv-sunday .lv-tag { color: #13804a; }
+.lv-sunday .lv-pt { font-family: "Kalam", cursive; font-weight: 700; }
+.lv-sunday .lv-pt sup { color: #b07d00; }
 
 /* Premier League + table */
-.lv-plm-who b { color: var(--marker-red); }
-.lv-plm.is-live { border-color: var(--marker-red); }
-.lv-plm.is-live .lv-plm-st { color: var(--marker-red); }
-.lv-day { font-family: "Kalam", cursive; font-size: 0.9rem; letter-spacing: 0.04em; color: var(--marker-blue); }
-.lv .card { background: #fff; border: 2px solid var(--ink); box-shadow: 3px 4px 0 rgba(27,42,74,0.2); }
-.lv-table td b { font-family: "Kalam", cursive; font-size: 1.05rem; color: var(--marker-red); }
-.lv-table tr.is-you td { background: rgba(214,38,47,0.07); }
-.lv-res-W { background: rgba(19,128,74,0.14); color: #13804a; } .lv-res-D { background: rgba(92,106,134,0.14); color: #5c6a86; } .lv-res-L { background: rgba(214,38,47,0.12); color: var(--marker-red); }
-.lv-up { color: #13804a; } .lv-down { color: var(--marker-red); }
-.lv-foot { color: var(--text-muted); }
+.lv-sunday .lv-plm-who b { color: var(--marker-red); }
+.lv-sunday .lv-plm.is-live { border-color: var(--marker-red); }
+.lv-sunday .lv-plm.is-live .lv-plm-st { color: var(--marker-red); }
+.lv-sunday .lv-day { font-family: "Kalam", cursive; font-size: 0.9rem; letter-spacing: 0.04em; color: var(--marker-blue); }
+.lv-sunday .lv .card { background: #fff; border: 2px solid var(--ink); box-shadow: 3px 4px 0 rgba(27,42,74,0.2); }
+.lv-sunday .lv-table td b { font-family: "Kalam", cursive; font-size: 1.05rem; color: var(--marker-red); }
+.lv-sunday .lv-table tr.is-you td { background: rgba(214,38,47,0.07); }
+.lv-sunday .lv-res-W { background: rgba(19,128,74,0.14); color: #13804a; } .lv-sunday .lv-res-D { background: rgba(92,106,134,0.14); color: #5c6a86; } .lv-sunday .lv-res-L { background: rgba(214,38,47,0.12); color: var(--marker-red); }
+.lv-sunday .lv-up { color: #13804a; } .lv-sunday .lv-down { color: var(--marker-red); }
+.lv-sunday .lv-foot { color: var(--text-muted); }
 
 @media (max-width: 520px) {
-  .lv { padding: 18px 12px 40px; box-shadow: 0 0 0 5px #c9ced5, 0 0 0 7px #8b94a0, 0 16px 40px rgba(0,0,0,0.6); }
+  .lv.lv-sunday { padding: 18px 12px 40px; box-shadow: 0 0 0 5px #c9ced5, 0 0 0 7px #8b94a0, 0 16px 40px rgba(0,0,0,0.6); }
 }
-.lv-jump { flex-wrap: wrap; }
-.lv-jump a, .lv-mode button { line-height: 1.2; white-space: nowrap; }
-.lv-jump a { padding: 0.35rem 0.8rem; }
+.lv-sunday .lv-jump { flex-wrap: wrap; }
+.lv-sunday .lv-jump a, .lv-sunday .lv-mode button { line-height: 1.2; white-space: nowrap; }
+.lv-sunday .lv-jump a { padding: 0.35rem 0.8rem; }
 
 /* =========================================================================
    Live page on phones. Kept last so it wins over the whiteboard theme.
@@ -3078,191 +3078,106 @@ section[id^="lv-"] { scroll-margin-top: 8rem; }
    score on the right) so full club names fit; everything else steps down a
    size and gets even spacing.
    ========================================================================= */
-.lv-short { display: none; }
+.lv .lv-short { display: none; }
 @media (max-width: 560px) {
-  .lv { margin: 4px auto 30px; padding: 16px 12px 40px; }
-  .lv-head { margin-bottom: 0.6rem; gap: 0.2rem; }
-  .lv-title h2 { font-size: clamp(1.45rem, 6.9vw, 2.1rem); line-height: 1.05; }
-  .lv-status { font-size: 0.74rem; line-height: 1.4; }
-  .lv-refresh { width: 30px; height: 30px; font-size: 0.9rem; }
-  .lv-banner { font-size: 0.8rem; padding: 0.55rem 0.7rem; line-height: 1.4; }
-  .lv-mode { display: grid; grid-template-columns: 1fr 1fr; width: 100%; margin-bottom: 0.7rem; }
-  .lv-mode button { padding: 0.45rem 0.4rem; font-size: 0.82rem; }
-  .lv-jump { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.4rem; margin-bottom: 0.2rem; }
-  .lv-jump a { padding: 0.35rem 0.2rem; text-align: center; font-size: 0.82rem; }
-  .lv-long { display: none; }
-  .lv-short { display: inline; }
-  .lv-h3 { margin: 1.3rem 0 0.25rem; font-size: 1.2rem; }
-  .lv-sub, .lv-quiet { font-size: 0.8rem; margin-bottom: 0.6rem; }
-  .lv-grid { gap: 0.9rem; }
+  .lv[class] { margin: 4px auto 30px; padding: 16px 12px 40px; }
+  .lv .lv-head { margin-bottom: 0.6rem; gap: 0.2rem; }
+  .lv .lv-title h2 { font-size: clamp(1.45rem, 6.9vw, 2.1rem); line-height: 1.05; }
+  .lv .lv-status { font-size: 0.74rem; line-height: 1.4; }
+  .lv .lv-refresh { width: 30px; height: 30px; font-size: 0.9rem; }
+  .lv .lv-banner { font-size: 0.8rem; padding: 0.55rem 0.7rem; line-height: 1.4; }
+  .lv .lv-mode { display: grid; grid-template-columns: 1fr 1fr; width: 100%; margin-bottom: 0.7rem; }
+  .lv .lv-mode button { padding: 0.45rem 0.4rem; font-size: 0.82rem; }
+  .lv .lv-jump { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.4rem; margin-bottom: 0.2rem; }
+  .lv .lv-jump a { padding: 0.35rem 0.2rem; text-align: center; font-size: 0.82rem; }
+  .lv .lv-long { display: none; }
+  .lv .lv-short { display: inline; }
+  .lv .lv-h3 { margin: 1.3rem 0 0.25rem; font-size: 1.2rem; }
+  .lv .lv-sub, .lv .lv-quiet { font-size: 0.8rem; margin-bottom: 0.6rem; }
+  .lv .lv-grid { gap: 0.9rem; }
 
   /* the scoreboard card */
-  .lv-sum {
+  .lv .lv-sum {
     grid-template-columns: minmax(0, 1fr) auto;
     grid-template-areas: "state proj" "home hs" "away as" "odds odds";
     gap: 0.3rem 0.7rem; padding: 0.7rem 0.8rem 0.75rem;
   }
-  .lv-score, .lv-nums { display: contents; }
-  .lv-state { grid-area: state; text-align: left; align-self: center; font-size: 0.58rem; }
-  .lv-score small { grid-area: proj; text-align: right; align-self: center; padding-right: 1.1rem; font-size: 0.66rem; }
-  .lv-nums i { display: none; }
-  .lv-nums b { align-self: center; justify-self: end; min-width: 2ch; text-align: right; font-size: 1.75rem; line-height: 1; }
-  .lv-nums b:first-of-type { grid-area: hs; }
-  .lv-nums b:last-of-type { grid-area: as; }
-  .lv-sum:has(.lv-home.lead) .lv-nums b:last-of-type, .lv-sum:has(.lv-away.lead) .lv-nums b:first-of-type { opacity: 0.5; }
-  .lv-side { display: flex; align-items: center; gap: 0.5rem; min-width: 0; }
-  .lv-home { grid-area: home; }
-  .lv-away { grid-area: away; justify-items: start; text-align: left; }
-  .lv-away .club { flex-direction: row; }
-  .lv-side .club { flex: 1 1 auto; min-width: 0; }
-  .lv-side .club-badge { display: inline-block; }
+  .lv .lv-score, .lv .lv-nums { display: contents; }
+  .lv .lv-state { grid-area: state; text-align: left; align-self: center; font-size: 0.58rem; }
+  .lv .lv-score small { grid-area: proj; text-align: right; align-self: center; padding-right: 1.1rem; font-size: 0.66rem; }
+  .lv .lv-nums i { display: none; }
+  .lv .lv-nums b { align-self: center; justify-self: end; min-width: 2ch; text-align: right; font-size: 1.75rem; line-height: 1; }
+  .lv .lv-nums b:first-of-type { grid-area: hs; }
+  .lv .lv-nums b:last-of-type { grid-area: as; }
+  .lv .lv-sum:has(.lv-home.lead) .lv-nums b:last-of-type, .lv .lv-sum:has(.lv-away.lead) .lv-nums b:first-of-type { opacity: 0.5; }
+  .lv .lv-side { display: flex; align-items: center; gap: 0.5rem; min-width: 0; }
+  .lv .lv-home { grid-area: home; }
+  .lv .lv-away { grid-area: away; justify-items: start; text-align: left; }
+  .lv .lv-away .club { flex-direction: row; }
+  .lv .lv-side .club { flex: 1 1 auto; min-width: 0; }
+  .lv .lv-side .club-badge { display: inline-block; }
   .lv .lv-side .club-name { font-size: 0.95rem; }
-  .lv-prog { flex-shrink: 0; font-size: 0.64rem; gap: 0.25rem; }
-  .lv-odds { grid-area: odds; margin-top: 0.3rem; height: 14px; font-size: 0.58rem; }
-  .lv-chev { top: 0.65rem; bottom: auto; right: 0.7rem; }
-  .lv-cupnote { padding: 0 0.8rem 0.65rem; font-size: 0.76rem; line-height: 1.4; }
+  .lv .lv-prog { flex-shrink: 0; font-size: 0.64rem; gap: 0.25rem; }
+  .lv .lv-odds { grid-area: odds; margin-top: 0.3rem; height: 14px; font-size: 0.58rem; }
+  .lv .lv-chev { top: 0.65rem; bottom: auto; right: 0.7rem; }
+  .lv .lv-cupnote { padding: 0 0.8rem 0.65rem; font-size: 0.76rem; line-height: 1.4; }
 
   /* line-ups */
-  .lv-detail { gap: 0.45rem; padding: 0.1rem 0.55rem 0.7rem; }
-  .lv-lineup h4 { margin: 0.6rem 0 0.35rem; font-size: 0.74rem; }
-  .lv-lineup h4 .club-badge { display: none; }
-  .lv-xi { gap: 3px; }
-  .lv-pl { grid-template-columns: minmax(0, 1fr) auto; padding: 0.28rem 0.4rem; gap: 0.3rem; }
-  .lv-nm { font-size: 0.8rem; line-height: 1.15; }
-  .lv-nm small { font-size: 0.6rem; }
-  .lv-pt { font-size: 1.05rem; }
-  .lv-bench-h { margin: 0.55rem 0 0.25rem; font-size: 0.58rem; }
+  .lv .lv-detail { gap: 0.45rem; padding: 0.1rem 0.55rem 0.7rem; }
+  .lv .lv-lineup h4 { margin: 0.6rem 0 0.35rem; font-size: 0.74rem; }
+  .lv .lv-lineup h4 .club-badge { display: none; }
+  .lv .lv-xi { gap: 3px; }
+  .lv .lv-pl { grid-template-columns: minmax(0, 1fr) auto; padding: 0.28rem 0.4rem; gap: 0.3rem; }
+  .lv .lv-nm { font-size: 0.8rem; line-height: 1.15; }
+  .lv .lv-nm small { font-size: 0.6rem; }
+  .lv .lv-pt { font-size: 1.05rem; }
+  .lv .lv-bench-h { margin: 0.55rem 0 0.25rem; font-size: 0.58rem; }
 
   /* Premier League */
-  .lv-day { margin: 0.8rem 0 0.4rem; font-size: 0.82rem; }
-  .lv-pl-grid { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
-  .lv-plm { padding: 0.55rem 0.45rem 0.5rem; gap: 0.1rem 0.25rem; }
-  .lv-plm-t { font-size: 0.82rem; }
-  .lv-plm-s { font-size: 1.35rem; white-space: nowrap; min-width: 0; }
-  .lv-plm-st { font-size: 0.56rem; }
-  .lv-plm-who { font-size: 0.6rem; line-height: 1.3; }
+  .lv .lv-day { margin: 0.8rem 0 0.4rem; font-size: 0.82rem; }
+  .lv .lv-pl-grid { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+  .lv .lv-plm { padding: 0.55rem 0.45rem 0.5rem; gap: 0.1rem 0.25rem; }
+  .lv .lv-plm-t { font-size: 0.82rem; }
+  .lv .lv-plm-s { font-size: 1.35rem; white-space: nowrap; min-width: 0; }
+  .lv .lv-plm-st { font-size: 0.56rem; }
+  .lv .lv-plm-who { font-size: 0.6rem; line-height: 1.3; }
 
   /* table */
-  .lv-table { padding: 0.4rem 0.5rem; }
-  .lv-table table { font-size: 0.8rem; }
-  .lv-table td, .lv-table th { padding: 0.45rem 0.3rem; }
-  .lv-table .club-name { display: block; max-width: 9.5rem; overflow: hidden; text-overflow: ellipsis; }
-  .lv-foot { font-size: 0.72rem; line-height: 1.45; }
+  .lv .lv-table { padding: 0.4rem 0.5rem; }
+  .lv .lv-table table { font-size: 0.8rem; }
+  .lv .lv-table td, .lv .lv-table th { padding: 0.45rem 0.3rem; }
+  .lv .lv-table .club-name { display: block; max-width: 9.5rem; overflow: hidden; text-overflow: ellipsis; }
+  .lv .lv-foot { font-size: 0.72rem; line-height: 1.45; }
 }
 @media (max-width: 360px) {
-  .lv { padding: 14px 9px 38px; }
-  .lv-prog { display: none; }
-  .lv-plm-who { display: none; }
+  .lv[class] { padding: 14px 9px 38px; }
+  .lv .lv-prog { display: none; }
+  .lv .lv-plm-who { display: none; }
 }
 @media (max-width: 560px) {
-  .lv-sum:not(:has(.lv-odds)) { grid-template-areas: "state proj" "home hs" "away as"; }
-  .lv-status { flex-wrap: nowrap; white-space: nowrap; }
+  .lv .lv-sum:not(:has(.lv-odds)) { grid-template-areas: "state proj" "home hs" "away as"; }
+  .lv .lv-status { flex-wrap: nowrap; white-space: nowrap; }
 }
 
 /* =========================================================================
-   THE GRASSROOTS CUP -- "Augusta Green". Deeper fairway green, championship
-   yellow and cream; a crest over a serif title, azaleas beside the plinth,
-   the bracket as the hand-operated white leaderboard. (The mood of a famous
-   spring golf weekend, none of its marks, names or slogans.)
-   Layered over the original cup styles above, so the trophy, draw ceremony
-   and graveyard keep working as they were.
+   THE GRASSROOTS CUP -- the Champion's Blazer (render/cupTraditions.js).
    ========================================================================= */
-.cup-theme {
-  --cup-ground: #07402c; --cup-panel: #0b5238; --cup-panel-2: #0f6a49; --cup-panel-3: #13805a; --cup-deep: #032617;
-  --cup-gold: #f2c500; --cup-gold-bright: #fff3b0; --cup-gold-deep: #9b7e00; --cup-paper: #fbf8ec; --cup-muted: #a9cdb8;
-  --cup-cream: #fbf8ec; --cup-board-line: #c9c2a8; --cup-red: #c8102e;
-  background: radial-gradient(ellipse 900px 500px at 50% -5%, rgba(242,197,0,0.14), transparent 60%), linear-gradient(180deg, #08472f, #04301f);
-  border: 3px solid var(--cup-gold);
-  box-shadow: 0 0 0 5px #04301f, 0 0 0 6px rgba(242,197,0,0.5), 0 24px 60px rgba(0,0,0,0.5);
-}
-.cup-theme .cup-aurora { opacity: 0.4; }
-.cup-theme .cup-hero::before {
-  content: ""; display: block; width: 74px; height: 86px; margin: 0 auto 14px;
-  background: center / contain no-repeat url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 74 86'><path d='M37 2 70 12v30c0 22-14 36-33 42C18 78 4 64 4 42V12Z' fill='%2307402c' stroke='%23f2c500' stroke-width='3'/><path d='M37 9 63 17v25c0 18-11 29-26 34C22 71 11 60 11 42V17Z' fill='none' stroke='%23fff3b0' stroke-width='1' opacity='.6'/><path d='M30 22v40' stroke='%23fbf8ec' stroke-width='2.5'/><path d='M30 22l18 7-18 7z' fill='%23f2c500'/><circle cx='42' cy='58' r='7' fill='%23fbf8ec'/><path d='M37 54l5 2 5-2M38 62l4-2 4 2' stroke='%2307402c' stroke-width='1.2' fill='none'/></svg>");
-}
-.cup-theme .cup-title { font-family: "Playfair Display", Georgia, serif; font-weight: 800; letter-spacing: 0.01em; color: var(--cup-cream); }
-.cup-theme .cup-hero::after { content: "Est. 2026  ·  The Business"; display: block; margin-top: 8px; font: italic 600 1.05rem "Cormorant Garamond", Georgia, serif; color: var(--cup-gold); letter-spacing: 0.06em; }
-.cup-theme .cup-eyebrow { font-family: "Playfair Display", Georgia, serif; }
-.cup-theme .cup-plinth { position: relative; font-family: "Playfair Display", Georgia, serif; letter-spacing: 0.3em; background: var(--cup-cream); color: var(--cup-ground); border-color: var(--cup-gold); }
-.cup-theme .cup-plinth::before, .cup-theme .cup-plinth::after {
-  content: ""; position: absolute; top: 50%; width: 90px; height: 36px; transform: translateY(-50%); pointer-events: none;
-  background: radial-gradient(circle at 10px 18px, #ff5fa2 0 7px, transparent 8px), radial-gradient(circle at 24px 10px, #ff86b9 0 7px, transparent 8px), radial-gradient(circle at 26px 26px, #e8327d 0 6px, transparent 7px), radial-gradient(circle at 42px 16px, #ff5fa2 0 8px, transparent 9px), radial-gradient(circle at 58px 22px, #ff86b9 0 6px, transparent 7px), radial-gradient(circle at 72px 12px, #e8327d 0 7px, transparent 8px), radial-gradient(ellipse at 45px 32px, #0f6a49 0 30px, transparent 31px);
-}
-.cup-theme .cup-plinth::before { right: 100%; margin-right: 10px; }
-.cup-theme .cup-plinth::after { left: 100%; margin-left: 10px; transform: translateY(-50%) scaleX(-1); }
-
-/* bracket: the hand-operated white leaderboard */
-.cup-theme .cup-bracket-col-head { background: var(--cup-ground); color: var(--cup-cream); border: 2px solid var(--cup-cream); padding: 8px 4px; font: 700 0.95rem "Playfair Display", Georgia, serif; letter-spacing: 0.12em; text-transform: uppercase; }
-.cup-theme .cup-bracket-col-sub { color: var(--cup-gold); }
-.cup-theme .cup-bracket-match { background: var(--cup-cream); border: 2px solid var(--cup-cream); border-radius: 0; box-shadow: inset 0 0 0 1px var(--cup-board-line), 0 6px 16px rgba(0,0,0,0.35); }
-.cup-theme .cup-bracket-match::after { background: var(--cup-cream); opacity: 0.6; }
-.cup-theme .cup-bracket-side { color: #1b1b1b; font: 600 0.86rem "Oswald", "Arial Narrow", sans-serif; text-transform: uppercase; letter-spacing: 0.06em; }
-.cup-theme .cup-bracket-side + .cup-bracket-side { border-top: 1px solid var(--cup-board-line); }
-.cup-theme .cup-bracket-side .cup-score { min-width: 2.2ch; text-align: center; padding: 1px 4px; background: #fff; border: 1px solid var(--cup-board-line); color: var(--cup-ground); font-weight: 700; }
-.cup-theme .cup-bracket-side.winner { color: var(--cup-ground); }
-.cup-theme .cup-bracket-side.winner .cup-score { color: var(--cup-red); }
-.cup-theme .cup-bracket-side.tbd { color: #8a8470; }
-.cup-theme .cup-bracket-side.path-highlight { background: #fff6cc; }
-.cup-theme .cup-bracket-match.future { background: rgba(251,248,236,0.12); border: 2px dashed rgba(251,248,236,0.4); box-shadow: none; }
-.cup-theme .cup-bracket-match.future .cup-bracket-side { color: var(--cup-muted); }
-.cup-theme .cup-bracket-match.future .cup-score { background: transparent; border-color: rgba(251,248,236,0.3); color: var(--cup-muted); }
-.cup-theme .cup-champion-slot .cup-champ-name { font-family: "Playfair Display", Georgia, serif; color: var(--cup-gold); }
-.cup-theme .cup-news { background: var(--cup-cream); color: var(--cup-ground); }
-.cup-theme .cup-news-lab { background: var(--cup-ground); color: var(--cup-gold); }
-.cup-theme .cup-news-reel, .cup-theme .cup-news-reel b { color: var(--cup-ground); }
-.cup-theme .cup-draw-cta { background: var(--cup-gold); color: var(--cup-ground); font-family: "Playfair Display", Georgia, serif; letter-spacing: 0.04em; }
-
-/* ---- the Hand-Turned Leaderboard (live cup scores) ---- */
-.cup-board { position: relative; z-index: 1; max-width: 560px; margin: 2rem auto 1rem; padding: 0 1rem; }
-.cb-frame { background: var(--cup-ground); padding: 12px 12px 10px; border: 3px solid var(--cup-cream); box-shadow: 0 0 0 1px #04301f, 0 16px 34px rgba(0,0,0,0.45); }
-.cb-title { margin: 0; text-align: center; font: 700 clamp(1.2rem, 4vw, 1.5rem)/1.2 "Playfair Display", Georgia, serif; letter-spacing: 0.32em; text-transform: uppercase; color: var(--cup-cream); }
-.cb-sub { margin: 2px 0 10px; text-align: center; font: italic 600 0.95rem "Cormorant Garamond", Georgia, serif; color: var(--cup-gold); }
-.cb-tie { padding: 6px 0 4px; border-top: 1px solid rgba(251,248,236,0.18); }
-.cb-tie-h { margin: 0 0 4px; font: 600 0.6rem "Oswald", sans-serif; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cup-gold); }
-.cb-tie-h span { color: var(--cup-muted); letter-spacing: 0.08em; }
-.cb-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 3px; }
-.cb-name, .cb-score { display: flex; gap: 2px; min-width: 0; }
-.cb-name { overflow: hidden; }
-.cb-name i, .cb-score i {
-  --t: clamp(12px, 3.6vw, 19px);
-  display: inline-grid; place-items: center; flex-shrink: 0; width: var(--t); height: calc(var(--t) * 1.4);
-  background: var(--cup-cream); color: #1b1b1b; font: 600 calc(var(--t) * 0.68) "Oswald", sans-serif; font-style: normal;
-  box-shadow: inset 0 -2px 0 var(--cup-board-line), inset 0 1px 0 #fff;
-}
-.cb-name i.sp { width: calc(var(--t) * 0.35); background: transparent; box-shadow: none; }
-.cb-score i { color: var(--cup-ground); font-weight: 700; }
-.cb-row.lead .cb-score i { color: var(--cup-red); }
-.cb-score i.flip { animation: cb-flip 0.6s ease-in-out both; }
-.cb-score i.flip:nth-child(2) { animation-delay: 0.08s; }
-.cb-score i.flip:nth-child(3) { animation-delay: 0.16s; }
-@keyframes cb-flip { 0% { transform: rotateX(0); } 45% { transform: rotateX(90deg); background: #e9e3cc; } 55% { transform: rotateX(90deg); } 100% { transform: rotateX(0); } }
-.cb-foot { margin: 8px 0 0; text-align: center; font: italic 500 0.88rem "Cormorant Garamond", Georgia, serif; color: var(--cup-muted); }
-
 /* ---- the Champion's Blazer ---- */
 .cup-blazer { position: relative; z-index: 1; display: grid; grid-template-columns: 220px 1fr; align-items: center; gap: 1.5rem; max-width: 760px; margin: 2.5rem auto 1rem; padding: 1.5rem; border-top: 1px solid rgba(242,197,0,0.35); border-bottom: 1px solid rgba(242,197,0,0.35); }
 .cbz-art { display: grid; place-items: center; padding: 1rem 0; background: radial-gradient(circle at 50% 45%, rgba(242,197,0,0.2), transparent 65%); }
 .cbz-svg { width: 190px; height: auto; filter: drop-shadow(0 14px 22px rgba(0,0,0,0.55)); animation: cbz-sway 6s ease-in-out infinite; transform-origin: 50% 0; }
 @keyframes cbz-sway { 50% { transform: rotate(1.2deg); } }
-.cbz-title { margin: 0 0 0.6rem; font: 800 clamp(1.5rem, 4vw, 2rem)/1.15 "Playfair Display", Georgia, serif; color: var(--cup-cream); }
+.cbz-title { margin: 0 0 0.6rem; font: 800 clamp(1.5rem, 4vw, 2rem)/1.15 "Playfair Display", Georgia, serif; color: var(--cup-paper); }
 .cbz-text { margin: 0 0 0.9rem; color: var(--cup-muted); line-height: 1.6; font-size: 0.92rem; }
 .cbz-holder { margin: 0; font: italic 600 1.15rem "Cormorant Garamond", Georgia, serif; color: var(--cup-gold); }
-.cbz-holder b { font-style: normal; color: var(--cup-cream); }
+.cbz-holder b { font-style: normal; color: var(--cup-paper); }
 
 /* the holder's badge beside their club name, site-wide */
 .blazer-badge { display: inline-block; width: 1.05em; height: 1.05em; margin-left: 0.3em; vertical-align: -0.15em; }
 .blazer-badge svg { width: 100%; height: 100%; }
 
 @media (max-width: 640px) {
-  .cup-theme .cup-plinth::before, .cup-theme .cup-plinth::after { width: 54px; height: 30px; background-size: 60% 80%; opacity: 0.9; }
   .cup-blazer { grid-template-columns: 1fr; text-align: center; padding: 1.25rem 1rem; gap: 0.5rem; }
   .cbz-svg { width: 150px; }
-  .cb-frame { padding: 10px 8px 8px; }
 }
-@media (max-width: 420px) { .cup-theme .cup-plinth::before, .cup-theme .cup-plinth::after { display: none; } }
-@media (prefers-reduced-motion: reduce) { .cbz-svg, .cb-score i.flip { animation: none; } }
-@media (max-width: 520px) {
-  .cup-board { padding: 0 0.2rem; margin-top: 1.5rem; }
-  .cb-frame { padding: 10px 6px 8px; }
-  .cb-name, .cb-score { gap: 1px; }
-  .cb-name i, .cb-score i { --t: clamp(10px, 3.25vw, 19px); }
-}
+@media (prefers-reduced-motion: reduce) { .cbz-svg { animation: none; } }

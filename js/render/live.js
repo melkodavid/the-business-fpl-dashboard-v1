@@ -12,6 +12,10 @@ import { getIdentity } from "../identity.js";
 import { computeLive, liveTable, cupTieLive } from "../lib/liveScoring.js";
 
 const REFRESH_MS = 60 * 1000;
+// The page's look (css/style.css, .lv-<theme>). A container can ask for another
+// with data-lv-theme -- the theme sampler in design-samples/ does.
+const DEFAULT_THEME = "lv-sunday";
+const themeOf = (el) => el?.dataset?.lvTheme ?? DEFAULT_THEME;
 let pollTimer = null;
 let tickTimer = null;
 const open = new Set(); // match cards the viewer has expanded, kept across refreshes
@@ -230,7 +234,7 @@ function draw(root, data, managers, current) {
     : "";
 
   root.innerHTML = `
-    <div class="lv">
+    <div class="lv ${themeOf(root)}">
       <header class="lv-head">
         <div class="lv-title">${isLive ? `<span class="lv-dot" aria-hidden="true"></span>` : ""}<h2>Gameweek ${payload.gw} <em>${headline}</em></h2></div>
         ${preview
@@ -254,8 +258,8 @@ function draw(root, data, managers, current) {
     </div>`;
 }
 
-function errorHtml(msg) {
-  return `<div class="lv"><h2 class="section-title">Live scores</h2><div class="card lv-error"><p>${msg}</p></div></div>`;
+function errorHtml(msg, theme = DEFAULT_THEME) {
+  return `<div class="lv ${theme}"><h2 class="section-title">Live scores</h2><div class="card lv-error"><p>${msg}</p></div></div>`;
 }
 
 export function render(container, data, managers) {
@@ -266,7 +270,7 @@ export function render(container, data, managers) {
     container.innerHTML = errorHtml("Live scores need the league's Apps Script relay - see scripts/predictions/SETUP.md.");
     return;
   }
-  container.innerHTML = `<div class="lv"><h2 class="section-title">Live scores</h2><div class="card lv-loading"><p>Fetching the latest scores…</p></div></div>`;
+  container.innerHTML = `<div class="lv ${themeOf(container)}"><h2 class="section-title">Live scores</h2><div class="card lv-loading"><p>Fetching the latest scores…</p></div></div>`;
   let payload = null;
 
   async function load() {
