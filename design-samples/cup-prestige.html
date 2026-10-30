@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cup page: prestige options</title>
+<!-- Resolve everything from the site root so the real Cup page code and data load as-is. -->
+<base href="../">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&family=Bebas+Neue&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Cinzel:wght@500;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  body { margin: 0; background: #07080d; color: #eef1f4; font-family: "Archivo", sans-serif; }
+  .picker { position: sticky; top: 0; z-index: 80; padding: 12px 16px 10px; background: rgba(7,8,13,0.94); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .picker h1 { margin: 0 0 8px; font: 400 1.6rem/1 "Bebas Neue", sans-serif; letter-spacing: 0.05em; }
+  .picker-row { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; }
+  .picker button { flex-shrink: 0; cursor: pointer; border: 1px solid rgba(255,255,255,0.25); background: rgba(255,255,255,0.06); color: #eef1f4; border-radius: 99px; padding: 8px 14px; font: 800 0.72rem "Archivo", sans-serif; letter-spacing: 0.08em; text-transform: uppercase; }
+  .picker button[aria-pressed="true"] { background: #f2c500; color: #0a2a1d; border-color: #f2c500; }
+  .picker p { margin: 8px 0 0; font-size: 0.85rem; color: #aab3c0; max-width: 85ch; line-height: 1.45; }
+  .picker p b { color: #eef1f4; }
+  .stage-wrap { max-width: 1100px; margin: 0 auto; padding: 18px 16px 40px; }
+  #app { padding: 0; }
+
+  /* =====================================================================
+     A · AUGUSTA GREEN -- a refinement of today's page: deeper fairway
+     green, championship yellow, cream, a crest over a serif title, and the
+     bracket redone as the hand-operated white leaderboard. Azaleas along
+     the plinth. (Mood only: no real tournament marks, names or slogans.)
+     ===================================================================== */
+  .th-augusta .cup-theme { --cup-ground: #07402c; --cup-panel: #0b5238; --cup-panel-2: #0f6a49; --cup-panel-3: #13805a; --cup-deep: #032617; --cup-gold: #f2c500; --cup-gold-bright: #fff3b0; --cup-gold-deep: #9b7e00; --cup-paper: #fbf8ec; --cup-muted: #a9cdb8;
+    background: radial-gradient(ellipse 900px 500px at 50% -5%, rgba(242,197,0,0.14), transparent 60%), linear-gradient(180deg, #08472f, #04301f); border: 3px solid #f2c500; box-shadow: 0 0 0 5px #04301f, 0 0 0 6px rgba(242,197,0,0.5), 0 24px 60px rgba(0,0,0,0.5); }
+  .th-augusta .cup-aurora { opacity: 0.4; }
+  .th-augusta .cup-hero::before { content: ""; display: block; width: 74px; height: 86px; margin: 0 auto 14px;
+    background: center / contain no-repeat url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 74 86'><path d='M37 2 70 12v30c0 22-14 36-33 42C18 78 4 64 4 42V12Z' fill='%2307402c' stroke='%23f2c500' stroke-width='3'/><path d='M37 9 63 17v25c0 18-11 29-26 34C22 71 11 60 11 42V17Z' fill='none' stroke='%23fff3b0' stroke-width='1' opacity='.6'/><path d='M30 22v40' stroke='%23fbf8ec' stroke-width='2.5'/><path d='M30 22l18 7-18 7z' fill='%23f2c500'/><circle cx='42' cy='58' r='7' fill='%23fbf8ec'/><path d='M37 54l5 2 5-2M38 62l4-2 4 2' stroke='%2307402c' stroke-width='1.2' fill='none'/></svg>"); }
+  .th-augusta .cup-title { font-family: "Playfair Display", serif; font-weight: 800; letter-spacing: 0.01em; color: #fbf8ec; }
+  .th-augusta .cup-hero::after { content: "Est. 2026  ·  The Business"; display: block; margin-top: 8px; font: italic 600 1.05rem "Cormorant Garamond", serif; color: #f2c500; letter-spacing: 0.06em; }
+  .th-augusta .cup-plinth { position: relative; font-family: "Playfair Display", serif; letter-spacing: 0.3em; background: #fbf8ec; color: #07402c; border-color: #f2c500; }
+  .th-augusta .cup-plinth::before, .th-augusta .cup-plinth::after { content: ""; position: absolute; top: 50%; width: 90px; height: 36px; transform: translateY(-50%);
+    background: radial-gradient(circle at 10px 18px, #ff5fa2 0 7px, transparent 8px), radial-gradient(circle at 24px 10px, #ff86b9 0 7px, transparent 8px), radial-gradient(circle at 26px 26px, #e8327d 0 6px, transparent 7px), radial-gradient(circle at 42px 16px, #ff5fa2 0 8px, transparent 9px), radial-gradient(circle at 58px 22px, #ff86b9 0 6px, transparent 7px), radial-gradient(circle at 72px 12px, #e8327d 0 7px, transparent 8px), radial-gradient(ellipse at 45px 32px, #0f6a49 0 30px, transparent 31px); }
+  .th-augusta .cup-plinth::before { right: 100%; margin-right: 10px; }
+  .th-augusta .cup-plinth::after { left: 100%; margin-left: 10px; transform: translateY(-50%) scaleX(-1); }
+  /* the hand-operated leaderboard */
+  .th-augusta .cup-bracket-col-head { background: #07402c; color: #fbf8ec; border: 2px solid #fbf8ec; padding: 8px 4px; font: 700 0.95rem "Playfair Display", serif; letter-spacing: 0.12em; text-transform: uppercase; }
+  .th-augusta .cup-bracket-col-sub { color: #f2c500; }
+  .th-augusta .cup-bracket-match { background: #fbf8ec; border: 2px solid #fbf8ec; border-radius: 0; box-shadow: inset 0 0 0 1px #c9c2a8, 0 6px 16px rgba(0,0,0,0.35); }
+  .th-augusta .cup-bracket-match::after { background: #fbf8ec; opacity: 0.6; }
+  .th-augusta .cup-bracket-side { color: #1b1b1b; font: 600 0.86rem "Oswald", sans-serif; text-transform: uppercase; letter-spacing: 0.06em; }
+  .th-augusta .cup-bracket-side + .cup-bracket-side { border-top: 1px solid #c9c2a8; }
+  .th-augusta .cup-bracket-side .cup-score { min-width: 2.2ch; text-align: center; padding: 1px 4px; background: #fff; border: 1px solid #c9c2a8; color: #07402c; font-weight: 700; }
+  .th-augusta .cup-bracket-side.winner { color: #07402c; }
+  .th-augusta .cup-bracket-side.winner .cup-score { color: #c8102e; }
+  .th-augusta .cup-bracket-side.tbd { color: #8a8470; }
+  .th-augusta .cup-bracket-match.future { background: rgba(251,248,236,0.12); border: 2px dashed rgba(251,248,236,0.4); }
+  .th-augusta .cup-champion-slot .cup-champ-name { font-family: "Playfair Display", serif; color: #f2c500; }
+  .th-augusta .cup-news { background: #fbf8ec; color: #07402c; }
+  .th-augusta .cup-news-lab { background: #07402c; color: #f2c500; }
+  .th-augusta .cup-news-reel, .th-augusta .cup-news-reel b { color: #07402c; }
+  .th-programme .cup-news-reel, .th-programme .cup-news-reel b { color: #f6f1e1; }
+  .th-augusta .cup-draw-cta { background: #f2c500; color: #07402c; font-family: "Playfair Display", serif; letter-spacing: 0.04em; }
+
+  /* =====================================================================
+     B · THE CLUBHOUSE PROGRAMME -- the page as a printed tournament
+     programme: ivory card stock, green ink, gold foil, double rules,
+     small capitals. The light, quiet, "old money" option.
+     ===================================================================== */
+  .th-programme .cup-theme { --cup-ground: #f6f1e1; --cup-panel: #fffdf6; --cup-panel-2: #efe7cf; --cup-panel-3: #e3d8b8; --cup-deep: #ece4cb; --cup-gold: #a8821f; --cup-gold-bright: #8a6a12; --cup-gold-deep: #6e5410; --cup-paper: #123d2d; --cup-muted: #6b7c6f;
+    background: linear-gradient(rgba(18,61,45,0.035) 1px, transparent 1px) 0 0 / 100% 4px, #f6f1e1; color: #123d2d; border: 1px solid #a8821f; box-shadow: 0 0 0 6px #f6f1e1, 0 0 0 7px #a8821f, 0 24px 60px rgba(0,0,0,0.5); }
+  .th-programme .cup-aurora, .th-programme .cup-rays { display: none; }
+  .th-programme .cup-hero { border-top: 3px double #a8821f; border-bottom: 3px double #a8821f; margin-top: 22px; padding: 22px 12px 18px; }
+  .th-programme .cup-hero::before { content: "Official Programme  ·  Season 26/27"; display: block; margin-bottom: 8px; font: 600 0.72rem "Cinzel", serif; letter-spacing: 0.32em; color: #a8821f; }
+  .th-programme .cup-title { font: 700 clamp(2rem, 5vw, 3rem)/1.1 "Cinzel", serif; letter-spacing: 0.06em; color: #123d2d; }
+  .th-programme .cup-hero::after { content: "Contested annually by the twelve members of The Business"; display: block; margin-top: 10px; font: italic 500 1.1rem "Cormorant Garamond", serif; color: #4b5d50; }
+  .th-programme .cup-plinth { background: none; border: 0; border-top: 1px solid #a8821f; border-bottom: 1px solid #a8821f; color: #a8821f; font-family: "Cinzel", serif; letter-spacing: 0.4em; }
+  .th-programme .cup-bracket-col-head { font: 700 1rem "Cinzel", serif; color: #123d2d; letter-spacing: 0.1em; border-bottom: 1px solid #a8821f; }
+  .th-programme .cup-bracket-match { background: #fffdf6; border: 1px solid #a8821f; border-radius: 0; box-shadow: 3px 3px 0 #e3d8b8; }
+  .th-programme .cup-bracket-side { font: 600 0.95rem "Cormorant Garamond", serif; color: #123d2d; }
+  .th-programme .cup-bracket-side .cup-score { font-family: "Cinzel", serif; color: #123d2d; }
+  .th-programme .cup-bracket-side.winner, .th-programme .cup-bracket-side.winner .cup-score { color: #8a6a12; }
+  .th-programme .cup-news { background: #123d2d; }
+  .th-programme .cup-news-lab { background: #a8821f; color: #fffdf6; }
+  .th-programme .cup-seeds, .th-programme .cup-seeds th, .th-programme .cup-seeds td { color: #123d2d; }
+  .th-programme .cup-draw-cta { background: #123d2d; color: #f6f1e1; font-family: "Cinzel", serif; letter-spacing: 0.08em; box-shadow: none; border-radius: 0; }
+  .th-programme .cup-seed-lead { color: #4b5d50; }
+
+  /* =====================================================================
+     C · THE HONOURS BOARD -- the clubhouse wall: dark walnut panelling,
+     gold-leaf lettering, every tie mounted on a brushed-brass plaque.
+     ===================================================================== */
+  .th-honours .cup-theme { --cup-ground: #2a1a10; --cup-panel: #3a2416; --cup-panel-2: #4a2f1c; --cup-panel-3: #5c3b23; --cup-deep: #1c110a; --cup-gold: #d9b45a; --cup-gold-bright: #f7e3a8; --cup-gold-deep: #8d6a22; --cup-paper: #f3e6c8; --cup-muted: #b99c74;
+    background: repeating-linear-gradient(90deg, rgba(0,0,0,0.18) 0 2px, transparent 2px 160px), repeating-linear-gradient(93deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 7px), linear-gradient(180deg, #3b2415, #24160d); border: 10px solid #1c110a; box-shadow: inset 0 0 0 2px #d9b45a, 0 24px 60px rgba(0,0,0,0.6); }
+  .th-honours .cup-aurora { display: none; }
+  .th-honours .cup-title { font: 800 clamp(2rem, 5vw, 3rem)/1.1 "Cinzel", serif; letter-spacing: 0.08em; background: linear-gradient(180deg, #fff3c4, #d9b45a 50%, #8d6a22); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 2px 0 rgba(0,0,0,0.6)); }
+  .th-honours .cup-hero::after { content: "Honours  ·  MMXXVI"; display: block; margin-top: 8px; font: 600 0.8rem "Cinzel", serif; letter-spacing: 0.4em; color: #d9b45a; }
+  .th-honours .cup-plinth { background: linear-gradient(180deg, #e7c879, #a8822e); color: #2a1a10; font-family: "Cinzel", serif; letter-spacing: 0.3em; border: 0; box-shadow: 0 2px 0 #5c3b23, 0 6px 14px rgba(0,0,0,0.5); }
+  .th-honours .cup-bracket-col-head { font: 700 0.95rem "Cinzel", serif; letter-spacing: 0.14em; color: #f7e3a8; }
+  .th-honours .cup-bracket-match { border: 0; border-radius: 3px; background: linear-gradient(100deg, #b38b3b, #f2d58a 30%, #c9a24c 55%, #f6dd9b 80%, #a87f30); box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset, 0 4px 10px rgba(0,0,0,0.55); }
+  .th-honours .cup-bracket-match::before { content: ""; position: absolute; inset: 4px; pointer-events: none; background: radial-gradient(circle at 6px 6px, #6b5020 0 2.5px, transparent 3px) top left / 50% 50% no-repeat, radial-gradient(circle at calc(100% - 6px) 6px, #6b5020 0 2.5px, transparent 3px), radial-gradient(circle at 6px calc(100% - 6px), #6b5020 0 2.5px, transparent 3px), radial-gradient(circle at calc(100% - 6px) calc(100% - 6px), #6b5020 0 2.5px, transparent 3px); }
+  .th-honours .cup-bracket-match::after { background: #d9b45a; }
+  .th-honours .cup-bracket-side { color: #2a1a10; font: 700 0.9rem "Cinzel", serif; letter-spacing: 0.03em; padding-left: 1rem; padding-right: 1rem; }
+  .th-honours .cup-bracket-side + .cup-bracket-side { border-top: 1px solid rgba(42,26,16,0.25); }
+  .th-honours .cup-bracket-side .cup-score { color: #2a1a10; }
+  .th-honours .cup-bracket-side.winner, .th-honours .cup-bracket-side.winner .cup-score { color: #5a0f0f; }
+  .th-honours .cup-bracket-side.tbd { color: rgba(42,26,16,0.6); }
+  .th-honours .cup-bracket-match.future { background: rgba(217,180,90,0.12); border: 1px dashed rgba(217,180,90,0.5); }
+  .th-honours .cup-news { background: #1c110a; }
+  .th-honours .cup-news-lab { background: linear-gradient(180deg, #e7c879, #a8822e); color: #2a1a10; }
+  .th-honours .cup-draw-cta { background: linear-gradient(180deg, #e7c879, #a8822e); color: #2a1a10; font-family: "Cinzel", serif; }
+
+  /* =====================================================================
+     D · GOLDEN HOUR -- dusk over the final hole: a peach-to-rose sky,
+     a line of pines, a flag on the green, cream glass cards.
+     ===================================================================== */
+  .th-dusk .cup-theme { --cup-ground: #1b3a2d; --cup-panel: rgba(255,250,240,0.92); --cup-panel-2: #fff3e0; --cup-panel-3: #ffe2c2; --cup-deep: rgba(255,244,228,0.92); --cup-gold: #e7a43a; --cup-gold-bright: #ffd27a; --cup-gold-deep: #9a5d12; --cup-paper: #fffaf0; --cup-muted: #f4cfae;
+    background:
+      radial-gradient(circle at 50% 210px, rgba(255,226,150,0.95) 0 60px, rgba(255,180,90,0.5) 61px, transparent 220px),
+      linear-gradient(180deg, #ffb56b 0, #f47c6a 220px, #8c3f6e 420px, #2b2a4a 560px, #163527 640px, #0f2a1e 100%);
+    border: 2px solid #e7a43a; }
+  .th-dusk .cup-aurora { display: none; }
+  .th-dusk .cup-hero { position: relative; }
+  .th-dusk .cup-title { font: italic 700 clamp(2rem, 5.5vw, 3.2rem)/1.1 "Playfair Display", serif; color: #fffaf0; text-shadow: 0 2px 20px rgba(120,30,40,0.5); }
+  .th-dusk .cup-hero::after { content: "Under the pines, at the final hole"; display: block; margin-top: 6px; font: italic 600 1.1rem "Cormorant Garamond", serif; color: #fff1dc; }
+  .th-dusk .cup-stage::after { content: ""; position: absolute; left: -40%; right: -40%; bottom: -30px; height: 120px; pointer-events: none;
+    background:
+      radial-gradient(ellipse 14px 60px at 6% 100%, #0f2a1e 98%, transparent), radial-gradient(ellipse 18px 80px at 12% 100%, #0f2a1e 98%, transparent), radial-gradient(ellipse 12px 54px at 19% 100%, #0f2a1e 98%, transparent),
+      radial-gradient(ellipse 20px 90px at 81% 100%, #0f2a1e 98%, transparent), radial-gradient(ellipse 14px 64px at 88% 100%, #0f2a1e 98%, transparent), radial-gradient(ellipse 16px 72px at 95% 100%, #0f2a1e 98%, transparent); }
+  .th-dusk .cup-plinth { background: #fffaf0; color: #1b3a2d; font-family: "Playfair Display", serif; letter-spacing: 0.24em; border-color: #e7a43a; }
+  .th-dusk .cup-bracket-col-head { font: italic 700 1.05rem "Playfair Display", serif; color: #fffaf0; }
+  .th-dusk .cup-bracket-col-sub { color: #ffd27a; }
+  .th-dusk .cup-bracket-match { background: rgba(255,250,240,0.94); border: 0; border-top: 3px solid #e7a43a; border-radius: 6px; box-shadow: 0 10px 24px rgba(0,0,0,0.35); }
+  .th-dusk .cup-bracket-side { color: #1b3a2d; font-weight: 600; }
+  .th-dusk .cup-bracket-side .cup-score { color: #1b3a2d; }
+  .th-dusk .cup-bracket-side.winner, .th-dusk .cup-bracket-side.winner .cup-score { color: #b4471f; }
+  .th-dusk .cup-bracket-side.tbd { color: #8c6c5c; }
+  .th-dusk .cup-bracket-match.future { background: rgba(255,250,240,0.15); border: 1px dashed rgba(255,250,240,0.5); }
+  .th-dusk .cup-news { background: #2b2a4a; }
+  .th-dusk .cup-news-lab { background: #e7a43a; color: #2b2a4a; }
+
+  /* =====================================================================
+     Prestige add-ons -- shown under the page in the chosen theme's spirit
+     ===================================================================== */
+  .addons { max-width: 1100px; margin: 0 auto; padding: 10px 16px 80px; }
+  .addons > h2 { font: 700 clamp(1.6rem, 4vw, 2.2rem)/1.1 "Playfair Display", serif; margin: 30px 0 6px; }
+  .addons > p { color: #aab3c0; max-width: 75ch; line-height: 1.5; margin: 0 0 22px; }
+  .addon-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 18px; }
+  .addon { border-radius: 10px; padding: 18px; background: #0f1520; border: 1px solid rgba(255,255,255,0.1); }
+  .addon h3 { margin: 0 0 4px; font: 700 1.2rem "Playfair Display", serif; }
+  .addon .what { margin: 0 0 14px; font-size: 0.86rem; color: #aab3c0; line-height: 1.5; }
+
+  /* the Champion's Blazer */
+  .blazer { display: grid; place-items: center; padding: 18px 0 8px; background: radial-gradient(circle at 50% 40%, rgba(242,197,0,0.18), transparent 60%); }
+  .blazer svg { width: 170px; height: auto; filter: drop-shadow(0 12px 20px rgba(0,0,0,0.6)); }
+  .blazer small { margin-top: 10px; font: italic 600 1rem "Cormorant Garamond", serif; color: #f2c500; }
+
+  /* honours board */
+  .board { padding: 18px 16px; border: 8px solid #1c110a; box-shadow: inset 0 0 0 2px #d9b45a; background: repeating-linear-gradient(93deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 7px), linear-gradient(180deg, #3b2415, #24160d); text-align: center; }
+  .board h4 { margin: 0 0 12px; font: 800 1.15rem "Cinzel", serif; letter-spacing: 0.12em; background: linear-gradient(180deg, #fff3c4, #d9b45a 50%, #8d6a22); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .board ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
+  .board li { display: grid; grid-template-columns: 4.5rem 1fr; gap: 10px; font: 600 0.92rem "Cinzel", serif; color: #e9cf88; text-align: left; border-bottom: 1px solid rgba(217,180,90,0.25); padding-bottom: 5px; }
+  .board li.blank span:last-child { color: rgba(217,180,90,0.35); letter-spacing: 0.3em; }
+
+  /* hand-operated leaderboard */
+  .lb { background: #07402c; padding: 10px; border: 3px solid #fbf8ec; }
+  .lb h4 { margin: 0 0 8px; text-align: center; font: 700 1.05rem "Playfair Display", serif; letter-spacing: 0.3em; color: #fbf8ec; }
+  .lb-row { display: grid; grid-template-columns: 1fr auto; gap: 6px; align-items: center; margin-top: 4px; }
+  .lb-name { display: flex; gap: 2px; overflow: hidden; }
+  .lb-name i, .lb-score { display: inline-grid; place-items: center; width: 17px; height: 24px; background: #fbf8ec; color: #1b1b1b; font: 600 0.82rem "Oswald", sans-serif; font-style: normal; box-shadow: inset 0 -2px 0 #c9c2a8; flex-shrink: 0; }
+  .lb-name i.sp { background: transparent; box-shadow: none; width: 6px; }
+  .lb-score { width: 34px; color: #c8102e; font-weight: 700; }
+  .lb-tie { margin: 8px 0 2px; font: 600 0.62rem "Oswald", sans-serif; letter-spacing: 0.2em; color: #f2c500; text-transform: uppercase; }
+
+  @media (max-width: 560px) { .th-augusta .cup-plinth::before, .th-augusta .cup-plinth::after { display: none; } }
+</style>
+</head>
+<body>
+  <div class="picker">
+    <h1>The Grassroots Cup · prestige options</h1>
+    <div class="picker-row" id="picker"></div>
+    <p id="about"></p>
+  </div>
+  <div class="stage-wrap" id="stage"><main id="app"></main></div>
+
+  <section class="addons">
+    <h2>Traditions we could add to any of them</h2>
+    <p>The themes change the look; these change the feel. Each one is a small feature that would sit on the Cup page whichever theme you pick.</p>
+    <div class="addon-grid">
+      <div class="addon">
+        <h3>The Champion's Blazer</h3>
+        <p class="what">The Cup's own jacket. The winner "wears" it on the site all year: it hangs on the Cup page with their name stitched inside, and gets handed over to next year's champion. A blazer badge appears next to their club name everywhere on the site.</p>
+        <div class="blazer">
+          <svg viewBox="0 0 160 170" aria-hidden="true">
+            <path d="M52 8 80 30 108 8l34 14 12 128H6L18 22Z" fill="#0b5a3c"/>
+            <path d="M52 8 80 30 108 8l6 6-26 46-8 100-8-100-26-46Z" fill="#08472f"/>
+            <path d="M80 30 66 14 52 8l8 50 20 102Z" fill="#0d6b47"/><path d="M80 30l14-16 14-6-8 50-20 102Z" fill="#0d6b47"/>
+            <path d="M74 36h12l-6 40Z" fill="#fbf8ec"/>
+            <circle cx="80" cy="96" r="3.5" fill="#f2c500"/><circle cx="80" cy="114" r="3.5" fill="#f2c500"/><circle cx="80" cy="132" r="3.5" fill="#f2c500"/>
+            <path d="M104 70h22l-2 26c-2 6-16 6-18 0Z" fill="#08472f" stroke="#f2c500" stroke-width="1.6"/>
+            <path d="M115 75v14M110 81l5-4 5 4" stroke="#f2c500" stroke-width="1.6" fill="none"/>
+            <path d="M30 100h26M106 120h28" stroke="#08472f" stroke-width="2"/>
+          </svg>
+          <small id="blazer-holder">Inaugural holder: to be decided at GW36</small>
+        </div>
+      </div>
+      <div class="addon">
+        <h3>The Honours Board</h3>
+        <p class="what">Every Cup winner in gold leaf, one line per season, like the board in a clubhouse bar. Starts with this season's inaugural winner and grows every year. Could also list runners-up and the highest single score of each Cup.</p>
+        <div class="board">
+          <h4>Grassroots Cup Winners</h4>
+          <ol>
+            <li class="blank"><span>2026/27</span><span>· · · · · · · ·</span></li>
+            <li class="blank"><span>2027/28</span><span>· · · · · · · ·</span></li>
+            <li class="blank"><span>2028/29</span><span>· · · · · · · ·</span></li>
+          </ol>
+        </div>
+      </div>
+      <div class="addon">
+        <h3>The Hand-Turned Leaderboard</h3>
+        <p class="what">On cup weeks, the live scores appear on an old white leaderboard with every letter on its own tile, as if someone is climbing a ladder to change them. Ties sit in pairs, leaders' numbers turn red, and tiles flip when a score changes.</p>
+        <div class="lb" id="leaderboard"><h4>Round 1 · Leaders</h4></div>
+      </div>
+    </div>
+  </section>
+
+<script type="module">
+  import { loadAllData, managerLookup } from "./js/data.js";
+  import { render } from "./js/render/cup.js";
+
+  const THEMES = [
+    ["", "Current", "<b>Today's page</b> for comparison: emerald and gold, the floating trophy, the graveyard."],
+    ["th-augusta", "Augusta Green", "<b>A refinement of what you have.</b> Deeper fairway green, championship yellow and cream, a crest above a serif title, azaleas either side of the plinth, and the bracket turned into the classic hand-operated white leaderboard with red winning scores. It borrows the mood of a famous spring golf weekend without any of its marks, names or slogans."],
+    ["th-programme", "Clubhouse Programme", "<b>The page as a printed tournament programme.</b> Ivory card, green ink, gold rules, engraved capitals and a quiet italic strapline. The calm, old-money option, and the only light one."],
+    ["th-honours", "Honours Board", "<b>The clubhouse wall.</b> Dark walnut panelling, gold-leaf lettering, and every tie mounted on a brushed-brass plaque with screw heads. Feels like something you'd find over the fireplace at a members' club."],
+    ["th-dusk", "Golden Hour", "<b>Sunday evening at the final hole.</b> A peach-to-rose sunset behind the trophy, a line of pines along the horizon, and cream glass cards. The most atmospheric and the most 'final-round' feeling."],
+  ];
+
+  const stage = document.getElementById("stage");
+  const picker = document.getElementById("picker");
+  const about = document.getElementById("about");
+  function choose(cls) {
+    stage.className = `stage-wrap ${cls}`;
+    picker.querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.theme === cls)));
+    about.innerHTML = THEMES.find((t) => t[0] === cls)[2];
+  }
+  picker.innerHTML = THEMES.map(([cls, name]) => `<button type="button" data-theme="${cls}">${name}</button>`).join("");
+  picker.addEventListener("click", (e) => { const b = e.target.closest("[data-theme]"); if (b) choose(b.dataset.theme); });
+  choose("th-augusta");
+
+  // The real Cup page on the real data.
+  const data = await loadAllData();
+  const managers = managerLookup(data);
+  render(document.getElementById("app"), data, managers);
+
+  // Leaderboard mock-up from the actual Round 1 ties.
+  const clean = (n) => (n ?? "").replace(/[^\p{L}\p{N} '&.-]/gu, "").replace(/\s+/g, " ").trim().toUpperCase().slice(0, 16);
+  const tiles = (name) => [...name].map((ch) => (ch === " " ? '<i class="sp"></i>' : `<i>${ch}</i>`)).join("");
+  const ties = data.cup.rounds.round1.draw ?? [];
+  document.getElementById("leaderboard").insertAdjacentHTML("beforeend", ties.map((t, i) => `
+    <p class="lb-tie">Tie ${i + 1}</p>
+    <div class="lb-row"><span class="lb-name">${tiles(clean(managers.name(t.managerAId)))}</span><span class="lb-score">-</span></div>
+    <div class="lb-row"><span class="lb-name">${tiles(clean(managers.name(t.managerBId)))}</span><span class="lb-score">-</span></div>`).join(""));
+</script>
+</body>
+</html>
