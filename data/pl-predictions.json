@@ -244,8 +244,11 @@
           "key": "pl81",
           "home": 2,
           "away": 10,
-          "score": null,
-          "result": null
+          "score": [
+            1,
+            1
+          ],
+          "result": "D"
         },
         {
           "key": "pl87",
@@ -319,85 +322,85 @@
     {
       "personKey": "marshall",
       "managerId": 1471,
-      "played": 7,
+      "played": 8,
       "correct": 4,
       "weeks": 1,
       "bestWeek": 4,
       "perfectWeeks": 0,
-      "streak": 1,
+      "streak": 0,
       "bestStreak": 1,
       "boldCalls": 2,
       "boldHits": 2,
       "byWeek": {
         "9": {
           "correct": 4,
-          "total": 7
+          "total": 8
         }
       },
-      "pct": 57.1,
+      "pct": 50,
       "rank": 1
     },
     {
       "personKey": "lu",
       "managerId": 1377,
-      "played": 7,
+      "played": 8,
       "correct": 3,
       "weeks": 1,
       "bestWeek": 3,
       "perfectWeeks": 0,
-      "streak": 1,
+      "streak": 0,
       "bestStreak": 2,
       "boldCalls": 0,
       "boldHits": 0,
       "byWeek": {
         "9": {
           "correct": 3,
-          "total": 7
+          "total": 8
         }
       },
-      "pct": 42.9,
+      "pct": 37.5,
       "rank": 2
     },
     {
       "personKey": "david",
       "managerId": 1857,
-      "played": 7,
+      "played": 8,
       "correct": 3,
       "weeks": 1,
       "bestWeek": 3,
       "perfectWeeks": 0,
-      "streak": 1,
+      "streak": 0,
       "bestStreak": 1,
       "boldCalls": 2,
       "boldHits": 1,
       "byWeek": {
         "9": {
           "correct": 3,
-          "total": 7
+          "total": 8
         }
       },
-      "pct": 42.9,
+      "pct": 37.5,
       "rank": 2
     },
     {
       "personKey": "anthony",
       "managerId": 10375,
-      "played": 7,
+      "played": 8,
       "correct": 2,
       "weeks": 1,
       "bestWeek": 2,
       "perfectWeeks": 0,
-      "streak": 1,
+      "streak": 0,
       "bestStreak": 1,
       "boldCalls": 1,
       "boldHits": 0,
       "byWeek": {
         "9": {
           "correct": 2,
-          "total": 7
+          "total": 8
         }
       },
-      "pct": 28.6,
+      "pct": 25,
       "rank": 4
     }
   ]
