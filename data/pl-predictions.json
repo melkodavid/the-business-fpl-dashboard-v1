@@ -166,6 +166,133 @@
       "kickoff": "2026-11-02T20:00:00Z"
     }
   ],
-  "weeks": [],
+  "weeks": [
+    {
+      "gw": 9,
+      "fixtures": [
+        {
+          "key": "pl84",
+          "home": 6,
+          "away": 16,
+          "score": null,
+          "result": null
+        },
+        {
+          "key": "pl82",
+          "home": 3,
+          "away": 13,
+          "score": null,
+          "result": null
+        },
+        {
+          "key": "pl83",
+          "home": 4,
+          "away": 18,
+          "score": null,
+          "result": null
+        },
+        {
+          "key": "pl85",
+          "home": 7,
+          "away": 20,
+          "score": null,
+          "result": null
+        },
+        {
+          "key": "pl86",
+          "home": 11,
+          "away": 12,
+          "score": null,
+          "result": null
+        },
+        {
+          "key": "pl88",
+          "home": 15,
+          "away": 5,
+          "score": null,
+          "result": null
+        },
+        {
+          "key": "pl90",
+          "home": 19,
+          "away": 8,
+          "score": null,
+          "result": null
+        },
+        {
+          "key": "pl81",
+          "home": 2,
+          "away": 10,
+          "score": null,
+          "result": null
+        },
+        {
+          "key": "pl87",
+          "home": 14,
+          "away": 1,
+          "score": null,
+          "result": null
+        },
+        {
+          "key": "pl89",
+          "home": 17,
+          "away": 9,
+          "score": null,
+          "result": null
+        }
+      ],
+      "picks": {
+        "david": {
+          "pl84": "H",
+          "pl82": "D",
+          "pl83": "D",
+          "pl85": "H",
+          "pl86": "H",
+          "pl88": "H",
+          "pl90": "H",
+          "pl81": "H",
+          "pl87": "D",
+          "pl89": "D"
+        },
+        "anthony": {
+          "pl84": "D",
+          "pl82": "H",
+          "pl83": "A",
+          "pl85": "A",
+          "pl86": "H",
+          "pl88": "H",
+          "pl90": "H",
+          "pl81": "H",
+          "pl87": "H",
+          "pl89": "H"
+        },
+        "lu": {
+          "pl84": "H",
+          "pl82": "H",
+          "pl83": "A",
+          "pl85": "A",
+          "pl88": "H",
+          "pl90": "H",
+          "pl81": "H",
+          "pl86": "H",
+          "pl87": "D",
+          "pl89": "A"
+        },
+        "marshall": {
+          "pl84": "H",
+          "pl82": "D",
+          "pl83": "H",
+          "pl85": "A",
+          "pl86": "D",
+          "pl88": "H",
+          "pl90": "H",
+          "pl81": "H",
+          "pl87": "D",
+          "pl89": "A"
+        }
+      },
+      "complete": false
+    }
+  ],
   "table": []
 }
