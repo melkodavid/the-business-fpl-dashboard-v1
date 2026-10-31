@@ -174,8 +174,11 @@
           "key": "pl84",
           "home": 6,
           "away": 16,
-          "score": null,
-          "result": null
+          "score": [
+            2,
+            0
+          ],
+          "result": "H"
         },
         {
           "key": "pl82",
@@ -294,5 +297,90 @@
       "complete": false
     }
   ],
-  "table": []
+  "table": [
+    {
+      "personKey": "lu",
+      "managerId": 1377,
+      "played": 1,
+      "correct": 1,
+      "weeks": 1,
+      "bestWeek": 1,
+      "perfectWeeks": 0,
+      "streak": 1,
+      "bestStreak": 1,
+      "boldCalls": 0,
+      "boldHits": 0,
+      "byWeek": {
+        "9": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "pct": 100,
+      "rank": 1
+    },
+    {
+      "personKey": "marshall",
+      "managerId": 1471,
+      "played": 1,
+      "correct": 1,
+      "weeks": 1,
+      "bestWeek": 1,
+      "perfectWeeks": 0,
+      "streak": 1,
+      "bestStreak": 1,
+      "boldCalls": 0,
+      "boldHits": 0,
+      "byWeek": {
+        "9": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "pct": 100,
+      "rank": 1
+    },
+    {
+      "personKey": "david",
+      "managerId": 1857,
+      "played": 1,
+      "correct": 1,
+      "weeks": 1,
+      "bestWeek": 1,
+      "perfectWeeks": 0,
+      "streak": 1,
+      "bestStreak": 1,
+      "boldCalls": 0,
+      "boldHits": 0,
+      "byWeek": {
+        "9": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "pct": 100,
+      "rank": 1
+    },
+    {
+      "personKey": "anthony",
+      "managerId": 10375,
+      "played": 1,
+      "correct": 0,
+      "weeks": 1,
+      "bestWeek": 0,
+      "perfectWeeks": 0,
+      "streak": 0,
+      "bestStreak": 0,
+      "boldCalls": 1,
+      "boldHits": 0,
+      "byWeek": {
+        "9": {
+          "correct": 0,
+          "total": 1
+        }
+      },
+      "pct": 0,
+      "rank": 4
+    }
+  ]
 }
