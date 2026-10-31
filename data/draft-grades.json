@@ -3,7 +3,7 @@
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 433
+      "draftTeamPoints": 434
     },
     {
       "managerId": 1471,
@@ -13,7 +13,7 @@
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 403
+      "draftTeamPoints": 405
     },
     {
       "managerId": 1857,
@@ -23,12 +23,12 @@
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 382
+      "draftTeamPoints": 383
     },
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "draftTeamPoints": 371
+      "draftTeamPoints": 372
     },
     {
       "managerId": 1501,
@@ -515,7 +515,7 @@
     {
       "pickNumber": 46,
       "round": 4,
-      "seasonPoints": 10,
+      "seasonPoints": 11,
       "managerId": 10375,
       "elementId": 499,
       "playerName": "Pedro Porro",
@@ -955,7 +955,7 @@
     {
       "pickNumber": 90,
       "round": 8,
-      "seasonPoints": 25,
+      "seasonPoints": 26,
       "managerId": 1947,
       "elementId": 512,
       "playerName": "Kudus",
@@ -1075,7 +1075,7 @@
     {
       "pickNumber": 102,
       "round": 9,
-      "seasonPoints": 6,
+      "seasonPoints": 7,
       "managerId": 1425,
       "elementId": 198,
       "playerName": "Henderson",
@@ -1145,7 +1145,7 @@
     {
       "pickNumber": 109,
       "round": 10,
-      "seasonPoints": 24,
+      "seasonPoints": 26,
       "managerId": 1377,
       "elementId": 202,
       "playerName": "Richards",
