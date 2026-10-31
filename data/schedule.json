@@ -15,13 +15,13 @@
       "importance": 3.58,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 8,
-        "drawPct": 2,
-        "awayWinPct": 90,
-        "homeExpected": 22.6,
-        "awayExpected": 31.7,
-        "homeSoFar": 18,
-        "awaySoFar": 22
+        "homeWinPct": 4,
+        "drawPct": 1,
+        "awayWinPct": 95,
+        "homeExpected": 21.8,
+        "awayExpected": 32.4,
+        "homeSoFar": 19,
+        "awaySoFar": 23
       }
     },
     {
@@ -37,11 +37,11 @@
       "importance": 2.56,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 72,
+        "homeWinPct": 81,
         "drawPct": 4,
-        "awayWinPct": 24,
+        "awayWinPct": 15,
         "homeExpected": 40.6,
-        "awayExpected": 35.6,
+        "awayExpected": 33.7,
         "homeSoFar": 34,
         "awaySoFar": 19
       }
@@ -62,9 +62,9 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 26,
+        "homeExpected": 24.6,
         "awayExpected": 46.4,
-        "homeSoFar": 15,
+        "homeSoFar": 16,
         "awaySoFar": 39
       }
     },
@@ -81,13 +81,13 @@
       "importance": 2.32,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 56,
+        "homeWinPct": 57,
         "drawPct": 5,
-        "awayWinPct": 39,
-        "homeExpected": 37.5,
-        "awayExpected": 35.8,
-        "homeSoFar": 31,
-        "awaySoFar": 19
+        "awayWinPct": 38,
+        "homeExpected": 35.9,
+        "awayExpected": 34.1,
+        "homeSoFar": 32,
+        "awaySoFar": 18
       }
     },
     {
@@ -103,13 +103,13 @@
       "importance": 2.21,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 92,
-        "drawPct": 2,
-        "awayWinPct": 6,
-        "homeExpected": 50.2,
-        "awayExpected": 40.4,
-        "homeSoFar": 43,
-        "awaySoFar": 28
+        "homeWinPct": 98,
+        "drawPct": 1,
+        "awayWinPct": 1,
+        "homeExpected": 52,
+        "awayExpected": 39.4,
+        "homeSoFar": 45,
+        "awaySoFar": 30
       }
     },
     {
@@ -128,10 +128,10 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 36.8,
-        "awayExpected": 56.6,
-        "homeSoFar": 29,
-        "awaySoFar": 43
+        "homeExpected": 37.3,
+        "awayExpected": 61.5,
+        "homeSoFar": 30,
+        "awaySoFar": 51
       }
     }
   ],
@@ -167,7 +167,7 @@
   "lineups": {
     "1377": {
       "formation": "4-4-2",
-      "expected": 34.2,
+      "expected": 34.3,
       "captainId": 31,
       "locked": true,
       "xi": [
@@ -196,7 +196,7 @@
           "type": 2,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 5
+          "ep": 4.8
         },
         {
           "id": 358,
@@ -223,7 +223,7 @@
           "type": 3,
           "team": "Aston Villa",
           "teamId": 2,
-          "ep": 4.2
+          "ep": 4.5
         },
         {
           "id": 237,
@@ -279,7 +279,7 @@
           "type": 1,
           "team": "Fulham",
           "teamId": 10,
-          "ep": 4
+          "ep": 4.2
         },
         {
           "id": 10,
@@ -312,7 +312,7 @@
     },
     "1425": {
       "formation": "4-4-2",
-      "expected": 27.3,
+      "expected": 27.5,
       "captainId": 68,
       "locked": true,
       "xi": [
@@ -332,7 +332,7 @@
           "type": 2,
           "team": "Aston Villa",
           "teamId": 2,
-          "ep": 2.8
+          "ep": 3
         },
         {
           "id": 330,
@@ -442,7 +442,7 @@
           "type": 3,
           "team": "Fulham",
           "teamId": 10,
-          "ep": 4.5
+          "ep": 4.8
         },
         {
           "id": 125,
@@ -457,7 +457,7 @@
     },
     "1471": {
       "formation": "4-5-1",
-      "expected": 43.5,
+      "expected": 44.1,
       "captainId": 504,
       "locked": true,
       "xi": [
@@ -504,7 +504,7 @@
           "type": 2,
           "team": "Aston Villa",
           "teamId": 2,
-          "ep": 3.5
+          "ep": 3.8
         },
         {
           "id": 40,
@@ -558,7 +558,7 @@
           "type": 4,
           "team": "Fulham",
           "teamId": 10,
-          "ep": 1.5
+          "ep": 1.8
         }
       ],
       "bench": [
@@ -602,7 +602,7 @@
     },
     "1501": {
       "formation": "5-4-1",
-      "expected": 33.1,
+      "expected": 33.4,
       "captainId": 79,
       "locked": true,
       "xi": [
@@ -661,21 +661,21 @@
           "ep": 0.8
         },
         {
-          "id": 286,
-          "name": "Belloumi",
-          "pos": "MID",
-          "type": 3,
-          "team": "Hull City",
-          "teamId": 11,
-          "ep": 4.2
-        },
-        {
           "id": 264,
           "name": "Bobb",
           "pos": "MID",
           "type": 3,
           "team": "Fulham",
           "teamId": 10,
+          "ep": 4.5
+        },
+        {
+          "id": 286,
+          "name": "Belloumi",
+          "pos": "MID",
+          "type": 3,
+          "team": "Hull City",
+          "teamId": 11,
           "ep": 4.2
         },
         {
@@ -747,7 +747,7 @@
     },
     "1530": {
       "formation": "4-5-1",
-      "expected": 32.9,
+      "expected": 33.2,
       "captainId": 151,
       "locked": true,
       "xi": [
@@ -797,6 +797,15 @@
           "ep": 2.5
         },
         {
+          "id": 45,
+          "name": "McGinn",
+          "pos": "MID",
+          "type": 3,
+          "team": "Aston Villa",
+          "teamId": 2,
+          "ep": 4.5
+        },
+        {
           "id": 127,
           "name": "Gomez",
           "pos": "MID",
@@ -804,15 +813,6 @@
           "team": "Brighton",
           "teamId": 5,
           "ep": 4.5
-        },
-        {
-          "id": 45,
-          "name": "McGinn",
-          "pos": "MID",
-          "type": 3,
-          "team": "Aston Villa",
-          "teamId": 2,
-          "ep": 4.2
         },
         {
           "id": 514,
@@ -892,7 +892,7 @@
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 33.2,
+      "expected": 33.5,
       "captainId": 411,
       "locked": true,
       "xi": [
@@ -930,7 +930,7 @@
           "type": 2,
           "team": "Aston Villa",
           "teamId": 2,
-          "ep": 0.5
+          "ep": 0.8
         },
         {
           "id": 471,
@@ -1167,7 +1167,7 @@
           "type": 2,
           "team": "Crystal Palace",
           "teamId": 8,
-          "ep": 3.2
+          "ep": 3
         },
         {
           "id": 439,
@@ -1182,7 +1182,7 @@
     },
     "10210": {
       "formation": "4-4-2",
-      "expected": 33.3,
+      "expected": 33.1,
       "captainId": 4,
       "locked": true,
       "xi": [
@@ -1220,7 +1220,7 @@
           "type": 2,
           "team": "Crystal Palace",
           "teamId": 8,
-          "ep": 2.2
+          "ep": 2
         },
         {
           "id": 445,
@@ -1327,8 +1327,8 @@
     },
     "10375": {
       "formation": "3-4-3",
-      "expected": 42.8,
-      "captainId": 295,
+      "expected": 44.8,
+      "captainId": 112,
       "locked": true,
       "xi": [
         {
@@ -1347,7 +1347,7 @@
           "type": 2,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 5
+          "ep": 7.2
         },
         {
           "id": 595,
@@ -1383,7 +1383,7 @@
           "type": 3,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 5
+          "ep": 4.8
         },
         {
           "id": 452,
@@ -1472,7 +1472,7 @@
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 39.8,
+      "expected": 40.3,
       "captainId": 156,
       "locked": true,
       "xi": [
@@ -1483,7 +1483,7 @@
           "type": 1,
           "team": "Aston Villa",
           "teamId": 2,
-          "ep": 3.5
+          "ep": 3.8
         },
         {
           "id": 592,
@@ -1564,7 +1564,7 @@
           "type": 4,
           "team": "Aston Villa",
           "teamId": 2,
-          "ep": 6
+          "ep": 6.2
         },
         {
           "id": 401,
@@ -1617,7 +1617,7 @@
     },
     "29975": {
       "formation": "4-4-2",
-      "expected": 29.5,
+      "expected": 29.8,
       "captainId": 109,
       "locked": true,
       "xi": [
@@ -1682,7 +1682,7 @@
           "type": 3,
           "team": "Fulham",
           "teamId": 10,
-          "ep": 2.5
+          "ep": 2.8
         },
         {
           "id": 123,
@@ -1738,7 +1738,7 @@
           "type": 2,
           "team": "Fulham",
           "teamId": 10,
-          "ep": 3.8
+          "ep": 4
         },
         {
           "id": 16,
