@@ -103,11 +103,11 @@
       "importance": 2.21,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 36,
+        "homeWinPct": 41,
         "drawPct": 3,
-        "awayWinPct": 61,
+        "awayWinPct": 56,
         "homeExpected": 41.1,
-        "awayExpected": 45.4,
+        "awayExpected": 43.7,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -1533,7 +1533,7 @@
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 45.4,
+      "expected": 43.7,
       "captainId": 166,
       "locked": false,
       "xi": [
@@ -1565,21 +1565,21 @@
           "ep": 4
         },
         {
-          "id": 116,
-          "name": "Dunk",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Brighton",
-          "teamId": 5,
-          "ep": 2.7
-        },
-        {
           "id": 85,
           "name": "Van den Berg",
           "pos": "DEF",
           "type": 2,
           "team": "Brentford",
           "teamId": 4,
+          "ep": 1
+        },
+        {
+          "id": 305,
+          "name": "Davis",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Ipswich Town",
+          "teamId": 12,
           "ep": 1
         },
         {
