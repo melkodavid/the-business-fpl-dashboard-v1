@@ -8,7 +8,7 @@
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 420
+      "draftTeamPoints": 421
     },
     {
       "managerId": 1377,
@@ -23,12 +23,12 @@
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 377
+      "draftTeamPoints": 382
     },
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "draftTeamPoints": 370
+      "draftTeamPoints": 371
     },
     {
       "managerId": 1501,
@@ -43,7 +43,7 @@
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "draftTeamPoints": 321
+      "draftTeamPoints": 318
     },
     {
       "managerId": 26227,
@@ -53,12 +53,12 @@
     {
       "managerId": 10210,
       "managerName": "Syria FC**",
-      "draftTeamPoints": 278
+      "draftTeamPoints": 280
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "draftTeamPoints": 273
+      "draftTeamPoints": 275
     }
   ],
   "scatter": [
@@ -205,7 +205,7 @@
     {
       "pickNumber": 15,
       "round": 2,
-      "seasonPoints": 49,
+      "seasonPoints": 50,
       "managerId": 1471,
       "elementId": 40,
       "playerName": "Rogers",
@@ -285,7 +285,7 @@
     {
       "pickNumber": 23,
       "round": 2,
-      "seasonPoints": 6,
+      "seasonPoints": 3,
       "managerId": 29975,
       "elementId": 223,
       "playerName": "Mateta",
@@ -955,7 +955,7 @@
     {
       "pickNumber": 90,
       "round": 8,
-      "seasonPoints": 20,
+      "seasonPoints": 25,
       "managerId": 1947,
       "elementId": 512,
       "playerName": "Kudus",
@@ -1225,7 +1225,7 @@
     {
       "pickNumber": 117,
       "round": 10,
-      "seasonPoints": 30,
+      "seasonPoints": 32,
       "managerId": 1530,
       "elementId": 204,
       "playerName": "Mitchell",
@@ -1415,7 +1415,7 @@
     {
       "pickNumber": 136,
       "round": 12,
-      "seasonPoints": 14,
+      "seasonPoints": 16,
       "managerId": 10210,
       "elementId": 417,
       "playerName": "Dalot",
@@ -1715,7 +1715,7 @@
     {
       "pickNumber": 166,
       "round": 14,
-      "seasonPoints": 29,
+      "seasonPoints": 30,
       "managerId": 10375,
       "elementId": 502,
       "playerName": "Robertson",

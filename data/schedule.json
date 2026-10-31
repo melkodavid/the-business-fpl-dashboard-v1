@@ -18,10 +18,10 @@
         "homeWinPct": 2,
         "drawPct": 1,
         "awayWinPct": 97,
-        "homeExpected": 19.5,
-        "awayExpected": 34.6,
+        "homeExpected": 17.9,
+        "awayExpected": 31.9,
         "homeSoFar": 13,
-        "awaySoFar": 24
+        "awaySoFar": 22
       }
     },
     {
@@ -37,13 +37,13 @@
       "importance": 2.56,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 92,
+        "homeWinPct": 93,
         "drawPct": 2,
-        "awayWinPct": 6,
+        "awayWinPct": 5,
         "homeExpected": 40.6,
-        "awayExpected": 28.8,
+        "awayExpected": 28.6,
         "homeSoFar": 34,
-        "awaySoFar": 11
+        "awaySoFar": 12
       }
     },
     {
@@ -59,10 +59,10 @@
       "importance": 2.56,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 1,
+        "homeWinPct": 0,
         "drawPct": 0,
-        "awayWinPct": 99,
-        "homeExpected": 27.3,
+        "awayWinPct": 100,
+        "homeExpected": 24.1,
         "awayExpected": 46.4,
         "homeSoFar": 12,
         "awaySoFar": 39
@@ -81,13 +81,13 @@
       "importance": 2.32,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 46,
-        "drawPct": 5,
-        "awayWinPct": 49,
-        "homeExpected": 33.2,
-        "awayExpected": 33.5,
+        "homeWinPct": 28,
+        "drawPct": 4,
+        "awayWinPct": 68,
+        "homeExpected": 30.9,
+        "awayExpected": 35.1,
         "homeSoFar": 24,
-        "awaySoFar": 16
+        "awaySoFar": 18
       }
     },
     {
@@ -103,12 +103,12 @@
       "importance": 2.21,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 77,
-        "drawPct": 4,
-        "awayWinPct": 19,
-        "homeExpected": 49.2,
-        "awayExpected": 43.3,
-        "homeSoFar": 42,
+        "homeWinPct": 91,
+        "drawPct": 2,
+        "awayWinPct": 7,
+        "homeExpected": 50.2,
+        "awayExpected": 40.5,
+        "homeSoFar": 43,
         "awaySoFar": 27
       }
     },
@@ -125,13 +125,13 @@
       "importance": 1.23,
       "tag": "Six-Pointer",
       "odds": {
-        "homeWinPct": 6,
+        "homeWinPct": 2,
         "drawPct": 1,
-        "awayWinPct": 93,
-        "homeExpected": 36.1,
-        "awayExpected": 48,
+        "awayWinPct": 97,
+        "homeExpected": 35.9,
+        "awayExpected": 50.7,
         "homeSoFar": 28,
-        "awaySoFar": 31
+        "awaySoFar": 36
       }
     }
   ],
@@ -167,7 +167,7 @@
   "lineups": {
     "1377": {
       "formation": "4-4-2",
-      "expected": 32.2,
+      "expected": 32.4,
       "captainId": 31,
       "locked": true,
       "xi": [
@@ -196,7 +196,7 @@
           "type": 2,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 3
+          "ep": 3.2
         },
         {
           "id": 358,
@@ -457,7 +457,7 @@
     },
     "1471": {
       "formation": "4-5-1",
-      "expected": 43.3,
+      "expected": 43.5,
       "captainId": 504,
       "locked": true,
       "xi": [
@@ -513,7 +513,7 @@
           "type": 3,
           "team": "Chelsea",
           "teamId": 6,
-          "ep": 5
+          "ep": 5.2
         },
         {
           "id": 154,
@@ -1182,7 +1182,7 @@
     },
     "10210": {
       "formation": "4-4-2",
-      "expected": 32.6,
+      "expected": 33.1,
       "captainId": 4,
       "locked": true,
       "xi": [
@@ -1220,7 +1220,7 @@
           "type": 2,
           "team": "Crystal Palace",
           "teamId": 8,
-          "ep": 1.5
+          "ep": 2
         },
         {
           "id": 445,
@@ -1327,7 +1327,7 @@
     },
     "10375": {
       "formation": "3-4-3",
-      "expected": 39.8,
+      "expected": 41.1,
       "captainId": 295,
       "locked": true,
       "xi": [
@@ -1383,7 +1383,7 @@
           "type": 3,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 3.2
+          "ep": 4.5
         },
         {
           "id": 452,
@@ -1617,7 +1617,7 @@
     },
     "29975": {
       "formation": "4-4-2",
-      "expected": 30,
+      "expected": 29.5,
       "captainId": 109,
       "locked": true,
       "xi": [
@@ -1664,7 +1664,7 @@
           "type": 2,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 0.2
+          "ep": 0.5
         },
         {
           "id": 400,
@@ -1718,7 +1718,7 @@
           "type": 4,
           "team": "Crystal Palace",
           "teamId": 8,
-          "ep": 1
+          "ep": 0.2
         }
       ],
       "bench": [
