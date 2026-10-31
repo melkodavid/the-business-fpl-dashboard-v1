@@ -15,13 +15,13 @@
       "importance": 3.58,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 4,
-        "drawPct": 1,
-        "awayWinPct": 95,
-        "homeExpected": 21.8,
-        "awayExpected": 32.4,
-        "homeSoFar": 19,
-        "awaySoFar": 23
+        "homeWinPct": 17,
+        "drawPct": 5,
+        "awayWinPct": 78,
+        "homeExpected": 27.1,
+        "awayExpected": 31.8,
+        "homeSoFar": 26,
+        "awaySoFar": 24
       }
     },
     {
@@ -37,13 +37,13 @@
       "importance": 2.56,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 81,
-        "drawPct": 4,
-        "awayWinPct": 15,
+        "homeWinPct": 70,
+        "drawPct": 5,
+        "awayWinPct": 25,
         "homeExpected": 40.6,
-        "awayExpected": 33.7,
+        "awayExpected": 36.5,
         "homeSoFar": 34,
-        "awaySoFar": 19
+        "awaySoFar": 24
       }
     },
     {
@@ -62,9 +62,9 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 24.6,
+        "homeExpected": 29.1,
         "awayExpected": 46.4,
-        "homeSoFar": 16,
+        "homeSoFar": 21,
         "awaySoFar": 39
       }
     },
@@ -81,10 +81,10 @@
       "importance": 2.32,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 57,
-        "drawPct": 5,
-        "awayWinPct": 38,
-        "homeExpected": 35.9,
+        "homeWinPct": 42,
+        "drawPct": 6,
+        "awayWinPct": 52,
+        "homeExpected": 33.2,
         "awayExpected": 34.1,
         "homeSoFar": 32,
         "awaySoFar": 18
@@ -103,13 +103,13 @@
       "importance": 2.21,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 98,
-        "drawPct": 1,
-        "awayWinPct": 1,
-        "homeExpected": 52,
-        "awayExpected": 39.4,
-        "homeSoFar": 45,
-        "awaySoFar": 30
+        "homeWinPct": 95,
+        "drawPct": 2,
+        "awayWinPct": 3,
+        "homeExpected": 55.9,
+        "awayExpected": 48.3,
+        "homeSoFar": 52,
+        "awaySoFar": 44
       }
     },
     {
@@ -128,9 +128,9 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 37.3,
+        "homeExpected": 35.8,
         "awayExpected": 61.5,
-        "homeSoFar": 30,
+        "homeSoFar": 31,
         "awaySoFar": 51
       }
     }
@@ -167,7 +167,7 @@
   "lineups": {
     "1377": {
       "formation": "4-4-2",
-      "expected": 34.3,
+      "expected": 35.6,
       "captainId": 31,
       "locked": true,
       "xi": [
@@ -223,7 +223,7 @@
           "type": 3,
           "team": "Aston Villa",
           "teamId": 2,
-          "ep": 4.5
+          "ep": 5.8
         },
         {
           "id": 237,
@@ -747,7 +747,7 @@
     },
     "1530": {
       "formation": "4-5-1",
-      "expected": 33.2,
+      "expected": 32.7,
       "captainId": 151,
       "locked": true,
       "xi": [
@@ -797,15 +797,6 @@
           "ep": 2.5
         },
         {
-          "id": 45,
-          "name": "McGinn",
-          "pos": "MID",
-          "type": 3,
-          "team": "Aston Villa",
-          "teamId": 2,
-          "ep": 4.5
-        },
-        {
           "id": 127,
           "name": "Gomez",
           "pos": "MID",
@@ -813,6 +804,15 @@
           "team": "Brighton",
           "teamId": 5,
           "ep": 4.5
+        },
+        {
+          "id": 45,
+          "name": "McGinn",
+          "pos": "MID",
+          "type": 3,
+          "team": "Aston Villa",
+          "teamId": 2,
+          "ep": 4
         },
         {
           "id": 514,
@@ -1472,8 +1472,8 @@
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 40.3,
-      "captainId": 156,
+      "expected": 42.1,
+      "captainId": 166,
       "locked": true,
       "xi": [
         {
@@ -1564,7 +1564,7 @@
           "type": 4,
           "team": "Aston Villa",
           "teamId": 2,
-          "ep": 6.2
+          "ep": 8
         },
         {
           "id": 401,

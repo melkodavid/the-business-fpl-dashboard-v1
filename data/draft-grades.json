@@ -8,12 +8,12 @@
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 422
+      "draftTeamPoints": 423
     },
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "draftTeamPoints": 408
+      "draftTeamPoints": 409
     },
     {
       "managerId": 1857,
@@ -21,14 +21,19 @@
       "draftTeamPoints": 398
     },
     {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "draftTeamPoints": 386
+    },
+    {
       "managerId": 1947,
       "managerName": "FC General",
       "draftTeamPoints": 383
     },
     {
-      "managerId": 10375,
-      "managerName": "NEEN FC",
-      "draftTeamPoints": 379
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "draftTeamPoints": 359
     },
     {
       "managerId": 99786,
@@ -36,24 +41,19 @@
       "draftTeamPoints": 357
     },
     {
-      "managerId": 1501,
-      "managerName": "Set Piece Fc",
-      "draftTeamPoints": 354
-    },
-    {
       "managerId": 29975,
       "managerName": "Zacharias United",
       "draftTeamPoints": 319
     },
     {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "draftTeamPoints": 296
+    },
+    {
       "managerId": 1530,
       "managerName": "Muks Militia",
       "draftTeamPoints": 289
-    },
-    {
-      "managerId": 26227,
-      "managerName": "Mourinho’s Ego FT",
-      "draftTeamPoints": 288
     },
     {
       "managerId": 10210,
@@ -925,7 +925,7 @@
     {
       "pickNumber": 87,
       "round": 8,
-      "seasonPoints": 21,
+      "seasonPoints": 22,
       "managerId": 1471,
       "elementId": 569,
       "playerName": "Gonzalo",
@@ -1065,7 +1065,7 @@
     {
       "pickNumber": 101,
       "round": 9,
-      "seasonPoints": 35,
+      "seasonPoints": 43,
       "managerId": 26227,
       "elementId": 166,
       "playerName": "N.Jackson",
@@ -1285,7 +1285,7 @@
     {
       "pickNumber": 123,
       "round": 11,
-      "seasonPoints": 18,
+      "seasonPoints": 25,
       "managerId": 10375,
       "elementId": 32,
       "playerName": "Cash",
@@ -1335,7 +1335,7 @@
     {
       "pickNumber": 128,
       "round": 11,
-      "seasonPoints": 12,
+      "seasonPoints": 17,
       "managerId": 1501,
       "elementId": 36,
       "playerName": "Maatsen",
@@ -1625,7 +1625,7 @@
     {
       "pickNumber": 157,
       "round": 14,
-      "seasonPoints": 35,
+      "seasonPoints": 36,
       "managerId": 1377,
       "elementId": 250,
       "playerName": "Leno",
