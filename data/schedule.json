@@ -15,12 +15,12 @@
       "importance": 3.58,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 43,
+        "homeWinPct": 45,
         "drawPct": 3,
-        "awayWinPct": 54,
-        "homeExpected": 22.2,
+        "awayWinPct": 52,
+        "homeExpected": 22.9,
         "awayExpected": 24,
-        "homeSoFar": 1,
+        "homeSoFar": 2,
         "awaySoFar": 0
       }
     },
@@ -37,12 +37,12 @@
       "importance": 2.56,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 57,
+        "homeWinPct": 58,
         "drawPct": 3,
-        "awayWinPct": 40,
-        "homeExpected": 32.4,
+        "awayWinPct": 39,
+        "homeExpected": 32.9,
         "awayExpected": 29.6,
-        "homeSoFar": 1,
+        "homeSoFar": 2,
         "awaySoFar": 0
       }
     },
@@ -81,12 +81,12 @@
       "importance": 2.32,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 48,
+        "homeWinPct": 63,
         "drawPct": 3,
-        "awayWinPct": 49,
-        "homeExpected": 28.5,
+        "awayWinPct": 34,
+        "homeExpected": 33.4,
         "awayExpected": 28.6,
-        "homeSoFar": 5,
+        "homeSoFar": 10,
         "awaySoFar": 0
       }
     },
@@ -103,13 +103,13 @@
       "importance": 2.21,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 56,
-        "drawPct": 3,
-        "awayWinPct": 41,
-        "homeExpected": 33.2,
-        "awayExpected": 30.9,
-        "homeSoFar": 2,
-        "awaySoFar": 1
+        "homeWinPct": 81,
+        "drawPct": 2,
+        "awayWinPct": 17,
+        "homeExpected": 43.9,
+        "awayExpected": 32.4,
+        "homeSoFar": 13,
+        "awaySoFar": 3
       }
     },
     {
@@ -312,7 +312,7 @@
     },
     "1425": {
       "formation": "4-4-2",
-      "expected": 22.9,
+      "expected": 23.2,
       "captainId": 68,
       "locked": true,
       "xi": [
@@ -377,7 +377,7 @@
           "type": 3,
           "team": "Man Utd",
           "teamId": 16,
-          "ep": 3.2
+          "ep": 3.5
         },
         {
           "id": 338,
@@ -457,7 +457,7 @@
     },
     "1471": {
       "formation": "4-5-1",
-      "expected": 35.4,
+      "expected": 37.4,
       "captainId": 40,
       "locked": true,
       "xi": [
@@ -513,7 +513,7 @@
           "type": 3,
           "team": "Chelsea",
           "teamId": 6,
-          "ep": 5.2
+          "ep": 5.5
         },
         {
           "id": 154,
@@ -522,7 +522,7 @@
           "type": 3,
           "team": "Chelsea",
           "teamId": 6,
-          "ep": 2.5
+          "ep": 4.2
         },
         {
           "id": 239,
@@ -569,7 +569,7 @@
           "type": 1,
           "team": "Chelsea",
           "teamId": 6,
-          "ep": 0.5
+          "ep": 1.8
         },
         {
           "id": 5,
@@ -747,8 +747,8 @@
     },
     "1530": {
       "formation": "4-5-1",
-      "expected": 26.1,
-      "captainId": 45,
+      "expected": 27.6,
+      "captainId": 151,
       "locked": true,
       "xi": [
         {
@@ -767,7 +767,7 @@
           "type": 2,
           "team": "Chelsea",
           "teamId": 6,
-          "ep": 3.2
+          "ep": 4.5
         },
         {
           "id": 201,
@@ -839,7 +839,7 @@
           "type": 3,
           "team": "Man Utd",
           "teamId": 16,
-          "ep": 0.8
+          "ep": 1
         },
         {
           "id": 136,
@@ -1149,7 +1149,7 @@
           "type": 1,
           "team": "Man Utd",
           "teamId": 16,
-          "ep": 2
+          "ep": 2.2
         },
         {
           "id": 469,
@@ -1472,7 +1472,7 @@
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 33.2,
+      "expected": 33.7,
       "captainId": 156,
       "locked": true,
       "xi": [
@@ -1528,7 +1528,7 @@
           "type": 3,
           "team": "Chelsea",
           "teamId": 6,
-          "ep": 6
+          "ep": 6.5
         },
         {
           "id": 211,
@@ -1762,7 +1762,7 @@
     },
     "99786": {
       "formation": "4-4-2",
-      "expected": 34,
+      "expected": 34.2,
       "captainId": 115,
       "locked": true,
       "xi": [
@@ -1818,7 +1818,7 @@
           "type": 3,
           "team": "Man Utd",
           "teamId": 16,
-          "ep": 4.8
+          "ep": 5
         },
         {
           "id": 13,
