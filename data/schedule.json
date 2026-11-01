@@ -15,13 +15,13 @@
       "importance": 3.58,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 3,
-        "drawPct": 1,
-        "awayWinPct": 96,
+        "homeWinPct": 0,
+        "drawPct": 0,
+        "awayWinPct": 100,
         "homeExpected": 19.2,
-        "awayExpected": 29,
+        "awayExpected": 43,
         "homeSoFar": 19,
-        "awaySoFar": 22
+        "awaySoFar": 43
       }
     },
     {
@@ -37,13 +37,13 @@
       "importance": 2.56,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 75,
-        "drawPct": 5,
-        "awayWinPct": 20,
-        "homeExpected": 40.6,
-        "awayExpected": 35.8,
-        "homeSoFar": 34,
-        "awaySoFar": 25
+        "homeWinPct": 93,
+        "drawPct": 3,
+        "awayWinPct": 4,
+        "homeExpected": 45,
+        "awayExpected": 39,
+        "homeSoFar": 42,
+        "awaySoFar": 39
       }
     },
     {
@@ -62,10 +62,10 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 24.9,
-        "awayExpected": 46.4,
-        "homeSoFar": 17,
-        "awaySoFar": 39
+        "homeExpected": 23.5,
+        "awayExpected": 44.2,
+        "homeSoFar": 21,
+        "awaySoFar": 40
       }
     },
     {
@@ -81,13 +81,13 @@
       "importance": 2.32,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 31,
-        "drawPct": 5,
-        "awayWinPct": 64,
+        "homeWinPct": 40,
+        "drawPct": 10,
+        "awayWinPct": 50,
         "homeExpected": 31,
-        "awayExpected": 34.1,
+        "awayExpected": 31.5,
         "homeSoFar": 31,
-        "awaySoFar": 18
+        "awaySoFar": 30
       }
     },
     {
@@ -103,13 +103,13 @@
       "importance": 2.21,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 100,
-        "drawPct": 0,
+        "homeWinPct": 99,
+        "drawPct": 1,
         "awayWinPct": 0,
         "homeExpected": 49.2,
-        "awayExpected": 38.8,
+        "awayExpected": 40,
         "homeSoFar": 47,
-        "awaySoFar": 38
+        "awaySoFar": 40
       }
     },
     {
@@ -129,9 +129,9 @@
         "drawPct": 0,
         "awayWinPct": 100,
         "homeExpected": 34.4,
-        "awayExpected": 61.5,
+        "awayExpected": 58.8,
         "homeSoFar": 31,
-        "awaySoFar": 51
+        "awaySoFar": 56
       }
     }
   ],
@@ -167,7 +167,7 @@
   "lineups": {
     "1377": {
       "formation": "4-4-2",
-      "expected": 35.8,
+      "expected": 39.2,
       "captainId": 31,
       "locked": true,
       "xi": [
@@ -187,7 +187,7 @@
           "type": 2,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 6.8
+          "ep": 9.2
         },
         {
           "id": 502,
@@ -205,7 +205,7 @@
           "type": 2,
           "team": "Liverpool",
           "teamId": 14,
-          "ep": 2.2
+          "ep": 2.5
         },
         {
           "id": 391,
@@ -235,6 +235,15 @@
           "ep": 3.2
         },
         {
+          "id": 15,
+          "name": "Ødegaard",
+          "pos": "MID",
+          "type": 3,
+          "team": "Arsenal",
+          "teamId": 1,
+          "ep": 2.5
+        },
+        {
           "id": 155,
           "name": "Enzo",
           "pos": "MID",
@@ -242,15 +251,6 @@
           "team": "Man City",
           "teamId": 15,
           "ep": 2
-        },
-        {
-          "id": 15,
-          "name": "Ødegaard",
-          "pos": "MID",
-          "type": 3,
-          "team": "Arsenal",
-          "teamId": 1,
-          "ep": 1.8
         },
         {
           "id": 646,
@@ -433,7 +433,7 @@
           "type": 2,
           "team": "Liverpool",
           "teamId": 14,
-          "ep": 3.5
+          "ep": 4
         },
         {
           "id": 261,
@@ -578,7 +578,7 @@
           "type": 2,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 0.5
+          "ep": 1.8
         },
         {
           "id": 492,
@@ -723,7 +723,7 @@
           "type": 3,
           "team": "Liverpool",
           "teamId": 14,
-          "ep": 0.1
+          "ep": 0.2
         },
         {
           "id": 271,
@@ -892,7 +892,7 @@
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 33.7,
+      "expected": 34.9,
       "captainId": 411,
       "locked": true,
       "xi": [
@@ -903,7 +903,7 @@
           "type": 1,
           "team": "Liverpool",
           "teamId": 14,
-          "ep": 2.2
+          "ep": 2.8
         },
         {
           "id": 334,
@@ -957,7 +957,7 @@
           "type": 3,
           "team": "Liverpool",
           "teamId": 14,
-          "ep": 3.2
+          "ep": 3.8
         },
         {
           "id": 481,
@@ -1037,7 +1037,7 @@
     },
     "1947": {
       "formation": "3-5-2",
-      "expected": 42.6,
+      "expected": 42.9,
       "captainId": 555,
       "locked": true,
       "xi": [
@@ -1066,7 +1066,7 @@
           "type": 2,
           "team": "Liverpool",
           "teamId": 14,
-          "ep": 3.2
+          "ep": 3.5
         },
         {
           "id": 472,
@@ -1182,7 +1182,7 @@
     },
     "10210": {
       "formation": "4-4-2",
-      "expected": 33.1,
+      "expected": 35.9,
       "captainId": 4,
       "locked": true,
       "xi": [
@@ -1193,7 +1193,7 @@
           "type": 1,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 4.8
+          "ep": 6
         },
         {
           "id": 4,
@@ -1202,7 +1202,7 @@
           "type": 2,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 6.8
+          "ep": 8.2
         },
         {
           "id": 87,
@@ -1247,7 +1247,7 @@
           "type": 3,
           "team": "Liverpool",
           "teamId": 14,
-          "ep": 3
+          "ep": 3.2
         },
         {
           "id": 556,
@@ -1321,13 +1321,13 @@
           "type": 4,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 1.8
+          "ep": 2
         }
       ]
     },
     "10375": {
       "formation": "3-4-3",
-      "expected": 44.8,
+      "expected": 46.1,
       "captainId": 112,
       "locked": true,
       "xi": [
@@ -1392,7 +1392,7 @@
           "type": 3,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 3.2
+          "ep": 4
         },
         {
           "id": 544,
@@ -1419,7 +1419,7 @@
           "type": 4,
           "team": "Liverpool",
           "teamId": 14,
-          "ep": 4.5
+          "ep": 5
         },
         {
           "id": 346,
@@ -1466,13 +1466,13 @@
           "type": 3,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 0
+          "ep": 0.6
         }
       ]
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 42.3,
+      "expected": 42.7,
       "captainId": 166,
       "locked": true,
       "xi": [
@@ -1555,7 +1555,7 @@
           "type": 3,
           "team": "Liverpool",
           "teamId": 14,
-          "ep": 0.8
+          "ep": 1.2
         },
         {
           "id": 166,
@@ -1617,7 +1617,7 @@
     },
     "29975": {
       "formation": "4-4-2",
-      "expected": 29.5,
+      "expected": 34.3,
       "captainId": 109,
       "locked": true,
       "xi": [
@@ -1637,7 +1637,7 @@
           "type": 2,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 3
+          "ep": 4.5
         },
         {
           "id": 580,
@@ -1646,7 +1646,7 @@
           "type": 2,
           "team": "Liverpool",
           "teamId": 14,
-          "ep": 2.8
+          "ep": 3.8
         },
         {
           "id": 390,
@@ -1709,7 +1709,7 @@
           "type": 4,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 1.2
+          "ep": 3.5
         },
         {
           "id": 223,
@@ -1747,7 +1747,7 @@
           "type": 3,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 1.2
+          "ep": 1.5
         },
         {
           "id": 649,
@@ -1762,7 +1762,7 @@
     },
     "99786": {
       "formation": "4-4-2",
-      "expected": 42,
+      "expected": 43.5,
       "captainId": 115,
       "locked": true,
       "xi": [
@@ -1812,6 +1812,15 @@
           "ep": 2.5
         },
         {
+          "id": 13,
+          "name": "Rice",
+          "pos": "MID",
+          "type": 3,
+          "team": "Arsenal",
+          "teamId": 1,
+          "ep": 5.1
+        },
+        {
           "id": 427,
           "name": "Mbeumo",
           "pos": "MID",
@@ -1828,15 +1837,6 @@
           "team": "Brentford",
           "teamId": 4,
           "ep": 4.5
-        },
-        {
-          "id": 13,
-          "name": "Rice",
-          "pos": "MID",
-          "type": 3,
-          "team": "Arsenal",
-          "teamId": 1,
-          "ep": 3.6
         },
         {
           "id": 453,
