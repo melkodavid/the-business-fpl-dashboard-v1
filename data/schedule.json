@@ -19,9 +19,9 @@
         "drawPct": 0,
         "awayWinPct": 100,
         "homeExpected": 19.2,
-        "awayExpected": 43,
+        "awayExpected": 41,
         "homeSoFar": 19,
-        "awaySoFar": 43
+        "awaySoFar": 41
       }
     },
     {
@@ -1617,7 +1617,7 @@
     },
     "29975": {
       "formation": "4-4-2",
-      "expected": 34.3,
+      "expected": 33.9,
       "captainId": 109,
       "locked": true,
       "xi": [
@@ -1637,7 +1637,7 @@
           "type": 2,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 4.5
+          "ep": 4.1
         },
         {
           "id": 580,
