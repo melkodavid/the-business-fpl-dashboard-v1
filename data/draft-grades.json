@@ -3,12 +3,12 @@
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 445
+      "draftTeamPoints": 446
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 429
+      "draftTeamPoints": 432
     },
     {
       "managerId": 1377,
@@ -18,47 +18,47 @@
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "draftTeamPoints": 409
+      "draftTeamPoints": 421
     },
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "draftTeamPoints": 389
+      "draftTeamPoints": 397
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 384
+      "draftTeamPoints": 387
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 365
+      "draftTeamPoints": 373
     },
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "draftTeamPoints": 356
+      "draftTeamPoints": 362
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "draftTeamPoints": 324
+      "draftTeamPoints": 326
     },
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
-      "draftTeamPoints": 305
+      "draftTeamPoints": 312
     },
     {
       "managerId": 10210,
       "managerName": "Syria FC**",
-      "draftTeamPoints": 290
+      "draftTeamPoints": 293
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "draftTeamPoints": 289
+      "draftTeamPoints": 291
     }
   ],
   "scatter": [
@@ -465,7 +465,7 @@
     {
       "pickNumber": 41,
       "round": 4,
-      "seasonPoints": 48,
+      "seasonPoints": 54,
       "managerId": 1501,
       "elementId": 229,
       "playerName": "Tarkowski",
@@ -605,7 +605,7 @@
     {
       "pickNumber": 55,
       "round": 5,
-      "seasonPoints": 37,
+      "seasonPoints": 40,
       "managerId": 1947,
       "elementId": 236,
       "playerName": "Dewsbury-Hall",
@@ -675,7 +675,7 @@
     {
       "pickNumber": 62,
       "round": 6,
-      "seasonPoints": 29,
+      "seasonPoints": 35,
       "managerId": 99786,
       "elementId": 226,
       "playerName": "Pickford",
@@ -745,7 +745,7 @@
     {
       "pickNumber": 69,
       "round": 6,
-      "seasonPoints": 14,
+      "seasonPoints": 16,
       "managerId": 1530,
       "elementId": 465,
       "playerName": "Osula",
@@ -865,7 +865,7 @@
     {
       "pickNumber": 81,
       "round": 7,
-      "seasonPoints": 19,
+      "seasonPoints": 20,
       "managerId": 10210,
       "elementId": 464,
       "playerName": "Wissa",
@@ -915,7 +915,7 @@
     {
       "pickNumber": 86,
       "round": 8,
-      "seasonPoints": 40,
+      "seasonPoints": 42,
       "managerId": 99786,
       "elementId": 453,
       "playerName": "Barnes",
@@ -1015,7 +1015,7 @@
     {
       "pickNumber": 96,
       "round": 8,
-      "seasonPoints": 30,
+      "seasonPoints": 39,
       "managerId": 1857,
       "elementId": 249,
       "playerName": "Barry",
@@ -1205,7 +1205,7 @@
     {
       "pickNumber": 115,
       "round": 10,
-      "seasonPoints": 14,
+      "seasonPoints": 15,
       "managerId": 1425,
       "elementId": 209,
       "playerName": "Johnson",
@@ -1345,7 +1345,7 @@
     {
       "pickNumber": 129,
       "round": 11,
-      "seasonPoints": 19,
+      "seasonPoints": 21,
       "managerId": 10210,
       "elementId": 454,
       "playerName": "Elanga",
@@ -1495,7 +1495,7 @@
     {
       "pickNumber": 144,
       "round": 12,
-      "seasonPoints": 24,
+      "seasonPoints": 27,
       "managerId": 1857,
       "elementId": 566,
       "playerName": "Horníček",
@@ -1515,7 +1515,7 @@
     {
       "pickNumber": 146,
       "round": 13,
-      "seasonPoints": 40,
+      "seasonPoints": 42,
       "managerId": 29975,
       "elementId": 449,
       "playerName": "Hall",
@@ -1545,7 +1545,7 @@
     {
       "pickNumber": 149,
       "round": 13,
-      "seasonPoints": 31,
+      "seasonPoints": 38,
       "managerId": 26227,
       "elementId": 230,
       "playerName": "Branthwaite",
@@ -1645,7 +1645,7 @@
     {
       "pickNumber": 159,
       "round": 14,
-      "seasonPoints": 20,
+      "seasonPoints": 23,
       "managerId": 1471,
       "elementId": 239,
       "playerName": "Garner",
@@ -1765,7 +1765,7 @@
     {
       "pickNumber": 171,
       "round": 15,
-      "seasonPoints": 28,
+      "seasonPoints": 36,
       "managerId": 10375,
       "elementId": 233,
       "playerName": "Mykolenko",

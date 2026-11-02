@@ -18,9 +18,9 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 19.2,
+        "homeExpected": 21,
         "awayExpected": 41,
-        "homeSoFar": 19,
+        "homeSoFar": 21,
         "awaySoFar": 41
       }
     },
@@ -37,12 +37,12 @@
       "importance": 2.56,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 93,
-        "drawPct": 3,
-        "awayWinPct": 4,
-        "homeExpected": 45,
+        "homeWinPct": 88,
+        "drawPct": 4,
+        "awayWinPct": 8,
+        "homeExpected": 44,
         "awayExpected": 39,
-        "homeSoFar": 42,
+        "homeSoFar": 44,
         "awaySoFar": 39
       }
     },
@@ -62,10 +62,10 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 23.5,
-        "awayExpected": 44.2,
-        "homeSoFar": 21,
-        "awaySoFar": 40
+        "homeExpected": 30,
+        "awayExpected": 43,
+        "homeSoFar": 30,
+        "awaySoFar": 43
       }
     },
     {
@@ -81,13 +81,13 @@
       "importance": 2.32,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 40,
+        "homeWinPct": 45,
         "drawPct": 10,
-        "awayWinPct": 50,
+        "awayWinPct": 45,
         "homeExpected": 31,
-        "awayExpected": 31.5,
+        "awayExpected": 31,
         "homeSoFar": 31,
-        "awaySoFar": 30
+        "awaySoFar": 31
       }
     },
     {
@@ -103,12 +103,12 @@
       "importance": 2.21,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 99,
-        "drawPct": 1,
+        "homeWinPct": 100,
+        "drawPct": 0,
         "awayWinPct": 0,
-        "homeExpected": 49.2,
+        "homeExpected": 52,
         "awayExpected": 40,
-        "homeSoFar": 47,
+        "homeSoFar": 52,
         "awaySoFar": 40
       }
     },
@@ -128,10 +128,10 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 34.4,
-        "awayExpected": 58.8,
-        "homeSoFar": 31,
-        "awaySoFar": 56
+        "homeExpected": 39,
+        "awayExpected": 58,
+        "homeSoFar": 39,
+        "awaySoFar": 58
       }
     }
   ],
@@ -312,7 +312,7 @@
     },
     "1425": {
       "formation": "4-4-2",
-      "expected": 27.5,
+      "expected": 28.1,
       "captainId": 68,
       "locked": true,
       "xi": [
@@ -395,7 +395,7 @@
           "type": 3,
           "team": "Newcastle",
           "teamId": 17,
-          "ep": 0.2
+          "ep": 0.8
         },
         {
           "id": 316,
@@ -457,7 +457,7 @@
     },
     "1471": {
       "formation": "4-5-1",
-      "expected": 44.5,
+      "expected": 45.3,
       "captainId": 504,
       "locked": true,
       "xi": [
@@ -540,7 +540,7 @@
           "type": 3,
           "team": "Everton",
           "teamId": 9,
-          "ep": 2.2
+          "ep": 3
         },
         {
           "id": 94,
@@ -602,7 +602,7 @@
     },
     "1501": {
       "formation": "5-4-1",
-      "expected": 33.7,
+      "expected": 35.9,
       "captainId": 79,
       "locked": true,
       "xi": [
@@ -625,13 +625,13 @@
           "ep": 4
         },
         {
-          "id": 389,
-          "name": "Matheus N.",
+          "id": 229,
+          "name": "Tarkowski",
           "pos": "DEF",
           "type": 2,
-          "team": "Man City",
-          "teamId": 15,
-          "ep": 2.5
+          "team": "Everton",
+          "teamId": 9,
+          "ep": 2.8
         },
         {
           "id": 449,
@@ -640,16 +640,16 @@
           "type": 2,
           "team": "Newcastle",
           "teamId": 17,
-          "ep": 2.2
+          "ep": 2.8
         },
         {
-          "id": 229,
-          "name": "Tarkowski",
+          "id": 389,
+          "name": "Matheus N.",
           "pos": "DEF",
           "type": 2,
-          "team": "Everton",
-          "teamId": 9,
-          "ep": 1.2
+          "team": "Man City",
+          "teamId": 15,
+          "ep": 2.5
         },
         {
           "id": 588,
@@ -877,7 +877,7 @@
           "type": 4,
           "team": "Newcastle",
           "teamId": 17,
-          "ep": 1.2
+          "ep": 1.5
         },
         {
           "id": 224,
@@ -892,7 +892,7 @@
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 34.9,
+      "expected": 37.2,
       "captainId": 411,
       "locked": true,
       "xi": [
@@ -978,6 +978,15 @@
           "ep": 7.2
         },
         {
+          "id": 249,
+          "name": "Barry",
+          "pos": "FWD",
+          "type": 4,
+          "team": "Everton",
+          "teamId": 9,
+          "ep": 4.8
+        },
+        {
           "id": 526,
           "name": "Solanke",
           "pos": "FWD",
@@ -985,15 +994,6 @@
           "team": "Spurs",
           "teamId": 19,
           "ep": 3.5
-        },
-        {
-          "id": 249,
-          "name": "Barry",
-          "pos": "FWD",
-          "type": 4,
-          "team": "Everton",
-          "teamId": 9,
-          "ep": 2.5
         }
       ],
       "bench": [
@@ -1004,7 +1004,7 @@
           "type": 1,
           "team": "Newcastle",
           "teamId": 17,
-          "ep": 2.5
+          "ep": 3.2
         },
         {
           "id": 387,
@@ -1037,7 +1037,7 @@
     },
     "1947": {
       "formation": "3-5-2",
-      "expected": 42.9,
+      "expected": 43.7,
       "captainId": 555,
       "locked": true,
       "xi": [
@@ -1087,6 +1087,15 @@
           "ep": 6
         },
         {
+          "id": 236,
+          "name": "Dewsbury-Hall",
+          "pos": "MID",
+          "type": 3,
+          "team": "Everton",
+          "teamId": 9,
+          "ep": 5
+        },
+        {
           "id": 67,
           "name": "Rayan",
           "pos": "MID",
@@ -1094,15 +1103,6 @@
           "team": "Bournemouth",
           "teamId": 3,
           "ep": 4.5
-        },
-        {
-          "id": 236,
-          "name": "Dewsbury-Hall",
-          "pos": "MID",
-          "type": 3,
-          "team": "Everton",
-          "teamId": 9,
-          "ep": 4.2
         },
         {
           "id": 124,
@@ -1182,7 +1182,7 @@
     },
     "10210": {
       "formation": "4-4-2",
-      "expected": 35.9,
+      "expected": 36.1,
       "captainId": 4,
       "locked": true,
       "xi": [
@@ -1283,7 +1283,7 @@
           "type": 4,
           "team": "Newcastle",
           "teamId": 17,
-          "ep": 1
+          "ep": 1.2
         }
       ],
       "bench": [
@@ -1303,7 +1303,7 @@
           "type": 2,
           "team": "Everton",
           "teamId": 9,
-          "ep": 0.2
+          "ep": 2.2
         },
         {
           "id": 41,
@@ -1327,7 +1327,7 @@
     },
     "10375": {
       "formation": "3-4-3",
-      "expected": 46.1,
+      "expected": 46.5,
       "captainId": 112,
       "locked": true,
       "xi": [
@@ -1356,7 +1356,7 @@
           "type": 2,
           "team": "Newcastle",
           "teamId": 17,
-          "ep": 2.8
+          "ep": 3.2
         },
         {
           "id": 474,
@@ -1593,7 +1593,7 @@
           "type": 2,
           "team": "Everton",
           "teamId": 9,
-          "ep": 0.8
+          "ep": 2.1
         },
         {
           "id": 12,
@@ -1762,7 +1762,7 @@
     },
     "99786": {
       "formation": "4-4-2",
-      "expected": 43.5,
+      "expected": 44,
       "captainId": 115,
       "locked": true,
       "xi": [
@@ -1845,7 +1845,7 @@
           "type": 3,
           "team": "Newcastle",
           "teamId": 17,
-          "ep": 3
+          "ep": 3.5
         },
         {
           "id": 138,
@@ -1874,7 +1874,7 @@
           "type": 1,
           "team": "Everton",
           "teamId": 9,
-          "ep": 1
+          "ep": 2.5
         },
         {
           "id": 148,
