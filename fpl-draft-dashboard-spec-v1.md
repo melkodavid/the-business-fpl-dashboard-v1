@@ -183,9 +183,7 @@ These target GWs give a roughly even ~9-gameweek spacing across the season. **Be
 - Rounds 1 and 4 (single gameweek): standard H2H gameweek score.
 - Rounds 2 and 3 (two-gameweek aggregate): sum of each manager's H2H scores across both assigned gameweeks.
 
-**Tiebreaker (scores/aggregate exactly level):**
-1. Higher total bench points (combined across both legs, for the two-gameweek rounds) that round advances
-2. If still level, higher original seed (from the Round 1 seeding snapshot) advances
+**Tiebreaker (scores/aggregate exactly level):** the tie is replayed the following gameweek, as a fresh one-gameweek match, and again each week until one side wins. (League decision, GW9 2026; replaces the original bench-points-then-seed rule.) Only if the season runs out of gameweeks does the higher original seed advance.
 
 **No lineup set:** Use whatever final score the Draft API returns for that manager/gameweek — the API's own autosub logic already handles missing/incomplete lineups.
 

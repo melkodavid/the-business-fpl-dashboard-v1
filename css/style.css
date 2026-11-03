@@ -3165,3 +3165,6 @@ section[id^="lv-"] { scroll-margin-top: 8rem; }
   .cbz-svg { width: 150px; }
 }
 @media (prefers-reduced-motion: reduce) { .cbz-svg { animation: none; } }
+
+/* a level cup tie goes to a replay the following gameweek */
+.cup-replay-note { margin: 0; padding: 0.35rem 0.7rem 0.45rem; border-top: 1px dashed rgba(217,180,90,0.35); font: italic 600 0.82rem "Cormorant Garamond", Georgia, serif; color: var(--cup-gold-bright); }

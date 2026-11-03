@@ -101,14 +101,12 @@ test("live table shows no result for a match nobody has kicked off in yet", () =
   assert.deepEqual(liveTable(rows, notYet).map((r) => [r.liveTotal, r.result]), [[12, null], [9, null]]);
 });
 
-test("cup tie: earlier legs add up, then bench points, then seed decide who is through", () => {
-  const m = new Map([[1, { points: 50, benchPoints: 4 }], [2, { points: 45, benchPoints: 9 }]]);
+test("cup tie: earlier legs add up; a level score has no leader (it means a replay)", () => {
+  const m = new Map([[1, { points: 50 }], [2, { points: 45 }]]);
   const tie = { managerAId: 1, managerBId: 2 };
   assert.equal(cupTieLive(tie, m, { liveGw: 19 }).leaderId, 1);
   const twoLegs = cupTieLive(tie, m, { liveGw: 19, legs: { 18: { 1: 40, 2: 50 } } });
-  assert.deepEqual([twoLegs.scoreA, twoLegs.scoreB, twoLegs.leaderId, twoLegs.by], [90, 95, 2, null]);
-  const level = cupTieLive(tie, new Map([[1, { points: 50, benchPoints: 4 }], [2, { points: 50, benchPoints: 9 }]]), { liveGw: 9 });
-  assert.deepEqual([level.leaderId, level.by], [2, "bench"]);
-  const dead = cupTieLive(tie, new Map([[1, { points: 50, benchPoints: 4 }], [2, { points: 50, benchPoints: 4 }]]), { liveGw: 9, seeds: new Map([[1, 7], [2, 3]]) });
-  assert.deepEqual([dead.leaderId, dead.by], [2, "seed"]);
+  assert.deepEqual([twoLegs.scoreA, twoLegs.scoreB, twoLegs.leaderId, twoLegs.level], [90, 95, 2, false]);
+  const level = cupTieLive(tie, new Map([[1, { points: 50 }], [2, { points: 50 }]]), { liveGw: 9 });
+  assert.deepEqual([level.leaderId, level.level], [null, true]);
 });

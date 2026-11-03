@@ -1,5 +1,3 @@
-import { benchPointsForGw } from "../lib/benchPoints.js";
-
 function shuffle(arr) {
   const copy = [...arr];
   for (let i = copy.length - 1; i > 0; i--) {
@@ -56,33 +54,42 @@ function gwScore(context, gws, managerId) {
   return gws.reduce((sum, gw) => sum + (context.gwPicks[gw]?.[managerId]?.totalPoints ?? 0), 0);
 }
 
-function benchScore(context, gws, managerId) {
-  return gws.reduce((sum, gw) => sum + benchPointsForGw(context, gw, managerId), 0);
-}
+// A level tie is replayed: the same two sides play again the following
+// gameweek, and again the week after that if it's level once more, until one of
+// them wins. (League rule; it replaced the spec's bench-points/seed tiebreak.)
+// Only a season with no gameweeks left falls back to the higher seed.
+const LAST_GW = 38;
 
 // Resolves a single cup match: standard score (or, for the 2-GW rounds,
-// summed across both GWs), falling through the spec's tiebreakers in order.
+// summed across both GWs), then any replays. While a replay is still to be
+// played the match has no winner yet and carries `replayGw`.
 function resolveMatch(context, gws, managerAId, managerBId, seedByManager) {
   const scoreA = gwScore(context, gws, managerAId);
   const scoreB = gwScore(context, gws, managerBId);
   if (scoreA !== scoreB) {
-    return { scoreA, scoreB, winnerId: scoreA > scoreB ? managerAId : managerBId, tiebreaker: null };
+    return { scoreA, scoreB, winnerId: scoreA > scoreB ? managerAId : managerBId, replays: [] };
   }
 
-  const benchA = benchScore(context, gws, managerAId);
-  const benchB = benchScore(context, gws, managerBId);
-  if (benchA !== benchB) {
-    return { scoreA, scoreB, winnerId: benchA > benchB ? managerAId : managerBId, tiebreaker: "bench" };
+  const replays = [];
+  for (let gw = Math.max(...gws) + 1; gw <= LAST_GW; gw++) {
+    if (!context.finishedGws.includes(gw)) return { scoreA, scoreB, winnerId: null, replays, replayGw: gw };
+    const replay = { gw, scoreA: gwScore(context, [gw], managerAId), scoreB: gwScore(context, [gw], managerBId) };
+    replays.push(replay);
+    if (replay.scoreA !== replay.scoreB) {
+      return { scoreA, scoreB, winnerId: replay.scoreA > replay.scoreB ? managerAId : managerBId, replays };
+    }
   }
 
   const seedA = seedByManager.get(managerAId);
   const seedB = seedByManager.get(managerBId);
-  return { scoreA, scoreB, winnerId: seedA < seedB ? managerAId : managerBId, tiebreaker: "seed" };
+  return { scoreA, scoreB, winnerId: seedA < seedB ? managerAId : managerBId, replays, decidedBy: "seed" };
 }
 
 function allGwsFinished(context, gws) {
   return gws.every((gw) => context.finishedGws.includes(gw));
 }
+
+const decided = (results) => Boolean(results?.length) && results.every((m) => m.winnerId);
 
 function resolveRound(context, roundConfig, draw, seedByManager) {
   if (!allGwsFinished(context, roundConfig.gws)) return null;
@@ -159,26 +166,26 @@ export function computeCup(context, cupRoundGws, previous, seeding = null, drawC
   noteWinners(round1Results);
 
   let round2Draw = previous?.rounds?.round2?.draw ?? null;
-  if (!round2Draw && round1Results) {
+  if (!round2Draw && decided(round1Results)) {
     round2Draw = drawRound("round2", "r2", [...byeSeeds, ...round1Results.map((m) => m.winnerId)]);
   }
   const round2Results = round2Draw ? resolveRound(context, { gws: cupRoundGws.round2 }, round2Draw, seedByManager) : null;
   noteWinners(round2Results);
 
   let round3Draw = previous?.rounds?.round3?.draw ?? null;
-  if (!round3Draw && round2Results) {
+  if (!round3Draw && decided(round2Results)) {
     round3Draw = drawRound("round3", "r3", round2Results.map((m) => m.winnerId));
   }
   const round3Results = round3Draw ? resolveRound(context, { gws: cupRoundGws.round3 }, round3Draw, seedByManager) : null;
 
   let round4Draw = previous?.rounds?.round4?.draw ?? null;
-  if (!round4Draw && round3Results) {
+  if (!round4Draw && decided(round3Results)) {
     const [a, b] = round3Results.map((m) => m.winnerId);
     round4Draw = [{ matchId: "final", managerAId: a, managerBId: b }];
   }
   const round4Results = round4Draw ? resolveRound(context, { gws: cupRoundGws.round4 }, round4Draw, seedByManager) : null;
 
-  const champion = round4Results ? round4Results[0].winnerId : null;
+  const champion = decided(round4Results) ? round4Results[0].winnerId : null;
 
   return {
     status: champion ? "complete" : awaitingRound ? "awaiting_draw" : "in_progress",

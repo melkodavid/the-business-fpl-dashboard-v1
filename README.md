@@ -145,7 +145,7 @@ scripts/
   context.js             normalizes all raw API data into one shared shape
   lib/                   shared helpers (optimal-XI solver, roster timeline, etc.)
   stats/                 one module per spec section (standings, all-play, ...)
-  cup/bracket.js          FA Cup seeding, random draws, results, tiebreakers
+  cup/bracket.js          FA Cup seeding, random draws, results, replays of level ties
   mock/                  mock-data generator + loader
   narrative/              weekly recap engine (see fpl-draft-dashboard-spec-v1.md
                            and narrative-layer-brief.md): detectors/ (one

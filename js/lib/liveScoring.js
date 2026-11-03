@@ -8,7 +8,7 @@
 //     fixtures: [{ id, h, a, hs, as, k, st, fin, bon, bps: [[element, value]] }] }
 //
 // Draft has no captains or chips; a manager's score is their XI after
-// automatic substitutions, and bench points are the cup's first tie-breaker.
+// automatic substitutions. A level cup tie is replayed the next gameweek.
 
 export const POS = { 1: "GKP", 2: "DEF", 3: "MID", 4: "FWD" };
 const MIN_IN_XI = { 2: 3, 3: 2, 4: 1 }; // DEF / MID / FWD floors (always exactly one GK)
@@ -179,16 +179,13 @@ export function liveTable(rows, matches, { includesGw = false } = {}) {
 }
 
 // A cup tie as it stands: this gameweek's live score plus any earlier legs,
-// falling through the cup's tie-breakers (bench points, then seed).
-export function cupTieLive(tie, managers, { legs = {}, liveGw, seeds = new Map() } = {}) {
+// or `level` -- which, if it stays that way, means a replay next gameweek.
+export function cupTieLive(tie, managers, { legs = {}, liveGw } = {}) {
   const earlier = (id) => Object.entries(legs).filter(([gw]) => Number(gw) !== liveGw).reduce((t, [, scores]) => t + (scores[id] ?? 0), 0);
   const a = managers.get(tie.managerAId);
   const b = managers.get(tie.managerBId);
   const scoreA = (a?.points ?? 0) + earlier(tie.managerAId);
   const scoreB = (b?.points ?? 0) + earlier(tie.managerBId);
-  let leaderId = null, by = null;
-  if (scoreA !== scoreB) leaderId = scoreA > scoreB ? tie.managerAId : tie.managerBId;
-  else if ((a?.benchPoints ?? 0) !== (b?.benchPoints ?? 0)) { leaderId = a.benchPoints > b.benchPoints ? tie.managerAId : tie.managerBId; by = "bench"; }
-  else { leaderId = (seeds.get(tie.managerAId) ?? 99) < (seeds.get(tie.managerBId) ?? 99) ? tie.managerAId : tie.managerBId; by = "seed"; }
-  return { ...tie, a, b, scoreA, scoreB, leaderId, by, twoLegs: Object.keys(legs).length > 0 };
+  const leaderId = scoreA === scoreB ? null : scoreA > scoreB ? tie.managerAId : tie.managerBId;
+  return { ...tie, a, b, scoreA, scoreB, leaderId, level: scoreA === scoreB, twoLegs: Object.keys(legs).length > 0 };
 }

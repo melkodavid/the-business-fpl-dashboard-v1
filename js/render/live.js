@@ -1,7 +1,7 @@
 // "Live" -- the matchday scoreboard. Pulls a compact snapshot of the current
 // gameweek through the league's Apps Script relay (the Draft API can't be read
 // from a web page directly) once a minute, scores it in the browser (auto-subs,
-// provisional bonus, cup tie-breakers -- see lib/liveScoring.js) and lays out:
+// provisional bonus, cup ties -- see lib/liveScoring.js) and lays out:
 //   1. the Premier League fixtures strip,
 //   2. the six league head-to-heads,
 //   3. this gameweek's Grassroots Cup ties,
@@ -120,7 +120,7 @@ function matchCard({ key, homeId, awayId, home, away, winPct, cup = null }, mana
   const anyPlayed = Boolean(home?.started || away?.started);
   const allDone = home && away && !home.toPlay && !home.playing && !away.toPlay && !away.playing;
   const cupNote = cup && anyPlayed
-    ? `<p class="lv-cupnote">${cup.leaderId ? `${allDone ? "Through" : "Going through"}: <b>${escapeHtml(clean(managers.name(cup.leaderId)))}</b>` : ""}${cup.by === "bench" ? " · level, ahead on bench points" : cup.by === "seed" ? " · level on points and bench, higher seed goes through" : ""}${cup.twoLegs ? " · aggregate over both gameweeks" : ""}</p>`
+    ? `<p class="lv-cupnote">${cup.leaderId ? `${allDone ? "Through" : "Going through"}: <b>${escapeHtml(clean(managers.name(cup.leaderId)))}</b>` : ""}${cup.level ? (allDone ? "<b>Level</b> · it goes to a replay next gameweek" : "Level right now · if it ends level, it's replayed next gameweek") : ""}${cup.replayOf ? ` · replay of the GW${cup.replayOf.gw} tie (${cup.replayOf.score})` : cup.twoLegs ? " · aggregate over both gameweeks" : ""}</p>`
     : "";
   return `
     <article class="lv-match${cup ? " is-cup" : ""}${isMine ? " is-you" : ""}${isOpen ? " is-open" : ""}" data-key="${key}">
@@ -158,20 +158,30 @@ function tableHtml(rows, managers, myId) {
 }
 
 // Cup ties being played in this gameweek, or (before kick-off) the next ones.
+// A tie that finished level is replayed the following gameweek, so a replay
+// week shows those ties too (a fresh one-gameweek match, no earlier legs).
 function cupSection(data, live, managers, myId, preview) {
   const rounds = data.cup?.rounds ?? {};
   const entry = Object.entries(rounds).find(([, r]) => (r.gws ?? []).includes(live.gw) && r.draw?.length);
-  if (!entry) {
-    const next = Object.entries(rounds).find(([, r]) => (r.gws ?? [])[0] > live.gw);
-    return next ? `<p class="lv-quiet">No cup games this gameweek. ${ROUND_NAME[next[0]]} starts in GW${next[1].gws[0]}.</p>` : "";
+  const replays = Object.entries(rounds).flatMap(([key, r]) => (r.results ?? []).filter((m) => m.replayGw === live.gw).map((m) => ({ key, round: r, match: m })));
+  const card = (t) => matchCard({ key: `cup-${t.matchId}`, homeId: t.managerAId, awayId: t.managerBId, home: t.a, away: t.b, cup: t }, managers, myId, preview);
+  let html = "";
+  if (entry) {
+    const [key, round] = entry;
+    const ties = round.draw.filter((t) => t.managerAId && t.managerBId).map((t) => cupTieLive(t, live.managers, { legs: round.legs ?? {}, liveGw: live.gw }));
+    const legNote = round.gws.length > 1 ? ` · leg ${round.gws.indexOf(live.gw) + 1} of ${round.gws.length}` : "";
+    html += `<p class="lv-sub">${ROUND_NAME[key] ?? key} · GW${round.gws.join(" + GW")}${legNote}</p><div class="lv-grid">${ties.map(card).join("")}</div>`;
   }
-  const [key, round] = entry;
-  const seeds = new Map((data.cup.seeds ?? []).map((s) => [s.managerId, s.seed]));
-  const ties = round.draw.filter((t) => t.managerAId && t.managerBId).map((t) => cupTieLive(t, live.managers, { legs: round.legs ?? {}, liveGw: live.gw, seeds }));
-  const legNote = round.gws.length > 1 ? ` · leg ${round.gws.indexOf(live.gw) + 1} of ${round.gws.length}` : "";
-  return `
-    <p class="lv-sub">${ROUND_NAME[key] ?? key} · GW${round.gws.join(" + GW")}${legNote}</p>
-    <div class="lv-grid">${ties.map((t) => matchCard({ key: `cup-${t.matchId}`, homeId: t.managerAId, awayId: t.managerBId, home: t.a, away: t.b, cup: t }, managers, myId, preview)).join("")}</div>`;
+  if (replays.length) {
+    const ties = replays.map(({ round, match }) => ({
+      ...cupTieLive(match, live.managers, { liveGw: live.gw }),
+      replayOf: { gw: (match.replays?.at(-1)?.gw ?? Math.max(...round.gws)), score: `${match.replays?.at(-1)?.scoreA ?? match.scoreA}-${match.replays?.at(-1)?.scoreB ?? match.scoreB}` },
+    }));
+    html += `<p class="lv-sub">Replay${ties.length > 1 ? "s" : ""} · ${ROUND_NAME[replays[0].key] ?? replays[0].key} · GW${live.gw}</p><div class="lv-grid">${ties.map(card).join("")}</div>`;
+  }
+  if (html) return html;
+  const next = Object.entries(rounds).find(([, r]) => (r.gws ?? [])[0] > live.gw);
+  return next ? `<p class="lv-quiet">No cup games this gameweek. ${ROUND_NAME[next[0]]} starts in GW${next[1].gws[0]}.</p>` : "";
 }
 
 // ---------------------------------------------------------------------------

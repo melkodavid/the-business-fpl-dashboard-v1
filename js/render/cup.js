@@ -35,6 +35,21 @@ function scoreHtml(value) {
   return `<span class="cup-score" ${Number.isFinite(value) ? `data-v="${value}"` : ""}>${Number.isFinite(value) ? 0 : value}</span>`;
 }
 
+// A level tie is replayed the following gameweek (until someone wins): say so
+// under the match, or how the replay went once it has been played.
+function replayNote(match, managers) {
+  const last = match.replays?.at(-1);
+  if (match.replayGw) {
+    const level = last ? `${last.scoreA}-${last.scoreB}` : `${match.scoreA}-${match.scoreB}`;
+    return `<p class="cup-replay-note">Level ${level} · replay in GW${match.replayGw}</p>`;
+  }
+  if (last && match.winnerId) {
+    const w = match.winnerId === match.managerAId ? [last.scoreA, last.scoreB] : [last.scoreB, last.scoreA];
+    return `<p class="cup-replay-note">${clubName(managers, match.winnerId)} won the GW${last.gw} replay ${w[0]}-${w[1]}</p>`;
+  }
+  return "";
+}
+
 function matchHtml(match, roundKey, isLive, managers, idx) {
   const aWin = match.winnerId === match.managerAId;
   const bWin = match.winnerId === match.managerBId;
@@ -47,6 +62,7 @@ function matchHtml(match, roundKey, isLive, managers, idx) {
       <div class="cup-bracket-side${bWin ? " winner" : ""}" data-mgr="${match.managerBId}">
         ${nameHtml(match.managerBId, managers)}${scoreHtml(match.scoreB)}
       </div>
+      ${replayNote(match, managers)}
     </div>`;
 }
 
@@ -98,7 +114,7 @@ function roundColumnHtml(key, round, managers, colIndex, cup) {
   const gwLabel = round.gws.length > 1 ? `GW${round.gws[0]}–${round.gws[1]}` : `GW${round.gws[0]}`;
   const championSlot =
     key === "round4"
-      ? `<div class="cup-champion-slot"><span class="cup-label">Champion</span><span class="cup-champ-name${round.results ? " cup-champ-won" : " tbd"}">${round.results ? clubName(managers, round.results[0].winnerId) : "Not yet decided"}</span></div>`
+      ? `<div class="cup-champion-slot"><span class="cup-label">Champion</span><span class="cup-champ-name${round.results?.[0]?.winnerId ? " cup-champ-won" : " tbd"}">${round.results?.[0]?.winnerId ? clubName(managers, round.results[0].winnerId) : "Not yet decided"}</span></div>`
       : "";
 
   return `
@@ -117,6 +133,7 @@ function computeEliminations(cup) {
     const round = cup.rounds[key];
     if (!round.results) continue;
     for (const m of round.results) {
+      if (!m.winnerId) continue; // still to be replayed
       const loserId = m.winnerId === m.managerAId ? m.managerBId : m.managerAId;
       out.push({ managerId: loserId, roundLabel: ROUND_LABELS[key] });
     }
@@ -177,6 +194,7 @@ function newsItems(cup, managers) {
     const round = cup.rounds[key];
     if (round.results) {
       for (const m of round.results) {
+        if (!m.winnerId) { items.push(`<b>${ROUND_LABELS[key]}</b> ${clubName(managers, m.managerAId)} and ${clubName(managers, m.managerBId)} level ${m.scoreA}-${m.scoreB}: replay in GW${m.replayGw}`); continue; }
         const w = m.winnerId === m.managerAId ? [m.managerAId, m.scoreA, m.scoreB] : [m.managerBId, m.scoreB, m.scoreA];
         const l = m.winnerId === m.managerAId ? m.managerBId : m.managerAId;
         items.push(`<b>${ROUND_LABELS[key]}</b> ${clubName(managers, w[0])} beat ${clubName(managers, l)} ${w[1]}–${w[2]}`);
