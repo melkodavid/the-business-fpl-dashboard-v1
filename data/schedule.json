@@ -63,9 +63,9 @@
         "drawPct": 0,
         "awayWinPct": 100,
         "homeExpected": 30,
-        "awayExpected": 43,
+        "awayExpected": 44,
         "homeSoFar": 30,
-        "awaySoFar": 43
+        "awaySoFar": 44
       }
     },
     {
@@ -106,9 +106,9 @@
         "homeWinPct": 100,
         "drawPct": 0,
         "awayWinPct": 0,
-        "homeExpected": 52,
+        "homeExpected": 50,
         "awayExpected": 40,
-        "homeSoFar": 52,
+        "homeSoFar": 50,
         "awaySoFar": 40
       }
     },
@@ -457,7 +457,7 @@
     },
     "1471": {
       "formation": "4-5-1",
-      "expected": 45.8,
+      "expected": 45.3,
       "captainId": 504,
       "locked": true,
       "xi": [
@@ -540,7 +540,7 @@
           "type": 3,
           "team": "Everton",
           "teamId": 9,
-          "ep": 3.5
+          "ep": 3
         },
         {
           "id": 94,
@@ -1037,7 +1037,7 @@
     },
     "1947": {
       "formation": "3-5-2",
-      "expected": 43.7,
+      "expected": 43.9,
       "captainId": 555,
       "locked": true,
       "xi": [
@@ -1093,7 +1093,7 @@
           "type": 3,
           "team": "Everton",
           "teamId": 9,
-          "ep": 5
+          "ep": 5.2
         },
         {
           "id": 67,
@@ -1303,7 +1303,7 @@
           "type": 2,
           "team": "Everton",
           "teamId": 9,
-          "ep": 2.2
+          "ep": 1.8
         },
         {
           "id": 41,
@@ -1593,7 +1593,7 @@
           "type": 2,
           "team": "Everton",
           "teamId": 9,
-          "ep": 1.9
+          "ep": 2.4
         },
         {
           "id": 12,
@@ -1874,7 +1874,7 @@
           "type": 1,
           "team": "Everton",
           "teamId": 9,
-          "ep": 3
+          "ep": 2.8
         },
         {
           "id": 148,

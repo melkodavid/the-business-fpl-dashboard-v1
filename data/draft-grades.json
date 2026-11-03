@@ -8,7 +8,7 @@
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 434
+      "draftTeamPoints": 432
     },
     {
       "managerId": 1377,
@@ -23,17 +23,17 @@
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "draftTeamPoints": 397
+      "draftTeamPoints": 395
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 387
+      "draftTeamPoints": 388
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 375
+      "draftTeamPoints": 374
     },
     {
       "managerId": 1501,
@@ -48,7 +48,7 @@
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
-      "draftTeamPoints": 311
+      "draftTeamPoints": 314
     },
     {
       "managerId": 10210,
@@ -605,7 +605,7 @@
     {
       "pickNumber": 55,
       "round": 5,
-      "seasonPoints": 40,
+      "seasonPoints": 41,
       "managerId": 1947,
       "elementId": 236,
       "playerName": "Dewsbury-Hall",
@@ -675,7 +675,7 @@
     {
       "pickNumber": 62,
       "round": 6,
-      "seasonPoints": 37,
+      "seasonPoints": 36,
       "managerId": 99786,
       "elementId": 226,
       "playerName": "Pickford",
@@ -1545,7 +1545,7 @@
     {
       "pickNumber": 149,
       "round": 13,
-      "seasonPoints": 37,
+      "seasonPoints": 40,
       "managerId": 26227,
       "elementId": 230,
       "playerName": "Branthwaite",
@@ -1645,7 +1645,7 @@
     {
       "pickNumber": 159,
       "round": 14,
-      "seasonPoints": 25,
+      "seasonPoints": 23,
       "managerId": 1471,
       "elementId": 239,
       "playerName": "Garner",
@@ -1765,7 +1765,7 @@
     {
       "pickNumber": 171,
       "round": 15,
-      "seasonPoints": 36,
+      "seasonPoints": 34,
       "managerId": 10375,
       "elementId": 233,
       "playerName": "Mykolenko",
