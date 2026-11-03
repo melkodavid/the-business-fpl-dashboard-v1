@@ -111,90 +111,104 @@
       "26227": 0,
       "29975": 10,
       "99786": 10
+    },
+    "9": {
+      "1377": 2,
+      "1425": 4,
+      "1471": 20,
+      "1501": 9,
+      "1530": 3,
+      "1857": 8,
+      "1947": 7,
+      "10210": 1,
+      "10375": 4,
+      "26227": 9,
+      "29975": 4,
+      "99786": 7
     }
   },
   "perManager": [
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "benchPointsWasted": 52,
+      "benchPointsWasted": 54,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 5
+      "eligibleLossesOrDraws": 6
     },
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "benchPointsWasted": 48,
+      "benchPointsWasted": 52,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 3
+      "eligibleLossesOrDraws": 4
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "benchPointsWasted": 17,
+      "benchPointsWasted": 37,
       "couldHaveWonCount": 0,
       "eligibleLossesOrDraws": 2
     },
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "benchPointsWasted": 30,
+      "benchPointsWasted": 39,
       "couldHaveWonCount": 1,
-      "eligibleLossesOrDraws": 4
+      "eligibleLossesOrDraws": 5
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "benchPointsWasted": 9,
+      "benchPointsWasted": 12,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 7
+      "eligibleLossesOrDraws": 8
     },
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "benchPointsWasted": 72,
+      "benchPointsWasted": 80,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 2
+      "eligibleLossesOrDraws": 3
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "benchPointsWasted": 63,
+      "benchPointsWasted": 70,
       "couldHaveWonCount": 1,
       "eligibleLossesOrDraws": 3
     },
     {
       "managerId": 10210,
       "managerName": "Syria FC**",
-      "benchPointsWasted": 3,
+      "benchPointsWasted": 4,
       "couldHaveWonCount": 0,
       "eligibleLossesOrDraws": 5
     },
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "benchPointsWasted": 78,
+      "benchPointsWasted": 82,
       "couldHaveWonCount": 0,
       "eligibleLossesOrDraws": 3
     },
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
-      "benchPointsWasted": 20,
+      "benchPointsWasted": 29,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 4
+      "eligibleLossesOrDraws": 5
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "benchPointsWasted": 32,
+      "benchPointsWasted": 36,
       "couldHaveWonCount": 1,
       "eligibleLossesOrDraws": 6
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "benchPointsWasted": 88,
+      "benchPointsWasted": 95,
       "couldHaveWonCount": 1,
       "eligibleLossesOrDraws": 4
     }
@@ -383,6 +397,70 @@
       "opponentId": 1425,
       "ownScore": 43,
       "opponentScore": 37,
+      "result": "W",
+      "couldHaveWon": false
+    },
+    {
+      "gw": 9,
+      "managerId": 1471,
+      "benchPoints": 20,
+      "players": [
+        {
+          "elementId": 492,
+          "playerName": "Awoniyi",
+          "position": "FWD",
+          "points": 9,
+          "scoring": [
+            {
+              "text": "goal",
+              "points": 4
+            },
+            {
+              "text": "3 bonus",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "elementId": 557,
+          "playerName": "Penders",
+          "position": "GKP",
+          "points": 6,
+          "scoring": [
+            {
+              "text": "clean sheet",
+              "points": 4
+            },
+            {
+              "text": "3 saves",
+              "points": 1
+            },
+            {
+              "text": "yellow card",
+              "points": -1
+            }
+          ]
+        },
+        {
+          "elementId": 5,
+          "playerName": "J.Timber",
+          "position": "DEF",
+          "points": 5,
+          "scoring": [
+            {
+              "text": "clean sheet",
+              "points": 4
+            },
+            {
+              "text": "yellow card",
+              "points": -1
+            }
+          ]
+        }
+      ],
+      "opponentId": 26227,
+      "ownScore": 50,
+      "opponentScore": 40,
       "result": "W",
       "couldHaveWon": false
     },
@@ -732,52 +810,6 @@
       "ownScore": 68,
       "opponentScore": 55,
       "result": "W",
-      "couldHaveWon": false
-    },
-    {
-      "gw": 2,
-      "managerId": 99786,
-      "benchPoints": 13,
-      "players": [
-        {
-          "elementId": 571,
-          "playerName": "Tzolakis",
-          "position": "GKP",
-          "points": 10,
-          "scoring": [
-            {
-              "text": "clean sheet",
-              "points": 4
-            },
-            {
-              "text": "3 bonus",
-              "points": 3
-            },
-            {
-              "text": "3 saves",
-              "points": 1
-            }
-          ]
-        },
-        {
-          "elementId": 222,
-          "playerName": "Strand Larsen",
-          "position": "FWD",
-          "points": 2,
-          "scoring": []
-        },
-        {
-          "elementId": 248,
-          "playerName": "Beto",
-          "position": "FWD",
-          "points": 1,
-          "scoring": []
-        }
-      ],
-      "opponentId": 1471,
-      "ownScore": 32,
-      "opponentScore": 49,
-      "result": "L",
       "couldHaveWon": false
     }
   ]

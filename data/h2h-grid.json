@@ -145,6 +145,24 @@
       }
     },
     {
+      "managerId": 1377,
+      "opponentId": 99786,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0,
+      "pointsFor": 39,
+      "pointsAgainst": 44,
+      "streak": {
+        "type": "L",
+        "count": 1
+      },
+      "lastMeeting": {
+        "gw": 9,
+        "pointsFor": 39,
+        "pointsAgainst": 44
+      }
+    },
+    {
       "managerId": 1425,
       "opponentId": 1377,
       "wins": 1,
@@ -289,6 +307,24 @@
       }
     },
     {
+      "managerId": 1425,
+      "opponentId": 29975,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0,
+      "pointsFor": 29,
+      "pointsAgainst": 41,
+      "streak": {
+        "type": "L",
+        "count": 1
+      },
+      "lastMeeting": {
+        "gw": 9,
+        "pointsFor": 29,
+        "pointsAgainst": 41
+      }
+    },
+    {
       "managerId": 1471,
       "opponentId": 1377,
       "wins": 0,
@@ -411,6 +447,24 @@
       "lastMeeting": {
         "gw": 7,
         "pointsFor": 43,
+        "pointsAgainst": 40
+      }
+    },
+    {
+      "managerId": 1471,
+      "opponentId": 26227,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0,
+      "pointsFor": 50,
+      "pointsAgainst": 40,
+      "streak": {
+        "type": "W",
+        "count": 1
+      },
+      "lastMeeting": {
+        "gw": 9,
+        "pointsFor": 50,
         "pointsAgainst": 40
       }
     },
@@ -542,6 +596,24 @@
     },
     {
       "managerId": 1501,
+      "opponentId": 10375,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0,
+      "pointsFor": 39,
+      "pointsAgainst": 58,
+      "streak": {
+        "type": "L",
+        "count": 1
+      },
+      "lastMeeting": {
+        "gw": 9,
+        "pointsFor": 39,
+        "pointsAgainst": 58
+      }
+    },
+    {
+      "managerId": 1501,
       "opponentId": 29975,
       "wins": 1,
       "losses": 0,
@@ -664,6 +736,24 @@
         "gw": 7,
         "pointsFor": 27,
         "pointsAgainst": 44
+      }
+    },
+    {
+      "managerId": 1530,
+      "opponentId": 10210,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0,
+      "pointsFor": 31,
+      "pointsAgainst": 38,
+      "streak": {
+        "type": "L",
+        "count": 1
+      },
+      "lastMeeting": {
+        "gw": 9,
+        "pointsFor": 31,
+        "pointsAgainst": 38
       }
     },
     {
@@ -794,6 +884,24 @@
     },
     {
       "managerId": 1857,
+      "opponentId": 1947,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0,
+      "pointsFor": 30,
+      "pointsAgainst": 44,
+      "streak": {
+        "type": "L",
+        "count": 1
+      },
+      "lastMeeting": {
+        "gw": 9,
+        "pointsFor": 30,
+        "pointsAgainst": 44
+      }
+    },
+    {
+      "managerId": 1857,
       "opponentId": 10375,
       "wins": 1,
       "losses": 0,
@@ -916,6 +1024,24 @@
         "gw": 7,
         "pointsFor": 35,
         "pointsAgainst": 34
+      }
+    },
+    {
+      "managerId": 1947,
+      "opponentId": 1857,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0,
+      "pointsFor": 44,
+      "pointsAgainst": 30,
+      "streak": {
+        "type": "W",
+        "count": 1
+      },
+      "lastMeeting": {
+        "gw": 9,
+        "pointsFor": 44,
+        "pointsAgainst": 30
       }
     },
     {
@@ -1064,6 +1190,24 @@
     },
     {
       "managerId": 10210,
+      "opponentId": 1530,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0,
+      "pointsFor": 38,
+      "pointsAgainst": 31,
+      "streak": {
+        "type": "W",
+        "count": 1
+      },
+      "lastMeeting": {
+        "gw": 9,
+        "pointsFor": 38,
+        "pointsAgainst": 31
+      }
+    },
+    {
+      "managerId": 10210,
       "opponentId": 1947,
       "wins": 1,
       "losses": 0,
@@ -1190,6 +1334,24 @@
     },
     {
       "managerId": 10375,
+      "opponentId": 1501,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0,
+      "pointsFor": 58,
+      "pointsAgainst": 39,
+      "streak": {
+        "type": "W",
+        "count": 1
+      },
+      "lastMeeting": {
+        "gw": 9,
+        "pointsFor": 58,
+        "pointsAgainst": 39
+      }
+    },
+    {
+      "managerId": 10375,
       "opponentId": 1857,
       "wins": 0,
       "losses": 1,
@@ -1312,6 +1474,24 @@
         "gw": 5,
         "pointsFor": 48,
         "pointsAgainst": 34
+      }
+    },
+    {
+      "managerId": 26227,
+      "opponentId": 1471,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0,
+      "pointsFor": 40,
+      "pointsAgainst": 50,
+      "streak": {
+        "type": "L",
+        "count": 1
+      },
+      "lastMeeting": {
+        "gw": 9,
+        "pointsFor": 40,
+        "pointsAgainst": 50
       }
     },
     {
@@ -1460,6 +1640,24 @@
     },
     {
       "managerId": 29975,
+      "opponentId": 1425,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0,
+      "pointsFor": 41,
+      "pointsAgainst": 29,
+      "streak": {
+        "type": "W",
+        "count": 1
+      },
+      "lastMeeting": {
+        "gw": 9,
+        "pointsFor": 41,
+        "pointsAgainst": 29
+      }
+    },
+    {
+      "managerId": 29975,
       "opponentId": 1501,
       "wins": 0,
       "losses": 1,
@@ -1582,6 +1780,24 @@
         "gw": 8,
         "pointsFor": 30,
         "pointsAgainst": 28
+      }
+    },
+    {
+      "managerId": 99786,
+      "opponentId": 1377,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0,
+      "pointsFor": 44,
+      "pointsAgainst": 39,
+      "streak": {
+        "type": "W",
+        "count": 1
+      },
+      "lastMeeting": {
+        "gw": 9,
+        "pointsFor": 44,
+        "pointsAgainst": 39
       }
     },
     {

@@ -1,0 +1,79 @@
+{
+  "gw": 9,
+  "headline": {
+    "type": "streak",
+    "personKeys": [
+      "marshall"
+    ],
+    "text": "Marshall Curtin-Dudzic makes it 5 on the bounce -- won every one.",
+    "facts": {
+      "managerId": 1471,
+      "streakType": "W",
+      "length": 5
+    },
+    "gw": 9
+  },
+  "secondaries": [
+    {
+      "type": "streak",
+      "personKeys": [
+        "muk"
+      ],
+      "text": "The losing streak reaches 8 for Muk.",
+      "facts": {
+        "managerId": 1530,
+        "streakType": "L",
+        "length": 8
+      },
+      "gw": 9
+    },
+    {
+      "type": "table-exit-top4",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "Noah Palladino drops out of the top 4.",
+      "facts": {
+        "managerId": 1425,
+        "rank": 5
+      },
+      "gw": 9
+    },
+    {
+      "type": "table-enter-top4",
+      "personKeys": [
+        "anthony"
+      ],
+      "text": "Anthony Palladino joins the top 4 at 4.",
+      "facts": {
+        "managerId": 10375,
+        "rank": 4
+      },
+      "gw": 9
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "ostap"
+      ],
+      "text": "Clean sweep for the 2000s across 1 cross-generation matchups.",
+      "facts": {
+        "generation": "2000s",
+        "count": 1
+      },
+      "gw": 9
+    },
+    {
+      "type": "generation-sweep",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "Generation war, round won: the ancient take all 1 cross-generation fixtures.",
+      "facts": {
+        "generation": "ancient",
+        "count": 1
+      },
+      "gw": 9
+    }
+  ]
+}

@@ -48,6 +48,13 @@
       "elementId": 173,
       "playerName": "Thomas",
       "fixtureId": 74
+    },
+    {
+      "gw": 9,
+      "managerId": 26227,
+      "elementId": 211,
+      "playerName": "Yeremy",
+      "fixtureId": 90
     }
   ],
   "seasonTotals": [
@@ -89,7 +96,7 @@
     },
     {
       "managerId": 26227,
-      "count": 0
+      "count": 1
     },
     {
       "managerId": 29975,

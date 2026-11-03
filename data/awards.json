@@ -277,6 +277,42 @@
           "fixtureId": 74
         }
       ]
+    },
+    {
+      "gw": 9,
+      "topScore": {
+        "managerIds": [
+          10375
+        ],
+        "score": 58
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          1425
+        ],
+        "score": 29
+      },
+      "blowout": {
+        "title": "NEEN FC took Set Piece Fc behind the bushes",
+        "winnerId": 10375,
+        "loserId": 1501,
+        "margin": 19
+      },
+      "worstLineup": {
+        "managerIds": [
+          1471
+        ],
+        "benchPoints": 20
+      },
+      "fiftyNineClubInstances": [
+        {
+          "gw": 9,
+          "managerId": 26227,
+          "elementId": 211,
+          "playerName": "Yeremy",
+          "fixtureId": 90
+        }
+      ]
     }
   ],
   "hallOfFame": {
@@ -300,6 +336,10 @@
       {
         "managerId": 1377,
         "count": 1
+      },
+      {
+        "managerId": 10375,
+        "count": 1
       }
     ],
     "markOfTheWeek": [
@@ -322,6 +362,10 @@
       {
         "managerId": 26227,
         "count": 1
+      },
+      {
+        "managerId": 1425,
+        "count": 1
       }
     ],
     "blowout": [
@@ -330,11 +374,11 @@
         "count": 2
       },
       {
-        "managerId": 1530,
-        "count": 1
+        "managerId": 10375,
+        "count": 2
       },
       {
-        "managerId": 10375,
+        "managerId": 1530,
         "count": 1
       },
       {
@@ -369,6 +413,10 @@
       },
       {
         "managerId": 1947,
+        "count": 1
+      },
+      {
+        "managerId": 1471,
         "count": 1
       }
     ]

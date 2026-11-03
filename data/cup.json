@@ -111,54 +111,98 @@
           "method": "manual"
         }
       ],
-      "results": null,
-      "legs": {}
+      "results": [
+        {
+          "matchId": "r1-1",
+          "managerAId": 29975,
+          "managerBId": 99786,
+          "method": "manual",
+          "scoreA": 41,
+          "scoreB": 44,
+          "winnerId": 99786,
+          "replays": []
+        },
+        {
+          "matchId": "r1-2",
+          "managerAId": 1501,
+          "managerBId": 1425,
+          "method": "manual",
+          "scoreA": 39,
+          "scoreB": 29,
+          "winnerId": 1501,
+          "replays": []
+        },
+        {
+          "matchId": "r1-3",
+          "managerAId": 1947,
+          "managerBId": 1857,
+          "method": "manual",
+          "scoreA": 44,
+          "scoreB": 30,
+          "winnerId": 1947,
+          "replays": []
+        },
+        {
+          "matchId": "r1-4",
+          "managerAId": 10210,
+          "managerBId": 26227,
+          "method": "manual",
+          "scoreA": 38,
+          "scoreB": 40,
+          "winnerId": 26227,
+          "replays": []
+        }
+      ],
+      "legs": {
+        "9": {
+          "1377": 39,
+          "1425": 29,
+          "1471": 50,
+          "1501": 39,
+          "1530": 31,
+          "1857": 30,
+          "1947": 44,
+          "10210": 38,
+          "10375": 58,
+          "26227": 40,
+          "29975": 41,
+          "99786": 44
+        }
+      }
     },
     "round2": {
       "gws": [
         18,
         19
       ],
-      "draw": null,
-      "results": null,
-      "planned": [
+      "draw": [
         {
           "matchId": "r2-1",
-          "a": {
-            "managerId": 10375
-          },
-          "b": {
-            "winnerOf": "r1-1"
-          }
+          "managerAId": 10375,
+          "managerBId": 99786,
+          "method": "manual"
         },
         {
           "matchId": "r2-2",
-          "a": {
-            "managerId": 1377
-          },
-          "b": {
-            "winnerOf": "r1-2"
-          }
+          "managerAId": 1377,
+          "managerBId": 1501,
+          "method": "manual"
         },
         {
           "matchId": "r2-3",
-          "a": {
-            "managerId": 1471
-          },
-          "b": {
-            "winnerOf": "r1-3"
-          }
+          "managerAId": 1471,
+          "managerBId": 1947,
+          "method": "manual"
         },
         {
           "matchId": "r2-4",
-          "a": {
-            "managerId": 1530
-          },
-          "b": {
-            "winnerOf": "r1-4"
-          }
+          "managerAId": 1530,
+          "managerBId": 26227,
+          "method": "manual"
         }
       ],
+      "results": null,
+      "planned": null,
       "legs": {}
     },
     "round3": {

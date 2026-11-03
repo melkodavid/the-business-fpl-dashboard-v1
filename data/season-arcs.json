@@ -14,7 +14,7 @@
         10375
       ]
     },
-    "gw": 8
+    "gw": 9
   },
   "lifeAfterMark": {
     "type": "lu-post-mark-tracker",
@@ -26,19 +26,19 @@
       "rank": 10,
       "total": 9
     },
-    "gw": 8
+    "gw": 9
   },
   "generationWar": {
     "matrix": {
       "01s|97s": {
-        "wins": 3,
+        "wins": 4,
         "draws": 0,
         "losses": 7
       },
       "97s|01s": {
         "wins": 7,
         "draws": 0,
-        "losses": 3
+        "losses": 4
       },
       "2000s|ancient": {
         "wins": 1,
@@ -61,24 +61,24 @@
         "losses": 3
       },
       "ancient|01s": {
-        "wins": 0,
+        "wins": 1,
         "draws": 0,
         "losses": 2
       },
       "01s|ancient": {
         "wins": 2,
         "draws": 0,
-        "losses": 0
+        "losses": 1
       },
       "2000s|97s": {
-        "wins": 3,
+        "wins": 4,
         "draws": 0,
         "losses": 1
       },
       "97s|2000s": {
         "wins": 1,
         "draws": 0,
-        "losses": 3
+        "losses": 4
       },
       "ancient|97s": {
         "wins": 2,
@@ -92,9 +92,9 @@
       }
     },
     "oneOhOnesVsRest": {
-      "wins": 8,
+      "wins": 9,
       "draws": 0,
-      "losses": 10
+      "losses": 11
     }
   }
 }

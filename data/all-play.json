@@ -495,9 +495,92 @@
         "score": 43,
         "allPlayWinPct": 0.6818181818181818
       }
+    ],
+    "9": [
+      {
+        "managerId": 1377,
+        "score": 39,
+        "allPlayWinPct": 0.4090909090909091
+      },
+      {
+        "managerId": 1425,
+        "score": 29,
+        "allPlayWinPct": 0
+      },
+      {
+        "managerId": 1471,
+        "score": 50,
+        "allPlayWinPct": 0.9090909090909091
+      },
+      {
+        "managerId": 1501,
+        "score": 39,
+        "allPlayWinPct": 0.4090909090909091
+      },
+      {
+        "managerId": 1530,
+        "score": 31,
+        "allPlayWinPct": 0.18181818181818182
+      },
+      {
+        "managerId": 1857,
+        "score": 30,
+        "allPlayWinPct": 0.09090909090909091
+      },
+      {
+        "managerId": 1947,
+        "score": 44,
+        "allPlayWinPct": 0.7727272727272727
+      },
+      {
+        "managerId": 10210,
+        "score": 38,
+        "allPlayWinPct": 0.2727272727272727
+      },
+      {
+        "managerId": 10375,
+        "score": 58,
+        "allPlayWinPct": 1
+      },
+      {
+        "managerId": 26227,
+        "score": 40,
+        "allPlayWinPct": 0.5454545454545454
+      },
+      {
+        "managerId": 29975,
+        "score": 41,
+        "allPlayWinPct": 0.6363636363636364
+      },
+      {
+        "managerId": 99786,
+        "score": 44,
+        "allPlayWinPct": 0.7727272727272727
+      }
     ]
   },
   "standings": [
+    {
+      "managerId": 1471,
+      "managerName": "🥶CPR🥶",
+      "expectedWins": 5.909090909090909,
+      "actualWins": 7,
+      "luckScore": 1.0909090909090908
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "expectedWins": 5.772727272727273,
+      "actualWins": 4,
+      "luckScore": -1.7727272727272734
+    },
+    {
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
+      "expectedWins": 5.7727272727272725,
+      "actualWins": 5,
+      "luckScore": -0.7727272727272725
+    },
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
@@ -506,81 +589,60 @@
       "luckScore": -0.45454545454545414
     },
     {
-      "managerId": 26227,
-      "managerName": "Mourinho’s Ego FT",
-      "expectedWins": 5.2272727272727275,
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "expectedWins": 5.227272727272727,
       "actualWins": 4,
-      "luckScore": -1.2272727272727275
+      "luckScore": -1.2272727272727266
     },
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "expectedWins": 5.090909090909091,
+      "expectedWins": 5.181818181818182,
       "actualWins": 6,
-      "luckScore": 0.9090909090909092
-    },
-    {
-      "managerId": 1471,
-      "managerName": "🥶CPR🥶",
-      "expectedWins": 5,
-      "actualWins": 6,
-      "luckScore": 1
-    },
-    {
-      "managerId": 99786,
-      "managerName": "Patso Ball Fc",
-      "expectedWins": 5,
-      "actualWins": 4,
-      "luckScore": -1
-    },
-    {
-      "managerId": 1501,
-      "managerName": "Set Piece Fc",
-      "expectedWins": 4.8181818181818175,
-      "actualWins": 4,
-      "luckScore": -0.8181818181818175
+      "luckScore": 0.8181818181818183
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "expectedWins": 3.9545454545454546,
-      "actualWins": 5,
-      "luckScore": 1.0454545454545454
-    },
-    {
-      "managerId": 10210,
-      "managerName": "Syria FC**",
-      "expectedWins": 3.3636363636363638,
-      "actualWins": 3,
-      "luckScore": -0.36363636363636376
+      "expectedWins": 4.7272727272727275,
+      "actualWins": 6,
+      "luckScore": 1.2727272727272725
     },
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "expectedWins": 2.954545454545455,
-      "actualWins": 5,
+      "expectedWins": 3.954545454545455,
+      "actualWins": 6,
       "luckScore": 2.045454545454545
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "expectedWins": 3.6363636363636367,
+      "actualWins": 4,
+      "luckScore": 0.3636363636363633
     },
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "expectedWins": 2.8636363636363638,
+      "expectedWins": 3.272727272727273,
       "actualWins": 3,
-      "luckScore": 0.13636363636363624
+      "luckScore": -0.27272727272727293
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "expectedWins": 2.636363636363636,
-      "actualWins": 2,
-      "luckScore": -0.6363636363636358
+      "expectedWins": 3.272727272727272,
+      "actualWins": 3,
+      "luckScore": -0.27272727272727204
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "expectedWins": 1.6363636363636362,
+      "expectedWins": 1.8181818181818181,
       "actualWins": 1,
-      "luckScore": -0.6363636363636362
+      "luckScore": -0.8181818181818181
     }
   ]
 }
