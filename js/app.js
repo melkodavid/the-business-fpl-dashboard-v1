@@ -25,6 +25,7 @@ import { render as renderCup } from "./render/cup.js";
 import { render as renderPredictions } from "./render/predictions.js";
 import { render as renderScheduleSwap } from "./render/scheduleSwap.js";
 import { render as renderLive } from "./render/live.js";
+import { render as renderTickets } from "./render/tickets.js";
 
 const ROUTES = {
   landing: renderLanding,
@@ -50,6 +51,7 @@ const ROUTES = {
   predictions: renderPredictions,
   "schedule-swap": renderScheduleSwap,
   live: renderLive,
+  tickets: renderTickets,
 };
 const DEFAULT_ROUTE = "landing";
 

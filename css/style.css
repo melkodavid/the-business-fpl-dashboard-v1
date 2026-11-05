@@ -3168,3 +3168,86 @@ section[id^="lv-"] { scroll-margin-top: 8rem; }
 
 /* a level cup tie goes to a replay the following gameweek */
 .cup-replay-note { margin: 0; padding: 0.35rem 0.7rem 0.45rem; border-top: 1px dashed rgba(217,180,90,0.35); font: italic 600 0.82rem "Cormorant Garamond", Georgia, serif; color: var(--cup-gold-bright); }
+
+/* =========================================================================
+   Tickets -- the league's suggestion box (js/render/tickets.js). Same
+   midnight-purple-and-gold look as the Live page.
+   ========================================================================= */
+.tk { max-width: 1100px; margin: 0 auto; }
+.tk-hero { padding: 6px 2px 18px; max-width: 760px; }
+.tk-eyebrow { margin: 0 0 6px; font: 800 0.66rem "Archivo", sans-serif; letter-spacing: 0.34em; text-transform: uppercase; color: var(--gold); }
+.tk-h { margin: 0 0 10px; font: italic 600 clamp(1.7rem, 4.5vw, 2.5rem)/1.1 "Cormorant Garamond", Georgia, serif; color: var(--gold-bright); }
+.tk-lead { margin: 0; color: var(--text-muted); line-height: 1.6; font-size: 0.92rem; }
+.tk-lead b { color: var(--text); }
+.tk-layout { display: grid; grid-template-columns: minmax(280px, 380px) 1fr; gap: 22px; align-items: start; }
+
+/* the form */
+.tk-form { position: sticky; top: 80px; display: grid; gap: 14px; padding: 18px; border: 1px solid transparent; border-radius: 14px;
+  background: linear-gradient(160deg, #161926, #0f111a) padding-box, linear-gradient(135deg, rgba(155,92,224,0.65), rgba(255,255,255,0.05) 45%, rgba(201,166,96,0.5)) border-box; }
+.tk-form-title { margin: 0; font: 400 1.5rem/1 "Bebas Neue", sans-serif; letter-spacing: 0.05em; }
+.tk-field { display: grid; gap: 6px; margin: 0; padding: 0; border: 0; font: 700 0.74rem "Archivo", sans-serif; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.tk-field small { font-weight: 500; text-transform: none; letter-spacing: 0; }
+.tk-field legend { padding: 0; margin-bottom: 6px; }
+.tk-field select, .tk-field input, .tk-field textarea { width: 100%; box-sizing: border-box; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--edge-bright); background: #0b0c13; color: var(--text); font: 500 0.95rem "Archivo", sans-serif; letter-spacing: 0; text-transform: none; }
+.tk-field textarea { resize: vertical; min-height: 92px; line-height: 1.45; }
+.tk-field select:focus, .tk-field input:focus, .tk-field textarea:focus { outline: 2px solid var(--lime); outline-offset: 1px; border-color: transparent; }
+.tk-types { display: flex; flex-wrap: wrap; gap: 6px; }
+.tk-types legend { width: 100%; }
+.tk-chip { cursor: pointer; }
+.tk-chip input { position: absolute; opacity: 0; pointer-events: none; }
+.tk-chip span { display: inline-block; padding: 7px 11px; border-radius: 99px; border: 1px solid var(--edge-bright); font: 600 0.8rem "Archivo", sans-serif; letter-spacing: 0; text-transform: none; color: var(--text); }
+.tk-chip input:checked + span { background: var(--lime); border-color: var(--lime); color: var(--lime-contrast); }
+.tk-chip input:focus-visible + span { outline: 2px solid var(--lime); outline-offset: 2px; }
+.tk-submit { cursor: pointer; min-height: 46px; border: 0; border-radius: 10px; background: linear-gradient(180deg, var(--gold-bright), var(--gold)); color: #1b1405; font: 800 0.9rem "Archivo", sans-serif; letter-spacing: 0.1em; text-transform: uppercase; }
+.tk-submit:disabled { opacity: 0.6; cursor: wait; }
+.tk-msg { margin: 0; min-height: 1.2em; font-size: 0.85rem; color: var(--text-muted); }
+.tk-msg.ok { color: var(--lime); }
+.tk-msg.err { color: #ff7b7b; }
+.tk-off p { margin: 0; padding: 1rem; }
+
+/* the board */
+.tk-board-title { display: flex; align-items: center; gap: 12px; margin: 0 0 10px; font: italic 600 1.45rem "Cormorant Garamond", Georgia, serif; color: var(--gold-bright); }
+.tk-board-title::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(201,166,96,0.6), transparent); }
+.tk-filters { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 12px; }
+.tk-filter { cursor: pointer; padding: 6px 11px; border-radius: 99px; border: 1px solid rgba(155,92,224,0.55); background: none; color: var(--text); font: 700 0.74rem "Archivo", sans-serif; }
+.tk-filter i { font-style: normal; color: var(--text-muted); margin-left: 2px; }
+.tk-filter[aria-pressed="true"] { background: var(--accent); border-color: var(--accent-bright); }
+.tk-filter[aria-pressed="true"] i { color: var(--gold-bright); }
+.tk-sort { margin-left: auto; display: inline-flex; align-items: center; gap: 6px; font: 700 0.72rem "Archivo", sans-serif; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.tk-sort select { padding: 6px 8px; border-radius: 8px; border: 1px solid var(--edge-bright); background: #0b0c13; color: var(--text); font: 600 0.8rem "Archivo", sans-serif; }
+.tk-list { display: grid; gap: 10px; }
+.tk-empty { color: var(--text-muted); font-size: 0.9rem; padding: 12px 2px; }
+
+.tk-card { position: relative; padding: 14px 16px 12px; border: 1px solid transparent; border-radius: 12px;
+  background: linear-gradient(160deg, #161926, #0f111a) padding-box, linear-gradient(135deg, rgba(155,92,224,0.5), rgba(255,255,255,0.05) 45%, rgba(201,166,96,0.4)) border-box; }
+.tk-card.is-new { box-shadow: 0 0 0 1px var(--lime), 0 0 26px -8px var(--lime); }
+.tk-card-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin-bottom: 6px; }
+.tk-no { font: 400 1.05rem/1 "Bebas Neue", sans-serif; letter-spacing: 0.06em; color: var(--gold); }
+.tk-type { font-size: 0.76rem; color: var(--text-muted); }
+.tk-status { margin-left: auto; padding: 3px 9px; border-radius: 99px; font: 800 0.64rem "Archivo", sans-serif; letter-spacing: 0.1em; text-transform: uppercase; background: rgba(255,255,255,0.08); color: var(--text); }
+.tk-st-new .tk-status { background: rgba(82,174,255,0.16); color: #8cc8ff; }
+.tk-st-planned .tk-status { background: rgba(201,166,96,0.18); color: var(--gold-bright); }
+.tk-st-in-progress .tk-status { background: rgba(155,92,224,0.25); color: #d4b5ff; }
+.tk-st-done .tk-status { background: rgba(0,255,133,0.16); color: var(--lime); }
+.tk-st-won-t-do .tk-status { background: rgba(255,255,255,0.06); color: var(--text-muted); }
+.tk-st-done, .tk-st-won-t-do { opacity: 0.82; }
+.tk-title { margin: 0 0 4px; font: 700 1.02rem/1.35 "Archivo", sans-serif; }
+.tk-st-done .tk-title { text-decoration: line-through; text-decoration-color: rgba(0,255,133,0.5); }
+.tk-details { margin: 0 0 6px; color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; white-space: pre-line; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.tk-reply { margin: 8px 0 6px; padding: 8px 12px; border-left: 2px solid var(--gold); background: rgba(201,166,96,0.08); border-radius: 0 8px 8px 0; }
+.tk-reply b { display: block; font: 800 0.62rem "Archivo", sans-serif; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 2px; }
+.tk-reply p { margin: 0; font: italic 600 1rem/1.4 "Cormorant Garamond", Georgia, serif; color: var(--gold-bright); white-space: pre-line; }
+.tk-card-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 6px; }
+.tk-meta { font-size: 0.74rem; color: var(--text-muted); }
+.tk-vote { cursor: pointer; flex-shrink: 0; display: inline-flex; align-items: center; gap: 5px; min-height: 34px; padding: 5px 11px; border-radius: 99px; border: 1px solid var(--edge-bright); background: none; color: var(--text); font: 700 0.76rem "Archivo", sans-serif; }
+.tk-vote b { font: 400 1.05rem/1 "Bebas Neue", sans-serif; }
+.tk-vote:hover { border-color: var(--lime); }
+.tk-vote.is-mine { background: rgba(0,255,133,0.12); border-color: var(--lime); color: var(--lime); }
+
+@media (max-width: 760px) {
+  .tk-layout { grid-template-columns: 1fr; }
+  .tk-form { position: static; padding: 16px 14px; }
+  .tk-sort { margin-left: 0; }
+  .tk-card { padding: 12px 13px 10px; }
+  .tk-vote span { display: none; }
+}

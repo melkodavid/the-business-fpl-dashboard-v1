@@ -16,6 +16,9 @@
  *
  * Note: there are no passwords -- anyone can submit as any name before the
  * deadline. It's a friendly game, not a bank.
+ *
+ * It also runs the site's Live scores relay and the Tickets suggestion box
+ * (both further down).
  */
 
 var SHEET_NAME = "Predictions";
@@ -67,6 +70,8 @@ function doPost(e) {
   lock.waitLock(20000);
   try {
     var body = JSON.parse(e.postData.contents);
+    if (body.action === "ticket") return json_(newTicket_(body));
+    if (body.action === "vote") return json_(voteTicket_(body));
     var gw = Number(body.gw);
     var person = String(body.person || "");
     var picks = body.picks || {};
@@ -194,8 +199,106 @@ function live_() {
   });
 }
 
+// ---------------------------------------------------------------------------
+// Support tickets. Friends file ideas, bug reports and banter requests from the
+// site's Tickets page; each one becomes a row in the "Tickets" tab of this
+// sheet. The sheet is the commissioner's to-do list: change a ticket's
+// `status` (New, Planned, In progress, Done, Won't do) or type a `reply`
+// straight into the sheet, and the site shows it on the ticket.
+// ---------------------------------------------------------------------------
+var TICKET_SHEET = "Tickets";
+var TICKET_HEADER = ["id", "createdAt", "person", "type", "priority", "title", "details", "status", "reply", "votes", "updatedAt"];
+var TICKET_TYPES = ["feature", "bug", "design", "banter", "other"];
+var TICKET_PRIORITIES = ["nice", "want", "need"];
+var TICKET_STATUSES = ["New", "Planned", "In progress", "Done", "Won't do"];
+var NOTIFY_ON_NEW_TICKET = true; // email the sheet's owner when a ticket comes in
+
+function ticketSheet_() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sh = ss.getSheetByName(TICKET_SHEET) || ss.insertSheet(TICKET_SHEET);
+  if (sh.getLastRow() === 0) sh.appendRow(TICKET_HEADER);
+  return sh;
+}
+
+// Plain text in, plain text stored: control characters stripped (newlines kept
+// in details), and a leading = + - @ escaped so the sheet never reads it as a formula.
+function cleanText_(value, max, multiline) {
+  var text = String(value == null ? "" : value).replace(multiline ? /[\u0000-\u0009\u000b-\u001f]/g : /[\u0000-\u001f]/g, " ").trim().slice(0, max);
+  return /^[=+\-@]/.test(text) ? "'" + text : text;
+}
+
+function ticketStatus_(value) {
+  var v = String(value || "").trim().toLowerCase();
+  for (var i = 0; i < TICKET_STATUSES.length; i++) if (TICKET_STATUSES[i].toLowerCase() === v) return TICKET_STATUSES[i];
+  return "New";
+}
+
+function ticketFromRow_(r) {
+  return {
+    id: Number(r[0]), createdAt: r[1] ? new Date(r[1]).toISOString() : null, person: String(r[2]),
+    type: TICKET_TYPES.indexOf(r[3]) >= 0 ? r[3] : "other", priority: TICKET_PRIORITIES.indexOf(r[4]) >= 0 ? r[4] : "nice",
+    title: String(r[5]).replace(/^'/, ""), details: String(r[6]).replace(/^'/, ""), status: ticketStatus_(r[7]),
+    reply: String(r[8] || "").replace(/^'/, ""), votes: String(r[9] || "").split(",").filter(Boolean),
+    updatedAt: r[10] ? new Date(r[10]).toISOString() : null
+  };
+}
+
+function listTickets_() {
+  var rows = ticketSheet_().getDataRange().getValues().slice(1).filter(function (r) { return Number(r[0]) > 0; });
+  return rows.map(ticketFromRow_).sort(function (a, b) { return b.id - a.id; }).slice(0, 300);
+}
+
+function newTicket_(body) {
+  var person = String(body.person || "");
+  var type = TICKET_TYPES.indexOf(body.type) >= 0 ? body.type : "other";
+  var priority = TICKET_PRIORITIES.indexOf(body.priority) >= 0 ? body.priority : "nice";
+  var title = cleanText_(body.title, 90, false);
+  var details = cleanText_(body.details, 1500, true);
+  if (!/^[a-z][a-z-]{1,30}$/.test(person)) return { ok: false, error: "Pick your name first." };
+  if (title.replace(/^'/, "").length < 3) return { ok: false, error: "Give it a short title." };
+
+  var sh = ticketSheet_();
+  var rows = sh.getDataRange().getValues().slice(1);
+  var now = new Date();
+  // a double-tap (same person, same title, inside ten minutes) doesn't file twice
+  for (var i = rows.length - 1; i >= 0; i--) {
+    if (rows[i][2] === person && String(rows[i][5]) === title && now - new Date(rows[i][1]) < 10 * 60 * 1000) return { ok: true, id: Number(rows[i][0]), duplicate: true };
+  }
+  var id = rows.reduce(function (max, r) { return Math.max(max, Number(r[0]) || 0); }, 0) + 1;
+  sh.appendRow([id, now, person, type, priority, title, details, "New", "", "", now]);
+
+  if (NOTIFY_ON_NEW_TICKET) {
+    try {
+      MailApp.sendEmail(Session.getEffectiveUser().getEmail(), "New ticket #" + id + " from " + person + ": " + title.replace(/^'/, ""),
+        "Type: " + type + "\nHow much they want it: " + priority + "\n\n" + details.replace(/^'/, "") + "\n\nUpdate its status in the Tickets tab of the sheet.");
+    } catch (err) { /* email is a nicety; the ticket is already saved */ }
+  }
+  return { ok: true, id: id };
+}
+
+// "Me too": one vote per person per ticket; voting again takes it back.
+function voteTicket_(body) {
+  var person = String(body.person || "");
+  var id = Number(body.id);
+  if (!/^[a-z][a-z-]{1,30}$/.test(person)) return { ok: false, error: "Pick your name first." };
+  var sh = ticketSheet_();
+  var rows = sh.getDataRange().getValues();
+  for (var i = 1; i < rows.length; i++) {
+    if (Number(rows[i][0]) !== id) continue;
+    var votes = String(rows[i][9] || "").split(",").filter(Boolean);
+    var at = votes.indexOf(person);
+    if (at >= 0) votes.splice(at, 1); else votes.push(person);
+    sh.getRange(i + 1, 10).setValue(votes.join(","));
+    return { ok: true, id: id, votes: votes };
+  }
+  return { ok: false, error: "That ticket doesn't exist." };
+}
+
 function doGet(e) {
   var action = (e && e.parameter && e.parameter.action) || "picks";
+  if (action === "tickets") {
+    try { return json_({ ok: true, tickets: listTickets_() }); } catch (err) { return json_({ ok: false, error: "Couldn't read the tickets." }); }
+  }
   if (action === "live") {
     try { return json_(live_()); } catch (err) { return json_({ ok: false, error: "Live data unavailable (" + err.message + ")" }); }
   }

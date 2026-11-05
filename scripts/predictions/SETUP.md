@@ -60,3 +60,23 @@ newer `Code.gs`:
 
 Until that's done, saving Premier League picks says the script "needs its
 Premier League update". League picks keep working either way.
+
+## Tickets (suggestion box, same script)
+
+The site's **Tickets** page lets anyone file an idea, a bug report or a banter
+request, and "me too" other people's tickets. Each ticket is a row in a
+**Tickets** tab that the script creates in this sheet the first time someone
+files one. To use it as your to-do list:
+
+- Change a ticket's **status** column to one of: `New`, `Planned`,
+  `In progress`, `Done`, `Won't do`. The site shows it on the ticket.
+- Type into the **reply** column and it appears on the ticket as
+  "From the commissioner".
+- You get an email for every new ticket. To turn that off, set
+  `NOTIFY_ON_NEW_TICKET = false` near the Tickets section of `Code.gs`.
+
+After pasting in the new `Code.gs`, redeploy as above (**Deploy → Manage
+deployments → ✏️ → New version → Deploy**). Google will ask you to approve one
+new permission, **"Send email as you"**, which is for the new-ticket emails.
+To check it worked, open your `/exec` URL with `?action=tickets` on the end.
+You should see `{"ok":true,"tickets":[]}`.
