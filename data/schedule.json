@@ -903,12 +903,12 @@
           "ep": 3
         },
         {
-          "id": 136,
-          "name": "Welbeck",
+          "id": 490,
+          "name": "Wood",
           "pos": "FWD",
           "type": 4,
-          "team": "Chelsea",
-          "teamId": 6,
+          "team": "Nott'm Forest",
+          "teamId": 18,
           "ep": 1
         }
       ],
@@ -1503,13 +1503,13 @@
           "ep": 0
         },
         {
-          "id": 259,
-          "name": "Diop",
+          "id": 448,
+          "name": "Burn",
           "pos": "DEF",
           "type": 2,
-          "team": "Ipswich Town",
-          "teamId": 12,
-          "ep": 2
+          "team": "Newcastle",
+          "teamId": 17,
+          "ep": 2.2
         },
         {
           "id": 544,
