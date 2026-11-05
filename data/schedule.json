@@ -59,10 +59,10 @@
       "importance": 2.48,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 56,
+        "homeWinPct": 62,
         "drawPct": 3,
-        "awayWinPct": 41,
-        "homeExpected": 47.3,
+        "awayWinPct": 35,
+        "homeExpected": 49.3,
         "awayExpected": 44.6,
         "homeSoFar": null,
         "awaySoFar": null
@@ -1387,8 +1387,8 @@
       ]
     },
     "10375": {
-      "formation": "3-4-3",
-      "expected": 47.3,
+      "formation": "4-3-3",
+      "expected": 49.3,
       "captainId": 112,
       "locked": false,
       "xi": [
@@ -1409,6 +1409,15 @@
           "team": "Spurs",
           "teamId": 19,
           "ep": 7.2
+        },
+        {
+          "id": 257,
+          "name": "Bassey",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Fulham",
+          "teamId": 10,
+          "ep": 4.8
         },
         {
           "id": 595,
@@ -1456,15 +1465,6 @@
           "ep": 4
         },
         {
-          "id": 544,
-          "name": "Xhaka",
-          "pos": "MID",
-          "type": 3,
-          "team": "Sunderland",
-          "teamId": 20,
-          "ep": 2.8
-        },
-        {
           "id": 295,
           "name": "McBurnie",
           "pos": "FWD",
@@ -1503,22 +1503,22 @@
           "ep": 0
         },
         {
-          "id": 280,
-          "name": "Coyle",
+          "id": 259,
+          "name": "Diop",
           "pos": "DEF",
           "type": 2,
-          "team": "Hull City",
-          "teamId": 11,
-          "ep": 1.5
+          "team": "Ipswich Town",
+          "teamId": 12,
+          "ep": 2
         },
         {
-          "id": 474,
-          "name": "Jair Cunha",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Nott'm Forest",
-          "teamId": 18,
-          "ep": 1.2
+          "id": 544,
+          "name": "Xhaka",
+          "pos": "MID",
+          "type": 3,
+          "team": "Sunderland",
+          "teamId": 20,
+          "ep": 2.8
         },
         {
           "id": 554,
