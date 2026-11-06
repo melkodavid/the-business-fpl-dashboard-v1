@@ -15,13 +15,13 @@
       "importance": 3.58,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 50,
-        "drawPct": 3,
-        "awayWinPct": 47,
+        "homeWinPct": 15,
+        "drawPct": 2,
+        "awayWinPct": 83,
         "homeExpected": 31.4,
-        "awayExpected": 30.9,
+        "awayExpected": 44,
         "homeSoFar": 0,
-        "awaySoFar": 1
+        "awaySoFar": 16
       }
     },
     {
@@ -37,13 +37,13 @@
       "importance": 3.45,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 70,
-        "drawPct": 3,
-        "awayWinPct": 27,
-        "homeExpected": 32.3,
-        "awayExpected": 25.2,
-        "homeSoFar": 2,
-        "awaySoFar": 2
+        "homeWinPct": 81,
+        "drawPct": 2,
+        "awayWinPct": 17,
+        "homeExpected": 36.6,
+        "awayExpected": 26.2,
+        "homeSoFar": 12,
+        "awaySoFar": 5
       }
     },
     {
@@ -63,9 +63,9 @@
         "drawPct": 3,
         "awayWinPct": 50,
         "homeExpected": 33.8,
-        "awayExpected": 34.4,
+        "awayExpected": 34.2,
         "homeSoFar": 0,
-        "awaySoFar": 1
+        "awaySoFar": 2
       }
     },
     {
@@ -81,13 +81,13 @@
       "importance": 2.24,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 32,
+        "homeWinPct": 38,
         "drawPct": 3,
-        "awayWinPct": 65,
+        "awayWinPct": 59,
         "homeExpected": 34.4,
-        "awayExpected": 40.1,
+        "awayExpected": 37.8,
         "homeSoFar": 0,
-        "awaySoFar": 4
+        "awaySoFar": 3
       }
     },
     {
@@ -103,13 +103,13 @@
       "importance": 1.33,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 52,
+        "homeWinPct": 70,
         "drawPct": 3,
-        "awayWinPct": 45,
-        "homeExpected": 30.8,
-        "awayExpected": 29.7,
-        "homeSoFar": 1,
-        "awaySoFar": 1
+        "awayWinPct": 27,
+        "homeExpected": 36.8,
+        "awayExpected": 29.6,
+        "homeSoFar": 8,
+        "awaySoFar": 2
       }
     },
     {
@@ -128,9 +128,9 @@
         "homeWinPct": 63,
         "drawPct": 3,
         "awayWinPct": 34,
-        "homeExpected": 33.8,
+        "homeExpected": 33.6,
         "awayExpected": 28.8,
-        "homeSoFar": 2,
+        "homeSoFar": 4,
         "awaySoFar": 0
       }
     }
@@ -457,7 +457,7 @@
     },
     "1471": {
       "formation": "5-4-1",
-      "expected": 34.8,
+      "expected": 35,
       "captainId": 504,
       "locked": true,
       "xi": [
@@ -540,7 +540,7 @@
           "type": 3,
           "team": "Everton",
           "teamId": 9,
-          "ep": 2.6
+          "ep": 2.8
         },
         {
           "id": 94,
@@ -587,7 +587,7 @@
           "type": 4,
           "team": "Coventry City",
           "teamId": 7,
-          "ep": 2.4
+          "ep": 2.6
         },
         {
           "id": 582,
@@ -602,7 +602,7 @@
     },
     "1501": {
       "formation": "5-4-1",
-      "expected": 30,
+      "expected": 30.2,
       "captainId": 79,
       "locked": true,
       "xi": [
@@ -640,7 +640,7 @@
           "type": 2,
           "team": "Everton",
           "teamId": 9,
-          "ep": 2.4
+          "ep": 2.6
         },
         {
           "id": 449,
@@ -747,7 +747,7 @@
     },
     "1530": {
       "formation": "4-5-1",
-      "expected": 25.4,
+      "expected": 26,
       "captainId": 151,
       "locked": true,
       "xi": [
@@ -758,7 +758,7 @@
           "type": 1,
           "team": "Coventry City",
           "teamId": 7,
-          "ep": 1.8
+          "ep": 2
         },
         {
           "id": 151,
@@ -785,7 +785,7 @@
           "type": 2,
           "team": "Coventry City",
           "teamId": 7,
-          "ep": 2.4
+          "ep": 2.8
         },
         {
           "id": 6,
@@ -892,8 +892,8 @@
     },
     "1857": {
       "formation": "3-4-3",
-      "expected": 32,
-      "captainId": 411,
+      "expected": 35,
+      "captainId": 249,
       "locked": true,
       "xi": [
         {
@@ -969,6 +969,15 @@
           "ep": 1
         },
         {
+          "id": 249,
+          "name": "Barry",
+          "pos": "FWD",
+          "type": 4,
+          "team": "Everton",
+          "teamId": 9,
+          "ep": 7
+        },
+        {
           "id": 411,
           "name": "Haaland",
           "pos": "FWD",
@@ -976,15 +985,6 @@
           "team": "Man City",
           "teamId": 15,
           "ep": 5.8
-        },
-        {
-          "id": 249,
-          "name": "Barry",
-          "pos": "FWD",
-          "type": 4,
-          "team": "Everton",
-          "teamId": 9,
-          "ep": 4
         },
         {
           "id": 526,
@@ -1037,8 +1037,8 @@
     },
     "1947": {
       "formation": "3-5-2",
-      "expected": 36.6,
-      "captainId": 183,
+      "expected": 38.6,
+      "captainId": 236,
       "locked": true,
       "xi": [
         {
@@ -1078,22 +1078,22 @@
           "ep": 2.2
         },
         {
-          "id": 183,
-          "name": "Rudoni",
-          "pos": "MID",
-          "type": 3,
-          "team": "Coventry City",
-          "teamId": 7,
-          "ep": 5
-        },
-        {
           "id": 236,
           "name": "Dewsbury-Hall",
           "pos": "MID",
           "type": 3,
           "team": "Everton",
           "teamId": 9,
-          "ep": 4.4
+          "ep": 6
+        },
+        {
+          "id": 183,
+          "name": "Rudoni",
+          "pos": "MID",
+          "type": 3,
+          "team": "Coventry City",
+          "teamId": 7,
+          "ep": 5.2
         },
         {
           "id": 67,
@@ -1138,7 +1138,7 @@
           "type": 4,
           "team": "Coventry City",
           "teamId": 7,
-          "ep": 2.6
+          "ep": 2.8
         }
       ],
       "bench": [
@@ -1182,7 +1182,7 @@
     },
     "10210": {
       "formation": "4-4-2",
-      "expected": 30.8,
+      "expected": 31.8,
       "captainId": 4,
       "locked": true,
       "xi": [
@@ -1220,7 +1220,7 @@
           "type": 2,
           "team": "Everton",
           "teamId": 9,
-          "ep": 2
+          "ep": 3
         },
         {
           "id": 445,
@@ -1321,7 +1321,7 @@
           "type": 4,
           "team": "Coventry City",
           "teamId": 7,
-          "ep": 3.2
+          "ep": 3.4
         }
       ]
     },
@@ -1472,7 +1472,7 @@
     },
     "26227": {
       "formation": "5-4-1",
-      "expected": 34.1,
+      "expected": 34.2,
       "captainId": 166,
       "locked": true,
       "xi": [
@@ -1510,7 +1510,7 @@
           "type": 2,
           "team": "Everton",
           "teamId": 9,
-          "ep": 2.5
+          "ep": 2.4
         },
         {
           "id": 232,
@@ -1519,7 +1519,7 @@
           "type": 2,
           "team": "Everton",
           "teamId": 9,
-          "ep": 2
+          "ep": 2.2
         },
         {
           "id": 446,
