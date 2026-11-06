@@ -1383,7 +1383,14 @@
               "elementId": 15,
               "playerName": "Ødegaard",
               "points": 9,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 47,
+                "playerName": "Kamara",
+                "position": "MID",
+                "acquiredGw": 10,
+                "gwsStarted": 0,
+                "points": 0
+              }
             },
             {
               "elementId": 397,

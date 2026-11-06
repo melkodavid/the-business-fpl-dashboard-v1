@@ -15,10 +15,10 @@
       "importance": 3.58,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 39,
+        "homeWinPct": 46,
         "drawPct": 3,
-        "awayWinPct": 58,
-        "homeExpected": 37.1,
+        "awayWinPct": 51,
+        "homeExpected": 39.4,
         "awayExpected": 40.3,
         "homeSoFar": null,
         "awaySoFar": null
@@ -59,11 +59,11 @@
       "importance": 2.48,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 62,
+        "homeWinPct": 56,
         "drawPct": 3,
-        "awayWinPct": 35,
+        "awayWinPct": 41,
         "homeExpected": 49.3,
-        "awayExpected": 44.6,
+        "awayExpected": 46.9,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -103,11 +103,11 @@
       "importance": 1.33,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 67,
-        "drawPct": 2,
-        "awayWinPct": 31,
-        "homeExpected": 40.2,
-        "awayExpected": 33.9,
+        "homeWinPct": 61,
+        "drawPct": 3,
+        "awayWinPct": 36,
+        "homeExpected": 42,
+        "awayExpected": 37.6,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -228,7 +228,7 @@
   "lineups": {
     "1377": {
       "formation": "4-4-2",
-      "expected": 37.1,
+      "expected": 39.4,
       "captainId": 31,
       "locked": false,
       "xi": [
@@ -248,7 +248,7 @@
           "type": 2,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 6.9
+          "ep": 9.2
         },
         {
           "id": 116,
@@ -518,7 +518,7 @@
     },
     "1471": {
       "formation": "4-4-2",
-      "expected": 44.6,
+      "expected": 46.9,
       "captainId": 60,
       "locked": false,
       "xi": [
@@ -550,6 +550,15 @@
           "ep": 6.5
         },
         {
+          "id": 640,
+          "name": "Affengruber",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Fulham",
+          "teamId": 10,
+          "ep": 4.5
+        },
+        {
           "id": 37,
           "name": "Lindelöf",
           "pos": "DEF",
@@ -557,15 +566,6 @@
           "team": "Aston Villa",
           "teamId": 2,
           "ep": 4
-        },
-        {
-          "id": 119,
-          "name": "Costinha",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Brighton",
-          "teamId": 5,
-          "ep": 2.2
         },
         {
           "id": 40,
@@ -663,7 +663,7 @@
     },
     "1501": {
       "formation": "5-3-2",
-      "expected": 33.9,
+      "expected": 37.6,
       "captainId": 79,
       "locked": false,
       "xi": [
@@ -675,6 +675,15 @@
           "team": "Bournemouth",
           "teamId": 3,
           "ep": 4.8
+        },
+        {
+          "id": 254,
+          "name": "Robinson",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Fulham",
+          "teamId": 10,
+          "ep": 4.5
         },
         {
           "id": 332,
@@ -711,15 +720,6 @@
           "team": "Man City",
           "teamId": 15,
           "ep": 2.5
-        },
-        {
-          "id": 588,
-          "name": "Khalaili",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Crystal Palace",
-          "teamId": 8,
-          "ep": 0.8
         },
         {
           "id": 286,
@@ -1243,7 +1243,7 @@
     },
     "10210": {
       "formation": "4-4-2",
-      "expected": 40.2,
+      "expected": 42,
       "captainId": 4,
       "locked": false,
       "xi": [
@@ -1302,6 +1302,15 @@
           "ep": 4
         },
         {
+          "id": 47,
+          "name": "Kamara",
+          "pos": "MID",
+          "type": 3,
+          "team": "Aston Villa",
+          "teamId": 2,
+          "ep": 3.8
+        },
+        {
           "id": 628,
           "name": "Barcola",
           "pos": "MID",
@@ -1318,15 +1327,6 @@
           "team": "Brentford",
           "teamId": 4,
           "ep": 2.2
-        },
-        {
-          "id": 41,
-          "name": "Buendía",
-          "pos": "MID",
-          "type": 3,
-          "team": "Aston Villa",
-          "teamId": 2,
-          "ep": 2
         },
         {
           "id": 598,
@@ -1500,7 +1500,7 @@
           "type": 1,
           "team": "Chelsea",
           "teamId": 6,
-          "ep": 0
+          "ep": 2.1
         },
         {
           "id": 448,
