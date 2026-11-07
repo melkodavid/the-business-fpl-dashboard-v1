@@ -350,15 +350,21 @@
           "key": "pl91",
           "home": 1,
           "away": 11,
-          "score": null,
-          "result": null
+          "score": [
+            1,
+            0
+          ],
+          "result": "H"
         },
         {
           "key": "pl95",
           "home": 10,
           "away": 17,
-          "score": null,
-          "result": null
+          "score": [
+            1,
+            1
+          ],
+          "result": "D"
         },
         {
           "key": "pl99",
@@ -460,13 +466,13 @@
     {
       "personKey": "marshall",
       "managerId": 1471,
-      "played": 12,
-      "correct": 7,
+      "played": 14,
+      "correct": 8,
       "weeks": 2,
       "bestWeek": 5,
       "perfectWeeks": 0,
-      "streak": 3,
-      "bestStreak": 3,
+      "streak": 0,
+      "bestStreak": 4,
       "boldCalls": 3,
       "boldHits": 3,
       "byWeek": {
@@ -475,18 +481,18 @@
           "total": 10
         },
         "10": {
-          "correct": 2,
-          "total": 2
+          "correct": 3,
+          "total": 4
         }
       },
-      "pct": 58.3,
+      "pct": 57.1,
       "rank": 1
     },
     {
       "personKey": "lu",
       "managerId": 1377,
-      "played": 12,
-      "correct": 5,
+      "played": 14,
+      "correct": 6,
       "weeks": 2,
       "bestWeek": 4,
       "perfectWeeks": 0,
@@ -500,24 +506,24 @@
           "total": 10
         },
         "10": {
-          "correct": 1,
-          "total": 2
+          "correct": 2,
+          "total": 4
         }
       },
-      "pct": 41.7,
+      "pct": 42.9,
       "rank": 2
     },
     {
       "personKey": "david",
       "managerId": 1857,
-      "played": 12,
-      "correct": 4,
+      "played": 14,
+      "correct": 5,
       "weeks": 2,
       "bestWeek": 3,
       "perfectWeeks": 0,
       "streak": 0,
       "bestStreak": 1,
-      "boldCalls": 4,
+      "boldCalls": 5,
       "boldHits": 1,
       "byWeek": {
         "9": {
@@ -525,37 +531,37 @@
           "total": 10
         },
         "10": {
-          "correct": 1,
-          "total": 2
+          "correct": 2,
+          "total": 4
         }
       },
-      "pct": 33.3,
+      "pct": 35.7,
       "rank": 3
     },
     {
       "personKey": "anthony",
       "managerId": 10375,
-      "played": 12,
-      "correct": 3,
+      "played": 14,
+      "correct": 5,
       "weeks": 2,
-      "bestWeek": 2,
+      "bestWeek": 3,
       "perfectWeeks": 0,
-      "streak": 0,
-      "bestStreak": 1,
-      "boldCalls": 3,
-      "boldHits": 0,
+      "streak": 2,
+      "bestStreak": 2,
+      "boldCalls": 4,
+      "boldHits": 1,
       "byWeek": {
         "9": {
           "correct": 2,
           "total": 10
         },
         "10": {
-          "correct": 1,
-          "total": 2
+          "correct": 3,
+          "total": 4
         }
       },
-      "pct": 25,
-      "rank": 4
+      "pct": 35.7,
+      "rank": 3
     }
   ]
 }
