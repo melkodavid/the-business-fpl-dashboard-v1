@@ -15,11 +15,11 @@
       "importance": 3.58,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 90,
+        "homeWinPct": 93,
         "drawPct": 2,
-        "awayWinPct": 8,
-        "homeExpected": 52.2,
-        "awayExpected": 42.6,
+        "awayWinPct": 5,
+        "homeExpected": 50.2,
+        "awayExpected": 40.2,
         "homeSoFar": 39,
         "awaySoFar": 34
       }
@@ -37,13 +37,13 @@
       "importance": 3.45,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 95,
+        "homeWinPct": 94,
         "drawPct": 1,
-        "awayWinPct": 4,
+        "awayWinPct": 5,
         "homeExpected": 36.6,
-        "awayExpected": 20.2,
+        "awayExpected": 20.8,
         "homeSoFar": 12,
-        "awaySoFar": 9
+        "awaySoFar": 10
       }
     },
     {
@@ -59,10 +59,10 @@
       "importance": 2.48,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 7,
+        "homeWinPct": 6,
         "drawPct": 2,
-        "awayWinPct": 91,
-        "homeExpected": 31.5,
+        "awayWinPct": 92,
+        "homeExpected": 31,
         "awayExpected": 44.4,
         "homeSoFar": 18,
         "awaySoFar": 22
@@ -81,10 +81,10 @@
       "importance": 2.24,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 86,
+        "homeWinPct": 83,
         "drawPct": 2,
-        "awayWinPct": 12,
-        "homeExpected": 43.9,
+        "awayWinPct": 15,
+        "homeExpected": 42.6,
         "awayExpected": 33,
         "homeSoFar": 27,
         "awaySoFar": 9
@@ -103,13 +103,13 @@
       "importance": 1.33,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 89,
-        "drawPct": 2,
-        "awayWinPct": 9,
+        "homeWinPct": 76,
+        "drawPct": 4,
+        "awayWinPct": 20,
         "homeExpected": 41.4,
-        "awayExpected": 30.7,
+        "awayExpected": 35,
         "homeSoFar": 27,
-        "awaySoFar": 18
+        "awaySoFar": 23
       }
     },
     {
@@ -125,10 +125,10 @@
       "importance": 0.98,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 76,
+        "homeWinPct": 74,
         "drawPct": 3,
-        "awayWinPct": 21,
-        "homeExpected": 39.2,
+        "awayWinPct": 23,
+        "homeExpected": 38.4,
         "awayExpected": 31.2,
         "homeSoFar": 13,
         "awaySoFar": 15
@@ -602,7 +602,7 @@
     },
     "1501": {
       "formation": "5-4-1",
-      "expected": 33.4,
+      "expected": 34.4,
       "captainId": 79,
       "locked": true,
       "xi": [
@@ -622,7 +622,7 @@
           "type": 2,
           "team": "Leeds",
           "teamId": 13,
-          "ep": 4.6
+          "ep": 5
         },
         {
           "id": 254,
@@ -676,7 +676,7 @@
           "type": 3,
           "team": "Nott'm Forest",
           "teamId": 18,
-          "ep": 1.6
+          "ep": 2.2
         },
         {
           "id": 157,
@@ -747,7 +747,7 @@
     },
     "1530": {
       "formation": "4-5-1",
-      "expected": 26.8,
+      "expected": 27,
       "captainId": 151,
       "locked": true,
       "xi": [
@@ -830,7 +830,7 @@
           "type": 3,
           "team": "Man City",
           "teamId": 15,
-          "ep": 2.2
+          "ep": 2.4
         },
         {
           "id": 426,

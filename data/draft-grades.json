@@ -6,14 +6,14 @@
       "draftTeamPoints": 467
     },
     {
-      "managerId": 1857,
-      "managerName": "i can fix him*",
+      "managerId": 1471,
+      "managerName": "🥶CPR🥶",
       "draftTeamPoints": 457
     },
     {
-      "managerId": 1471,
-      "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 456
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "draftTeamPoints": 457
     },
     {
       "managerId": 1377,
@@ -38,7 +38,7 @@
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "draftTeamPoints": 367
+      "draftTeamPoints": 370
     },
     {
       "managerId": 29975,
@@ -135,7 +135,7 @@
     {
       "pickNumber": 8,
       "round": 1,
-      "seasonPoints": 36,
+      "seasonPoints": 39,
       "managerId": 1501,
       "elementId": 480,
       "playerName": "Gibbs-White",
@@ -395,7 +395,7 @@
     {
       "pickNumber": 34,
       "round": 3,
-      "seasonPoints": 20,
+      "seasonPoints": 21,
       "managerId": 1471,
       "elementId": 398,
       "playerName": "Foden",
