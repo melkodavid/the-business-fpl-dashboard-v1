@@ -15,13 +15,13 @@
       "importance": 3.58,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 15,
-        "drawPct": 2,
-        "awayWinPct": 83,
+        "homeWinPct": 6,
+        "drawPct": 1,
+        "awayWinPct": 93,
         "homeExpected": 31.4,
-        "awayExpected": 44,
+        "awayExpected": 49.2,
         "homeSoFar": 0,
-        "awaySoFar": 16
+        "awaySoFar": 29
       }
     },
     {
@@ -37,13 +37,13 @@
       "importance": 3.45,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 81,
-        "drawPct": 2,
-        "awayWinPct": 17,
+        "homeWinPct": 78,
+        "drawPct": 3,
+        "awayWinPct": 19,
         "homeExpected": 36.6,
-        "awayExpected": 26.2,
+        "awayExpected": 27.8,
         "homeSoFar": 12,
-        "awaySoFar": 5
+        "awaySoFar": 11
       }
     },
     {
@@ -59,13 +59,13 @@
       "importance": 2.48,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 47,
+        "homeWinPct": 38,
         "drawPct": 3,
-        "awayWinPct": 50,
-        "homeExpected": 33.8,
-        "awayExpected": 34.2,
-        "homeSoFar": 0,
-        "awaySoFar": 2
+        "awayWinPct": 59,
+        "homeExpected": 36.8,
+        "awayExpected": 40,
+        "homeSoFar": 12,
+        "awaySoFar": 10
       }
     },
     {
@@ -81,13 +81,13 @@
       "importance": 2.24,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 38,
+        "homeWinPct": 56,
         "drawPct": 3,
-        "awayWinPct": 59,
-        "homeExpected": 34.4,
-        "awayExpected": 37.8,
-        "homeSoFar": 0,
-        "awaySoFar": 3
+        "awayWinPct": 41,
+        "homeExpected": 39.3,
+        "awayExpected": 36.8,
+        "homeSoFar": 5,
+        "awaySoFar": 4
       }
     },
     {
@@ -103,13 +103,13 @@
       "importance": 1.33,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 70,
+        "homeWinPct": 60,
         "drawPct": 3,
-        "awayWinPct": 27,
+        "awayWinPct": 37,
         "homeExpected": 36.8,
-        "awayExpected": 29.6,
+        "awayExpected": 33.3,
         "homeSoFar": 8,
-        "awaySoFar": 2
+        "awaySoFar": 8
       }
     },
     {
@@ -125,13 +125,13 @@
       "importance": 0.98,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 63,
+        "homeWinPct": 32,
         "drawPct": 3,
-        "awayWinPct": 34,
+        "awayWinPct": 65,
         "homeExpected": 33.6,
-        "awayExpected": 28.8,
+        "awayExpected": 38.6,
         "homeSoFar": 4,
-        "awaySoFar": 0
+        "awaySoFar": 15
       }
     }
   ],
@@ -312,8 +312,8 @@
     },
     "1425": {
       "formation": "3-5-2",
-      "expected": 28.8,
-      "captainId": 261,
+      "expected": 31.8,
+      "captainId": 496,
       "locked": true,
       "xi": [
         {
@@ -323,7 +323,7 @@
           "type": 1,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 4
+          "ep": 5.2
         },
         {
           "id": 114,
@@ -350,7 +350,7 @@
           "type": 2,
           "team": "Leeds",
           "teamId": 13,
-          "ep": 1.8
+          "ep": 3
         },
         {
           "id": 261,
@@ -386,7 +386,7 @@
           "type": 3,
           "team": "Leeds",
           "teamId": 13,
-          "ep": 1.4
+          "ep": 2
         },
         {
           "id": 454,
@@ -457,7 +457,7 @@
     },
     "1471": {
       "formation": "5-4-1",
-      "expected": 35,
+      "expected": 36.6,
       "captainId": 504,
       "locked": true,
       "xi": [
@@ -468,7 +468,7 @@
           "type": 1,
           "team": "Leeds",
           "teamId": 13,
-          "ep": 3.2
+          "ep": 4.8
         },
         {
           "id": 504,
@@ -602,7 +602,7 @@
     },
     "1501": {
       "formation": "5-4-1",
-      "expected": 30.2,
+      "expected": 31.4,
       "captainId": 79,
       "locked": true,
       "xi": [
@@ -616,6 +616,15 @@
           "ep": 3.8
         },
         {
+          "id": 332,
+          "name": "Justin",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Leeds",
+          "teamId": 13,
+          "ep": 4.4
+        },
+        {
           "id": 254,
           "name": "Robinson",
           "pos": "DEF",
@@ -623,15 +632,6 @@
           "team": "Fulham",
           "teamId": 10,
           "ep": 3.6
-        },
-        {
-          "id": 332,
-          "name": "Justin",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Leeds",
-          "teamId": 13,
-          "ep": 3.2
         },
         {
           "id": 229,
@@ -747,8 +747,8 @@
     },
     "1530": {
       "formation": "4-5-1",
-      "expected": 26,
-      "captainId": 151,
+      "expected": 27.2,
+      "captainId": 503,
       "locked": true,
       "xi": [
         {
@@ -761,6 +761,15 @@
           "ep": 2
         },
         {
+          "id": 503,
+          "name": "Van de Ven",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Spurs",
+          "teamId": 19,
+          "ep": 3.8
+        },
+        {
           "id": 151,
           "name": "Acheampong",
           "pos": "DEF",
@@ -768,15 +777,6 @@
           "team": "Chelsea",
           "teamId": 6,
           "ep": 3.8
-        },
-        {
-          "id": 503,
-          "name": "Van de Ven",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Spurs",
-          "teamId": 19,
-          "ep": 2.8
         },
         {
           "id": 91,
@@ -812,7 +812,7 @@
           "type": 3,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 3
+          "ep": 3.2
         },
         {
           "id": 70,
@@ -892,7 +892,7 @@
     },
     "1857": {
       "formation": "3-4-3",
-      "expected": 35,
+      "expected": 37.6,
       "captainId": 249,
       "locked": true,
       "xi": [
@@ -912,7 +912,7 @@
           "type": 2,
           "team": "Leeds",
           "teamId": 13,
-          "ep": 3.8
+          "ep": 5.6
         },
         {
           "id": 387,
@@ -939,7 +939,7 @@
           "type": 3,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 3.8
+          "ep": 4.4
         },
         {
           "id": 366,
@@ -993,7 +993,7 @@
           "type": 4,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 2.8
+          "ep": 3
         }
       ],
       "bench": [
@@ -1327,7 +1327,7 @@
     },
     "10375": {
       "formation": "3-5-2",
-      "expected": 33.8,
+      "expected": 36.1,
       "captainId": 112,
       "locked": true,
       "xi": [
@@ -1347,7 +1347,7 @@
           "type": 2,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 5.8
+          "ep": 7.2
         },
         {
           "id": 595,
@@ -1368,6 +1368,15 @@
           "ep": 2.4
         },
         {
+          "id": 512,
+          "name": "Kudus",
+          "pos": "MID",
+          "type": 3,
+          "team": "Spurs",
+          "teamId": 19,
+          "ep": 4.4
+        },
+        {
           "id": 591,
           "name": "Enciso",
           "pos": "MID",
@@ -1375,15 +1384,6 @@
           "team": "Ipswich Town",
           "teamId": 12,
           "ep": 4.4
-        },
-        {
-          "id": 512,
-          "name": "Kudus",
-          "pos": "MID",
-          "type": 3,
-          "team": "Spurs",
-          "teamId": 19,
-          "ep": 3.8
         },
         {
           "id": 452,
@@ -1428,7 +1428,7 @@
           "type": 4,
           "team": "Leeds",
           "teamId": 13,
-          "ep": 2.2
+          "ep": 2.5
         }
       ],
       "bench": [
@@ -1602,7 +1602,7 @@
           "type": 4,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 2.8
+          "ep": 3.2
         },
         {
           "id": 380,
@@ -1617,7 +1617,7 @@
     },
     "29975": {
       "formation": "4-5-1",
-      "expected": 34.4,
+      "expected": 35.4,
       "captainId": 109,
       "locked": true,
       "xi": [
@@ -1664,7 +1664,7 @@
           "type": 2,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 0.4
+          "ep": 1.4
         },
         {
           "id": 129,
@@ -1762,7 +1762,7 @@
     },
     "99786": {
       "formation": "3-5-2",
-      "expected": 37.6,
+      "expected": 37.8,
       "captainId": 115,
       "locked": true,
       "xi": [
@@ -1800,7 +1800,7 @@
           "type": 2,
           "team": "Leeds",
           "teamId": 13,
-          "ep": 2.6
+          "ep": 2.8
         },
         {
           "id": 13,
