@@ -15,13 +15,13 @@
       "importance": 3.58,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 72,
-        "drawPct": 4,
-        "awayWinPct": 24,
-        "homeExpected": 46.6,
-        "awayExpected": 41.6,
-        "homeSoFar": 32,
-        "awaySoFar": 31
+        "homeWinPct": 90,
+        "drawPct": 2,
+        "awayWinPct": 8,
+        "homeExpected": 52.2,
+        "awayExpected": 42.6,
+        "homeSoFar": 39,
+        "awaySoFar": 34
       }
     },
     {
@@ -37,11 +37,11 @@
       "importance": 3.45,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 94,
+        "homeWinPct": 95,
         "drawPct": 1,
-        "awayWinPct": 5,
+        "awayWinPct": 4,
         "homeExpected": 36.6,
-        "awayExpected": 20.6,
+        "awayExpected": 20.2,
         "homeSoFar": 12,
         "awaySoFar": 9
       }
@@ -60,11 +60,11 @@
       "tag": "Title Six-Pointer",
       "odds": {
         "homeWinPct": 7,
-        "drawPct": 1,
-        "awayWinPct": 92,
-        "homeExpected": 31,
+        "drawPct": 2,
+        "awayWinPct": 91,
+        "homeExpected": 31.5,
         "awayExpected": 44.4,
-        "homeSoFar": 17,
+        "homeSoFar": 18,
         "awaySoFar": 22
       }
     },
@@ -81,12 +81,12 @@
       "importance": 2.24,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 83,
-        "drawPct": 3,
-        "awayWinPct": 14,
-        "homeExpected": 43,
+        "homeWinPct": 86,
+        "drawPct": 2,
+        "awayWinPct": 12,
+        "homeExpected": 43.9,
         "awayExpected": 33,
-        "homeSoFar": 25,
+        "homeSoFar": 27,
         "awaySoFar": 9
       }
     },
@@ -107,9 +107,9 @@
         "drawPct": 2,
         "awayWinPct": 9,
         "homeExpected": 41.4,
-        "awayExpected": 30.3,
+        "awayExpected": 30.7,
         "homeSoFar": 27,
-        "awaySoFar": 17
+        "awaySoFar": 18
       }
     },
     {
@@ -125,12 +125,12 @@
       "importance": 0.98,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 75,
+        "homeWinPct": 76,
         "drawPct": 3,
-        "awayWinPct": 22,
-        "homeExpected": 38.8,
+        "awayWinPct": 21,
+        "homeExpected": 39.2,
         "awayExpected": 31.2,
-        "homeSoFar": 12,
+        "homeSoFar": 13,
         "awaySoFar": 15
       }
     }
@@ -167,7 +167,7 @@
   "lineups": {
     "1377": {
       "formation": "5-4-1",
-      "expected": 37.8,
+      "expected": 39.2,
       "captainId": 31,
       "locked": true,
       "xi": [
@@ -250,7 +250,7 @@
           "type": 3,
           "team": "Man City",
           "teamId": 15,
-          "ep": 2.8
+          "ep": 3
         },
         {
           "id": 155,
@@ -259,7 +259,7 @@
           "type": 3,
           "team": "Man City",
           "teamId": 15,
-          "ep": 1.8
+          "ep": 2
         },
         {
           "id": 167,
@@ -268,7 +268,7 @@
           "type": 4,
           "team": "Nott'm Forest",
           "teamId": 18,
-          "ep": 3.2
+          "ep": 4.2
         }
       ],
       "bench": [
@@ -602,7 +602,7 @@
     },
     "1501": {
       "formation": "5-4-1",
-      "expected": 33.6,
+      "expected": 33.4,
       "captainId": 79,
       "locked": true,
       "xi": [
@@ -622,7 +622,7 @@
           "type": 2,
           "team": "Leeds",
           "teamId": 13,
-          "ep": 5
+          "ep": 4.6
         },
         {
           "id": 254,
@@ -676,7 +676,7 @@
           "type": 3,
           "team": "Nott'm Forest",
           "teamId": 18,
-          "ep": 1.4
+          "ep": 1.6
         },
         {
           "id": 157,
@@ -868,7 +868,7 @@
           "type": 2,
           "team": "Nott'm Forest",
           "teamId": 18,
-          "ep": 2.2
+          "ep": 2.4
         },
         {
           "id": 490,
@@ -892,7 +892,7 @@
     },
     "1857": {
       "formation": "3-4-3",
-      "expected": 38,
+      "expected": 38.6,
       "captainId": 249,
       "locked": true,
       "xi": [
@@ -930,7 +930,7 @@
           "type": 2,
           "team": "Man City",
           "teamId": 15,
-          "ep": 1.6
+          "ep": 1.8
         },
         {
           "id": 455,
@@ -957,7 +957,7 @@
           "type": 3,
           "team": "Man City",
           "teamId": 15,
-          "ep": 2.6
+          "ep": 2.8
         },
         {
           "id": 78,
@@ -984,7 +984,7 @@
           "type": 4,
           "team": "Man City",
           "teamId": 15,
-          "ep": 6
+          "ep": 6.2
         },
         {
           "id": 526,
@@ -1149,7 +1149,7 @@
           "type": 1,
           "team": "Nott'm Forest",
           "teamId": 18,
-          "ep": 1.6
+          "ep": 1.8
         },
         {
           "id": 202,
@@ -1167,7 +1167,7 @@
           "type": 2,
           "team": "Nott'm Forest",
           "teamId": 18,
-          "ep": 1.8
+          "ep": 2
         },
         {
           "id": 439,
@@ -1327,7 +1327,7 @@
     },
     "10375": {
       "formation": "3-5-2",
-      "expected": 37.1,
+      "expected": 37.3,
       "captainId": 112,
       "locked": true,
       "xi": [
@@ -1338,7 +1338,7 @@
           "type": 1,
           "team": "Man City",
           "teamId": 15,
-          "ep": 2.6
+          "ep": 2.8
         },
         {
           "id": 112,
@@ -1472,7 +1472,7 @@
     },
     "26227": {
       "formation": "5-4-1",
-      "expected": 35.8,
+      "expected": 36,
       "captainId": 166,
       "locked": true,
       "xi": [
@@ -1546,7 +1546,7 @@
           "type": 3,
           "team": "Man City",
           "teamId": 15,
-          "ep": 3.8
+          "ep": 4
         },
         {
           "id": 211,
@@ -1617,7 +1617,7 @@
     },
     "29975": {
       "formation": "4-5-1",
-      "expected": 39.4,
+      "expected": 39.8,
       "captainId": 109,
       "locked": true,
       "xi": [
@@ -1655,7 +1655,7 @@
           "type": 2,
           "team": "Man City",
           "teamId": 15,
-          "ep": 2
+          "ep": 2.2
         },
         {
           "id": 499,
@@ -1682,7 +1682,7 @@
           "type": 3,
           "team": "Man City",
           "teamId": 15,
-          "ep": 4.6
+          "ep": 4.8
         },
         {
           "id": 16,
