@@ -15,10 +15,10 @@
       "importance": 3.58,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 48,
-        "drawPct": 11,
-        "awayWinPct": 41,
-        "homeExpected": 52.3,
+        "homeWinPct": 43,
+        "drawPct": 10,
+        "awayWinPct": 47,
+        "homeExpected": 51.8,
         "awayExpected": 52,
         "homeSoFar": 49,
         "awaySoFar": 52
@@ -40,8 +40,8 @@
         "homeWinPct": 92,
         "drawPct": 3,
         "awayWinPct": 5,
-        "homeExpected": 35.2,
-        "awayExpected": 29.3,
+        "homeExpected": 35,
+        "awayExpected": 29.1,
         "homeSoFar": 34,
         "awaySoFar": 28
       }
@@ -63,7 +63,7 @@
         "drawPct": 0,
         "awayWinPct": 100,
         "homeExpected": 28,
-        "awayExpected": 46.3,
+        "awayExpected": 45.9,
         "homeSoFar": 28,
         "awaySoFar": 44
       }
@@ -85,7 +85,7 @@
         "drawPct": 0,
         "awayWinPct": 0,
         "homeExpected": 43,
-        "awayExpected": 29.7,
+        "awayExpected": 29.2,
         "homeSoFar": 43,
         "awaySoFar": 27
       }
@@ -103,10 +103,10 @@
       "importance": 1.33,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 19,
-        "drawPct": 8,
-        "awayWinPct": 73,
-        "homeExpected": 39.1,
+        "homeWinPct": 17,
+        "drawPct": 7,
+        "awayWinPct": 76,
+        "homeExpected": 38.8,
         "awayExpected": 42,
         "homeSoFar": 37,
         "awaySoFar": 42
@@ -125,11 +125,11 @@
       "importance": 0.98,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 38,
+        "homeWinPct": 30,
         "drawPct": 8,
-        "awayWinPct": 54,
-        "homeExpected": 34.5,
-        "awayExpected": 35.5,
+        "awayWinPct": 62,
+        "homeExpected": 33.2,
+        "awayExpected": 35.1,
         "homeSoFar": 27,
         "awaySoFar": 33
       }
