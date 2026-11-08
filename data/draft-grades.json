@@ -33,7 +33,7 @@
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 404
+      "draftTeamPoints": 405
     },
     {
       "managerId": 1501,
@@ -1125,7 +1125,7 @@
     {
       "pickNumber": 107,
       "round": 9,
-      "seasonPoints": 20,
+      "seasonPoints": 21,
       "managerId": 99786,
       "elementId": 415,
       "playerName": "Dorgu",
