@@ -15,12 +15,12 @@
       "importance": 3.58,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 43,
-        "drawPct": 10,
-        "awayWinPct": 47,
-        "homeExpected": 51.8,
+        "homeWinPct": 26,
+        "drawPct": 9,
+        "awayWinPct": 65,
+        "homeExpected": 50,
         "awayExpected": 52,
-        "homeSoFar": 49,
+        "homeSoFar": 50,
         "awaySoFar": 52
       }
     },
@@ -37,13 +37,13 @@
       "importance": 3.45,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 92,
-        "drawPct": 3,
-        "awayWinPct": 5,
+        "homeWinPct": 74,
+        "drawPct": 8,
+        "awayWinPct": 18,
         "homeExpected": 35,
-        "awayExpected": 29.1,
-        "homeSoFar": 34,
-        "awaySoFar": 28
+        "awayExpected": 32,
+        "homeSoFar": 35,
+        "awaySoFar": 32
       }
     },
     {
@@ -63,9 +63,9 @@
         "drawPct": 0,
         "awayWinPct": 100,
         "homeExpected": 28,
-        "awayExpected": 45.9,
+        "awayExpected": 45,
         "homeSoFar": 28,
-        "awaySoFar": 44
+        "awaySoFar": 45
       }
     },
     {
@@ -84,10 +84,10 @@
         "homeWinPct": 100,
         "drawPct": 0,
         "awayWinPct": 0,
-        "homeExpected": 43,
-        "awayExpected": 29.2,
-        "homeSoFar": 43,
-        "awaySoFar": 27
+        "homeExpected": 45,
+        "awayExpected": 28,
+        "homeSoFar": 45,
+        "awaySoFar": 28
       }
     },
     {
@@ -103,12 +103,12 @@
       "importance": 1.33,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 17,
-        "drawPct": 7,
-        "awayWinPct": 76,
-        "homeExpected": 38.8,
+        "homeWinPct": 26,
+        "drawPct": 9,
+        "awayWinPct": 65,
+        "homeExpected": 40,
         "awayExpected": 42,
-        "homeSoFar": 37,
+        "homeSoFar": 40,
         "awaySoFar": 42
       }
     },
@@ -125,12 +125,12 @@
       "importance": 0.98,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 30,
+        "homeWinPct": 18,
         "drawPct": 8,
-        "awayWinPct": 62,
-        "homeExpected": 33.2,
-        "awayExpected": 35.1,
-        "homeSoFar": 27,
+        "awayWinPct": 74,
+        "homeExpected": 30,
+        "awayExpected": 33,
+        "homeSoFar": 30,
         "awaySoFar": 33
       }
     }
@@ -167,7 +167,7 @@
   "lineups": {
     "1377": {
       "formation": "5-4-1",
-      "expected": 41.2,
+      "expected": 41.4,
       "captainId": 31,
       "locked": true,
       "xi": [
@@ -232,7 +232,7 @@
           "type": 3,
           "team": "Aston Villa",
           "teamId": 2,
-          "ep": 5
+          "ep": 5.2
         },
         {
           "id": 15,
@@ -457,7 +457,7 @@
     },
     "1471": {
       "formation": "5-4-1",
-      "expected": 43.4,
+      "expected": 43.6,
       "captainId": 504,
       "locked": true,
       "xi": [
@@ -504,7 +504,7 @@
           "type": 2,
           "team": "Aston Villa",
           "teamId": 2,
-          "ep": 3.4
+          "ep": 3.6
         },
         {
           "id": 5,
@@ -596,7 +596,7 @@
           "type": 4,
           "team": "Aston Villa",
           "teamId": 2,
-          "ep": 0
+          "ep": 0.2
         }
       ]
     },
@@ -747,7 +747,7 @@
     },
     "1530": {
       "formation": "4-5-1",
-      "expected": 30.6,
+      "expected": 31.4,
       "captainId": 127,
       "locked": true,
       "xi": [
@@ -824,6 +824,15 @@
           "ep": 3.2
         },
         {
+          "id": 426,
+          "name": "B.Fernandes",
+          "pos": "MID",
+          "type": 3,
+          "team": "Man Utd",
+          "teamId": 16,
+          "ep": 2.8
+        },
+        {
           "id": 398,
           "name": "Foden",
           "pos": "MID",
@@ -831,15 +840,6 @@
           "team": "Man City",
           "teamId": 15,
           "ep": 2.4
-        },
-        {
-          "id": 426,
-          "name": "B.Fernandes",
-          "pos": "MID",
-          "type": 3,
-          "team": "Man Utd",
-          "teamId": 16,
-          "ep": 2
         },
         {
           "id": 465,
@@ -1013,7 +1013,7 @@
           "type": 2,
           "team": "Aston Villa",
           "teamId": 2,
-          "ep": 1.2
+          "ep": 1.4
         },
         {
           "id": 36,
@@ -1022,7 +1022,7 @@
           "type": 2,
           "team": "Aston Villa",
           "teamId": 2,
-          "ep": 1
+          "ep": 0.8
         },
         {
           "id": 69,
@@ -1037,7 +1037,7 @@
     },
     "1947": {
       "formation": "3-5-2",
-      "expected": 43,
+      "expected": 43.2,
       "captainId": 236,
       "locked": true,
       "xi": [
@@ -1048,7 +1048,7 @@
           "type": 1,
           "team": "Man Utd",
           "teamId": 16,
-          "ep": 1.8
+          "ep": 2
         },
         {
           "id": 555,
@@ -1182,7 +1182,7 @@
     },
     "10210": {
       "formation": "4-4-2",
-      "expected": 37.6,
+      "expected": 38.2,
       "captainId": 4,
       "locked": true,
       "xi": [
@@ -1232,6 +1232,15 @@
           "ep": 0.8
         },
         {
+          "id": 47,
+          "name": "Kamara",
+          "pos": "MID",
+          "type": 3,
+          "team": "Aston Villa",
+          "teamId": 2,
+          "ep": 3.8
+        },
+        {
           "id": 628,
           "name": "Barcola",
           "pos": "MID",
@@ -1248,15 +1257,6 @@
           "team": "Brentford",
           "teamId": 4,
           "ep": 3.4
-        },
-        {
-          "id": 47,
-          "name": "Kamara",
-          "pos": "MID",
-          "type": 3,
-          "team": "Aston Villa",
-          "teamId": 2,
-          "ep": 3.2
         },
         {
           "id": 556,
@@ -1472,7 +1472,7 @@
     },
     "26227": {
       "formation": "5-4-1",
-      "expected": 38.8,
+      "expected": 39.4,
       "captainId": 166,
       "locked": true,
       "xi": [
@@ -1483,7 +1483,7 @@
           "type": 1,
           "team": "Aston Villa",
           "teamId": 2,
-          "ep": 3.2
+          "ep": 3
         },
         {
           "id": 64,
@@ -1573,7 +1573,7 @@
           "type": 4,
           "team": "Aston Villa",
           "teamId": 2,
-          "ep": 8
+          "ep": 8.8
         }
       ],
       "bench": [
@@ -1617,7 +1617,7 @@
     },
     "29975": {
       "formation": "4-5-1",
-      "expected": 43,
+      "expected": 43.4,
       "captainId": 109,
       "locked": true,
       "xi": [
@@ -1646,7 +1646,7 @@
           "type": 2,
           "team": "Liverpool",
           "teamId": 14,
-          "ep": 4
+          "ep": 4.4
         },
         {
           "id": 390,
@@ -1762,7 +1762,7 @@
     },
     "99786": {
       "formation": "3-5-2",
-      "expected": 42.4,
+      "expected": 42.6,
       "captainId": 115,
       "locked": true,
       "xi": [
@@ -1818,7 +1818,7 @@
           "type": 3,
           "team": "Man Utd",
           "teamId": 16,
-          "ep": 4
+          "ep": 4.2
         },
         {
           "id": 95,

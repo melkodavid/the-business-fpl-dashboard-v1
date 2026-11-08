@@ -28,27 +28,27 @@
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 418
-    },
-    {
-      "managerId": 1501,
-      "managerName": "Set Piece Fc",
-      "draftTeamPoints": 393
+      "draftTeamPoints": 419
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 393
+      "draftTeamPoints": 404
+    },
+    {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "draftTeamPoints": 398
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "draftTeamPoints": 364
+      "draftTeamPoints": 370
     },
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
-      "draftTeamPoints": 356
+      "draftTeamPoints": 360
     },
     {
       "managerId": 10210,
@@ -75,7 +75,7 @@
     {
       "pickNumber": 2,
       "round": 1,
-      "seasonPoints": 41,
+      "seasonPoints": 45,
       "managerId": 29975,
       "elementId": 426,
       "playerName": "B.Fernandes",
@@ -165,7 +165,7 @@
     {
       "pickNumber": 11,
       "round": 1,
-      "seasonPoints": 45,
+      "seasonPoints": 46,
       "managerId": 99786,
       "elementId": 427,
       "playerName": "Mbeumo",
@@ -1065,7 +1065,7 @@
     {
       "pickNumber": 101,
       "round": 9,
-      "seasonPoints": 50,
+      "seasonPoints": 54,
       "managerId": 26227,
       "elementId": 166,
       "playerName": "N.Jackson",
@@ -1125,7 +1125,7 @@
     {
       "pickNumber": 107,
       "round": 9,
-      "seasonPoints": 10,
+      "seasonPoints": 20,
       "managerId": 99786,
       "elementId": 415,
       "playerName": "Dorgu",
@@ -1275,7 +1275,7 @@
     {
       "pickNumber": 122,
       "round": 11,
-      "seasonPoints": 42,
+      "seasonPoints": 44,
       "managerId": 29975,
       "elementId": 580,
       "playerName": "Araujo",
@@ -1325,7 +1325,7 @@
     {
       "pickNumber": 127,
       "round": 11,
-      "seasonPoints": 20,
+      "seasonPoints": 21,
       "managerId": 1947,
       "elementId": 412,
       "playerName": "Lammens",
@@ -1335,7 +1335,7 @@
     {
       "pickNumber": 128,
       "round": 11,
-      "seasonPoints": 14,
+      "seasonPoints": 13,
       "managerId": 1501,
       "elementId": 36,
       "playerName": "Maatsen",
@@ -1425,7 +1425,7 @@
     {
       "pickNumber": 137,
       "round": 12,
-      "seasonPoints": 25,
+      "seasonPoints": 31,
       "managerId": 1501,
       "elementId": 43,
       "playerName": "Tielemans",
