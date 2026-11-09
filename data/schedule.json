@@ -59,10 +59,10 @@
       "importance": 2.1,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 45,
+        "homeWinPct": 42,
         "drawPct": 3,
-        "awayWinPct": 52,
-        "homeExpected": 44.5,
+        "awayWinPct": 55,
+        "homeExpected": 43.6,
         "awayExpected": 45.7,
         "homeSoFar": null,
         "awaySoFar": null
@@ -1098,7 +1098,7 @@
     },
     "1947": {
       "formation": "4-5-1",
-      "expected": 44.5,
+      "expected": 43.6,
       "captainId": 555,
       "locked": false,
       "xi": [
@@ -1121,15 +1121,6 @@
           "ep": 6.8
         },
         {
-          "id": 356,
-          "name": "Virgil",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Liverpool",
-          "teamId": 14,
-          "ep": 3.6
-        },
-        {
           "id": 145,
           "name": "Fofana",
           "pos": "DEF",
@@ -1137,6 +1128,15 @@
           "team": "Chelsea",
           "teamId": 6,
           "ep": 3
+        },
+        {
+          "id": 356,
+          "name": "Virgil",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Liverpool",
+          "teamId": 14,
+          "ep": 2.7
         },
         {
           "id": 202,
