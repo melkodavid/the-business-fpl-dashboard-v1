@@ -1,0 +1,80 @@
+{
+  "gw": 10,
+  "headline": {
+    "type": "luck-snakebit",
+    "personKeys": [
+      "lu"
+    ],
+    "text": "Lu Palladino did everything right and still lost. Snakebit.",
+    "facts": {
+      "managerId": 1377,
+      "opponentId": 1857
+    },
+    "gw": 10
+  },
+  "secondaries": [
+    {
+      "type": "streak-break",
+      "personKeys": [
+        "muk"
+      ],
+      "text": "Somebody check on Muk P -- 8 defeats in a row, and then a win.",
+      "facts": {
+        "managerId": 1530,
+        "brokenLength": 8
+      },
+      "gw": 10
+    },
+    {
+      "type": "lu-post-mark-tracker",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "No Mark, no problem? Lu sits 11 right now.",
+      "facts": {
+        "managerId": 1377,
+        "rank": 11,
+        "total": 9
+      },
+      "gw": 10
+    },
+    {
+      "type": "table-exit-top4",
+      "personKeys": [
+        "anthony"
+      ],
+      "text": "Top 4 watch: Anthony Palladino is out.",
+      "facts": {
+        "managerId": 10375,
+        "rank": 5
+      },
+      "gw": 10
+    },
+    {
+      "type": "table-enter-top4",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "Noah Palladino climbs into the top 4.",
+      "facts": {
+        "managerId": 1425,
+        "rank": 3
+      },
+      "gw": 10
+    },
+    {
+      "type": "gauntlet-progress",
+      "personKeys": [
+        "mitch"
+      ],
+      "text": "Mitch Grice's gauntlet record so far: 0 wins in 1 tries.",
+      "facts": {
+        "managerId": 1947,
+        "wins": 0,
+        "played": 1,
+        "length": 3
+      },
+      "gw": 10
+    }
+  ]
+}

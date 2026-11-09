@@ -313,6 +313,34 @@
           "fixtureId": 90
         }
       ]
+    },
+    {
+      "gw": 10,
+      "topScore": {
+        "managerIds": [
+          1857
+        ],
+        "score": 52
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          99786
+        ],
+        "score": 28
+      },
+      "blowout": {
+        "title": "Zacharias United took Patso Ball Fc behind the bushes",
+        "winnerId": 29975,
+        "loserId": 99786,
+        "margin": 17
+      },
+      "worstLineup": {
+        "managerIds": [
+          1471
+        ],
+        "benchPoints": 16
+      },
+      "fiftyNineClubInstances": []
     }
   ],
   "hallOfFame": {
@@ -327,7 +355,7 @@
       },
       {
         "managerId": 1857,
-        "count": 1
+        "count": 2
       },
       {
         "managerId": 26227,
@@ -366,6 +394,10 @@
       {
         "managerId": 1425,
         "count": 1
+      },
+      {
+        "managerId": 99786,
+        "count": 1
       }
     ],
     "blowout": [
@@ -396,6 +428,10 @@
       {
         "managerId": 1377,
         "count": 1
+      },
+      {
+        "managerId": 29975,
+        "count": 1
       }
     ],
     "worstLineup": [
@@ -408,15 +444,15 @@
         "count": 3
       },
       {
+        "managerId": 1471,
+        "count": 2
+      },
+      {
         "managerId": 1857,
         "count": 1
       },
       {
         "managerId": 1947,
-        "count": 1
-      },
-      {
-        "managerId": 1471,
         "count": 1
       }
     ]

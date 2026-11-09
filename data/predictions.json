@@ -228,37 +228,37 @@
           "key": "1377-1857",
           "home": 1377,
           "away": 1857,
-          "result": null
+          "result": "A"
         },
         {
           "key": "1947-1530",
           "home": 1947,
           "away": 1530,
-          "result": null
+          "result": "A"
         },
         {
           "key": "10210-1501",
           "home": 10210,
           "away": 1501,
-          "result": null
+          "result": "A"
         },
         {
           "key": "10375-1471",
           "home": 10375,
           "away": 1471,
-          "result": null
+          "result": "A"
         },
         {
           "key": "26227-1425",
           "home": 26227,
           "away": 1425,
-          "result": null
+          "result": "A"
         },
         {
           "key": "29975-99786",
           "home": 29975,
           "away": 99786,
-          "result": null
+          "result": "H"
         }
       ],
       "picks": {
@@ -295,20 +295,20 @@
           "1947-1530": "H"
         }
       },
-      "complete": false
+      "complete": true
     }
   ],
   "table": [
     {
       "personKey": "anthony",
       "managerId": 10375,
-      "played": 12,
-      "correct": 9,
-      "weeks": 2,
+      "played": 18,
+      "correct": 13,
+      "weeks": 3,
       "bestWeek": 5,
       "perfectWeeks": 0,
-      "streak": 3,
-      "bestStreak": 3,
+      "streak": 1,
+      "bestStreak": 4,
       "boldCalls": 1,
       "boldHits": 1,
       "byWeek": {
@@ -319,17 +319,21 @@
         "9": {
           "correct": 5,
           "total": 6
+        },
+        "10": {
+          "correct": 4,
+          "total": 6
         }
       },
-      "pct": 75,
+      "pct": 72.2,
       "rank": 1
     },
     {
       "personKey": "david",
       "managerId": 1857,
-      "played": 18,
-      "correct": 12,
-      "weeks": 3,
+      "played": 24,
+      "correct": 14,
+      "weeks": 4,
       "bestWeek": 5,
       "perfectWeeks": 0,
       "streak": 0,
@@ -348,64 +352,14 @@
         "9": {
           "correct": 4,
           "total": 6
-        }
-      },
-      "pct": 66.7,
-      "rank": 2
-    },
-    {
-      "personKey": "marshall",
-      "managerId": 1471,
-      "played": 18,
-      "correct": 10,
-      "weeks": 3,
-      "bestWeek": 5,
-      "perfectWeeks": 0,
-      "streak": 3,
-      "bestStreak": 5,
-      "boldCalls": 1,
-      "boldHits": 0,
-      "byWeek": {
-        "7": {
-          "correct": 3,
-          "total": 6
         },
-        "8": {
+        "10": {
           "correct": 2,
           "total": 6
-        },
-        "9": {
-          "correct": 5,
-          "total": 6
         }
       },
-      "pct": 55.6,
-      "rank": 3
-    },
-    {
-      "personKey": "lu",
-      "managerId": 1377,
-      "played": 12,
-      "correct": 6,
-      "weeks": 2,
-      "bestWeek": 3,
-      "perfectWeeks": 0,
-      "streak": 2,
-      "bestStreak": 2,
-      "boldCalls": 2,
-      "boldHits": 0,
-      "byWeek": {
-        "7": {
-          "correct": 3,
-          "total": 6
-        },
-        "9": {
-          "correct": 3,
-          "total": 6
-        }
-      },
-      "pct": 50,
-      "rank": 4
+      "pct": 58.3,
+      "rank": 2
     },
     {
       "personKey": "noah",
@@ -426,6 +380,68 @@
         }
       },
       "pct": 50,
+      "rank": 3
+    },
+    {
+      "personKey": "marshall",
+      "managerId": 1471,
+      "played": 24,
+      "correct": 11,
+      "weeks": 4,
+      "bestWeek": 5,
+      "perfectWeeks": 0,
+      "streak": 0,
+      "bestStreak": 5,
+      "boldCalls": 1,
+      "boldHits": 0,
+      "byWeek": {
+        "7": {
+          "correct": 3,
+          "total": 6
+        },
+        "8": {
+          "correct": 2,
+          "total": 6
+        },
+        "9": {
+          "correct": 5,
+          "total": 6
+        },
+        "10": {
+          "correct": 1,
+          "total": 6
+        }
+      },
+      "pct": 45.8,
+      "rank": 4
+    },
+    {
+      "personKey": "lu",
+      "managerId": 1377,
+      "played": 18,
+      "correct": 8,
+      "weeks": 3,
+      "bestWeek": 3,
+      "perfectWeeks": 0,
+      "streak": 1,
+      "bestStreak": 2,
+      "boldCalls": 3,
+      "boldHits": 0,
+      "byWeek": {
+        "7": {
+          "correct": 3,
+          "total": 6
+        },
+        "9": {
+          "correct": 3,
+          "total": 6
+        },
+        "10": {
+          "correct": 2,
+          "total": 6
+        }
+      },
+      "pct": 44.4,
       "rank": 5
     }
   ]

@@ -4,16 +4,16 @@
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
       "for": {
-        "GK": 30,
-        "DEF": 172,
-        "MID": 104,
-        "FWD": 35
+        "GK": 33,
+        "DEF": 189,
+        "MID": 121,
+        "FWD": 48
       },
       "against": {
-        "GK": 30,
-        "DEF": 132,
-        "MID": 150,
-        "FWD": 63
+        "GK": 34,
+        "DEF": 144,
+        "MID": 167,
+        "FWD": 82
       },
       "topForPosition": "DEF",
       "topAgainstPosition": "MID"
@@ -22,16 +22,16 @@
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
       "for": {
-        "GK": 34,
-        "DEF": 147,
-        "MID": 181,
-        "FWD": 57
+        "GK": 36,
+        "DEF": 163,
+        "MID": 195,
+        "FWD": 58
       },
       "against": {
         "GK": 41,
-        "DEF": 141,
-        "MID": 130,
-        "FWD": 75
+        "DEF": 146,
+        "MID": 144,
+        "FWD": 86
       },
       "topForPosition": "MID",
       "topAgainstPosition": "DEF"
@@ -40,16 +40,16 @@
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
       "for": {
-        "GK": 44,
-        "DEF": 138,
-        "MID": 196,
-        "FWD": 27
+        "GK": 54,
+        "DEF": 164,
+        "MID": 203,
+        "FWD": 29
       },
       "against": {
-        "GK": 27,
-        "DEF": 148,
-        "MID": 123,
-        "FWD": 60
+        "GK": 28,
+        "DEF": 157,
+        "MID": 133,
+        "FWD": 70
       },
       "topForPosition": "MID",
       "topAgainstPosition": "DEF"
@@ -58,34 +58,34 @@
       "managerId": 1501,
       "managerName": "Set Piece Fc",
       "for": {
-        "GK": 37,
-        "DEF": 181,
-        "MID": 150,
-        "FWD": 53
+        "GK": 39,
+        "DEF": 199,
+        "MID": 163,
+        "FWD": 63
       },
       "against": {
-        "GK": 43,
-        "DEF": 144,
-        "MID": 148,
-        "FWD": 60
+        "GK": 49,
+        "DEF": 164,
+        "MID": 159,
+        "FWD": 63
       },
       "topForPosition": "DEF",
-      "topAgainstPosition": "MID"
+      "topAgainstPosition": "DEF"
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
       "for": {
-        "GK": 26,
-        "DEF": 132,
-        "MID": 90,
-        "FWD": 35
+        "GK": 28,
+        "DEF": 138,
+        "MID": 114,
+        "FWD": 42
       },
       "against": {
-        "GK": 39,
-        "DEF": 196,
-        "MID": 136,
-        "FWD": 55
+        "GK": 40,
+        "DEF": 204,
+        "MID": 163,
+        "FWD": 54
       },
       "topForPosition": "DEF",
       "topAgainstPosition": "DEF"
@@ -94,16 +94,16 @@
       "managerId": 1857,
       "managerName": "i can fix him*",
       "for": {
-        "GK": 34,
-        "DEF": 95,
-        "MID": 134,
-        "FWD": 121
+        "GK": 38,
+        "DEF": 107,
+        "MID": 151,
+        "FWD": 140
       },
       "against": {
-        "GK": 31,
-        "DEF": 91,
-        "MID": 183,
-        "FWD": 55
+        "GK": 34,
+        "DEF": 108,
+        "MID": 200,
+        "FWD": 68
       },
       "topForPosition": "MID",
       "topAgainstPosition": "MID"
@@ -112,16 +112,16 @@
       "managerId": 1947,
       "managerName": "FC General",
       "for": {
-        "GK": 22,
-        "DEF": 154,
-        "MID": 165,
-        "FWD": 38
+        "GK": 23,
+        "DEF": 162,
+        "MID": 192,
+        "FWD": 37
       },
       "against": {
-        "GK": 35,
-        "DEF": 106,
-        "MID": 139,
-        "FWD": 59
+        "GK": 37,
+        "DEF": 112,
+        "MID": 163,
+        "FWD": 66
       },
       "topForPosition": "MID",
       "topAgainstPosition": "MID"
@@ -130,16 +130,16 @@
       "managerId": 10210,
       "managerName": "Syria FC**",
       "for": {
-        "GK": 54,
-        "DEF": 110,
-        "MID": 148,
-        "FWD": 32
+        "GK": 60,
+        "DEF": 130,
+        "MID": 159,
+        "FWD": 35
       },
       "against": {
-        "GK": 45,
-        "DEF": 150,
-        "MID": 115,
-        "FWD": 50
+        "GK": 47,
+        "DEF": 168,
+        "MID": 128,
+        "FWD": 60
       },
       "topForPosition": "MID",
       "topAgainstPosition": "DEF"
@@ -148,16 +148,16 @@
       "managerId": 10375,
       "managerName": "NEEN FC",
       "for": {
-        "GK": 21,
-        "DEF": 127,
-        "MID": 100,
-        "FWD": 117
+        "GK": 22,
+        "DEF": 136,
+        "MID": 110,
+        "FWD": 127
       },
       "against": {
-        "GK": 36,
-        "DEF": 101,
-        "MID": 129,
-        "FWD": 53
+        "GK": 46,
+        "DEF": 127,
+        "MID": 136,
+        "FWD": 55
       },
       "topForPosition": "DEF",
       "topAgainstPosition": "MID"
@@ -167,15 +167,15 @@
       "managerName": "Mourinho’s Ego FT",
       "for": {
         "GK": 31,
-        "DEF": 131,
-        "MID": 177,
-        "FWD": 63
+        "DEF": 136,
+        "MID": 191,
+        "FWD": 74
       },
       "against": {
-        "GK": 23,
-        "DEF": 142,
-        "MID": 177,
-        "FWD": 36
+        "GK": 25,
+        "DEF": 158,
+        "MID": 191,
+        "FWD": 37
       },
       "topForPosition": "MID",
       "topAgainstPosition": "MID"
@@ -184,16 +184,16 @@
       "managerId": 29975,
       "managerName": "Zacharias United",
       "for": {
-        "GK": 51,
-        "DEF": 98,
-        "MID": 126,
-        "FWD": 34
+        "GK": 57,
+        "DEF": 117,
+        "MID": 144,
+        "FWD": 36
       },
       "against": {
-        "GK": 40,
-        "DEF": 148,
-        "MID": 125,
-        "FWD": 55
+        "GK": 43,
+        "DEF": 157,
+        "MID": 135,
+        "FWD": 61
       },
       "topForPosition": "MID",
       "topAgainstPosition": "DEF"
@@ -202,16 +202,16 @@
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
       "for": {
-        "GK": 38,
-        "DEF": 124,
-        "MID": 162,
-        "FWD": 67
+        "GK": 41,
+        "DEF": 133,
+        "MID": 172,
+        "FWD": 73
       },
       "against": {
-        "GK": 32,
-        "DEF": 110,
-        "MID": 178,
-        "FWD": 58
+        "GK": 38,
+        "DEF": 129,
+        "MID": 196,
+        "FWD": 60
       },
       "topForPosition": "MID",
       "topAgainstPosition": "MID"

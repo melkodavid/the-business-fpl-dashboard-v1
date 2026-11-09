@@ -3,122 +3,122 @@
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "goals": 24,
+      "goals": 37,
       "assists": 33,
-      "cleanSheets": 83,
-      "defensiveContribution": 26,
-      "bonus": 27,
-      "cardsLost": -10
+      "cleanSheets": 92,
+      "defensiveContribution": 28,
+      "bonus": 33,
+      "cardsLost": -11
     },
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
       "goals": 88,
-      "assists": 27,
-      "cleanSheets": 77,
-      "defensiveContribution": 16,
-      "bonus": 56,
-      "cardsLost": -17
+      "assists": 30,
+      "cleanSheets": 86,
+      "defensiveContribution": 20,
+      "bonus": 57,
+      "cardsLost": -19
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
       "goals": 75,
-      "assists": 30,
-      "cleanSheets": 72,
-      "defensiveContribution": 32,
-      "bonus": 30,
-      "cardsLost": -16
+      "assists": 33,
+      "cleanSheets": 84,
+      "defensiveContribution": 36,
+      "bonus": 36,
+      "cardsLost": -17
     },
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "goals": 70,
-      "assists": 30,
-      "cleanSheets": 85,
-      "defensiveContribution": 32,
-      "bonus": 40,
+      "goals": 74,
+      "assists": 36,
+      "cleanSheets": 90,
+      "defensiveContribution": 36,
+      "bonus": 45,
       "cardsLost": -9
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "goals": 18,
-      "assists": 30,
-      "cleanSheets": 60,
-      "defensiveContribution": 18,
-      "bonus": 23,
-      "cardsLost": -16
+      "goals": 32,
+      "assists": 33,
+      "cleanSheets": 62,
+      "defensiveContribution": 20,
+      "bonus": 24,
+      "cardsLost": -17
     },
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "goals": 66,
-      "assists": 33,
-      "cleanSheets": 52,
-      "defensiveContribution": 34,
-      "bonus": 35,
-      "cardsLost": -16
+      "goals": 79,
+      "assists": 39,
+      "cleanSheets": 56,
+      "defensiveContribution": 36,
+      "bonus": 43,
+      "cardsLost": -17
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "goals": 50,
+      "goals": 60,
       "assists": 45,
-      "cleanSheets": 58,
-      "defensiveContribution": 46,
-      "bonus": 28,
-      "cardsLost": -22
+      "cleanSheets": 59,
+      "defensiveContribution": 52,
+      "bonus": 32,
+      "cardsLost": -27
     },
     {
       "managerId": 10210,
       "managerName": "Syria FC**",
       "goals": 51,
-      "assists": 30,
-      "cleanSheets": 69,
-      "defensiveContribution": 20,
-      "bonus": 25,
-      "cardsLost": -17
+      "assists": 36,
+      "cleanSheets": 78,
+      "defensiveContribution": 28,
+      "bonus": 26,
+      "cardsLost": -19
     },
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "goals": 68,
+      "goals": 72,
       "assists": 24,
-      "cleanSheets": 52,
-      "defensiveContribution": 30,
-      "bonus": 40,
-      "cardsLost": -19
+      "cleanSheets": 54,
+      "defensiveContribution": 34,
+      "bonus": 42,
+      "cardsLost": -21
     },
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
-      "goals": 85,
-      "assists": 27,
-      "cleanSheets": 77,
-      "defensiveContribution": 18,
-      "bonus": 41,
-      "cardsLost": -11
+      "goals": 94,
+      "assists": 30,
+      "cleanSheets": 78,
+      "defensiveContribution": 20,
+      "bonus": 45,
+      "cardsLost": -18
     },
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
       "goals": 35,
-      "assists": 21,
-      "cleanSheets": 63,
-      "defensiveContribution": 16,
-      "bonus": 21,
-      "cardsLost": -13
+      "assists": 24,
+      "cleanSheets": 82,
+      "defensiveContribution": 18,
+      "bonus": 23,
+      "cardsLost": -15
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
       "goals": 63,
-      "assists": 57,
-      "cleanSheets": 73,
+      "assists": 60,
+      "cleanSheets": 78,
       "defensiveContribution": 4,
       "bonus": 35,
-      "cardsLost": -16
+      "cardsLost": -17
     }
   ]
 }

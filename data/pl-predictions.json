@@ -1,7 +1,7 @@
 {
   "enabled": true,
-  "gw": 10,
-  "deadline": "2026-11-06T18:30:00Z",
+  "gw": 11,
+  "deadline": "2026-11-21T11:00:00Z",
   "teams": {
     "1": {
       "name": "Arsenal",
@@ -106,64 +106,64 @@
   },
   "fixtures": [
     {
-      "key": "pl94",
-      "home": 9,
-      "away": 7,
-      "kickoff": "2026-11-06T20:00:00Z"
+      "key": "pl108",
+      "home": 15,
+      "away": 10,
+      "kickoff": "2026-11-21T12:30:00Z"
     },
     {
-      "key": "pl97",
-      "home": 13,
-      "away": 19,
-      "kickoff": "2026-11-07T12:30:00Z"
+      "key": "pl101",
+      "home": 2,
+      "away": 20,
+      "kickoff": "2026-11-21T15:00:00Z"
     },
     {
-      "key": "pl91",
-      "home": 1,
-      "away": 11,
-      "kickoff": "2026-11-07T15:00:00Z"
+      "key": "pl102",
+      "home": 3,
+      "away": 18,
+      "kickoff": "2026-11-21T15:00:00Z"
     },
     {
-      "key": "pl95",
-      "home": 10,
-      "away": 17,
-      "kickoff": "2026-11-07T15:00:00Z"
+      "key": "pl104",
+      "home": 6,
+      "away": 13,
+      "kickoff": "2026-11-21T15:00:00Z"
     },
     {
-      "key": "pl99",
-      "home": 18,
-      "away": 15,
-      "kickoff": "2026-11-07T17:30:00Z"
+      "key": "pl105",
+      "home": 7,
+      "away": 8,
+      "kickoff": "2026-11-21T15:00:00Z"
     },
     {
-      "key": "pl92",
-      "home": 5,
-      "away": 4,
-      "kickoff": "2026-11-08T14:00:00Z"
+      "key": "pl110",
+      "home": 19,
+      "away": 12,
+      "kickoff": "2026-11-21T15:00:00Z"
     },
     {
-      "key": "pl93",
-      "home": 8,
-      "away": 14,
-      "kickoff": "2026-11-08T14:00:00Z"
+      "key": "pl109",
+      "home": 17,
+      "away": 1,
+      "kickoff": "2026-11-21T17:30:00Z"
     },
     {
-      "key": "pl96",
-      "home": 12,
-      "away": 3,
-      "kickoff": "2026-11-08T14:00:00Z"
+      "key": "pl106",
+      "home": 11,
+      "away": 5,
+      "kickoff": "2026-11-22T14:00:00Z"
     },
     {
-      "key": "pl100",
-      "home": 20,
-      "away": 6,
-      "kickoff": "2026-11-08T14:00:00Z"
+      "key": "pl107",
+      "home": 14,
+      "away": 16,
+      "kickoff": "2026-11-22T16:30:00Z"
     },
     {
-      "key": "pl98",
-      "home": 16,
-      "away": 2,
-      "kickoff": "2026-11-08T16:30:00Z"
+      "key": "pl103",
+      "home": 4,
+      "away": 9,
+      "kickoff": "2026-11-23T20:00:00Z"
     }
   ],
   "weeks": [
