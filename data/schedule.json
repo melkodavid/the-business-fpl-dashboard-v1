@@ -15,10 +15,10 @@
       "importance": 3.5,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 41,
+        "homeWinPct": 42,
         "drawPct": 3,
-        "awayWinPct": 56,
-        "homeExpected": 47.3,
+        "awayWinPct": 55,
+        "homeExpected": 47.6,
         "awayExpected": 49.7,
         "homeSoFar": null,
         "awaySoFar": null
@@ -37,11 +37,11 @@
       "importance": 2.43,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 58,
+        "homeWinPct": 59,
         "drawPct": 3,
-        "awayWinPct": 39,
-        "homeExpected": 44.3,
-        "awayExpected": 40.9,
+        "awayWinPct": 38,
+        "homeExpected": 43.3,
+        "awayExpected": 39.7,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -81,11 +81,11 @@
       "importance": 2.1,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 49,
+        "homeWinPct": 54,
         "drawPct": 3,
-        "awayWinPct": 48,
+        "awayWinPct": 43,
         "homeExpected": 44,
-        "awayExpected": 44,
+        "awayExpected": 42.2,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -106,8 +106,8 @@
         "homeWinPct": 82,
         "drawPct": 2,
         "awayWinPct": 16,
-        "homeExpected": 46.3,
-        "awayExpected": 33.3,
+        "homeExpected": 47.5,
+        "awayExpected": 34.8,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -125,10 +125,10 @@
       "importance": 1.06,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 55,
+        "homeWinPct": 56,
         "drawPct": 3,
-        "awayWinPct": 42,
-        "homeExpected": 43.5,
+        "awayWinPct": 41,
+        "homeExpected": 44.1,
         "awayExpected": 41.4,
         "homeSoFar": null,
         "awaySoFar": null
@@ -373,7 +373,7 @@
     },
     "1425": {
       "formation": "4-4-2",
-      "expected": 40.9,
+      "expected": 39.7,
       "captainId": 68,
       "locked": false,
       "xi": [
@@ -384,7 +384,7 @@
           "type": 1,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 4.4
+          "ep": 4.8
         },
         {
           "id": 114,
@@ -441,21 +441,21 @@
           "ep": 5.5
         },
         {
-          "id": 428,
-          "name": "Cunha",
-          "pos": "MID",
-          "type": 3,
-          "team": "Man Utd",
-          "teamId": 16,
-          "ep": 3.8
-        },
-        {
           "id": 338,
           "name": "Ampadu",
           "pos": "MID",
           "type": 3,
           "team": "Leeds",
           "teamId": 13,
+          "ep": 2.2
+        },
+        {
+          "id": 428,
+          "name": "Cunha",
+          "pos": "MID",
+          "type": 3,
+          "team": "Man Utd",
+          "teamId": 16,
           "ep": 2.2
         },
         {
@@ -808,7 +808,7 @@
     },
     "1530": {
       "formation": "4-5-1",
-      "expected": 33.3,
+      "expected": 34.8,
       "captainId": 127,
       "locked": false,
       "xi": [
@@ -822,6 +822,15 @@
           "ep": 2
         },
         {
+          "id": 503,
+          "name": "Van de Ven",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Spurs",
+          "teamId": 19,
+          "ep": 3.5
+        },
+        {
           "id": 151,
           "name": "Acheampong",
           "pos": "DEF",
@@ -829,15 +838,6 @@
           "team": "Chelsea",
           "teamId": 6,
           "ep": 3.2
-        },
-        {
-          "id": 503,
-          "name": "Van de Ven",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Spurs",
-          "teamId": 19,
-          "ep": 3
         },
         {
           "id": 91,
@@ -882,16 +882,7 @@
           "type": 3,
           "team": "Man Utd",
           "teamId": 16,
-          "ep": 2.8
-        },
-        {
-          "id": 398,
-          "name": "Foden",
-          "pos": "MID",
-          "type": 3,
-          "team": "Man City",
-          "teamId": 15,
-          "ep": 2.4
+          "ep": 3.2
         },
         {
           "id": 514,
@@ -900,6 +891,15 @@
           "type": 3,
           "team": "Spurs",
           "teamId": 19,
+          "ep": 3
+        },
+        {
+          "id": 398,
+          "name": "Foden",
+          "pos": "MID",
+          "type": 3,
+          "team": "Man City",
+          "teamId": 15,
           "ep": 2.4
         },
         {
@@ -953,7 +953,7 @@
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 44,
+      "expected": 42.2,
       "captainId": 249,
       "locked": false,
       "xi": [
@@ -1018,7 +1018,7 @@
           "type": 3,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 4
+          "ep": 3.2
         },
         {
           "id": 481,
@@ -1054,7 +1054,7 @@
           "type": 4,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 3
+          "ep": 2
         }
       ],
       "bench": [
@@ -1388,7 +1388,7 @@
     },
     "10375": {
       "formation": "4-3-3",
-      "expected": 46.3,
+      "expected": 47.5,
       "captainId": 112,
       "locked": false,
       "xi": [
@@ -1408,7 +1408,7 @@
           "type": 2,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 6.6
+          "ep": 7.5
         },
         {
           "id": 257,
@@ -1453,7 +1453,7 @@
           "type": 3,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 4.2
+          "ep": 4.5
         },
         {
           "id": 452,
@@ -1533,7 +1533,7 @@
     },
     "26227": {
       "formation": "5-3-2",
-      "expected": 43.5,
+      "expected": 44.1,
       "captainId": 166,
       "locked": false,
       "xi": [
@@ -1634,7 +1634,7 @@
           "type": 4,
           "team": "Spurs",
           "teamId": 19,
-          "ep": 3.2
+          "ep": 3.8
         }
       ],
       "bench": [
@@ -1677,8 +1677,8 @@
       ]
     },
     "29975": {
-      "formation": "4-5-1",
-      "expected": 47.3,
+      "formation": "5-4-1",
+      "expected": 47.6,
       "captainId": 129,
       "locked": false,
       "xi": [
@@ -1728,6 +1728,15 @@
           "ep": 2.2
         },
         {
+          "id": 499,
+          "name": "Pedro Porro",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Spurs",
+          "teamId": 19,
+          "ep": 1.8
+        },
+        {
           "id": 129,
           "name": "Ayari",
           "pos": "MID",
@@ -1764,15 +1773,6 @@
           "ep": 2.4
         },
         {
-          "id": 98,
-          "name": "Janelt",
-          "pos": "MID",
-          "type": 3,
-          "team": "Brentford",
-          "teamId": 4,
-          "ep": 1.5
-        },
-        {
           "id": 26,
           "name": "Havertz",
           "pos": "FWD",
@@ -1793,13 +1793,13 @@
           "ep": 0
         },
         {
-          "id": 499,
-          "name": "Pedro Porro",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Spurs",
-          "teamId": 19,
-          "ep": 1.4
+          "id": 98,
+          "name": "Janelt",
+          "pos": "MID",
+          "type": 3,
+          "team": "Brentford",
+          "teamId": 4,
+          "ep": 1.5
         },
         {
           "id": 649,
@@ -1823,7 +1823,7 @@
     },
     "99786": {
       "formation": "3-5-2",
-      "expected": 44.3,
+      "expected": 43.3,
       "captainId": 61,
       "locked": false,
       "xi": [
@@ -1882,21 +1882,21 @@
           "ep": 4.5
         },
         {
-          "id": 427,
-          "name": "Mbeumo",
-          "pos": "MID",
-          "type": 3,
-          "team": "Man Utd",
-          "teamId": 16,
-          "ep": 4.2
-        },
-        {
           "id": 453,
           "name": "Barnes",
           "pos": "MID",
           "type": 3,
           "team": "Newcastle",
           "teamId": 17,
+          "ep": 3.2
+        },
+        {
+          "id": 427,
+          "name": "Mbeumo",
+          "pos": "MID",
+          "type": 3,
+          "team": "Man Utd",
+          "teamId": 16,
           "ep": 3.2
         },
         {
