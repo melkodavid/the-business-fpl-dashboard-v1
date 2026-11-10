@@ -15,10 +15,10 @@
       "importance": 3.5,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 42,
+        "homeWinPct": 45,
         "drawPct": 3,
-        "awayWinPct": 55,
-        "homeExpected": 47.6,
+        "awayWinPct": 52,
+        "homeExpected": 48.4,
         "awayExpected": 49.7,
         "homeSoFar": null,
         "awaySoFar": null
@@ -1678,7 +1678,7 @@
     },
     "29975": {
       "formation": "5-4-1",
-      "expected": 47.6,
+      "expected": 48.4,
       "captainId": 129,
       "locked": false,
       "xi": [
@@ -1770,7 +1770,7 @@
           "type": 3,
           "team": "Fulham",
           "teamId": 10,
-          "ep": 2.4
+          "ep": 3.2
         },
         {
           "id": 26,
