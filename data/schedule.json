@@ -125,11 +125,11 @@
       "importance": 1.06,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 54,
+        "homeWinPct": 56,
         "drawPct": 3,
-        "awayWinPct": 43,
+        "awayWinPct": 41,
         "homeExpected": 42.1,
-        "awayExpected": 40.1,
+        "awayExpected": 39.4,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -663,7 +663,7 @@
     },
     "1501": {
       "formation": "4-4-2",
-      "expected": 40.1,
+      "expected": 39.4,
       "captainId": 79,
       "locked": false,
       "xi": [
@@ -713,15 +713,6 @@
           "ep": 2.5
         },
         {
-          "id": 286,
-          "name": "Belloumi",
-          "pos": "MID",
-          "type": 3,
-          "team": "Hull City",
-          "teamId": 11,
-          "ep": 2.8
-        },
-        {
           "id": 480,
           "name": "Gibbs-White",
           "pos": "MID",
@@ -738,6 +729,15 @@
           "team": "Liverpool",
           "teamId": 14,
           "ep": 2.2
+        },
+        {
+          "id": 286,
+          "name": "Belloumi",
+          "pos": "MID",
+          "type": 3,
+          "team": "Hull City",
+          "teamId": 11,
+          "ep": 2.1
         },
         {
           "id": 157,
