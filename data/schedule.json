@@ -40,7 +40,7 @@
         "homeWinPct": 59,
         "drawPct": 3,
         "awayWinPct": 38,
-        "homeExpected": 43.3,
+        "homeExpected": 43.2,
         "awayExpected": 39.7,
         "homeSoFar": null,
         "awaySoFar": null
@@ -1822,8 +1822,8 @@
       ]
     },
     "99786": {
-      "formation": "3-5-2",
-      "expected": 43.3,
+      "formation": "4-5-1",
+      "expected": 43.2,
       "captainId": 61,
       "locked": false,
       "xi": [
@@ -1862,6 +1862,15 @@
           "team": "Brentford",
           "teamId": 4,
           "ep": 2.8
+        },
+        {
+          "id": 331,
+          "name": "Gudmundsson",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Leeds",
+          "teamId": 13,
+          "ep": 1.9
         },
         {
           "id": 13,
@@ -1916,15 +1925,6 @@
           "team": "Brighton",
           "teamId": 5,
           "ep": 4.5
-        },
-        {
-          "id": 552,
-          "name": "Brobbey",
-          "pos": "FWD",
-          "type": 4,
-          "team": "Sunderland",
-          "teamId": 20,
-          "ep": 2
         }
       ],
       "bench": [
@@ -1936,15 +1936,6 @@
           "team": "Everton",
           "teamId": 9,
           "ep": 2.8
-        },
-        {
-          "id": 331,
-          "name": "Gudmundsson",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Leeds",
-          "teamId": 13,
-          "ep": 1.9
         },
         {
           "id": 148,
@@ -1963,6 +1954,15 @@
           "team": "Crystal Palace",
           "teamId": 8,
           "ep": 1.8
+        },
+        {
+          "id": 552,
+          "name": "Brobbey",
+          "pos": "FWD",
+          "type": 4,
+          "team": "Sunderland",
+          "teamId": 20,
+          "ep": 1.5
         }
       ]
     }
