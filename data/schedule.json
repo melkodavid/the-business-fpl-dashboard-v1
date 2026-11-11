@@ -15,11 +15,11 @@
       "importance": 3.5,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 41,
+        "homeWinPct": 40,
         "drawPct": 3,
-        "awayWinPct": 56,
+        "awayWinPct": 57,
         "homeExpected": 47,
-        "awayExpected": 49.4,
+        "awayExpected": 50,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -37,10 +37,10 @@
       "importance": 2.43,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 59,
+        "homeWinPct": 60,
         "drawPct": 3,
-        "awayWinPct": 38,
-        "homeExpected": 43.4,
+        "awayWinPct": 37,
+        "homeExpected": 43.7,
         "awayExpected": 39.9,
         "homeSoFar": null,
         "awaySoFar": null
@@ -59,10 +59,10 @@
       "importance": 2.1,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 35,
+        "homeWinPct": 32,
         "drawPct": 3,
-        "awayWinPct": 62,
-        "homeExpected": 42.4,
+        "awayWinPct": 65,
+        "homeExpected": 41.4,
         "awayExpected": 47,
         "homeSoFar": null,
         "awaySoFar": null
@@ -81,11 +81,11 @@
       "importance": 2.1,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 54,
+        "homeWinPct": 46,
         "drawPct": 3,
-        "awayWinPct": 43,
-        "homeExpected": 44.8,
-        "awayExpected": 42.9,
+        "awayWinPct": 51,
+        "homeExpected": 42.4,
+        "awayExpected": 43.4,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -103,11 +103,11 @@
       "importance": 2.03,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 82,
+        "homeWinPct": 83,
         "drawPct": 2,
-        "awayWinPct": 16,
-        "homeExpected": 48.6,
-        "awayExpected": 35.8,
+        "awayWinPct": 15,
+        "homeExpected": 49.8,
+        "awayExpected": 36.4,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -128,8 +128,8 @@
         "homeWinPct": 56,
         "drawPct": 3,
         "awayWinPct": 41,
-        "homeExpected": 42.1,
-        "awayExpected": 39.4,
+        "homeExpected": 42.6,
+        "awayExpected": 40.2,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -503,7 +503,7 @@
           "type": 3,
           "team": "Newcastle",
           "teamId": 17,
-          "ep": 0.8
+          "ep": 1
         },
         {
           "id": 165,
@@ -518,7 +518,7 @@
     },
     "1471": {
       "formation": "5-4-1",
-      "expected": 49.4,
+      "expected": 50,
       "captainId": 504,
       "locked": false,
       "xi": [
@@ -619,7 +619,7 @@
           "type": 4,
           "team": "Coventry City",
           "teamId": 7,
-          "ep": 2.6
+          "ep": 3.2
         }
       ],
       "bench": [
@@ -663,7 +663,7 @@
     },
     "1501": {
       "formation": "4-4-2",
-      "expected": 39.4,
+      "expected": 40.2,
       "captainId": 79,
       "locked": false,
       "xi": [
@@ -701,7 +701,7 @@
           "type": 2,
           "team": "Newcastle",
           "teamId": 17,
-          "ep": 3
+          "ep": 3.8
         },
         {
           "id": 229,
@@ -808,7 +808,7 @@
     },
     "1530": {
       "formation": "4-5-1",
-      "expected": 35.8,
+      "expected": 36.4,
       "captainId": 127,
       "locked": false,
       "xi": [
@@ -846,7 +846,7 @@
           "type": 2,
           "team": "Coventry City",
           "teamId": 7,
-          "ep": 2.8
+          "ep": 3
         },
         {
           "id": 201,
@@ -909,7 +909,7 @@
           "type": 4,
           "team": "Newcastle",
           "teamId": 17,
-          "ep": 2.8
+          "ep": 3.2
         }
       ],
       "bench": [
@@ -920,7 +920,7 @@
           "type": 1,
           "team": "Coventry City",
           "teamId": 7,
-          "ep": 2
+          "ep": 1.8
         },
         {
           "id": 6,
@@ -953,18 +953,18 @@
     },
     "1857": {
       "formation": "3-4-3",
-      "expected": 42.9,
+      "expected": 43.4,
       "captainId": 249,
       "locked": false,
       "xi": [
         {
-          "id": 350,
-          "name": "A.Becker",
+          "id": 566,
+          "name": "Horníček",
           "pos": "GKP",
           "type": 1,
-          "team": "Liverpool",
-          "teamId": 14,
-          "ep": 3.5
+          "team": "Newcastle",
+          "teamId": 17,
+          "ep": 4
         },
         {
           "id": 334,
@@ -1059,13 +1059,13 @@
       ],
       "bench": [
         {
-          "id": 566,
-          "name": "Horníček",
+          "id": 350,
+          "name": "A.Becker",
           "pos": "GKP",
           "type": 1,
-          "team": "Newcastle",
-          "teamId": 17,
-          "ep": 3.2
+          "team": "Liverpool",
+          "teamId": 14,
+          "ep": 3.5
         },
         {
           "id": 36,
@@ -1098,7 +1098,7 @@
     },
     "1947": {
       "formation": "4-5-1",
-      "expected": 42.4,
+      "expected": 41.4,
       "captainId": 555,
       "locked": false,
       "xi": [
@@ -1154,7 +1154,7 @@
           "type": 3,
           "team": "Coventry City",
           "teamId": 7,
-          "ep": 5.2
+          "ep": 4.8
         },
         {
           "id": 67,
@@ -1199,7 +1199,7 @@
           "type": 4,
           "team": "Coventry City",
           "teamId": 7,
-          "ep": 2.8
+          "ep": 2.2
         }
       ],
       "bench": [
@@ -1242,8 +1242,8 @@
       ]
     },
     "10210": {
-      "formation": "3-4-3",
-      "expected": 44.8,
+      "formation": "4-4-2",
+      "expected": 42.4,
       "captainId": 4,
       "locked": false,
       "xi": [
@@ -1284,6 +1284,15 @@
           "ep": 3.8
         },
         {
+          "id": 204,
+          "name": "Mitchell",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Crystal Palace",
+          "teamId": 8,
+          "ep": 1.2
+        },
+        {
           "id": 628,
           "name": "Barcola",
           "pos": "MID",
@@ -1320,15 +1329,6 @@
           "ep": 2.2
         },
         {
-          "id": 598,
-          "name": "Cherif",
-          "pos": "FWD",
-          "type": 4,
-          "team": "Coventry City",
-          "teamId": 7,
-          "ep": 3.4
-        },
-        {
           "id": 25,
           "name": "Gyökeres",
           "pos": "FWD",
@@ -1344,7 +1344,7 @@
           "type": 4,
           "team": "Newcastle",
           "teamId": 17,
-          "ep": 1.4
+          "ep": 1.2
         }
       ],
       "bench": [
@@ -1358,22 +1358,13 @@
           "ep": 0
         },
         {
-          "id": 204,
-          "name": "Mitchell",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Crystal Palace",
-          "teamId": 8,
-          "ep": 1.2
-        },
-        {
           "id": 445,
           "name": "Thiaw",
           "pos": "DEF",
           "type": 2,
           "team": "Newcastle",
           "teamId": 17,
-          "ep": 0.8
+          "ep": 1
         },
         {
           "id": 208,
@@ -1383,12 +1374,21 @@
           "team": "Crystal Palace",
           "teamId": 8,
           "ep": 0
+        },
+        {
+          "id": 598,
+          "name": "Cherif",
+          "pos": "FWD",
+          "type": 4,
+          "team": "Coventry City",
+          "teamId": 7,
+          "ep": 1.2
         }
       ]
     },
     "10375": {
       "formation": "4-3-3",
-      "expected": 48.6,
+      "expected": 49.8,
       "captainId": 112,
       "locked": false,
       "xi": [
@@ -1426,7 +1426,7 @@
           "type": 2,
           "team": "Newcastle",
           "teamId": 17,
-          "ep": 3.2
+          "ep": 4
         },
         {
           "id": 448,
@@ -1435,7 +1435,7 @@
           "type": 2,
           "team": "Newcastle",
           "teamId": 17,
-          "ep": 2.6
+          "ep": 3
         },
         {
           "id": 591,
@@ -1533,7 +1533,7 @@
     },
     "26227": {
       "formation": "5-3-2",
-      "expected": 42.1,
+      "expected": 42.6,
       "captainId": 166,
       "locked": false,
       "xi": [
@@ -1574,6 +1574,15 @@
           "ep": 3.2
         },
         {
+          "id": 446,
+          "name": "Schär",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Newcastle",
+          "teamId": 17,
+          "ep": 2.5
+        },
+        {
           "id": 232,
           "name": "O'Brien",
           "pos": "DEF",
@@ -1581,15 +1590,6 @@
           "team": "Everton",
           "teamId": 9,
           "ep": 2.5
-        },
-        {
-          "id": 446,
-          "name": "Schär",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Newcastle",
-          "teamId": 17,
-          "ep": 2
         },
         {
           "id": 156,
@@ -1808,7 +1808,7 @@
           "type": 4,
           "team": "Newcastle",
           "teamId": 17,
-          "ep": 0.8
+          "ep": 0.5
         },
         {
           "id": 223,
@@ -1823,7 +1823,7 @@
     },
     "99786": {
       "formation": "4-5-1",
-      "expected": 43.4,
+      "expected": 43.7,
       "captainId": 61,
       "locked": false,
       "xi": [
@@ -1897,7 +1897,7 @@
           "type": 3,
           "team": "Newcastle",
           "teamId": 17,
-          "ep": 3.2
+          "ep": 3.5
         },
         {
           "id": 427,
