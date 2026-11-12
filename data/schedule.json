@@ -59,11 +59,11 @@
       "importance": 2.1,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 32,
+        "homeWinPct": 36,
         "drawPct": 3,
-        "awayWinPct": 65,
+        "awayWinPct": 61,
         "homeExpected": 41.4,
-        "awayExpected": 47,
+        "awayExpected": 45.7,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -228,7 +228,7 @@
   "lineups": {
     "1377": {
       "formation": "4-4-2",
-      "expected": 47,
+      "expected": 45.7,
       "captainId": 31,
       "locked": false,
       "xi": [
@@ -278,15 +278,6 @@
           "ep": 2.2
         },
         {
-          "id": 53,
-          "name": "Manzambi",
-          "pos": "MID",
-          "type": 3,
-          "team": "Aston Villa",
-          "teamId": 2,
-          "ep": 5.2
-        },
-        {
           "id": 15,
           "name": "Ødegaard",
           "pos": "MID",
@@ -294,6 +285,15 @@
           "team": "Arsenal",
           "teamId": 1,
           "ep": 5
+        },
+        {
+          "id": 53,
+          "name": "Manzambi",
+          "pos": "MID",
+          "type": 3,
+          "team": "Aston Villa",
+          "teamId": 2,
+          "ep": 3.9
         },
         {
           "id": 237,
