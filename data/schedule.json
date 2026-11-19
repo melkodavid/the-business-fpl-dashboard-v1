@@ -37,10 +37,10 @@
       "importance": 2.43,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 58,
+        "homeWinPct": 59,
         "drawPct": 3,
-        "awayWinPct": 39,
-        "homeExpected": 42.2,
+        "awayWinPct": 38,
+        "homeExpected": 42.7,
         "awayExpected": 39,
         "homeSoFar": null,
         "awaySoFar": null
@@ -793,7 +793,7 @@
           "type": 3,
           "team": "Leeds",
           "teamId": 13,
-          "ep": 0.3
+          "ep": 0.7
         },
         {
           "id": 81,
@@ -1512,15 +1512,6 @@
           "ep": 0.3
         },
         {
-          "id": 544,
-          "name": "Xhaka",
-          "pos": "MID",
-          "type": 3,
-          "team": "Sunderland",
-          "teamId": 20,
-          "ep": 2
-        },
-        {
           "id": 554,
           "name": "Tzolis",
           "pos": "MID",
@@ -1528,6 +1519,15 @@
           "team": "Arsenal",
           "teamId": 1,
           "ep": 2
+        },
+        {
+          "id": 544,
+          "name": "Xhaka",
+          "pos": "MID",
+          "type": 3,
+          "team": "Sunderland",
+          "teamId": 20,
+          "ep": 0
         }
       ]
     },
@@ -1822,8 +1822,8 @@
       ]
     },
     "99786": {
-      "formation": "4-4-2",
-      "expected": 42.2,
+      "formation": "4-5-1",
+      "expected": 42.7,
       "captainId": 61,
       "locked": false,
       "xi": [
@@ -1870,7 +1870,7 @@
           "type": 2,
           "team": "Leeds",
           "teamId": 13,
-          "ep": 2.2
+          "ep": 3
         },
         {
           "id": 95,
@@ -1909,13 +1909,13 @@
           "ep": 3.3
         },
         {
-          "id": 552,
-          "name": "Brobbey",
-          "pos": "FWD",
-          "type": 4,
-          "team": "Sunderland",
-          "teamId": 20,
-          "ep": 2
+          "id": 427,
+          "name": "Mbeumo",
+          "pos": "MID",
+          "type": 3,
+          "team": "Man Utd",
+          "teamId": 16,
+          "ep": 1.7
         },
         {
           "id": 138,
@@ -1947,15 +1947,6 @@
           "ep": 0
         },
         {
-          "id": 427,
-          "name": "Mbeumo",
-          "pos": "MID",
-          "type": 3,
-          "team": "Man Utd",
-          "teamId": 16,
-          "ep": 1.7
-        },
-        {
           "id": 222,
           "name": "Strand Larsen",
           "pos": "FWD",
@@ -1963,6 +1954,15 @@
           "team": "Crystal Palace",
           "teamId": 8,
           "ep": 0.5
+        },
+        {
+          "id": 552,
+          "name": "Brobbey",
+          "pos": "FWD",
+          "type": 4,
+          "team": "Sunderland",
+          "teamId": 20,
+          "ep": 0
         }
       ]
     }
