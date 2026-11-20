@@ -686,12 +686,12 @@
           "ep": 5.7
         },
         {
-          "id": 254,
-          "name": "Robinson",
+          "id": 534,
+          "name": "Hume",
           "pos": "DEF",
           "type": 2,
-          "team": "Fulham",
-          "teamId": 10,
+          "team": "Sunderland",
+          "teamId": 20,
           "ep": 4.3
         },
         {
@@ -778,13 +778,13 @@
           "ep": 3.7
         },
         {
-          "id": 389,
-          "name": "Matheus N.",
+          "id": 611,
+          "name": "Wan-Bissaka",
           "pos": "DEF",
           "type": 2,
-          "team": "Man City",
-          "teamId": 15,
-          "ep": 0.5
+          "team": "Aston Villa",
+          "teamId": 2,
+          "ep": 0
         },
         {
           "id": 335,
