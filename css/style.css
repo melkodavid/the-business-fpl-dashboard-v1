@@ -3251,3 +3251,64 @@ section[id^="lv-"] { scroll-margin-top: 8rem; }
   .tk-card { padding: 12px 13px 10px; }
   .tk-vote span { display: none; }
 }
+
+/* =========================================================================
+   All-Play: records, "your week against everyone", week-by-week grid
+   ========================================================================= */
+.ap-table-card { overflow-x: auto; }
+.ap-rec { font-variant-numeric: tabular-nums; font-weight: 700; }
+.ap-h3 { display: flex; align-items: center; gap: 12px; margin: 1.6rem 0 0.6rem; font: italic 600 1.45rem "Cormorant Garamond", Georgia, serif; color: var(--gold-bright); }
+.ap-h3::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(201,166,96,0.6), transparent); }
+
+.ap-week { padding: 14px 16px; }
+.ap-pick { display: flex; flex-wrap: wrap; gap: 10px 14px; margin-bottom: 12px; }
+.ap-pick label { display: grid; gap: 4px; font: 700 0.7rem "Archivo", sans-serif; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); }
+.ap-pick select { min-width: 170px; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--edge-bright); background: #0b0c13; color: var(--text); font: 600 0.9rem "Archivo", sans-serif; text-transform: none; letter-spacing: 0; }
+.ap-week-sum { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; }
+.ap-week-score { flex-shrink: 0; font: 400 3rem/1 "Bebas Neue", sans-serif; color: var(--lime); }
+.ap-week-sum p { margin: 0; color: var(--text-muted); line-height: 1.5; font-size: 0.92rem; }
+.ap-week-sum p b { color: var(--text); }
+.ap-vs { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 6px; }
+.ap-vs-row { display: grid; grid-template-columns: 1.8rem minmax(0, 1fr) auto; align-items: center; gap: 10px; padding: 7px 10px; border-radius: 8px; background: rgba(255,255,255,0.03); }
+.ap-vs-res { display: grid; place-items: center; height: 1.6rem; border-radius: 5px; font: 800 0.72rem "Archivo", sans-serif; }
+.ap-W .ap-vs-res { background: rgba(62,203,119,0.2); color: var(--win); }
+.ap-D .ap-vs-res { background: rgba(182,167,196,0.2); color: var(--draw); }
+.ap-L .ap-vs-res { background: rgba(239,97,97,0.2); color: var(--loss); }
+.ap-vs-club { min-width: 0; }
+.ap-vs-club .club-name { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ap-vs-score { font: 400 1.2rem/1 "Bebas Neue", sans-serif; letter-spacing: 0.03em; font-variant-numeric: tabular-nums; }
+.ap-vs-score i { font-style: normal; color: var(--text-muted); }
+.ap-L .ap-vs-score { color: var(--text-muted); }
+
+.ap-grid-card { overflow-x: auto; padding: 6px; }
+.ap-grid { border-collapse: separate; border-spacing: 3px; }
+.ap-grid th { font-size: 0.66rem; white-space: nowrap; }
+.ap-grid td { border: 0; padding: 0; }
+.ap-name { position: sticky; left: 0; z-index: 1; padding: 0 10px 0 4px !important; background: var(--surface); white-space: nowrap; }
+.ap-name .club-name { max-width: 11rem; display: inline-block; overflow: hidden; text-overflow: ellipsis; vertical-align: bottom; }
+.ap-cell button { cursor: pointer; display: block; width: 100%; min-width: 34px; height: 32px; border: 0; border-radius: 6px; color: #fff; font: 400 1.05rem/1 "Bebas Neue", sans-serif;
+  background: color-mix(in srgb, #3ecb77 calc(var(--s) * 100%), #ef6161); opacity: calc(0.45 + var(--s) * 0.55); }
+.ap-cell button:hover, .ap-cell button:focus-visible { outline: 2px solid var(--gold-bright); outline-offset: 1px; opacity: 1; }
+.ap-none { color: var(--text-muted); text-align: center; }
+.ap-note { margin: 6px 2px 0; font-size: 0.8rem; color: var(--text-muted); }
+
+@media (max-width: 560px) {
+  .ap-pick select { min-width: 0; width: 100%; }
+  .ap-pick label { flex: 1 1 140px; }
+  .ap-week-score { font-size: 2.4rem; }
+  .ap-name .club-badge { display: none; }
+  .ap-name .club-name { max-width: 7.5rem; }
+}
+@media (max-width: 560px) {
+  .ap-table-card .ap-sm-hide { display: none; }
+  .ap-table-card { padding: 0.5rem; }
+  .ap-table-card td, .ap-table-card th { padding: 0.45rem 0.3rem; }
+  .ap-table-card .club-badge { display: none; }
+  .ap-table-card .club-name { display: inline-block; max-width: 8.5rem; overflow: hidden; text-overflow: ellipsis; vertical-align: bottom; }
+}
+.ap-table-card .ap-short { display: none; }
+@media (max-width: 560px) {
+  .ap-table-card .ap-long { display: none; }
+  .ap-table-card .ap-short { display: inline; }
+  .ap-table-card .club-name { max-width: 7.5rem; }
+}
