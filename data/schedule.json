@@ -37,10 +37,10 @@
       "importance": 2.43,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 76,
+        "homeWinPct": 78,
         "drawPct": 2,
-        "awayWinPct": 22,
-        "homeExpected": 45,
+        "awayWinPct": 20,
+        "homeExpected": 46,
         "awayExpected": 35,
         "homeSoFar": null,
         "awaySoFar": null
@@ -60,10 +60,10 @@
       "tag": "Wooden Spoon Battle",
       "odds": {
         "homeWinPct": 28,
-        "drawPct": 2,
-        "awayWinPct": 70,
-        "homeExpected": 41.5,
-        "awayExpected": 49,
+        "drawPct": 3,
+        "awayWinPct": 69,
+        "homeExpected": 42.7,
+        "awayExpected": 50,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -81,11 +81,11 @@
       "importance": 2.1,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 45,
+        "homeWinPct": 49,
         "drawPct": 3,
-        "awayWinPct": 52,
+        "awayWinPct": 48,
         "homeExpected": 42.3,
-        "awayExpected": 43.6,
+        "awayExpected": 42.3,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -103,11 +103,11 @@
       "importance": 2.03,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 71,
-        "drawPct": 2,
-        "awayWinPct": 27,
-        "homeExpected": 49.6,
-        "awayExpected": 41.8,
+        "homeWinPct": 64,
+        "drawPct": 3,
+        "awayWinPct": 33,
+        "homeExpected": 47.9,
+        "awayExpected": 42.6,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -125,11 +125,11 @@
       "importance": 1.06,
       "tag": "Midtable Clash",
       "odds": {
-        "homeWinPct": 46,
+        "homeWinPct": 43,
         "drawPct": 3,
-        "awayWinPct": 51,
+        "awayWinPct": 54,
         "homeExpected": 42,
-        "awayExpected": 42.9,
+        "awayExpected": 43.7,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -228,7 +228,7 @@
   "lineups": {
     "1377": {
       "formation": "5-4-1",
-      "expected": 49,
+      "expected": 50,
       "captainId": 31,
       "locked": false,
       "xi": [
@@ -284,7 +284,7 @@
           "type": 2,
           "team": "Man City",
           "teamId": 15,
-          "ep": 0.8
+          "ep": 1
         },
         {
           "id": 15,
@@ -296,6 +296,15 @@
           "ep": 5.7
         },
         {
+          "id": 53,
+          "name": "Manzambi",
+          "pos": "MID",
+          "type": 3,
+          "team": "Aston Villa",
+          "teamId": 2,
+          "ep": 3.3
+        },
+        {
           "id": 237,
           "name": "Ndiaye",
           "pos": "MID",
@@ -303,15 +312,6 @@
           "team": "Man City",
           "teamId": 15,
           "ep": 3
-        },
-        {
-          "id": 53,
-          "name": "Manzambi",
-          "pos": "MID",
-          "type": 3,
-          "team": "Aston Villa",
-          "teamId": 2,
-          "ep": 2.5
         },
         {
           "id": 155,
@@ -663,7 +663,7 @@
     },
     "1501": {
       "formation": "4-4-2",
-      "expected": 42.9,
+      "expected": 43.7,
       "captainId": 79,
       "locked": false,
       "xi": [
@@ -722,6 +722,15 @@
           "ep": 3
         },
         {
+          "id": 286,
+          "name": "Belloumi",
+          "pos": "MID",
+          "type": 3,
+          "team": "Hull City",
+          "teamId": 11,
+          "ep": 3
+        },
+        {
           "id": 368,
           "name": "Szoboszlai",
           "pos": "MID",
@@ -729,15 +738,6 @@
           "team": "Liverpool",
           "teamId": 14,
           "ep": 2.7
-        },
-        {
-          "id": 286,
-          "name": "Belloumi",
-          "pos": "MID",
-          "type": 3,
-          "team": "Hull City",
-          "teamId": 11,
-          "ep": 2.2
         },
         {
           "id": 214,
@@ -784,7 +784,7 @@
           "type": 2,
           "team": "Man City",
           "teamId": 15,
-          "ep": 1
+          "ep": 0.5
         },
         {
           "id": 335,
@@ -808,7 +808,7 @@
     },
     "1530": {
       "formation": "4-4-2",
-      "expected": 41.8,
+      "expected": 42.6,
       "captainId": 52,
       "locked": false,
       "xi": [
@@ -840,6 +840,15 @@
           "ep": 3.7
         },
         {
+          "id": 151,
+          "name": "Acheampong",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Chelsea",
+          "teamId": 6,
+          "ep": 3.3
+        },
+        {
           "id": 201,
           "name": "Muñoz",
           "pos": "DEF",
@@ -847,15 +856,6 @@
           "team": "Nott'm Forest",
           "teamId": 18,
           "ep": 3
-        },
-        {
-          "id": 151,
-          "name": "Acheampong",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Chelsea",
-          "teamId": 6,
-          "ep": 2.5
         },
         {
           "id": 52,
@@ -953,7 +953,7 @@
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 43.6,
+      "expected": 42.3,
       "captainId": 249,
       "locked": false,
       "xi": [
@@ -976,15 +976,6 @@
           "ep": 7.3
         },
         {
-          "id": 393,
-          "name": "Khusanov",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Man City",
-          "teamId": 15,
-          "ep": 2.7
-        },
-        {
           "id": 34,
           "name": "Pau",
           "pos": "DEF",
@@ -992,6 +983,15 @@
           "team": "Aston Villa",
           "teamId": 2,
           "ep": 2
+        },
+        {
+          "id": 393,
+          "name": "Khusanov",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Man City",
+          "teamId": 15,
+          "ep": 1.4
         },
         {
           "id": 36,
@@ -1098,7 +1098,7 @@
     },
     "1947": {
       "formation": "4-5-1",
-      "expected": 41.5,
+      "expected": 42.7,
       "captainId": 555,
       "locked": false,
       "xi": [
@@ -1121,6 +1121,15 @@
           "ep": 6.3
         },
         {
+          "id": 356,
+          "name": "Virgil",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Liverpool",
+          "teamId": 14,
+          "ep": 4.7
+        },
+        {
           "id": 145,
           "name": "Fofana",
           "pos": "DEF",
@@ -1128,15 +1137,6 @@
           "team": "Chelsea",
           "teamId": 6,
           "ep": 4
-        },
-        {
-          "id": 356,
-          "name": "Virgil",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Liverpool",
-          "teamId": 14,
-          "ep": 3.5
         },
         {
           "id": 472,
@@ -1387,8 +1387,8 @@
       ]
     },
     "10375": {
-      "formation": "4-4-2",
-      "expected": 49.6,
+      "formation": "3-4-3",
+      "expected": 47.9,
       "captainId": 112,
       "locked": false,
       "xi": [
@@ -1426,15 +1426,6 @@
           "type": 2,
           "team": "Newcastle",
           "teamId": 17,
-          "ep": 3.7
-        },
-        {
-          "id": 257,
-          "name": "Bassey",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Fulham",
-          "teamId": 10,
           "ep": 3.7
         },
         {
@@ -1490,6 +1481,15 @@
           "team": "Liverpool",
           "teamId": 14,
           "ep": 6.3
+        },
+        {
+          "id": 346,
+          "name": "Calvert-Lewin",
+          "pos": "FWD",
+          "type": 4,
+          "team": "Leeds",
+          "teamId": 13,
+          "ep": 2
         }
       ],
       "bench": [
@@ -1501,6 +1501,15 @@
           "team": "Chelsea",
           "teamId": 6,
           "ep": 0
+        },
+        {
+          "id": 471,
+          "name": "Milenković",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Nott'm Forest",
+          "teamId": 18,
+          "ep": 0.7
         },
         {
           "id": 113,
@@ -1518,15 +1527,6 @@
           "type": 3,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 2
-        },
-        {
-          "id": 346,
-          "name": "Calvert-Lewin",
-          "pos": "FWD",
-          "type": 4,
-          "team": "Leeds",
-          "teamId": 13,
           "ep": 2
         }
       ]
@@ -1823,7 +1823,7 @@
     },
     "99786": {
       "formation": "5-4-1",
-      "expected": 45,
+      "expected": 46,
       "captainId": 61,
       "locked": false,
       "xi": [
@@ -1900,6 +1900,15 @@
           "ep": 4.7
         },
         {
+          "id": 372,
+          "name": "Mac Allister",
+          "pos": "MID",
+          "type": 3,
+          "team": "Liverpool",
+          "teamId": 14,
+          "ep": 4.3
+        },
+        {
           "id": 453,
           "name": "Barnes",
           "pos": "MID",
@@ -1907,15 +1916,6 @@
           "team": "Newcastle",
           "teamId": 17,
           "ep": 4
-        },
-        {
-          "id": 161,
-          "name": "Lavia",
-          "pos": "MID",
-          "type": 3,
-          "team": "Chelsea",
-          "teamId": 6,
-          "ep": 3.3
         },
         {
           "id": 138,
