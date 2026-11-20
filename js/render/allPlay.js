@@ -20,7 +20,7 @@ function allPlayRecords(perGw) {
         if (o.managerId === r.managerId) continue;
         if (r.score > o.score) w++; else if (r.score === o.score) d++; else l++;
       }
-      thisWeek.set(r.managerId, { score: r.score, w, d, l });
+      thisWeek.set(r.managerId, { score: r.score, w, d, l, opponentId: r.opponentId ?? null });
       const total = record.get(r.managerId) ?? { w: 0, d: 0, l: 0 };
       record.set(r.managerId, { w: total.w + w, d: total.d + d, l: total.l + l });
     }
@@ -60,16 +60,23 @@ function weekHtml(records, managers, id, gw) {
   const others = [...thisWeek.entries()].filter(([oid]) => oid !== id).sort((a, b) => b[1].score - a[1].score);
   const name = escapeHtml(managers.name(id).replace(/\s*\*+$/, ""));
   const verdict = (o) => (me.score > o.score ? "W" : me.score === o.score ? "D" : "L");
+  // the fixture they actually had that week
+  const real = me.opponentId != null ? thisWeek.get(me.opponentId) : null;
+  const realWord = real ? { W: "beat", D: "drew with", L: "lost to" }[verdict(real)] : null;
+  const realLine = real
+    ? `<p class="ap-real ap-${verdict(real)}"><span class="ap-real-tag">Actual match</span> ${managers.clubHtml(me.opponentId)} <span class="ap-real-txt">${realWord} them <b>${me.score}-${real.score}</b>${verdict(real) === "L" && me.w >= others.length / 2 ? " (would have beaten " + me.w + " others)" : verdict(real) === "W" && me.l >= others.length / 2 ? " (would have lost to " + me.l + " others)" : ""}</span></p>`
+    : "";
   return `
     <div class="ap-week-sum">
       <b class="ap-week-score">${me.score}</b>
       <p><b>${name}</b> scored ${me.score} in GW${gw}: that beats <b>${me.w}</b> of the other ${others.length}${me.d ? `, ties ${me.d}` : ""} and loses to <b>${me.l}</b>. All-play record <b>${rec(me)}</b>.</p>
     </div>
+    ${realLine}
     <ol class="ap-vs">
       ${others.map(([oid, o]) => `
-        <li class="ap-vs-row ap-${verdict(o)}">
+        <li class="ap-vs-row ap-${verdict(o)}${oid === me.opponentId ? " is-real" : ""}">
           <span class="ap-vs-res">${verdict(o)}</span>
-          <span class="ap-vs-club">${managers.clubHtml(oid)}</span>
+          <span class="ap-vs-club">${managers.clubHtml(oid)}${oid === me.opponentId ? `<em class="ap-vs-real">Actual opponent</em>` : ""}</span>
           <span class="ap-vs-score">${me.score} <i>-</i> ${o.score}</span>
         </li>`).join("")}
     </ol>`;

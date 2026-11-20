@@ -3312,3 +3312,12 @@ section[id^="lv-"] { scroll-margin-top: 8rem; }
   .ap-table-card .ap-short { display: inline; }
   .ap-table-card .club-name { max-width: 7.5rem; }
 }
+
+/* All-Play: the fixture they actually had that week */
+.ap-real { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 0 0 12px; padding: 9px 12px; border-radius: 10px; border: 1px solid rgba(201,166,96,0.45); background: rgba(201,166,96,0.08); font-size: 0.9rem; color: var(--text-muted); }
+.ap-real-tag { font: 800 0.62rem "Archivo", sans-serif; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); }
+.ap-real-txt b { color: var(--text); font-variant-numeric: tabular-nums; }
+.ap-real.ap-W .ap-real-txt b { color: var(--win); }
+.ap-real.ap-L .ap-real-txt b { color: var(--loss); }
+.ap-vs-row.is-real { box-shadow: inset 0 0 0 1px rgba(201,166,96,0.7); background: rgba(201,166,96,0.08); }
+.ap-vs-real { display: block; margin-top: 1px; font: 800 0.56rem "Archivo", sans-serif; font-style: normal; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }

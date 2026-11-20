@@ -4,6 +4,13 @@ export function computeAllPlay(context) {
   const perGw = {};
   const expectedWinsByManager = new Map(managerIds.map((id) => [id, 0]));
 
+  // who each manager actually played each gameweek (gw -> managerId -> opponentId)
+  const opponentOf = new Map();
+  for (const m of context.matches) {
+    if (!opponentOf.has(m.event)) opponentOf.set(m.event, new Map());
+    opponentOf.get(m.event).set(m.homeManagerId, m.awayManagerId).set(m.awayManagerId, m.homeManagerId);
+  }
+
   for (const gw of context.finishedGws) {
     const scores = managerIds
       .map((managerId) => ({ managerId, score: context.gwPicks[gw]?.[managerId]?.totalPoints }))
@@ -14,7 +21,7 @@ export function computeAllPlay(context) {
       const beaten = others.reduce((sum, o) => sum + (score > o.score ? 1 : score === o.score ? 0.5 : 0), 0);
       const winPct = others.length > 0 ? beaten / others.length : 0;
       expectedWinsByManager.set(managerId, expectedWinsByManager.get(managerId) + winPct);
-      return { managerId, score, allPlayWinPct: winPct };
+      return { managerId, score, allPlayWinPct: winPct, opponentId: opponentOf.get(gw)?.get(managerId) ?? null };
     });
 
     perGw[gw] = gwRows;

@@ -59,3 +59,9 @@ test("expected wins sums all-play win % across gameweeks, luck score = actual - 
   assert.equal(manager1.actualWins, 2);
   assert.ok(Math.abs(manager1.luckScore - (2 - expectedWins)) < 1e-9);
 });
+
+test("each week's row records who the manager actually played", () => {
+  const { perGw } = computeAllPlay(makeContext());
+  const opp = (gw, id) => perGw[gw].find((r) => r.managerId === id).opponentId;
+  assert.deepEqual([opp(1, 1), opp(1, 2), opp(1, 3), opp(2, 1), opp(2, 4)], [2, 1, 4, 3, 2]);
+});
