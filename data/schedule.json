@@ -37,11 +37,11 @@
       "importance": 2.43,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 66,
-        "drawPct": 3,
-        "awayWinPct": 31,
+        "homeWinPct": 76,
+        "drawPct": 2,
+        "awayWinPct": 22,
         "homeExpected": 45,
-        "awayExpected": 38.7,
+        "awayExpected": 35,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -372,8 +372,8 @@
       ]
     },
     "1425": {
-      "formation": "4-4-2",
-      "expected": 38.7,
+      "formation": "3-5-2",
+      "expected": 35,
       "captainId": 496,
       "locked": false,
       "xi": [
@@ -403,15 +403,6 @@
           "team": "Leeds",
           "teamId": 13,
           "ep": 4.3
-        },
-        {
-          "id": 536,
-          "name": "Reinildo",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Sunderland",
-          "teamId": 20,
-          "ep": 4
         },
         {
           "id": 114,
@@ -459,6 +450,15 @@
           "ep": 2.7
         },
         {
+          "id": 41,
+          "name": "Buendía",
+          "pos": "MID",
+          "type": 3,
+          "team": "Aston Villa",
+          "teamId": 2,
+          "ep": 0.3
+        },
+        {
           "id": 316,
           "name": "Emersonn",
           "pos": "FWD",
@@ -497,13 +497,13 @@
           "ep": 0
         },
         {
-          "id": 41,
-          "name": "Buendía",
-          "pos": "MID",
-          "type": 3,
+          "id": 630,
+          "name": "Harwood-Bellis",
+          "pos": "DEF",
+          "type": 2,
           "team": "Aston Villa",
           "teamId": 2,
-          "ep": 0.3
+          "ep": 0
         },
         {
           "id": 165,
