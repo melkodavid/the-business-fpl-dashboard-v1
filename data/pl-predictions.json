@@ -496,36 +496,51 @@
           "key": "pl101",
           "home": 2,
           "away": 20,
-          "score": null,
-          "result": null
+          "score": [
+            0,
+            0
+          ],
+          "result": "D"
         },
         {
           "key": "pl102",
           "home": 3,
           "away": 18,
-          "score": null,
-          "result": null
+          "score": [
+            2,
+            0
+          ],
+          "result": "H"
         },
         {
           "key": "pl104",
           "home": 6,
           "away": 13,
-          "score": null,
-          "result": null
+          "score": [
+            1,
+            4
+          ],
+          "result": "A"
         },
         {
           "key": "pl105",
           "home": 7,
           "away": 8,
-          "score": null,
-          "result": null
+          "score": [
+            3,
+            2
+          ],
+          "result": "H"
         },
         {
           "key": "pl110",
           "home": 19,
           "away": 12,
-          "score": null,
-          "result": null
+          "score": [
+            2,
+            0
+          ],
+          "result": "H"
         },
         {
           "key": "pl109",
@@ -589,8 +604,8 @@
     {
       "personKey": "marshall",
       "managerId": 1471,
-      "played": 21,
-      "correct": 11,
+      "played": 26,
+      "correct": 12,
       "weeks": 3,
       "bestWeek": 6,
       "perfectWeeks": 0,
@@ -608,11 +623,11 @@
           "total": 10
         },
         "11": {
-          "correct": 0,
-          "total": 1
+          "correct": 1,
+          "total": 6
         }
       },
-      "pct": 52.4,
+      "pct": 46.2,
       "rank": 1
     },
     {
@@ -668,12 +683,12 @@
     {
       "personKey": "david",
       "managerId": 1857,
-      "played": 21,
-      "correct": 7,
+      "played": 26,
+      "correct": 9,
       "weeks": 3,
       "bestWeek": 4,
       "perfectWeeks": 0,
-      "streak": 0,
+      "streak": 2,
       "bestStreak": 2,
       "boldCalls": 5,
       "boldHits": 1,
@@ -687,11 +702,11 @@
           "total": 10
         },
         "11": {
-          "correct": 0,
-          "total": 1
+          "correct": 2,
+          "total": 6
         }
       },
-      "pct": 33.3,
+      "pct": 34.6,
       "rank": 4
     }
   ]
