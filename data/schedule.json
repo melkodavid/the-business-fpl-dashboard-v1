@@ -81,11 +81,11 @@
       "importance": 2.1,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 49,
+        "homeWinPct": 50,
         "drawPct": 3,
-        "awayWinPct": 48,
+        "awayWinPct": 47,
         "homeExpected": 42.3,
-        "awayExpected": 42.3,
+        "awayExpected": 41.9,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -952,8 +952,8 @@
       ]
     },
     "1857": {
-      "formation": "4-3-3",
-      "expected": 42.3,
+      "formation": "3-4-3",
+      "expected": 41.9,
       "captainId": 249,
       "locked": false,
       "xi": [
@@ -983,15 +983,6 @@
           "team": "Aston Villa",
           "teamId": 2,
           "ep": 2
-        },
-        {
-          "id": 393,
-          "name": "Khusanov",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Man City",
-          "teamId": 15,
-          "ep": 1.4
         },
         {
           "id": 36,
@@ -1028,6 +1019,15 @@
           "team": "Bournemouth",
           "teamId": 3,
           "ep": 2
+        },
+        {
+          "id": 123,
+          "name": "Hinshelwood",
+          "pos": "MID",
+          "type": 3,
+          "team": "Brighton",
+          "teamId": 5,
+          "ep": 1
         },
         {
           "id": 249,
@@ -1077,13 +1077,13 @@
           "ep": 0.7
         },
         {
-          "id": 123,
-          "name": "Hinshelwood",
-          "pos": "MID",
-          "type": 3,
-          "team": "Brighton",
-          "teamId": 5,
-          "ep": 1
+          "id": 173,
+          "name": "Thomas",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Coventry City",
+          "teamId": 7,
+          "ep": 0.2
         },
         {
           "id": 69,
