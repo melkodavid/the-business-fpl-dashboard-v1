@@ -33,7 +33,7 @@
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 429
+      "draftTeamPoints": 431
     },
     {
       "managerId": 1501,
@@ -195,7 +195,7 @@
     {
       "pickNumber": 14,
       "round": 2,
-      "seasonPoints": 51,
+      "seasonPoints": 53,
       "managerId": 99786,
       "elementId": 13,
       "playerName": "Rice",
