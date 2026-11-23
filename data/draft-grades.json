@@ -18,7 +18,7 @@
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "draftTeamPoints": 502
+      "draftTeamPoints": 501
     },
     {
       "managerId": 1857,
@@ -515,7 +515,7 @@
     {
       "pickNumber": 46,
       "round": 4,
-      "seasonPoints": 28,
+      "seasonPoints": 27,
       "managerId": 10375,
       "elementId": 499,
       "playerName": "Pedro Porro",
