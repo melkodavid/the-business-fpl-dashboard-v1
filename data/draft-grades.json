@@ -43,12 +43,12 @@
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "draftTeamPoints": 407
+      "draftTeamPoints": 408
     },
     {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
-      "draftTeamPoints": 377
+      "draftTeamPoints": 379
     },
     {
       "managerId": 1530,
@@ -1545,7 +1545,7 @@
     {
       "pickNumber": 149,
       "round": 13,
-      "seasonPoints": 43,
+      "seasonPoints": 45,
       "managerId": 26227,
       "elementId": 230,
       "playerName": "Branthwaite",
@@ -1725,7 +1725,7 @@
     {
       "pickNumber": 167,
       "round": 14,
-      "seasonPoints": 21,
+      "seasonPoints": 22,
       "managerId": 29975,
       "elementId": 96,
       "playerName": "Damsgaard",

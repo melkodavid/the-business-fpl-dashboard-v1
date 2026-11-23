@@ -15,11 +15,11 @@
       "importance": 3.5,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 92,
+        "homeWinPct": 93,
         "drawPct": 3,
-        "awayWinPct": 5,
-        "homeExpected": 43,
-        "awayExpected": 37.1,
+        "awayWinPct": 4,
+        "homeExpected": 42.7,
+        "awayExpected": 36.4,
         "homeSoFar": 42,
         "awaySoFar": 35
       }
@@ -37,10 +37,10 @@
       "importance": 2.43,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 6,
-        "drawPct": 3,
-        "awayWinPct": 91,
-        "homeExpected": 37.5,
+        "homeWinPct": 2,
+        "drawPct": 1,
+        "awayWinPct": 97,
+        "homeExpected": 35.8,
         "awayExpected": 44,
         "homeSoFar": 32,
         "awaySoFar": 44
@@ -62,7 +62,7 @@
         "homeWinPct": 100,
         "drawPct": 0,
         "awayWinPct": 0,
-        "homeExpected": 48.4,
+        "homeExpected": 47.6,
         "awayExpected": 31,
         "homeSoFar": 46,
         "awaySoFar": 31
@@ -84,8 +84,8 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 39.3,
-        "awayExpected": 62.4,
+        "homeExpected": 37,
+        "awayExpected": 61,
         "homeSoFar": 32,
         "awaySoFar": 58
       }
@@ -106,7 +106,7 @@
         "homeWinPct": 100,
         "drawPct": 0,
         "awayWinPct": 0,
-        "homeExpected": 44.8,
+        "homeExpected": 44.2,
         "awayExpected": 30,
         "homeSoFar": 43,
         "awaySoFar": 30
@@ -128,9 +128,9 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 29,
-        "awayExpected": 44.9,
-        "homeSoFar": 27,
+        "homeExpected": 30.6,
+        "awayExpected": 44.6,
+        "homeSoFar": 29,
         "awaySoFar": 44
       }
     }
@@ -1472,7 +1472,7 @@
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 36.3,
+      "expected": 37,
       "captainId": 166,
       "locked": true,
       "xi": [
@@ -1501,7 +1501,7 @@
           "type": 2,
           "team": "Everton",
           "teamId": 9,
-          "ep": 4
+          "ep": 4.7
         },
         {
           "id": 119,
