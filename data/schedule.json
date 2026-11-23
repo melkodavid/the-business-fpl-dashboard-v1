@@ -15,11 +15,11 @@
       "importance": 3.5,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 96,
-        "drawPct": 2,
+        "homeWinPct": 97,
+        "drawPct": 1,
         "awayWinPct": 2,
         "homeExpected": 42.8,
-        "awayExpected": 35.5,
+        "awayExpected": 35.2,
         "homeSoFar": 41,
         "awaySoFar": 32
       }
@@ -37,10 +37,10 @@
       "importance": 2.43,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 15,
-        "drawPct": 4,
-        "awayWinPct": 81,
-        "homeExpected": 38.5,
+        "homeWinPct": 17,
+        "drawPct": 5,
+        "awayWinPct": 78,
+        "homeExpected": 39,
         "awayExpected": 44,
         "homeSoFar": 29,
         "awaySoFar": 44
@@ -62,7 +62,7 @@
         "homeWinPct": 100,
         "drawPct": 0,
         "awayWinPct": 0,
-        "homeExpected": 48.8,
+        "homeExpected": 49.3,
         "awayExpected": 31,
         "homeSoFar": 45,
         "awaySoFar": 31
@@ -84,8 +84,8 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 28,
-        "awayExpected": 63.8,
+        "homeExpected": 29.2,
+        "awayExpected": 65.3,
         "homeSoFar": 18,
         "awaySoFar": 57
       }
@@ -128,8 +128,8 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 30,
-        "awayExpected": 49.5,
+        "homeExpected": 31,
+        "awayExpected": 49.7,
         "homeSoFar": 27,
         "awaySoFar": 47
       }
@@ -167,8 +167,8 @@
   "lineups": {
     "1377": {
       "formation": "5-4-1",
-      "expected": 45.7,
-      "captainId": 31,
+      "expected": 44.6,
+      "captainId": 529,
       "locked": true,
       "xi": [
         {
@@ -187,7 +187,7 @@
           "type": 2,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 8.2
+          "ep": 6.3
         },
         {
           "id": 502,
@@ -232,7 +232,7 @@
           "type": 3,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 5.5
+          "ep": 6.3
         },
         {
           "id": 53,
@@ -279,7 +279,7 @@
           "type": 1,
           "team": "Fulham",
           "teamId": 10,
-          "ep": 3.8
+          "ep": 2.3
         },
         {
           "id": 397,
@@ -457,7 +457,7 @@
     },
     "1471": {
       "formation": "4-5-1",
-      "expected": 44.8,
+      "expected": 46.6,
       "captainId": 60,
       "locked": true,
       "xi": [
@@ -495,7 +495,7 @@
           "type": 2,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 3
+          "ep": 4
         },
         {
           "id": 37,
@@ -540,7 +540,7 @@
           "type": 3,
           "team": "Everton",
           "teamId": 9,
-          "ep": 2
+          "ep": 1.7
         },
         {
           "id": 94,
@@ -558,7 +558,7 @@
           "type": 4,
           "team": "Coventry City",
           "teamId": 7,
-          "ep": 4.2
+          "ep": 5.3
         }
       ],
       "bench": [
@@ -587,7 +587,7 @@
           "type": 4,
           "team": "Fulham",
           "teamId": 10,
-          "ep": 1.8
+          "ep": 1.7
         },
         {
           "id": 582,
@@ -602,7 +602,7 @@
     },
     "1501": {
       "formation": "4-5-1",
-      "expected": 39.4,
+      "expected": 39.6,
       "captainId": 79,
       "locked": true,
       "xi": [
@@ -634,6 +634,15 @@
           "ep": 3
         },
         {
+          "id": 229,
+          "name": "Tarkowski",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Everton",
+          "teamId": 9,
+          "ep": 2.7
+        },
+        {
           "id": 611,
           "name": "Wan-Bissaka",
           "pos": "DEF",
@@ -641,15 +650,6 @@
           "team": "Aston Villa",
           "teamId": 2,
           "ep": 2.7
-        },
-        {
-          "id": 229,
-          "name": "Tarkowski",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Everton",
-          "teamId": 9,
-          "ep": 2.5
         },
         {
           "id": 368,
@@ -732,7 +732,7 @@
           "type": 4,
           "team": "Fulham",
           "teamId": 10,
-          "ep": 4.2
+          "ep": 5.3
         },
         {
           "id": 81,
@@ -747,7 +747,7 @@
     },
     "1530": {
       "formation": "4-5-1",
-      "expected": 37.8,
+      "expected": 37.6,
       "captainId": 52,
       "locked": true,
       "xi": [
@@ -767,7 +767,7 @@
           "type": 2,
           "team": "Coventry City",
           "teamId": 7,
-          "ep": 3.5
+          "ep": 3.3
         },
         {
           "id": 503,
@@ -892,7 +892,7 @@
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 45.6,
+      "expected": 47.1,
       "captainId": 366,
       "locked": true,
       "xi": [
@@ -975,7 +975,7 @@
           "type": 4,
           "team": "Everton",
           "teamId": 9,
-          "ep": 6.8
+          "ep": 8.3
         },
         {
           "id": 526,
@@ -1037,8 +1037,8 @@
     },
     "1947": {
       "formation": "4-5-1",
-      "expected": 42.9,
-      "captainId": 555,
+      "expected": 44.6,
+      "captainId": 183,
       "locked": true,
       "xi": [
         {
@@ -1093,7 +1093,7 @@
           "type": 3,
           "team": "Coventry City",
           "teamId": 7,
-          "ep": 5.8
+          "ep": 7
         },
         {
           "id": 67,
@@ -1105,6 +1105,15 @@
           "ep": 4.5
         },
         {
+          "id": 236,
+          "name": "Dewsbury-Hall",
+          "pos": "MID",
+          "type": 3,
+          "team": "Everton",
+          "teamId": 9,
+          "ep": 4.3
+        },
+        {
           "id": 124,
           "name": "Groß",
           "pos": "MID",
@@ -1112,15 +1121,6 @@
           "team": "Brighton",
           "teamId": 5,
           "ep": 4
-        },
-        {
-          "id": 236,
-          "name": "Dewsbury-Hall",
-          "pos": "MID",
-          "type": 3,
-          "team": "Everton",
-          "teamId": 9,
-          "ep": 3.8
         },
         {
           "id": 619,
@@ -1182,7 +1182,7 @@
     },
     "10210": {
       "formation": "4-4-2",
-      "expected": 35.5,
+      "expected": 31.8,
       "captainId": 4,
       "locked": true,
       "xi": [
@@ -1193,7 +1193,7 @@
           "type": 1,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 4.8
+          "ep": 4
         },
         {
           "id": 4,
@@ -1202,7 +1202,7 @@
           "type": 2,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 8
+          "ep": 5
         },
         {
           "id": 233,
@@ -1211,7 +1211,7 @@
           "type": 2,
           "team": "Everton",
           "teamId": 9,
-          "ep": 3.5
+          "ep": 4.7
         },
         {
           "id": 87,
@@ -1268,15 +1268,6 @@
           "ep": 1.5
         },
         {
-          "id": 25,
-          "name": "Gyökeres",
-          "pos": "FWD",
-          "type": 4,
-          "team": "Arsenal",
-          "teamId": 1,
-          "ep": 1.8
-        },
-        {
           "id": 464,
           "name": "Wissa",
           "pos": "FWD",
@@ -1284,6 +1275,15 @@
           "team": "Newcastle",
           "teamId": 17,
           "ep": 1.2
+        },
+        {
+          "id": 25,
+          "name": "Gyökeres",
+          "pos": "FWD",
+          "type": 4,
+          "team": "Arsenal",
+          "teamId": 1,
+          "ep": 0.7
         }
       ],
       "bench": [
@@ -1294,7 +1294,7 @@
           "type": 1,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 0.2
+          "ep": 0.3
         },
         {
           "id": 204,
@@ -1321,13 +1321,13 @@
           "type": 4,
           "team": "Coventry City",
           "teamId": 7,
-          "ep": 1.2
+          "ep": 1
         }
       ]
     },
     "10375": {
       "formation": "3-4-3",
-      "expected": 41.5,
+      "expected": 42.5,
       "captainId": 295,
       "locked": true,
       "xi": [
@@ -1377,22 +1377,13 @@
           "ep": 3.5
         },
         {
-          "id": 210,
-          "name": "Wharton",
-          "pos": "MID",
-          "type": 3,
-          "team": "Crystal Palace",
-          "teamId": 8,
-          "ep": 2.2
-        },
-        {
           "id": 452,
           "name": "Bruno G.",
           "pos": "MID",
           "type": 3,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 2.2
+          "ep": 2.7
         },
         {
           "id": 554,
@@ -1401,7 +1392,16 @@
           "type": 3,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 1.8
+          "ep": 2.3
+        },
+        {
+          "id": 210,
+          "name": "Wharton",
+          "pos": "MID",
+          "type": 3,
+          "team": "Crystal Palace",
+          "teamId": 8,
+          "ep": 2.2
         },
         {
           "id": 295,
@@ -1466,13 +1466,13 @@
           "type": 3,
           "team": "Fulham",
           "teamId": 10,
-          "ep": 5.5
+          "ep": 3.7
         }
       ]
     },
     "26227": {
       "formation": "4-4-2",
-      "expected": 35.9,
+      "expected": 36.9,
       "captainId": 166,
       "locked": true,
       "xi": [
@@ -1495,21 +1495,21 @@
           "ep": 4.8
         },
         {
-          "id": 119,
-          "name": "Costinha",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Brighton",
-          "teamId": 5,
-          "ep": 3
-        },
-        {
           "id": 230,
           "name": "Branthwaite",
           "pos": "DEF",
           "type": 2,
           "team": "Everton",
           "teamId": 9,
+          "ep": 4
+        },
+        {
+          "id": 119,
+          "name": "Costinha",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Brighton",
+          "teamId": 5,
           "ep": 3
         },
         {
@@ -1617,7 +1617,7 @@
     },
     "29975": {
       "formation": "4-5-1",
-      "expected": 43.1,
+      "expected": 45.8,
       "captainId": 580,
       "locked": true,
       "xi": [
@@ -1655,7 +1655,7 @@
           "type": 2,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 3.5
+          "ep": 4.3
         },
         {
           "id": 390,
@@ -1673,7 +1673,7 @@
           "type": 3,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 5.2
+          "ep": 6
         },
         {
           "id": 129,
@@ -1718,7 +1718,7 @@
           "type": 4,
           "team": "Arsenal",
           "teamId": 1,
-          "ep": 4.2
+          "ep": 5.3
         }
       ],
       "bench": [
@@ -1738,7 +1738,7 @@
           "type": 2,
           "team": "Fulham",
           "teamId": 10,
-          "ep": 4
+          "ep": 3
         },
         {
           "id": 649,
@@ -1762,7 +1762,7 @@
     },
     "99786": {
       "formation": "3-4-3",
-      "expected": 34.2,
+      "expected": 35.2,
       "captainId": 61,
       "locked": true,
       "xi": [
@@ -1773,7 +1773,7 @@
           "type": 1,
           "team": "Everton",
           "teamId": 9,
-          "ep": 2.8
+          "ep": 3.3
         },
         {
           "id": 61,
@@ -1812,21 +1812,21 @@
           "ep": 4.8
         },
         {
-          "id": 95,
-          "name": "O.Dango",
-          "pos": "MID",
-          "type": 3,
-          "team": "Brentford",
-          "teamId": 4,
-          "ep": 4.2
-        },
-        {
           "id": 13,
           "name": "Rice",
           "pos": "MID",
           "type": 3,
           "team": "Arsenal",
           "teamId": 1,
+          "ep": 4.7
+        },
+        {
+          "id": 95,
+          "name": "O.Dango",
+          "pos": "MID",
+          "type": 3,
+          "team": "Brentford",
+          "teamId": 4,
           "ep": 4.2
         },
         {
