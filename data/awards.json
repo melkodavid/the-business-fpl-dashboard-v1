@@ -341,6 +341,49 @@
         "benchPoints": 16
       },
       "fiftyNineClubInstances": []
+    },
+    {
+      "gw": 11,
+      "topScore": {
+        "managerIds": [
+          1857
+        ],
+        "score": 59
+      },
+      "markOfTheWeek": {
+        "managerIds": [
+          26227
+        ],
+        "score": 30
+      },
+      "blowout": {
+        "title": "i can fix him* took Syria FC** behind the bushes",
+        "winnerId": 1857,
+        "loserId": 10210,
+        "margin": 17
+      },
+      "worstLineup": {
+        "managerIds": [
+          1501
+        ],
+        "benchPoints": 18
+      },
+      "fiftyNineClubInstances": [
+        {
+          "gw": 11,
+          "managerId": 1377,
+          "elementId": 53,
+          "playerName": "Manzambi",
+          "fixtureId": 101
+        },
+        {
+          "gw": 11,
+          "managerId": 1425,
+          "elementId": 41,
+          "playerName": "Buendía",
+          "fixtureId": 101
+        }
+      ]
     }
   ],
   "hallOfFame": {
@@ -350,11 +393,11 @@
         "count": 3
       },
       {
-        "managerId": 1501,
-        "count": 2
+        "managerId": 1857,
+        "count": 3
       },
       {
-        "managerId": 1857,
+        "managerId": 1501,
         "count": 2
       },
       {
@@ -380,15 +423,15 @@
         "count": 2
       },
       {
+        "managerId": 26227,
+        "count": 2
+      },
+      {
         "managerId": 10375,
         "count": 1
       },
       {
         "managerId": 1377,
-        "count": 1
-      },
-      {
-        "managerId": 26227,
         "count": 1
       },
       {
@@ -410,6 +453,10 @@
         "count": 2
       },
       {
+        "managerId": 1857,
+        "count": 2
+      },
+      {
         "managerId": 1530,
         "count": 1
       },
@@ -419,10 +466,6 @@
       },
       {
         "managerId": 1471,
-        "count": 1
-      },
-      {
-        "managerId": 1857,
         "count": 1
       },
       {
@@ -453,6 +496,10 @@
       },
       {
         "managerId": 1947,
+        "count": 1
+      },
+      {
+        "managerId": 1501,
         "count": 1
       }
     ]

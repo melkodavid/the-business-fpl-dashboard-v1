@@ -9,7 +9,8 @@
     7,
     8,
     9,
-    10
+    10,
+    11
   ],
   "managerIds": [
     1377,
@@ -29,97 +30,97 @@
     "1377": {
       "w": 3,
       "d": 0,
-      "l": 7,
+      "l": 8,
       "pts": 9,
-      "pointsFor": 391,
+      "pointsFor": 422,
       "rank": 11
     },
     "1425": {
-      "w": 6,
+      "w": 7,
       "d": 0,
       "l": 4,
-      "pts": 18,
-      "pointsFor": 452,
+      "pts": 21,
+      "pointsFor": 497,
       "rank": 3
     },
     "1471": {
       "w": 8,
       "d": 0,
-      "l": 2,
+      "l": 3,
       "pts": 24,
-      "pointsFor": 450,
-      "rank": 1
+      "pointsFor": 488,
+      "rank": 2
     },
     "1501": {
-      "w": 5,
+      "w": 6,
       "d": 0,
       "l": 5,
-      "pts": 15,
-      "pointsFor": 464,
+      "pts": 18,
+      "pointsFor": 507,
       "rank": 6
     },
     "1530": {
       "w": 2,
       "d": 0,
-      "l": 8,
+      "l": 9,
       "pts": 6,
-      "pointsFor": 322,
+      "pointsFor": 353,
       "rank": 12
     },
     "1857": {
-      "w": 7,
+      "w": 8,
       "d": 0,
       "l": 3,
-      "pts": 21,
-      "pointsFor": 436,
-      "rank": 2
+      "pts": 24,
+      "pointsFor": 495,
+      "rank": 1
     },
     "1947": {
-      "w": 6,
+      "w": 7,
       "d": 0,
       "l": 4,
-      "pts": 18,
-      "pointsFor": 414,
+      "pts": 21,
+      "pointsFor": 461,
       "rank": 4
     },
     "10210": {
       "w": 4,
       "d": 0,
-      "l": 6,
+      "l": 7,
       "pts": 12,
-      "pointsFor": 384,
-      "rank": 9
+      "pointsFor": 426,
+      "rank": 10
     },
     "10375": {
-      "w": 6,
+      "w": 7,
       "d": 0,
       "l": 4,
-      "pts": 18,
-      "pointsFor": 395,
+      "pts": 21,
+      "pointsFor": 443,
       "rank": 5
     },
     "26227": {
       "w": 4,
       "d": 0,
-      "l": 6,
+      "l": 7,
       "pts": 12,
-      "pointsFor": 432,
-      "rank": 8
+      "pointsFor": 462,
+      "rank": 9
     },
     "29975": {
-      "w": 4,
+      "w": 5,
       "d": 0,
       "l": 6,
-      "pts": 12,
-      "pointsFor": 354,
-      "rank": 10
+      "pts": 15,
+      "pointsFor": 405,
+      "rank": 8
     },
     "99786": {
       "w": 5,
       "d": 0,
-      "l": 5,
+      "l": 6,
       "pts": 15,
-      "pointsFor": 419,
+      "pointsFor": 459,
       "rank": 7
     }
   },
@@ -128,7 +129,7 @@
       "1377": {
         "w": 3,
         "d": 0,
-        "l": 7,
+        "l": 8,
         "pts": 9,
         "rank": 11,
         "weeks": [
@@ -231,13 +232,23 @@
             "opp": 1857,
             "oppScore": 52,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 1947,
+            "realOppScore": 47,
+            "realResult": "L",
+            "opp": 1947,
+            "oppScore": 47,
+            "result": "L"
           }
         ]
       },
       "1425": {
         "w": 3,
         "d": 0,
-        "l": 7,
+        "l": 8,
         "pts": 9,
         "rank": 11,
         "weeks": [
@@ -340,13 +351,23 @@
             "opp": 26227,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 1947,
+            "realOppScore": 47,
+            "realResult": "L",
+            "opp": 99786,
+            "oppScore": 40,
+            "result": "L"
           }
         ]
       },
       "1471": {
         "w": 5,
         "d": 0,
-        "l": 5,
+        "l": 6,
         "pts": 15,
         "rank": 8,
         "weeks": [
@@ -449,14 +470,24 @@
             "opp": 10375,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 1947,
+            "realOppScore": 47,
+            "realResult": "L",
+            "opp": 29975,
+            "oppScore": 51,
+            "result": "L"
           }
         ]
       },
       "1501": {
-        "w": 3,
+        "w": 4,
         "d": 0,
         "l": 7,
-        "pts": 9,
+        "pts": 12,
         "rank": 11,
         "weeks": [
           {
@@ -558,13 +589,23 @@
             "opp": 10210,
             "oppScore": 40,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 1947,
+            "realOppScore": 47,
+            "realResult": "L",
+            "opp": 26227,
+            "oppScore": 30,
+            "result": "W"
           }
         ]
       },
       "1530": {
         "w": 5,
         "d": 0,
-        "l": 5,
+        "l": 6,
         "pts": 15,
         "rank": 8,
         "weeks": [
@@ -667,15 +708,25 @@
             "opp": 1947,
             "oppScore": 35,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 1947,
+            "realOppScore": 47,
+            "realResult": "L",
+            "opp": 10375,
+            "oppScore": 48,
+            "result": "L"
           }
         ]
       },
       "1857": {
         "w": 4,
         "d": 0,
-        "l": 6,
+        "l": 7,
         "pts": 12,
-        "rank": 9,
+        "rank": 11,
         "weeks": [
           {
             "gw": 1,
@@ -776,13 +827,23 @@
             "opp": 1857,
             "oppScore": 52,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 1947,
+            "realOppScore": 47,
+            "realResult": "L",
+            "opp": 10210,
+            "oppScore": 42,
+            "result": "L"
           }
         ]
       },
       "1947": {
         "w": 5,
         "d": 0,
-        "l": 5,
+        "l": 6,
         "pts": 15,
         "rank": 8,
         "weeks": [
@@ -885,13 +946,23 @@
             "opp": 1530,
             "oppScore": 39,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 1947,
+            "realOppScore": 47,
+            "realResult": "L",
+            "opp": 1947,
+            "oppScore": 47,
+            "result": "L"
           }
         ]
       },
       "10210": {
         "w": 5,
         "d": 0,
-        "l": 5,
+        "l": 6,
         "pts": 15,
         "rank": 8,
         "weeks": [
@@ -994,15 +1065,25 @@
             "opp": 1501,
             "oppScore": 43,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 1947,
+            "realOppScore": 47,
+            "realResult": "L",
+            "opp": 1857,
+            "oppScore": 59,
+            "result": "L"
           }
         ]
       },
       "10375": {
         "w": 5,
-        "d": 1,
+        "d": 2,
         "l": 4,
-        "pts": 16,
-        "rank": 6,
+        "pts": 17,
+        "rank": 7,
         "weeks": [
           {
             "gw": 1,
@@ -1103,13 +1184,23 @@
             "opp": 1471,
             "oppScore": 45,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 1947,
+            "realOppScore": 47,
+            "realResult": "L",
+            "opp": 1530,
+            "oppScore": 31,
+            "result": "D"
           }
         ]
       },
       "26227": {
         "w": 2,
         "d": 1,
-        "l": 7,
+        "l": 8,
         "pts": 7,
         "rank": 11,
         "weeks": [
@@ -1212,13 +1303,23 @@
             "opp": 1425,
             "oppScore": 33,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 1947,
+            "realOppScore": 47,
+            "realResult": "L",
+            "opp": 1501,
+            "oppScore": 43,
+            "result": "L"
           }
         ]
       },
       "29975": {
         "w": 5,
         "d": 0,
-        "l": 5,
+        "l": 6,
         "pts": 15,
         "rank": 8,
         "weeks": [
@@ -1321,13 +1422,23 @@
             "opp": 99786,
             "oppScore": 28,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 1947,
+            "realOppScore": 47,
+            "realResult": "L",
+            "opp": 1471,
+            "oppScore": 38,
+            "result": "L"
           }
         ]
       },
       "99786": {
         "w": 3,
         "d": 0,
-        "l": 7,
+        "l": 8,
         "pts": 9,
         "rank": 11,
         "weeks": [
@@ -1430,6 +1541,16 @@
             "opp": 29975,
             "oppScore": 45,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 1947,
+            "realOppScore": 47,
+            "realResult": "L",
+            "opp": 1425,
+            "oppScore": 45,
+            "result": "L"
           }
         ]
       }
@@ -1438,9 +1559,9 @@
       "1377": {
         "w": 5,
         "d": 1,
-        "l": 4,
+        "l": 5,
         "pts": 16,
-        "rank": 5,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -1541,14 +1662,24 @@
             "opp": 1857,
             "oppScore": 52,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 45,
+            "realOpp": 99786,
+            "realOppScore": 40,
+            "realResult": "W",
+            "opp": 1947,
+            "oppScore": 47,
+            "result": "L"
           }
         ]
       },
       "1425": {
-        "w": 6,
+        "w": 7,
         "d": 0,
         "l": 4,
-        "pts": 18,
+        "pts": 21,
         "rank": 3,
         "weeks": [
           {
@@ -1650,15 +1781,25 @@
             "opp": 26227,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 45,
+            "realOpp": 99786,
+            "realOppScore": 40,
+            "realResult": "W",
+            "opp": 99786,
+            "oppScore": 40,
+            "result": "W"
           }
         ]
       },
       "1471": {
         "w": 6,
         "d": 1,
-        "l": 3,
+        "l": 4,
         "pts": 19,
-        "rank": 3,
+        "rank": 5,
         "weeks": [
           {
             "gw": 1,
@@ -1759,14 +1900,24 @@
             "opp": 10375,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 45,
+            "realOpp": 99786,
+            "realOppScore": 40,
+            "realResult": "W",
+            "opp": 29975,
+            "oppScore": 51,
+            "result": "L"
           }
         ]
       },
       "1501": {
-        "w": 6,
+        "w": 7,
         "d": 0,
         "l": 4,
-        "pts": 18,
+        "pts": 21,
         "rank": 3,
         "weeks": [
           {
@@ -1868,15 +2019,25 @@
             "opp": 10210,
             "oppScore": 40,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 45,
+            "realOpp": 99786,
+            "realOppScore": 40,
+            "realResult": "W",
+            "opp": 26227,
+            "oppScore": 30,
+            "result": "W"
           }
         ]
       },
       "1530": {
         "w": 4,
         "d": 0,
-        "l": 6,
+        "l": 7,
         "pts": 12,
-        "rank": 7,
+        "rank": 8,
         "weeks": [
           {
             "gw": 1,
@@ -1977,15 +2138,25 @@
             "opp": 1947,
             "oppScore": 35,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 45,
+            "realOpp": 99786,
+            "realOppScore": 40,
+            "realResult": "W",
+            "opp": 10375,
+            "oppScore": 48,
+            "result": "L"
           }
         ]
       },
       "1857": {
-        "w": 7,
+        "w": 8,
         "d": 0,
         "l": 3,
-        "pts": 21,
-        "rank": 2,
+        "pts": 24,
+        "rank": 1,
         "weeks": [
           {
             "gw": 1,
@@ -2086,14 +2257,24 @@
             "opp": 1377,
             "oppScore": 50,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 45,
+            "realOpp": 99786,
+            "realOppScore": 40,
+            "realResult": "W",
+            "opp": 10210,
+            "oppScore": 42,
+            "result": "W"
           }
         ]
       },
       "1947": {
-        "w": 6,
+        "w": 7,
         "d": 0,
         "l": 4,
-        "pts": 18,
+        "pts": 21,
         "rank": 3,
         "weeks": [
           {
@@ -2195,13 +2376,23 @@
             "opp": 1530,
             "oppScore": 39,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 45,
+            "realOpp": 99786,
+            "realOppScore": 40,
+            "realResult": "W",
+            "opp": 1377,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "10210": {
         "w": 3,
         "d": 0,
-        "l": 7,
+        "l": 8,
         "pts": 9,
         "rank": 10,
         "weeks": [
@@ -2304,14 +2495,24 @@
             "opp": 1501,
             "oppScore": 43,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 45,
+            "realOpp": 99786,
+            "realOppScore": 40,
+            "realResult": "W",
+            "opp": 1857,
+            "oppScore": 59,
+            "result": "L"
           }
         ]
       },
       "10375": {
-        "w": 6,
+        "w": 7,
         "d": 0,
         "l": 4,
-        "pts": 18,
+        "pts": 21,
         "rank": 3,
         "weeks": [
           {
@@ -2413,15 +2614,25 @@
             "opp": 1471,
             "oppScore": 45,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 45,
+            "realOpp": 99786,
+            "realOppScore": 40,
+            "realResult": "W",
+            "opp": 1530,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "26227": {
-        "w": 7,
+        "w": 8,
         "d": 0,
         "l": 3,
-        "pts": 21,
-        "rank": 2,
+        "pts": 24,
+        "rank": 1,
         "weeks": [
           {
             "gw": 1,
@@ -2522,15 +2733,25 @@
             "opp": 26227,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 45,
+            "realOpp": 99786,
+            "realOppScore": 40,
+            "realResult": "W",
+            "opp": 1501,
+            "oppScore": 43,
+            "result": "W"
           }
         ]
       },
       "29975": {
-        "w": 7,
+        "w": 8,
         "d": 0,
         "l": 3,
-        "pts": 21,
-        "rank": 2,
+        "pts": 24,
+        "rank": 1,
         "weeks": [
           {
             "gw": 1,
@@ -2631,14 +2852,24 @@
             "opp": 99786,
             "oppScore": 28,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 45,
+            "realOpp": 99786,
+            "realOppScore": 40,
+            "realResult": "W",
+            "opp": 1471,
+            "oppScore": 38,
+            "result": "W"
           }
         ]
       },
       "99786": {
-        "w": 5,
+        "w": 6,
         "d": 0,
         "l": 5,
-        "pts": 15,
+        "pts": 18,
         "rank": 6,
         "weeks": [
           {
@@ -2740,6 +2971,16 @@
             "opp": 29975,
             "oppScore": 45,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 45,
+            "realOpp": 99786,
+            "realOppScore": 40,
+            "realResult": "W",
+            "opp": 99786,
+            "oppScore": 40,
+            "result": "W"
           }
         ]
       }
@@ -2748,7 +2989,7 @@
       "1377": {
         "w": 5,
         "d": 0,
-        "l": 5,
+        "l": 6,
         "pts": 15,
         "rank": 6,
         "weeks": [
@@ -2851,15 +3092,25 @@
             "opp": 1857,
             "oppScore": 52,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 38,
+            "realOpp": 29975,
+            "realOppScore": 51,
+            "realResult": "L",
+            "opp": 1947,
+            "oppScore": 47,
+            "result": "L"
           }
         ]
       },
       "1425": {
         "w": 5,
         "d": 1,
-        "l": 4,
+        "l": 5,
         "pts": 16,
-        "rank": 5,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -2960,15 +3211,25 @@
             "opp": 26227,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 38,
+            "realOpp": 29975,
+            "realOppScore": 51,
+            "realResult": "L",
+            "opp": 99786,
+            "oppScore": 40,
+            "result": "L"
           }
         ]
       },
       "1471": {
         "w": 8,
         "d": 0,
-        "l": 2,
+        "l": 3,
         "pts": 24,
-        "rank": 1,
+        "rank": 2,
         "weeks": [
           {
             "gw": 1,
@@ -3069,15 +3330,25 @@
             "opp": 10375,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 38,
+            "realOpp": 29975,
+            "realOppScore": 51,
+            "realResult": "L",
+            "opp": 29975,
+            "oppScore": 51,
+            "result": "L"
           }
         ]
       },
       "1501": {
-        "w": 7,
+        "w": 8,
         "d": 0,
         "l": 3,
-        "pts": 21,
-        "rank": 1,
+        "pts": 24,
+        "rank": 2,
         "weeks": [
           {
             "gw": 1,
@@ -3178,15 +3449,25 @@
             "opp": 10210,
             "oppScore": 40,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 38,
+            "realOpp": 29975,
+            "realOppScore": 51,
+            "realResult": "L",
+            "opp": 26227,
+            "oppScore": 30,
+            "result": "W"
           }
         ]
       },
       "1530": {
         "w": 4,
         "d": 0,
-        "l": 6,
+        "l": 7,
         "pts": 12,
-        "rank": 7,
+        "rank": 8,
         "weeks": [
           {
             "gw": 1,
@@ -3287,15 +3568,25 @@
             "opp": 1947,
             "oppScore": 35,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 38,
+            "realOpp": 29975,
+            "realOppScore": 51,
+            "realResult": "L",
+            "opp": 10375,
+            "oppScore": 48,
+            "result": "L"
           }
         ]
       },
       "1857": {
         "w": 7,
         "d": 0,
-        "l": 3,
+        "l": 4,
         "pts": 21,
-        "rank": 1,
+        "rank": 3,
         "weeks": [
           {
             "gw": 1,
@@ -3396,14 +3687,24 @@
             "opp": 1377,
             "oppScore": 50,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 38,
+            "realOpp": 29975,
+            "realOppScore": 51,
+            "realResult": "L",
+            "opp": 10210,
+            "oppScore": 42,
+            "result": "L"
           }
         ]
       },
       "1947": {
-        "w": 9,
+        "w": 10,
         "d": 0,
         "l": 1,
-        "pts": 27,
+        "pts": 30,
         "rank": 1,
         "weeks": [
           {
@@ -3505,15 +3806,25 @@
             "opp": 1530,
             "oppScore": 39,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 38,
+            "realOpp": 29975,
+            "realOppScore": 51,
+            "realResult": "L",
+            "opp": 1377,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "10210": {
         "w": 8,
         "d": 0,
-        "l": 2,
+        "l": 3,
         "pts": 24,
-        "rank": 1,
+        "rank": 2,
         "weeks": [
           {
             "gw": 1,
@@ -3614,14 +3925,24 @@
             "opp": 1501,
             "oppScore": 43,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 38,
+            "realOpp": 29975,
+            "realOppScore": 51,
+            "realResult": "L",
+            "opp": 1857,
+            "oppScore": 59,
+            "result": "L"
           }
         ]
       },
       "10375": {
-        "w": 8,
+        "w": 9,
         "d": 0,
         "l": 2,
-        "pts": 24,
+        "pts": 27,
         "rank": 1,
         "weeks": [
           {
@@ -3723,15 +4044,25 @@
             "opp": 10375,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 38,
+            "realOpp": 29975,
+            "realOppScore": 51,
+            "realResult": "L",
+            "opp": 1530,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "26227": {
         "w": 7,
         "d": 0,
-        "l": 3,
+        "l": 4,
         "pts": 21,
-        "rank": 1,
+        "rank": 3,
         "weeks": [
           {
             "gw": 1,
@@ -3832,15 +4163,25 @@
             "opp": 1425,
             "oppScore": 33,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 38,
+            "realOpp": 29975,
+            "realOppScore": 51,
+            "realResult": "L",
+            "opp": 1501,
+            "oppScore": 43,
+            "result": "L"
           }
         ]
       },
       "29975": {
         "w": 6,
         "d": 0,
-        "l": 4,
+        "l": 5,
         "pts": 18,
-        "rank": 3,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -3941,15 +4282,25 @@
             "opp": 99786,
             "oppScore": 28,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 38,
+            "realOpp": 29975,
+            "realOppScore": 51,
+            "realResult": "L",
+            "opp": 29975,
+            "oppScore": 51,
+            "result": "L"
           }
         ]
       },
       "99786": {
         "w": 6,
         "d": 2,
-        "l": 2,
+        "l": 3,
         "pts": 20,
-        "rank": 2,
+        "rank": 5,
         "weeks": [
           {
             "gw": 1,
@@ -4050,6 +4401,16 @@
             "opp": 29975,
             "oppScore": 45,
             "result": "D"
+          },
+          {
+            "gw": 11,
+            "score": 38,
+            "realOpp": 29975,
+            "realOppScore": 51,
+            "realResult": "L",
+            "opp": 1425,
+            "oppScore": 45,
+            "result": "L"
           }
         ]
       }
@@ -4058,9 +4419,9 @@
       "1377": {
         "w": 6,
         "d": 0,
-        "l": 4,
+        "l": 5,
         "pts": 18,
-        "rank": 3,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -4161,15 +4522,25 @@
             "opp": 1857,
             "oppScore": 52,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 43,
+            "realOpp": 26227,
+            "realOppScore": 30,
+            "realResult": "W",
+            "opp": 1947,
+            "oppScore": 47,
+            "result": "L"
           }
         ]
       },
       "1425": {
-        "w": 3,
+        "w": 4,
         "d": 2,
         "l": 5,
-        "pts": 11,
-        "rank": 10,
+        "pts": 14,
+        "rank": 8,
         "weeks": [
           {
             "gw": 1,
@@ -4270,15 +4641,25 @@
             "opp": 26227,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 43,
+            "realOpp": 26227,
+            "realOppScore": 30,
+            "realResult": "W",
+            "opp": 99786,
+            "oppScore": 40,
+            "result": "W"
           }
         ]
       },
       "1471": {
         "w": 6,
         "d": 0,
-        "l": 4,
+        "l": 5,
         "pts": 18,
-        "rank": 3,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -4379,14 +4760,24 @@
             "opp": 10375,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 43,
+            "realOpp": 26227,
+            "realOppScore": 30,
+            "realResult": "W",
+            "opp": 29975,
+            "oppScore": 51,
+            "result": "L"
           }
         ]
       },
       "1501": {
-        "w": 5,
+        "w": 6,
         "d": 0,
         "l": 5,
-        "pts": 15,
+        "pts": 18,
         "rank": 6,
         "weeks": [
           {
@@ -4488,15 +4879,25 @@
             "opp": 10210,
             "oppScore": 40,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 43,
+            "realOpp": 26227,
+            "realOppScore": 30,
+            "realResult": "W",
+            "opp": 26227,
+            "oppScore": 30,
+            "result": "W"
           }
         ]
       },
       "1530": {
         "w": 6,
         "d": 0,
-        "l": 4,
+        "l": 5,
         "pts": 18,
-        "rank": 3,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -4597,14 +4998,24 @@
             "opp": 1947,
             "oppScore": 35,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 43,
+            "realOpp": 26227,
+            "realOppScore": 30,
+            "realResult": "W",
+            "opp": 10375,
+            "oppScore": 48,
+            "result": "L"
           }
         ]
       },
       "1857": {
-        "w": 5,
+        "w": 6,
         "d": 0,
         "l": 5,
-        "pts": 15,
+        "pts": 18,
         "rank": 6,
         "weeks": [
           {
@@ -4706,14 +5117,24 @@
             "opp": 1377,
             "oppScore": 50,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 43,
+            "realOpp": 26227,
+            "realOppScore": 30,
+            "realResult": "W",
+            "opp": 10210,
+            "oppScore": 42,
+            "result": "W"
           }
         ]
       },
       "1947": {
-        "w": 6,
+        "w": 7,
         "d": 0,
         "l": 4,
-        "pts": 18,
+        "pts": 21,
         "rank": 3,
         "weeks": [
           {
@@ -4815,15 +5236,25 @@
             "opp": 1530,
             "oppScore": 39,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 43,
+            "realOpp": 26227,
+            "realOppScore": 30,
+            "realResult": "W",
+            "opp": 1377,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "10210": {
         "w": 6,
         "d": 0,
-        "l": 4,
+        "l": 5,
         "pts": 18,
-        "rank": 3,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -4924,14 +5355,24 @@
             "opp": 10210,
             "oppScore": 40,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 43,
+            "realOpp": 26227,
+            "realOppScore": 30,
+            "realResult": "W",
+            "opp": 1857,
+            "oppScore": 59,
+            "result": "L"
           }
         ]
       },
       "10375": {
-        "w": 5,
+        "w": 6,
         "d": 0,
         "l": 5,
-        "pts": 15,
+        "pts": 18,
         "rank": 6,
         "weeks": [
           {
@@ -5033,14 +5474,24 @@
             "opp": 1471,
             "oppScore": 45,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 43,
+            "realOpp": 26227,
+            "realOppScore": 30,
+            "realResult": "W",
+            "opp": 1530,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "26227": {
-        "w": 6,
+        "w": 7,
         "d": 0,
         "l": 4,
-        "pts": 18,
+        "pts": 21,
         "rank": 3,
         "weeks": [
           {
@@ -5142,14 +5593,24 @@
             "opp": 1425,
             "oppScore": 33,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 43,
+            "realOpp": 26227,
+            "realOppScore": 30,
+            "realResult": "W",
+            "opp": 26227,
+            "oppScore": 30,
+            "result": "W"
           }
         ]
       },
       "29975": {
-        "w": 8,
+        "w": 9,
         "d": 0,
         "l": 2,
-        "pts": 24,
+        "pts": 27,
         "rank": 1,
         "weeks": [
           {
@@ -5251,15 +5712,25 @@
             "opp": 99786,
             "oppScore": 28,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 43,
+            "realOpp": 26227,
+            "realOppScore": 30,
+            "realResult": "W",
+            "opp": 1471,
+            "oppScore": 38,
+            "result": "W"
           }
         ]
       },
       "99786": {
         "w": 6,
         "d": 1,
-        "l": 3,
+        "l": 4,
         "pts": 19,
-        "rank": 3,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -5358,6 +5829,16 @@
             "realOppScore": 40,
             "realResult": "W",
             "opp": 29975,
+            "oppScore": 45,
+            "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 43,
+            "realOpp": 26227,
+            "realOppScore": 30,
+            "realResult": "W",
+            "opp": 1425,
             "oppScore": 45,
             "result": "L"
           }
@@ -5368,7 +5849,7 @@
       "1377": {
         "w": 1,
         "d": 0,
-        "l": 9,
+        "l": 10,
         "pts": 3,
         "rank": 12,
         "weeks": [
@@ -5471,13 +5952,23 @@
             "opp": 1857,
             "oppScore": 52,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 10375,
+            "realOppScore": 48,
+            "realResult": "L",
+            "opp": 1947,
+            "oppScore": 47,
+            "result": "L"
           }
         ]
       },
       "1425": {
         "w": 2,
         "d": 0,
-        "l": 8,
+        "l": 9,
         "pts": 6,
         "rank": 12,
         "weeks": [
@@ -5580,13 +6071,23 @@
             "opp": 26227,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 10375,
+            "realOppScore": 48,
+            "realResult": "L",
+            "opp": 99786,
+            "oppScore": 40,
+            "result": "L"
           }
         ]
       },
       "1471": {
         "w": 3,
         "d": 1,
-        "l": 6,
+        "l": 7,
         "pts": 10,
         "rank": 11,
         "weeks": [
@@ -5689,14 +6190,24 @@
             "opp": 10375,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 10375,
+            "realOppScore": 48,
+            "realResult": "L",
+            "opp": 29975,
+            "oppScore": 51,
+            "result": "L"
           }
         ]
       },
       "1501": {
-        "w": 1,
+        "w": 2,
         "d": 0,
         "l": 9,
-        "pts": 3,
+        "pts": 6,
         "rank": 12,
         "weeks": [
           {
@@ -5798,13 +6309,23 @@
             "opp": 10210,
             "oppScore": 40,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 10375,
+            "realOppScore": 48,
+            "realResult": "L",
+            "opp": 26227,
+            "oppScore": 30,
+            "result": "W"
           }
         ]
       },
       "1530": {
         "w": 2,
         "d": 0,
-        "l": 8,
+        "l": 9,
         "pts": 6,
         "rank": 12,
         "weeks": [
@@ -5907,13 +6428,23 @@
             "opp": 1947,
             "oppScore": 35,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 10375,
+            "realOppScore": 48,
+            "realResult": "L",
+            "opp": 10375,
+            "oppScore": 48,
+            "result": "L"
           }
         ]
       },
       "1857": {
         "w": 1,
         "d": 0,
-        "l": 9,
+        "l": 10,
         "pts": 3,
         "rank": 12,
         "weeks": [
@@ -6016,15 +6547,25 @@
             "opp": 1377,
             "oppScore": 50,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 10375,
+            "realOppScore": 48,
+            "realResult": "L",
+            "opp": 10210,
+            "oppScore": 42,
+            "result": "L"
           }
         ]
       },
       "1947": {
         "w": 5,
-        "d": 0,
+        "d": 1,
         "l": 5,
-        "pts": 15,
-        "rank": 8,
+        "pts": 16,
+        "rank": 7,
         "weeks": [
           {
             "gw": 1,
@@ -6125,13 +6666,23 @@
             "opp": 1947,
             "oppScore": 35,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 10375,
+            "realOppScore": 48,
+            "realResult": "L",
+            "opp": 1377,
+            "oppScore": 31,
+            "result": "D"
           }
         ]
       },
       "10210": {
         "w": 2,
         "d": 0,
-        "l": 8,
+        "l": 9,
         "pts": 6,
         "rank": 12,
         "weeks": [
@@ -6234,13 +6785,23 @@
             "opp": 1501,
             "oppScore": 43,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 10375,
+            "realOppScore": 48,
+            "realResult": "L",
+            "opp": 1857,
+            "oppScore": 59,
+            "result": "L"
           }
         ]
       },
       "10375": {
         "w": 2,
         "d": 0,
-        "l": 8,
+        "l": 9,
         "pts": 6,
         "rank": 12,
         "weeks": [
@@ -6343,13 +6904,23 @@
             "opp": 1471,
             "oppScore": 45,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 10375,
+            "realOppScore": 48,
+            "realResult": "L",
+            "opp": 10375,
+            "oppScore": 48,
+            "result": "L"
           }
         ]
       },
       "26227": {
         "w": 2,
         "d": 0,
-        "l": 8,
+        "l": 9,
         "pts": 6,
         "rank": 12,
         "weeks": [
@@ -6452,15 +7023,25 @@
             "opp": 1425,
             "oppScore": 33,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 10375,
+            "realOppScore": 48,
+            "realResult": "L",
+            "opp": 1501,
+            "oppScore": 43,
+            "result": "L"
           }
         ]
       },
       "29975": {
         "w": 4,
         "d": 1,
-        "l": 5,
+        "l": 6,
         "pts": 13,
-        "rank": 8,
+        "rank": 9,
         "weeks": [
           {
             "gw": 1,
@@ -6561,13 +7142,23 @@
             "opp": 99786,
             "oppScore": 28,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 10375,
+            "realOppScore": 48,
+            "realResult": "L",
+            "opp": 1471,
+            "oppScore": 38,
+            "result": "L"
           }
         ]
       },
       "99786": {
         "w": 1,
         "d": 0,
-        "l": 9,
+        "l": 10,
         "pts": 3,
         "rank": 12,
         "weeks": [
@@ -6668,6 +7259,16 @@
             "realOppScore": 35,
             "realResult": "W",
             "opp": 29975,
+            "oppScore": 45,
+            "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 31,
+            "realOpp": 10375,
+            "realOppScore": 48,
+            "realResult": "L",
+            "opp": 1425,
             "oppScore": 45,
             "result": "L"
           }
@@ -6676,10 +7277,10 @@
     },
     "1857": {
       "1377": {
-        "w": 6,
+        "w": 7,
         "d": 0,
         "l": 4,
-        "pts": 18,
+        "pts": 21,
         "rank": 3,
         "weeks": [
           {
@@ -6781,15 +7382,25 @@
             "opp": 1377,
             "oppScore": 50,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 59,
+            "realOpp": 10210,
+            "realOppScore": 42,
+            "realResult": "W",
+            "opp": 1947,
+            "oppScore": 47,
+            "result": "W"
           }
         ]
       },
       "1425": {
-        "w": 4,
+        "w": 5,
         "d": 0,
         "l": 6,
-        "pts": 12,
-        "rank": 7,
+        "pts": 15,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -6890,14 +7501,24 @@
             "opp": 26227,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 59,
+            "realOpp": 10210,
+            "realOppScore": 42,
+            "realResult": "W",
+            "opp": 99786,
+            "oppScore": 40,
+            "result": "W"
           }
         ]
       },
       "1471": {
-        "w": 6,
+        "w": 7,
         "d": 0,
         "l": 4,
-        "pts": 18,
+        "pts": 21,
         "rank": 3,
         "weeks": [
           {
@@ -6999,14 +7620,24 @@
             "opp": 10375,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 59,
+            "realOpp": 10210,
+            "realOppScore": 42,
+            "realResult": "W",
+            "opp": 29975,
+            "oppScore": 51,
+            "result": "W"
           }
         ]
       },
       "1501": {
-        "w": 6,
+        "w": 7,
         "d": 1,
         "l": 3,
-        "pts": 19,
+        "pts": 22,
         "rank": 2,
         "weeks": [
           {
@@ -7108,15 +7739,25 @@
             "opp": 10210,
             "oppScore": 40,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 59,
+            "realOpp": 10210,
+            "realOppScore": 42,
+            "realResult": "W",
+            "opp": 26227,
+            "oppScore": 30,
+            "result": "W"
           }
         ]
       },
       "1530": {
-        "w": 4,
+        "w": 5,
         "d": 0,
         "l": 6,
-        "pts": 12,
-        "rank": 7,
+        "pts": 15,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -7217,15 +7858,25 @@
             "opp": 1947,
             "oppScore": 35,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 59,
+            "realOpp": 10210,
+            "realOppScore": 42,
+            "realResult": "W",
+            "opp": 10375,
+            "oppScore": 48,
+            "result": "W"
           }
         ]
       },
       "1857": {
-        "w": 7,
+        "w": 8,
         "d": 0,
         "l": 3,
-        "pts": 21,
-        "rank": 2,
+        "pts": 24,
+        "rank": 1,
         "weeks": [
           {
             "gw": 1,
@@ -7326,15 +7977,25 @@
             "opp": 1377,
             "oppScore": 50,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 59,
+            "realOpp": 10210,
+            "realOppScore": 42,
+            "realResult": "W",
+            "opp": 10210,
+            "oppScore": 42,
+            "result": "W"
           }
         ]
       },
       "1947": {
-        "w": 8,
+        "w": 9,
         "d": 0,
         "l": 2,
-        "pts": 24,
-        "rank": 2,
+        "pts": 27,
+        "rank": 1,
         "weeks": [
           {
             "gw": 1,
@@ -7435,14 +8096,24 @@
             "opp": 1530,
             "oppScore": 39,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 59,
+            "realOpp": 10210,
+            "realOppScore": 42,
+            "realResult": "W",
+            "opp": 1377,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "10210": {
-        "w": 6,
+        "w": 7,
         "d": 1,
         "l": 3,
-        "pts": 19,
+        "pts": 22,
         "rank": 2,
         "weeks": [
           {
@@ -7544,14 +8215,24 @@
             "opp": 1501,
             "oppScore": 43,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 59,
+            "realOpp": 10210,
+            "realOppScore": 42,
+            "realResult": "W",
+            "opp": 10210,
+            "oppScore": 42,
+            "result": "W"
           }
         ]
       },
       "10375": {
-        "w": 6,
+        "w": 7,
         "d": 2,
         "l": 2,
-        "pts": 20,
+        "pts": 23,
         "rank": 2,
         "weeks": [
           {
@@ -7653,14 +8334,24 @@
             "opp": 1471,
             "oppScore": 45,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 59,
+            "realOpp": 10210,
+            "realOppScore": 42,
+            "realResult": "W",
+            "opp": 1530,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "26227": {
-        "w": 6,
+        "w": 7,
         "d": 0,
         "l": 4,
-        "pts": 18,
+        "pts": 21,
         "rank": 3,
         "weeks": [
           {
@@ -7762,15 +8453,25 @@
             "opp": 1425,
             "oppScore": 33,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 59,
+            "realOpp": 10210,
+            "realOppScore": 42,
+            "realResult": "W",
+            "opp": 1501,
+            "oppScore": 43,
+            "result": "W"
           }
         ]
       },
       "29975": {
-        "w": 8,
+        "w": 9,
         "d": 0,
         "l": 2,
-        "pts": 24,
-        "rank": 2,
+        "pts": 27,
+        "rank": 1,
         "weeks": [
           {
             "gw": 1,
@@ -7871,14 +8572,24 @@
             "opp": 99786,
             "oppScore": 28,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 59,
+            "realOpp": 10210,
+            "realOppScore": 42,
+            "realResult": "W",
+            "opp": 1471,
+            "oppScore": 38,
+            "result": "W"
           }
         ]
       },
       "99786": {
-        "w": 6,
+        "w": 7,
         "d": 0,
         "l": 4,
-        "pts": 18,
+        "pts": 21,
         "rank": 3,
         "weeks": [
           {
@@ -7978,6 +8689,16 @@
             "realOppScore": 50,
             "realResult": "W",
             "opp": 29975,
+            "oppScore": 45,
+            "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 59,
+            "realOpp": 10210,
+            "realOppScore": 42,
+            "realResult": "W",
+            "opp": 1425,
             "oppScore": 45,
             "result": "W"
           }
@@ -7986,11 +8707,11 @@
     },
     "1947": {
       "1377": {
-        "w": 4,
+        "w": 5,
         "d": 1,
         "l": 5,
-        "pts": 13,
-        "rank": 7,
+        "pts": 16,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -8091,15 +8812,25 @@
             "opp": 1857,
             "oppScore": 52,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 47,
+            "realOpp": 1377,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 1377,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "1425": {
-        "w": 5,
+        "w": 6,
         "d": 0,
         "l": 5,
-        "pts": 15,
-        "rank": 7,
+        "pts": 18,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -8200,15 +8931,25 @@
             "opp": 26227,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 47,
+            "realOpp": 1377,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 99786,
+            "oppScore": 40,
+            "result": "W"
           }
         ]
       },
       "1471": {
         "w": 7,
         "d": 0,
-        "l": 3,
+        "l": 4,
         "pts": 21,
-        "rank": 3,
+        "rank": 4,
         "weeks": [
           {
             "gw": 1,
@@ -8309,15 +9050,25 @@
             "opp": 10375,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 47,
+            "realOpp": 1377,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 29975,
+            "oppScore": 51,
+            "result": "L"
           }
         ]
       },
       "1501": {
-        "w": 5,
+        "w": 6,
         "d": 0,
         "l": 5,
-        "pts": 15,
-        "rank": 7,
+        "pts": 18,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -8418,13 +9169,23 @@
             "opp": 10210,
             "oppScore": 40,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 47,
+            "realOpp": 1377,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 26227,
+            "oppScore": 30,
+            "result": "W"
           }
         ]
       },
       "1530": {
         "w": 2,
         "d": 0,
-        "l": 8,
+        "l": 9,
         "pts": 6,
         "rank": 11,
         "weeks": [
@@ -8527,14 +9288,24 @@
             "opp": 1530,
             "oppScore": 39,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 47,
+            "realOpp": 1377,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 10375,
+            "oppScore": 48,
+            "result": "L"
           }
         ]
       },
       "1857": {
-        "w": 6,
+        "w": 7,
         "d": 0,
         "l": 4,
-        "pts": 18,
+        "pts": 21,
         "rank": 4,
         "weeks": [
           {
@@ -8636,14 +9407,24 @@
             "opp": 1377,
             "oppScore": 50,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 47,
+            "realOpp": 1377,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 10210,
+            "oppScore": 42,
+            "result": "W"
           }
         ]
       },
       "1947": {
-        "w": 6,
+        "w": 7,
         "d": 0,
         "l": 4,
-        "pts": 18,
+        "pts": 21,
         "rank": 4,
         "weeks": [
           {
@@ -8745,15 +9526,25 @@
             "opp": 1530,
             "oppScore": 39,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 47,
+            "realOpp": 1377,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 1377,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "10210": {
         "w": 4,
         "d": 0,
-        "l": 6,
+        "l": 7,
         "pts": 12,
-        "rank": 8,
+        "rank": 9,
         "weeks": [
           {
             "gw": 1,
@@ -8854,15 +9645,25 @@
             "opp": 1501,
             "oppScore": 43,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 47,
+            "realOpp": 1377,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 1857,
+            "oppScore": 59,
+            "result": "L"
           }
         ]
       },
       "10375": {
-        "w": 5,
+        "w": 6,
         "d": 0,
         "l": 5,
-        "pts": 15,
-        "rank": 7,
+        "pts": 18,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -8963,14 +9764,24 @@
             "opp": 1471,
             "oppScore": 45,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 47,
+            "realOpp": 1377,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 1530,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "26227": {
-        "w": 5,
+        "w": 6,
         "d": 1,
         "l": 4,
-        "pts": 16,
+        "pts": 19,
         "rank": 5,
         "weeks": [
           {
@@ -9072,15 +9883,25 @@
             "opp": 1425,
             "oppScore": 33,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 47,
+            "realOpp": 1377,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 1501,
+            "oppScore": 43,
+            "result": "W"
           }
         ]
       },
       "29975": {
-        "w": 8,
+        "w": 9,
         "d": 0,
         "l": 2,
-        "pts": 24,
-        "rank": 2,
+        "pts": 27,
+        "rank": 1,
         "weeks": [
           {
             "gw": 1,
@@ -9181,15 +10002,25 @@
             "opp": 99786,
             "oppScore": 28,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 47,
+            "realOpp": 1377,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 1471,
+            "oppScore": 38,
+            "result": "W"
           }
         ]
       },
       "99786": {
-        "w": 4,
+        "w": 5,
         "d": 0,
         "l": 6,
-        "pts": 12,
-        "rank": 8,
+        "pts": 15,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -9290,6 +10121,16 @@
             "opp": 29975,
             "oppScore": 45,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 47,
+            "realOpp": 1377,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 1425,
+            "oppScore": 45,
+            "result": "W"
           }
         ]
       }
@@ -9298,9 +10139,9 @@
       "1377": {
         "w": 3,
         "d": 0,
-        "l": 7,
+        "l": 8,
         "pts": 9,
-        "rank": 11,
+        "rank": 10,
         "weeks": [
           {
             "gw": 1,
@@ -9401,15 +10242,25 @@
             "opp": 1857,
             "oppScore": 52,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 42,
+            "realOpp": 1857,
+            "realOppScore": 59,
+            "realResult": "L",
+            "opp": 1947,
+            "oppScore": 47,
+            "result": "L"
           }
         ]
       },
       "1425": {
-        "w": 4,
+        "w": 5,
         "d": 0,
         "l": 6,
-        "pts": 12,
-        "rank": 9,
+        "pts": 15,
+        "rank": 8,
         "weeks": [
           {
             "gw": 1,
@@ -9510,13 +10361,23 @@
             "opp": 26227,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 42,
+            "realOpp": 1857,
+            "realOppScore": 59,
+            "realResult": "L",
+            "opp": 99786,
+            "oppScore": 40,
+            "result": "W"
           }
         ]
       },
       "1471": {
         "w": 5,
         "d": 0,
-        "l": 5,
+        "l": 6,
         "pts": 15,
         "rank": 8,
         "weeks": [
@@ -9619,15 +10480,25 @@
             "opp": 10375,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 42,
+            "realOpp": 1857,
+            "realOppScore": 59,
+            "realResult": "L",
+            "opp": 29975,
+            "oppScore": 51,
+            "result": "L"
           }
         ]
       },
       "1501": {
-        "w": 4,
+        "w": 5,
         "d": 0,
         "l": 6,
-        "pts": 12,
-        "rank": 9,
+        "pts": 15,
+        "rank": 8,
         "weeks": [
           {
             "gw": 1,
@@ -9728,15 +10599,25 @@
             "opp": 1501,
             "oppScore": 43,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 42,
+            "realOpp": 1857,
+            "realOppScore": 59,
+            "realResult": "L",
+            "opp": 26227,
+            "oppScore": 30,
+            "result": "W"
           }
         ]
       },
       "1530": {
         "w": 3,
         "d": 0,
-        "l": 7,
+        "l": 8,
         "pts": 9,
-        "rank": 11,
+        "rank": 10,
         "weeks": [
           {
             "gw": 1,
@@ -9837,15 +10718,25 @@
             "opp": 1947,
             "oppScore": 35,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 42,
+            "realOpp": 1857,
+            "realOppScore": 59,
+            "realResult": "L",
+            "opp": 10375,
+            "oppScore": 48,
+            "result": "L"
           }
         ]
       },
       "1857": {
         "w": 4,
         "d": 0,
-        "l": 6,
+        "l": 7,
         "pts": 12,
-        "rank": 9,
+        "rank": 10,
         "weeks": [
           {
             "gw": 1,
@@ -9946,14 +10837,24 @@
             "opp": 1377,
             "oppScore": 50,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 42,
+            "realOpp": 1857,
+            "realOppScore": 59,
+            "realResult": "L",
+            "opp": 1857,
+            "oppScore": 59,
+            "result": "L"
           }
         ]
       },
       "1947": {
-        "w": 7,
+        "w": 8,
         "d": 0,
         "l": 3,
-        "pts": 21,
+        "pts": 24,
         "rank": 3,
         "weeks": [
           {
@@ -10055,15 +10956,25 @@
             "opp": 1530,
             "oppScore": 39,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 42,
+            "realOpp": 1857,
+            "realOppScore": 59,
+            "realResult": "L",
+            "opp": 1377,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "10210": {
         "w": 4,
         "d": 0,
-        "l": 6,
+        "l": 7,
         "pts": 12,
-        "rank": 9,
+        "rank": 10,
         "weeks": [
           {
             "gw": 1,
@@ -10164,15 +11075,25 @@
             "opp": 1501,
             "oppScore": 43,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 42,
+            "realOpp": 1857,
+            "realOppScore": 59,
+            "realResult": "L",
+            "opp": 1857,
+            "oppScore": 59,
+            "result": "L"
           }
         ]
       },
       "10375": {
-        "w": 5,
+        "w": 6,
         "d": 0,
         "l": 5,
-        "pts": 15,
-        "rank": 8,
+        "pts": 18,
+        "rank": 7,
         "weeks": [
           {
             "gw": 1,
@@ -10273,15 +11194,25 @@
             "opp": 1471,
             "oppScore": 45,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 42,
+            "realOpp": 1857,
+            "realOppScore": 59,
+            "realResult": "L",
+            "opp": 1530,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "26227": {
         "w": 4,
         "d": 0,
-        "l": 6,
+        "l": 7,
         "pts": 12,
-        "rank": 9,
+        "rank": 10,
         "weeks": [
           {
             "gw": 1,
@@ -10382,15 +11313,25 @@
             "opp": 1425,
             "oppScore": 33,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 42,
+            "realOpp": 1857,
+            "realOppScore": 59,
+            "realResult": "L",
+            "opp": 1501,
+            "oppScore": 43,
+            "result": "L"
           }
         ]
       },
       "29975": {
-        "w": 5,
+        "w": 6,
         "d": 0,
         "l": 5,
-        "pts": 15,
-        "rank": 8,
+        "pts": 18,
+        "rank": 7,
         "weeks": [
           {
             "gw": 1,
@@ -10491,13 +11432,23 @@
             "opp": 99786,
             "oppScore": 28,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 42,
+            "realOpp": 1857,
+            "realOppScore": 59,
+            "realResult": "L",
+            "opp": 1471,
+            "oppScore": 38,
+            "result": "W"
           }
         ]
       },
       "99786": {
         "w": 2,
         "d": 0,
-        "l": 8,
+        "l": 9,
         "pts": 6,
         "rank": 11,
         "weeks": [
@@ -10598,6 +11549,16 @@
             "realOppScore": 43,
             "realResult": "L",
             "opp": 29975,
+            "oppScore": 45,
+            "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 42,
+            "realOpp": 1857,
+            "realOppScore": 59,
+            "realResult": "L",
+            "opp": 1425,
             "oppScore": 45,
             "result": "L"
           }
@@ -10606,11 +11567,11 @@
     },
     "10375": {
       "1377": {
-        "w": 4,
+        "w": 5,
         "d": 0,
         "l": 6,
-        "pts": 12,
-        "rank": 8,
+        "pts": 15,
+        "rank": 7,
         "weeks": [
           {
             "gw": 1,
@@ -10711,15 +11672,25 @@
             "opp": 1857,
             "oppScore": 52,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 48,
+            "realOpp": 1530,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 1947,
+            "oppScore": 47,
+            "result": "W"
           }
         ]
       },
       "1425": {
-        "w": 4,
+        "w": 5,
         "d": 1,
         "l": 5,
-        "pts": 13,
-        "rank": 7,
+        "pts": 16,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -10820,15 +11791,25 @@
             "opp": 26227,
             "oppScore": 30,
             "result": "D"
+          },
+          {
+            "gw": 11,
+            "score": 48,
+            "realOpp": 1530,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 99786,
+            "oppScore": 40,
+            "result": "W"
           }
         ]
       },
       "1471": {
         "w": 4,
         "d": 0,
-        "l": 6,
+        "l": 7,
         "pts": 12,
-        "rank": 8,
+        "rank": 9,
         "weeks": [
           {
             "gw": 1,
@@ -10929,15 +11910,25 @@
             "opp": 1471,
             "oppScore": 45,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 48,
+            "realOpp": 1530,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 29975,
+            "oppScore": 51,
+            "result": "L"
           }
         ]
       },
       "1501": {
-        "w": 4,
+        "w": 5,
         "d": 1,
         "l": 5,
-        "pts": 13,
-        "rank": 7,
+        "pts": 16,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -11038,15 +12029,25 @@
             "opp": 10210,
             "oppScore": 40,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 48,
+            "realOpp": 1530,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 26227,
+            "oppScore": 30,
+            "result": "W"
           }
         ]
       },
       "1530": {
-        "w": 3,
+        "w": 4,
         "d": 1,
         "l": 6,
-        "pts": 10,
-        "rank": 10,
+        "pts": 13,
+        "rank": 8,
         "weeks": [
           {
             "gw": 1,
@@ -11147,15 +12148,25 @@
             "opp": 1947,
             "oppScore": 35,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 48,
+            "realOpp": 1530,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 1530,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "1857": {
-        "w": 3,
+        "w": 4,
         "d": 0,
         "l": 7,
-        "pts": 9,
-        "rank": 10,
+        "pts": 12,
+        "rank": 9,
         "weeks": [
           {
             "gw": 1,
@@ -11256,15 +12267,25 @@
             "opp": 1377,
             "oppScore": 50,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 48,
+            "realOpp": 1530,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 10210,
+            "oppScore": 42,
+            "result": "W"
           }
         ]
       },
       "1947": {
-        "w": 3,
+        "w": 4,
         "d": 0,
         "l": 7,
-        "pts": 9,
-        "rank": 10,
+        "pts": 12,
+        "rank": 9,
         "weeks": [
           {
             "gw": 1,
@@ -11365,15 +12386,25 @@
             "opp": 1530,
             "oppScore": 39,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 48,
+            "realOpp": 1530,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 1377,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "10210": {
         "w": 4,
         "d": 1,
-        "l": 5,
+        "l": 6,
         "pts": 13,
-        "rank": 7,
+        "rank": 8,
         "weeks": [
           {
             "gw": 1,
@@ -11474,14 +12505,24 @@
             "opp": 1501,
             "oppScore": 43,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 48,
+            "realOpp": 1530,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 1857,
+            "oppScore": 59,
+            "result": "L"
           }
         ]
       },
       "10375": {
-        "w": 6,
+        "w": 7,
         "d": 0,
         "l": 4,
-        "pts": 18,
+        "pts": 21,
         "rank": 5,
         "weeks": [
           {
@@ -11583,15 +12624,25 @@
             "opp": 1471,
             "oppScore": 45,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 48,
+            "realOpp": 1530,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 1530,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "26227": {
-        "w": 5,
+        "w": 6,
         "d": 0,
         "l": 5,
-        "pts": 15,
-        "rank": 7,
+        "pts": 18,
+        "rank": 6,
         "weeks": [
           {
             "gw": 1,
@@ -11692,14 +12743,24 @@
             "opp": 1425,
             "oppScore": 33,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 48,
+            "realOpp": 1530,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 1501,
+            "oppScore": 43,
+            "result": "W"
           }
         ]
       },
       "29975": {
-        "w": 6,
+        "w": 7,
         "d": 0,
         "l": 4,
-        "pts": 18,
+        "pts": 21,
         "rank": 5,
         "weeks": [
           {
@@ -11801,15 +12862,25 @@
             "opp": 99786,
             "oppScore": 28,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 48,
+            "realOpp": 1530,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 1471,
+            "oppScore": 38,
+            "result": "W"
           }
         ]
       },
       "99786": {
-        "w": 3,
+        "w": 4,
         "d": 0,
         "l": 7,
-        "pts": 9,
-        "rank": 10,
+        "pts": 12,
+        "rank": 9,
         "weeks": [
           {
             "gw": 1,
@@ -11910,6 +12981,16 @@
             "opp": 29975,
             "oppScore": 45,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 48,
+            "realOpp": 1530,
+            "realOppScore": 31,
+            "realResult": "W",
+            "opp": 1425,
+            "oppScore": 45,
+            "result": "W"
           }
         ]
       }
@@ -11918,9 +12999,9 @@
       "1377": {
         "w": 5,
         "d": 1,
-        "l": 4,
+        "l": 5,
         "pts": 16,
-        "rank": 6,
+        "rank": 7,
         "weeks": [
           {
             "gw": 1,
@@ -12021,15 +13102,25 @@
             "opp": 1857,
             "oppScore": 52,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 30,
+            "realOpp": 1501,
+            "realOppScore": 43,
+            "realResult": "L",
+            "opp": 1947,
+            "oppScore": 47,
+            "result": "L"
           }
         ]
       },
       "1425": {
         "w": 4,
         "d": 0,
-        "l": 6,
+        "l": 7,
         "pts": 12,
-        "rank": 8,
+        "rank": 9,
         "weeks": [
           {
             "gw": 1,
@@ -12130,15 +13221,25 @@
             "opp": 1425,
             "oppScore": 33,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 30,
+            "realOpp": 1501,
+            "realOppScore": 43,
+            "realResult": "L",
+            "opp": 99786,
+            "oppScore": 40,
+            "result": "L"
           }
         ]
       },
       "1471": {
         "w": 5,
         "d": 1,
-        "l": 4,
+        "l": 5,
         "pts": 16,
-        "rank": 6,
+        "rank": 7,
         "weeks": [
           {
             "gw": 1,
@@ -12239,15 +13340,25 @@
             "opp": 10375,
             "oppScore": 30,
             "result": "D"
+          },
+          {
+            "gw": 11,
+            "score": 30,
+            "realOpp": 1501,
+            "realOppScore": 43,
+            "realResult": "L",
+            "opp": 29975,
+            "oppScore": 51,
+            "result": "L"
           }
         ]
       },
       "1501": {
         "w": 6,
         "d": 0,
-        "l": 4,
+        "l": 5,
         "pts": 18,
-        "rank": 4,
+        "rank": 7,
         "weeks": [
           {
             "gw": 1,
@@ -12348,15 +13459,25 @@
             "opp": 10210,
             "oppScore": 40,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 30,
+            "realOpp": 1501,
+            "realOppScore": 43,
+            "realResult": "L",
+            "opp": 1501,
+            "oppScore": 43,
+            "result": "L"
           }
         ]
       },
       "1530": {
         "w": 6,
         "d": 0,
-        "l": 4,
+        "l": 5,
         "pts": 18,
-        "rank": 4,
+        "rank": 7,
         "weeks": [
           {
             "gw": 1,
@@ -12457,13 +13578,23 @@
             "opp": 1947,
             "oppScore": 35,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 30,
+            "realOpp": 1501,
+            "realOppScore": 43,
+            "realResult": "L",
+            "opp": 10375,
+            "oppScore": 48,
+            "result": "L"
           }
         ]
       },
       "1857": {
         "w": 5,
         "d": 0,
-        "l": 5,
+        "l": 6,
         "pts": 15,
         "rank": 7,
         "weeks": [
@@ -12566,15 +13697,25 @@
             "opp": 1377,
             "oppScore": 50,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 30,
+            "realOpp": 1501,
+            "realOppScore": 43,
+            "realResult": "L",
+            "opp": 10210,
+            "oppScore": 42,
+            "result": "L"
           }
         ]
       },
       "1947": {
         "w": 6,
         "d": 0,
-        "l": 4,
+        "l": 5,
         "pts": 18,
-        "rank": 4,
+        "rank": 7,
         "weeks": [
           {
             "gw": 1,
@@ -12675,15 +13816,25 @@
             "opp": 1530,
             "oppScore": 39,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 30,
+            "realOpp": 1501,
+            "realOppScore": 43,
+            "realResult": "L",
+            "opp": 1377,
+            "oppScore": 31,
+            "result": "L"
           }
         ]
       },
       "10210": {
         "w": 8,
         "d": 0,
-        "l": 2,
+        "l": 3,
         "pts": 24,
-        "rank": 2,
+        "rank": 3,
         "weeks": [
           {
             "gw": 1,
@@ -12784,15 +13935,25 @@
             "opp": 1501,
             "oppScore": 43,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 30,
+            "realOpp": 1501,
+            "realOppScore": 43,
+            "realResult": "L",
+            "opp": 1857,
+            "oppScore": 59,
+            "result": "L"
           }
         ]
       },
       "10375": {
         "w": 6,
         "d": 0,
-        "l": 4,
+        "l": 5,
         "pts": 18,
-        "rank": 4,
+        "rank": 7,
         "weeks": [
           {
             "gw": 1,
@@ -12893,15 +14054,25 @@
             "opp": 1471,
             "oppScore": 45,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 30,
+            "realOpp": 1501,
+            "realOppScore": 43,
+            "realResult": "L",
+            "opp": 1530,
+            "oppScore": 31,
+            "result": "L"
           }
         ]
       },
       "26227": {
         "w": 4,
         "d": 0,
-        "l": 6,
+        "l": 7,
         "pts": 12,
-        "rank": 8,
+        "rank": 9,
         "weeks": [
           {
             "gw": 1,
@@ -13002,15 +14173,25 @@
             "opp": 1425,
             "oppScore": 33,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 30,
+            "realOpp": 1501,
+            "realOppScore": 43,
+            "realResult": "L",
+            "opp": 1501,
+            "oppScore": 43,
+            "result": "L"
           }
         ]
       },
       "29975": {
         "w": 7,
         "d": 0,
-        "l": 3,
+        "l": 4,
         "pts": 21,
-        "rank": 3,
+        "rank": 4,
         "weeks": [
           {
             "gw": 1,
@@ -13111,15 +14292,25 @@
             "opp": 99786,
             "oppScore": 28,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 30,
+            "realOpp": 1501,
+            "realOppScore": 43,
+            "realResult": "L",
+            "opp": 1471,
+            "oppScore": 38,
+            "result": "L"
           }
         ]
       },
       "99786": {
         "w": 6,
         "d": 0,
-        "l": 4,
+        "l": 5,
         "pts": 18,
-        "rank": 4,
+        "rank": 7,
         "weeks": [
           {
             "gw": 1,
@@ -13220,17 +14411,27 @@
             "opp": 29975,
             "oppScore": 45,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 30,
+            "realOpp": 1501,
+            "realOppScore": 43,
+            "realResult": "L",
+            "opp": 1425,
+            "oppScore": 45,
+            "result": "L"
           }
         ]
       }
     },
     "29975": {
       "1377": {
-        "w": 3,
+        "w": 4,
         "d": 0,
         "l": 7,
-        "pts": 9,
-        "rank": 11,
+        "pts": 12,
+        "rank": 10,
         "weeks": [
           {
             "gw": 1,
@@ -13331,14 +14532,24 @@
             "opp": 1857,
             "oppScore": 52,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 51,
+            "realOpp": 1471,
+            "realOppScore": 38,
+            "realResult": "W",
+            "opp": 1947,
+            "oppScore": 47,
+            "result": "W"
           }
         ]
       },
       "1425": {
-        "w": 5,
+        "w": 6,
         "d": 1,
         "l": 4,
-        "pts": 16,
+        "pts": 19,
         "rank": 6,
         "weeks": [
           {
@@ -13440,14 +14651,24 @@
             "opp": 26227,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 51,
+            "realOpp": 1471,
+            "realOppScore": 38,
+            "realResult": "W",
+            "opp": 99786,
+            "oppScore": 40,
+            "result": "W"
           }
         ]
       },
       "1471": {
-        "w": 6,
+        "w": 7,
         "d": 0,
         "l": 4,
-        "pts": 18,
+        "pts": 21,
         "rank": 6,
         "weeks": [
           {
@@ -13549,15 +14770,25 @@
             "opp": 10375,
             "oppScore": 30,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 51,
+            "realOpp": 1471,
+            "realOppScore": 38,
+            "realResult": "W",
+            "opp": 1471,
+            "oppScore": 38,
+            "result": "W"
           }
         ]
       },
       "1501": {
-        "w": 3,
+        "w": 4,
         "d": 0,
         "l": 7,
-        "pts": 9,
-        "rank": 11,
+        "pts": 12,
+        "rank": 10,
         "weeks": [
           {
             "gw": 1,
@@ -13658,15 +14889,25 @@
             "opp": 10210,
             "oppScore": 40,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 51,
+            "realOpp": 1471,
+            "realOppScore": 38,
+            "realResult": "W",
+            "opp": 26227,
+            "oppScore": 30,
+            "result": "W"
           }
         ]
       },
       "1530": {
-        "w": 3,
+        "w": 4,
         "d": 0,
         "l": 7,
-        "pts": 9,
-        "rank": 11,
+        "pts": 12,
+        "rank": 10,
         "weeks": [
           {
             "gw": 1,
@@ -13767,14 +15008,24 @@
             "opp": 1947,
             "oppScore": 35,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 51,
+            "realOpp": 1471,
+            "realOppScore": 38,
+            "realResult": "W",
+            "opp": 10375,
+            "oppScore": 48,
+            "result": "W"
           }
         ]
       },
       "1857": {
-        "w": 2,
+        "w": 3,
         "d": 0,
         "l": 8,
-        "pts": 6,
+        "pts": 9,
         "rank": 11,
         "weeks": [
           {
@@ -13876,15 +15127,25 @@
             "opp": 1377,
             "oppScore": 50,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 51,
+            "realOpp": 1471,
+            "realOppScore": 38,
+            "realResult": "W",
+            "opp": 10210,
+            "oppScore": 42,
+            "result": "W"
           }
         ]
       },
       "1947": {
-        "w": 4,
+        "w": 5,
         "d": 0,
         "l": 6,
-        "pts": 12,
-        "rank": 10,
+        "pts": 15,
+        "rank": 8,
         "weeks": [
           {
             "gw": 1,
@@ -13985,15 +15246,25 @@
             "opp": 1530,
             "oppScore": 39,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 51,
+            "realOpp": 1471,
+            "realOppScore": 38,
+            "realResult": "W",
+            "opp": 1377,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "10210": {
         "w": 6,
         "d": 0,
-        "l": 4,
+        "l": 5,
         "pts": 18,
-        "rank": 6,
+        "rank": 7,
         "weeks": [
           {
             "gw": 1,
@@ -14094,15 +15365,25 @@
             "opp": 1501,
             "oppScore": 43,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 51,
+            "realOpp": 1471,
+            "realOppScore": 38,
+            "realResult": "W",
+            "opp": 1857,
+            "oppScore": 59,
+            "result": "L"
           }
         ]
       },
       "10375": {
-        "w": 4,
+        "w": 5,
         "d": 2,
         "l": 4,
-        "pts": 14,
-        "rank": 8,
+        "pts": 17,
+        "rank": 7,
         "weeks": [
           {
             "gw": 1,
@@ -14203,15 +15484,25 @@
             "opp": 1471,
             "oppScore": 45,
             "result": "D"
+          },
+          {
+            "gw": 11,
+            "score": 51,
+            "realOpp": 1471,
+            "realOppScore": 38,
+            "realResult": "W",
+            "opp": 1530,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "26227": {
-        "w": 3,
+        "w": 4,
         "d": 0,
         "l": 7,
-        "pts": 9,
-        "rank": 11,
+        "pts": 12,
+        "rank": 10,
         "weeks": [
           {
             "gw": 1,
@@ -14312,15 +15603,25 @@
             "opp": 1425,
             "oppScore": 33,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 51,
+            "realOpp": 1471,
+            "realOppScore": 38,
+            "realResult": "W",
+            "opp": 1501,
+            "oppScore": 43,
+            "result": "W"
           }
         ]
       },
       "29975": {
-        "w": 4,
+        "w": 5,
         "d": 0,
         "l": 6,
-        "pts": 12,
-        "rank": 10,
+        "pts": 15,
+        "rank": 8,
         "weeks": [
           {
             "gw": 1,
@@ -14421,15 +15722,25 @@
             "opp": 99786,
             "oppScore": 28,
             "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 51,
+            "realOpp": 1471,
+            "realOppScore": 38,
+            "realResult": "W",
+            "opp": 1471,
+            "oppScore": 38,
+            "result": "W"
           }
         ]
       },
       "99786": {
-        "w": 4,
+        "w": 5,
         "d": 0,
         "l": 6,
-        "pts": 12,
-        "rank": 10,
+        "pts": 15,
+        "rank": 8,
         "weeks": [
           {
             "gw": 1,
@@ -14529,6 +15840,16 @@
             "realResult": "W",
             "opp": 99786,
             "oppScore": 28,
+            "result": "W"
+          },
+          {
+            "gw": 11,
+            "score": 51,
+            "realOpp": 1471,
+            "realOppScore": 38,
+            "realResult": "W",
+            "opp": 1425,
+            "oppScore": 45,
             "result": "W"
           }
         ]
@@ -14538,9 +15859,9 @@
       "1377": {
         "w": 5,
         "d": 1,
-        "l": 4,
+        "l": 5,
         "pts": 16,
-        "rank": 6,
+        "rank": 7,
         "weeks": [
           {
             "gw": 1,
@@ -14641,13 +15962,23 @@
             "opp": 1857,
             "oppScore": 52,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 40,
+            "realOpp": 1425,
+            "realOppScore": 45,
+            "realResult": "L",
+            "opp": 1947,
+            "oppScore": 47,
+            "result": "L"
           }
         ]
       },
       "1425": {
         "w": 5,
         "d": 0,
-        "l": 5,
+        "l": 6,
         "pts": 15,
         "rank": 7,
         "weeks": [
@@ -14750,15 +16081,25 @@
             "opp": 26227,
             "oppScore": 30,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 40,
+            "realOpp": 1425,
+            "realOppScore": 45,
+            "realResult": "L",
+            "opp": 1425,
+            "oppScore": 45,
+            "result": "L"
           }
         ]
       },
       "1471": {
         "w": 7,
         "d": 0,
-        "l": 3,
+        "l": 4,
         "pts": 21,
-        "rank": 3,
+        "rank": 5,
         "weeks": [
           {
             "gw": 1,
@@ -14859,14 +16200,24 @@
             "opp": 10375,
             "oppScore": 30,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 40,
+            "realOpp": 1425,
+            "realOppScore": 45,
+            "realResult": "L",
+            "opp": 29975,
+            "oppScore": 51,
+            "result": "L"
           }
         ]
       },
       "1501": {
-        "w": 4,
+        "w": 5,
         "d": 1,
         "l": 5,
-        "pts": 13,
+        "pts": 16,
         "rank": 7,
         "weeks": [
           {
@@ -14968,13 +16319,23 @@
             "opp": 10210,
             "oppScore": 40,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 40,
+            "realOpp": 1425,
+            "realOppScore": 45,
+            "realResult": "L",
+            "opp": 26227,
+            "oppScore": 30,
+            "result": "W"
           }
         ]
       },
       "1530": {
         "w": 5,
         "d": 0,
-        "l": 5,
+        "l": 6,
         "pts": 15,
         "rank": 7,
         "weeks": [
@@ -15077,15 +16438,25 @@
             "opp": 1947,
             "oppScore": 35,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 40,
+            "realOpp": 1425,
+            "realOppScore": 45,
+            "realResult": "L",
+            "opp": 10375,
+            "oppScore": 48,
+            "result": "L"
           }
         ]
       },
       "1857": {
         "w": 4,
         "d": 1,
-        "l": 5,
+        "l": 6,
         "pts": 13,
-        "rank": 7,
+        "rank": 8,
         "weeks": [
           {
             "gw": 1,
@@ -15186,15 +16557,25 @@
             "opp": 1377,
             "oppScore": 50,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 40,
+            "realOpp": 1425,
+            "realOppScore": 45,
+            "realResult": "L",
+            "opp": 10210,
+            "oppScore": 42,
+            "result": "L"
           }
         ]
       },
       "1947": {
-        "w": 7,
+        "w": 8,
         "d": 1,
         "l": 2,
-        "pts": 22,
-        "rank": 2,
+        "pts": 25,
+        "rank": 1,
         "weeks": [
           {
             "gw": 1,
@@ -15295,15 +16676,25 @@
             "opp": 1530,
             "oppScore": 39,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 40,
+            "realOpp": 1425,
+            "realOppScore": 45,
+            "realResult": "L",
+            "opp": 1377,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "10210": {
         "w": 6,
         "d": 0,
-        "l": 4,
+        "l": 5,
         "pts": 18,
-        "rank": 4,
+        "rank": 7,
         "weeks": [
           {
             "gw": 1,
@@ -15404,14 +16795,24 @@
             "opp": 1501,
             "oppScore": 43,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 40,
+            "realOpp": 1425,
+            "realOppScore": 45,
+            "realResult": "L",
+            "opp": 1857,
+            "oppScore": 59,
+            "result": "L"
           }
         ]
       },
       "10375": {
-        "w": 7,
+        "w": 8,
         "d": 0,
         "l": 3,
-        "pts": 21,
+        "pts": 24,
         "rank": 3,
         "weeks": [
           {
@@ -15513,13 +16914,23 @@
             "opp": 1471,
             "oppScore": 45,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 40,
+            "realOpp": 1425,
+            "realOppScore": 45,
+            "realResult": "L",
+            "opp": 1530,
+            "oppScore": 31,
+            "result": "W"
           }
         ]
       },
       "26227": {
         "w": 5,
         "d": 0,
-        "l": 5,
+        "l": 6,
         "pts": 15,
         "rank": 7,
         "weeks": [
@@ -15622,14 +17033,24 @@
             "opp": 1425,
             "oppScore": 33,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 40,
+            "realOpp": 1425,
+            "realOppScore": 45,
+            "realResult": "L",
+            "opp": 1501,
+            "oppScore": 43,
+            "result": "L"
           }
         ]
       },
       "29975": {
-        "w": 6,
+        "w": 7,
         "d": 1,
         "l": 3,
-        "pts": 19,
+        "pts": 22,
         "rank": 3,
         "weeks": [
           {
@@ -15731,13 +17152,23 @@
             "opp": 29975,
             "oppScore": 45,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 40,
+            "realOpp": 1425,
+            "realOppScore": 45,
+            "realResult": "L",
+            "opp": 1471,
+            "oppScore": 38,
+            "result": "W"
           }
         ]
       },
       "99786": {
         "w": 5,
         "d": 0,
-        "l": 5,
+        "l": 6,
         "pts": 15,
         "rank": 7,
         "weeks": [
@@ -15840,119 +17271,129 @@
             "opp": 29975,
             "oppScore": 45,
             "result": "L"
+          },
+          {
+            "gw": 11,
+            "score": 40,
+            "realOpp": 1425,
+            "realOppScore": 45,
+            "realResult": "L",
+            "opp": 1425,
+            "oppScore": 45,
+            "result": "L"
           }
         ]
       }
     }
   },
-  "leagueAvgScore": 40.9,
+  "leagueAvgScore": 41.1,
   "schedules": [
     {
       "managerId": 10375,
-      "avgPtsForOthers": 16.5,
-      "oppAvgScore": 36.4,
-      "actualPts": 18,
-      "avgPtsOnAnySchedule": 12.1,
-      "scheduleLuck": 5.9,
+      "avgPtsForOthers": 18.8,
+      "oppAvgScore": 35.9,
+      "actualPts": 21,
+      "avgPtsOnAnySchedule": 14.5,
+      "scheduleLuck": 6.5,
       "easeRank": 1
     },
     {
       "managerId": 1947,
-      "avgPtsForOthers": 18.1,
-      "oppAvgScore": 37.8,
-      "actualPts": 18,
-      "avgPtsOnAnySchedule": 15.2,
-      "scheduleLuck": 2.8,
+      "avgPtsForOthers": 20.4,
+      "oppAvgScore": 37.2,
+      "actualPts": 21,
+      "avgPtsOnAnySchedule": 17.4,
+      "scheduleLuck": 3.6,
       "easeRank": 2
     },
     {
-      "managerId": 1471,
-      "avgPtsForOthers": 16.6,
-      "oppAvgScore": 38.8,
-      "actualPts": 24,
-      "avgPtsOnAnySchedule": 19.9,
-      "scheduleLuck": 4.1,
+      "managerId": 29975,
+      "avgPtsForOthers": 21.2,
+      "oppAvgScore": 39.5,
+      "actualPts": 15,
+      "avgPtsOnAnySchedule": 14.7,
+      "scheduleLuck": 0.3,
       "easeRank": 3
     },
     {
-      "managerId": 29975,
-      "avgPtsForOthers": 19.3,
-      "oppAvgScore": 39.6,
-      "actualPts": 12,
-      "avgPtsOnAnySchedule": 12,
-      "scheduleLuck": 0,
+      "managerId": 1471,
+      "avgPtsForOthers": 17.2,
+      "oppAvgScore": 39.9,
+      "actualPts": 24,
+      "avgPtsOnAnySchedule": 20.7,
+      "scheduleLuck": 3.3,
       "easeRank": 4
     },
     {
-      "managerId": 10210,
-      "avgPtsForOthers": 16,
-      "oppAvgScore": 40.3,
-      "actualPts": 12,
-      "avgPtsOnAnySchedule": 12.5,
-      "scheduleLuck": -0.5,
+      "managerId": 1857,
+      "avgPtsForOthers": 14.5,
+      "oppAvgScore": 41.1,
+      "actualPts": 24,
+      "avgPtsOnAnySchedule": 21.4,
+      "scheduleLuck": 2.6,
       "easeRank": 5
     },
     {
-      "managerId": 1857,
-      "avgPtsForOthers": 13.2,
-      "oppAvgScore": 41,
-      "actualPts": 21,
-      "avgPtsOnAnySchedule": 18.4,
-      "scheduleLuck": 2.6,
-      "easeRank": 6
-    },
-    {
       "managerId": 26227,
-      "avgPtsForOthers": 14.4,
-      "oppAvgScore": 41.1,
+      "avgPtsForOthers": 16,
+      "oppAvgScore": 41.3,
       "actualPts": 12,
       "avgPtsOnAnySchedule": 17.6,
       "scheduleLuck": -5.6,
-      "easeRank": 7
+      "easeRank": 6
     },
     {
       "managerId": 1425,
-      "avgPtsForOthers": 12.5,
-      "oppAvgScore": 41.7,
-      "actualPts": 18,
-      "avgPtsOnAnySchedule": 17.1,
-      "scheduleLuck": 0.9,
+      "avgPtsForOthers": 14.1,
+      "oppAvgScore": 41.5,
+      "actualPts": 21,
+      "avgPtsOnAnySchedule": 19,
+      "scheduleLuck": 2,
+      "easeRank": 7
+    },
+    {
+      "managerId": 10210,
+      "avgPtsForOthers": 16.3,
+      "oppAvgScore": 42,
+      "actualPts": 12,
+      "avgPtsOnAnySchedule": 13.9,
+      "scheduleLuck": -1.9,
       "easeRank": 8
     },
     {
-      "managerId": 99786,
-      "avgPtsForOthers": 12.8,
+      "managerId": 1501,
+      "avgPtsForOthers": 16.4,
       "oppAvgScore": 42.3,
-      "actualPts": 15,
-      "avgPtsOnAnySchedule": 17.1,
-      "scheduleLuck": -2.1,
+      "actualPts": 18,
+      "avgPtsOnAnySchedule": 19.1,
+      "scheduleLuck": -1.1,
       "easeRank": 9
     },
     {
-      "managerId": 1377,
-      "avgPtsForOthers": 13.2,
-      "oppAvgScore": 42.7,
-      "actualPts": 9,
-      "avgPtsOnAnySchedule": 12.5,
-      "scheduleLuck": -3.5,
+      "managerId": 99786,
+      "avgPtsForOthers": 14.2,
+      "oppAvgScore": 42.5,
+      "actualPts": 15,
+      "avgPtsOnAnySchedule": 18.2,
+      "scheduleLuck": -3.2,
       "easeRank": 10
     },
     {
-      "managerId": 1501,
-      "avgPtsForOthers": 13.6,
-      "oppAvgScore": 43.5,
-      "actualPts": 15,
-      "avgPtsOnAnySchedule": 17.5,
-      "scheduleLuck": -2.5,
+      "managerId": 1377,
+      "avgPtsForOthers": 14.3,
+      "oppAvgScore": 43.1,
+      "actualPts": 9,
+      "avgPtsOnAnySchedule": 12.8,
+      "scheduleLuck": -3.8,
       "easeRank": 11
     },
     {
       "managerId": 1530,
-      "avgPtsForOthers": 12.4,
-      "oppAvgScore": 46.1,
+      "avgPtsForOthers": 13.2,
+      "oppAvgScore": 46.3,
       "actualPts": 6,
-      "avgPtsOnAnySchedule": 6.7,
-      "scheduleLuck": -0.7,
+      "avgPtsOnAnySchedule": 7.1,
+      "scheduleLuck": -1.1,
       "easeRank": 12
     }
   ],

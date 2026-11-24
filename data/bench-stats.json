@@ -139,69 +139,83 @@
       "26227": 2,
       "29975": 8,
       "99786": 9
+    },
+    "11": {
+      "1377": 5,
+      "1425": 11,
+      "1471": 5,
+      "1501": 18,
+      "1530": 4,
+      "1857": 5,
+      "1947": 2,
+      "10210": 3,
+      "10375": 9,
+      "26227": 0,
+      "29975": 0,
+      "99786": 14
     }
   },
   "perManager": [
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "benchPointsWasted": 63,
+      "benchPointsWasted": 68,
       "couldHaveWonCount": 1,
-      "eligibleLossesOrDraws": 7
+      "eligibleLossesOrDraws": 8
     },
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "benchPointsWasted": 61,
+      "benchPointsWasted": 72,
       "couldHaveWonCount": 0,
       "eligibleLossesOrDraws": 4
     },
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "benchPointsWasted": 53,
+      "benchPointsWasted": 58,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 2
+      "eligibleLossesOrDraws": 3
     },
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "benchPointsWasted": 48,
+      "benchPointsWasted": 66,
       "couldHaveWonCount": 1,
       "eligibleLossesOrDraws": 5
     },
     {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "benchPointsWasted": 14,
+      "benchPointsWasted": 18,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 8
+      "eligibleLossesOrDraws": 9
     },
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "benchPointsWasted": 85,
+      "benchPointsWasted": 90,
       "couldHaveWonCount": 0,
       "eligibleLossesOrDraws": 3
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "benchPointsWasted": 77,
+      "benchPointsWasted": 79,
       "couldHaveWonCount": 2,
       "eligibleLossesOrDraws": 4
     },
     {
       "managerId": 10210,
       "managerName": "Syria FC**",
-      "benchPointsWasted": 6,
+      "benchPointsWasted": 9,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 6
+      "eligibleLossesOrDraws": 7
     },
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "benchPointsWasted": 88,
+      "benchPointsWasted": 97,
       "couldHaveWonCount": 0,
       "eligibleLossesOrDraws": 4
     },
@@ -210,7 +224,7 @@
       "managerName": "Mourinho’s Ego FT",
       "benchPointsWasted": 31,
       "couldHaveWonCount": 0,
-      "eligibleLossesOrDraws": 6
+      "eligibleLossesOrDraws": 7
     },
     {
       "managerId": 29975,
@@ -222,9 +236,9 @@
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "benchPointsWasted": 104,
-      "couldHaveWonCount": 1,
-      "eligibleLossesOrDraws": 5
+      "benchPointsWasted": 118,
+      "couldHaveWonCount": 2,
+      "eligibleLossesOrDraws": 6
     }
   ],
   "couldHaveWonInstances": [
@@ -275,6 +289,14 @@
       "actualScore": 35,
       "optimalScore": 42,
       "opponentScore": 39
+    },
+    {
+      "gw": 11,
+      "managerId": 99786,
+      "opponentId": 1425,
+      "actualScore": 40,
+      "optimalScore": 51,
+      "opponentScore": 45
     }
   ],
   "topBenchWeeks": [
@@ -555,6 +577,58 @@
       "couldHaveWon": true
     },
     {
+      "gw": 11,
+      "managerId": 1501,
+      "benchPoints": 18,
+      "players": [
+        {
+          "elementId": 271,
+          "playerName": "Muniz",
+          "position": "FWD",
+          "points": 8,
+          "scoring": [
+            {
+              "text": "goal",
+              "points": 4
+            },
+            {
+              "text": "2 bonus",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "elementId": 82,
+          "playerName": "Kelleher",
+          "position": "GKP",
+          "points": 6,
+          "scoring": [
+            {
+              "text": "clean sheet",
+              "points": 4
+            }
+          ]
+        },
+        {
+          "elementId": 332,
+          "playerName": "Justin",
+          "position": "DEF",
+          "points": 4,
+          "scoring": [
+            {
+              "text": "defensive contribution",
+              "points": 2
+            }
+          ]
+        }
+      ],
+      "opponentId": 26227,
+      "ownScore": 43,
+      "opponentScore": 30,
+      "result": "W",
+      "couldHaveWon": false
+    },
+    {
       "gw": 10,
       "managerId": 1471,
       "benchPoints": 16,
@@ -659,6 +733,62 @@
       "couldHaveWon": false
     },
     {
+      "gw": 11,
+      "managerId": 99786,
+      "benchPoints": 14,
+      "players": [
+        {
+          "elementId": 571,
+          "playerName": "Tzolakis",
+          "position": "GKP",
+          "points": 10,
+          "scoring": [
+            {
+              "text": "clean sheet",
+              "points": 4
+            },
+            {
+              "text": "7 saves",
+              "points": 2
+            },
+            {
+              "text": "2 bonus",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "elementId": 372,
+          "playerName": "Mac Allister",
+          "position": "MID",
+          "points": 3,
+          "scoring": [
+            {
+              "text": "clean sheet",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "elementId": 474,
+          "playerName": "Jair Cunha",
+          "position": "DEF",
+          "points": 1,
+          "scoring": [
+            {
+              "text": "2 goals conceded",
+              "points": -1
+            }
+          ]
+        }
+      ],
+      "opponentId": 1425,
+      "ownScore": 40,
+      "opponentScore": 45,
+      "result": "L",
+      "couldHaveWon": true
+    },
+    {
       "gw": 4,
       "managerId": 1377,
       "benchPoints": 14,
@@ -754,105 +884,6 @@
       "opponentId": 29975,
       "ownScore": 48,
       "opponentScore": 35,
-      "result": "W",
-      "couldHaveWon": false
-    },
-    {
-      "gw": 7,
-      "managerId": 1377,
-      "benchPoints": 13,
-      "players": [
-        {
-          "elementId": 640,
-          "playerName": "Affengruber",
-          "position": "DEF",
-          "points": 6,
-          "scoring": [
-            {
-              "text": "clean sheet",
-              "points": 4
-            }
-          ]
-        },
-        {
-          "elementId": 646,
-          "playerName": "Flemming",
-          "position": "FWD",
-          "points": 5,
-          "scoring": [
-            {
-              "text": "goal",
-              "points": 4
-            }
-          ]
-        },
-        {
-          "elementId": 529,
-          "playerName": "Roefs",
-          "position": "GKP",
-          "points": 2,
-          "scoring": [
-            {
-              "text": "4 saves",
-              "points": 1
-            },
-            {
-              "text": "2 goals conceded",
-              "points": -1
-            }
-          ]
-        }
-      ],
-      "opponentId": 29975,
-      "ownScore": 46,
-      "opponentScore": 45,
-      "result": "W",
-      "couldHaveWon": false
-    },
-    {
-      "gw": 5,
-      "managerId": 1947,
-      "benchPoints": 13,
-      "players": [
-        {
-          "elementId": 202,
-          "playerName": "Richards",
-          "position": "DEF",
-          "points": 8,
-          "scoring": [
-            {
-              "text": "clean sheet",
-              "points": 4
-            },
-            {
-              "text": "defensive contribution",
-              "points": 2
-            }
-          ]
-        },
-        {
-          "elementId": 412,
-          "playerName": "Lammens",
-          "position": "GKP",
-          "points": 4,
-          "scoring": [
-            {
-              "text": "6 saves",
-              "points": 2
-            }
-          ]
-        },
-        {
-          "elementId": 125,
-          "playerName": "Georginio",
-          "position": "FWD",
-          "points": 1,
-          "scoring": []
-        }
-      ],
-      "opponentId": 1425,
-      "ownScore": 50,
-      "opponentScore": 38,
       "result": "W",
       "couldHaveWon": false
     }

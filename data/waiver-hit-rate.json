@@ -139,9 +139,9 @@
       "playerName": "De Cuyper",
       "kind": "w",
       "acquiredGw": 2,
-      "gwsRostered": 8,
-      "pointsWhileRostered": 52,
-      "pointsPerGw": 6.5,
+      "gwsRostered": 9,
+      "pointsWhileRostered": 53,
+      "pointsPerGw": 5.888888888888889,
       "isHit": true
     },
     {
@@ -175,9 +175,9 @@
       "playerName": "Delap",
       "kind": "w",
       "acquiredGw": 2,
-      "gwsRostered": 9,
-      "pointsWhileRostered": 30,
-      "pointsPerGw": 3.3333333333333335,
+      "gwsRostered": 10,
+      "pointsWhileRostered": 31,
+      "pointsPerGw": 3.1,
       "isHit": false
     },
     {
@@ -199,9 +199,9 @@
       "playerName": "Lewis-Potter",
       "kind": "w",
       "acquiredGw": 2,
-      "gwsRostered": 9,
-      "pointsWhileRostered": 29,
-      "pointsPerGw": 3.2222222222222223,
+      "gwsRostered": 10,
+      "pointsWhileRostered": 45,
+      "pointsPerGw": 4.5,
       "isHit": false
     },
     {
@@ -259,9 +259,9 @@
       "playerName": "Nketiah",
       "kind": "w",
       "acquiredGw": 2,
-      "gwsRostered": 5,
-      "pointsWhileRostered": 13,
-      "pointsPerGw": 2.6,
+      "gwsRostered": 6,
+      "pointsWhileRostered": 14,
+      "pointsPerGw": 2.3333333333333335,
       "isHit": false
     },
     {
@@ -319,9 +319,9 @@
       "playerName": "Suzuki",
       "kind": "w",
       "acquiredGw": 2,
-      "gwsRostered": 9,
-      "pointsWhileRostered": 31,
-      "pointsPerGw": 3.4444444444444446,
+      "gwsRostered": 10,
+      "pointsWhileRostered": 37,
+      "pointsPerGw": 3.7,
       "isHit": false
     },
     {
@@ -487,9 +487,9 @@
       "playerName": "Kostoulas",
       "kind": "w",
       "acquiredGw": 3,
-      "gwsRostered": 7,
-      "pointsWhileRostered": 39,
-      "pointsPerGw": 5.571428571428571,
+      "gwsRostered": 8,
+      "pointsWhileRostered": 40,
+      "pointsPerGw": 5,
       "isHit": true
     },
     {
@@ -511,9 +511,9 @@
       "playerName": "J.Timber",
       "kind": "w",
       "acquiredGw": 3,
-      "gwsRostered": 4,
-      "pointsWhileRostered": 8,
-      "pointsPerGw": 2,
+      "gwsRostered": 5,
+      "pointsWhileRostered": 9,
+      "pointsPerGw": 1.8,
       "isHit": false
     },
     {
@@ -679,9 +679,9 @@
       "playerName": "Silva",
       "kind": "w",
       "acquiredGw": 3,
-      "gwsRostered": 7,
-      "pointsWhileRostered": 26,
-      "pointsPerGw": 3.7142857142857144,
+      "gwsRostered": 8,
+      "pointsWhileRostered": 34,
+      "pointsPerGw": 4.25,
       "isHit": false
     },
     {
@@ -775,9 +775,9 @@
       "playerName": "Rushworth",
       "kind": "w",
       "acquiredGw": 3,
-      "gwsRostered": 6,
-      "pointsWhileRostered": 21,
-      "pointsPerGw": 3.5,
+      "gwsRostered": 7,
+      "pointsWhileRostered": 23,
+      "pointsPerGw": 3.2857142857142856,
       "isHit": false
     },
     {
@@ -919,9 +919,9 @@
       "playerName": "Van Hecke",
       "kind": "w",
       "acquiredGw": 4,
-      "gwsRostered": 6,
-      "pointsWhileRostered": 40,
-      "pointsPerGw": 6.666666666666667,
+      "gwsRostered": 7,
+      "pointsWhileRostered": 46,
+      "pointsPerGw": 6.571428571428571,
       "isHit": true
     },
     {
@@ -1027,9 +1027,9 @@
       "playerName": "Janelt",
       "kind": "w",
       "acquiredGw": 4,
-      "gwsRostered": 6,
-      "pointsWhileRostered": 16,
-      "pointsPerGw": 2.6666666666666665,
+      "gwsRostered": 7,
+      "pointsWhileRostered": 26,
+      "pointsPerGw": 3.7142857142857144,
       "isHit": false
     },
     {
@@ -1051,9 +1051,9 @@
       "playerName": "Solanke",
       "kind": "w",
       "acquiredGw": 4,
-      "gwsRostered": 5,
-      "pointsWhileRostered": 15,
-      "pointsPerGw": 3,
+      "gwsRostered": 6,
+      "pointsWhileRostered": 22,
+      "pointsPerGw": 3.6666666666666665,
       "isHit": false
     },
     {
@@ -1207,9 +1207,9 @@
       "playerName": "Belloumi",
       "kind": "w",
       "acquiredGw": 5,
-      "gwsRostered": 5,
-      "pointsWhileRostered": 21,
-      "pointsPerGw": 4.2,
+      "gwsRostered": 6,
+      "pointsWhileRostered": 28,
+      "pointsPerGw": 4.666666666666667,
       "isHit": false
     },
     {
@@ -1279,9 +1279,9 @@
       "playerName": "Ajer",
       "kind": "w",
       "acquiredGw": 5,
-      "gwsRostered": 6,
-      "pointsWhileRostered": 28,
-      "pointsPerGw": 4.666666666666667,
+      "gwsRostered": 7,
+      "pointsWhileRostered": 34,
+      "pointsPerGw": 4.857142857142857,
       "isHit": false
     },
     {
@@ -1471,10 +1471,10 @@
       "playerName": "Iwobi",
       "kind": "f",
       "acquiredGw": 5,
-      "gwsRostered": 6,
-      "pointsWhileRostered": 31,
-      "pointsPerGw": 5.166666666666667,
-      "isHit": true
+      "gwsRostered": 7,
+      "pointsWhileRostered": 32,
+      "pointsPerGw": 4.571428571428571,
+      "isHit": false
     },
     {
       "managerId": 1857,
@@ -1507,9 +1507,9 @@
       "playerName": "Kudus",
       "kind": "w",
       "acquiredGw": 6,
-      "gwsRostered": 4,
-      "pointsWhileRostered": 18,
-      "pointsPerGw": 4.5,
+      "gwsRostered": 5,
+      "pointsWhileRostered": 20,
+      "pointsPerGw": 4,
       "isHit": false
     },
     {
@@ -1579,9 +1579,9 @@
       "playerName": "Gomez",
       "kind": "w",
       "acquiredGw": 6,
-      "gwsRostered": 5,
-      "pointsWhileRostered": 27,
-      "pointsPerGw": 5.4,
+      "gwsRostered": 6,
+      "pointsWhileRostered": 30,
+      "pointsPerGw": 5,
       "isHit": true
     },
     {
@@ -1639,10 +1639,10 @@
       "playerName": "Manzambi",
       "kind": "w",
       "acquiredGw": 6,
-      "gwsRostered": 5,
-      "pointsWhileRostered": 26,
-      "pointsPerGw": 5.2,
-      "isHit": true
+      "gwsRostered": 6,
+      "pointsWhileRostered": 27,
+      "pointsPerGw": 4.5,
+      "isHit": false
     },
     {
       "managerId": 26227,
@@ -1687,8 +1687,8 @@
       "playerName": "Kroupi.Jr",
       "kind": "w",
       "acquiredGw": 6,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 1,
+      "gwsRostered": 2,
+      "pointsWhileRostered": 2,
       "pointsPerGw": 1,
       "isHit": false
     },
@@ -1795,9 +1795,9 @@
       "playerName": "Gudmundsson",
       "kind": "w",
       "acquiredGw": 7,
-      "gwsRostered": 3,
-      "pointsWhileRostered": 4,
-      "pointsPerGw": 1.3333333333333333,
+      "gwsRostered": 4,
+      "pointsWhileRostered": 5,
+      "pointsPerGw": 1.25,
       "isHit": false
     },
     {
@@ -1819,9 +1819,9 @@
       "playerName": "Richards",
       "kind": "w",
       "acquiredGw": 7,
-      "gwsRostered": 2,
-      "pointsWhileRostered": 5,
-      "pointsPerGw": 2.5,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 8,
+      "pointsPerGw": 2.6666666666666665,
       "isHit": false
     },
     {
@@ -1855,9 +1855,9 @@
       "playerName": "Doku",
       "kind": "w",
       "acquiredGw": 7,
-      "gwsRostered": 4,
-      "pointsWhileRostered": 12,
-      "pointsPerGw": 3,
+      "gwsRostered": 5,
+      "pointsWhileRostered": 14,
+      "pointsPerGw": 2.8,
       "isHit": false
     },
     {
@@ -1879,9 +1879,9 @@
       "playerName": "Kerkez",
       "kind": "w",
       "acquiredGw": 7,
-      "gwsRostered": 4,
-      "pointsWhileRostered": 11,
-      "pointsPerGw": 2.75,
+      "gwsRostered": 5,
+      "pointsWhileRostered": 17,
+      "pointsPerGw": 3.4,
       "isHit": false
     },
     {
@@ -2131,10 +2131,10 @@
       "playerName": "Acheampong",
       "kind": "w",
       "acquiredGw": 8,
-      "gwsRostered": 2,
-      "pointsWhileRostered": 10,
-      "pointsPerGw": 5,
-      "isHit": true
+      "gwsRostered": 3,
+      "pointsWhileRostered": 11,
+      "pointsPerGw": 3.6666666666666665,
+      "isHit": false
     },
     {
       "managerId": 1425,
@@ -2155,10 +2155,10 @@
       "playerName": "Rudoni",
       "kind": "w",
       "acquiredGw": 8,
-      "gwsRostered": 3,
-      "pointsWhileRostered": 13,
-      "pointsPerGw": 4.333333333333333,
-      "isHit": false
+      "gwsRostered": 4,
+      "pointsWhileRostered": 23,
+      "pointsPerGw": 5.75,
+      "isHit": true
     },
     {
       "managerId": 1947,
@@ -2167,9 +2167,9 @@
       "playerName": "Palacios",
       "kind": "w",
       "acquiredGw": 8,
-      "gwsRostered": 3,
-      "pointsWhileRostered": 11,
-      "pointsPerGw": 3.6666666666666665,
+      "gwsRostered": 4,
+      "pointsWhileRostered": 14,
+      "pointsPerGw": 3.5,
       "isHit": false
     },
     {
@@ -2191,9 +2191,9 @@
       "playerName": "Yeremy",
       "kind": "w",
       "acquiredGw": 8,
-      "gwsRostered": 3,
-      "pointsWhileRostered": 3,
-      "pointsPerGw": 1,
+      "gwsRostered": 4,
+      "pointsWhileRostered": 15,
+      "pointsPerGw": 3.75,
       "isHit": false
     },
     {
@@ -2227,9 +2227,9 @@
       "playerName": "Madueke",
       "kind": "w",
       "acquiredGw": 8,
-      "gwsRostered": 2,
-      "pointsWhileRostered": 11,
-      "pointsPerGw": 5.5,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 19,
+      "pointsPerGw": 6.333333333333333,
       "isHit": true
     },
     {
@@ -2239,10 +2239,10 @@
       "playerName": "Van den Berg",
       "kind": "w",
       "acquiredGw": 8,
-      "gwsRostered": 0,
-      "pointsWhileRostered": 0,
-      "pointsPerGw": 0,
-      "isHit": false
+      "gwsRostered": 1,
+      "pointsWhileRostered": 6,
+      "pointsPerGw": 6,
+      "isHit": true
     },
     {
       "managerId": 10375,
@@ -2323,9 +2323,9 @@
       "playerName": "O.Dango",
       "kind": "w",
       "acquiredGw": 9,
-      "gwsRostered": 2,
-      "pointsWhileRostered": 7,
-      "pointsPerGw": 3.5,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 10,
+      "pointsPerGw": 3.3333333333333335,
       "isHit": false
     },
     {
@@ -2359,9 +2359,9 @@
       "playerName": "Pinnock",
       "kind": "w",
       "acquiredGw": 9,
-      "gwsRostered": 2,
-      "pointsWhileRostered": 7,
-      "pointsPerGw": 3.5,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 10,
+      "pointsPerGw": 3.3333333333333335,
       "isHit": false
     },
     {
@@ -2407,10 +2407,10 @@
       "playerName": "Pedro Porro",
       "kind": "w",
       "acquiredGw": 9,
-      "gwsRostered": 2,
-      "pointsWhileRostered": 6,
-      "pointsPerGw": 3,
-      "isHit": false
+      "gwsRostered": 3,
+      "pointsWhileRostered": 17,
+      "pointsPerGw": 5.666666666666667,
+      "isHit": true
     },
     {
       "managerId": 26227,
@@ -2419,9 +2419,9 @@
       "playerName": "Smith",
       "kind": "w",
       "acquiredGw": 9,
-      "gwsRostered": 2,
-      "pointsWhileRostered": 7,
-      "pointsPerGw": 3.5,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 13,
+      "pointsPerGw": 4.333333333333333,
       "isHit": false
     },
     {
@@ -2431,9 +2431,9 @@
       "playerName": "Maatsen",
       "kind": "w",
       "acquiredGw": 9,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 2,
-      "pointsPerGw": 2,
+      "gwsRostered": 2,
+      "pointsWhileRostered": 7,
+      "pointsPerGw": 3.5,
       "isHit": false
     },
     {
@@ -2587,9 +2587,9 @@
       "playerName": "Boscagli",
       "kind": "w",
       "acquiredGw": 10,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 5,
-      "pointsPerGw": 5,
+      "gwsRostered": 2,
+      "pointsWhileRostered": 12,
+      "pointsPerGw": 6,
       "isHit": true
     },
     {
@@ -2599,10 +2599,10 @@
       "playerName": "Kluivert",
       "kind": "w",
       "acquiredGw": 10,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 3,
-      "pointsPerGw": 3,
-      "isHit": false
+      "gwsRostered": 2,
+      "pointsWhileRostered": 12,
+      "pointsPerGw": 6,
+      "isHit": true
     },
     {
       "managerId": 1530,
@@ -2647,9 +2647,9 @@
       "playerName": "Fofana",
       "kind": "w",
       "acquiredGw": 10,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 1,
-      "pointsPerGw": 1,
+      "gwsRostered": 2,
+      "pointsWhileRostered": 3,
+      "pointsPerGw": 1.5,
       "isHit": false
     },
     {
@@ -2659,7 +2659,7 @@
       "playerName": "Colwill",
       "kind": "w",
       "acquiredGw": 10,
-      "gwsRostered": 1,
+      "gwsRostered": 2,
       "pointsWhileRostered": 0,
       "pointsPerGw": 0,
       "isHit": false
@@ -2695,8 +2695,8 @@
       "playerName": "Ayari",
       "kind": "w",
       "acquiredGw": 10,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 3,
+      "gwsRostered": 2,
+      "pointsWhileRostered": 6,
       "pointsPerGw": 3,
       "isHit": false
     },
@@ -2719,10 +2719,10 @@
       "playerName": "Pau",
       "kind": "w",
       "acquiredGw": 10,
-      "gwsRostered": 0,
-      "pointsWhileRostered": 0,
-      "pointsPerGw": 0,
-      "isHit": false
+      "gwsRostered": 1,
+      "pointsWhileRostered": 7,
+      "pointsPerGw": 7,
+      "isHit": true
     },
     {
       "managerId": 1377,
@@ -2731,10 +2731,10 @@
       "playerName": "Dunk",
       "kind": "w",
       "acquiredGw": 10,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 5,
-      "pointsPerGw": 5,
-      "isHit": true
+      "gwsRostered": 2,
+      "pointsWhileRostered": 6,
+      "pointsPerGw": 3,
+      "isHit": false
     },
     {
       "managerId": 1377,
@@ -2839,61 +2839,322 @@
       "playerName": "Kamara",
       "kind": "f",
       "acquiredGw": 10,
+      "gwsRostered": 2,
+      "pointsWhileRostered": 7,
+      "pointsPerGw": 3.5,
+      "isHit": false
+    },
+    {
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
+      "elementId": 474,
+      "playerName": "Jair Cunha",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "elementId": 214,
+      "playerName": "Kamada",
+      "kind": "w",
+      "acquiredGw": 11,
       "gwsRostered": 1,
-      "pointsWhileRostered": 4,
-      "pointsPerGw": 4,
+      "pointsWhileRostered": 2,
+      "pointsPerGw": 2,
+      "isHit": false
+    },
+    {
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "elementId": 45,
+      "playerName": "McGinn",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 1471,
+      "managerName": "🥶CPR🥶",
+      "elementId": 599,
+      "playerName": "Elvedi",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 264,
+      "playerName": "Bobb",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 210,
+      "playerName": "Wharton",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 85,
+      "playerName": "Van den Berg",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 6,
+      "pointsPerGw": 6,
+      "isHit": true
+    },
+    {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "elementId": 123,
+      "playerName": "Hinshelwood",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "elementId": 502,
+      "playerName": "Robertson",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "elementId": 41,
+      "playerName": "Buendía",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 119,
+      "playerName": "Costinha",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": -2,
+      "pointsPerGw": -2,
+      "isHit": false
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 153,
+      "playerName": "Disasi",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "elementId": 52,
+      "playerName": "Alysson",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 3,
+      "pointsPerGw": 3,
+      "isHit": false
+    },
+    {
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "elementId": 440,
+      "playerName": "Zirkzee",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "elementId": 630,
+      "playerName": "Harwood-Bellis",
+      "kind": "f",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 471,
+      "playerName": "Milenković",
+      "kind": "f",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
+      "elementId": 372,
+      "playerName": "Mac Allister",
+      "kind": "f",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "elementId": 611,
+      "playerName": "Wan-Bissaka",
+      "kind": "f",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 8,
+      "pointsPerGw": 8,
+      "isHit": true
+    },
+    {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "elementId": 534,
+      "playerName": "Hume",
+      "kind": "f",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 5,
+      "pointsPerGw": 5,
+      "isHit": true
+    },
+    {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "elementId": 173,
+      "playerName": "Thomas",
+      "kind": "f",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
       "isHit": false
     }
   ],
   "hitRateLeaderboard": [
     {
-      "managerId": 1377,
-      "managerName": "Lu’s Rules FC ****",
-      "totalPickups": 16,
-      "hits": 5,
-      "hitRate": 0.3125
-    },
-    {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "totalPickups": 11,
+      "totalPickups": 13,
       "hits": 3,
-      "hitRate": 0.2727272727272727
-    },
-    {
-      "managerId": 1425,
-      "managerName": "Pearl Street Pirates",
-      "totalPickups": 21,
-      "hits": 4,
-      "hitRate": 0.19047619047619047
-    },
-    {
-      "managerId": 26227,
-      "managerName": "Mourinho’s Ego FT",
-      "totalPickups": 31,
-      "hits": 5,
-      "hitRate": 0.16129032258064516
+      "hitRate": 0.23076923076923078
     },
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "totalPickups": 16,
-      "hits": 2,
-      "hitRate": 0.125
+      "totalPickups": 19,
+      "hits": 4,
+      "hitRate": 0.21052631578947367
     },
     {
-      "managerId": 1530,
-      "managerName": "Muks Militia",
-      "totalPickups": 33,
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "totalPickups": 17,
       "hits": 3,
-      "hitRate": 0.09090909090909091
+      "hitRate": 0.17647058823529413
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
       "totalPickups": 12,
-      "hits": 1,
-      "hitRate": 0.08333333333333333
+      "hits": 2,
+      "hitRate": 0.16666666666666666
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "totalPickups": 33,
+      "hits": 5,
+      "hitRate": 0.15151515151515152
+    },
+    {
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "totalPickups": 15,
+      "hits": 2,
+      "hitRate": 0.13333333333333333
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "totalPickups": 23,
+      "hits": 3,
+      "hitRate": 0.13043478260869565
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "totalPickups": 32,
+      "hits": 4,
+      "hitRate": 0.125
+    },
+    {
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "totalPickups": 35,
+      "hits": 3,
+      "hitRate": 0.08571428571428572
+    },
+    {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "totalPickups": 25,
+      "hits": 2,
+      "hitRate": 0.08
     },
     {
       "managerId": 10210,
@@ -2903,32 +3164,11 @@
       "hitRate": 0.07692307692307693
     },
     {
-      "managerId": 10375,
-      "managerName": "NEEN FC",
-      "totalPickups": 28,
-      "hits": 2,
-      "hitRate": 0.07142857142857142
-    },
-    {
-      "managerId": 29975,
-      "managerName": "Zacharias United",
-      "totalPickups": 14,
-      "hits": 1,
-      "hitRate": 0.07142857142857142
-    },
-    {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "totalPickups": 19,
+      "totalPickups": 20,
       "hits": 1,
-      "hitRate": 0.05263157894736842
-    },
-    {
-      "managerId": 1857,
-      "managerName": "i can fix him*",
-      "totalPickups": 23,
-      "hits": 1,
-      "hitRate": 0.043478260869565216
+      "hitRate": 0.05
     }
   ],
   "bestPickups": [
@@ -2939,9 +3179,9 @@
       "playerName": "De Cuyper",
       "kind": "w",
       "acquiredGw": 2,
-      "gwsRostered": 8,
-      "pointsWhileRostered": 52,
-      "pointsPerGw": 6.5,
+      "gwsRostered": 9,
+      "pointsWhileRostered": 53,
+      "pointsPerGw": 5.888888888888889,
       "isHit": true
     },
     {
@@ -2951,10 +3191,22 @@
       "playerName": "Van Hecke",
       "kind": "w",
       "acquiredGw": 4,
-      "gwsRostered": 6,
-      "pointsWhileRostered": 40,
-      "pointsPerGw": 6.666666666666667,
+      "gwsRostered": 7,
+      "pointsWhileRostered": 46,
+      "pointsPerGw": 6.571428571428571,
       "isHit": true
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "elementId": 86,
+      "playerName": "Lewis-Potter",
+      "kind": "w",
+      "acquiredGw": 2,
+      "gwsRostered": 10,
+      "pointsWhileRostered": 45,
+      "pointsPerGw": 4.5,
+      "isHit": false
     },
     {
       "managerId": 99786,
@@ -2963,10 +3215,22 @@
       "playerName": "Kostoulas",
       "kind": "w",
       "acquiredGw": 3,
-      "gwsRostered": 7,
-      "pointsWhileRostered": 39,
-      "pointsPerGw": 5.571428571428571,
+      "gwsRostered": 8,
+      "pointsWhileRostered": 40,
+      "pointsPerGw": 5,
       "isHit": true
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 597,
+      "playerName": "Suzuki",
+      "kind": "w",
+      "acquiredGw": 2,
+      "gwsRostered": 10,
+      "pointsWhileRostered": 37,
+      "pointsPerGw": 3.7,
+      "isHit": false
     },
     {
       "managerId": 1501,
@@ -2981,51 +3245,15 @@
       "isHit": true
     },
     {
-      "managerId": 26227,
-      "managerName": "Mourinho’s Ego FT",
-      "elementId": 597,
-      "playerName": "Suzuki",
+      "managerId": 1947,
+      "managerName": "FC General",
+      "elementId": 555,
+      "playerName": "Silva",
       "kind": "w",
-      "acquiredGw": 2,
-      "gwsRostered": 9,
-      "pointsWhileRostered": 31,
-      "pointsPerGw": 3.4444444444444446,
-      "isHit": false
-    },
-    {
-      "managerId": 1425,
-      "managerName": "Pearl Street Pirates",
-      "elementId": 261,
-      "playerName": "Iwobi",
-      "kind": "f",
-      "acquiredGw": 5,
-      "gwsRostered": 6,
-      "pointsWhileRostered": 31,
-      "pointsPerGw": 5.166666666666667,
-      "isHit": true
-    },
-    {
-      "managerId": 1377,
-      "managerName": "Lu’s Rules FC ****",
-      "elementId": 167,
-      "playerName": "Delap",
-      "kind": "w",
-      "acquiredGw": 2,
-      "gwsRostered": 9,
-      "pointsWhileRostered": 30,
-      "pointsPerGw": 3.3333333333333335,
-      "isHit": false
-    },
-    {
-      "managerId": 10210,
-      "managerName": "Syria FC**",
-      "elementId": 86,
-      "playerName": "Lewis-Potter",
-      "kind": "w",
-      "acquiredGw": 2,
-      "gwsRostered": 9,
-      "pointsWhileRostered": 29,
-      "pointsPerGw": 3.2222222222222223,
+      "acquiredGw": 3,
+      "gwsRostered": 8,
+      "pointsWhileRostered": 34,
+      "pointsPerGw": 4.25,
       "isHit": false
     },
     {
@@ -3035,9 +3263,33 @@
       "playerName": "Ajer",
       "kind": "w",
       "acquiredGw": 5,
-      "gwsRostered": 6,
-      "pointsWhileRostered": 28,
-      "pointsPerGw": 4.666666666666667,
+      "gwsRostered": 7,
+      "pointsWhileRostered": 34,
+      "pointsPerGw": 4.857142857142857,
+      "isHit": false
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "elementId": 261,
+      "playerName": "Iwobi",
+      "kind": "f",
+      "acquiredGw": 5,
+      "gwsRostered": 7,
+      "pointsWhileRostered": 32,
+      "pointsPerGw": 4.571428571428571,
+      "isHit": false
+    },
+    {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "elementId": 167,
+      "playerName": "Delap",
+      "kind": "w",
+      "acquiredGw": 2,
+      "gwsRostered": 10,
+      "pointsWhileRostered": 31,
+      "pointsPerGw": 3.1,
       "isHit": false
     },
     {
@@ -3047,21 +3299,21 @@
       "playerName": "Gomez",
       "kind": "w",
       "acquiredGw": 6,
-      "gwsRostered": 5,
-      "pointsWhileRostered": 27,
-      "pointsPerGw": 5.4,
+      "gwsRostered": 6,
+      "pointsWhileRostered": 30,
+      "pointsPerGw": 5,
       "isHit": true
     },
     {
-      "managerId": 1947,
-      "managerName": "FC General",
-      "elementId": 555,
-      "playerName": "Silva",
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "elementId": 286,
+      "playerName": "Belloumi",
       "kind": "w",
-      "acquiredGw": 3,
-      "gwsRostered": 7,
-      "pointsWhileRostered": 26,
-      "pointsPerGw": 3.7142857142857144,
+      "acquiredGw": 5,
+      "gwsRostered": 6,
+      "pointsWhileRostered": 28,
+      "pointsPerGw": 4.666666666666667,
       "isHit": false
     },
     {
@@ -3071,10 +3323,22 @@
       "playerName": "Manzambi",
       "kind": "w",
       "acquiredGw": 6,
-      "gwsRostered": 5,
+      "gwsRostered": 6,
+      "pointsWhileRostered": 27,
+      "pointsPerGw": 4.5,
+      "isHit": false
+    },
+    {
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "elementId": 98,
+      "playerName": "Janelt",
+      "kind": "w",
+      "acquiredGw": 4,
+      "gwsRostered": 7,
       "pointsWhileRostered": 26,
-      "pointsPerGw": 5.2,
-      "isHit": true
+      "pointsPerGw": 3.7142857142857144,
+      "isHit": false
     },
     {
       "managerId": 1530,
@@ -3083,21 +3347,45 @@
       "playerName": "Rushworth",
       "kind": "w",
       "acquiredGw": 3,
-      "gwsRostered": 6,
-      "pointsWhileRostered": 21,
-      "pointsPerGw": 3.5,
+      "gwsRostered": 7,
+      "pointsWhileRostered": 23,
+      "pointsPerGw": 3.2857142857142856,
       "isHit": false
     },
     {
-      "managerId": 1501,
-      "managerName": "Set Piece Fc",
-      "elementId": 286,
-      "playerName": "Belloumi",
+      "managerId": 1947,
+      "managerName": "FC General",
+      "elementId": 183,
+      "playerName": "Rudoni",
       "kind": "w",
-      "acquiredGw": 5,
+      "acquiredGw": 8,
+      "gwsRostered": 4,
+      "pointsWhileRostered": 23,
+      "pointsPerGw": 5.75,
+      "isHit": true
+    },
+    {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "elementId": 526,
+      "playerName": "Solanke",
+      "kind": "w",
+      "acquiredGw": 4,
+      "gwsRostered": 6,
+      "pointsWhileRostered": 22,
+      "pointsPerGw": 3.6666666666666665,
+      "isHit": false
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 512,
+      "playerName": "Kudus",
+      "kind": "w",
+      "acquiredGw": 6,
       "gwsRostered": 5,
-      "pointsWhileRostered": 21,
-      "pointsPerGw": 4.2,
+      "pointsWhileRostered": 20,
+      "pointsPerGw": 4,
       "isHit": false
     },
     {
@@ -3137,6 +3425,18 @@
       "isHit": false
     },
     {
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "elementId": 16,
+      "playerName": "Madueke",
+      "kind": "w",
+      "acquiredGw": 8,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 19,
+      "pointsPerGw": 6.333333333333333,
+      "isHit": true
+    },
+    {
       "managerId": 10375,
       "managerName": "NEEN FC",
       "elementId": 447,
@@ -3161,18 +3461,6 @@
       "isHit": true
     },
     {
-      "managerId": 10375,
-      "managerName": "NEEN FC",
-      "elementId": 512,
-      "playerName": "Kudus",
-      "kind": "w",
-      "acquiredGw": 6,
-      "gwsRostered": 4,
-      "pointsWhileRostered": 18,
-      "pointsPerGw": 4.5,
-      "isHit": false
-    },
-    {
       "managerId": 29975,
       "managerName": "Zacharias United",
       "elementId": 258,
@@ -3185,6 +3473,30 @@
       "isHit": false
     },
     {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "elementId": 358,
+      "playerName": "Kerkez",
+      "kind": "w",
+      "acquiredGw": 7,
+      "gwsRostered": 5,
+      "pointsWhileRostered": 17,
+      "pointsPerGw": 3.4,
+      "isHit": false
+    },
+    {
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "elementId": 499,
+      "playerName": "Pedro Porro",
+      "kind": "w",
+      "acquiredGw": 9,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 17,
+      "pointsPerGw": 5.666666666666667,
+      "isHit": true
+    },
+    {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
       "elementId": 123,
@@ -3195,18 +3507,6 @@
       "pointsWhileRostered": 16,
       "pointsPerGw": 16,
       "isHit": true
-    },
-    {
-      "managerId": 29975,
-      "managerName": "Zacharias United",
-      "elementId": 98,
-      "playerName": "Janelt",
-      "kind": "w",
-      "acquiredGw": 4,
-      "gwsRostered": 6,
-      "pointsWhileRostered": 16,
-      "pointsPerGw": 2.6666666666666665,
-      "isHit": false
     },
     {
       "managerId": 10375,
@@ -3233,15 +3533,27 @@
       "isHit": true
     },
     {
-      "managerId": 1857,
-      "managerName": "i can fix him*",
-      "elementId": 526,
-      "playerName": "Solanke",
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 211,
+      "playerName": "Yeremy",
       "kind": "w",
-      "acquiredGw": 4,
-      "gwsRostered": 5,
+      "acquiredGw": 8,
+      "gwsRostered": 4,
       "pointsWhileRostered": 15,
-      "pointsPerGw": 3,
+      "pointsPerGw": 3.75,
+      "isHit": false
+    },
+    {
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "elementId": 224,
+      "playerName": "Nketiah",
+      "kind": "w",
+      "acquiredGw": 2,
+      "gwsRostered": 6,
+      "pointsWhileRostered": 14,
+      "pointsPerGw": 2.3333333333333335,
       "isHit": false
     },
     {
@@ -3257,6 +3569,30 @@
       "isHit": false
     },
     {
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "elementId": 400,
+      "playerName": "Doku",
+      "kind": "w",
+      "acquiredGw": 7,
+      "gwsRostered": 5,
+      "pointsWhileRostered": 14,
+      "pointsPerGw": 2.8,
+      "isHit": false
+    },
+    {
+      "managerId": 1947,
+      "managerName": "FC General",
+      "elementId": 619,
+      "playerName": "Palacios",
+      "kind": "w",
+      "acquiredGw": 8,
+      "gwsRostered": 4,
+      "pointsWhileRostered": 14,
+      "pointsPerGw": 3.5,
+      "isHit": false
+    },
+    {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
       "elementId": 571,
@@ -3266,18 +3602,6 @@
       "gwsRostered": 4,
       "pointsWhileRostered": 13,
       "pointsPerGw": 3.25,
-      "isHit": false
-    },
-    {
-      "managerId": 1530,
-      "managerName": "Muks Militia",
-      "elementId": 224,
-      "playerName": "Nketiah",
-      "kind": "w",
-      "acquiredGw": 2,
-      "gwsRostered": 5,
-      "pointsWhileRostered": 13,
-      "pointsPerGw": 2.6,
       "isHit": false
     },
     {
@@ -3305,12 +3629,12 @@
       "isHit": false
     },
     {
-      "managerId": 1947,
-      "managerName": "FC General",
-      "elementId": 183,
-      "playerName": "Rudoni",
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 64,
+      "playerName": "Smith",
       "kind": "w",
-      "acquiredGw": 8,
+      "acquiredGw": 9,
       "gwsRostered": 3,
       "pointsWhileRostered": 13,
       "pointsPerGw": 4.333333333333333,
@@ -3341,16 +3665,28 @@
       "isHit": true
     },
     {
-      "managerId": 29975,
-      "managerName": "Zacharias United",
-      "elementId": 400,
-      "playerName": "Doku",
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "elementId": 114,
+      "playerName": "Boscagli",
       "kind": "w",
-      "acquiredGw": 7,
-      "gwsRostered": 4,
+      "acquiredGw": 10,
+      "gwsRostered": 2,
       "pointsWhileRostered": 12,
-      "pointsPerGw": 3,
-      "isHit": false
+      "pointsPerGw": 6,
+      "isHit": true
+    },
+    {
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "elementId": 70,
+      "playerName": "Kluivert",
+      "kind": "w",
+      "acquiredGw": 10,
+      "gwsRostered": 2,
+      "pointsWhileRostered": 12,
+      "pointsPerGw": 6,
+      "isHit": true
     },
     {
       "managerId": 99786,
@@ -3389,40 +3725,16 @@
       "isHit": false
     },
     {
-      "managerId": 1377,
-      "managerName": "Lu’s Rules FC ****",
-      "elementId": 358,
-      "playerName": "Kerkez",
-      "kind": "w",
-      "acquiredGw": 7,
-      "gwsRostered": 4,
-      "pointsWhileRostered": 11,
-      "pointsPerGw": 2.75,
-      "isHit": false
-    },
-    {
-      "managerId": 1947,
-      "managerName": "FC General",
-      "elementId": 619,
-      "playerName": "Palacios",
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "elementId": 151,
+      "playerName": "Acheampong",
       "kind": "w",
       "acquiredGw": 8,
       "gwsRostered": 3,
       "pointsWhileRostered": 11,
       "pointsPerGw": 3.6666666666666665,
       "isHit": false
-    },
-    {
-      "managerId": 29975,
-      "managerName": "Zacharias United",
-      "elementId": 16,
-      "playerName": "Madueke",
-      "kind": "w",
-      "acquiredGw": 8,
-      "gwsRostered": 2,
-      "pointsWhileRostered": 11,
-      "pointsPerGw": 5.5,
-      "isHit": true
     },
     {
       "managerId": 26227,
@@ -3449,16 +3761,28 @@
       "isHit": true
     },
     {
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
+      "elementId": 95,
+      "playerName": "O.Dango",
+      "kind": "w",
+      "acquiredGw": 9,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 10,
+      "pointsPerGw": 3.3333333333333335,
+      "isHit": false
+    },
+    {
       "managerId": 1530,
       "managerName": "Muks Militia",
-      "elementId": 151,
-      "playerName": "Acheampong",
+      "elementId": 91,
+      "playerName": "Pinnock",
       "kind": "w",
-      "acquiredGw": 8,
-      "gwsRostered": 2,
+      "acquiredGw": 9,
+      "gwsRostered": 3,
       "pointsWhileRostered": 10,
-      "pointsPerGw": 5,
-      "isHit": true
+      "pointsPerGw": 3.3333333333333335,
+      "isHit": false
     },
     {
       "managerId": 26227,
@@ -3497,6 +3821,18 @@
       "isHit": false
     },
     {
+      "managerId": 1471,
+      "managerName": "🥶CPR🥶",
+      "elementId": 5,
+      "playerName": "J.Timber",
+      "kind": "w",
+      "acquiredGw": 3,
+      "gwsRostered": 5,
+      "pointsWhileRostered": 9,
+      "pointsPerGw": 1.8,
+      "isHit": false
+    },
+    {
       "managerId": 10375,
       "managerName": "NEEN FC",
       "elementId": 591,
@@ -3519,18 +3855,6 @@
       "pointsWhileRostered": 8,
       "pointsPerGw": 8,
       "isHit": true
-    },
-    {
-      "managerId": 1471,
-      "managerName": "🥶CPR🥶",
-      "elementId": 5,
-      "playerName": "J.Timber",
-      "kind": "w",
-      "acquiredGw": 3,
-      "gwsRostered": 4,
-      "pointsWhileRostered": 8,
-      "pointsPerGw": 2,
-      "isHit": false
     },
     {
       "managerId": 1530,
@@ -3617,12 +3941,36 @@
       "isHit": false
     },
     {
+      "managerId": 1947,
+      "managerName": "FC General",
+      "elementId": 202,
+      "playerName": "Richards",
+      "kind": "w",
+      "acquiredGw": 7,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 8,
+      "pointsPerGw": 2.6666666666666665,
+      "isHit": false
+    },
+    {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
       "elementId": 502,
       "playerName": "Robertson",
       "kind": "w",
       "acquiredGw": 9,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 8,
+      "pointsPerGw": 8,
+      "isHit": true
+    },
+    {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "elementId": 611,
+      "playerName": "Wan-Bissaka",
+      "kind": "f",
+      "acquiredGw": 11,
       "gwsRostered": 1,
       "pointsWhileRostered": 8,
       "pointsPerGw": 8,
@@ -3725,18 +4073,6 @@
       "isHit": false
     },
     {
-      "managerId": 99786,
-      "managerName": "Patso Ball Fc",
-      "elementId": 95,
-      "playerName": "O.Dango",
-      "kind": "w",
-      "acquiredGw": 9,
-      "gwsRostered": 2,
-      "pointsWhileRostered": 7,
-      "pointsPerGw": 3.5,
-      "isHit": false
-    },
-    {
       "managerId": 1530,
       "managerName": "Muks Militia",
       "elementId": 503,
@@ -3749,10 +4085,10 @@
       "isHit": false
     },
     {
-      "managerId": 1530,
-      "managerName": "Muks Militia",
-      "elementId": 91,
-      "playerName": "Pinnock",
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "elementId": 36,
+      "playerName": "Maatsen",
       "kind": "w",
       "acquiredGw": 9,
       "gwsRostered": 2,
@@ -3761,12 +4097,24 @@
       "isHit": false
     },
     {
-      "managerId": 26227,
-      "managerName": "Mourinho’s Ego FT",
-      "elementId": 64,
-      "playerName": "Smith",
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "elementId": 34,
+      "playerName": "Pau",
       "kind": "w",
-      "acquiredGw": 9,
+      "acquiredGw": 10,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 7,
+      "pointsPerGw": 7,
+      "isHit": true
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "elementId": 47,
+      "playerName": "Kamara",
+      "kind": "f",
+      "acquiredGw": 10,
       "gwsRostered": 2,
       "pointsWhileRostered": 7,
       "pointsPerGw": 3.5,
@@ -3857,6 +4205,18 @@
       "isHit": false
     },
     {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 85,
+      "playerName": "Van den Berg",
+      "kind": "w",
+      "acquiredGw": 8,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 6,
+      "pointsPerGw": 6,
+      "isHit": true
+    },
+    {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
       "elementId": 536,
@@ -3871,14 +4231,38 @@
     {
       "managerId": 29975,
       "managerName": "Zacharias United",
-      "elementId": 499,
-      "playerName": "Pedro Porro",
+      "elementId": 129,
+      "playerName": "Ayari",
       "kind": "w",
-      "acquiredGw": 9,
+      "acquiredGw": 10,
       "gwsRostered": 2,
       "pointsWhileRostered": 6,
       "pointsPerGw": 3,
       "isHit": false
+    },
+    {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "elementId": 116,
+      "playerName": "Dunk",
+      "kind": "w",
+      "acquiredGw": 10,
+      "gwsRostered": 2,
+      "pointsWhileRostered": 6,
+      "pointsPerGw": 3,
+      "isHit": false
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 85,
+      "playerName": "Van den Berg",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 6,
+      "pointsPerGw": 6,
+      "isHit": true
     },
     {
       "managerId": 10375,
@@ -3929,15 +4313,15 @@
       "isHit": true
     },
     {
-      "managerId": 1947,
-      "managerName": "FC General",
-      "elementId": 202,
-      "playerName": "Richards",
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
+      "elementId": 331,
+      "playerName": "Gudmundsson",
       "kind": "w",
       "acquiredGw": 7,
-      "gwsRostered": 2,
+      "gwsRostered": 4,
       "pointsWhileRostered": 5,
-      "pointsPerGw": 2.5,
+      "pointsPerGw": 1.25,
       "isHit": false
     },
     {
@@ -3965,24 +4349,12 @@
       "isHit": false
     },
     {
-      "managerId": 1425,
-      "managerName": "Pearl Street Pirates",
-      "elementId": 114,
-      "playerName": "Boscagli",
-      "kind": "w",
-      "acquiredGw": 10,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 5,
-      "pointsPerGw": 5,
-      "isHit": true
-    },
-    {
-      "managerId": 1377,
-      "managerName": "Lu’s Rules FC ****",
-      "elementId": 116,
-      "playerName": "Dunk",
-      "kind": "w",
-      "acquiredGw": 10,
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "elementId": 534,
+      "playerName": "Hume",
+      "kind": "f",
+      "acquiredGw": 11,
       "gwsRostered": 1,
       "pointsWhileRostered": 5,
       "pointsPerGw": 5,
@@ -4061,18 +4433,6 @@
       "isHit": false
     },
     {
-      "managerId": 99786,
-      "managerName": "Patso Ball Fc",
-      "elementId": 331,
-      "playerName": "Gudmundsson",
-      "kind": "w",
-      "acquiredGw": 7,
-      "gwsRostered": 3,
-      "pointsWhileRostered": 4,
-      "pointsPerGw": 1.3333333333333333,
-      "isHit": false
-    },
-    {
       "managerId": 1530,
       "managerName": "Muks Militia",
       "elementId": 131,
@@ -4142,18 +4502,6 @@
       "gwsRostered": 2,
       "pointsWhileRostered": 4,
       "pointsPerGw": 2,
-      "isHit": false
-    },
-    {
-      "managerId": 10210,
-      "managerName": "Syria FC**",
-      "elementId": 47,
-      "playerName": "Kamara",
-      "kind": "f",
-      "acquiredGw": 10,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 4,
-      "pointsPerGw": 4,
       "isHit": false
     },
     {
@@ -4253,18 +4601,6 @@
       "isHit": false
     },
     {
-      "managerId": 26227,
-      "managerName": "Mourinho’s Ego FT",
-      "elementId": 211,
-      "playerName": "Yeremy",
-      "kind": "w",
-      "acquiredGw": 8,
-      "gwsRostered": 3,
-      "pointsWhileRostered": 3,
-      "pointsPerGw": 1,
-      "isHit": false
-    },
-    {
       "managerId": 10375,
       "managerName": "NEEN FC",
       "elementId": 474,
@@ -4289,24 +4625,24 @@
       "isHit": false
     },
     {
-      "managerId": 1530,
-      "managerName": "Muks Militia",
-      "elementId": 70,
-      "playerName": "Kluivert",
+      "managerId": 1947,
+      "managerName": "FC General",
+      "elementId": 145,
+      "playerName": "Fofana",
       "kind": "w",
       "acquiredGw": 10,
-      "gwsRostered": 1,
+      "gwsRostered": 2,
       "pointsWhileRostered": 3,
-      "pointsPerGw": 3,
+      "pointsPerGw": 1.5,
       "isHit": false
     },
     {
-      "managerId": 29975,
-      "managerName": "Zacharias United",
-      "elementId": 129,
-      "playerName": "Ayari",
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "elementId": 52,
+      "playerName": "Alysson",
       "kind": "w",
-      "acquiredGw": 10,
+      "acquiredGw": 11,
       "gwsRostered": 1,
       "pointsWhileRostered": 3,
       "pointsPerGw": 3,
@@ -4445,6 +4781,18 @@
       "isHit": false
     },
     {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "elementId": 78,
+      "playerName": "Kroupi.Jr",
+      "kind": "w",
+      "acquiredGw": 6,
+      "gwsRostered": 2,
+      "pointsWhileRostered": 2,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
       "elementId": 599,
@@ -4487,18 +4835,6 @@
       "playerName": "Diomande",
       "kind": "f",
       "acquiredGw": 7,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 2,
-      "pointsPerGw": 2,
-      "isHit": false
-    },
-    {
-      "managerId": 1857,
-      "managerName": "i can fix him*",
-      "elementId": 36,
-      "playerName": "Maatsen",
-      "kind": "w",
-      "acquiredGw": 9,
       "gwsRostered": 1,
       "pointsWhileRostered": 2,
       "pointsPerGw": 2,
@@ -4559,6 +4895,18 @@
       "playerName": "Robinson",
       "kind": "f",
       "acquiredGw": 10,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 2,
+      "pointsPerGw": 2,
+      "isHit": false
+    },
+    {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "elementId": 214,
+      "playerName": "Kamada",
+      "kind": "w",
+      "acquiredGw": 11,
       "gwsRostered": 1,
       "pointsWhileRostered": 2,
       "pointsPerGw": 2,
@@ -4757,18 +5105,6 @@
       "isHit": false
     },
     {
-      "managerId": 1857,
-      "managerName": "i can fix him*",
-      "elementId": 78,
-      "playerName": "Kroupi.Jr",
-      "kind": "w",
-      "acquiredGw": 6,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 1,
-      "pointsPerGw": 1,
-      "isHit": false
-    },
-    {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
       "elementId": 457,
@@ -4877,18 +5213,6 @@
       "isHit": false
     },
     {
-      "managerId": 1947,
-      "managerName": "FC General",
-      "elementId": 145,
-      "playerName": "Fofana",
-      "kind": "w",
-      "acquiredGw": 10,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 1,
-      "pointsPerGw": 1,
-      "isHit": false
-    },
-    {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
       "elementId": 232,
@@ -4907,6 +5231,78 @@
       "playerName": "Khusanov",
       "kind": "w",
       "acquiredGw": 10,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "elementId": 45,
+      "playerName": "McGinn",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 210,
+      "playerName": "Wharton",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "elementId": 502,
+      "playerName": "Robertson",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "elementId": 41,
+      "playerName": "Buendía",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 153,
+      "playerName": "Disasi",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 471,
+      "playerName": "Milenković",
+      "kind": "f",
+      "acquiredGw": 11,
       "gwsRostered": 1,
       "pointsWhileRostered": 1,
       "pointsPerGw": 1,
@@ -5575,18 +5971,6 @@
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "elementId": 85,
-      "playerName": "Van den Berg",
-      "kind": "w",
-      "acquiredGw": 8,
-      "gwsRostered": 0,
-      "pointsWhileRostered": 0,
-      "pointsPerGw": 0,
-      "isHit": false
-    },
-    {
-      "managerId": 10375,
-      "managerName": "NEEN FC",
       "elementId": 455,
       "playerName": "Tonali",
       "kind": "w",
@@ -5687,7 +6071,7 @@
       "playerName": "Colwill",
       "kind": "w",
       "acquiredGw": 10,
-      "gwsRostered": 1,
+      "gwsRostered": 2,
       "pointsWhileRostered": 0,
       "pointsPerGw": 0,
       "isHit": false
@@ -5700,18 +6084,6 @@
       "kind": "w",
       "acquiredGw": 10,
       "gwsRostered": 1,
-      "pointsWhileRostered": 0,
-      "pointsPerGw": 0,
-      "isHit": false
-    },
-    {
-      "managerId": 1857,
-      "managerName": "i can fix him*",
-      "elementId": 34,
-      "playerName": "Pau",
-      "kind": "w",
-      "acquiredGw": 10,
-      "gwsRostered": 0,
       "pointsWhileRostered": 0,
       "pointsPerGw": 0,
       "isHit": false
@@ -5765,12 +6137,120 @@
       "isHit": false
     },
     {
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
+      "elementId": 474,
+      "playerName": "Jair Cunha",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1471,
+      "managerName": "🥶CPR🥶",
+      "elementId": 599,
+      "playerName": "Elvedi",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 264,
+      "playerName": "Bobb",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "elementId": 123,
+      "playerName": "Hinshelwood",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "elementId": 440,
+      "playerName": "Zirkzee",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "elementId": 630,
+      "playerName": "Harwood-Bellis",
+      "kind": "f",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
+      "elementId": 372,
+      "playerName": "Mac Allister",
+      "kind": "f",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "elementId": 173,
+      "playerName": "Thomas",
+      "kind": "f",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
       "managerId": 1530,
       "managerName": "Muks Militia",
       "elementId": 269,
       "playerName": "Sessegnon",
       "kind": "w",
       "acquiredGw": 7,
+      "gwsRostered": 1,
+      "pointsWhileRostered": -2,
+      "pointsPerGw": -2,
+      "isHit": false
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 119,
+      "playerName": "Costinha",
+      "kind": "w",
+      "acquiredGw": 11,
       "gwsRostered": 1,
       "pointsWhileRostered": -2,
       "pointsPerGw": -2,
@@ -5785,21 +6265,21 @@
       "playerName": "Van Hecke",
       "kind": "w",
       "acquiredGw": 4,
-      "gwsRostered": 6,
-      "pointsWhileRostered": 40,
-      "pointsPerGw": 6.666666666666667,
+      "gwsRostered": 7,
+      "pointsWhileRostered": 46,
+      "pointsPerGw": 6.571428571428571,
       "isHit": true
     },
     {
-      "managerId": 99786,
-      "managerName": "Patso Ball Fc",
-      "elementId": 115,
-      "playerName": "De Cuyper",
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "elementId": 16,
+      "playerName": "Madueke",
       "kind": "w",
-      "acquiredGw": 2,
-      "gwsRostered": 8,
-      "pointsWhileRostered": 52,
-      "pointsPerGw": 6.5,
+      "acquiredGw": 8,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 19,
+      "pointsPerGw": 6.333333333333333,
       "isHit": true
     },
     {
@@ -5817,25 +6297,37 @@
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "elementId": 138,
-      "playerName": "Kostoulas",
+      "elementId": 115,
+      "playerName": "De Cuyper",
       "kind": "w",
-      "acquiredGw": 3,
-      "gwsRostered": 7,
-      "pointsWhileRostered": 39,
-      "pointsPerGw": 5.571428571428571,
+      "acquiredGw": 2,
+      "gwsRostered": 9,
+      "pointsWhileRostered": 53,
+      "pointsPerGw": 5.888888888888889,
       "isHit": true
     },
     {
-      "managerId": 1530,
-      "managerName": "Muks Militia",
-      "elementId": 127,
-      "playerName": "Gomez",
+      "managerId": 1947,
+      "managerName": "FC General",
+      "elementId": 183,
+      "playerName": "Rudoni",
       "kind": "w",
-      "acquiredGw": 6,
-      "gwsRostered": 5,
-      "pointsWhileRostered": 27,
-      "pointsPerGw": 5.4,
+      "acquiredGw": 8,
+      "gwsRostered": 4,
+      "pointsWhileRostered": 23,
+      "pointsPerGw": 5.75,
+      "isHit": true
+    },
+    {
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "elementId": 499,
+      "playerName": "Pedro Porro",
+      "kind": "w",
+      "acquiredGw": 9,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 17,
+      "pointsPerGw": 5.666666666666667,
       "isHit": true
     },
     {
@@ -5863,28 +6355,40 @@
       "isHit": true
     },
     {
-      "managerId": 1377,
-      "managerName": "Lu’s Rules FC ****",
-      "elementId": 53,
-      "playerName": "Manzambi",
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
+      "elementId": 138,
+      "playerName": "Kostoulas",
       "kind": "w",
-      "acquiredGw": 6,
-      "gwsRostered": 5,
-      "pointsWhileRostered": 26,
-      "pointsPerGw": 5.2,
+      "acquiredGw": 3,
+      "gwsRostered": 8,
+      "pointsWhileRostered": 40,
+      "pointsPerGw": 5,
       "isHit": true
     },
     {
-      "managerId": 1425,
-      "managerName": "Pearl Street Pirates",
-      "elementId": 261,
-      "playerName": "Iwobi",
-      "kind": "f",
-      "acquiredGw": 5,
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "elementId": 127,
+      "playerName": "Gomez",
+      "kind": "w",
+      "acquiredGw": 6,
       "gwsRostered": 6,
-      "pointsWhileRostered": 31,
-      "pointsPerGw": 5.166666666666667,
+      "pointsWhileRostered": 30,
+      "pointsPerGw": 5,
       "isHit": true
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "elementId": 87,
+      "playerName": "Ajer",
+      "kind": "w",
+      "acquiredGw": 5,
+      "gwsRostered": 7,
+      "pointsWhileRostered": 34,
+      "pointsPerGw": 4.857142857142857,
+      "isHit": false
     },
     {
       "managerId": 1501,
@@ -5899,10 +6403,10 @@
       "isHit": false
     },
     {
-      "managerId": 10210,
-      "managerName": "Syria FC**",
-      "elementId": 87,
-      "playerName": "Ajer",
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "elementId": 286,
+      "playerName": "Belloumi",
       "kind": "w",
       "acquiredGw": 5,
       "gwsRostered": 6,
@@ -5923,14 +6427,38 @@
       "isHit": false
     },
     {
-      "managerId": 10375,
-      "managerName": "NEEN FC",
-      "elementId": 512,
-      "playerName": "Kudus",
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "elementId": 261,
+      "playerName": "Iwobi",
+      "kind": "f",
+      "acquiredGw": 5,
+      "gwsRostered": 7,
+      "pointsWhileRostered": 32,
+      "pointsPerGw": 4.571428571428571,
+      "isHit": false
+    },
+    {
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "elementId": 86,
+      "playerName": "Lewis-Potter",
+      "kind": "w",
+      "acquiredGw": 2,
+      "gwsRostered": 10,
+      "pointsWhileRostered": 45,
+      "pointsPerGw": 4.5,
+      "isHit": false
+    },
+    {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "elementId": 53,
+      "playerName": "Manzambi",
       "kind": "w",
       "acquiredGw": 6,
-      "gwsRostered": 4,
-      "pointsWhileRostered": 18,
+      "gwsRostered": 6,
+      "pointsWhileRostered": 27,
       "pointsPerGw": 4.5,
       "isHit": false
     },
@@ -5947,12 +6475,12 @@
       "isHit": false
     },
     {
-      "managerId": 1947,
-      "managerName": "FC General",
-      "elementId": 183,
-      "playerName": "Rudoni",
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 64,
+      "playerName": "Smith",
       "kind": "w",
-      "acquiredGw": 8,
+      "acquiredGw": 9,
       "gwsRostered": 3,
       "pointsWhileRostered": 13,
       "pointsPerGw": 4.333333333333333,
@@ -5971,15 +6499,15 @@
       "isHit": false
     },
     {
-      "managerId": 1501,
-      "managerName": "Set Piece Fc",
-      "elementId": 286,
-      "playerName": "Belloumi",
+      "managerId": 1947,
+      "managerName": "FC General",
+      "elementId": 555,
+      "playerName": "Silva",
       "kind": "w",
-      "acquiredGw": 5,
-      "gwsRostered": 5,
-      "pointsWhileRostered": 21,
-      "pointsPerGw": 4.2,
+      "acquiredGw": 3,
+      "gwsRostered": 8,
+      "pointsWhileRostered": 34,
+      "pointsPerGw": 4.25,
       "isHit": false
     },
     {
@@ -5991,6 +6519,18 @@
       "acquiredGw": 2,
       "gwsRostered": 3,
       "pointsWhileRostered": 12,
+      "pointsPerGw": 4,
+      "isHit": false
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 512,
+      "playerName": "Kudus",
+      "kind": "w",
+      "acquiredGw": 6,
+      "gwsRostered": 5,
+      "pointsWhileRostered": 20,
       "pointsPerGw": 4,
       "isHit": false
     },
@@ -6007,15 +6547,51 @@
       "isHit": false
     },
     {
-      "managerId": 1947,
-      "managerName": "FC General",
-      "elementId": 555,
-      "playerName": "Silva",
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 211,
+      "playerName": "Yeremy",
       "kind": "w",
-      "acquiredGw": 3,
+      "acquiredGw": 8,
+      "gwsRostered": 4,
+      "pointsWhileRostered": 15,
+      "pointsPerGw": 3.75,
+      "isHit": false
+    },
+    {
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "elementId": 98,
+      "playerName": "Janelt",
+      "kind": "w",
+      "acquiredGw": 4,
       "gwsRostered": 7,
       "pointsWhileRostered": 26,
       "pointsPerGw": 3.7142857142857144,
+      "isHit": false
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 597,
+      "playerName": "Suzuki",
+      "kind": "w",
+      "acquiredGw": 2,
+      "gwsRostered": 10,
+      "pointsWhileRostered": 37,
+      "pointsPerGw": 3.7,
+      "isHit": false
+    },
+    {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "elementId": 526,
+      "playerName": "Solanke",
+      "kind": "w",
+      "acquiredGw": 4,
+      "gwsRostered": 6,
+      "pointsWhileRostered": 22,
+      "pointsPerGw": 3.6666666666666665,
       "isHit": false
     },
     {
@@ -6043,10 +6619,10 @@
       "isHit": false
     },
     {
-      "managerId": 1947,
-      "managerName": "FC General",
-      "elementId": 619,
-      "playerName": "Palacios",
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "elementId": 151,
+      "playerName": "Acheampong",
       "kind": "w",
       "acquiredGw": 8,
       "gwsRostered": 3,
@@ -6067,39 +6643,27 @@
       "isHit": false
     },
     {
-      "managerId": 1530,
-      "managerName": "Muks Militia",
-      "elementId": 110,
-      "playerName": "Rushworth",
+      "managerId": 1947,
+      "managerName": "FC General",
+      "elementId": 619,
+      "playerName": "Palacios",
       "kind": "w",
-      "acquiredGw": 3,
-      "gwsRostered": 6,
-      "pointsWhileRostered": 21,
+      "acquiredGw": 8,
+      "gwsRostered": 4,
+      "pointsWhileRostered": 14,
       "pointsPerGw": 3.5,
-      "isHit": false
-    },
-    {
-      "managerId": 26227,
-      "managerName": "Mourinho’s Ego FT",
-      "elementId": 597,
-      "playerName": "Suzuki",
-      "kind": "w",
-      "acquiredGw": 2,
-      "gwsRostered": 9,
-      "pointsWhileRostered": 31,
-      "pointsPerGw": 3.4444444444444446,
       "isHit": false
     },
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "elementId": 167,
-      "playerName": "Delap",
+      "elementId": 358,
+      "playerName": "Kerkez",
       "kind": "w",
-      "acquiredGw": 2,
-      "gwsRostered": 9,
-      "pointsWhileRostered": 30,
-      "pointsPerGw": 3.3333333333333335,
+      "acquiredGw": 7,
+      "gwsRostered": 5,
+      "pointsWhileRostered": 17,
+      "pointsPerGw": 3.4,
       "isHit": false
     },
     {
@@ -6117,6 +6681,42 @@
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
+      "elementId": 95,
+      "playerName": "O.Dango",
+      "kind": "w",
+      "acquiredGw": 9,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 10,
+      "pointsPerGw": 3.3333333333333335,
+      "isHit": false
+    },
+    {
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "elementId": 91,
+      "playerName": "Pinnock",
+      "kind": "w",
+      "acquiredGw": 9,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 10,
+      "pointsPerGw": 3.3333333333333335,
+      "isHit": false
+    },
+    {
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "elementId": 110,
+      "playerName": "Rushworth",
+      "kind": "w",
+      "acquiredGw": 3,
+      "gwsRostered": 7,
+      "pointsWhileRostered": 23,
+      "pointsPerGw": 3.2857142857142856,
+      "isHit": false
+    },
+    {
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
       "elementId": 571,
       "playerName": "Tzolakis",
       "kind": "w",
@@ -6127,15 +6727,15 @@
       "isHit": false
     },
     {
-      "managerId": 10210,
-      "managerName": "Syria FC**",
-      "elementId": 86,
-      "playerName": "Lewis-Potter",
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "elementId": 167,
+      "playerName": "Delap",
       "kind": "w",
       "acquiredGw": 2,
-      "gwsRostered": 9,
-      "pointsWhileRostered": 29,
-      "pointsPerGw": 3.2222222222222223,
+      "gwsRostered": 10,
+      "pointsWhileRostered": 31,
+      "pointsPerGw": 3.1,
       "isHit": false
     },
     {
@@ -6151,39 +6751,15 @@
       "isHit": false
     },
     {
-      "managerId": 1857,
-      "managerName": "i can fix him*",
-      "elementId": 526,
-      "playerName": "Solanke",
-      "kind": "w",
-      "acquiredGw": 4,
-      "gwsRostered": 5,
-      "pointsWhileRostered": 15,
-      "pointsPerGw": 3,
-      "isHit": false
-    },
-    {
       "managerId": 29975,
       "managerName": "Zacharias United",
       "elementId": 400,
       "playerName": "Doku",
       "kind": "w",
       "acquiredGw": 7,
-      "gwsRostered": 4,
-      "pointsWhileRostered": 12,
-      "pointsPerGw": 3,
-      "isHit": false
-    },
-    {
-      "managerId": 1377,
-      "managerName": "Lu’s Rules FC ****",
-      "elementId": 358,
-      "playerName": "Kerkez",
-      "kind": "w",
-      "acquiredGw": 7,
-      "gwsRostered": 4,
-      "pointsWhileRostered": 11,
-      "pointsPerGw": 2.75,
+      "gwsRostered": 5,
+      "pointsWhileRostered": 14,
+      "pointsPerGw": 2.8,
       "isHit": false
     },
     {
@@ -6196,18 +6772,6 @@
       "gwsRostered": 7,
       "pointsWhileRostered": 19,
       "pointsPerGw": 2.7142857142857144,
-      "isHit": false
-    },
-    {
-      "managerId": 29975,
-      "managerName": "Zacharias United",
-      "elementId": 98,
-      "playerName": "Janelt",
-      "kind": "w",
-      "acquiredGw": 4,
-      "gwsRostered": 6,
-      "pointsWhileRostered": 16,
-      "pointsPerGw": 2.6666666666666665,
       "isHit": false
     },
     {
@@ -6259,15 +6823,27 @@
       "isHit": false
     },
     {
+      "managerId": 1947,
+      "managerName": "FC General",
+      "elementId": 202,
+      "playerName": "Richards",
+      "kind": "w",
+      "acquiredGw": 7,
+      "gwsRostered": 3,
+      "pointsWhileRostered": 8,
+      "pointsPerGw": 2.6666666666666665,
+      "isHit": false
+    },
+    {
       "managerId": 1530,
       "managerName": "Muks Militia",
       "elementId": 224,
       "playerName": "Nketiah",
       "kind": "w",
       "acquiredGw": 2,
-      "gwsRostered": 5,
-      "pointsWhileRostered": 13,
-      "pointsPerGw": 2.6,
+      "gwsRostered": 6,
+      "pointsWhileRostered": 14,
+      "pointsPerGw": 2.3333333333333335,
       "isHit": false
     },
     {
@@ -6307,18 +6883,6 @@
       "isHit": false
     },
     {
-      "managerId": 1471,
-      "managerName": "🥶CPR🥶",
-      "elementId": 5,
-      "playerName": "J.Timber",
-      "kind": "w",
-      "acquiredGw": 3,
-      "gwsRostered": 4,
-      "pointsWhileRostered": 8,
-      "pointsPerGw": 2,
-      "isHit": false
-    },
-    {
       "managerId": 10210,
       "managerName": "Syria FC**",
       "elementId": 204,
@@ -6328,6 +6892,18 @@
       "gwsRostered": 4,
       "pointsWhileRostered": 8,
       "pointsPerGw": 2,
+      "isHit": false
+    },
+    {
+      "managerId": 1471,
+      "managerName": "🥶CPR🥶",
+      "elementId": 5,
+      "playerName": "J.Timber",
+      "kind": "w",
+      "acquiredGw": 3,
+      "gwsRostered": 5,
+      "pointsWhileRostered": 9,
+      "pointsPerGw": 1.8,
       "isHit": false
     },
     {
@@ -6379,18 +6955,6 @@
       "isHit": false
     },
     {
-      "managerId": 99786,
-      "managerName": "Patso Ball Fc",
-      "elementId": 331,
-      "playerName": "Gudmundsson",
-      "kind": "w",
-      "acquiredGw": 7,
-      "gwsRostered": 3,
-      "pointsWhileRostered": 4,
-      "pointsPerGw": 1.3333333333333333,
-      "isHit": false
-    },
-    {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
       "elementId": 454,
@@ -6400,6 +6964,18 @@
       "gwsRostered": 3,
       "pointsWhileRostered": 4,
       "pointsPerGw": 1.3333333333333333,
+      "isHit": false
+    },
+    {
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
+      "elementId": 331,
+      "playerName": "Gudmundsson",
+      "kind": "w",
+      "acquiredGw": 7,
+      "gwsRostered": 4,
+      "pointsWhileRostered": 5,
+      "pointsPerGw": 1.25,
       "isHit": false
     },
     {
@@ -6421,18 +6997,6 @@
       "playerName": "Ndoye",
       "kind": "w",
       "acquiredGw": 3,
-      "gwsRostered": 3,
-      "pointsWhileRostered": 3,
-      "pointsPerGw": 1,
-      "isHit": false
-    },
-    {
-      "managerId": 26227,
-      "managerName": "Mourinho’s Ego FT",
-      "elementId": 211,
-      "playerName": "Yeremy",
-      "kind": "w",
-      "acquiredGw": 8,
       "gwsRostered": 3,
       "pointsWhileRostered": 3,
       "pointsPerGw": 1,
@@ -6525,12 +7089,36 @@
       "isHit": true
     },
     {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "elementId": 611,
+      "playerName": "Wan-Bissaka",
+      "kind": "f",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 8,
+      "pointsPerGw": 8,
+      "isHit": true
+    },
+    {
       "managerId": 1947,
       "managerName": "FC General",
       "elementId": 36,
       "playerName": "Maatsen",
       "kind": "w",
       "acquiredGw": 3,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 7,
+      "pointsPerGw": 7,
+      "isHit": true
+    },
+    {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "elementId": 34,
+      "playerName": "Pau",
+      "kind": "w",
+      "acquiredGw": 10,
       "gwsRostered": 1,
       "pointsWhileRostered": 7,
       "pointsPerGw": 7,
@@ -6597,24 +7185,60 @@
       "isHit": true
     },
     {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 85,
+      "playerName": "Van den Berg",
+      "kind": "w",
+      "acquiredGw": 8,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 6,
+      "pointsPerGw": 6,
+      "isHit": true
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "elementId": 114,
+      "playerName": "Boscagli",
+      "kind": "w",
+      "acquiredGw": 10,
+      "gwsRostered": 2,
+      "pointsWhileRostered": 12,
+      "pointsPerGw": 6,
+      "isHit": true
+    },
+    {
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "elementId": 70,
+      "playerName": "Kluivert",
+      "kind": "w",
+      "acquiredGw": 10,
+      "gwsRostered": 2,
+      "pointsWhileRostered": 12,
+      "pointsPerGw": 6,
+      "isHit": true
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 85,
+      "playerName": "Van den Berg",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 6,
+      "pointsPerGw": 6,
+      "isHit": true
+    },
+    {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
       "elementId": 45,
       "playerName": "McGinn",
       "kind": "w",
       "acquiredGw": 6,
-      "gwsRostered": 2,
-      "pointsWhileRostered": 11,
-      "pointsPerGw": 5.5,
-      "isHit": true
-    },
-    {
-      "managerId": 29975,
-      "managerName": "Zacharias United",
-      "elementId": 16,
-      "playerName": "Madueke",
-      "kind": "w",
-      "acquiredGw": 8,
       "gwsRostered": 2,
       "pointsWhileRostered": 11,
       "pointsPerGw": 5.5,
@@ -6657,36 +7281,12 @@
       "isHit": true
     },
     {
-      "managerId": 1530,
-      "managerName": "Muks Militia",
-      "elementId": 151,
-      "playerName": "Acheampong",
-      "kind": "w",
-      "acquiredGw": 8,
-      "gwsRostered": 2,
-      "pointsWhileRostered": 10,
-      "pointsPerGw": 5,
-      "isHit": true
-    },
-    {
-      "managerId": 1425,
-      "managerName": "Pearl Street Pirates",
-      "elementId": 114,
-      "playerName": "Boscagli",
-      "kind": "w",
-      "acquiredGw": 10,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 5,
-      "pointsPerGw": 5,
-      "isHit": true
-    },
-    {
-      "managerId": 1377,
-      "managerName": "Lu’s Rules FC ****",
-      "elementId": 116,
-      "playerName": "Dunk",
-      "kind": "w",
-      "acquiredGw": 10,
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "elementId": 534,
+      "playerName": "Hume",
+      "kind": "f",
+      "acquiredGw": 11,
       "gwsRostered": 1,
       "pointsWhileRostered": 5,
       "pointsPerGw": 5,
@@ -6765,18 +7365,6 @@
       "isHit": false
     },
     {
-      "managerId": 10210,
-      "managerName": "Syria FC**",
-      "elementId": 47,
-      "playerName": "Kamara",
-      "kind": "f",
-      "acquiredGw": 10,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 4,
-      "pointsPerGw": 4,
-      "isHit": false
-    },
-    {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
       "elementId": 37,
@@ -6813,18 +7401,6 @@
       "isHit": false
     },
     {
-      "managerId": 99786,
-      "managerName": "Patso Ball Fc",
-      "elementId": 95,
-      "playerName": "O.Dango",
-      "kind": "w",
-      "acquiredGw": 9,
-      "gwsRostered": 2,
-      "pointsWhileRostered": 7,
-      "pointsPerGw": 3.5,
-      "isHit": false
-    },
-    {
       "managerId": 1530,
       "managerName": "Muks Militia",
       "elementId": 503,
@@ -6837,10 +7413,10 @@
       "isHit": false
     },
     {
-      "managerId": 1530,
-      "managerName": "Muks Militia",
-      "elementId": 91,
-      "playerName": "Pinnock",
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "elementId": 36,
+      "playerName": "Maatsen",
       "kind": "w",
       "acquiredGw": 9,
       "gwsRostered": 2,
@@ -6849,12 +7425,12 @@
       "isHit": false
     },
     {
-      "managerId": 26227,
-      "managerName": "Mourinho’s Ego FT",
-      "elementId": 64,
-      "playerName": "Smith",
-      "kind": "w",
-      "acquiredGw": 9,
+      "managerId": 10210,
+      "managerName": "Syria FC**",
+      "elementId": 47,
+      "playerName": "Kamara",
+      "kind": "f",
+      "acquiredGw": 10,
       "gwsRostered": 2,
       "pointsWhileRostered": 7,
       "pointsPerGw": 3.5,
@@ -6945,18 +7521,6 @@
       "isHit": false
     },
     {
-      "managerId": 29975,
-      "managerName": "Zacharias United",
-      "elementId": 499,
-      "playerName": "Pedro Porro",
-      "kind": "w",
-      "acquiredGw": 9,
-      "gwsRostered": 2,
-      "pointsWhileRostered": 6,
-      "pointsPerGw": 3,
-      "isHit": false
-    },
-    {
       "managerId": 1857,
       "managerName": "i can fix him*",
       "elementId": 586,
@@ -6969,24 +7533,36 @@
       "isHit": false
     },
     {
-      "managerId": 1530,
-      "managerName": "Muks Militia",
-      "elementId": 70,
-      "playerName": "Kluivert",
-      "kind": "w",
-      "acquiredGw": 10,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 3,
-      "pointsPerGw": 3,
-      "isHit": false
-    },
-    {
       "managerId": 29975,
       "managerName": "Zacharias United",
       "elementId": 129,
       "playerName": "Ayari",
       "kind": "w",
       "acquiredGw": 10,
+      "gwsRostered": 2,
+      "pointsWhileRostered": 6,
+      "pointsPerGw": 3,
+      "isHit": false
+    },
+    {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "elementId": 116,
+      "playerName": "Dunk",
+      "kind": "w",
+      "acquiredGw": 10,
+      "gwsRostered": 2,
+      "pointsWhileRostered": 6,
+      "pointsPerGw": 3,
+      "isHit": false
+    },
+    {
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "elementId": 52,
+      "playerName": "Alysson",
+      "kind": "w",
+      "acquiredGw": 11,
       "gwsRostered": 1,
       "pointsWhileRostered": 3,
       "pointsPerGw": 3,
@@ -6999,18 +7575,6 @@
       "playerName": "Martinez",
       "kind": "w",
       "acquiredGw": 2,
-      "gwsRostered": 2,
-      "pointsWhileRostered": 5,
-      "pointsPerGw": 2.5,
-      "isHit": false
-    },
-    {
-      "managerId": 1947,
-      "managerName": "FC General",
-      "elementId": 202,
-      "playerName": "Richards",
-      "kind": "w",
-      "acquiredGw": 7,
       "gwsRostered": 2,
       "pointsWhileRostered": 5,
       "pointsPerGw": 2.5,
@@ -7283,18 +7847,6 @@
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "elementId": 36,
-      "playerName": "Maatsen",
-      "kind": "w",
-      "acquiredGw": 9,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 2,
-      "pointsPerGw": 2,
-      "isHit": false
-    },
-    {
-      "managerId": 1857,
-      "managerName": "i can fix him*",
       "elementId": 455,
       "playerName": "Tonali",
       "kind": "w",
@@ -7377,6 +7929,18 @@
       "isHit": false
     },
     {
+      "managerId": 1501,
+      "managerName": "Set Piece Fc",
+      "elementId": 214,
+      "playerName": "Kamada",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 2,
+      "pointsPerGw": 2,
+      "isHit": false
+    },
+    {
       "managerId": 29975,
       "managerName": "Zacharias United",
       "elementId": 277,
@@ -7419,6 +7983,18 @@
       "playerName": "Jair Cunha",
       "kind": "f",
       "acquiredGw": 8,
+      "gwsRostered": 2,
+      "pointsWhileRostered": 3,
+      "pointsPerGw": 1.5,
+      "isHit": false
+    },
+    {
+      "managerId": 1947,
+      "managerName": "FC General",
+      "elementId": 145,
+      "playerName": "Fofana",
+      "kind": "w",
+      "acquiredGw": 10,
       "gwsRostered": 2,
       "pointsWhileRostered": 3,
       "pointsPerGw": 1.5,
@@ -7611,8 +8187,8 @@
       "playerName": "Kroupi.Jr",
       "kind": "w",
       "acquiredGw": 6,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 1,
+      "gwsRostered": 2,
+      "pointsWhileRostered": 2,
       "pointsPerGw": 1,
       "isHit": false
     },
@@ -7725,18 +8301,6 @@
       "isHit": false
     },
     {
-      "managerId": 1947,
-      "managerName": "FC General",
-      "elementId": 145,
-      "playerName": "Fofana",
-      "kind": "w",
-      "acquiredGw": 10,
-      "gwsRostered": 1,
-      "pointsWhileRostered": 1,
-      "pointsPerGw": 1,
-      "isHit": false
-    },
-    {
       "managerId": 26227,
       "managerName": "Mourinho’s Ego FT",
       "elementId": 232,
@@ -7755,6 +8319,78 @@
       "playerName": "Khusanov",
       "kind": "w",
       "acquiredGw": 10,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 29975,
+      "managerName": "Zacharias United",
+      "elementId": 45,
+      "playerName": "McGinn",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 210,
+      "playerName": "Wharton",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 1377,
+      "managerName": "Lu’s Rules FC ****",
+      "elementId": 502,
+      "playerName": "Robertson",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "elementId": 41,
+      "playerName": "Buendía",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 153,
+      "playerName": "Disasi",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 1,
+      "pointsWhileRostered": 1,
+      "pointsPerGw": 1,
+      "isHit": false
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 471,
+      "playerName": "Milenković",
+      "kind": "f",
+      "acquiredGw": 11,
       "gwsRostered": 1,
       "pointsWhileRostered": 1,
       "pointsPerGw": 1,
@@ -8423,18 +9059,6 @@
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "elementId": 85,
-      "playerName": "Van den Berg",
-      "kind": "w",
-      "acquiredGw": 8,
-      "gwsRostered": 0,
-      "pointsWhileRostered": 0,
-      "pointsPerGw": 0,
-      "isHit": false
-    },
-    {
-      "managerId": 10375,
-      "managerName": "NEEN FC",
       "elementId": 455,
       "playerName": "Tonali",
       "kind": "w",
@@ -8535,7 +9159,7 @@
       "playerName": "Colwill",
       "kind": "w",
       "acquiredGw": 10,
-      "gwsRostered": 1,
+      "gwsRostered": 2,
       "pointsWhileRostered": 0,
       "pointsPerGw": 0,
       "isHit": false
@@ -8548,18 +9172,6 @@
       "kind": "w",
       "acquiredGw": 10,
       "gwsRostered": 1,
-      "pointsWhileRostered": 0,
-      "pointsPerGw": 0,
-      "isHit": false
-    },
-    {
-      "managerId": 1857,
-      "managerName": "i can fix him*",
-      "elementId": 34,
-      "playerName": "Pau",
-      "kind": "w",
-      "acquiredGw": 10,
-      "gwsRostered": 0,
       "pointsWhileRostered": 0,
       "pointsPerGw": 0,
       "isHit": false
@@ -8613,12 +9225,120 @@
       "isHit": false
     },
     {
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
+      "elementId": 474,
+      "playerName": "Jair Cunha",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1471,
+      "managerName": "🥶CPR🥶",
+      "elementId": 599,
+      "playerName": "Elvedi",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 10375,
+      "managerName": "NEEN FC",
+      "elementId": 264,
+      "playerName": "Bobb",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "elementId": 123,
+      "playerName": "Hinshelwood",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1530,
+      "managerName": "Muks Militia",
+      "elementId": 440,
+      "playerName": "Zirkzee",
+      "kind": "w",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1425,
+      "managerName": "Pearl Street Pirates",
+      "elementId": 630,
+      "playerName": "Harwood-Bellis",
+      "kind": "f",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 99786,
+      "managerName": "Patso Ball Fc",
+      "elementId": 372,
+      "playerName": "Mac Allister",
+      "kind": "f",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
+      "managerId": 1857,
+      "managerName": "i can fix him*",
+      "elementId": 173,
+      "playerName": "Thomas",
+      "kind": "f",
+      "acquiredGw": 11,
+      "gwsRostered": 0,
+      "pointsWhileRostered": 0,
+      "pointsPerGw": 0,
+      "isHit": false
+    },
+    {
       "managerId": 1530,
       "managerName": "Muks Militia",
       "elementId": 269,
       "playerName": "Sessegnon",
       "kind": "w",
       "acquiredGw": 7,
+      "gwsRostered": 1,
+      "pointsWhileRostered": -2,
+      "pointsPerGw": -2,
+      "isHit": false
+    },
+    {
+      "managerId": 26227,
+      "managerName": "Mourinho’s Ego FT",
+      "elementId": 119,
+      "playerName": "Costinha",
+      "kind": "w",
+      "acquiredGw": 11,
       "gwsRostered": 1,
       "pointsWhileRostered": -2,
       "pointsPerGw": -2,

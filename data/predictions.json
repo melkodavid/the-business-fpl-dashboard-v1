@@ -304,37 +304,37 @@
           "key": "1947-1377",
           "home": 1947,
           "away": 1377,
-          "result": null
+          "result": "H"
         },
         {
           "key": "10210-1857",
           "home": 10210,
           "away": 1857,
-          "result": null
+          "result": "A"
         },
         {
           "key": "10375-1530",
           "home": 10375,
           "away": 1530,
-          "result": null
+          "result": "H"
         },
         {
           "key": "26227-1501",
           "home": 26227,
           "away": 1501,
-          "result": null
+          "result": "A"
         },
         {
           "key": "29975-1471",
           "home": 29975,
           "away": 1471,
-          "result": null
+          "result": "H"
         },
         {
           "key": "99786-1425",
           "home": 99786,
           "away": 1425,
-          "result": null
+          "result": "A"
         }
       ],
       "picks": {
@@ -355,7 +355,7 @@
           "29975-1471": "H"
         }
       },
-      "complete": false
+      "complete": true
     }
   ],
   "table": [
@@ -391,12 +391,12 @@
     {
       "personKey": "david",
       "managerId": 1857,
-      "played": 24,
-      "correct": 14,
-      "weeks": 4,
+      "played": 30,
+      "correct": 18,
+      "weeks": 5,
       "bestWeek": 5,
       "perfectWeeks": 0,
-      "streak": 0,
+      "streak": 1,
       "bestStreak": 5,
       "boldCalls": 4,
       "boldHits": 2,
@@ -416,9 +416,13 @@
         "10": {
           "correct": 2,
           "total": 6
+        },
+        "11": {
+          "correct": 4,
+          "total": 6
         }
       },
-      "pct": 58.3,
+      "pct": 60,
       "rank": 2
     },
     {
@@ -441,39 +445,6 @@
       },
       "pct": 50,
       "rank": 3
-    },
-    {
-      "personKey": "marshall",
-      "managerId": 1471,
-      "played": 24,
-      "correct": 11,
-      "weeks": 4,
-      "bestWeek": 5,
-      "perfectWeeks": 0,
-      "streak": 0,
-      "bestStreak": 5,
-      "boldCalls": 1,
-      "boldHits": 0,
-      "byWeek": {
-        "7": {
-          "correct": 3,
-          "total": 6
-        },
-        "8": {
-          "correct": 2,
-          "total": 6
-        },
-        "9": {
-          "correct": 5,
-          "total": 6
-        },
-        "10": {
-          "correct": 1,
-          "total": 6
-        }
-      },
-      "pct": 45.8,
-      "rank": 4
     },
     {
       "personKey": "lu",
@@ -502,6 +473,43 @@
         }
       },
       "pct": 44.4,
+      "rank": 4
+    },
+    {
+      "personKey": "marshall",
+      "managerId": 1471,
+      "played": 30,
+      "correct": 13,
+      "weeks": 5,
+      "bestWeek": 5,
+      "perfectWeeks": 0,
+      "streak": 0,
+      "bestStreak": 5,
+      "boldCalls": 1,
+      "boldHits": 0,
+      "byWeek": {
+        "7": {
+          "correct": 3,
+          "total": 6
+        },
+        "8": {
+          "correct": 2,
+          "total": 6
+        },
+        "9": {
+          "correct": 5,
+          "total": 6
+        },
+        "10": {
+          "correct": 1,
+          "total": 6
+        },
+        "11": {
+          "correct": 2,
+          "total": 6
+        }
+      },
+      "pct": 43.3,
       "rank": 5
     }
   ]

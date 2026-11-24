@@ -6,11 +6,11 @@
     ],
     "facts": {
       "managerId": 1947,
-      "wins": 0,
-      "played": 1,
+      "wins": 1,
+      "played": 2,
       "length": 3
     },
-    "gw": 10
+    "gw": 11
   },
   "lifeAfterMark": {
     "type": "lu-post-mark-trade-scrutiny",
@@ -48,10 +48,10 @@
       "01s|2000s": {
         "wins": 4,
         "draws": 0,
-        "losses": 3
+        "losses": 4
       },
       "2000s|01s": {
-        "wins": 3,
+        "wins": 4,
         "draws": 0,
         "losses": 4
       },
@@ -68,28 +68,28 @@
       "2000s|97s": {
         "wins": 4,
         "draws": 0,
-        "losses": 1
+        "losses": 2
       },
       "97s|2000s": {
-        "wins": 1,
+        "wins": 2,
         "draws": 0,
         "losses": 4
       },
       "ancient|97s": {
-        "wins": 2,
+        "wins": 3,
         "draws": 0,
         "losses": 0
       },
       "97s|ancient": {
         "wins": 0,
         "draws": 0,
-        "losses": 2
+        "losses": 3
       }
     },
     "oneOhOnesVsRest": {
       "wins": 12,
       "draws": 0,
-      "losses": 11
+      "losses": 12
     }
   }
 }

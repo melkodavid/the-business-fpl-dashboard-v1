@@ -55,16 +55,30 @@
       "elementId": 211,
       "playerName": "Yeremy",
       "fixtureId": 90
+    },
+    {
+      "gw": 11,
+      "managerId": 1377,
+      "elementId": 53,
+      "playerName": "Manzambi",
+      "fixtureId": 101
+    },
+    {
+      "gw": 11,
+      "managerId": 1425,
+      "elementId": 41,
+      "playerName": "Buendía",
+      "fixtureId": 101
     }
   ],
   "seasonTotals": [
     {
       "managerId": 1377,
-      "count": 0
+      "count": 1
     },
     {
       "managerId": 1425,
-      "count": 1
+      "count": 2
     },
     {
       "managerId": 1471,

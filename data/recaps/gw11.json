@@ -1,0 +1,95 @@
+{
+  "gw": 11,
+  "headline": {
+    "type": "table-new-leader",
+    "personKeys": [
+      "david",
+      "marshall"
+    ],
+    "text": "The table has a new #1: David Melko.",
+    "facts": {
+      "newLeaderId": 1857,
+      "previousLeaderId": 1471
+    },
+    "gw": 11
+  },
+  "secondaries": [
+    {
+      "type": "lineup-could-have-won",
+      "personKeys": [
+        "ostap"
+      ],
+      "text": "With the right lineup, Ostap Tsymbalista wins this week. Instead: a loss.",
+      "facts": {
+        "gw": 11,
+        "managerId": 99786,
+        "opponentId": 1425,
+        "actualScore": 40,
+        "optimalScore": 51,
+        "opponentScore": 45
+      },
+      "gw": 11
+    },
+    {
+      "type": "trade-waiver-outscores-r1",
+      "personKeys": [
+        "ibrahim"
+      ],
+      "text": "Lewis-Potter was a free pickup for Abe. This week, worth more than any round-1 pick.",
+      "facts": {
+        "managerId": 10210,
+        "elementId": 86,
+        "playerName": "Lewis-Potter",
+        "points": 16,
+        "bestRound1": 14
+      },
+      "gw": 11
+    },
+    {
+      "type": "family-cousin-clash",
+      "personKeys": [
+        "anthony",
+        "muk"
+      ],
+      "text": "Ernesto vs. Tongar: The Sperm Derby. Anthony Palladino vs. Muk P this week.",
+      "facts": {
+        "homeManagerId": 10375,
+        "awayManagerId": 1530,
+        "homePoints": 48,
+        "awayPoints": 31,
+        "relation": "cousin"
+      },
+      "gw": 11
+    },
+    {
+      "type": "lineup-59-club",
+      "personKeys": [
+        "noah"
+      ],
+      "text": "The 59 Club has a new member: Buendía, for Noah Palladino.",
+      "facts": {
+        "gw": 11,
+        "managerId": 1425,
+        "elementId": 41,
+        "playerName": "Buendía",
+        "fixtureId": 101
+      },
+      "gw": 11
+    },
+    {
+      "type": "lineup-59-club",
+      "personKeys": [
+        "lu"
+      ],
+      "text": "Manzambi subbed off at exactly 59 minutes. Lu is not thrilled.",
+      "facts": {
+        "gw": 11,
+        "managerId": 1377,
+        "elementId": 53,
+        "playerName": "Manzambi",
+        "fixtureId": 101
+      },
+      "gw": 11
+    }
+  ]
+}
