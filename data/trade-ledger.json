@@ -1648,6 +1648,100 @@
           "resultImpact": []
         }
       ]
+    },
+    {
+      "tradeId": 467158,
+      "gw": 12,
+      "sides": [
+        {
+          "managerId": 1377,
+          "received": [
+            {
+              "elementId": 57,
+              "playerName": "Petrović",
+              "points": 0
+            },
+            {
+              "elementId": 332,
+              "playerName": "Justin",
+              "points": 0
+            },
+            {
+              "elementId": 214,
+              "playerName": "Kamada",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 529,
+              "playerName": "Roefs",
+              "points": 0,
+              "positionRipple": null
+            },
+            {
+              "elementId": 502,
+              "playerName": "Robertson",
+              "points": 0,
+              "positionRipple": null
+            },
+            {
+              "elementId": 237,
+              "playerName": "Ndiaye",
+              "points": 0,
+              "positionRipple": null
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0,
+          "resultImpact": []
+        },
+        {
+          "managerId": 1501,
+          "received": [
+            {
+              "elementId": 529,
+              "playerName": "Roefs",
+              "points": 0
+            },
+            {
+              "elementId": 502,
+              "playerName": "Robertson",
+              "points": 0
+            },
+            {
+              "elementId": 237,
+              "playerName": "Ndiaye",
+              "points": 0
+            }
+          ],
+          "given": [
+            {
+              "elementId": 57,
+              "playerName": "Petrović",
+              "points": 0,
+              "positionRipple": null
+            },
+            {
+              "elementId": 332,
+              "playerName": "Justin",
+              "points": 0,
+              "positionRipple": null
+            },
+            {
+              "elementId": 214,
+              "playerName": "Kamada",
+              "points": 0,
+              "positionRipple": null
+            }
+          ],
+          "gained": 0,
+          "givenUp": 0,
+          "netValue": 0,
+          "resultImpact": []
+        }
+      ]
     }
   ],
   "leaderboard": [
@@ -1975,7 +2069,7 @@
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "tradeCount": 1,
+      "tradeCount": 2,
       "actual": {
         "w": 5,
         "d": 0,
@@ -2090,7 +2184,7 @@
     {
       "managerId": 1377,
       "managerName": "Lu’s Rules FC ****",
-      "tradeCount": 4,
+      "tradeCount": 5,
       "actual": {
         "w": 3,
         "d": 0,

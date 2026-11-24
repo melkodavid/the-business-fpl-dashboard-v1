@@ -273,6 +273,15 @@
       ],
       "bench": [
         {
+          "id": 57,
+          "name": "Petrović",
+          "pos": "GKP",
+          "type": 1,
+          "team": "Bournemouth",
+          "teamId": 3,
+          "ep": 5.2
+        },
+        {
           "id": 250,
           "name": "Leno",
           "pos": "GKP",
@@ -280,6 +289,24 @@
           "team": "Fulham",
           "teamId": 10,
           "ep": 2.3
+        },
+        {
+          "id": 332,
+          "name": "Justin",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Leeds",
+          "teamId": 13,
+          "ep": 5.2
+        },
+        {
+          "id": 214,
+          "name": "Kamada",
+          "pos": "MID",
+          "type": 3,
+          "team": "Crystal Palace",
+          "teamId": 8,
+          "ep": 2
         },
         {
           "id": 397,
@@ -708,6 +735,15 @@
       ],
       "bench": [
         {
+          "id": 529,
+          "name": "Roefs",
+          "pos": "GKP",
+          "type": 1,
+          "team": "Sunderland",
+          "teamId": 20,
+          "ep": 7.5
+        },
+        {
           "id": 82,
           "name": "Kelleher",
           "pos": "GKP",
@@ -717,13 +753,22 @@
           "ep": 4.2
         },
         {
-          "id": 332,
-          "name": "Justin",
+          "id": 502,
+          "name": "Robertson",
           "pos": "DEF",
           "type": 2,
-          "team": "Leeds",
-          "teamId": 13,
-          "ep": 5.2
+          "team": "Spurs",
+          "teamId": 19,
+          "ep": 3.7
+        },
+        {
+          "id": 237,
+          "name": "Ndiaye",
+          "pos": "MID",
+          "type": 3,
+          "team": "Man City",
+          "teamId": 15,
+          "ep": 2
         },
         {
           "id": 271,
