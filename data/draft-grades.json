@@ -3,7 +3,7 @@
     {
       "managerId": 1425,
       "managerName": "Pearl Street Pirates",
-      "draftTeamPoints": 529
+      "draftTeamPoints": 532
     },
     {
       "managerId": 1377,
@@ -13,32 +13,32 @@
     {
       "managerId": 1471,
       "managerName": "🥶CPR🥶",
-      "draftTeamPoints": 524
+      "draftTeamPoints": 526
     },
     {
       "managerId": 10375,
       "managerName": "NEEN FC",
-      "draftTeamPoints": 500
+      "draftTeamPoints": 502
     },
     {
       "managerId": 1857,
       "managerName": "i can fix him*",
-      "draftTeamPoints": 485
+      "draftTeamPoints": 487
     },
     {
       "managerId": 1947,
       "managerName": "FC General",
-      "draftTeamPoints": 450
+      "draftTeamPoints": 451
     },
     {
       "managerId": 99786,
       "managerName": "Patso Ball Fc",
-      "draftTeamPoints": 436
+      "draftTeamPoints": 441
     },
     {
       "managerId": 1501,
       "managerName": "Set Piece Fc",
-      "draftTeamPoints": 433
+      "draftTeamPoints": 437
     },
     {
       "managerId": 29975,
@@ -465,7 +465,7 @@
     {
       "pickNumber": 41,
       "round": 4,
-      "seasonPoints": 53,
+      "seasonPoints": 52,
       "managerId": 1501,
       "elementId": 229,
       "playerName": "Tarkowski",
@@ -485,7 +485,7 @@
     {
       "pickNumber": 43,
       "round": 4,
-      "seasonPoints": 27,
+      "seasonPoints": 29,
       "managerId": 1425,
       "elementId": 95,
       "playerName": "O.Dango",
@@ -605,7 +605,7 @@
     {
       "pickNumber": 55,
       "round": 5,
-      "seasonPoints": 51,
+      "seasonPoints": 52,
       "managerId": 1947,
       "elementId": 236,
       "playerName": "Dewsbury-Hall",
@@ -685,7 +685,7 @@
     {
       "pickNumber": 63,
       "round": 6,
-      "seasonPoints": 46,
+      "seasonPoints": 47,
       "managerId": 1471,
       "elementId": 94,
       "playerName": "Schade",
@@ -1015,7 +1015,7 @@
     {
       "pickNumber": 96,
       "round": 8,
-      "seasonPoints": 56,
+      "seasonPoints": 57,
       "managerId": 1857,
       "elementId": 249,
       "playerName": "Barry",
@@ -1185,7 +1185,7 @@
     {
       "pickNumber": 113,
       "round": 10,
-      "seasonPoints": 36,
+      "seasonPoints": 41,
       "managerId": 1501,
       "elementId": 82,
       "playerName": "Kelleher",
@@ -1205,7 +1205,7 @@
     {
       "pickNumber": 115,
       "round": 10,
-      "seasonPoints": 15,
+      "seasonPoints": 16,
       "managerId": 1425,
       "elementId": 209,
       "playerName": "Johnson",
@@ -1255,7 +1255,7 @@
     {
       "pickNumber": 120,
       "round": 10,
-      "seasonPoints": 32,
+      "seasonPoints": 33,
       "managerId": 1857,
       "elementId": 556,
       "playerName": "M.Sangaré",
@@ -1605,7 +1605,7 @@
     {
       "pickNumber": 155,
       "round": 13,
-      "seasonPoints": 35,
+      "seasonPoints": 40,
       "managerId": 99786,
       "elementId": 88,
       "playerName": "Kayode",
@@ -1645,7 +1645,7 @@
     {
       "pickNumber": 159,
       "round": 14,
-      "seasonPoints": 28,
+      "seasonPoints": 29,
       "managerId": 1471,
       "elementId": 239,
       "playerName": "Garner",
@@ -1765,7 +1765,7 @@
     {
       "pickNumber": 171,
       "round": 15,
-      "seasonPoints": 41,
+      "seasonPoints": 43,
       "managerId": 10375,
       "elementId": 233,
       "playerName": "Mykolenko",

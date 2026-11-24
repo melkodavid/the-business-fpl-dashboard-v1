@@ -576,8 +576,11 @@
           "key": "pl103",
           "home": 4,
           "away": 9,
-          "score": null,
-          "result": null
+          "score": [
+            4,
+            0
+          ],
+          "result": "H"
         }
       ],
       "picks": {
@@ -606,19 +609,19 @@
           "pl103": "A"
         }
       },
-      "complete": false
+      "complete": true
     }
   ],
   "table": [
     {
       "personKey": "marshall",
       "managerId": 1471,
-      "played": 29,
-      "correct": 13,
+      "played": 30,
+      "correct": 14,
       "weeks": 3,
       "bestWeek": 6,
       "perfectWeeks": 0,
-      "streak": 1,
+      "streak": 2,
       "bestStreak": 4,
       "boldCalls": 3,
       "boldHits": 3,
@@ -632,11 +635,11 @@
           "total": 10
         },
         "11": {
-          "correct": 2,
-          "total": 9
+          "correct": 3,
+          "total": 10
         }
       },
-      "pct": 44.8,
+      "pct": 46.7,
       "rank": 1
     },
     {
@@ -692,12 +695,12 @@
     {
       "personKey": "david",
       "managerId": 1857,
-      "played": 29,
+      "played": 30,
       "correct": 10,
       "weeks": 3,
       "bestWeek": 4,
       "perfectWeeks": 0,
-      "streak": 1,
+      "streak": 0,
       "bestStreak": 2,
       "boldCalls": 5,
       "boldHits": 1,
@@ -712,10 +715,10 @@
         },
         "11": {
           "correct": 3,
-          "total": 9
+          "total": 10
         }
       },
-      "pct": 34.5,
+      "pct": 33.3,
       "rank": 4
     }
   ]

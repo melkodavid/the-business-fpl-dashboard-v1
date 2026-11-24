@@ -8,20 +8,20 @@
       "awayManagerId": 1471,
       "homeRank": 10,
       "awayRank": 1,
-      "homePoints": 42,
-      "awayPoints": 32,
+      "homePoints": 51,
+      "awayPoints": 37,
       "started": true,
       "finished": false,
       "importance": 3.5,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 93,
-        "drawPct": 3,
-        "awayWinPct": 4,
-        "homeExpected": 42.7,
-        "awayExpected": 36.4,
-        "homeSoFar": 42,
-        "awaySoFar": 35
+        "homeWinPct": 100,
+        "drawPct": 0,
+        "awayWinPct": 0,
+        "homeExpected": 51,
+        "awayExpected": 37,
+        "homeSoFar": 51,
+        "awaySoFar": 37
       }
     },
     {
@@ -30,19 +30,19 @@
       "awayManagerId": 1425,
       "homeRank": 7,
       "awayRank": 3,
-      "homePoints": 29,
+      "homePoints": 39,
       "awayPoints": 44,
       "started": true,
       "finished": false,
       "importance": 2.43,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 2,
-        "drawPct": 1,
-        "awayWinPct": 97,
-        "homeExpected": 35.8,
+        "homeWinPct": 8,
+        "drawPct": 4,
+        "awayWinPct": 88,
+        "homeExpected": 39,
         "awayExpected": 44,
-        "homeSoFar": 32,
+        "homeSoFar": 39,
         "awaySoFar": 44
       }
     },
@@ -52,7 +52,7 @@
       "awayManagerId": 1377,
       "homeRank": 4,
       "awayRank": 11,
-      "homePoints": 45,
+      "homePoints": 47,
       "awayPoints": 31,
       "started": true,
       "finished": false,
@@ -62,9 +62,9 @@
         "homeWinPct": 100,
         "drawPct": 0,
         "awayWinPct": 0,
-        "homeExpected": 47.6,
+        "homeExpected": 47,
         "awayExpected": 31,
-        "homeSoFar": 46,
+        "homeSoFar": 47,
         "awaySoFar": 31
       }
     },
@@ -74,8 +74,8 @@
       "awayManagerId": 1857,
       "homeRank": 9,
       "awayRank": 2,
-      "homePoints": 18,
-      "awayPoints": 57,
+      "homePoints": 42,
+      "awayPoints": 59,
       "started": true,
       "finished": false,
       "importance": 2.1,
@@ -84,10 +84,10 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 37,
-        "awayExpected": 61,
-        "homeSoFar": 32,
-        "awaySoFar": 58
+        "homeExpected": 42,
+        "awayExpected": 59,
+        "homeSoFar": 42,
+        "awaySoFar": 59
       }
     },
     {
@@ -96,7 +96,7 @@
       "awayManagerId": 1530,
       "homeRank": 5,
       "awayRank": 12,
-      "homePoints": 42,
+      "homePoints": 48,
       "awayPoints": 30,
       "started": true,
       "finished": false,
@@ -106,9 +106,9 @@
         "homeWinPct": 100,
         "drawPct": 0,
         "awayWinPct": 0,
-        "homeExpected": 44.2,
+        "homeExpected": 48,
         "awayExpected": 30,
-        "homeSoFar": 43,
+        "homeSoFar": 48,
         "awaySoFar": 30
       }
     },
@@ -118,8 +118,8 @@
       "awayManagerId": 1501,
       "homeRank": 8,
       "awayRank": 6,
-      "homePoints": 27,
-      "awayPoints": 47,
+      "homePoints": 29,
+      "awayPoints": 43,
       "started": true,
       "finished": false,
       "importance": 1.06,
@@ -128,10 +128,10 @@
         "homeWinPct": 0,
         "drawPct": 0,
         "awayWinPct": 100,
-        "homeExpected": 30.6,
-        "awayExpected": 44.6,
+        "homeExpected": 29,
+        "awayExpected": 43,
         "homeSoFar": 29,
-        "awaySoFar": 44
+        "awaySoFar": 43
       }
     }
   ],
@@ -457,7 +457,7 @@
     },
     "1471": {
       "formation": "4-5-1",
-      "expected": 49.9,
+      "expected": 50.5,
       "captainId": 60,
       "locked": true,
       "xi": [
@@ -540,7 +540,7 @@
           "type": 3,
           "team": "Everton",
           "teamId": 9,
-          "ep": 2.7
+          "ep": 3
         },
         {
           "id": 94,
@@ -549,7 +549,7 @@
           "type": 3,
           "team": "Brentford",
           "teamId": 4,
-          "ep": 1.5
+          "ep": 1.8
         },
         {
           "id": 492,
@@ -602,7 +602,7 @@
     },
     "1501": {
       "formation": "4-5-1",
-      "expected": 38.6,
+      "expected": 38.2,
       "captainId": 79,
       "locked": true,
       "xi": [
@@ -649,7 +649,7 @@
           "type": 2,
           "team": "Everton",
           "teamId": 9,
-          "ep": 1.7
+          "ep": 1.3
         },
         {
           "id": 368,
@@ -714,7 +714,7 @@
           "type": 1,
           "team": "Brentford",
           "teamId": 4,
-          "ep": 3
+          "ep": 4.2
         },
         {
           "id": 332,
@@ -892,8 +892,8 @@
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 48,
-      "captainId": 366,
+      "expected": 48.3,
+      "captainId": 249,
       "locked": true,
       "xi": [
         {
@@ -975,7 +975,7 @@
           "type": 4,
           "team": "Everton",
           "teamId": 9,
-          "ep": 8.7
+          "ep": 9
         },
         {
           "id": 526,
@@ -1037,7 +1037,7 @@
     },
     "1947": {
       "formation": "4-5-1",
-      "expected": 46.2,
+      "expected": 46.5,
       "captainId": 183,
       "locked": true,
       "xi": [
@@ -1102,7 +1102,7 @@
           "type": 3,
           "team": "Everton",
           "teamId": 9,
-          "ep": 4.7
+          "ep": 5
         },
         {
           "id": 67,
@@ -1182,8 +1182,8 @@
     },
     "10210": {
       "formation": "4-4-2",
-      "expected": 35.1,
-      "captainId": 4,
+      "expected": 37.8,
+      "captainId": 86,
       "locked": true,
       "xi": [
         {
@@ -1211,7 +1211,7 @@
           "type": 2,
           "team": "Everton",
           "teamId": 9,
-          "ep": 4.3
+          "ep": 5
         },
         {
           "id": 87,
@@ -1220,7 +1220,7 @@
           "type": 2,
           "team": "Brentford",
           "teamId": 4,
-          "ep": 3.2
+          "ep": 4.5
         },
         {
           "id": 445,
@@ -1238,7 +1238,7 @@
           "type": 3,
           "team": "Brentford",
           "teamId": 4,
-          "ep": 5
+          "ep": 5.5
         },
         {
           "id": 628,
@@ -1265,7 +1265,7 @@
           "type": 3,
           "team": "Brentford",
           "teamId": 4,
-          "ep": 2
+          "ep": 2.2
         },
         {
           "id": 464,
@@ -1327,7 +1327,7 @@
     },
     "10375": {
       "formation": "3-4-3",
-      "expected": 43.3,
+      "expected": 44.6,
       "captainId": 295,
       "locked": true,
       "xi": [
@@ -1356,7 +1356,7 @@
           "type": 2,
           "team": "Brentford",
           "teamId": 4,
-          "ep": 3.5
+          "ep": 4.8
         },
         {
           "id": 471,
@@ -1617,7 +1617,7 @@
     },
     "29975": {
       "formation": "4-5-1",
-      "expected": 47.2,
+      "expected": 49.4,
       "captainId": 580,
       "locked": true,
       "xi": [
@@ -1685,6 +1685,15 @@
           "ep": 4.5
         },
         {
+          "id": 98,
+          "name": "Janelt",
+          "pos": "MID",
+          "type": 3,
+          "team": "Brentford",
+          "teamId": 4,
+          "ep": 4.2
+        },
+        {
           "id": 45,
           "name": "McGinn",
           "pos": "MID",
@@ -1692,15 +1701,6 @@
           "team": "Aston Villa",
           "teamId": 2,
           "ep": 3.7
-        },
-        {
-          "id": 98,
-          "name": "Janelt",
-          "pos": "MID",
-          "type": 3,
-          "team": "Brentford",
-          "teamId": 4,
-          "ep": 2
         },
         {
           "id": 400,
@@ -1762,7 +1762,7 @@
     },
     "99786": {
       "formation": "3-4-3",
-      "expected": 36.2,
+      "expected": 37.9,
       "captainId": 61,
       "locked": true,
       "xi": [
@@ -1800,7 +1800,16 @@
           "type": 2,
           "team": "Brentford",
           "teamId": 4,
-          "ep": 2.8
+          "ep": 4
+        },
+        {
+          "id": 95,
+          "name": "O.Dango",
+          "pos": "MID",
+          "type": 3,
+          "team": "Brentford",
+          "teamId": 4,
+          "ep": 5
         },
         {
           "id": 453,
@@ -1819,15 +1828,6 @@
           "team": "Arsenal",
           "teamId": 1,
           "ep": 4.7
-        },
-        {
-          "id": 95,
-          "name": "O.Dango",
-          "pos": "MID",
-          "type": 3,
-          "team": "Brentford",
-          "teamId": 4,
-          "ep": 4.5
         },
         {
           "id": 427,
