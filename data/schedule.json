@@ -37,10 +37,10 @@
       "importance": 2.73,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 13,
+        "homeWinPct": 11,
         "drawPct": 2,
-        "awayWinPct": 85,
-        "homeExpected": 38.6,
+        "awayWinPct": 87,
+        "homeExpected": 37.1,
         "awayExpected": 52.7,
         "homeSoFar": null,
         "awaySoFar": null
@@ -373,8 +373,8 @@
     },
     "1425": {
       "formation": "4-4-2",
-      "expected": 38.6,
-      "captainId": 114,
+      "expected": 37.1,
+      "captainId": 496,
       "locked": false,
       "xi": [
         {
@@ -393,7 +393,7 @@
           "type": 2,
           "team": "Brighton",
           "teamId": 5,
-          "ep": 6
+          "ep": 4.5
         },
         {
           "id": 330,
