@@ -1355,7 +1355,14 @@
               "elementId": 628,
               "playerName": "Barcola",
               "points": 21,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 336,
+                "playerName": "Okafor",
+                "position": "MID",
+                "acquiredGw": 12,
+                "gwsStarted": 0,
+                "points": 0
+              }
             },
             {
               "elementId": 208,
@@ -1689,7 +1696,14 @@
               "elementId": 237,
               "playerName": "Ndiaye",
               "points": 0,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 336,
+                "playerName": "Okafor",
+                "position": "MID",
+                "acquiredGw": 12,
+                "gwsStarted": 0,
+                "points": 0
+              }
             }
           ],
           "gained": 0,
@@ -1727,7 +1741,14 @@
               "elementId": 332,
               "playerName": "Justin",
               "points": 0,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 586,
+                "playerName": "Mendy",
+                "position": "DEF",
+                "acquiredGw": 12,
+                "gwsStarted": 0,
+                "points": 0
+              }
             },
             {
               "elementId": 214,
