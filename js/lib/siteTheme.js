@@ -1,3 +1,5 @@
+import { playNightVisionWhine } from "./nightVisionSound.js";
+
 // Site-wide "event" themes: a temporary look for the whole site (a media
 // blackout, Christmas, Halloween...). Which one is on comes from
 // data/site-theme.json:
@@ -19,6 +21,7 @@ export const THEMES = {
       title: "BLACKOUT ENABLED",
       subtitle: "TEAM HAS BEEN COMPROMISED",
       button: "ENTER THE DARKNESS",
+      sound: true, // the night-vision power-up whine when the button is pressed
       terminal: [
         "> secure link ......... OK",
         "> league database ..... 12 subjects",
@@ -187,6 +190,7 @@ function showGate(gate) {
   const btn = el.querySelector(".st-gate-btn");
   btn.addEventListener("click", () => {
     try { sessionStorage.setItem(GATE_SEEN_KEY, gate.id); } catch { /* fine */ }
+    if (gate.sound) { try { playNightVisionWhine(); } catch { /* no sound is fine */ } }
     if (reduced) { el.remove(); document.documentElement.classList.remove("st-gated"); return; }
     // goggles on: a flash, the view opens out from the centre, the page over-bright then settling
     el.classList.add("is-entering");
