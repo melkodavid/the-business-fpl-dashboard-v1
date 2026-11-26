@@ -81,11 +81,11 @@
       "importance": 2.01,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 25,
+        "homeWinPct": 26,
         "drawPct": 2,
-        "awayWinPct": 73,
+        "awayWinPct": 72,
         "homeExpected": 40.7,
-        "awayExpected": 49.3,
+        "awayExpected": 48.8,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -125,10 +125,10 @@
       "importance": 1.23,
       "tag": "Six-Pointer",
       "odds": {
-        "homeWinPct": 44,
+        "homeWinPct": 48,
         "drawPct": 3,
-        "awayWinPct": 53,
-        "homeExpected": 45.1,
+        "awayWinPct": 49,
+        "homeExpected": 46.5,
         "awayExpected": 46.7,
         "homeSoFar": null,
         "awaySoFar": null
@@ -953,7 +953,7 @@
     },
     "1857": {
       "formation": "4-3-3",
-      "expected": 49.3,
+      "expected": 48.8,
       "captainId": 366,
       "locked": false,
       "xi": [
@@ -1027,7 +1027,7 @@
           "type": 3,
           "team": "Bournemouth",
           "teamId": 3,
-          "ep": 2
+          "ep": 1.5
         },
         {
           "id": 249,
@@ -1823,7 +1823,7 @@
     },
     "99786": {
       "formation": "4-4-2",
-      "expected": 45.1,
+      "expected": 46.5,
       "captainId": 571,
       "locked": false,
       "xi": [
@@ -1882,6 +1882,15 @@
           "ep": 4.7
         },
         {
+          "id": 105,
+          "name": "Anthony",
+          "pos": "MID",
+          "type": 3,
+          "team": "Brentford",
+          "teamId": 4,
+          "ep": 4.7
+        },
+        {
           "id": 372,
           "name": "Mac Allister",
           "pos": "MID",
@@ -1898,15 +1907,6 @@
           "team": "Newcastle",
           "teamId": 17,
           "ep": 3.7
-        },
-        {
-          "id": 95,
-          "name": "O.Dango",
-          "pos": "MID",
-          "type": 3,
-          "team": "Brentford",
-          "teamId": 4,
-          "ep": 3.3
         },
         {
           "id": 222,
