@@ -1,5 +1,6 @@
 import { loadAllData, managerLookup } from "./data.js";
 import { footerText, watchForNewData } from "./lib/freshness.js";
+import { applySiteTheme } from "./lib/siteTheme.js";
 import { onIdentityChange } from "./identity.js";
 import { mountIdentitySwitcher } from "./identitySwitcher.js";
 import { render as renderLanding } from "./render/landing.js";
@@ -143,6 +144,7 @@ function main(data, managers) {
 }
 
 async function init() {
+  applySiteTheme(); // any event theme (data/site-theme.json) goes on while the data loads
   try {
     const data = await loadAllData();
     const managers = managerLookup(data);

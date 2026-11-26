@@ -1,0 +1,108 @@
+/* =========================================================================
+   Site-wide event themes (js/lib/siteTheme.js). Each one hangs off
+   <html data-site-theme="...">, so nothing here applies until a theme is on.
+   Shared pieces: .st-banner (a ticker under the header), .st-fx (a fixed,
+   click-through layer holding the moving canvas, overlays and HUD).
+   ========================================================================= */
+.st-banner { position: relative; z-index: 40; overflow: hidden; white-space: nowrap; font: 700 0.82rem "Archivo", sans-serif; letter-spacing: 0.08em; }
+.st-banner-track { display: inline-flex; padding: 7px 0; animation: st-ticker 38s linear infinite; }
+.st-banner-track span { padding-right: 3rem; }
+@keyframes st-ticker { to { transform: translateX(-50%); } }
+.st-fx { position: fixed; inset: 0; z-index: 900; pointer-events: none; }
+.st-canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.st-overlay { position: absolute; inset: 0; }
+@media (prefers-reduced-motion: reduce) { .st-banner-track { animation: none; } }
+
+/* ---------------------------------------------------------------------------
+   BLACKOUT -- the site goes dark: green phosphor terminal, code rain, scan
+   lines, a "media blackout" ticker, and every data source redacted (hover or
+   tap a black bar to declassify it).
+   --------------------------------------------------------------------------- */
+:root[data-site-theme="blackout"] {
+  --bg: #000; --surface: #020a03; --text: #b9ffbd; --text-muted: #3fa34d; --border: rgba(0,255,65,0.18); --edge-bright: rgba(0,255,65,0.4);
+  --accent: #00a82d; --accent-bright: #00ff41; --gold: #00ff41; --gold-bright: #a6ffaa; --lime: #00ff41; --lime-contrast: #001a06;
+  --win: #00ff41; --loss: #ff4040; --draw: #7fbf7f; --header-bg: #000; --header-text: #b9ffbd;
+}
+:root[data-site-theme="blackout"] body { background: #000; }
+:root[data-site-theme="blackout"] main#app,
+:root[data-site-theme="blackout"] .site-header,
+:root[data-site-theme="blackout"] .site-footer { filter: grayscale(1) sepia(1) hue-rotate(72deg) saturate(4.5) brightness(0.95) contrast(1.08); }
+:root[data-site-theme="blackout"] main#app { text-shadow: 0 0 6px rgba(0,255,65,0.35); }
+:root[data-site-theme="blackout"] *:not(.st-banner):not(.st-banner *) { font-family: "Share Tech Mono", ui-monospace, Consolas, monospace !important; letter-spacing: 0.02em; }
+:root[data-site-theme="blackout"] .st-banner { background: #000; color: #00ff41; border-top: 1px solid #00ff41; border-bottom: 1px solid #00ff41; font-family: "Share Tech Mono", monospace; text-shadow: 0 0 8px #00ff41; animation: st-flicker 4s steps(1) infinite; }
+:root[data-site-theme="blackout"] .st-banner s { text-decoration: none; background: #00ff41; color: #00ff41; padding: 0 0.4em; }
+:root[data-site-theme="blackout"] .st-canvas { opacity: 0.3; mix-blend-mode: screen; }
+:root[data-site-theme="blackout"] .st-overlay {
+  background: repeating-linear-gradient(0deg, rgba(0,0,0,0.28) 0 1px, transparent 1px 3px), radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.6) 100%);
+  animation: st-flicker 6s steps(1) infinite;
+}
+@keyframes st-flicker { 0%, 100% { opacity: 1; } 47% { opacity: 1; } 48% { opacity: 0.82; } 49% { opacity: 1; } 83% { opacity: 0.9; } 84% { opacity: 1; } }
+/* the joke: every line that names a data source is redacted until you hover or tap it */
+:root[data-site-theme="blackout"] .hm-foot, :root[data-site-theme="blackout"] .md-foot, :root[data-site-theme="blackout"] .lv-foot {
+  background: #00ff41; color: transparent !important; text-shadow: none; border-radius: 2px; cursor: help; transition: background 0.2s, color 0.2s;
+}
+:root[data-site-theme="blackout"] .hm-foot:hover, :root[data-site-theme="blackout"] .md-foot:hover, :root[data-site-theme="blackout"] .lv-foot:hover,
+:root[data-site-theme="blackout"] .hm-foot:active, :root[data-site-theme="blackout"] .md-foot:active, :root[data-site-theme="blackout"] .lv-foot:active {
+  background: transparent; color: var(--text-muted) !important;
+}
+:root[data-site-theme="blackout"] .section-title::after { content: " _"; animation: st-blink 1s steps(1) infinite; }
+@keyframes st-blink { 50% { opacity: 0; } }
+
+/* ---------------------------------------------------------------------------
+   NIGHT VISION -- the whole site seen through night-vision goggles: bright
+   green monochrome, film grain, a heavy round vignette and a camera HUD.
+   --------------------------------------------------------------------------- */
+:root[data-site-theme="nightvision"] body { background: #000; }
+:root[data-site-theme="nightvision"] main#app,
+:root[data-site-theme="nightvision"] .site-header,
+:root[data-site-theme="nightvision"] .site-footer,
+:root[data-site-theme="nightvision"] .st-banner { filter: grayscale(1) sepia(1) hue-rotate(58deg) saturate(3.4) brightness(1.18) contrast(1.2); }
+:root[data-site-theme="nightvision"] .st-banner { background: #0b1a0b; color: #c8ffc8; font-family: "Share Tech Mono", monospace; letter-spacing: 0.14em; }
+:root[data-site-theme="nightvision"] .st-canvas { opacity: 0.9; image-rendering: pixelated; mix-blend-mode: overlay; }
+:root[data-site-theme="nightvision"] .st-overlay {
+  background: radial-gradient(ellipse 72% 68% at 50% 52%, transparent 58%, rgba(0,12,0,0.55) 78%, rgba(0,0,0,0.9) 100%), repeating-linear-gradient(0deg, rgba(0,0,0,0.12) 0 1px, transparent 1px 4px);
+}
+.st-hud { position: absolute; inset: 18px; font: 600 0.78rem "Share Tech Mono", monospace; letter-spacing: 0.12em; color: rgba(190,255,190,0.85); text-shadow: 0 0 6px rgba(120,255,120,0.8); }
+.st-hud-rec { position: absolute; bottom: 30px; left: 14px; color: #ff4d4d; text-shadow: 0 0 6px #ff4d4d; animation: st-blink 1.2s steps(1) infinite; }
+.st-hud-mode { position: absolute; bottom: 10px; right: 14px; }
+.st-hud-clock { position: absolute; bottom: 10px; left: 14px; }
+.st-hud-cross { position: absolute; left: 50%; top: 50%; width: 46px; height: 46px; translate: -50% -50%; opacity: 0.35;
+  background: linear-gradient(currentColor, currentColor) center / 1px 100% no-repeat, linear-gradient(currentColor, currentColor) center / 100% 1px no-repeat; color: rgba(190,255,190,0.9); }
+.st-c { position: absolute; width: 34px; height: 34px; border: 2px solid rgba(190,255,190,0.7); }
+.st-c.tl { top: 0; left: 0; border-right: 0; border-bottom: 0; } .st-c.tr { top: 0; right: 0; border-left: 0; border-bottom: 0; }
+.st-c.bl { bottom: 0; left: 0; border-right: 0; border-top: 0; } .st-c.br { bottom: 0; right: 0; border-left: 0; border-top: 0; }
+@media (max-width: 560px) { .st-hud { inset: 10px; font-size: 0.62rem; } .st-hud-cross { display: none; } }
+
+/* ---------------------------------------------------------------------------
+   CHRISTMAS -- deep pine and cranberry with gold, falling snow, and a string
+   of fairy lights along the ticker.
+   --------------------------------------------------------------------------- */
+:root[data-site-theme="christmas"] {
+  --bg: #08160f; --surface: #102519; --border: rgba(255,255,255,0.09); --edge-bright: rgba(255,233,168,0.3);
+  --accent: #a3121e; --accent-bright: #e0353f; --gold: #e2c15e; --gold-bright: #ffe9a8; --lime: #48e08f; --lime-contrast: #04210f; --header-bg: #08160f;
+}
+:root[data-site-theme="christmas"] body { background: radial-gradient(ellipse 900px 500px at 50% -10%, rgba(226,193,94,0.12), transparent 60%), #08160f; }
+:root[data-site-theme="christmas"] .st-banner { background: linear-gradient(90deg, #7d0d16, #a3121e 50%, #7d0d16); color: #fff6dc; font-family: "Mountains of Christmas", "Cormorant Garamond", serif; font-size: 1.05rem; letter-spacing: 0.04em; padding-top: 16px; }
+:root[data-site-theme="christmas"] .st-canvas { opacity: 0.85; }
+:root[data-site-theme="christmas"] .section-title, :root[data-site-theme="christmas"] .page-title { text-shadow: 0 0 18px rgba(226,193,94,0.35); }
+.st-lights { position: absolute; top: 0; left: 0; right: 0; height: 16px; display: flex; justify-content: space-around; align-items: flex-start;
+  background: radial-gradient(ellipse 60% 14px at 50% 0, transparent 65%, rgba(0,0,0,0.5) 67%, transparent 72%) 0 -4px / 7.14% 18px repeat-x; }
+.st-lights i { width: 9px; height: 13px; margin-top: 2px; border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; background: var(--bulb); box-shadow: 0 0 10px 2px var(--bulb); animation: st-twinkle 1.6s ease-in-out infinite; animation-delay: calc(var(--i) * -0.23s); }
+.st-lights i:nth-child(4n+1) { --bulb: #ff4d4d; } .st-lights i:nth-child(4n+2) { --bulb: #ffd34d; } .st-lights i:nth-child(4n+3) { --bulb: #4dff8c; } .st-lights i:nth-child(4n) { --bulb: #5cb8ff; }
+@keyframes st-twinkle { 50% { opacity: 0.35; box-shadow: 0 0 2px 0 var(--bulb); } }
+@media (max-width: 560px) { .st-lights i:nth-child(n+15) { display: none; } }
+
+/* ---------------------------------------------------------------------------
+   HALLOWEEN -- midnight purple and pumpkin orange, slime-green for live,
+   rolling fog along the bottom and bats crossing the screen.
+   --------------------------------------------------------------------------- */
+:root[data-site-theme="halloween"] {
+  --bg: #0b0710; --surface: #170f1f; --border: rgba(255,138,31,0.14); --edge-bright: rgba(255,138,31,0.35);
+  --accent: #6a22b0; --accent-bright: #a65bff; --gold: #ff8a1f; --gold-bright: #ffb35c; --lime: #b6ff3b; --lime-contrast: #142100; --header-bg: #0b0710;
+}
+:root[data-site-theme="halloween"] body { background: radial-gradient(circle at 85% 8%, rgba(255,200,120,0.16) 0 60px, transparent 61px), radial-gradient(ellipse 900px 500px at 50% -10%, rgba(106,34,176,0.22), transparent 60%), #0b0710; }
+:root[data-site-theme="halloween"] .st-banner { background: #ff8a1f; color: #1a0a00; font-family: "Creepster", "Bebas Neue", sans-serif; font-weight: 400; font-size: 1.1rem; letter-spacing: 0.08em; }
+:root[data-site-theme="halloween"] .section-title, :root[data-site-theme="halloween"] .page-title { font-family: "Creepster", "Bebas Neue", sans-serif !important; letter-spacing: 0.06em; color: var(--gold); text-shadow: 0 0 14px rgba(255,138,31,0.45); }
+:root[data-site-theme="halloween"] .st-overlay { background: radial-gradient(ellipse 60% 18% at 20% 100%, rgba(190,170,220,0.16), transparent 70%), radial-gradient(ellipse 55% 16% at 75% 100%, rgba(190,170,220,0.14), transparent 70%); animation: st-fog 18s ease-in-out infinite alternate; }
+@keyframes st-fog { to { background-position: 30vw 0, -25vw 0; } }
+@media (prefers-reduced-motion: reduce) { .st-lights i, .st-overlay, .st-hud-rec, .section-title::after { animation: none !important; } }

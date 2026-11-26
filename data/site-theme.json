@@ -1,0 +1,16 @@
+{
+  "_comment": "Site-wide event theme. theme: \"none\" (off), \"auto\" (follow the schedule below by date), or a theme name to force it on: blackout, nightvision, christmas, halloween. Preview any theme without switching it on for everyone by adding ?theme=NAME to the site address (?theme=none to see it without). Schedule dates are MM-DD and may wrap the new year.",
+  "theme": "none",
+  "schedule": [
+    {
+      "theme": "halloween",
+      "from": "10-24",
+      "to": "10-31"
+    },
+    {
+      "theme": "christmas",
+      "from": "12-01",
+      "to": "12-31"
+    }
+  ]
+}
