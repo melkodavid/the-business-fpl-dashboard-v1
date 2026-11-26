@@ -11,6 +11,8 @@ export const THEMES = {
     font: "Share+Tech+Mono",
     banner: "⚠ MEDIA BLACKOUT IN EFFECT ⚠ &nbsp;·&nbsp; Communications restricted by order of the Commissioner &nbsp;·&nbsp; Projection source: <s>REDACTED</s> &nbsp;·&nbsp; Internal investigation: ONGOING &nbsp;·&nbsp; Trust nothing &nbsp;·&nbsp;",
     fx: "rain",
+    stamps: ["BLACKOUT", "CONFIDENTIAL"], // rubber stamps in the header; the site name gets a redaction bar
+    docTitle: "█████ ████████ · CLASSIFIED",
   },
   nightvision: {
     font: "Share+Tech+Mono",
@@ -146,6 +148,11 @@ export async function applySiteTheme() {
     link.href = `https://fonts.googleapis.com/css2?family=${theme.font}&display=swap`;
     document.head.append(link);
   }
+
+  if (theme.stamps) {
+    document.querySelector(".site-title")?.insertAdjacentHTML("afterend", `<span class="st-stamps" aria-hidden="true">${theme.stamps.map((s, i) => `<b class="st-stamp st-stamp-${i}">${s}</b>`).join("")}</span>`);
+  }
+  if (theme.docTitle) document.title = theme.docTitle;
 
   const header = document.querySelector(".site-header");
   const banner = document.createElement("div");
