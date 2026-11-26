@@ -13,6 +13,20 @@ export const THEMES = {
     fx: "rain",
     stamps: ["BLACKOUT", "CONFIDENTIAL"], // rubber stamps in the header; the site name gets a redaction bar
     docTitle: "█████ ████████ · CLASSIFIED",
+    // full-screen entry screen, once per visit
+    gate: {
+      id: "blackout-1",
+      title: "BLACKOUT ENABLED",
+      subtitle: "TEAM HAS BEEN COMPROMISED",
+      button: "ENTER THE DARKNESS",
+      terminal: [
+        "> secure link ......... OK",
+        "> league database ..... 12 subjects",
+        "> projection source ... [REDACTED]",
+        "> integrity check ..... FAILED",
+        "> commissioner ........ UNREACHABLE",
+      ],
+    },
   },
   nightvision: {
     font: "Share+Tech+Mono",
@@ -133,6 +147,57 @@ function lightsHtml() {
   return `<div class="st-lights" aria-hidden="true">${Array.from({ length: 28 }, (_, i) => `<i style="--i:${i}"></i>`).join("")}</div>`;
 }
 
+// ---- the entry screen: shown once per visit while a theme with a `gate` is on --
+const GATE_SEEN_KEY = "tb-gate-seen";
+
+function showGate(gate) {
+  try { if (sessionStorage.getItem(GATE_SEEN_KEY) === gate.id) return; } catch { /* private mode: just show it */ }
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const el = document.createElement("div");
+  el.className = "st-gate";
+  el.setAttribute("role", "dialog");
+  el.setAttribute("aria-modal", "true");
+  el.setAttribute("aria-label", gate.title);
+  el.innerHTML = `
+    <div class="st-gate-inner">
+      <pre class="st-gate-term" aria-hidden="true"></pre>
+      <h1 class="st-gate-title" data-text="${gate.title}">${gate.title}</h1>
+      <p class="st-gate-sub" data-text="${gate.subtitle}">${gate.subtitle}</p>
+      <button type="button" class="st-gate-btn">${gate.button}</button>
+    </div>
+    <i class="st-gate-scan" aria-hidden="true"></i>`;
+  document.body.append(el);
+  document.documentElement.classList.add("st-gated");
+
+  // the terminal types itself out, then the warning and the button arrive
+  const term = el.querySelector(".st-gate-term");
+  const lines = gate.terminal;
+  let li = 0, ci = 0;
+  const reveal = () => el.classList.add("is-armed");
+  const type = () => {
+    if (li >= lines.length) { reveal(); return; }
+    const line = lines[li];
+    term.textContent += line[ci] ?? "";
+    ci++;
+    if (ci > line.length) { term.textContent += "\n"; li++; ci = 0; setTimeout(type, 140); return; }
+    setTimeout(type, 4 + Math.random() * 12);
+  };
+  if (reduced) { term.textContent = lines.join("\n"); reveal(); } else setTimeout(type, 350);
+
+  const btn = el.querySelector(".st-gate-btn");
+  btn.addEventListener("click", () => {
+    try { sessionStorage.setItem(GATE_SEEN_KEY, gate.id); } catch { /* fine */ }
+    if (reduced) { el.remove(); document.documentElement.classList.remove("st-gated"); return; }
+    // goggles on: a flash, the view opens out from the centre, the page over-bright then settling
+    el.classList.add("is-entering");
+    document.documentElement.classList.add("st-powering");
+    setTimeout(() => { el.remove(); document.documentElement.classList.remove("st-gated"); }, 1900);
+    setTimeout(() => document.documentElement.classList.remove("st-powering"), 2600);
+  });
+  // let the page load quietly behind it; focus the button once it appears
+  setTimeout(() => btn.focus({ preventScroll: true }), reduced ? 0 : 400 + lines.join("").length * 12 + 2000);
+}
+
 // Applies the theme (if any). Safe to call before the league data has loaded.
 export async function applySiteTheme() {
   let config = null;
@@ -141,6 +206,7 @@ export async function applySiteTheme() {
   if (!name) return null;
   const theme = THEMES[name];
   document.documentElement.dataset.siteTheme = name;
+  if (theme.gate) showGate(theme.gate);
 
   if (theme.font) {
     const link = document.createElement("link");
