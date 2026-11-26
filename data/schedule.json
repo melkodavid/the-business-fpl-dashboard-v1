@@ -37,11 +37,11 @@
       "importance": 2.73,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 11,
+        "homeWinPct": 15,
         "drawPct": 2,
-        "awayWinPct": 87,
+        "awayWinPct": 83,
         "homeExpected": 37.1,
-        "awayExpected": 52.7,
+        "awayExpected": 50.4,
         "homeSoFar": null,
         "awaySoFar": null
       }
@@ -517,8 +517,8 @@
       ]
     },
     "1471": {
-      "formation": "4-4-2",
-      "expected": 52.7,
+      "formation": "4-5-1",
+      "expected": 50.4,
       "captainId": 60,
       "locked": false,
       "xi": [
@@ -604,13 +604,13 @@
           "ep": 3
         },
         {
-          "id": 492,
-          "name": "Awoniyi",
-          "pos": "FWD",
-          "type": 4,
-          "team": "Coventry City",
-          "teamId": 7,
-          "ep": 4
+          "id": 94,
+          "name": "Schade",
+          "pos": "MID",
+          "type": 3,
+          "team": "Brentford",
+          "teamId": 4,
+          "ep": 1.7
         },
         {
           "id": 569,
@@ -642,15 +642,6 @@
           "ep": 1.3
         },
         {
-          "id": 94,
-          "name": "Schade",
-          "pos": "MID",
-          "type": 3,
-          "team": "Brentford",
-          "teamId": 4,
-          "ep": 1.7
-        },
-        {
           "id": 582,
           "name": "Madjo",
           "pos": "FWD",
@@ -658,6 +649,15 @@
           "team": "Aston Villa",
           "teamId": 2,
           "ep": 0.7
+        },
+        {
+          "id": 492,
+          "name": "Awoniyi",
+          "pos": "FWD",
+          "type": 4,
+          "team": "Coventry City",
+          "teamId": 7,
+          "ep": 0
         }
       ]
     },
