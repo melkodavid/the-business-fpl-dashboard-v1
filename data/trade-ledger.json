@@ -1754,7 +1754,14 @@
               "elementId": 214,
               "playerName": "Kamada",
               "points": 0,
-              "positionRipple": null
+              "positionRipple": {
+                "elementId": 591,
+                "playerName": "Enciso",
+                "position": "MID",
+                "acquiredGw": 12,
+                "gwsStarted": 0,
+                "points": 0
+              }
             }
           ],
           "gained": 0,
