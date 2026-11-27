@@ -618,8 +618,11 @@
           "key": "pl119",
           "home": 18,
           "away": 6,
-          "score": null,
-          "result": null
+          "score": [
+            3,
+            2
+          ],
+          "result": "H"
         },
         {
           "key": "pl117",
@@ -754,14 +757,14 @@
     {
       "personKey": "marshall",
       "managerId": 1471,
-      "played": 30,
+      "played": 31,
       "correct": 14,
-      "weeks": 3,
+      "weeks": 4,
       "bestWeek": 6,
       "perfectWeeks": 0,
-      "streak": 2,
+      "streak": 0,
       "bestStreak": 4,
-      "boldCalls": 3,
+      "boldCalls": 4,
       "boldHits": 3,
       "byWeek": {
         "9": {
@@ -775,17 +778,21 @@
         "11": {
           "correct": 3,
           "total": 10
+        },
+        "12": {
+          "correct": 0,
+          "total": 1
         }
       },
-      "pct": 46.7,
+      "pct": 45.2,
       "rank": 1
     },
     {
       "personKey": "lu",
       "managerId": 1377,
-      "played": 20,
+      "played": 21,
       "correct": 8,
-      "weeks": 2,
+      "weeks": 3,
       "bestWeek": 4,
       "perfectWeeks": 0,
       "streak": 0,
@@ -800,17 +807,21 @@
         "10": {
           "correct": 4,
           "total": 10
+        },
+        "12": {
+          "correct": 0,
+          "total": 1
         }
       },
-      "pct": 40,
+      "pct": 38.1,
       "rank": 2
     },
     {
       "personKey": "anthony",
       "managerId": 10375,
-      "played": 20,
+      "played": 21,
       "correct": 8,
-      "weeks": 2,
+      "weeks": 3,
       "bestWeek": 6,
       "perfectWeeks": 0,
       "streak": 0,
@@ -825,17 +836,21 @@
         "10": {
           "correct": 6,
           "total": 10
+        },
+        "12": {
+          "correct": 0,
+          "total": 1
         }
       },
-      "pct": 40,
+      "pct": 38.1,
       "rank": 2
     },
     {
       "personKey": "david",
       "managerId": 1857,
-      "played": 30,
+      "played": 31,
       "correct": 10,
-      "weeks": 3,
+      "weeks": 4,
       "bestWeek": 4,
       "perfectWeeks": 0,
       "streak": 0,
@@ -854,10 +869,35 @@
         "11": {
           "correct": 3,
           "total": 10
+        },
+        "12": {
+          "correct": 0,
+          "total": 1
         }
       },
-      "pct": 33.3,
+      "pct": 32.3,
       "rank": 4
+    },
+    {
+      "personKey": "carmine",
+      "managerId": 1501,
+      "played": 1,
+      "correct": 0,
+      "weeks": 1,
+      "bestWeek": 0,
+      "perfectWeeks": 0,
+      "streak": 0,
+      "bestStreak": 0,
+      "boldCalls": 0,
+      "boldHits": 0,
+      "byWeek": {
+        "12": {
+          "correct": 0,
+          "total": 1
+        }
+      },
+      "pct": 0,
+      "rank": 5
     }
   ]
 }

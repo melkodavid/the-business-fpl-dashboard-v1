@@ -15,13 +15,13 @@
       "importance": 2.73,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 27,
-        "drawPct": 3,
-        "awayWinPct": 70,
+        "homeWinPct": 14,
+        "drawPct": 2,
+        "awayWinPct": 84,
         "homeExpected": 27.4,
-        "awayExpected": 35,
+        "awayExpected": 40.8,
         "homeSoFar": 0,
-        "awaySoFar": 0
+        "awaySoFar": 10
       }
     },
     {
@@ -37,13 +37,13 @@
       "importance": 2.73,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 21,
-        "drawPct": 2,
-        "awayWinPct": 77,
+        "homeWinPct": 7,
+        "drawPct": 1,
+        "awayWinPct": 92,
         "homeExpected": 27.9,
-        "awayExpected": 38.4,
+        "awayExpected": 45.2,
         "homeSoFar": 0,
-        "awaySoFar": 0
+        "awaySoFar": 16
       }
     },
     {
@@ -59,13 +59,13 @@
       "importance": 2.17,
       "tag": "Wooden Spoon Battle",
       "odds": {
-        "homeWinPct": 78,
-        "drawPct": 2,
-        "awayWinPct": 20,
+        "homeWinPct": 74,
+        "drawPct": 3,
+        "awayWinPct": 23,
         "homeExpected": 38.6,
-        "awayExpected": 27.8,
+        "awayExpected": 29.8,
         "homeSoFar": 0,
-        "awaySoFar": 0
+        "awaySoFar": 5
       }
     },
     {
@@ -81,12 +81,12 @@
       "importance": 2.01,
       "tag": "Title Six-Pointer",
       "odds": {
-        "homeWinPct": 34,
+        "homeWinPct": 55,
         "drawPct": 3,
-        "awayWinPct": 63,
-        "homeExpected": 30.5,
+        "awayWinPct": 42,
+        "homeExpected": 37.8,
         "awayExpected": 35.6,
-        "homeSoFar": 0,
+        "homeSoFar": 10,
         "awaySoFar": 0
       }
     },
@@ -103,12 +103,12 @@
       "importance": 1.5,
       "tag": "Six-Pointer",
       "odds": {
-        "homeWinPct": 51,
+        "homeWinPct": 71,
         "drawPct": 3,
-        "awayWinPct": 46,
-        "homeExpected": 34.1,
-        "awayExpected": 33.1,
-        "homeSoFar": 0,
+        "awayWinPct": 26,
+        "homeExpected": 35.9,
+        "awayExpected": 28.4,
+        "homeSoFar": 2,
         "awaySoFar": 0
       }
     },
@@ -125,13 +125,13 @@
       "importance": 1.23,
       "tag": "Six-Pointer",
       "odds": {
-        "homeWinPct": 37,
-        "drawPct": 3,
-        "awayWinPct": 60,
+        "homeWinPct": 12,
+        "drawPct": 1,
+        "awayWinPct": 87,
         "homeExpected": 30.9,
-        "awayExpected": 34.9,
+        "awayExpected": 45.7,
         "homeSoFar": 0,
-        "awaySoFar": 0
+        "awaySoFar": 13
       }
     }
   ],
@@ -167,7 +167,7 @@
   "lineups": {
     "1377": {
       "formation": "4-4-2",
-      "expected": 35,
+      "expected": 37.6,
       "captainId": 336,
       "locked": true,
       "xi": [
@@ -259,7 +259,7 @@
           "type": 4,
           "team": "Nott'm Forest",
           "teamId": 18,
-          "ep": 4
+          "ep": 5
         },
         {
           "id": 491,
@@ -268,7 +268,7 @@
           "type": 4,
           "team": "Nott'm Forest",
           "teamId": 18,
-          "ep": 0.2
+          "ep": 1.8
         }
       ],
       "bench": [
@@ -457,7 +457,7 @@
     },
     "1471": {
       "formation": "5-4-1",
-      "expected": 38.4,
+      "expected": 42.4,
       "captainId": 60,
       "locked": true,
       "xi": [
@@ -531,7 +531,7 @@
           "type": 3,
           "team": "Chelsea",
           "teamId": 6,
-          "ep": 4
+          "ep": 4.5
         },
         {
           "id": 154,
@@ -540,7 +540,7 @@
           "type": 3,
           "team": "Chelsea",
           "teamId": 6,
-          "ep": 3
+          "ep": 3.5
         },
         {
           "id": 239,
@@ -558,7 +558,7 @@
           "type": 4,
           "team": "Chelsea",
           "teamId": 6,
-          "ep": 2.2
+          "ep": 5.2
         }
       ],
       "bench": [
@@ -602,7 +602,7 @@
     },
     "1501": {
       "formation": "3-5-2",
-      "expected": 34.9,
+      "expected": 38.2,
       "captainId": 79,
       "locked": true,
       "xi": [
@@ -643,6 +643,15 @@
           "ep": 1.4
         },
         {
+          "id": 480,
+          "name": "Gibbs-White",
+          "pos": "MID",
+          "type": 3,
+          "team": "Nott'm Forest",
+          "teamId": 18,
+          "ep": 5.5
+        },
+        {
           "id": 368,
           "name": "Szoboszlai",
           "pos": "MID",
@@ -668,15 +677,6 @@
           "team": "Ipswich Town",
           "teamId": 12,
           "ep": 2.8
-        },
-        {
-          "id": 480,
-          "name": "Gibbs-White",
-          "pos": "MID",
-          "type": 3,
-          "team": "Nott'm Forest",
-          "teamId": 18,
-          "ep": 2.2
         },
         {
           "id": 237,
@@ -747,7 +747,7 @@
     },
     "1530": {
       "formation": "4-4-2",
-      "expected": 27.8,
+      "expected": 29.1,
       "captainId": 52,
       "locked": true,
       "xi": [
@@ -767,7 +767,7 @@
           "type": 2,
           "team": "Chelsea",
           "teamId": 6,
-          "ep": 2.5
+          "ep": 2.8
         },
         {
           "id": 640,
@@ -794,7 +794,7 @@
           "type": 2,
           "team": "Nott'm Forest",
           "teamId": 18,
-          "ep": 0.5
+          "ep": 1.5
         },
         {
           "id": 52,
@@ -1048,7 +1048,7 @@
           "type": 1,
           "team": "Nott'm Forest",
           "teamId": 18,
-          "ep": 1.2
+          "ep": 1.5
         },
         {
           "id": 555,
@@ -1066,7 +1066,7 @@
           "type": 2,
           "team": "Chelsea",
           "teamId": 6,
-          "ep": 3.5
+          "ep": 3.2
         },
         {
           "id": 356,
@@ -1158,7 +1158,7 @@
           "type": 2,
           "team": "Nott'm Forest",
           "teamId": 18,
-          "ep": 1.8
+          "ep": 2.5
         },
         {
           "id": 439,
@@ -1327,7 +1327,7 @@
     },
     "10375": {
       "formation": "3-4-3",
-      "expected": 34.1,
+      "expected": 34.7,
       "captainId": 295,
       "locked": true,
       "xi": [
@@ -1338,7 +1338,7 @@
           "type": 1,
           "team": "Chelsea",
           "teamId": 6,
-          "ep": 0.2
+          "ep": 0.8
         },
         {
           "id": 112,
@@ -1472,7 +1472,7 @@
     },
     "26227": {
       "formation": "5-3-2",
-      "expected": 30.5,
+      "expected": 33.1,
       "captainId": 166,
       "locked": true,
       "xi": [
@@ -1528,7 +1528,7 @@
           "type": 2,
           "team": "Chelsea",
           "teamId": 6,
-          "ep": 1.5
+          "ep": 1.8
         },
         {
           "id": 369,
@@ -1540,6 +1540,15 @@
           "ep": 3.8
         },
         {
+          "id": 156,
+          "name": "Neto",
+          "pos": "MID",
+          "type": 3,
+          "team": "Chelsea",
+          "teamId": 6,
+          "ep": 3.5
+        },
+        {
           "id": 399,
           "name": "Cherki",
           "pos": "MID",
@@ -1547,15 +1556,6 @@
           "team": "Man City",
           "teamId": 15,
           "ep": 2.8
-        },
-        {
-          "id": 156,
-          "name": "Neto",
-          "pos": "MID",
-          "type": 3,
-          "team": "Chelsea",
-          "teamId": 6,
-          "ep": 1.2
         },
         {
           "id": 166,
@@ -1877,6 +1877,15 @@
           "ep": 2.8
         },
         {
+          "id": 474,
+          "name": "Jair Cunha",
+          "pos": "DEF",
+          "type": 2,
+          "team": "Nott'm Forest",
+          "teamId": 18,
+          "ep": 3
+        },
+        {
           "id": 88,
           "name": "Kayode",
           "pos": "DEF",
@@ -1884,15 +1893,6 @@
           "team": "Brentford",
           "teamId": 4,
           "ep": 3
-        },
-        {
-          "id": 474,
-          "name": "Jair Cunha",
-          "pos": "DEF",
-          "type": 2,
-          "team": "Nott'm Forest",
-          "teamId": 18,
-          "ep": 2.8
         },
         {
           "id": 552,
